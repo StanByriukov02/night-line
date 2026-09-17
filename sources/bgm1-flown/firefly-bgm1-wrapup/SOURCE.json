@@ -1,0 +1,27 @@
+{
+  "url": "https://fireflyspace.com/news/firefly-aerospace-successfully-completes-14-days-of-surface-operations-on-the-moon/",
+  "title": "Firefly Aerospace Successfully Completes 14 Days of Surface Operations on the Moon",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "after_sunset_h=5",
+    "daylight_ops_h=346",
+    "landed_utc=2025-03-02",
+    "energy_wh=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED",
+    "designed_for_night=false"
+  ],
+  "status_20260917": 200,
+  "quote_after_sunset": "operating just over 5 hours into the lunar night with the final data received around 6:15 pm CDT on March 16",
+  "quote_after_sunset_2": "Following the sunset, Blue Ghost operated for 5 hours into the lunar night",
+  "note": "Cited public wrap-up. 5 h after sunset is Firefly's number, not our measurement. Wh not printed.",
+  "sha256_by_file": {
+    "page.html": "28505c89dde3c38bde87a59d82814e3094e624eea9d239af3c6294ea4e9571b5",
+    "page.txt": "268b3b52ac152e70ed39fcf0541696061dd3367b1c7330473f186d48f8136199"
+  },
+  "sha256": "28505c89dde3c38bde87a59d82814e3094e624eea9d239af3c6294ea4e9571b5",
+  "bytes": 126837,
+  "fetched_utc": "2026-09-17T09:47:49Z",
+  "redacted_personal_email": true,
+  "omitted_binaries": []
+}

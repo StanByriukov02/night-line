@@ -1,0 +1,28 @@
+{
+  "url": "https://fireflyspace.com/blue-ghost/",
+  "title": "Firefly Blue Ghost product page — Payload Resources",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "payload_power_W=>400",
+    "product_surface_ops=lunar_day_plus_night",
+    "store_Wh=NOT_PRINTED",
+    "energy_wh=NOT_PRINTED",
+    "P_keepalive_W=NOT_PRINTED",
+    "hours_night=NOT_PRINTED",
+    "peak_vs_night_keepalive=OPEN"
+  ],
+  "status_20260917": 200,
+  "quote_surface_ops": "Lunar day + night",
+  "quote_power": "> 400 W",
+  "note": "Payload Resources: Power > 400 W; Surface Operations Lunar day + night. Page does not print 354 h. Peak vs night keep-alive OPEN. Do not treat as a 354 h leftover promise.",
+  "sha256_by_file": {
+    "page.html": "d09dac1b26f25d29988a92ea16dd70292ac4796fa4c508d5a1f5a15c7b4aff0f",
+    "page.txt": "a4c7090c789d847d9ddafed64d5e01eb57eac08ceab95c707c9b7acd0e378f80"
+  },
+  "sha256": "d09dac1b26f25d29988a92ea16dd70292ac4796fa4c508d5a1f5a15c7b4aff0f",
+  "bytes": 118459,
+  "fetched_utc": "2026-09-17T09:47:49Z",
+  "redacted_personal_email": true,
+  "omitted_binaries": []
+}

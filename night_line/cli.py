@@ -9,7 +9,9 @@ from pathlib import Path
 from typing import Any
 
 from night_line.model import (
+    IDENTITY_DURATION_LINE,
     IDENTITY_STORE_LINE,
+    CLAIM_VS_WITNESS,
     LINE_OPEN_TWO_KNOBS,
     LIVE_IF_STORE_ABOVE,
     ROOT,
@@ -37,9 +39,54 @@ def _label_line(rec: dict[str, Any]) -> str:
 
 
 def write_line_md(rec: dict[str, Any], dest: Path) -> None:
-    h_night = float(rec["H_night_h"])
     label = _label_line(rec)
     box = rec["box"]
+    if rec["label"] == CLAIM_VS_WITNESS:
+        after = rec.get("after_sunset_h")
+        cataldo = rec.get("cataldo_mason_night_h")
+        gap = rec.get("duration_gap_h")
+        pq = rec.get("product_quotes") or {}
+        fq = rec.get("flown_quotes") or {}
+        lines = [
+            f"# {box} Night Line — 2026-09-17",
+            "",
+            f"**Label: {label}**",
+            "",
+            str(rec.get("identity_line") or rec.get("identity") or IDENTITY_DURATION_LINE),
+            "",
+            "Flown cited night against the public product sentence. "
+            "Store Wh OPEN. energy_wh null. Do not invent watt-hours. "
+            "Not a DIE on invented Wh.",
+            "",
+            "## Public product language",
+            "",
+            f'Surface Operations: "{pq.get("surface_ops") or rec.get("product_surface_ops")}"',
+            f'Power: "{pq.get("power") or rec.get("payload_power_quote")}"',
+            "The product page does not print 354 h. Peak vs night keep-alive: OPEN.",
+            "",
+            "## Flown record",
+            "",
+            f"after_sunset_h **{after:g} h**. designed_for_night **false**. "
+            "woke_after_night **false**.",
+            f'"{fq.get("after_sunset") or ""}"',
+            f'"{fq.get("not_designed") or ""}"',
+            "",
+            "## Duration gap (not Wh)",
+            "",
+            f"`{rec.get('identity') or IDENTITY_DURATION_LINE}`",
+            f"Flown **{after:g} h** after sunset vs **{cataldo:g} h** Cataldo/Mason "
+            f"= **{gap:g} h** duration gap. Not a DIE on invented Wh.",
+            "",
+            "store_Wh **OPEN**. energy_wh **null**. Do not multiply >400 W × 354 h.",
+            "",
+            "The label is not a claim that the box will live. "
+            "The human who can lose the box signs. No measurement by us; all values printed "
+            "by the team or NIST.",
+            "",
+        ]
+        dest.write_text("\n".join(lines), encoding="utf-8")
+        return
+    h_night = float(rec["H_night_h"])
     if rec["label"] == LINE_OPEN_TWO_KNOBS:
         table = rec.get("identity_table") or []
         lines = [
@@ -347,16 +394,54 @@ def write_inputs_csv(fix: dict[str, Any], rec: dict[str, Any], dest: Path) -> No
                         "cite": row["reserve_label"],
                     }
                 )
+        if rec.get("label") == CLAIM_VS_WITNESS:
+            w.writerow(
+                {
+                    "input": "identity_line",
+                    "value": rec.get("identity") or IDENTITY_DURATION_LINE,
+                    "unit": "",
+                    "cite": rec.get("identity_line") or "",
+                }
+            )
+            w.writerow(
+                {
+                    "input": "after_sunset_h",
+                    "value": f"{float(rec['after_sunset_h']):g}",
+                    "unit": "h",
+                    "cite": "flown; Firefly wrap-up / LPSC 1958",
+                }
+            )
+            w.writerow(
+                {
+                    "input": "energy_wh",
+                    "value": "null",
+                    "unit": "Wh",
+                    "cite": "OPEN — do not invent watt-hours",
+                }
+            )
+            w.writerow(
+                {
+                    "input": "duration_gap_h",
+                    "value": f"{float(rec['duration_gap_h']):g}",
+                    "unit": "h",
+                    "cite": "Cataldo/Mason 354 h minus flown after_sunset_h",
+                }
+            )
 
 
 def write_receipt(rec: dict[str, Any], report: dict[str, Any], dest: Path) -> None:
-    h_night = float(rec["H_night_h"])
     rows = [
         "NIGHT LINE RECEIPT",
         f"box {rec['box_id']}",
         f"label {rec['label_display']}",
     ]
-    if rec.get("label") == LINE_OPEN_TWO_KNOBS:
+    if rec.get("label") == CLAIM_VS_WITNESS:
+        rows.append(str(rec.get("identity_line") or rec.get("identity") or ""))
+        rows.append(f"after_sunset_h {float(rec['after_sunset_h']):g}")
+        rows.append("energy_wh null")
+        rows.append(f"duration_gap_h {float(rec['duration_gap_h']):g}")
+        rows.append("store OPEN; not DIE on invented Wh")
+    elif rec.get("label") == LINE_OPEN_TWO_KNOBS:
         rows.append(str(rec.get("identity_line") or rec.get("identity") or ""))
         rows.append("no store is chosen")
         for row in rec.get("identity_table") or []:
@@ -365,6 +450,7 @@ def write_receipt(rec: dict[str, Any], report: dict[str, Any], dest: Path) -> No
                 f"load {row['max_avg_hibernation_load_W']:.2f} W"
             )
     elif rec.get("label") == LIVE_IF_STORE_ABOVE:
+        h_night = float(rec["H_night_h"])
         rows.append(str(rec.get("identity_line") or rec.get("identity") or ""))
         rows.append(
             f"nameplate {float(rec['nameplate_line_Wh']):.2f} Wh  "
@@ -377,6 +463,7 @@ def write_receipt(rec: dict[str, Any], report: dict[str, Any], dest: Path) -> No
                 f"usable {float(row['usable_Wh']):.2f} Wh"
             )
     else:
+        h_night = float(rec["H_night_h"])
         hi = rec["hi"]
         brk = {b["knob"]: b for b in rec.get("breaks") or []}
         rows.append(
@@ -451,7 +538,7 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     for path in paths:
         rec = run_one(path, args.out)
-        if rec.get("label") in (LINE_OPEN_TWO_KNOBS, LIVE_IF_STORE_ABOVE):
+        if rec.get("label") in (LINE_OPEN_TWO_KNOBS, LIVE_IF_STORE_ABOVE, CLAIM_VS_WITNESS):
             print(rec["box_id"], rec["label_display"])
             continue
         print(

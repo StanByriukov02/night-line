@@ -20,10 +20,15 @@ SIGMA_W_M2_K4 = 5.670374419e-8
 EDGE_FRAC_OF_STORE = 0.02
 LINE_OPEN_TWO_KNOBS = "LINE_OPEN_TWO_KNOBS"
 LIVE_IF_STORE_ABOVE = "LIVE_IF_STORE_ABOVE"
+CLAIM_VS_WITNESS = "CLAIM_VS_WITNESS"
 ASSUMED_SOC_RESERVE_FRAC = 0.30
 ASSUMED_NAMEPLATE_KWH = (1.0, 2.0, 5.0, 10.0)
 IDENTITY_LINE = "usable_Wh / H_night_h = hibernation load W"
 IDENTITY_STORE_LINE = "P_night_W × H_night_h = nameplate store Wh"
+IDENTITY_DURATION_LINE = (
+    "hours_after_sunset_flown vs 354 h Cataldo/Mason = duration gap (not Wh)"
+)
+CATALDO_NIGHT_H = 354.0
 PKG = Path(__file__).resolve().parent
 BOXES = PKG / "boxes"
 ROOT = PKG.parent
@@ -122,12 +127,20 @@ def public_label(
     open_upward_knob: str | None = None,
     two_knobs_open: bool = False,
     store_open_load_printed: bool = False,
+    claim_vs_witness: bool = False,
 ) -> dict[str, Any]:
     """Label on declared corners only. LIVE_IF_<knob>_BELOW when a knob has no upper bound.
 
     Store and hibernation load both OPEN → LINE_OPEN_TWO_KNOBS (identity line).
     Load printed and store OPEN → LIVE_IF_STORE_ABOVE (nameplate P×H).
+    Flown cited night vs public product sentence → CLAIM_VS_WITNESS (no Wh line).
     """
+    if claim_vs_witness:
+        return {
+            "label": CLAIM_VS_WITNESS,
+            "edge": False,
+            "worst_corner_margin_Wh": None,
+        }
     if two_knobs_open:
         return {
             "label": LINE_OPEN_TWO_KNOBS,
@@ -223,6 +236,10 @@ def store_open_load_printed(fix: dict[str, Any]) -> bool:
         and st.get("value") is None
         and pk.get("value") is not None
     )
+
+
+def claim_vs_witness_of(fix: dict[str, Any]) -> bool:
+    return str(fix.get("label_family") or "") == CLAIM_VS_WITNESS
 
 
 def identity_hibernation_table(
@@ -642,6 +659,92 @@ def _breaks(
 
 
 def evaluate(fix: dict[str, Any]) -> dict[str, Any]:
+    if claim_vs_witness_of(fix):
+        energy_spec = field(fix, "energy_wh")
+        store_spec = field(fix, "store_Wh")
+        pk = field(fix, "P_keepalive_W")
+        if energy_spec.get("value") is not None:
+            raise ValueError("REFUSE energy_wh filled")
+        if store_spec.get("value") is not None:
+            raise ValueError("REFUSE store_Wh filled")
+        if pk.get("value") is not None:
+            raise ValueError("REFUSE P_keepalive_W filled")
+        after = float(field(fix, "after_sunset_h")["value"])
+        cataldo = float(field(fix, "cataldo_mason_night_h")["value"])
+        if abs(cataldo - CATALDO_NIGHT_H) > 1e-12:
+            raise ValueError("Cataldo/Mason night hours must stay 354")
+        duration_gap_h = cataldo - after
+        power_spec = field(fix, "payload_power_W")
+        product_ops = str(field(fix, "product_surface_ops").get("value") or "")
+        lab = public_label([], claim_vs_witness=True)
+        identity = (
+            f"{IDENTITY_DURATION_LINE} "
+            f"({after:g} h flown vs {cataldo:g} h = {duration_gap_h:g} h gap)."
+        )
+        rec: dict[str, Any] = {
+            "schema": "night_line_record_v1",
+            "box": fix.get("name"),
+            "box_id": fix.get("box_id"),
+            "mission": fix.get("mission"),
+            "label": lab["label"],
+            "label_display": lab["label"],
+            "edge": False,
+            "worst_corner_margin_Wh": None,
+            "store_Wh": None,
+            "energy_wh": None,
+            "P_keepalive_W": None,
+            "payload_power_W": float(power_spec["value"]),
+            "payload_power_quote": str(power_spec.get("quote") or ""),
+            "peak_vs_night_keepalive": "OPEN",
+            "product_surface_ops": product_ops,
+            "product_claim_prints_354_h": False,
+            "after_sunset_h": after,
+            "designed_for_night": False,
+            "woke_after_night": False,
+            "cataldo_mason_night_h": cataldo,
+            "H_night_h": None,
+            "duration_gap_h": duration_gap_h,
+            "identity": IDENTITY_DURATION_LINE,
+            "identity_line": identity,
+            "T_box_K": None,
+            "T_env_K": None,
+            "P_electronics_W": None,
+            "electronics_hi_open": False,
+            "p_night_threshold_W": None,
+            "p_night_threshold_soc8_W": None,
+            "ladder": [],
+            "ladder_soc8": [],
+            "lo": None,
+            "hi": None,
+            "corners": [],
+            "breaks": [],
+            "electrical_model": {
+                "P_elec": IDENTITY_DURATION_LINE,
+                "reason": (
+                    "Flown hours vs Cataldo/Mason darkness. Store OPEN. "
+                    "Do not invent watt-hours. Do not print DIE on invented Wh. "
+                    "Do not run Fourier leak."
+                ),
+                "cite": str(fix.get("electrical_model") or IDENTITY_DURATION_LINE),
+            },
+            "product_quotes": {
+                "surface_ops": product_ops,
+                "power": str(power_spec.get("quote") or ""),
+            },
+            "flown_quotes": {
+                "after_sunset": str(field(fix, "after_sunset_h").get("quote") or ""),
+                "not_designed": str(field(fix, "designed_for_night").get("quote") or ""),
+                "batteries": str(field(fix, "woke_after_night").get("quote") or ""),
+            },
+            "witness": "flown",
+            "witness_id": str(fix.get("witness_id") or ""),
+            "witness_expected": "flown",
+            "sources_dir": fix.get("sources_dir"),
+        }
+        if rec.get("E_night_Wh") is not None:
+            raise ValueError("REFUSE watt-hours computed")
+        _refuse(rec)
+        return rec
     h_night = float(field_value(fix, "H_night_h"))
     if store_load_both_open(fix):
         table = identity_hibernation_table(h_night=h_night)

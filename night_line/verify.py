@@ -197,6 +197,34 @@ def verify_box(
     else:
         indep = None
 
+    if rec.get("label") == "CLAIM_VS_WITNESS":
+        after = float(rec["after_sunset_h"])
+        cataldo = float(rec["cataldo_mason_night_h"])
+        gap = cataldo - after
+        if abs(after - 5.0) > 1e-12:
+            ladder_ok = False
+        if rec.get("energy_wh") is not None:
+            ladder_ok = False
+        if rec.get("store_Wh") is not None:
+            ladder_ok = False
+        if rec.get("E_night_Wh") is not None:
+            ladder_ok = False
+        if abs(float(rec["duration_gap_h"]) - gap) > 1e-12:
+            ladder_ok = False
+        if abs(gap - 349.0) > 1e-12:
+            ladder_ok = False
+        return {
+            "sources_sha256_ok": sources_ok,
+            "ladder_recompute_ok": ladder_ok,
+            "independent_ladder": None,
+            "independent_worst_corner": None,
+            "url_status": url_status,
+            "source_files": hash_rows,
+            "open_upward_knobs": ["store_Wh", "energy_wh", "P_keepalive_W"],
+            "plain_LIVE_forbidden": True,
+            "ok": sources_ok and ladder_ok,
+        }
+
     if rec.get("label") == "LIVE_IF_STORE_ABOVE":
         p_load = float(rec["P_keepalive_W"])
         h = float(rec["H_night_h"])

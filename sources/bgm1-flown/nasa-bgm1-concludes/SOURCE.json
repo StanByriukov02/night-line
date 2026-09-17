@@ -1,0 +1,25 @@
+{
+  "url": "https://www.nasa.gov/news-release/nasa-science-continues-after-fireflys-first-moon-mission-concludes/",
+  "title": "NASA Science Continues After Firefly’s First Moon Mission Concludes",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "landed_utc=2025-03-02",
+    "after_sunset_h=multiple_hours",
+    "site=Mare_Crisium",
+    "energy_wh=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "status_20260917": 200,
+  "quote_night": "The mission lasted for about 14 days, or the equivalent of one lunar day, and multiple hours into the lunar night before coming to an end.",
+  "note": "NASA does not print 5.0 h on this page (multiple hours). 5 h is Firefly wrap-up / LPSC 1958. Wh not printed.",
+  "sha256_by_file": {
+    "page.html": "9b7917b11932832aa5886a56190e93d0504f2522cb8022e7fda188c7c32ff451",
+    "page.txt": "29a2414038c41ef7c32be9a4dda43dde8caca498cbb5cb00a085d637bff71d52"
+  },
+  "sha256": "9b7917b11932832aa5886a56190e93d0504f2522cb8022e7fda188c7c32ff451",
+  "bytes": 291039,
+  "fetched_utc": "2026-09-17T09:47:49Z",
+  "redacted_personal_email": true,
+  "omitted_binaries": []
+}

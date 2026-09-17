@@ -36,7 +36,7 @@
     "label": {
       "description": "On declared corners only; not a claim that the box will live.",
       "oneOf": [
-        { "type": "string", "enum": ["LIVE", "DIE", "BRACKET", "LINE_OPEN_TWO_KNOBS", "LIVE_IF_STORE_ABOVE"] },
+        { "type": "string", "enum": ["LIVE", "DIE", "BRACKET", "LINE_OPEN_TWO_KNOBS", "LIVE_IF_STORE_ABOVE", "CLAIM_VS_WITNESS"] },
         {
           "type": "string",
           "pattern": "^LIVE_IF_[A-Z0-9_]+_BELOW$"
@@ -179,7 +179,8 @@
     "witness": {
       "oneOf": [
         { "const": "pending" },
-        { "const": "first sunset after landing" }
+        { "const": "first sunset after landing" },
+        { "const": "flown" }
       ]
     },
     "verifier": {

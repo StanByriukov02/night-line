@@ -1,0 +1,32 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1958.pdf",
+  "title": "LPSC 2026 1958: Blue Ghost Mission 1 Mission Retrospective (Tackett/Marlin/Coogan)",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "after_sunset_h=5",
+    "vehicle_power_W=400",
+    "designed_for_night=false",
+    "woke_after_night=false",
+    "landed_utc=2025-03-02",
+    "site=Mare_Crisium",
+    "energy_wh=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED",
+    "P_keepalive_W=NOT_PRINTED",
+    "peak_vs_night_keepalive=OPEN"
+  ],
+  "status_20260917": 200,
+  "quote_after_sunset": "As intended, Blue Ghost operated five hours after the end of the lunar day, sending back photos of the sunset and possible dust levitation, a phenomenon first reported by Apollo astronauts.",
+  "quote_not_designed": "The mission was concluded as Blue Ghost was not designed to survive the cold lunar night.",
+  "quote_power": "With 400 watts of power",
+  "note": "Prints five hours after the end of the lunar day and 400 watts of power as vehicle resource (with comms; not labeled peak vs night keep-alive). Not designed to survive the cold lunar night. Looking-forward BGM2/LuSEE is not mixed into the BGM1 court.",
+  "sha256_by_file": {
+    "page.pdf": "7ad49212041219e9f63b9644825d39cdad0bbcc2832f975b8803194677e52b0a",
+    "page.txt": "c2bb6baca9d603ed580b22be0625edd3f5964d6c3a6b3b78be51167f2bb2bcef"
+  },
+  "sha256": "7ad49212041219e9f63b9644825d39cdad0bbcc2832f975b8803194677e52b0a",
+  "bytes": 67111,
+  "fetched_utc": "2026-09-17T09:47:49Z",
+  "redacted_personal_email": true,
+  "omitted_binaries": []
+}

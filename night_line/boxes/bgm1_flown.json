@@ -1,0 +1,212 @@
+{
+  "schema": "night_line_box_v1",
+  "box_id": "bgm1",
+  "name": "Firefly Blue Ghost Mission 1",
+  "full_name": "Firefly Aerospace Blue Ghost Mission 1 (CLPS) — Mare Crisium",
+  "label_family": "CLAIM_VS_WITNESS",
+  "named_box": true,
+  "pre_landing": false,
+  "flown": true,
+  "landing_status": "landed_2025-03-02",
+  "witness_id": "firefly_blue_ghost_m1",
+  "mission": "Blue Ghost Mission 1 / NASA CLPS",
+  "lander": "Firefly Blue Ghost",
+  "org": "Firefly Aerospace",
+  "note": "First AFTER: flown cited night against the current public product sentence. Product Surface Operations: Lunar day + night; Power > 400 W. Flown: 5 h after sunset, designed_for_night false, did not wake after a full night. store_Wh / energy_wh OPEN — do not invent watt-hours. Product page does not print 354 h. Peak vs night keep-alive OPEN. Do not mix BGM2.",
+  "electrical_model": "CLAIM_VS_WITNESS. No Fourier leak. No P×H watt-hours. Store OPEN so 354 h watt-hours cannot be computed. Identity is hours_after_sunset_flown vs 354 h Cataldo/Mason as a duration gap, not a DIE on invented Wh.",
+  "witness_keys": [
+    "firefly_blue_ghost_m1"
+  ],
+  "witness_note": "flown — firefly_blue_ghost_m1 landed 2025-03-02 Mare Crisium. after_sunset_h 5.0 cited. designed_for_night false. woke_after_night false. energy_wh null. (NASA/Firefly cited, not our measurement).",
+  "killer_claim_vs_witness": "store_Wh OPEN; energy_wh OPEN; cannot compute 354 h watt-hours. Product 'Lunar day + night' is not a 354 h promise (page does not print 354 h). Flown 5 h after sunset; designed_for_night false; did not wake after a full night. >400 W is a product/bus figure — peak vs night keep-alive OPEN.",
+  "thermal_hold_md": "No printed BGM1 night hold T_box or sink K on the product page or the wrap-up. LPSC 1958: not designed to survive the cold lunar night. Do not invent T_env.",
+  "alloy_md": "No printed night-path alloy for watt-hours. Fourier not run. Store OPEN.",
+  "honesty_md": "We did not measure; NASA/Firefly/LPSC 1958 cited. Product page does not print 354 h — do not call 'Lunar day + night' a 354 h watt-hours promise. >400 W / 400 watts is not labeled peak vs night keep-alive. energy_wh not printed. Do not mix Blue Ghost Mission 2.",
+  "fields": {
+    "product_surface_ops": {
+      "value": "Lunar day + night",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "Lunar day + night",
+      "cite": "Firefly Blue Ghost product page, Payload Resources, Surface Operations: Lunar day + night. Page does not print 354 h.",
+      "url": "https://fireflyspace.com/blue-ghost/",
+      "source_slug": "firefly-blue-ghost-product",
+      "numbers_used": "product_surface_ops=lunar_day_plus_night",
+      "page_or_figure": "Payload Resources"
+    },
+    "payload_power_W": {
+      "value": 400.0,
+      "unit": "W",
+      "tier": "cited_public",
+      "quote": "> 400 W",
+      "cite": "Firefly Blue Ghost product page, Payload Resources, Power: > 400 W (greater-than printed). LPSC 2026 1958: With 400 watts of power (vehicle resource with comms; not labeled night keep-alive). Peak vs night keep-alive OPEN. Do not multiply by 354 h.",
+      "url": "https://fireflyspace.com/blue-ghost/",
+      "source_slug": "firefly-blue-ghost-product",
+      "numbers_used": "payload_power_W=>400",
+      "page_or_figure": "Payload Resources / LPSC 1958 Vehicle"
+    },
+    "peak_vs_night_keepalive": {
+      "value": null,
+      "unit": "",
+      "tier": "OPEN",
+      "cite": "OPEN — product prints > 400 W under Power; LPSC 1958 prints 400 watts of power with comms. Neither labels peak vs night keep-alive.",
+      "source_slug": "firefly-blue-ghost-product",
+      "numbers_used": "peak_vs_night_keepalive=OPEN",
+      "page_or_figure": "Payload Resources Power; LPSC 1958 Vehicle",
+      "close_with": "Printed label: peak, bus, or night keep-alive watts for this lander."
+    },
+    "store_Wh": {
+      "value": null,
+      "unit": "Wh",
+      "tier": "OPEN",
+      "cite": "OPEN — Wh not printed on the product page, wrap-up, NASA release, or LPSC 1958. Do not invent watt-hours.",
+      "source_slug": "firefly-blue-ghost-product",
+      "numbers_used": "store_Wh=NOT_PRINTED",
+      "page_or_figure": "product / wrap-up / NASA / LPSC 1958",
+      "close_with": "Printed Blue Ghost nameplate or usable night store Wh."
+    },
+    "energy_wh": {
+      "value": null,
+      "unit": "Wh",
+      "tier": "OPEN",
+      "cite": "OPEN — flown energy_wh stays null. Witness firefly_blue_ghost_m1 energy_wh is null. Do not fill.",
+      "source_slug": "firefly-bgm1-wrapup",
+      "numbers_used": "energy_wh=NOT_PRINTED",
+      "page_or_figure": "wrap-up / NASA / LPSC 1958 / witness",
+      "close_with": "Printed flown night watt-hours. Do not invent."
+    },
+    "P_keepalive_W": {
+      "value": null,
+      "unit": "W",
+      "tier": "OPEN",
+      "cite": "OPEN — night keep-alive watts not printed. Do not treat >400 W / 400 watts as P_night.",
+      "source_slug": "firefly-blue-ghost-product",
+      "numbers_used": "P_keepalive_W=NOT_PRINTED",
+      "page_or_figure": "Payload Resources Power; LPSC 1958 Vehicle",
+      "close_with": "Printed night keep-alive or hibernation load W."
+    },
+    "after_sunset_h": {
+      "value": 5.0,
+      "unit": "h",
+      "tier": "cited_public",
+      "quote": "operating just over 5 hours into the lunar night with the final data received around 6:15 pm CDT on March 16",
+      "cite": "Firefly wrap-up 2025-03-17: operating just over 5 hours into the lunar night; Following the sunset, Blue Ghost operated for 5 hours into the lunar night. LPSC 2026 1958: As intended, Blue Ghost operated five hours after the end of the lunar day. NASA release prints multiple hours, not 5.0.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-successfully-completes-14-days-of-surface-operations-on-the-moon/",
+      "source_slug": "firefly-bgm1-wrapup",
+      "numbers_used": "after_sunset_h=5",
+      "page_or_figure": "Firefly wrap-up lead; LPSC 1958 End Of Mission"
+    },
+    "designed_for_night": {
+      "value": false,
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "The mission was concluded as Blue Ghost was not designed to survive the cold lunar night.",
+      "cite": "LPSC 2026 1958 End Of Mission. Witness designed_for_night false.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1958.pdf",
+      "source_slug": "lpsc-2026-1958",
+      "numbers_used": "designed_for_night=false",
+      "page_or_figure": "End Of Mission"
+    },
+    "woke_after_night": {
+      "value": false,
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "Eventually, the batteries depleted, and the lander avionics and radios shut down.",
+      "cite": "LPSC 2026 1958: batteries depleted; avionics and radios shut down; not designed to survive the cold lunar night. No wake after a full night printed. Witness woke_after_night false.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1958.pdf",
+      "source_slug": "lpsc-2026-1958",
+      "numbers_used": "woke_after_night=false",
+      "page_or_figure": "End Of Mission"
+    },
+    "cataldo_mason_night_h": {
+      "value": 354.0,
+      "unit": "h",
+      "tier": "cited_public",
+      "quote": "A complete lunar day cycle is 354 hours of sunlight and 354 hours of darkness.",
+      "cite": "Cataldo & Mason, Survive and Operate Through the Lunar Night Workshop 2018 (LPI Contrib. 2106): 354 h of darkness. Duration identity only. Firefly product page does not print 354 h. Not watt-hours Wh.",
+      "url": "https://www.lpi.usra.edu/lpi/contribution_docs/LPI-002106.pdf",
+      "source_slug": "cataldo-mason-2018-lpi-2106",
+      "numbers_used": "hours_night=354",
+      "page_or_figure": "Cataldo & Mason abstract in LPI-002106"
+    },
+    "H_night_h": {
+      "value": null,
+      "unit": "h",
+      "tier": "OPEN",
+      "cite": "OPEN as this box's watt-hours night length. Product page does not print 354 h. Cataldo/Mason 354 h is duration identity only, not a Blue Ghost printed night.",
+      "source_slug": "firefly-blue-ghost-product",
+      "numbers_used": "hours_night=NOT_PRINTED",
+      "page_or_figure": "Payload Resources Surface Operations",
+      "close_with": "Printed Blue Ghost full-night hours if they claim watt-hours store against it."
+    },
+    "daylight_ops_h": {
+      "value": 346.0,
+      "unit": "h",
+      "tier": "cited_public",
+      "quote": "completing more than 14 days of surface operations (346 hours of daylight)",
+      "cite": "Firefly wrap-up 2025-03-17: 346 hours of daylight. Not watt-hours Wh.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-successfully-completes-14-days-of-surface-operations-on-the-moon/",
+      "source_slug": "firefly-bgm1-wrapup",
+      "numbers_used": "daylight_ops_h=346",
+      "page_or_figure": "wrap-up lead"
+    },
+    "landing_date": {
+      "value": "2025-03-02",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "Firefly wrap-up / NASA: landing March 2. Witness landed_utc 2025-03-02.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-successfully-completes-14-days-of-surface-operations-on-the-moon/",
+      "source_slug": "firefly-bgm1-wrapup",
+      "numbers_used": "landed_utc=2025-03-02",
+      "page_or_figure": "wrap-up lead; NASA release"
+    },
+    "landing_site_name": {
+      "value": "Mare Crisium",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "NASA release: Mare Crisium basin. LPSC 1958: Mare Crisium. Witness site Mare Crisium.",
+      "url": "https://www.nasa.gov/news-release/nasa-science-continues-after-fireflys-first-moon-mission-concludes/",
+      "source_slug": "nasa-bgm1-concludes",
+      "numbers_used": "site=Mare_Crisium",
+      "page_or_figure": "NASA release lead; LPSC 1958 Introduction"
+    }
+  },
+  "geometry_bracket": {
+    "honesty": "OPEN. Fourier not run. Store OPEN. CLAIM_VS_WITNESS is product sentence vs flown hours, not leak."
+  },
+  "k_path": {
+    "nist_id": null,
+    "temper_match": null,
+    "tier": "OPEN",
+    "source_slug": null,
+    "numbers_used": null,
+            "cite": "Fourier not run."
+  },
+  "holes": [
+    {
+      "id": "store_Wh",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "No printed Blue Ghost night store Wh. Do not invent watt-hours."
+    },
+    {
+      "id": "P_keepalive_W",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": ">400 W / 400 watts is product/bus, not printed night keep-alive."
+    },
+    {
+      "id": "peak_vs_night_keepalive",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "Peak vs night keep-alive OPEN on the product Power line."
+    }
+  ],
+  "sources_dir": "sources/bgm1-flown"
+}

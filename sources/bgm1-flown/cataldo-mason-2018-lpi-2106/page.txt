@@ -1,0 +1,2366 @@
+Program 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+  
+  
+ 
+Survive and Operate Through  
+the Lunar Night Workshop 
+ 
+November 13, 2018  •  Columbia, Maryland 
+ 
+Institutional Support 
+ 
+NASA Solar System Exploration Research Virtual Institute 
+NASA Lunar Exploration Analysis Group 
+Lunar and Planetary Institute 
+Universities Space Research Association 
+National Aeronautics and Space Administration 
+ 
+Conveners 
+ 
+Renee Weber 
+NASA Marshall Space flight Center 
+Andrew Petro 
+NASA Headquarters 
+ 
+Organizing Committee 
+ 
+Bradley Bailey 
+NASA Ames Research Center/Solar System Exploration Virtual Institute  
+ 
+D. Benjamin J. Bussey 
+NASA Headquarters 
+ 
+Gregory Chavers 
+NASA Marshall Space Flight Center 
+ 
+David Korsmeyer 
+NASA Ames Research Center 
+ 
+Samuel Lawrence 
+NASA Johnson Space Center 
+ 
+Sarah Noble 
+NASA Headquarters 
+ 
+Andrew Petro 
+NASA Headquarters 
+ 
+Greg Schmidt 
+NASA Ames Research Center/Solar System Exploration Virtual Institute  
+ 
+Renee Weber 
+NASA Marshall Space Flight Center 
+ 
+Alison Zuniga 
+NASA Ames Research Center 
+ 
+Lunar and Planetary Institute   3600 Bay Area Boulevard   Houston TX 77058-1113 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Abstracts for this workshop are available via the workshop website at  
+https://www.hou.usra.edu/meetings/survivethenight2018/  
+Abstracts can be cited as  
+Author A. B. and Author C. D. (2018) Title of abstract. In Survive and Operate Through the Lunar Night , 
+Abstract #XXXX. LPI Contribution No. 2106, Lunar and Planetary Institute, Houston. 
+ 
+ 
+ 
+Survive and Operate Through the Lunar Night Workshop  
+Tuesday, November 13, 2018 
+USRA Headquarters, Columbia, MD 
+ 
+Agenda Time Speakers 
+Welcome and Workshop Objectives  8:30–8:40 a.m. Co-Chairs: Andrew Petro, NASA HQ 
+ Renee Weber, NASA MSFC 
+Overview of Lunar Day/Night Environmental Conditions — 
+Including Various Latitudes, Polar Regions, Permanently 
+Shadowed Regions, Peaks of Eternal Light 
+8:40–9:00 a.m. Brett Denevi, JHU APL 
+ 
+Lessons Learned from Missions that Have Survived Lunar 
+Night (Surveyor, ALSEP, Lunokhod)  
+9:00–9:20 a.m. Ron Creel, NASA Retired 
+Panel Discussion:  Evolving Requirements from Survival to 
+Continuous Operations for Science, Exploration, and 
+Commercial Activities 
+ 
+9:20–10:20 a.m. 
+ 
+BREAK 
+ 
+10:40–11:40 a.m. 
+Science Perspective 
+Sam Lawrence, NASA JSC:  ASM/NEXT- 
+ SAT Briefing 
+ 
+Exploration Perspective 
+Ben Bussey, NASA HQ 
+ 
+Panel 
+Greg Chavers, NASA MSFC/HQ 
+Dave Blewett, JHU APL 
+Dana Hurley, JHU APL 
+James Carpenter, ESA 
+LUNCH 11:40 a.m.–
+1:00 p.m. 
+On your own 
+Panel Discussions:  State of the Art, Potential Solutions, and 
+Technology Gaps 
+ 
+Panel 1:  Power Generation, Storage, and Distribution  
+ 
+Panel 2:  Thermal Management Systems, Strategies, and 
+Component Design Features 
+1:00–2:00 p.m. 
+ 
+ 
+ 
+ 
+BREAK 
+ 
+2:15–3:15 p.m. 
+Power Panel 
+Moderator:  Lee Mason, NASA STMD 
+Len Dudzinski, NASA HQ:  RPS and Fission 
+Bob Sievers, Teledyne:  Fuel Cells, RTGs 
+Erik Brandon, JPL:  Batteries 
+Paul Alburtus, ARPA-e:  Energy Storage 
+ 
+Thermal Management Panel 
+Moderator:  Rubik Sheth, NASA JSC 
+Eric Sunada, JPL:  Robotic Missions 
+Chad Bower, Paragon:  Commercial  
+ Systems 
+Kust Sacksteder, NASA GRC:  Thermal  
+ Wadi 
+Commercial Space Panel:  Understanding the Economic 
+Business Case for Creating Lunar Infrastructure Services and 
+Lunar Markets 
+3:15–4:00 p.m. Moderator:  Alison Zuniga, NASA ARC 
+George Sowers, Colorado School of Mines 
+Dennis Poulos, Poulos Air and Space, Inc. 
+Dennis Wingo, SkyCorp Inc. 
+Mahamed Ragab, iSpace Technologies, Inc. 
+Rolf Erdmann, PT Scientists 
+International Space University Summer Project Presentation 
+“Lunar Night Survival” 
+4:00–4:20 p.m. Matt Henderson and Ilaria Cinelli, ISU 
+Open Discussion and Conclusions 4:20–5:30 p.m. Co-Chairs, All Workshop Participants 
+Poster Session Wednesday Evening, November 14 
+ 
+5:00–7:00 p.m. Posters Presented on Wednesday Evening 
+During the 2019 LEAG Meeting 
+
+ 
+ 
+Wednesday, November 14, 2018 
+POSTER SESSION:  SURVIVE AND OPERATE THROUGH THE LUNAR NIGHT WORKSHOP 
+5:00–7:00 p.m.   USRA Education Gallery  
+ 
+Authors Title and Summary 
+Evans M. E.   Ignatiev  A. Lunar Superconducting Magnetic Energy Storage (LSMES) [#7001] 
+This study seeks a method to efficiently store electrical energy without using chemical 
+batteries, by applying terrestrial technology based on a superconducting coil and a 
+persistent magnetic field located in a lunar permanently shadowed  crater. 
+Nandini K.   Usha  K.   Srinivasan  M. S.   
+Pramod M.   Satyanarayana  P.   
+Sankaran M. 
+Passive Survivability of 18650 Lithium-Ion Cells Through Lunar Night 
+Environment Scenario [#7002] 
+Present study describes passive survivability of commercially-off-the-shelf 18650 
+lithium-ion cells tested in an environmental scenario similar to onset and progress of 
+lunar night that is at cryogenic temperatures under vacuum for 336 earth  hours. 
+Poulos D. D. Data Encoded Laser Wireless Power (DELWP) for Lunar Polar Applications [#7003] 
+Data encoded high power fiber lasers illuminating specialized tuned photovoltaic 
+panels designed for power transfer will provide reliable, continuous power and data 
+during periods of limited solar illumination, including into the dark polar  craters. 
+Van Cleve J. E.   Weinberg  J. D.   
+Neal C. R.   Elphic  R. C.   Weed  K.   
+Mills G.   Dissly  R. 
+Darkness Visible:  Instrumentation and Thermal Design to Access the 
+Hidden Moon [#7005] 
+We show mission concepts for a long-lived geophysical network and in-situ 
+investigation of volatiles in the lunar polar cold traps, and Ball instrument and thermal  
+technology enabling survival, situational awareness, and operations in the dark  Moon. 
+Herring J. S.   Mackwell  S.   Pestak  C. Small Modular Fission Reactors that Enable Affordable and Sustainable 
+Lunar Enterprise [#7006] 
+We will present the results of a study looking at the use of a LEU -based Small Modular 
+Fission Reactor (SMFR) in the 40 to 100 kW range for lunar activities, building on the 
+results of NASA’s HEU-based KiloPower project. 
+Colaprete A.   Elphic  R. C.   Shirley  M.   
+Siegler M. 
+Multi-Lunar Day Polar Missions with a Solar-Only Rover [#7007] 
+The lunar poles offer opportunities for solar-only rovers to survive and operate many 
+lunar days. Presented here are examples of rover traverses that take advantage of the 
+unique polar illumination environments to operate across multiple lunar days. 
+Eppler D. B.   Budden  N. A. Lighting Constraints to Lunar Surface Operations [#7008] 
+An investigation into lunar surface ambient lighting levels indicates that, for most 
+nearside locations, illumination will be adequate throughout a large portion of the 
+lunar night to conduct surface activities. 
+Bugby D. C.   Clark  P. E.   
+Hofmann D. C. 
+High Performance Thermal Switch for Lunar Night Survival [#7009] 
+A high performance differential thermal expansion (DTE) thermal switch was 
+developed to enable solar/battery powered lunar surface science payloads. The 
+measured thermal switch performance is:  5 W/K ON, 0.002 W/K OFF, and 2500:1  
+ON/OFF ratio. 
+Nunes D. C.   Carpenter  K.   
+Haynes M.   de  la Croix J. P. 
+Shifting the Paradigm of Coping with Nyx on the Moon — a Ground-Penetrating 
+Radar Case [#7012] 
+A multi-static, autonomous ground-penetrating radar instrument, MARGE, will 
+incorporate strategies to be more tolerant of the lunar diurnal thermal cycle. 
+Wani S. C.   Shah  U. B.   
+Kothandhapani A.   Garg  P.   
+Sahai M.   Garg  M.   Nair  S. 
+Requirement Analysis and Night Survival Concept for Z-01 Landing Mission Using 
+Fuel Cell [#7014] 
+Only three missions have survived the lunar night, using Radioisotope Thermo -Electric 
+Generators and Radioisotope Heating Units. This paper discusses the challenges to 
+survive lunar night and presents a fuel cell-based concept as an alternative. 
+Plata D. S. Lunar Roads:  Strategies for Remaining in the  Sunlight [#7017] 
+By driving westward on the slowly rotating Moon, telerobots could remain in the 
+sunlight while compressing the regolith in order to make basic, reduce -dust roads. 
+  
+ 
+Authors Title and Summary 
+Powell T. M.   Siegler  M. A.   
+Molaro J. L.   Paige  D. A. 
+Leveraging In-Situ Regolith Properties for Nighttime Heating [#7018] 
+Despite large temperature fluctuations at the lunar surface, thermally coupling to 
+warm nighttime materials (rocks, subsurface, etc.) present in-situ might provide some 
+heating and reduce the engineering payload necessary for surviving the night. 
+Dillon R. P.   Borgonia  J-P. C.   
+Roberts S. N.   Hofmann  D. C.   
+Kennett A.   Firdosy  S. A.   
+Wilcox B. H.   Hales  S.   Smith  J. D.   
+Schuler J.   McEnerney  B.   
+Shapiro A. A. 
+Bulk Metallic Glass Gears for Lunar Night Capable Actuators [#7019] 
+BMG Gears is developing unheated, cold-capable gearboxes for use in cryogenic 
+environments such as lunar night. The enabling alloy properties, cryogenic test 
+performance, part processing, qualification, TRL, and infusion challenge s 
+are discussed. 
+Carroll K. A. Lunar Surface Gravimetry Surveying Through the Lunar Night [#7020] 
+Lunar surface gravimetry is a powerful technique for probing the Moon’s subsurface 
+structure, using a gravimeter on a static lunar lander or on a lunar rover. 
+Measurements spanning multiple lunar days will increase accuracy and  resolution. 
+Guven U. G.   Singh  A. K. S. Utilization of Nuclear Power for Moon Missions:  Nuclear Power Generation Using 
+Helium Cooled Reactor for Moon Habitats [#7021] 
+Abstract discusses using helium cooled nuclear reactors in Moon habitats to supply 
+continuous power to the habitat as well as any future processing/manufacturing 
+plants on the Moon. 
+Nieczkoski S.   Dreyer  C. B.   Blair  B.   
+Rostami J. 
+Material Selection for Mechanical Mechanism Survival and Use in the 
+Lunar Night [#7023] 
+Survival of spacecraft mechanisms is challenging due to low polar temperatures. 
+Structural and cutting materials enabling drilling and mining under deep cryogenic  
+conditions are currently being tested under the NASA Early Stage Innovation  program. 
+Guzik M. C.   Gilligan  R. P.   
+Smith P. J.   Jakupca  I. J. 
+Regenerative Fuel Cell-Based Energy Storage Systems for Lunar 
+Surface Exploration [#7024] 
+The data presented in this paper provides a method to determine the critical 
+parameter values of a Regenerative Fuel Cell (RFC) system in order to perform high -
+level mission architecture trades, with a focus on surviving the lunar night. 
+Williams J.-P.   Greenhagen  B. T.   
+Paige D. A. 
+Seasonal Temperature Variations in the Polar Regions of the Moon [#7026] 
+Mapping of temperatures in the south polar region with LRO’s Diviner Lunar 
+Radiometer Experiment shows how temperatures within 5 degrees of the pole vary 
+considerably with season. 
+Eubanks T. M. MilliWatt Lunar VLBI Beacons:  Surviving the Lunar  Night [#7027] 
+MilliWatt radio beacons could establish a lunar VLBI network for science and 
+navigation in cislunar space, ideally operating for decades. Small, gm-scale 
+Americium-241 batteries are proposed to meet the power and longevity needs of 
+these networks. 
+Fuqua Haviland H.   Poppe  A. R.   
+Fatemi S.   Delory  G. 
+The Importance of Nightside Magnetometer Observations for Electromagnetic 
+Sounding of the Moon [#7010] 
+Nightside Time Domain Electromagnetic Sounding has the capability to advance the 
+state of knowledge of the field of lunar science. This requires magnetometer 
+operations to withstand the harsh conditions of the lunar night. 
+Ignatiev A. The Use of Lunar Resources for Energy Generation on the Moon [#7013] 
+The resources of the Moon can be used to develop an electrical energy system for the 
+Moon. This can be accomplished by leveraging vacuum deposition technology and 
+lunar resources to fabricate a low-cost and scalable lunar power grid. 
+Baiden G. R.   Blair  B. R. Adapting Terrestrial Technology to the Design of a Night-Survivable 10 Meter Lunar 
+Polar Prospecting Drill [#7016] 
+This paper will explore the possibility of a 10 meter cryogenic lunar polar drill that 
+could ‘survive the night’ and that would enable the collection of scientific data that 
+could validate current models for polar resources. 
+  
+ 
+Authors Title and Summary 
+Vaughan R. Mission Design and Implementation Considerations for Lunar Night  Survival [#7029] 
+We present some of the design, development, cost, and schedule impacts of dealing 
+with problematic night time lunar conditions, whether for near-equatorial or near-
+polar landed lunar missions. 
+Farmer J. F.   Alvarez -Hernandez A.   
+Breeding S. P.   Lowery  J. E. 
+Advanced Thermal Techniques and Systems Design Enable Long Duration, Continuous 
+Day/Night Operation of Robotic Science Landers and Payloads on the 
+Lunar Surface [#7030] 
+Recent developments in NASA and commercial space capabilities and plans support 
+and call for increased exploration of the lunar surface. Lunar exploration objectives 
+vary widely from geophysical research to human exploration and 
+resource prospecting. 
+Clark P. E.   Bugby  D. C.   
+Hofmann D. C. 
+Low-Cost Distributed Lunar Surface Networks Enabled by High Performance 
+Thermal Components [#7031] 
+Credible opportunities for delivery of small payloads to the lunar surface via 
+commercial landers are emerging in the coming decade. 
+Cataldo R. L.   Mason  L. S. Lunar Night Survivability Achieved by Radioisotope and Fission Power System 
+Technology [#7032] 
+Options for advanced RPS and Kilopower systems will be discussed and compared to 
+alternate power system solutions. 
+Morrison C. G.   Deason  W.   
+Eades M. J.   Judd  S.   Patel  V.   
+Reed M.   Venneri  P. 
+The Pylon:  Near -Term Commercial LEU Nuclear Fission Power for Lunar 
+Applications [#7033] 
+Nuclear energy provides not only the ability to survive the 354-hour lunar night, but 
+the ability to thrive. 
+Hecht M. H.   Lubin  P. Satellite Beamed Power for Lunar Surface Assets [#7034] 
+The confluence of several factors now make beamed power systems practical for solar 
+system exploration in the near-term. This is particularly true for lunar exploration. 
+Barnhard G. Challenges of Space Power Beaming: Mission Enabling Technology for Continuous 
+Lunar Operations [#7035] 
+This presentation will outline opportunities to leverage and extend the Xtraordinary 
+Innovative Space Partnerships, Inc. (XISP-Inc) Technology Development, 
+Demonstration, and Deployment (TD3) mission for Space-to-Space Power Beaming 
+(SSPB). 
+ 
+CONTENTS  
+ 
+Adapting Terrestrial Technology to the Design of a Night-Survivable 10 Meter Lunar Polar 
+Prospecting Drill 
+G. R. Baiden and B. R. Blair ..................................................................................................................... 7016 
+ 
+Challenges of Space Power Beaming:  Mission Enabling Technology for Continuous 
+Lunar Operations 
+G. P. Barnhard ........................................................................................................................................ 7035 
+ 
+High Performance Thermal Switch for Lunar Night Survival 
+D. C. Bugby, P. E. Clark, and D. C. Hofmann ........................................................................................... 7009 
+ 
+Lunar Surface Gravimetry Surveying Through the Lunar Night 
+K. A. Carroll ............................................................................................................................................. 7020 
+ 
+Lunar Night Survivability Achieved by Radioisotope and Fission Power System Technology  
+R. L. Cataldo and L. S. Mason ................................................................................................................. 7032 
+ 
+Low-Cost Distributed Lunar Surface Networks Enabled by High Performance 
+Thermal Components 
+P. E. Clark, D. C. Bugby, and D. C. Hofmann ........................................................................................... 7031 
+ 
+Multi-Lunar Day Polar Missions with a Solar-Only Rover 
+A. Colaprete, R. C. Elphic, M. Shirley, and M. Siegler .............................................................................. 7007 
+ 
+Bulk Metallic Glass Gears for Lunar Night Capable Actuators 
+R. P. Dillon, J-P. C. Borgonia, S. N. Roberts, D. C. Hofmann, A. Kennett, S. A. Firdosy, 
+B. H. Wilcox, S. Hales, J. D. Smith, J. Schuler, B. McEnerney, and A. A. Shapiro ..................................... 7019 
+ 
+Lighting Constraints to Lunar Surface Operations 
+D. B. Eppler and N. A. Budden ................................................................................................................ 7008 
+ 
+MilliWatt Lunar VLBI Beacons:  Surviving the Lunar Night  
+T. M. Eubanks ......................................................................................................................................... 7027 
+ 
+Lunar Superconducting Magnetic Energy Storage (LSMES) 
+M. E. Evans and A. Ignatiev .................................................................................................................... 7001 
+ 
+Advanced Thermal Techniques and Systems Design Enable Long Duration, Continuous Day/Night 
+Operation of Robotic Science Landers and Payloads on the Lunar Surface  
+J. F. Farmer, A. Alvarez-Hernandez, S. P. Breeding, and J. E. Lowery ..................................................... 7030 
+ 
+The Importance of Nightside Magnetometer Observations for Electromagnetic Sounding 
+of the Moon 
+H. Fuqua Haviland, A. R. Poppe, S. Fatemi, and G. Delory ...................................................................... 7010 
+ 
+Utilization of Nuclear Power for Moon Missions:  Nuclear Power Generation Using Helium 
+Cooled Reactor for Moon Habitats 
+U. G. Guven and A. K. S. Singh ................................................................................................................ 7021 
+ 
+Regenerative Fuel Cell-Based Energy Storage Systems for Lunar Surface Exploration  
+M. C. Guzik, R. P. Gilligan, P. J. Smith, and I. J. Jakupca ......................................................................... 7024 
+Satellite Beamed Power for Lunar Surface Assets 
+M. H. Hecht and P. Lubin ........................................................................................................................ 7034 
+ 
+Small Modular Fission Reactors that Enable Affordable and Sustainable Lunar Enterprise  
+J. S. Herring, S. Mackwell, and C. Pestak ................................................................................................ 7006 
+ 
+The Use of Lunar Resources for Energy Generation on the Moon 
+A. Ignatiev .............................................................................................................................................. 7013 
+ 
+The Pylon:  Near -Term Commercial LEU Nuclear Fission Power for Lunar Applications  
+C. G. Morrison, W. Deason, M. J. Eades, S. Judd, V. Patel, M. Reed, and P. Venneri .............................. 7033 
+ 
+Passive Survivability of 18650 Lithium-Ion Cells Through Lunar Night Environment Scenario 
+K. Nandini, K. Usha, M. S. Srinivasan, M. Pramod, P. Satyanarayana, and M. Sankaran ...................... 7002 
+ 
+Material Selection for Mechanical Mechanism Survival and Use in the Lunar Night  
+S. Nieczkoski, C. B. Dreyer, B. Blair, and J. Rostami ................................................................................ 7023 
+ 
+Shifting the Paradigm of Coping with Nyx on the Moon —  a Ground-Penetrating Radar Case 
+D. C. Nunes, K. Carpenter, M. Haynes, and J. P. de la Croix .................................................................... 7012 
+ 
+Lunar Roads:  Strategies for Remaining in the  Sunlight 
+D. S. Plata ............................................................................................................................................... 7017 
+ 
+Data Encoded Laser Wireless Power (DELWP) for Lunar Polar Applications  
+D. D. Poulos ............................................................................................................................................ 7003 
+ 
+Leveraging In-Situ Regolith Properties for Nighttime Heating 
+T. M. Powell, M. A. Siegler, J. L. Molaro, and D. A. Paige ....................................................................... 7018 
+ 
+Darkness Visible:  Instrumentation and Thermal Design to Access the Hidden Moon  
+J. E. Van Cleve, J. D. Weinberg, C. R. Neal, R. C. Elphic, K. Weed, G. Mills, and R. Dissly ........................ 7005 
+ 
+Mission Design and Implementation Considerations for Lunar Night Survival  
+R. Vaughan ............................................................................................................................................. 7029 
+ 
+Requirement Analysis and Night Survival Concept for Z-01 Landing Mission Using Fuel Cell 
+S. C. Wani, U. B. Shah, A. Kothandhapani, P. Garg, M. Sahai, M. Garg, and S. Nair .............................. 7014 
+ 
+Seasonal Temperature Variations in the Polar Regions of the Moon 
+J.-P. Williams, B. T. Greenhagen, and D. A. Paige .................................................................................. 7026 
+ 
+ADAPTING TERRESTRIAL TECHNOLOGY TO THE DESIGN OF A NIGHT-SURVIV ABLE 10 METER
+PLUS LUNAR POLAR PROSPECTING DRILL.   G. R. Baiden 1 and B. R. Blair 2, 1CEO, Penguin Automated
+Systems  Inc.,  Sudbury,  Ontario,  Canada,  <[redacted-email]>,  2Penguin  Automated  Systems  US Inc.,
+Denver, Colorado, <[redacted-email]>.
+Introduction: This paper will explore the possibil -
+ity  of  combining  the  Lunar  and  terrestrial  drilling
+needs  together  for  lunar  polar  exploration.  While
+drilling in varying gravity environments is only theo -
+retical  at  this  point,  the  creation  of  a  10  metre  or
+deeper Lunar polar drill that can survive through the
+night  would  represent  a remarkable  breakthrough  if
+accomplished, enabling the collection of priceless sci -
+entific data that could validate current models for po -
+lar resources. Current lunar drill designs are limited to
+1 meter or less. Novel drilling technology in mining
+and oil & gas exploration could fill the void and in -
+crease sampling depth. Penguin ASI is a patent holder
+of a new type of drill that grips the rock and thrusts
+based on ground pressure rather than gravity, enhanc -
+ing its operational capabilities for lunar and asteroidal
+applications. 
+Cryogenic Drill Design: The focus of this presen -
+tation will be on the engineering steps needed to de -
+sign, certify and de-risk drilling technology for lunar
+cryogenic applications. Moreover, the operational re -
+quirements to setup the drill, drill the hole and then
+move to the next drill site while managing the con -
+sumables for multi-day operation will be explored. 
+Spinoff Technology:  Rock drilling is a key soci -
+etal  technology  both terrestrially  and  extra-terrestri-
+ally. Advances in terrestrial drilling technology have
+been slowing to date as consumable designs for bits,
+steel and machines have not had an impetus to im -
+prove due to the nature of their in production rather
+than research. Therefore, significant commercial po -
+tential is also anticipated for technical breakthroughs. 
+ 
+7016.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+Challenges of Space Power Beaming: Mission Enabling Technology for Continuous Lunar Operations 
+Gary Pearce Barnhard, XISP-Inc, [redacted-email] 
+This presentation will outline opportunities to leverage and extend the Xtraordinary Innovative Space Partnerships, 
+Inc.  (XISP-Inc) Technology Development, Demonstration, and Deployment (TD3) mission for Space‐to‐Space Power 
+Beaming (SSPB), planned for implementation on the International Space Station (ISS) for subsequent application to 
+lunar surface operations. This presentation extends the paper CHALLENGES OF SPACE POWER BEAMING: FORGING 
+PRODUCTION SERVICES FROM THE TECHNOLOGY DEVELOPMENT TRADE SPACE presented at IAC 2018 Bremen. The 
+SSPB mission builds on foundational research in the field as well as mission development work accomplished to date 
+by the proposed Principal Investigator (PI), XISP‐Inc, and the XISP -Inc SSPB Consortium participants. This mission is 
+a unique opportunity to foster the development of power and ancillary services beaming technology, by leveraging 
+ISS resources to create a SSPB testbed environment on and near the ISS that supports the development of frequency-
+agnostic radiant energy beaming technology. The overarching objective of this mission is to hasten the development 
+of viable applications of SSPB technology and ancillary services through focused incremental efforts that bridge the 
+technology development “valley of death” as well as substantially mitigate perceived and actual cost, schedule, and 
+technical risk associ ated with applications of the technology. The SSPB mission objectives include the technology 
+development necessary to support the unbundling of a commercially relevant space power system (i.e., the 
+separation of power generation, transmission, distribution , and loads) along with the multiplexing of ancillary 
+services (e.g., data, communications, navigation, time) to enable Space‐to‐Space and Space‐to‐Alternate Surface, as 
+well as Surface-to-Surface Power Beaming.   
+The ability to provide power and ancillary  services when and where needed is essential to virtually all aspects of 
+human endeavor and enables all forms of space development/settlement. The SSPB mission will deliver significant 
+commercial value in the form of power and bi -directional ancillary serv ices to a growing number of customers 
+interested in co‐orbiting with the ISS and lay the foundation for a myriad of Cislunar applications.   
+The first phase of the SSPB mission is Technology Development.  This includes lab/ground test work (XISP‐Inc & 
+teammate Internal Research and Development (IRaD) and leverageable contract research & development) which 
+will transition into highly configurable space‐qualified instances of cognitive Software Defined Radio (SDR) 
+transceivers, rectennas, and related control systems. T hese elements will have mutable/switchable apertures 
+(frequency-agnostic radiant energy beaming source), separate and converged conformal rectenna/solar 
+array/antenna constructs that are configurable/tunable (combination of phased array, reflectarray, and multi‐
+layer/junction, and related technologies), and software-driven controls. The elements will be integrated to form an 
+on‐orbit testbed consisting of an ISS‐based transmitter, a co‐orbiting CubeSat flight test article, and related 
+management operations control applications. The testbed will support the near –real‐time characterization, 
+optimization, and operationalization of an unbundled power and ancillary services beaming system.   
+In the second phase of the SSPB mission , Technology Demonstration, the results from the testbed will  be used to 
+create an enhanced technology demonstration of the commercial application of the SSPB technology by providing 
+an additional source of power and ancillary services to a specially configured Cygnus pressurized logistics commercial 
+cargo carrier, thereby enabling Cygnus to support crew‐tended co‐orbiting operations while the ISS resumes normal 
+operations.  The combination of the Phase I technology development and the Phase II technology demonstration 
+will raise the Technology Readiness Level (TRL) of SSPB technology from the existing TRL of 4 to 8/9.   
+The third Phase of the SSPB mission, technology deployment, entails fielding an interface deployment kit for the use 
+of space‐based power and ancillary services  that would be suitable for multiple space -to-space, space -to-lunar 
+surface, and surface-to-surface applications. One of the addressable markets this deployment kit will be designed to 
+facilitate is lunar surface operations through multiple lunar nights. 
+7035.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+HIGH PERFORMANCE THERMAL SWITCH FOR LUNAR NIGHT SURVIVAL .  D. C. Bugby 1, P. E. 
+Clark1, and D. C. Hofmann1, 1Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Drive, 
+Pasadena, CA 91109, [redacted-email], [redacted-email], [redacted-email]. 
+ 
+ 
+Introduction:  A high performance differential 
+thermal expansion (DTE) thermal switch was devel-
+oped to enable  solar/battery lunar surface science pay-
+loads. Previous DTE thermal switches (e.g., MSL 
+SAM) are ON/cold, OFF/warm. For lunar night surviv-
+al, this  “normal-operation” DTE thermal switch must 
+be revers ed to OFF/cold, ON/ warm. This paper de-
+scribes a  patent-pending JPL -developed “reverse-
+operation” DTE thermal switch  that performs as fol-
+lows: ON conductance of 5 W/K, OFF conductance of 
+0.002 W/K, and ON/OFF switching ratio of 2500:1. 
+Background:  The thermal design challenge facing 
+lunar solar/battery-powered instruments is  how to  re-
+ject payload heat during the day yet isolate the payload 
+enough during the night for battery mass launch viabil-
+ity. A Lunar Geophysical Network (LGN) study indi-
+cated a 400:1 th ermal switching ratio is required for 
+battery mass viability. The ra tio must be even higher 
+for compact lunar payloads under development at  JPL. 
+The NASA 2015 technology roadmap TA14 indicates 
+a need for a thermal switch 10X better than  the state-
+of-the-art 100:1 MER paraffin thermal switch.  
+Concept: Two prototypes were designed, built, and 
+tested. Their basis of operation is the mating/de-mating 
+of parallel (near mirror finish) flat metal surfaces. The 
+physical mechanism causing the motion is the DTE of 
+mid-CTE, high thermal conductivity (k) metal lic end-
+pieces compared to a low -CTE, low k two-piece met-
+al/polymer support beam.  The requirements of opera-
+tion were  to be fully ON above 300 K  with 1335 N  
+force and fully OFF below 260 K.  
+Design: The thermal swi tches were designed for 
+seamless integration into box -type instrument enclo-
+sures. Each prototype easily slides into  a small 25-35 
+mm circular  enclosure opening such that most of the 
+80-120 mm long thermal switch lies within the enclo-
+sure and just two small  circular 25-45 mm diameter, 6 
+mm thick discs (one connects to a radiator)  are visible 
+from the outside of the enclosure . Figure 1 illustrates 
+how the design would be integrated into a notional IR 
+camera. Also shown is a  prediction of the instrument 
+thermal response during a 10º latitude lunar day. 
+Fabrication: A technique was developed that en-
+sures the mating surfaces are highly parallel to promote 
+a high uniformly applied ON force and a flat uniform 
+OFF gap, where the OFF thermal path is solely through 
+the low k support beam. To achieve high ON force at 
+room temperature, the support beam is sized () shorter 
+than the sp ace between the end-pieces. During assem-
+bly, the support beam  is stretched by  to provide the 
+ON pre-load. To ensure highly parallel surfaces, a se-
+quence of machining operations and digital profilome-
+ter readings obviates the need for metallic shims. 
+Modeling: Pre-test predictions of reverse-operation 
+DTE thermal switch prototype performance in dicated 
+ON conductance of 2.5 W/K based on the metal con-
+tact heat transfer coefficient correlations [1] and OFF 
+conductance of 0.002  W/K assumin g just conduction 
+through the assembly with a completely open gap (ra-
+diation ignored).  An open gap was predicted to occur 
+at 273 K for one prototype and 283 K for the other. 
+Testing: Two testing stages were carried out. The 
+first stage (on lab bench) sprayed aerosol freeze-spray 
+onto each prototype  and measured temperature . Elec-
+trically non-conductive polymers in the OFF condition 
+flow path  allowed electrical resistance to indicate the 
+ON/OFF transition, which verified the pre-test predic-
+tions. The second s tage (in thermal vacuum) was  con-
+ducted with a calibrated Q -meter, which demonstrated 
+performance that doubled pre-test ON conductance and 
+was in-line with pre-test OFF conductance predictions . 
+The two prototypes are illustrated in Figure 2. 
+Conclusion:  A high performance reverse -
+operation DTE thermal  switch was developed that will 
+enable future lunar/ planetary solar/battery instruments 
+to survive/operate through the lunar/planetary night. 
+References:  
+[1] Hattori, T. , et. al (2001) , Transactions on En-
+gineering Sciences, 32, WIT Press, ISSN 1743-3533. 
+ 
+CC
+Compressor
+CC
+Electronics
+CC
+Expander
+EECam
+Electronics
+CC
+Saddle
+Optics
+Reverse-Operation
+DTE Thermal Switch
+Enclosure/Housing
+IDCA
+MLI
+Isolating Mount
+Battery
+Parabolic                   Reflector Radiator
+Thermal Strap
+Survival
+Heater
+ 
+Figure 1. Reverse-Operation DTE Thermal Switch Enables 
+Notional IR Camera to Stay Warm Through Lunar Night 
+ 
+   
+  
+Figure 2. Reverse-Operation DTE Thermal Switch Prototypes 
+ 
+7009.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+
+LUNAR SURFACE GRAVIMETRY SURVEYI NG THROUGH THE LUNAR NIGHT.   K.A. Carroll, Gedex 
+Systems Inc., 407 Matheson Blvd., Mississauga, Ontario, Canada L4Z 2H2, [redacted-email]  
+ 
+ 
+Introduction: Making gravimetry measurements 
+on the Lunar surface is a powerful technique for de-
+termining characteristics of the Moon’s subsurface 
+structure. The most useful types of measurements are 
+long-term monitoring of the Moon’s gravity at one or 
+more static locations, and surveys over extensive lines 
+and/or areas in which measurements are made at a 
+large number of different locations. In both cases, lim-
+iting the data-taking to a single Lunar day-time signifi-
+cantly restricts the dataset sizes, limiting the science 
+results that can be obtained. We discuss how Lunar 
+landers and rovers capable of surviving the Lunar 
+night would enhance the science achievable for Lunar 
+surface gravimetry. 
+Lunar Surface Gravimetry Background:  The 
+well-known terrestrial geophysics technique of surface 
+gravimetry surveying is one of the few techniques that 
+can provide information about the composition and 
+structure of the lunar subsurface. This has been used 
+once on the Moon, with Apollo 17’s Traverse Gravim-
+eter Experiment (TGE) [1]. Gravimetry surveys carried 
+out on the Lunar surface can achieve sub-km spatial 
+resolution, far finer than the ~12 km resolution achiev-
+able by the best gravity measurements made from Lu-
+nar orbit [2]. New gravimeter technology opens the 
+prospect of conducting luna r surface gravimetric sur-
+veys using small lunar rovers [3].  
+Gravimetry can be used to determine the size and 
+extent of interesting subsurface features such as lava 
+tubes [4][5], ice deposits, buried craters and boulders, 
+and volcanic intrusive features  such as those that may 
+cause the magnetic anomalies associated with lunar 
+swirls. They can augment and enhance interpretation 
+of local and global seismological signals collected by 
+Lunar Geophysical Network stations [6]. Long-term 
+gravimetry monitoring at one or more static locations 
+on the Moon may provide a means to probe the struc-
+ture of the Moon’s mantle. 
+Surveying Through The Lunar Night:  One ap-
+plication for gravimetry on the Lunar surface is gra-
+vimetry surveying, in which a gravimeter is carried to a 
+sequence of measurement stations, typically either 
+along a traverse line (as in the TGE survey), or spread 
+throughout a two-dimensional area (e.g.,  along a set of 
+parallel survey lines). Such  surveys aim to estimate 
+density variations in the subsurface structure below the 
+survey area, to help understand the local geology.  
+The more measurements th at are made in such a 
+survey, the larger the area th at can be covered, and/or 
+the finer the spatial resolution that can be achieved in 
+the resulting geological models. Obviously, surveys 
+that are carried out by rove rs that can survive the Lu-
+nar night can make measurements at a greater number 
+of stations, by making measurements over a period of 
+multiple Lunar days, covering more survey area. 
+Modern Lunar rovers (; e.g., CNSA’s Yutu rover) 
+are expected to have a speed of ~0.2 km/hour, allow-
+ing up to ~70 km of travel during one Lunar day, Tak-
+ing into account time that must be spent making each 
+gravimetry measurement (expected to be 10-20 
+minutes per station), such a rover could traverse as 
+much as 40 km of survey line length, with 100 m be-
+tween stations, over the course of one Lunar day, al-
+lowing an area of 2x2 km to be surveyed with line 
+spacing of 100 m.  
+A rover capable of surviving the Lunar night could 
+cover more survey line length and/or area. E.g., over 
+the course of 2 years (24 Lunar days) a total distance 
+of perhaps 1000 km could traversed, allowing an area 
+of 10x10 km to be surveyed at 100 m resolution. 
+Long-Duration Gravity Monitoring:  Another 
+application for gravimetry on the Lunar surface is 
+long-duration monitoring of the gravity strength at one 
+or more static locations on the Moon, to probe the 
+structure of the Moon’s mantle. As discussed in [7], 
+some of the Moon’s hemispherically asymmetric fea-
+tures may be explained by the  Lunar mantle having a 
+laterally inhomogeneous structure. Long-duration gra-
+vimetry measurements at a well-selected static location 
+on the Lunar surface, using a gravimeter on a Lunar 
+lander, could investigate this by detecting the non-
+degree-2 elastic response of the Moon to tidal forcing 
+from the Earth and the Sun. Measurement series longer 
+than one Lunar day will span multiple cycles of these 
+signals, and produce more data points to fit to a Lunar 
+elasticity model, resulting in improved estimates of 
+mantle inhomogeneity parameters. 
+References: [1] Talwani M. (2003) The Leading 
+Edge v.22 no.8, 786-789, doi: 10.1190/1.1605083. [2] 
+Lemoine, F.G. et al. (2014) Geophys Res Lett., 41,  
+3382–3389. [3]. Jawin, E.R. et al., “Lunar Science for 
+Landed Missions Workshop Findings Report,” 
+SSERVI. [4] Carroll, K.A. et al. (2015) LPS XLVI , 
+Abstract #1746. [5] Urbancic, N. et al. (2017) JGR: 
+Planets, 122 , 1181-1194. [6] Carroll, K.A., “Lunar 
+Surface Gravimetry Science Opportunities,” poster at 
+SSERVI/LEAG Lunar Science for Landed Missions 
+workshop, NASA Ames Research Center, 10-12 Jan. 
+2018. [7] Zhong, S. et al. (2012) Geophys Res Lett., 
+39, 3382–3389. 
+7020.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+Lunar Night Survivability Achieved by Radioisotope and  
+Fission Power System Technology 
+ 
+Robert L. Cataldo and Lee S. Mason, NASA Glenn Research Center, Cleveland, OH 44116  
+ 
+The Moon’s surface environment offers a significant challenge for most space systems and, particularly, for power 
+technologies.  A complete lunar day cycle is 354 hours of sunlight and 354 hours of darkness.   Equatorial diurnal 
+surface temperatures range from about 400K at lunar noon to 100K during the night.  Surviving the long lunar night 
+poses a significant challenge for photovoltaic arrays and energy storage systems.  Providing the required energy for 
+both nominal operations and for electric heaters to m aintain keep-alive temperatures for electronics and other vital 
+systems would necessitate a massive photovoltaic power supply and storage system, thereby  reducing the amount of 
+landed payload available for exploration and science investigations.  R adioisotope power systems (RPS) produce 
+power by converting the heat produced by natural isotopic decay into electricity.  For example, the 110 We  multi-
+mission radioisotope thermoelectric generator (MMRTG) has been powering the Mars Curiosity rover and is  also 
+planned for the Mars 2020 mission rover.   RPS is ideally suited for lunar surface  applications eliminating the need 
+for large batteries, thus saving 100’s kg of mass even for modest science missions while providing waste heat to 
+maintain components a nd systems in required temperature ranges.  The US uses plutonium-238 as the fuel source 
+and it offers a high energy density along with an 88 -year half-life.  Eventual human habitats, crewed rovers, in -situ 
+resource production  demonstration, etc., will req uire significantly greater levels of power not practical for a RPS 
+system or photovoltaic systems .  For these higher power needs,  nuclear fission systems would be a viable solution.  
+Recent developments in smaller scale reactor  systems called Kilopower are envisioned as an initial step in powering 
+near term human lunar surface systems.  Options for advanced RPS and Kilopower systems will be discussed and 
+compared to alternate power system solutions.     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7032.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+Low-Cost Distributed Lunar Surface Networks Enabled by High Performance Thermal Components .  P.E. 
+Clark1, D.C. Bugby1, and D. C. Hofmann1, 1Jet Propulsion Laboratory/California Institute of Technology, , 4800 Oak 
+Grove Drive, Pasadena, CA 91109, [redacted-email] 
+ 
+ 
+Purpose:  Credible opportunities for delivery of 
+small payloads to the luna r surface via commercial 
+landers are emerging in the coming decade. 
+Characterization of the highly interactive environment 
+of the lunar surface and subsurface, requires continuous 
+operation. Due to the uniquely extreme lunar surface 
+conditions (high radiat ion, 2 -week <100 K night, 2 -
+week up to 400  K day), radioisotopes have been 
+required for either full day and night operation (Apollo 
+Lunar Surface Experiment Package using RTGs) or day 
+operation and night survival only (all others including 
+Lunakhod, Yutu, proposed commercial designs using 
+RHUs). Compact in situ measurement packages with 
+one or more scientific instruments capable of sustaining 
+stand-alone day/night lunar operation could enable 
+science investigations that heretofore required 
+unaffordable dedi cated landers with radioisotopes. 
+Successfully demonstrating the feasibility of such a 
+concept would represent a major breakthrough by 
+enabling studies of the dynamic activities on lunar and 
+other extreme environment solar system surfaces via 
+distributed, lower cost platforms. In situ 
+measurement//monitoring packages of 1 to 3  
+instruments, deployed on or from lander s or rover s, 
+could address high priority science goals and strategic 
+knowledge gaps by providing dynamic measurements 
+of the Moon's environment or interior.  
+Background: The most challenging problem is 
+creating a thermal design to allow a low -cost, compact 
+(cubesat-scale) p ackage without radioisotopes to, at 
+minimum, survive lunar night, and preferably operate 
+on limited duty cycle during lunar night . Preliminary 
+environmental modeling indicates that the availability 
+of a reverse thermal switch (to maintain a thermal 
+control box) with 1000:1 switching ratio, 10 times 
+better than state of the art MER rat io of 100:1, would 
+be required to allow cubesat-scale package (<20 kg, 
+<2W during lunar night) to survive lunar night . The 
+special parabolic radiator/reflectors required to sur vive 
+the solar and lunar surface thermal emissions during 
+lunar day have already been demonstrated on the 
+Apollo Lunar Surface Experiment Packages (ALSEPs). 
+Recently, Bugby and coworkers [1] have demonstrated 
+the capability of a reverse thermal switch with a 2500:1 
+switching ratio. 
+Examples:  The Surface Imaging of Lunar 
+Volatiles in the InfraRed (SILVIR), based on a 
+ruggedized version of JPL's EECam (Enhanced 
+Engineering Camera) optics and electronics [2] updated 
+with a JPL cryo -cooled HOTBIRD (High Operat ing 
+Temperature Barrier InfraRed Detector) focal plane 
+array [3] and filters for selection of water -related 
+absorption bands, would provide snapshots of water -
+related features as a function of time of day , shadow, 
+and slope,  at a given l anding site, and thus local 
+'ground truth' for the orbital observ ations over many 
+lunar cycles. The SILVIR package would also include 
+instrument electronics, a battery assembly, and the 
+Bugby thermal switch. SILVIR would be most suitable, 
+equipped with a gimbal, for a lander network, but could 
+be used as a water feature 'mapper' on a rover as well . 
+The principal thermal challenge  is making sure the 
+battery temperature is within operational limits to 
+operate the cryocooler for at least two hours before the 
+first observation of the day, at dawn.  
+The Lunar Interior Magnetic Sounder (LIMS)  [4], 
+based on fluxgate and vector helium magnetometers  
+and their associated electronics  on short booms, would 
+provide, in conjunction with the orbital ARTEMIS 
+magnetometer, would provide meas urements of lunar 
+magnetic induction varying over the course of several 
+lunar cycles (including traverses through the Earth's 
+magnetotail) from which the lunar interior temperature 
+profile could be derived, and models for the origin and 
+formation of the co re constrained. The fluxgate 
+magnetometer would be calibrated with the thermally 
+stable vector helium magnetometer. The LIMS package 
+would also include instrument electronics, a battery 
+assembly, and the Bugby thermal switch. LIMS would 
+be most suitable fo r a lander  network. The principal 
+thermal challenges are maintaining the fluxgate 
+magnetometer and battery within operational limits, 
+and vector helium magnetometer within survival limits 
+during lunar night. 
+Results: Our thermal modeling demonstrates that 
+both packages , representing a range of instrument 
+requirements and incorporating the new thermal switch, 
+should be able to meet their requirements for survival 
+and/or operation during lunar night [1]. 
+References: [1] Bugby, Clark, and Hof mann 
+(2018), these  proceedings; [2] McKinney, C. et al 
+(2018) LPSC 2018, 2857.pdf; [3] Ting, D. et al (2011) 
+NASA Tech Briefs, NPO-46477, 16;  [4] Clark, Bugby, 
+and Chin (2018) LPSC 2018, 1269.pdf 
+7031.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+Example of a North Pole Multi-Lunar Day Traverse 
+(map layer is net sunlight) 
+ 
+ 
+Multi-Lunar Day Polar Missions with a Solar-Only Rover. A. Colaprete1, R. C. Elphic1, M. Shirley1, M. Siegler2, 
+1NASA Ames Research Center, Moffett Field, CA, 2Planetary Science Institute,  Tucson, AZ 
+ 
+Introduction: Resource Prospector (RP) was a lu-
+nar HEOMD/Advanced Exploration Systems volatiles 
+prospecting mission developed for  potential flight in 
+the early 2020s .  The mission includes a rover-borne 
+payload that (1) can locate  surface and near-subsurface 
+volatiles, (2) excavate and analyze samples of the  vola-
+tile-bearing regolith, and (3) demonstrate the form, 
+extractability and usefulness of the materials.   The pri-
+mary mission goal for RP is to evaluate the In -Situ 
+Resource Utilization (ISRU) potential of the lunar 
+poles, to determine their utility withi n future NASA 
+and commercial spaceflight architectures .  While the 
+current RP rover design did not require a system that 
+could sur vive lunar nights, it has been demonstrated 
+that the current design could conduct multi-lunar day 
+missions by taking advantage of areas that receive pr o-
+longed periods of sunlight (short lunar nights). 
+Mission Goals and Rover System Design : While 
+it is now understood that lunar water and other volatiles 
+have a much greater extent of distribution, poss ible 
+forms, and concentration s than previously believed, it 
+is essential to fully understand how viable these vol a-
+tiles are as a resource  to support human explor ation of 
+the solar system. Specifically, the distribution and form 
+needs to be understood at a “human” scale.  That is, the 
+“ore body” must be better understood at the scales it 
+would be worked as a mining operation before it can be 
+evaluated as a potential architectural element within 
+any evolvable lunar or Mars campaign.  To this end the 
+primary mission goals for RP are to (1) provide ground 
+truth for models a nd orbital data sets, including t em-
+peratures at small scales, subsu rface temperatures and 
+regolith densities, surface hydration and hazards (rocks 
+and slopes) , (2) c orrelate surface environments and 
+volatiles with orbital  data sets to allow for better pr e-
+diction of resource potential using orbital data sets, and 
+(3) a ddress key hypothes es regarding polar volatile 
+sources and sinks, retention and distribution, key to 
+developing economic models and identifying excav a-
+tion sites 
+The RP rover system was designed to be as simple 
+as possible (low cost and risk) while still meeting these 
+requirements.  Detailed analysis of traverses, including 
+rover models that include power, data and mobility 
+models, has found that a solar powered  rover with D i-
+rect to Earth (DTE) communications could meet all 
+mission goals within one Lunar day (mission length 10-
+12 Earth days).  Therefore, the simplest design utilizes 
+only solar power with no radiogenic heating (e.g., R a-
+dioisotope Therm oelectric Generators or RHUs ) or 
+other non-solar power systems. 
+Polar Solar “Oases” :  Numerous studies have 
+identified regions near the lunar poles that have su s-
+tained periods of solar illumination.  In some places 
+these periods of sustained sunlight extend across s ever-
+al lunations, while others have very short (24-48 hours) 
+nights.  A study was conducted to evaluate if the RP 
+rover system could take advantage of these “oases” to 
+survive the lunar night. While the Earth would set, as 
+seen by the rover, every approxim ately 2-weeks, these 
+“oases” could provide sufficient power, and have l u-
+nar-nights short enough, for the rover sy stem to su r-
+vive.   
+Results: The study focused in the area su rrounding 
+the no rth pole crater Hermite -A (primarily due to the 
+fidelity of existin g traverse planner data sets in this 
+area).  Several possible locations in the area showed 
+short nighttime per iods (<48hours).  Two examples 
+were studied in detail, including power modeling , both 
+surviving a single polar night, extending the total mi s-
+sion duration to over 46 Earth days.  These examples 
+saw considerable increase in overall science return, 
+increasing the number of drill sites from 16 to as many 
+as 40.  It was concluded that these traverse types were 
+available at both the north and south pole,  and likely 
+can extend to 2.5 to 3  lunations while not making any 
+modification to the existing RP rover system design.  
+However, relatively minor augmentation/changes to the 
+RP rover design, including the use of passive the rmal 
+switches and a mode st number of RHUs, would likely 
+greatly expand the number of locations and mi ssion 
+durations.  This talk will summarize the a pproach for 
+identifying these areas and review the two exa mples 
+cited above.  
+7007.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+Bulk Metallic Glass Gears for Lunar Night Capable Actuators .  R.P. Dillon1, J-P.C. Borgonia1, S.N. Roberts1, 
+D.C Hofmann1, A. Kennett1, S.A. Firdosy1, B.H. Wilcox1, S. Hales2, J.D. Smith3, J. Schuler 3, B. McEnerney1, and 
+A.A. Shapiro1 
+1NASA Jet Propulsion Laboratory, 4800 Oak Grove Drive, Pasadena, CA  91109, 2NASA Langley Research Center, 
+1 NASA Drive, Hampton VA 23666, 3NASA Kennedy Space Center, M7-0409, Kennedy Space Center, FL 32899. 
+ 
+ 
+Introduction: The Bulk Metallic Glass (BMG) 
+Gears project is a NASA Game Changing Develop-
+ment project that has been co -funded by the Space 
+Technology Mission Directorate and Science Miss ion 
+Directorate t o develop unheated, cold capable, BMG -
+based gearboxes  (Fig.1) for use in cryogenic environ-
+ments such as Lunar night.  Cryo-environment capable 
+gearboxes which do not require ancillary equipment, 
+including the heaters and associated circuitry, found on 
+current state‐of‐the‐art cryogenic gearboxes are ena-
+bled by a CuZr-based bulk metallic glass (BMG) alloy. 
+This alloy exhibits surface wear behavior ~1/3 that of 
+maraging steel. In this poster, the enabling alloy prop-
+erties and cryogenic test performance , both unlubricat-
+ed and dry lubricated,  are considered relative to the 
+current state-of-the-art. Component processing, materi-
+al qualification, technology readiness , and infusion 
+challenges are also presented . Background on the early 
+development of BMGs for gearbox applications has 
+been published in  [1] for planetary gear s and [2] for 
+strain wave gears. 
+ 
+ 
+Fig 1. BMG-based planetary gearbox 
+ 
+References:  
+[1] Hofmann, DC et. al, Advanced Engineering 
+Materials (2016) DOI: 10.1002/adem.201600541 
+[2] Hofmann, DC et. al, Scientific Concepts (2016) 
+DOI: 10.1038/srep37773 
+ 
+7019.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+LIGHTING CONSTRAINTS TO LUNAR SURFACE OPERATIONS; Dean B. Eppler, The Aerospace Corporation, Houston, TX [[redacted-email]]; and Nancy Ann Budden,  Naval Postgraduate School, Monterey CA [[redacted-email]].Introduction: Human exploration of the moon’s surface will be performed during 14-day lunar days and 14-day lunar nights. An investigation into the levels of ambient light-ing on the lunar surface indicates that for most nearside locations, illumination will be adequate throughout a large portion of the lunar night to conduct most surface activi-ties, including driving, extravehicular activi-ties (EVAs) and potentially spacecraft arri-val and departure.  It is expected that special illumination may be required for specific tasks where the area of activity is shadowed by natural or manmade structures. An ex-ample would be vehicle landing sites, where surface orientation or location is critical. Surface Lighting Conditions: Because of the captured rotation of the Moon around the Earth, the location of the Earth in the lunar sky will be constant (no Earth rise or set), but the resultant illumination will vary over the course of the lunar night due to the shift-ing phase angle of the Earth. At the sub-Earth point, the illumination at sunset will be 1 order of magnitude brighter than illu-mination under a full Moon on Earth, or about 2.8 lumens m-2[1].  At the same loca-tion, the illumination will rise to a maximum of 13.5 lumens m-2 at lunar “midnight”, and decrease back down to 2.8 lumens m-2 at sunrise. This maximum will be similar to the light level on a July evening at 8:00 p.m. in the southern United States, equivalent to the illumination occurring about 15 minutes af-ter sunset.  Numerous orbital experiments conducted during Apollo, (e.g., [2]), showed that with 1600 ISO film, Earthshine was suf-ficient to photograph surface features from orbit.  As surface locations shift toward the eastern or western limbs, illumination will vary 
+from nominal sub-Earth illumination. At surface locations on the far western limb, the maximum illumination from Earthshine (13.5 lumens m-2) will occur at sunset and decrease to zero at dawn. The reverse se-quence (zero illumination at sunset, maxi-mum illumination at sunrise) will occur at the far eastern limb.  The lunar farside will experience no illumination other than star-light during the lunar night, requiring artifi-cial lighting or night-vision hardware for external operations. Polar locations will ex-perience illumination conditions similar to the sub-Earth point, but the lighting will be at angles < 10°, making artificial illumina-tion necessary for most exterior activities (P. Spudis, personal communication). Apollo surface operations conducted during late lunar morning illumination suggests that activities conducted around lunar noon may be difficult due to low sun angles yielding reduced shadowing with  decreased surface definition. Extremely low sun angles (< 20 degrees) are likely to make meter-scale ir-regular topography, typical of the lunar sur-face, difficult to see, similar to flat lighting conditions in Antarctica.  In conclusion, Earthshine will enable effective exploration during the lunar night. However, lighting limitations 2-3 days around lunar noon may complicate or deter full-scale surface opera-tions.  [1] Eppler, D. (1991) NASA TM-4271; [2] Lloyd, D. (1971) Unpubl. Bellcom Rpt., https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19720006805.pdf. This work was performed by funded by the former Lunar and Mars Exploration Pro-gram Office, NASA-Johnson Space Center, Houston, TX.	
+7008.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+MILLIW A TT LUNAR VLBI BEACONS: SURVIVING THE LUNAR NIGHT T . Marshall Eubanks 1, 1Space
+Initiatives Inc, Clifton, V A 20124 USA; [redacted-email];
+Introduction: The exploration of the Solar System
+can be enhanced by the use of femtospacecraft, small
+autonomous units which can be used to provide multiple
+observation points or in hazardous environments where
+there is a strong risk of loss of individual nodes. In order
+to meet the more demanding requirements of operation
+in deep space and to create true spacecraft swarms to
+meet various operational goals we are developing the
+Pixie femtospacecraft [
+1] (see Figure 1). A Pixie is 80 x
+40 x 9 mm with a mass < 80 grams. These small units
+can act as autonomous spacecraft, or as modular nodes
+attached to or integrated with other spacecraft, rovers
+and equipment send to or near the Moon.
+Lunar VLBI Networks: Low power ( < 1 milliW)
+Pixie transmissions could be used as a source for differ-
+ential V ery Long Baseline Interferometry (VLBI) ob-
+servations from Earth [
+2, 3] using the new VGOS VLBI
+system [ 4]. The scientiﬁc goals would be to provide
+nanoradian accuracu astrometry and transverse posi-
+tions with a single-observation accuracy of /sim50 cm.
+Each Pixie would broadcast a unique code-multiplex
+signal so that same beam interferometery could be per-
+formed with multiple beacons on and off the lunar sur-
+face.
+These measurements would meet a number of sci-
+entiﬁc goals, including improvements in the Lunar
+ephemeris (transverse VLBI measurements of lunar ro-
+tation would nicely complement the on-going program
+of radial measurements from Lunar Laser Ranging).
+These beacons would serve as geodetic control points
+on the Lunar surface, directly tying the Lunar, plane-
+tary and extra-galactic reference frames and also allow-
+ing for differential position measurements of rovers and
+smallsat lunar orbiters.
+Surviving the Lunar Night:
+The scientiﬁc and programmatic goals of a lunar
+geodetic VLBI network would be best met with bea-
+cons able to survive the Lunar night. EThe Pixie would
+provide a battery , solar power and also computer control
+of beacon broadcasts (either on a regular schedule, or in
+response to local conditions or uplinked commands).
+The minimum sustained power consumption of a Pixie
+beacon would be order 10 milliW att. This amount of
+power can be provided from a roughly 1 gm Americium-
+241 battery [
+5] which, with an ultracapcitor for short
+term power needs, should sufﬁce to power a continu-
+ous permanent VLBI network on the lunar surface for
+decades to come. This deployment would also serve as a
+test of small nuclear batteries likely to become increas-
+ingly important for small spacecraft missions into the
+outer solarsystem and interstellar space [
+6, 7].
+Figure 1: The Asteroid Initiatives Pixie Asteroid Instru-
+mentation set (without insulation).
+References: [1] T . M. Eubanks, et al. (2017) in Lunar
+and Planetary Science Conference vol. 48 of Lunar and
+Planetary Science Conference 1577. [2] G. Klopotek, et al.
+(2017) in EGU General Assembly Conference Abstracts vol.
+19 of EGU General Assembly Conference Abstracts 433.
+[3] S. V . Pogrebenko, et al. (2004) in Planetary Probe
+Atmospheric Entry and Descent Trajectory Analysis and
+Science (Edited by A. Wilson) vol. 544 of ESA Special
+Publication 197–204. [4] R. Haas, et al. (2015) IAU General
+Assembly 22:2257511. [5] L. Cordingley, et al. (2011) in 9th
+European Space P ower Conferencevol. 690 of ESA Special
+Publication 130. [6] A. M. Hein, et al. (2017) ArXiv e-prints
+(1711.03155).
+arXiv:1711.03155. [7] A. M. Hein, et al.
+(2017) ArXiv e-prints. arXiv:1708.03556.
+7027.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+Lunar Superconducting Magnetic Energy Storage (LSMES). M. E. Evans 1 and A. Ignatiev2, 1NASA Johnson 
+Space Center, [redacted-email], 2University of Houston, [redacted-email].  
+ 
+Introduction:  Superconducting Magnetic Energy 
+Storage (SMES) is an energy storage system that stores elec-
+trical energy in the form of a magnetic field by  passing 
+direct current through a superconducting coil. The conductor 
+for carrying the current operates at cryogenic temperatures 
+where it becomes a  superconductor and thus has virtually 
+no resistive losses as it produces the magnetic field.  [1].  
+The energy can be stored in a persistent mode until re-
+quired [2].  The main terrestrial challenge for SMES is the 
+need for a cryo-cooling system and the cost associated with 
+its deployment, operation and maintenance.  For lunar and 
+planetary exploration, this challenge is totally mitigated us-
+ing the cold environment of the mission to sustain supercon-
+ductivity temperatures.  The permanently shadowed craters 
+on the moon have regolith temperatures between 50-60K (3), 
+which is the operating temperature for High Temperature 
+Superconducting (HTS) wire.   SMES provides several ad-
+vantages over traditional chemical batteries that: 1) incur 
+much energy loss in extremely cold environments due to 
+power needed for heaters, 2) are inefficient due to their in-
+herent redox and side reactions, and 3) fail over time due to 
+charge/discharge cycling changes in their chemical process-
+es.   
+ 
+Study for Application on Moon: Generally, a 
+SMES system consist of four parts: 1) superconducting mag-
+net; 2) cryogenic system; 3) control system; and 4) power 
+conditioning system.  This study initially identifies guide-
+lines for a candidate mission using LSMES.  Next, the study 
+addresses the feasibility of using HTS wire in either a sole-
+noid or toroid configuration, designs the magnet support 
+structure considering the current carrying capacity of the 
+magnet wire and the mechanical stresses associated with the 
+high magnetic fields, and evaluates concepts for grid power 
+conditioning and an electronic switch to charge/discharge the 
+coil.  The study also develops a hardware concept of the coil 
+and tests energy storage in a magnetic field at expected lunar 
+temperatures in the Permanently Shadowed Regions (PSRs).   
+ 
+Summary: LSMES could provide for energy storage 
+with negligible electrical energy loss (>95% system efficien-
+cy) [4] at cryogenic temperatures (<100K) over very long 
+lifetimes.  Integrating LSMES into a mission architecture 
+could enable creation of distributed electrical “recharge sta-
+tions” for lunar surface components in both human and ro-
+botic missions.  This technology is independent of the energy 
+source and could be applied to architectures with either net-
+works of solar arrays or nuclear fission reactors on the lunar 
+surface.  It could also be applied to other lunar regions with 
+appropriate thermal gradients that support constant cryogenic 
+temperatures outside the PSRs.  
+ 
+References:  
+[1] Onnes, H.K. (1911) Comm. Phys. Lab. Univ. Lei-
+den, 124 [2] Chen, H.  et al (2009) Progress in Natural 
+Science, 291-312 [3] Williams, J.P. et al (2016) Icarus 
+283, 300-325 [4] Cheung, K.Y.C.et al (2002) Imperial 
+College London: ISE v2.  
+ 
+ 
+7001.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+Advanced Thermal Techniques and Systems Design Enable Long Duration, Continuous Day/Night Operation 
+of Robotic Science Landers and P ayloads on the Lunar Surface .  J.  F. Farmer1, A. Alavarez-Hernandez2, S. P. 
+Breeding1, J. E. Lowery1, 1NASA MSFC, Huntsville AL, 2NASA JSC, Houston TX. 
+ 
+ 
+Introduction:  Recent developments in NASA and 
+commercial space capabilities and plan s support and 
+call for increased exploration of the lunar surface.  L u-
+nar e xploration objective s vary widely ranging from 
+geophysical research to h uman exploration and r e-
+source prospecting. The slow rotation of the Lunar 
+surface and polar orientation relative to the sun along 
+with the regolith thermo -optical and thermos -physical 
+properties and vacuum conditions combine to create a 
+unique and very cha llenging thermal environment for 
+any extended lunar surface activity requ iring operation 
+during the approximately 28 earth day lunar day/night 
+cycle, where day time temperatures of the lunar surface 
+can reach 400K  (near the equator)  and night time te m-
+peratures can drop to 100K (even colder in permanen t-
+ly shadowed regions and craters). A set of risk redu c-
+tion studies were performed in support of early phase 
+mission design activities for various science and expl o-
+ration missions, one of which was the ILN (Inte rna-
+tional Lunar N etwork), to investigate potential a p-
+proaches that enable continuous o peration in this env i-
+ronment. These studies have led to the development of 
+advanced t hermal control technologies  and designs, 
+extended testing of battery capabilities,  and a viable 
+systems approach to survive the night for extended 
+mission durations. This report summarizes  the targeted 
+missions, the overall design approach, the enabling 
+technologies, and  the risk reduction studies including 
+the associated analyses and test ing used to investigate 
+their viability.   
+Driving Missions:  The first mission that drove the 
+initial investigations was ILN. This mission was in-
+tended to develop and position robotic landers 
+equipped with an array geophysical and electromagnet-
+ic experiments, globally dispersed on the lunar surface. 
+These landers were required to operate continuously 
+during lunar day/night cycles for up to 6 years.  
+General Assumptions and Design Approach:  
+Both of these missions targeted a minimum cost a p-
+proach and, as su ch, high energy, continuous power 
+generation options including a nuclear reactor and a 
+radio-isotope power source were prohibited.  Cons e-
+quently, lunar cycle variant photovoltaic  power was 
+assumed, and thermal based solutions that conserved 
+heat during the cold lunar night were critical. The gen-
+eral approach for achieving this consisted of using a 
+warm electronics enclosure that contained all critical 
+electronic components and energy storage batteries 
+expected to operate over the duration of surface portion 
+of the mission. This enclosure was insulated with high 
+performance thermal insulation and isolated with low 
+conductance structural mounts  to minimize heat loss 
+and gain. The components within this enclosure were 
+mounted on a baseplate designed to share heat between 
+the components and acquire heat to be rejected when 
+necessary.  The plate was connected via an advanced 
+variable thermal link to a lunar radiator to reject this 
+heat. The variable link would passively vary between a 
+highly conductive heat transp ort path and a thermal 
+isolator as the conditions dictated.  
+Enabling Thermal Technology Options :  While 
+the insulation and isolation techniques and the thermal 
+baseplate used in the design were high performance 
+and somewhat novel, the more advanced techno logies 
+investigated for this application were those related to 
+the variable link. The technologies investigated inclu d-
+ed: (1) a hybrid wick, variable conductance heat pipe, 
+(2) a loop heat pipe with a passive bypass valve, and 
+(3) a hybrid loop heat pipe w ith variable conductance 
+heat pipe.  Each of these technologies provides eff i-
+cient two phase  heat tr ansport when “on” to support 
+heat rejection  during lunar day , but also provides a 
+passive, temperature driven means of isolation to co n-
+serve heat. This “tur n-down” feature of these links 
+along with the insulation/isolation features of the e n-
+closure minimizes the amount of power used during the 
+long lunar night to minimize the mass of the battery 
+required; analysis during these mission studies estima t-
+ed that each watt of power used  during the lunar night  
+required approximately 5kg of battery to supply the 
+needed energy.  
+Risk Reduction Activities:  A variety of activities 
+have been performed to assess this lunar night survival 
+capability. Thermal trade studies  were conducted to 
+identify and select overall thermal approaches and 
+technologies. System level thermal and power analyses  
+have been conducted to predict night time heat loss, 
+daytime heat rejection, and power management per-
+formance. Ground and in- space thermal development 
+testing have been conducted  to assess the performance 
+of the variable link technologies, and their integration 
+with baseplate and radiator concepts, as well as  to as-
+sess long term battery performance and lifetime at 
+more extreme temperatur es and depths of discharge 
+necessary for this application. 
+7030.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+THE IMPORTANCE OF NIGHTSIDE MAGNETOMETER OBSERVATIONS FOR ELECTROMAGNETIC SOUNDING OF THE MOON.  H. Fuqua Haviland1 and A. R. Poppe2, S. Fatemi3, G. T. Delory2, 1NASA Marshall Space Flight Center, MSFC, AL 35812 ([redacted-email]), 2Space Sciences La-boratory, University of California, Berkeley, CA 94720. 3 Swedish Institute of Space Physics, Sweden.  Introduction: Understanding the current day structure, state, and composition of the lunar interior provides insight into origin and formation processes of the Moon. Knowledge of the lunar interior builds on an array of disciplines, observations, and various types of analyses such as geochemistry, geophysics, geodynam-ics. Current understanding of the lunar interior lacks precise constraints on the composition and structure including layers of mantle material (upper mantle, middle mantle, and lower mantle regions), a possibly partially molten ilmenite layer, above a differentiated core enriched in light elements [1-4]. Additional ob-servations and analyses are required to be able to an-swer fundamental planetary science questions includ-ing the thickness of the Procellarum KREEP terrane, the existence of a melt layer at the core mantle bounda-ry, and the thickness of the inner and outer core layers. Electromagnetic (EM) Sounding is capable of answer-ing these key questions through analysis of magnetom-eter observations at the surface of the Moon and sur-rounding environment. EM Sounding isolates induced magnetic fields to remotely deduce lunar material properties at depth [2,5]. Recent analyses of plasma and field observations provide a wealth of understanding about the dynamics of the lunar plasma environment [6-8]. These charac-terizations improve the boundary conditions acting on induced magnetic fields from the interior. Plasma hy-brid models suggest the induced fields are not confined within the lunar wake cavity [9-11] as previously pro-posed [5]. Thus, the first step of performing Time Do-main EM (TDEM) Sounding at the Moon is to charac-terize the dynamic plasma environment, and to be able to isolate geophysically induced currents from concur-rently present plasma currents. The TDEM Sounding transfer function method focuses on analysis of the nightside observations when the Moon is immersed in the solar wind. This method requires two simultaneous observations: an upstream reference measuring the pristine solar wind, and one downstream at or near the lunar surface [2]. This method was last performed dur-ing Apollo and assumed the induced fields on the nightside of the Moon expand as in an undisturbed vacuum within the wake cavity [12]. TDEM sounding is particularly well suited for measurements from mov-ing satellite platforms directly accounting for changing altitudes [2]. Our approach is to isolate induction from the plasma wake cavity by fully and self consistently char-acterizing both of these fields [11]. Thus, improving the accuracy of existing TDEM methods. Our models 
+compare a plasma induction model capturing the kinet-ic plasma environment within the wake cavity around a conducting Moon, to an analytic expression of the ge-ophysical forward model capturing induction in a vac-uum. This method can be applied to any two point magnetometer measurement of the Moon or similar airless bodies. Nightside TDEM sounding has the ca-pability to advance the state of knowledge of the field of lunar science forward. This requires magnetometer operations to withstand the harsh conditions of the lunar night. Apollo and ARTEMIS Magnetometer specifica-tion comparison: For comparison, we include the specifications of two magnetometers that have been used to perform TDEM: Apollo 12 Lunar Surface Magnetometer with orbiting reference magnetometer, Explorer 35 [12,13], and currently orbiting twin ARTEMIS satellites. TDEM Sounding requires the use of a reference probe measuring the pristine and undis-turbed solar wind conditions near the Moon. Apollo 12 Lunar Surface Magnetometer [13, see Table 1]: Range 0-+/-400 nT, Resolution 0.2 nT, Fre-quency Range dc to 3 Hz, Power 3.4 W average day-time, Weight 8.9 kg, size 25 X 28 x 63 cm.  ARTEMIS Fluxgate Magnetometer [15, 16 see Tables 1 and 2]: DC magnetic field, Sampling rate & resolution: DC-128 Samples/s & 3 pT, Offset stability <0.2 nT/12 hr. Resources requirements: Mass: Sensor (75 g), Harness (150g or 60 g/m) Electron-ics(150g). Dimensions: Sensor (diameter 70 mm, height 45 mm), Board (100 mm × 120 mm). Power consumption: 800 mW. Temperature range: Sensor (−100◦ to 60◦ C), Electronics,  (−55◦ to 80◦ C).  References: [1] Garcia R.F., et al., (2011) Phys. Earth Planet. Inter. 188, 96–113. [2] Grimm R.E., Delory G.T., (2012) ASR. 50, 1687–1701. [3] Hood L.L., et al., (1999) GRL. 26, 2327–2330.  [4] Weber R.C., et al., (2011) Sci. 331, 309–312. [5] Sonett C.P., (1982) Rev. Geophys. Sp. Phys. 20, 411–455.  [6] Halekas J.S., et al., (2005) JGR. 110, A07222. [7] Halekas J.S., et al., (2010) PSS. [8] Poppe A.R., et al., (2014) GRL. 41, 3766–3773. [9] Fatemi S., et al., (2015) GRL. 42 6931–6938. [10] Fatemi S., et al., (2017) J. Phys. Ser. J. Phys. Conf. Ser. 837. [11] Fuqua Haviland H., et al., (2017) LPSC XLVIII. [12] Dyal P., Parkin C.W., (1971) JGR. 76, 5947–5969. [13] Dyal P., Parkin C.W., (1971) Proc. 2nd LPSC. 3, 2391–2413. [14] Dyal P., et al., (1974) Rev. Geophys. Sp. Phys. 12, 568–591. [15] Angelopoulos V., (2010) Space Sci. Rev. 165, 3–25. [16] Auster H.U., et al., (2008) Space Sci. Rev. 141, 235–264. 
+7010.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+UTILIZATION OF NUCLEAR POWER FOR MOON MISSIONS: NUCLEAR POWER GENERATION 
+USING HELIUM COOLED REACTOR FOR MOON HABITATS 
+ 
+Ugur GUVEN1 and Anand Kumar Singh2 
+1UN Center for Space Science and Space Technology Education in Asia Pacific (CSSTEAP) 
+[redacted-email] 
+2UPES Aerospace Engineering Department 
+ 
+ 
+Introduction:  As the closest space based natural 
+satellite i n space, the moon has been one of the main 
+interests of mankind since the dawn of the civilization. 
+To overcome certain difficulties with power requir e-
+ments, nuclear power sources will be more advant a-
+geous in long term point of view. On the moon , it is 
+essential to have extensive support to create power for 
+the various logistical requirements such as life support, 
+communications, lights, waste removal, etc.  as well as 
+for the scientific experiments and for the facilities that 
+will process materia ls. Thus, functional power sources 
+are nee ded which can function reliably in long term. 
+Due to its basic properties, chemical or thermal means 
+of generating electricity would be quite difficult under 
+reduced gravity conditions. Moreover, it would create 
+several control and stability issues as well  and further-
+more they would require excessive amounts of fuel to 
+be either mined or transported from Earth in a continu-
+ous manner. 
+However, with the availability of a nuclear reactor, 
+all of the power requirements in a moon based station 
+(with reduced gravity conditions) can be met for sever-
+al years without any difficulty. Nuclear reactor power 
+systems can support human exploration at su rface out-
+posts and space st ations. A nuclear rea ctor on the sur-
+face of the Moon can be a source of reliable power to 
+provide life su pport, and to supply the large power 
+demands of facilities processing materials. 
+Naturally, there are different options for utilization 
+of nuclea r power for moon based missions . Unfortu-
+nately, the standard types of reactors found on Earth 
+such as the Heavy Water Pressurized Reactor or the 
+Light Water Pressurized Reactor systems will not be 
+feasible on the moon . Since the moon h as the 1/6 th 
+gravity of the Earth, the fission kinetics would be hard-
+er to control and using water as a coolant will not be 
+practical as having thousands of tons of water on the 
+moon will not be logistically feasible. In addition, the 
+circulation of waste water will be extremely difficult 
+due to subzero temperatures as well as the vacuum 
+outside of the Moon Habitat 
+Since the operation of normal water cooled nuclear 
+reactors would be a challenge due to limited availabi l-
+ity of water and due to behavior of water under reduced 
+gravity and vacuum conditions  in the Moon , it will be 
+necessary to utilize more advanced types of nuclear 
+reactors. One such example would be the utilization of 
+a Helium Cooled Nuclear Reactor  where Helium will 
+be used both as a neutron moderator and as a coolant. 
+Since helium is a noble gas, it will not be chemically 
+reactive and also several studies suggest that Helium 
+circulation would function well under reduced gravity 
+conditions and even under microgravity conditions . In 
+addition, the pumping and the cycling of Helium would 
+be easier and the logistics of wastewater will not be a 
+problem as well. 
+ Thus, by using a helium cooled reactor, the chal-
+lenges of using a water cooled reactor can be overcome 
+and the necessary long term power su pply can be pro-
+vided to a Moon Habitat.  The paper will discuss the 
+issues while addressing moon based criteria such as the 
+reduced gravity, lack of atmosphere, availability of 
+large amounts of moon dust and lack of natural re-
+sources necessary for operation of such a system. 
+ 
+References:   
+ 
+[1]. Claudio Bruno, “Nuclear Space Power and Propulsion 
+Systems”, Volume 225, Progresses in Astronautics and Aer-
+onautics, American Institute of Aeronautics and Astro-
+nautics, 2008.  
+ [2]. Paul A. Czysz, Claudio Bruno, Future Space Craft Pro-
+pulsion Systems: Enabling Technologies for Space explora-
+tion, Second Edition, Praxis Publishing Ltd, Chichester, UK, 
+2009. 
+[3]. Gurunadh Velidi, Ugur Guven, “Usage of Nuclear Reac-
+tors for Space Applications: Space Propulsion and Space 
+Power Concepts”, in proc. International Conference on Me-
+chanical and Aerospace Engineering, New Delhi, 2011, 
+P.356-360. 
+[4]. Ugur Guven, Piyush Kuchhal “Nuclear Fusion and then 
+Moon as a Source of Power for the World”, in proc. Interna-
+tional Conference on Mechanical and Aerospace Engineer-
+ing, New Delhi, 2011, P.356-360. 
+[5]. Stanley Schmidt, Robert Zubrin, “Islands in The Sky: 
+Bold New Idea Colonizing Space”, Wiley, First Edition, 
+1996.  
+[6]. Giancarlo Genta, Michael J. Rycroft, “Space, the final 
+frontier?”, Cambridge University Press, 2003.   
+ 
+7021.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+
+RE GE NE RATIVE  FUE L CELL-BASE D E NE RGY STORAGE  SYSTE MS FOR LUNA R SURFACE  
+E XPLORATION.  Monica C. Guzik1, Ryan P. Gilligan1, Phillip J. Smith1, and Ian J. Jakupca 1, 1NASA John H. 
+Glenn Research Center, Cleveland, OH, 44011, United States 
+ 
+ 
+Abstract:  The National Aeronautics and Space 
+Administration (NASA) continues to develop tech-
+nologies to satisfy the persistent need for con-
+sistent and reliable power systems that enable Lu-
+nar surface exploration. The traditional power archi-
+tecture solution sizes a photovolt aic solar array to 
+both power the customer load and charge an energy 
+storage system while sunlight is available. When 
+sunlight is unavailable  during the lunar night , the 
+energy storage system discharges to support the 
+customer loads. In the past, batteries  have met the 
+energy storage needs  over short charge/discharge 
+durations with the lowest overall mass and fewest 
+system complications compared to other technolo-
+gies. However, the lengthy eclipse durations and 
+challenging thermal environments inherent in ma ny 
+lunar surface exploration locations result in longer 
+discharge periods with higher energy storage re-
+quirements to survive the cold temperatures during 
+the lunar night. For such missions, the battery mass 
+quickly becomes prohibitively large, necessitatin g 
+an alternative energy storage method. One such 
+alternative is the Regenerative Fuel Cell (RFC).  
+A Proton Exchange Membrane (PEM) -based 
+RFC system integrates a fuel cell, an electrolyzer, 
+and a multi -fluid reactant storage system into an 
+energy storage d evice. The energy capacity of the 
+RFC is determined by the amount of available hy-
+drogen and oxygen storage. Typically, hydrogen 
+and oxygen are stored as gases at elevated pres-
+sure, due to the advantage of decreased system 
+volume and simplified thermal requ irements. Previ-
+ous system trades suggest that the optimum gase-
+ous storage pressure is in the range of 1000 to 1800 
+psia, but may vary based on the mission require-
+ments, particularly when overall volume minimiza-
+tion is required in addition to system efficie ncy.  
+The RFC discharges power through a fuel cell 
+that converts the stored chemical energy of oxygen 
+and hydrogen into direct -current electricity, heat, 
+and water. This product water is accumulated until it 
+is later consumed in the charging portion of the  cy-
+cle. Fuel cells are, inherently, a current -producing 
+device with the resulting electrical potential (volt-
+age) indicating the reaction efficiency. Increasing 
+the system pressure and temperature increase the 
+reaction efficiency by increasing the molecular  con-
+centration and reaction kinetics. For PEM fuel cells, 
+the standard operational regimes are 40 to 65 psia 
+and 20 to 80°C.  
+Unlike RFC systems, batteries incorporate ener-
+gy conversion (power) and energy capacity (stor-
+age) into one package that encompasse s both the 
+energy storage mass and the power production 
+mass. An RFC dissociates the two masses, thereby 
+enabling independent sizing of each. Because an 
+RFC stores chemical energy as gases, it is able to 
+store energy in large quantities with a relatively l ow 
+mass penalty. This advantage becomes more pro-
+nounced as energy storage levels increase. NASA 
+continues to evaluate RFC systems for lunar surface 
+exploration, inclusive of lunar night survival and 
+operations, as the sub -systems and individual tech-
+nology elements mature.  
+This presentation highlights the updated results 
+of a recent NASA study funded under the Ad-
+vanced Exploration Systems (AES) Modular Power 
+Systems (AMPS) project using an analysis method 
+previously developed under the AMPS project. 
+Both ma nned and robotic exploration of the lunar 
+surface will require optimized energy storage solu-
+tions that minimize system mass and volume, while 
+maintaining the capability to provide power and 
+heat to survive the lunar night. Each mission has a 
+unique set of requirements based on its location 
+and application that may result in different technol-
+ogy solutions. Performing high -level analysis of the 
+available energy storage options may allow mission 
+designers to converge on a technology solution 
+early in the archi tecture definition process, allowing 
+for more effective optimization of the final system 
+design. Using the data presented, high -level system 
+sizing of an RFC energy storage system for a given 
+lunar mission can be performed to aid in architecture 
+trade stud ies. Following the selection of an RFC 
+system as a viable solution for a given mission, the 
+detailed models used to generate the presented data 
+can be used for system optimization and further 
+efficiency gains. 
+7024.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+SATELLITE BEAMED POW ER FOR LUNAR SURFACE  ASSETS. M. H. Hecht 1 and Philip Lubin 2. 1MIT Haystack Ob-
+servatory, Westford, MA, 2Univ. of California at Santa Barbara. 
+ 
+Introduction: Solar power satellites have long 
+been promoted for terrestrial use [1], but the advantage 
+over ground-based assets has never been convincingly 
+demonstrated. In contrast to the terrestrial case, ho w-
+ever, orbitin g infrastructure for space power satellites 
+is less expensive and simpler to emplace than ground 
+facilities for use on other worlds. Moreover, a cost -
+effective architecture is one that minimizes the surface 
+footprint at the expense of resources in space. T he con-
+fluence of several factors now make beamed power 
+systems practical for solar system exploration in the 
+near-term. This is particularly true for lunar explor a-
+tion, where the night is 14 Earth days long and there is 
+both scientific and exploration inte rest in visiting pe r-
+manently shadowed regions.  
+Mission architecture:  For the architecture d e-
+scribed here, the orbital element collects solar radiation 
+with photovoltaic panels and us es the electrical power 
+to direct a high power laser at a photovoltaic ar ray on 
+the surface. This allows surface instruments to mai n-
+tain full operation without access to sunlight.  
+Since the divergence of the power beam is propo r-
+tional to the wavelength, the need to limit the size of 
+the surface receiver favors optical over mic rowave 
+transmission. With a coherent optical beam, the ang u-
+lar dispersion can be made equal to or less than the 
+pointing accuracy of the projector, which is typically 
+of order 1 arcsecond. That limitation suggests placing 
+the satellite in a low orbit rathe r than in a stationary 
+location, transmitting only when the orbiter passes 
+over the ground station. The result is low duty cycle 
+transmission and high duty cycle solar collection, 
+which eliminates the need for an oversized solar co l-
+lector for the orbiter a nd makes it possible to deliver 
+significant power to the ground from a modest sized 
+spacecraft with a small aperture (20 -50 cm for 1 
+arcsecond).  
+To meet the power needs of larger missions (such 
+as crewed surface operations), the best scaling strategy 
+is to position a necklace of solar power satellites in a 
+common orbit, each radiating to the surface in turn. 
+These satellites could also provide near -continuous 
+communications and GPS -like navigational support to 
+a ground station. We also note that the same t echnolo-
+gy can be applied with little modification to point -to-
+point power beaming across the lunar surface. 
+Orbital element: For the orbital element we post u-
+late a self -contained small spacecraft with ~ 6 m 2 of 
+solar arrays in a low lunar orbit, nominally 200 km 
+perilune. The solar panels would charge a battery du r-
+ing most of each orbit, except when in eclipse, and 
+would discharge for ~4 minutes during each pass over 
+the landed station while homing in on a re troreflector 
+mounted on the station. With a 2.2 hr orbital period, 
+this strategy corresponds to a 3.2% duty cycle. An o p-
+tical system with ~1 arcsecond pointing accuracy could 
+project ~6 kW to the surface with 1 arcsecond dispe r-
+sion using a 20 -50 cm mirror,  illuminating a spot on 
+the surface as small as 1 m (though in practice, 2 -3 m 
+is more realistic allowing for jitter, aberration, and 
+elongation from an angle up to 45º). On the surface, 
+this flux density is comparable to overhead sunlight.  
+Laser power of 3-6 kW can be readily achieved t o-
+day by joining the outputs of multiple fiber lasers via 
+spectral combining [2], a technique capable of produ c-
+ing tens of kW of output. Other components needed for 
+an operable system, including steerable optics compa t-
+ible with high power loads, are commercially available 
+for space applications.  The telescope, pointing and 
+tracking elements, radiator, battery, and solar panels 
+are high TRL commercial components that can be 
+adapted to a free-flyer platform.  
+Landed element: Assets on the ground need not be 
+different from those used on a typical sol ar-powered 
+mission, such as the UltraFlex family of deployable 
+solar arrays such used for the Phoenix and InSight mi s-
+sions. Those missions used 2.1 m diameter arrays, but 
+up to 6m implementations have been developed by the 
+manufacturer, Orbital STK  (the sp ecific size needed 
+would depend on the dispersion and pointing accuracy 
+of the incident beam). With the orbital element d e-
+scribed above, such an array would produce nearly 3 
+kW-hr for the surface every 24 hrs, comparable to an 
+MMRTG such as on the Curiosit y mission at Mars. 
+Moreover, the conversion efficiency of photovoltaics 
+tuned to a specific laser wavelength can significantly 
+surpass that of solar spectrum conversion. 
+Fig. 1 Notional optical train showing focusing and point-
+ing systems. The dotted line indicates quad cell feedback 
+assuming a beacon or retroreflector on the surface.  
+Laser
+Processor
+Gimbal
+Drive
+Spacecraft 
+Navigation
+FSM Drive
+Quad
+Cell
+5X Beam
+Expander
+Gimballed
+Steering
+Mirror
+To
+Lander
+7034.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+Design approach: Notional optics are shown 
+schematically in Fig. 1. An off -axis 5X beam expander 
+provides high efficiency without obscuration while a 
+flat gimballed coarse steering mirror requires minimal 
+moving mass, and hence offers fast response. A fast 
+steering mirror (FSM) for fine pointing is controlled by 
+a PID loop based on detection of a tracking signal from 
+a retroreflector at the center of the photovoltaic recei v-
+er. A 5 cm reflector aperture would collect at least 5W 
+from the beam, corresponding to ~12.5 mW within the 
+minimum 20 cm aperture of the orbiter. A quad cell 
+detector would then use this signal to generate a fee d-
+back response to the fine steering mirror (FSM). To 
+detect the reflected signal while radiating 3 -6 kW to 
+the ground is straightforward if the radiating beam is 
+time gated. 
+An alternative approach to acquisition an d tracking 
+provides the feedback signal digitally from the ground. 
+In this case, the photovoltaic array itself is configured 
+in quadrants, or a set of 4 small photodiodes is overlain 
+on the array to the same effect. The power measured in 
+each of these quadrants is then used to generate a fee d-
+back signal, which is radiated digitally to the spac e-
+craft whenever the beam drifts too far from the optimal 
+position (but no faster than a 1 kHz cadence). If the 
+signal is lost entirely, it may be re -acquired by expand-
+ing or rastering the beam. 
+Acknowledgements: We appreciate the advice and 
+guidance of T.Y. Fan and Alan Wirth of MIT Lincoln 
+Laboratory in formulating this concept and helping us 
+understand the available technology.  
+References: [1] Glaser, P.E., Davidson, F.P, Csigi, 
+K.I., (1997) Solar Power Satellites: A Space Energy 
+System for Earth, Wiley -Praxis. [2] S. Redmond, K. 
+Creedon, T. Y. Fan, A. Sanchez, C. Yu, and J. Donne l-
+ly (2013), in Coherent Beam Combining, A. Brignon 
+ed. Chapter 4 (Wiley-VCH).  
+ 
+7034.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+SMALL MODULAR FISSION REACTORS THAT ENABLE AFFORDABLE AND SUSTAINABLE 
+LUNAR ENTERPRISE.  J. S. Herring 1, S. Mackwell 1 and C. Pestak 1, 1Universities Space Res earch Association, 
+7178 Columbia Gateway Drive, Columbia, MD 21046 ([redacted-email]) 
+ 
+Common to all the robotic and human activities 
+planned for the lunar surface is the need for abundant 
+and reliable electrical power . Effective robotic explo-
+ration and sustained human presence will require elec-
+trical power in the 40kW to 100kW range that is con-
+tinuously available throughout the entire lunar 
+day/night cycles. A power plant capable of meeting 
+this need would form the basis for establishing com-
+mercial electrical utility services on the lunar surface. 
+Such services will jump start the exploration, resource 
+mapping, commercial exploitation, and colonization of 
+the Moon by a broad mix of public and private users 
+that include space agencies, industries, adventurers, 
+and entrepreneurs.  
+To address the challenges and opportunities of es-
+tablishing in-space commercial electrical utilities, Uni-
+versities Space Research Asso ciation (USRA) recently 
+began an Internal Research and Development (IRAD) 
+project to perform a concept study of a new Small 
+Modular Fission Reactor (SMF R) that uses Low En-
+riched Uranium (LEU) for use on the Moon. SMFRs 
+have significant advantages over other potential power 
+sources being considered for the Moon.  
+By selecting LEU as the fuel, USRA is addressing 
+design issues for a SMFR for use on the lunar surface 
+that can be developed commercially, thus enabling 
+greater industry participation in current and future ini-
+tiatives for the exploration, habitation, and exploitation 
+of the Moon. Our study will build upon the progress 
+made by NASA’s HEU-based KiloPower project and 
+make use of DOE’s experience in the development of 
+compact reactor systems. 
+Using a variety of possible energy conversion 
+techniques, SMFRs powered by LEU can enable a 
+commercial enterprise to provide both the heat and 
+electricity needed for human and robotic activities, 
+including outposts, habitats, fleets of exploration rov-
+ers, ISRU systems, and excavation/mining operations.  
+This presentation describes our concept for a com-
+mercially viable SMFR for use on the Moon by 2028, 
+if properly resourced. 
+ 
+7006.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+The Use of Lunar Resources for Energy Generation on the Moon   Dr. Alex Ignatiev , Lunar Resources  
+([redacted-email]) 
+ 
+ 
+ 
+ 
+ 
+Figure 1, Lunar Resources Solar Cell Paver concept 
+surface vehicle 
+ 
+ 
+Introduction:  The indigenous resources of the 
+Moon can be used to develop an electrical energy sys-
+tem for the Moon. Based on available lunar resources a 
+lunar power system founded on the fabrication of solar 
+cells by thin film growth tech nology in the vacuum 
+environment of the Moon can be generated. This can 
+be accomplished by the deployment of a moderately -
+sized (~200kg) crawl er/rover on the surface of the 
+Moon with the capabilities of preparation of the lunar 
+regolith for use as a su bstrate, evaporation of the ap-
+propriate semicon ductor materials for the solar cell 
+structure directly on the regolith substrate, and deposi-
+tion of metallic contacts and interconnects to finish off 
+a complete solar cell array. The direct fabrication of an 
+electric power system on the Moon  would require the 
+transportation of a much smaller mass of equipment to 
+the Moon than would otherwise be required to install a 
+complete electric power system brought to the Moon 
+from the Earth and emplaced there. It would also result 
+in an electric power system that was repaira-
+ble/replaceable through the simple fabrication of more 
+solar cells, and that would yield an en ergy-rich envi-
+ronment for the Moon and cis-lunar space.  
+ 
+ 
+ 
+ 
+ 
+ 
+References: 
+[1] A. Cohen “Report of the 90 -Day Study on Hu-
+man Exploration of the Moon and Mars ”, NASA, Nov. 
+1989 
+[2] A. Freu nlich, T. Kubricht, and A. Ignatiev: 
+“Lunar Regolith Thin Films : Vacuum Evaporation and 
+Properties,” AP Conf. Proc., Vol 420, (1998) p. 660  
+[3] Sadoway, D.R.: “Electrolytic Production of 
+Metals Using Consumable Anodes, ” US Patent No. 
+5,185,068, February 9, 1993 
+[4] Duke, M.B.: Blair, B. : and J. Diaz: “Lunar Re-
+source Utilization, ” Advanced Space Research, Vol. 
+31(2002) p.2413.    
+[5] A. Ignatiev, A. Freundlich.: “The Use of Lunar 
+Resources for Energy Generation on the Moon,” 
+© 2018 Lunar Resources, Inc. 
+ 
+7013.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+ 
+The Pylon: Near -Term Commercial LEU Nuclear Fission Power for Lunar Applications. C. G. Morrison 1,  W. 
+Deason1, M. J. Eades 1, S. Judd1, V. Patel 1, M. Reed 1, P. Venneri1, 1Ultra Safe Nuclear Corporation, Seattle, WA, 98199 
+([redacted-email]) 
+ 
+Introduction: Nuclear energy provides not only the 
+ability to survive the 354-hour lunar night, but the ability 
+thrive. The e xploration of Lunar resources in 
+permanently shadowed craters and utilization of thermal 
+energy to process local resources are task well-suited to 
+nuclear energy. Yet, despite except ional potential, 
+nuclear energy is often omitted from further 
+consideration due to technology development and policy 
+considerations. However recent developments 
+demonstrate that the technology development and policy 
+challenges are surmountable and a near -term solution 
+for nuclear energy in the Lunar environment is available. 
+ Terrestrial Technology Suited for Lunar 
+Environments: USNC is a commercial company that is 
+developing a terrestrial gas -cooled micro -modular 
+reactor (MMR) for off -grid and rugged locations on 
+Earth. The MMR utilizes a novel refractory carbide 
+nuclear fuel technology designed to optimize safety.  
+For the same reasons why the technology excels in 
+remote terrestrial regions, it also excels in the space 
+environment. The Pylon is a low enriched uranium 
+(LEU) fission reactor system utilizing the core 
+technology of the MMR for electricity on the Moon.  
+The Pylon is a near -term technology building upon 
+the expertise and success of the MMR. The Pylon is a  
+4500 kg 1 25-150 kWe radiatively -cooled system 
+Approximately 800 kW of waste heat at temperatures 
+between 300 -500 K is availab le for in -situ resource 
+exploration and acquisition. In addition, up to 1150 K 
+process heat is available. The Pylon design is such that 
+it can be delivered to the Lunar Surface on a large CLPS 
+class lander such as the Blue Moon.  The temperature 
+ranges are well-suited to utilize currently available  
+directly-cycle Brayton energy conversion technology.  
+Conclusion: The Pylon  fission power system can 
+enable sustainable, power -abundant exploration, and  
+lead to meaningful development on the Lunar surface.  
+Reflector 
+Control Drum 
+Fuel 
+Moderator 
+Structure 
+Insulator 
+Pressure  
+Vessel 
+Figure 1: Reactor Core Design 
+Figure 2: Notional Lunar Configuration 
+7033.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+PASSIVE SURVIVABILITY OF 18650 LITHIUM-ION CELLS THROUGH LUNAR NIGHT ENVIRON-
+MENT SCENARIO.  K. Nandini1, K. Usha2, M. S. Srinivasan3, M. Pramod4, P. Satyanarayana5 and M. Sankaran6, 
+1 Battery Division Power Systems Group U R Rao Satellite Centre HAL Airport Road, Bangalore – 560017 India 
+Phone: 080-2508-3668 [redacted-email], 2-4 Battery Division Power Systems G roup U R Rao Satellite Centre 
+HAL Airport Road Bangalore – 560017 India, 5 Power Systems Group U R Rao Satellite Centre HAL Airport Road 
+Bangalore – 560017 India, 6Communication and Power Area  U R Rao Satellite Centre HAL Airport Road Banga-
+lore – 560017 India. 
+ 
+Introduction: Every space exploration mission is 
+unique in its design, approach and mission manag e-
+ment and battery too, as a subsy stem in any of such 
+space-craft, has to cater to exceptional demands. A 
+lunar rover mission for instance, requires  the battery to 
+support the peak power load when the power gener a-
+tion through solar panels is in -sufficient. At all such 
+operations during lunar day, the battery pack temper a-
+ture can be eff iciently managed with -in the optimal 
+window, using rover’s thermal management elements. 
+The real cha llenge is to endure passively  through the 
+lunar night, at prevailing temperatures as harsh as -180 
+⁰C for duration of 336 hours  [1], to be able to operate 
+in the su bsequent lunar day.  From a battery point of 
+view this cha llenge is only one of its kind, where ba t-
+tery is required to operate (charge or discharge) at a m-
+bient temperatures and is required to  survive passively 
+(without any load) an exposure to extremely low te m-
+peratures, preferably, without any permanent loss or 
+damage. Even though the works cited in literature [2-4] 
+addresses the ways to tac kle inferior charge/discharge 
+characteristics of Li-ion batteries by altering electrolyte 
+composition, there is hardly any information about th e 
+passive su rvivability of already existing chemistry of 
+commercialized Li -ion cells, at extreme low temper a-
+tures below -150 ⁰C and the present work aims to 
+throw some light at this ambiguity. 
+Present study  describes passive survivability of 
+commercially-off-the-shelf (COTS) 18650 lithium -ion 
+cells tested in an env ironmental scenario similar to 
+lunar night  (cryogenic te mperatures at vacuum ). Sur-
+vivability of the cells in pa rticular and battery pack in 
+general is crucial for r esumption of function of any 
+lunar exploration rover after hibernation at every lunar 
+night. The test i s designed to include a batch of Com-
+mercial lithium-ion cells from different manufactures, 
+with different nameplate capacities and different States 
+of Charge . The cell behavior during the test i s mon i-
+tored in-situ using cell terminal voltage measurements. 
+Complementary tests like, visual examination, dime n-
+sional measurements, Residual Gas Analysis to detect 
+any leakage, electrical tests to appraise electrical pe r-
+formance and 3 dimensional x-ray computed tomogr a-
+phy analysis to view cell internal features, are carried 
+out at ambient conditions, on all cells both prior-to and 
+after soaking at low temperatures, to comprehend the 
+effect of exposure to extreme low temperatures.  
+Results indicate  successful survivability of tested 
+commercial Lithium -ion cells after  extreme thermal 
+soak without any significant physical or internal da m-
+age or electrical performance degradation. Variation in 
+cell term inal vol tage with temperature is a reversible 
+change attributed to the reversible phenomenon of 
+freezing of cell ele ctrolyte, which further more is con-
+firmed through ex -situ measurement of freezing point 
+of electrolyte extracted from tested cells. 
+Digital Formats: The plot below shows the  varia-
+tion of recorded cell terminal voltag e with time and 
+temperature for sample COTS Li-ion cells: Cell A, Cell 
+B and Cell C , during thermal soak at -160⁰C soak for 
+336 hours  inside liquid nitrogen  cooled shroud under 
+vacuum.   
+ 
+References: [1] Christie R.J. Plachta D.W and  
+Hasan M.M. (2008) NASA-TM, 215300. [2] Zhang S.S. 
+(2006) J. Power Sources , 162, 1379-1394. [3] Li J. 
+Yuan, C.F. Guo Z.H. Zhang Z.A. Lai Y.Q. Liu J. 
+(2012) Electrochim. Acta . 59, 69-74. [4] Cho Y-G. 
+Kim Y-S. Sung D-G. Seo M-S. Song H-K. (2014) 
+Ener. Enviorn. Sci.  7, 1737-1743. [5] Kim K.M. Ly 
+N.V. Won J.H. Lee Y-G. Cho W.I. Ko J.M. Kaner 
+R.B. (2014) Electrochim. Acta. 136 ,  182-188. [6] 
+Won J.H. Lee H.S.  Hamenu L. Latifatu M. Lee Y.M. 
+Kim K.M.  Oh J. Cho W.I. Ko J.M. (2015) J. Indus. 
+Eng. Chem. 37 , 325-332. [7] Hamenu L. Lee H.S. 
+Latifatu M. Kim K.M. Park J. Baek Y.G. Ko J.M. 
+Kaner R.B. (2016) Cur. Appl. Phy. 16, 611-617. 
+7002.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+
+MATERIAL SELECTION FOR MECHANICAL MECHANISM SURVIV AL AND USE IN THE LUNAR
+NIGHT.  S. Nieczkoski 1 C. B. Dreyer 2, B. Blair 3, and J. Rostami 4,  1Thermal Space Ltd. (1333 Yarmouth Ave.,
+Suite #1, Boulder, CO 80304,  [redacted-email]),  2Colorado School of Mines (1600 Illinois St, Golden,
+CO  80401,  [redacted-email]),  3Plantary  Resource  Engineering  ([redacted-email]),  and  2Colorado
+School of Mines (1600 Illinois St, Golden, CO 80401, [redacted-email]).
+Introduction:  The lunar night presents challenges
+for the survival of spacecraft mechanisms due to ex -
+treme low temperatures, typically 100 K at low lati -
+tudes [1] and less near the poles [2]. Some spacecraft
+components, such as those in a rover or lander body,
+can be protected from the extremely low temperature
+by use of heaters and adequate thermal design. How -
+ever, those mechanisms on the appendages of a rover
+or lander, such as robotic arms, drills, scopes, lander
+legs, and rover wheels cannot be easily protected in
+this way because they are directly exposed to the ambi-
+ent  lunar  thermal  and  vacuum  environment.  These
+mechanisms would be challenging  to keep warm  by
+applied heat and insulation because they must contact
+the lunar surface or otherwise be exposed to the radia -
+tive environment of the Moon by design. It is desirable
+to find design solutions that will allow mechanisms to
+function at the natural temperature of the lunar night.
+In  this  paper,  we discuss  materials  and  design  ap-
+proaches that allow such mechanisms to not only sur -
+vive the lunar night, but have complete functionality
+in the lunar night environment. Our team is currently
+developing a drilling system capable of operating  in
+the permanently shadowed regions on the lunar  sur -
+face under an Early Stage Innovation (ESI) Program
+funded by NASA.
+Challenges: ----  Adequate  designs  must  encompass
+not only the low temperature vacuum environment on
+the lunar  surface, but also the transition from Earth
+ambient. In mechanized systems, primary considera -
+tions include material mechanical properties (strength,
+modulus, hardness, wear resistance, etc.), efficient use
+of both good thermal-conducting and thermal-insulat -
+ing materials, mechanical stresses induced by materi -
+als of varying thermal contraction behaviors, exposure
+or isolation of electrical components and subsystems,
+suitable lubricants,  hermetic sealing  or venting,  and
+abrasion resistance or shielding.
+Solutions:  ---- Fortunately, there are common materi -
+als such as 300-series stainless steel and 6000-series 
+aluminum that have been used for decades in aero -
+space systems that will lay the foundation for the me -
+chanical and thermal designs of mechanized lunar 
+systems. Fiber-reinforced composite structures formu-
+lated with resin systems that are compatible with the 
+cryogenic environment are also of high value. Our 
+drilling system is being designed to utilize these mate -
+rials in combination with other subsystem specific ma -
+terials such as polycrystalline diamond compact 
+(PDC) bits on the drill head that have shown excellent
+wear resistance while operating at cryogenic tempera -
+ture [3].
+Conclusions:  Design  solutions  exist  that  enable
+mechanisms to not only survive direct exposure to the
+lunar  thermal  environment,  but continue to function
+without  failure.  Operation  of drills,  scopes,  robotic
+arms, rover wheels, and other mechanical appendages
+during  the lunar  night  are desirable for science and
+prospecting activities. This paper discusses the mate -
+rial approaches that we are developing to assure that
+drilling  can  be conducted  and  characterized  in  the
+harsh  cryogenic  vacuum  environment  on  the  lunar
+surface.
+References: [1]  V asavada,  A.R.,  Bandfield,  J.L.,
+Greenhagen,  B.T.,  Hayne,  P.O.,  Siegler,  M.A.,
+Williams, J.P. and Paige, D.A., 2012. Journal of Geo -
+physical  Research:  Planets ,  117(E12).  [2]  Paige,
+D.A., Siegler, M.A., Zhang, J.A., Hayne, P.O., Foote,
+E.J.,  Bennett,  K.A.,  V asavada,  A.R.,  Greenhagen,
+B.T., Schofield, J.T., McCleese, D.J. and Foote, M.C.,
+2010. Science, 330(6003), pp.479-482. [3] Evans, C.,
+and Bryan, J. B., 1991, “Cryogenic Diamond Turning
+of  StainlessSteel,”  CIRP  Ann.  –  Manuf.  Technol.,
+40(1), pp. 571–575.
+7023.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+Shifting the Paradigm of Coping with Nyx on the Moon – a Ground-Penetrating Radar Case.  D. C. Nunes1, K. Carpenter1, Mark Haynes1, Jean Pierre de la Croix1. 1Jet Propulsion Laboratory, California Institute of Technology (4800 Oak Grove Drive, Pasadena CA 91109, [redacted-email])   Introduction:  Radar has played a key role in characterizing the properties and geology of the Moon, from ground-based [1] to bi-static [2], sounders [3] and a ground-penetrating radar [4]. Currently, a higher level of fidelity in data is needed to fully characterize and interpret the lunar geologic and to be able to exploit its resources. Radar will continue to be a key tool in this effort, and this belief is supported by the needs outlined in the Lunar Exploration Road Map and the Lunar Knowledge Gaps document.  Detection and mapping of polar volatiles, of pyroclastic deposits and regolith stratigraphy, and of lunar lava tubes are among the primary science cases for ground-penetrating radar instruments. Aside from the ice deposits expected in and around the permanently shaded areas near the poles, primary science targets are distributed around the Moon in the equatorial and tropical latitudinal bands. MARGE:  We are currently developing a ground-penetrating radar (GPR) instrument that is an intrinsic part of a compact, autonomous rover. The size of the Multi-static Autonomous Roving Ground-penetrating-radar Explorer (MARGE) is driven by the size of the GPR antenna, which is approximately 50×50 cm and capable of transmitting and receiving an ultra-wide frequency band from 120 MHz to 2 GHz. This operational band permits penetrations of up to ~20 m while providing depth resolution of for typical lunar regolith and rock dielectric constants [5] and a dynamic range of 120 dB; see Figure 1 for the link analysis.  Figure 1- Link analysis for a reflection arising from a regolith/rock dielectric interface for increasing depth (range).  Common strategies: Since Sojourner, survivability has depended on active and passive thermal management, through a combination of battery-powered heaters, small radiogenic sources and thermal insulation like aerogel [6]. These have worked reasonably well in the past. The long dark period on the moon makes heating a power hungry option. Commercial landers will not allow radioisotope heating units at least in the beginning. Our heritage solutions for 
+Mars or the past lunar missions may not apply to this new opportunity. New Strategy: To survive the relatively long lunar night we propose to shift the strategy from one of full dependence on thermal management to one of increasing thermal tolerance. For example, special components and electrical traces that are tolerant to variations on the order of 300°C can be used. This comes down to material and alloy selection and architecture. Specific power storage solutions tailored to survival of freeze/thaw cycles and the heat of the lunar day as well as concepts of operations that allow for opportunistic operation between thermal extremes are needed. We will present some possible solutions to these challenges based off our current effort on MARGE. Expanding Surveys: An average speed of 2.5 cm/sec for autonomous planetary rovers [6,7] may allow traverses comparable to ~1 km during a lunar day, depending on operational constraints, such as data storage and downlink and 6 earth-days of amenable thermal conditions.  The biggest benefit for a GPR to survive the night is expanding the survey area to multi-km, which would maximize science and characterization in the vicinity of the landing site.   References:  [1] Hagfors, T. (1970), Radio Sci., 5(2), 189-227.  [2] Nozette, S. et al. (1996), Science, 274(5292), 1495. 10.1126/science.274.5292.1495. [3] Phillips, R. J. et al. (1973),LPSC Proceedings, Houston, TX. [4] Fa, W. et al. (2015), GRL 42(23), 10,179-110,187. [5] Olhoeft, G. R., & Strangway, D. W. (1975), Earth Planet. Sci. Lett., 24, 394-404. [6] Crisp, J. A. et al. (2003), JGR 108(E12), 10.1029/2002JE002038. [7] Grotzinger, J. P et al. (2012), Space Sci. Rev. 170(1), 5-56.       
+7012.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+LUNAR ROADS: STRATEGIES FOR REMAINING IN THE SUNLIGHT .  D. S. Plata 1, Space Development 
+Network, [redacted-email]. 
+ 
+ 
+Introduction:  The slow rotation of the moon on 
+its axis results in lunar nights lasting about 14 Earth 
+days.  This poses a significant challenge to robotic 
+exploration due to the lack of solar power and the need 
+for the hardware to survive the cryogenic t emperatures 
+of the lunar night. 
+Because of the slow rotation of the moon on its ax-
+is, lunar days are also 14 Earth days long.  Telerobots 
+could construct basic  lunar roads by compacting the 
+regolith.  In this context, they could also increase their 
+lunar day by driving in a westerly dir ection.  The 
+speeds necessary to remain at a the same time of lunar 
+day appear within reach of telerobots by  driving west 
+at high latitudes. 
+The Challenge:  The moon’s slow rotation  on its 
+axis results in long lunar nights of about 14 Earth days. 
+The resulting lack of solar power creat es the challenge 
+of surviving the lunar night  [1]. During this time, solar 
+power is lost, temperatur es plummet , and power re-
+quirements may increase in order to provide body heat.  
+However, the moon's slow rotation also increases the 
+length of the lunar day. 
+Speeds Necessary to Remain in Lunar Daylight :  
+To remain at the same time of day on the moon, vehi-
+cles would have to drive west at 15.4 km/hr at the 
+equator, 10.4 km/hr at 45 degrees  latitude, and 8 .0 
+km/hr at 58.5 degrees latitude.  For comparison, the 
+Apollo rovers w ere designed with a maximum speed 
+of 12.9 km/hr with th e maximum speed measured at 
+18.0 km/hr. 
+Strategies for Developing a Network of Lunar 
+Roads: This paper examines the question of how tel-
+erobots could be used to create a network of roads 
+starting at the poles and extending towards the equator.  
+Basic lunar roads could simply involve the compress-
+ing of regolith in order to reduce the amount of dust 
+kicked up when vehicles pass over them.  These roads  
+could be of use for exploration and resource develop-
+ment. 
+Strategies for remaining within the sunlight include 
+driving from the poles in the morning, and then mak-
+ing longitudinal roads while driving west.  As sunset 
+slowly develops, the tele robots could drive back to-
+wards the poles at higher speeds using the ver y roads 
+that they created and then either head west at speeds 
+greater than the moon's rotation or even pass over the 
+pole to morning on the other side of the moon. 
+Challenges to Overcome:   Challenges for the im-
+plementation of this approach are discussed includi ng 
+maintaining the telerobots operating in the setting of 
+abrasive regolith dust  [2], ensuring that the t elerobots 
+are adequately charged , and  maintaining communica-
+tions between Earth and the telerobots [3,4]. 
+References: [1] Ungar E. and Fruitwala N. (2011) 
+AIAA SPACE 2011 Conference & Expositi on, AIAA 
+SPACE Forum. [2] Hyatt M. et al. (2007) 45th AIAA 
+Aerospace Sciences Meeting and Exhibit, Aerospace 
+Sciences Meetings. [3] Farquhar R. W. (1967), JSR, 
+Vol. 4, No. 10, pp. 1383- 1384. [4] Malmström et al. 
+(2006) Space 2006, AIAA SPACE Forum, 
+https://doi.org/10.2514/6.2006-7453. 
+7017.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+Data Encoded Laser Wireless Power (DELWP) For Lunar Polar Applications. Dennis Poulos, Poulos Air & 
+Space, Inc., 4084 Preservation Cir, Melbourne, Fl 32934; [redacted-email] 
+ 
+ 
+Background: Laser wireless power (LWP) for Lu-
+nar exploration was proposed by the Communications 
+Working Group (WG2) of the 2008-2009 International 
+Lunar Network (ILN) Study. Jim Schier, NASA, Chief 
+Architect, Space Communications and Navigation, 
+Human Exploration and Operations Mission Direc-
+torate described the ILN findings in a “Concept for 
+Lunar Power and Communications Utility” briefing on 
+Oct 14, 20151. Critical technologies have matured to 
+the point where this architecture is commercially via-
+ble and could be deployed to support Lunar missions. 
+High Power Fiber Laser for Wireless Power: 
+Fiber laser technology has evolved so that power levels 
+of 10’s of kW can be efficiently generated and trans-
+mitted with very high quality and wall plug efficiencies 
+(WPE) approaching 30% or higher2,3. Assuming power 
+satellite use conventional solar panels, with an effi-
+ciency of 25%, to generate power, the size of a solar 
+panel assembly to support a 10 kW fiber laser is 100 
+m2. [For comparison, the area of the ISS solar panel 
+assembly is 3,246 m2 and the ISS generates 120 kW to 
+84 kW.] A high-power fiber laser can be modulated 
+with a high data rate signal and multiple channels of 
+data can be multiplexed into a single beam using wave-
+length division multiplexing (WDM). 
+Advanced High Efficiency, High Power Tuned 
+Photovoltaic Power Receivers: Photovoltaic (PV) 
+cells are being developed for power transfer. Mature 
+Vertical Multijunction (VMJ) cell technology is cur-
+rently used for commercial applications. VMJ cells 
+receive monochromatic (laser) power at irradiancies 
+greater than 18.6 W/cm2 (150 times more intense than 
+sunlight) at 975 nm (IR band) with efficiencies of over 
+36%4. Newer technology Vertical Epitaxial Hetero-
+structure Architecture (VEHSA) PV technology has 
+demonstrated operation at irradiance levels 1,000 times 
+solar intensity, with power efficiencies of 70%5. VMJ 
+or VEHSA power panels on mobile rovers or at fixed 
+Lunar outposts illuminated by high intensity mono-
+chromatic laser light would provide hundreds or thou-
+sands of times the power of equivalent solar panels. 
+Aperture and Landed Mass: Diffraction limited 
+gaussian laser power beams with no atmospheric ab- 
+sorption loss focus 86% of the transmitted power in the 
+central beam (the beam “spot”). An 850 nm laser beam 
+from a 1 m aperture transmitter on a satellite with an 
+apoapsis of 9,381 km would have a 17.9 m diameter 
+(251 m2) spot on the lunar surface. A VMJ or VEHSA 
+optical power receiver that size could generate hun-
+dreds or thousands of kW of power. The spot size for 
+an equivalent 10 GHz (X Band) RF power beam with a 
+30 m transmitting antenna would be 21 km (346 km2). 
+“Frozen” Elliptical, Inclined Polar Orbits: Clas-
+ses of “Frozen” Lunar polar orbits were identified by Dr 
+Tod Ely6 and Erica Lieb6 as part of the 2004 Vision for 
+Space Exploration (VSE) studies. These frozen elliptical 
+orbits are long-term stable. Nominal eccentricity is be-
+tween 0.6 and 0.7 with an apoapsis between 6,111 km 
+and 9,381 km. Inclination is between 51o and 56o (or 
+higher) and they have line-of-sight (LOS) coverage of 
+the complete polar region. Pointing and tracking at those 
+ranges to rovers or outposts on the lunar surface is chal-
+lenging but doable. A constellation of three laser power 
+satellites deployed in a “Frozen” orbit will provide sim-
+ultaneous coverage of polar regions by two power satel-
+lites for enhanced safety and reliability. 
+Survival and Operation through the Lunar Night.  
+These technologies, combined into a Data Encoded La-
+ser Wireless Power (DELWP) system, will generate 
+significantly more power than equivalent Solar panels 
+and provide bi-directional high-speed data links, both 
+key enablers for exploration of the dark Lunar polar 
+regions and operation and survival through Lunar night. 
+Deployed on the polar crater rims, DELWP will provide 
+LOS power and data deep into the permanently dark 
+craters enabling extended range and time on station for 
+prospecting rovers without relying of large, heavy bat-
+teries for mere survival, cabling, or radioisotope ther-
+moelectric generators (RTG). Waste heat will be har-
+vested to provide thermal conditioning for rovers. A 
+three-satellite constellation of laser power satellites 
+flown in “Frozen” Lunar orbits would provide continu-
+ous (day/night) optical wireless power across the Lunar 
+polar regions. Laser systems, compared to RF, minimize 
+transmitting and receiving apertures, minimize landed 
+mass, and maximize data transfer speeds. Multiple sites 
+or rovers can be serviced simultaneously by additional 
+beam transmitting apertures or by beam scanning.  
+References: [1] Jim Schier (NASA) (Oct, 14, 2015) 
+Concept for Lunar Power and Communications Utility 
+briefing. [2] Kuniharu Himeno (2016), Fujikura Tech-
+nical Review, No 44, March 2016. [3] John Wallace 
+(2016), LaserFocusWorld, Vol 52 #3, 29-26. [4] Mico 
+Perales (02/17/2015) LaserFocus-World, Vol 51 #2, 29-
+32. [5] York M. C. A. and Fafard S. 2017 J. Phys. D 50 
+173003. [6] Dr Tod Ely and Erica Lieb, Jet Propulsion 
+Laboratory, The Journal of the Astronautical Sciences, 
+Vol 53, No3, July-September 2005, “Stable Constella-
+tions of Frozen Elliptical Inclined Lunar Orbits”; pp. 
+301-316. 
+7003.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+LEVERAGING IN-SITU REGOLITH PROPERTIES FOR NIGHTTIME HEATING.  T. M. Powell1, M. A. Siegler2, J. L. Molaro2, D. A. Paige1, 1Earth, Planetary, and Spaces Sciences, University of California, Los Ange-les CA, 90095, USA ([redacted-email]), 2Planetary Science Institute based in Tucson AZ, 85719, USA.   Introduction: The Diviner instrument on-board the Lunar Reconnaissance Orbiter [1] is a thermal infrared radiometer that has characterized the lunar surface temperature and thermophysical properties globally. Most of the lunar surface is covered in a highly porous and thermally insulating regolith layer which results in dramatic temperature swings from roughly 400 K at noon to less than 100 K at night at the equator: a challenging environment for a space-craft. Despite the large fluctuations at the near sur-face, significant stores of sensible heat might still be accessible by leveraging temperature variations with depth and thermophysical property variations on the surface. Thermally coupling to warm materials al-ready present on the Moon might provide some nighttime heating and reduce the engineering payload necessary for surviving the lunar night. Subsurface heat: The temperature fluctuation ob-served at the surface propagates to depth based on the diffusivity of lunar regolith k and the length of the diurnal period P: zs = (kP/π)0.5 where zs is the skin depth, at which temperature amplitudes decrease to 1/e of the surface value. Typically this is about 4-10 cm. Below about ¼ m depth, the temperature is roughly constant throughout the diurnal cycle at about room temperature, 255 K at the equator (Figure 1).  This high temperature at depth is due to a ‘solid state greenhouse effect’ from radiative heat transfer within the regolith. The granular nature of regolith and lack of atmosphere cause radiative transfer be-tween grains to be a significant component of regolith conductivity: K = Kc + BT3 where Kc is the phonon conductivity and B is a radiative transfer constant. The temperature dependence of conductivity results in more efficient pumping of heat into the subsurface during the day than out at night, resulting in the diur-nal average temperature at 10 cm depth being ~50 K higher than at the near surface.  Rocks and high thermal inertia material: Diviner observations show that high thermal inertia material at the surface like exposed melt or coherent rocks remain warmer throughout the lunar night.  This study uses known lunar thermophysical prop-erties and thermal modeling to determine feasibility of using in-situ materials as nighttime thermal sources.  Methodology: We used COMSOL to model the temperature of a simple lander as a high conductivity 
+box surrounded by an insulating layer. We compare the nighttime temperature of a lander placed on a typ-ical lunar regolith column to a spacecraft thermally coupled to the subsurface and surface rocks. In the subsurface experiment, a conductive rod was added to the lander to a 0.5 m depth    Results: Preliminary results of show that a con-ductive rod penetrating to a depth of 0.5 m can keep the spacecraft a few 10s of degrees K warmer during the lunar night. This shows that in-situ lunar materials may provide a valuable store of heat that can be uti-lized for future lander missions. 
+ Figure 1. Modeled temperature profile of typical equatorial lunar regolith over a diurnal period. Grey lines show instantaneous profiles every 2 lunar hours.  
+ Figure 2. Preliminary model results of thermally cou-pling to a depth of 0.5 m.   References: [1] D. A. Paige, et al. The Lunar Reconnaissance Or-biter Diviner Lunar Radiometer Experiment. Space Sci. Rev., 150:125-160, 2010.  
+7018.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+1 
+ 
+Darkness Visible:  Instrumentation and Thermal Design to Access the Hidden 
+Moon 
+Jeffrey E. Van Cleve1, Jonathan D. Weinberg1, Clive R. Neal2, Richard C. Elphic3, Kevin Weed1, Gary 
+Mills1, Rich Dissly1 
+1Ball Aerospace, Boulder CO 2Notre Dame 3NASA-Ames 
+Abstract: 
+In poetic language, people often talk about “The Dark Side of the Moon,” while their astronomical 
+meaning is the “Far Side of the Moon.”  In this workshop, we are literally discussing the dark Moon – the 
+entire Moon during the 14-day lunar night at the equator, and the regions of eternal darkness in polar 
+craters which may be rich in volatiles for use as resources, and as a valuable record of the Moon’s 
+history.  The dark Moon has been hidden for most of the history of spaceflight, as no human missions 
+and few robotic missions have persisted through even one lunar night, and no missions whatsoever have 
+landed in the permanently-shadowed regions. In this poster, we discuss “Night” mission concepts, 
+previously developed by the authors with NASA funding, that remain directly relevant to NASA robotic 
+and human science and exploration of the Moon - a long-lived (> 6 y) lunar geophysical network [1] and 
+a Discovery-class mission for the in-situ investigation of volatiles in the lunar polar cold traps [2]. 
+ We also discuss Ball instrument and thermal technology enabling survival, situational awareness, and 
+operations in the dark Moon, including low-light and thermal cameras, flash lidars, advanced multi-layer 
+insulation (MLI)[3], and phase-change material “hocky pucks” that can damp out thermal transients to 
+help moving platforms scuttle through dark regions for 24 h or so on their way between illuminated area 
+such as “the peaks of eternal light” near the lunar south pole, without expending precious stored 
+electrical power for heat. 
+ 
+References: 
+[1] NLSI Lunar Science Conference (2008) abstract 2058, Weinberg, Neal, et al. 
+[2] NLSI (2008) abstract 2142, Elphic, Weinberg, et al. 
+[3] Commercial and Government Responsive Access to Space Technology Exchange (CRASTE)(2016):  An 
+Overview of Next Generation Multilayer Insulation. Gary Mills BATC 
+7005.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+Mission Design and Implementation Considerations for Lunar Night Survival .  R. Vaughan1, 1Mission Design 
+Division, NASA Ames Research Center, Moffett Field, CA 
+ 
+ 
+Introduction:  Lunar night survival, while being a 
+technical design challenge, also has an im pact on mi s-
+sion planning and execution during the flight system 
+development phases (Phases A-D).  Depending on mis-
+sion objectives, different locations on the lunar surface 
+result in different challenges to technical formulation 
+of a comprehensive mission d esign and implement a-
+tion.  Equatorial regions have temperature extremes 
+between day and night (<100K to >380K)  but are 
+somewhat cyclical and predictable.  Polar regions  can 
+have milder thermal environments in terms of overall 
+surface temperature swing  and opportunities for e x-
+tended durations for solar power but pose unique chal-
+lenges in temporal  and spatial availability of both su n-
+light and direct -to-Earth communications. Options for 
+surviving the night will depend heavily on mission o b-
+jectives, lunar locat ion and program cost and sche dule 
+constraints.   
+Lunar Night as a Mission Variable :  Whether the 
+primary purpose of the mission is scientific, mapping 
+and prospecting, or demonstra ting capabilities and  
+technologies, surface traverse planning and concepts of 
+operation will heavily influence the necessary capabil i-
+ties of the flight system.  Lunar night will be one of the 
+variables to consider but may not be the biggest driver 
+of system complexity.  Clear flow -down of mission 
+objectives, combined with surface mission planning 
+and operations will ultimately lead to determining 
+where, and how much lunar night survival will impact 
+system design, as well as programmatic cost and 
+schedule resources necessary to carry out the project. 
+Lunar Night Survival Planning; E quatorial:  
+Equatorial regions of the moon experience a consistent 
+and regular ~14 Earth-day duration of night-time.  Dur-
+ing the day, overhead sun limits the radiative view to 
+cold space and during the night, temperatures plummet, 
+increasing the demand for energy for survival.  Nuclear 
+energy sources are typ ically considered due to the e x-
+tended duration of dar kness.  This approach  will have 
+an impact on the system d esign, having to deal with 
+both hot and cold temper ature extremes, but will also 
+require additional cost and schedule resources for ana l-
+ysis, design, test and pape rwork/process (Presidential 
+Directive-25).   Other technical solutions may be po s-
+sible as well but they also may require addition al re-
+sources for achieving techn ological readiness  and i n-
+corporation.  Unde rstanding these mission drivers will 
+be a crucial step in scoping out the development activ i-
+ty and allocating resources for successful execution.   
+Lunar Night Survival Planning; Polar: The defi-
+nition of “night” becomes less distinct at n ear-polar 
+latitudes.  Latitude and local topography play a critical 
+role in defining the duration of local shadows.  It varies 
+from locations of near-perpetual sunlight all the way to 
+permanently shadowed regions.  This presents a more 
+open trade space for  missions requiring more than 14 
+Earth days .  Determining an appropriate lan ding site 
+for both mission objectives and required sha dow sur-
+vival time, combined with an appr opriate flight system 
+design requires careful mission planning analysis.   
+Operating T hrough the Night : Planning to oper-
+ate through the night could significantly increase the 
+demand for energy depending on the concept of oper a-
+tions.  Depending on local topography, p olar locations 
+(above ~80 deg) can also lose line of sight communica-
+tions for 2 weeks  or more every month , so either i n-
+creased levels of autonomy or rel iance on communica-
+tions relays will be required.  The flight system design 
+approach and mission/traverse planning will be i m-
+pacted by these frameworks, as well as additional tech-
+nology maturation and design and test ing activities 
+during development. 
+Mission Design/Planning for Lunar Night Su r-
+vival:  An existing set of lunar mission planning tools , 
+utilized by the Resource Prospector Mission Develo p-
+ment team at NASA Ames , provide the  capability to 
+understand the trade space and mission drivers to 
+bridge the gap between mission objectives and desig n-
+ing a reference mission that results in understanding the 
+technical system design drivers and ultimately, form u-
+lating the pr oject execution plan and resource requir e-
+ments.  As always, tools are just a part of a broader 
+process in concept maturation, planning and execution.  
+Understanding lunar night survival mission requir e-
+ments, within the context of the mission obje ctives and 
+planned agains t an project execution fram ework will 
+result in a compre hensive approach to ensure succes s-
+ful progress and completion of the mission.  
+We present some of the design, development, cost 
+and schedule impacts of dealing with problematic night 
+time lunar cond itions, whether for near -equatorial or 
+near-polar landed lunar missions.   
+ 
+7029.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+REQUIREMENT ANALYSIS AND NIGHT SURVIVAL CONCEPT FOR Z-01 LANDING MISSION USING FUEL CELL Satishchandra C Wani1, Udit Shah2, Adithya Kothandapani1, Prateek Garg1, Mrigank Sahai1, Mannika Garg1, Sunish Nair1 1TeamIndus - Axiom Research Labs Pvt Ltd ([redacted-email], Bangalore, KA-560092, India) 2StarLiner Engineering Inc. ([redacted-email], 1279 Washington Valley Rd, Bridgewater, NJ 08807, USA)  Introduction: Space exploration missions have ramped up with improvements in technology. Where it was previously impossible to access certain bodies in the Solar System, advances in material science, power systems and communication, to name a few, have ena-bled longer and more productive scientific lunar mis-sions. Of many lunar missions only few were intended to land. Solar-powered missions today are limited to short durations (max 14 days), due to availability of sun light on Lunar surface.  In addition to harsh surface temperatures during the day, lunar night is even more challenging due to duration of night (14 Earth days near equatorial sites, higher near poles). In absence of any planetary or sun heating during night, the space-craft experience cold environment viz. Lunar soil reaching -170C (Equator) and space at -269C [1]. Only three missions were able to survive lunar night, but using Radioisotope Thermo-Electric Generators and Radioisotope Heating Units. This paper presents an fuel cell based concept to extend life of existing mis-sion Z-01 by surviving Lunar night. Challenges to energy methods: Nuclear energy has advantage of high energy density hence needs less mass, but there are many disadvantages viz. difficult to source hence costly, transport, handle & storage. In such situation it is evident to explore non-nuclear energy sources for generating energy not only for single but many lunar nights. With present limitations in energy density from non-nuclear methods, the spacecraft should hibernate during lunar night and maintain at storage temperatures using survival heaters. After night it should function again as nominal during lunar day. This strategy reduces the cost of landed lunar missions to a large extent. To survive lunar night, one must minimize heat lost to space, enhance low temperature survival of spacecraft components and use heater power to maintain components at storage temperature limits. Case study and proposed concept: To quantify the requirement of energy, present mission i.e. Z-01 is used. Z-01 is thermally designed to survive lunar day, hence energy requirements are expected to be higher. Thermal simulation compute the requirement as 90W heater power to maintain components at storage tem-peratures. This energy has to be supplied for 350 hours or net energy requirement is 31.5KW-hr. On compari-son of available options viz. Mechanical (Flywheel) 
+Electro-chemical (Battery), Electrical (Super capaci-tor), Thermal (PCB, Wadis), Chemical energy methods using parameters viz. Energy Capacity, Density, Dis-charge time & Maturity of Technology (Space quali-fied), Fuel cell is a potential energy method. Figure 1 describes one such concept of using Fuel Cell as energy storage system to survive lunar night. 
+ Figure 1: Energy Storage System using Fuel Cell The fuel cell (PEM) powered by hydrogen and ox-ygen, is used to generate electricity and waste heat is tapped using heat pipes. The by-product i.e. water is collected in separate tank. During the day, electrolyser or reversible fuel cell is used to generate hydrogen and oxygen. Power for electrolyser is used from existing solar panels. The reactants are stored in separate tanks and be used in night for energy generation. Hence this concept can supply power for many lunar nights. The overall mass of the system to generate 90W for 350 hours is 50.3 kg, that is 25% of Z-01 dry mass.  Other technologies viz. Internal PCB Heater, Lunar Soil heating and Variable Conductance Loop Heat Pipe that help to reduce overall energy requirement are also presented. Conclusion: Overall the paper presents historic missions that survived lunar night, overall challenges to survive lunar night, computation of energy require-ment on actual project using thermal simulations. Due to disadvantages of nuclear energy method, alternative energy storage system using fuel cell is conceptual-ized. Due to its space heritage, simplicity of operation and regenerative capability, Fuel cell is most promis-ing of all energy methods available References: [1] Ashwin R. Vasavada, David A. Paige, Stephen E. Wood (1999), “Near-Surface Tem-peratures on Mercury and the Moon”, Icarus 141, Page 179-193 
+7014.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)
+SEASONAL TEMPERATURE VARIATIONS IN THE POLAR REGIONS OF THE MOON.  J.-P. Williams1, 
+B. T. Greenhagen 2, and D. A. Paige1, 1Earth, Planetary, and Space Sciences, University of California, Los Angeles, 
+CA, 2Johns Hopkins University Applied Physics Laboratory, Laurel, MD. 
+ 
+ 
+Introduction:  The Diviner Lunar Radiometer E x-
+periment onboard the Lunar Reconnaissance Orbiter 
+(LRO) has been systematically mapping the moon 
+since July of 2009  [1]. The solar reflectance and mid -
+infrared rad iance measur ements acquired by Diviner 
+provide information on how regoliths on ai rless bodies 
+store and exchange thermal energy with the space envi-
+ronment [2][3][4]. The density of coverage in the polar 
+regions is reaching a level where season al variations 
+can begin to be characterized. 
+The maximum angle of the spin pole of the Moon  
+and the normal to the ecliptic plane is 1.54 °. Though 
+modest enough to have minimal influence on surface 
+temperatures at mid -to-low l atitudes, in the polar r e-
+gions where solar illumination is perpetually at gra zing 
+angles, seasonality can have a large infl uence. The po-
+lar regions are of significant interest for in situ explora-
+tion for the possibility of permanently shadowed re-
+gions (PSRs) cold-trapping water [5][6]. Mission plan-
+ning for lan ding and operating in  these regions will 
+require understanding the extreme thermal environment 
+and illumination conditions. 
+Mapping:  We have begun generating seasonal 
+maps of the poles. The i nitial mapping effort  has f o-
+cused on a 5 ° cap centered on the south pole. All data 
+from the start of the mission thru to the end of 2017 has 
+been split into summer and winter (defined by the 
+subsolar latitude) and gridded at 240 m/pix in  polar 
+stereo projection and constant local time at 0.25 hour 
+resolution. Our preliminary maps demonstrate the var i-
+ation in seasonal temperatures across the south polar 
+region which is strongly influenced by topography . 
+Figure 1 shows ma ximum bolometric temperatures for 
+summer and winter seasons. The extent of shadowed 
+areas va ries conside rably between seasons. The max i-
+mum te mperatures b elow 110 K  in the summer map , 
+denoted by the black co ntour, corresponds to the PSRs 
+with an area of 7,453 km 2 (~10% of the mapped area ). 
+In the winter, the sha dowed areas exte nd to an area of  
+18,653 km2 (~26% of the mapped area). 
+References: [1] Paige D. A . et al. (2010) Space 
+Sci. Rev., 15 0, 125–160. [2]  Paige D. A. et al. (2010 ) 
+Science, 33 0, 479–484. [3] Vasavada A. R. et al.  
+(2012) JGR, 117, E00H18. [4] Williams J. -P. et al. 
+(2017) Icarus, 283, 300–325. [5] Watson K. et al. 
+(1961) JGR, 66, 3033–3045. [6] Arnold J. R . (1979) 
+JGR, 84, 5659–5668. 
+ 
+Fig. 1: Diviner maximum bolometric temperatures of 
+the south pole  85°-90° S split into summer (top) and 
+winter (bottom) seasons. The  contours marks 110 K 
+which approximates the boundary of regions shadowed 
+throughout the season. 
+7026.pdf
+Survive the Lunar Night Workshop 2018 (LPI Contrib. No. 2106)

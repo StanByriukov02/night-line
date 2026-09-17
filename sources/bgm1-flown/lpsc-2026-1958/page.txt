@@ -1,0 +1,94 @@
+Blue Ghost Mission 1 Mission Retrospective. B. M. Tackett, J. A. Marlin, and  W. J. Coogan, Firefly 
+Aerospace, Inc. (5900 Highway 183A Leander, TX 78641; [redacted-email] ). © 
+Firefly Aerospace, Inc. 
+ 
+ 
+Introduction: On March 2 nd, 2025, the Blue 
+Ghost Mission 1 spacecraft completed a soft and 
+upright landing at Mare Crisium on the Moon. Part 
+of NASA’s  Commercial Lunar Payload Services, 
+the spacecraft carried ten NASA payloads which all 
+completed their scientific objectives. The mission 
+ended as planned on March 16
+th. Here we provide 
+an overview of the mission and lessons learned.  
+ 
+Vehicle: Blue Ghost leveraged Firefly’s 
+composites and propulsion expertise to create a 
+light-weight structure supporting a metric ton of 
+propellant. This propellant fraction  provided the 
+delta-V needed to deliver the ten payloads to the 
+lunar surface. Opting for a storable bipropellant, 
+the vehicle was able to take an indirect path to the 
+Moon, proving out all key systems prior to critical 
+maneuvers such as lunar orbit insertion. With 
+400 watts of power, up to 125 kbps omnidirectional 
+downlink over S-band, and 10 Mbps downlink over 
+directional X -band, the indirect route afforded 
+payloads additional data opportunities beyond the 
+two weeks of surface operations. The lander also 
+hosts a number of Firefly mechanisms. These  
+include two two-axis gimbals and a surface access 
+arm supporting five of the payload missions. Firefly 
+performed assembly and integration of the vehicle 
+in their Texas cleanroom, with integrated testing 
+conducted at the Jet Propulsion Laboratory. 
+Launch and Transit : Blue Ghost Mission 1 
+launched on a SpaceX Falcon  9 from Cape 
+Canaveral, Florida, on January 15
+th, 2025. It spent 
+25 days in Earth orbit performing system 
+checkouts, phasing maneuvers, and science 
+operations. Four days after its successful trans -
+lunar injection burn, the spacecraft performed a 
+lunar orbit insertion maneuver to capture into a n 
+elliptical lunar orbit. After 16 days of continued 
+payload science operations, vision navigation 
+checkouts, and orbital maneuvers and phasing, 
+operators commanded Blue Ghost to perform 
+Descent Orbit Insertion.  
+Landing: Once in its Descent Orbit, Blue Ghost 
+engaged its vision navigation system to determine 
+its location and attitude and began Powered 
+Descent. Utilizing D’Souza guidance, the vehicle 
+autonomously used both its main engine and eight 
+Spectre thrusters to shed orbital velocity while 
+navigating to its target landing site. Once over the 
+landing site, the main engine disengaged, and the 
+remainder of descent was performed with Spectre 
+thrusters only. As the vehicle descended, two 
+hazard avoidance maneuvers were autonomously 
+commanded by the vision navigation system. 
+Ground contact was sensed by three of the four 
+footpad sensors, and successful soft and upright 
+landing was verified using IMU data. LRO imagery 
+verified successful touchdown 5 8 meters from the 
+targeted landing ellipse.  
+Lessons Learned: The team documented and 
+dispositioned almost 60 anomalies during the 
+mission. As an example, o ur landing location near 
+a crater combined with regolith accumulation on 
+radiating surfaces caused temperature  
+exceedances over the course of the lunar day, 
+requiring an expansion of our planned quiescent 
+period and innovative strategies such as using our 
+patch array antenna as a sunshade.  
+End Of Mission : As intended, Blue Ghost 
+operated five hours after the end of the lunar day, 
+sending back photos of the sunset and possible 
+dust levitation, a phenomenon first reported by 
+Apollo astronauts. Eventually , the batteries 
+depleted, and the lander avionics and radios shut 
+down. The mission was concluded as Blue Ghost 
+was not designed to survive the cold lunar night.  
+Looking Forward: Firefly engineers are already 
+implementing lessons learned for BGM2, which will 
+carry the LuSEE Night radio telescope to the far 
+side of the Moon in  2026. This mission, and the 
+recently awarded BGM3, add transfer stage s, 
+orbital relay s, and rovers  to the architecture, 
+expanding the national capability and toolset at the 
+Moon, building hope for bright future of 
+commercial lunar exploration and science.  
+1958.pdf
+57th LPSC (2026)

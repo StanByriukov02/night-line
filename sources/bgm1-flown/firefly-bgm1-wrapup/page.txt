@@ -1,0 +1,485 @@
+Firefly Aerospace Successfully Completes 14 Days of Surface Operations on the Moon 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+ Skip to content 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Firefly Aerospace 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ Company 
+ 
+ About 
+ Ethics 
+ Suppliers 
+ Dream 
+ Shop 
+ Contact 
+ 
+ 
+ Launch 
+ 
+ Alpha Rocket 
+ Eclipse Rocket 
+ Responsive Space 
+ 
+ 
+ Spacecraft 
+ 
+ Blue Ghost Landers 
+ Elytra Orbiters 
+ Ocula Imaging 
+ Vision Systems 
+ 
+ 
+ Missions 
+ News 
+ 
+ Latest News 
+ Image Gallery 
+ 
+ 
+ Careers 
+ Investors 
+ Book A Ride 
+ 
+ Social 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Firefly Aerospace 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ Company 
+ 
+ About 
+ Ethics 
+ Suppliers 
+ Dream 
+ Shop 
+ Contact 
+ 
+ 
+ Launch 
+ 
+ Alpha Rocket 
+ Eclipse Rocket 
+ Responsive Space 
+ 
+ 
+ Spacecraft 
+ 
+ Blue Ghost Landers 
+ Elytra Orbiters 
+ Ocula Imaging 
+ Vision Systems 
+ 
+ 
+ Missions 
+ News 
+ 
+ Latest News 
+ Image Gallery 
+ 
+ 
+ Careers 
+ Investors 
+ Book A Ride 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ < Back to News 
+ 
+ March 17, 2025 
+ Firefly Aerospace Successfully Completes 14 Days of Surface Operations on the Moon 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ All 10 NASA Commercial Lunar Payload Services (CLPS) instruments successfully operated on the lunar surface and collected their science data during Blue Ghost Mission 1 
+
+ Cedar Park, Texas, March 17, 2025  –  Firefly Aerospace , the leader in end-to-end responsive space services, today announced it met 100 percent of its mission objectives for Blue Ghost Mission 1 after performing the first fully successful commercial Moon landing on March 2, completing more than 14 days of surface operations (346 hours of daylight), and operating just over 5 hours into the lunar night with the final data received around 6:15 pm CDT on March 16. This achievement marks the longest commercial operations on the Moon to date. 
+
+ “After a flawless Moon landing, the Firefly team immediately moved into surface operations to ensure all 10 NASA payloads could capture as much science as possible during the lunar day,” said Jason Kim, CEO of Firefly Aerospace. “We’re incredibly proud of the demonstrations Blue Ghost enabled from tracking GPS signals on the Moon for the first time to robotically drilling and collecting science deeper into the lunar surface than ever before. We want to extend a huge thank you to the NASA CLPS initiative and the White House administration for serving as the bedrock for this Firefly mission. It has been an honor to enable science and technology experiments that support future missions to the Moons, Mars, and beyond.” 
+
+ Throughout the mission, Blue Ghost transmitted more than 119 GB of data back to Earth, including 51 GB of science and technology data, significantly surpassing Firefly’s mission requirements. Key payload milestones completed on the surface include the following: 
+
+ 
+ LuGRE : Integrated on Blue Ghost’s antenna gimbal on the top deck, LuGRE successfully acquired and tracked Global Navigation Satellite System (GNSS) signals, from satellite networks such as GPS and Galileo, on the way to and on the Moon’s surface for the first time. This achievement suggests GPS-like signals could be used to navigate future missions to the Moon and beyond. 
+
+ NGLR: Also mounted on Blue Ghost’s antenna gimbal, the Next Generation Lunar Retroreflector (NGLR) successfully reflected laser pulses from Earth-based Lunar Laser Ranging Observatories (LLROs), allowing scientists to precisely measure the Moon’s shape and distance from Earth, expanding our understanding of the Moon’s inner structure. 
+
+ LEXI: Mounted on Blue Ghost’s top deck on another Firefly-developed gimbal, the Lunar Environment heliospheric X-ray Imager (LEXI) captured a series of X-ray images to study the interaction of solar wind and the Earth’s magnetic field, providing insights into how space weather and other cosmic forces surrounding Earth affect the planet. 
+
+ LMS: Blue Ghost also deployed four tethered Lunar Magnetotelluric Sounder (LMS) electrodes on the surface, reaching a distance up to 60 feet from the lander, and deployed a six-foot mast above its top deck to enable the payload team to measure electric and magnetic fields and learn more about the Moon’s composition up to 700 miles, or two-thirds the distance to the Moon’s center. 
+
+ RadPC: Integrated below Blue Ghost’s top deck, RadPC demonstrated a computer that can withstand space radiation while in transit to the Moon, including through the Earth’s Van Allen Belts, and on the Moon’s surface. 
+
+ RAC: Mounted above Blue Ghost’s lower deck, the Regolith Adherence Characterization (RAC) instrument examined how lunar regolith sticks to a range of materials exposed to the Moon’s environment, allowing the industry to better test, improve, and protect spacecraft, spacesuits, and habitats from abrasive regolith. 
+
+ SCALPSS: Mounted below Blue Ghost’s lower deck, the Stereo Cameras for Lunar Plume-Surface Studies (SCALPSS) instrument captured images during the spacecraft’s lunar descent and touchdown on the Moon, providing insights into the effects engine plumes have on the surface for future robotics and crewed Moon landings. 
+
+ LISTER: Also mounted below Blue Ghost’s lower deck, the Lunar Instrumentation for Subsurface Thermal Exploration with Rapidity (LISTER) payload drilled about three feet into the surface to measure the temperature and flow of heat from the Moon’s interior. This pneumatic, gas-powered drill is now the deepest-reaching robotic planetary subsurface probe. 
+
+ Lunar PlanetVac: Deployed on Blue Ghost’s surface access arm, the Lunar PlanetVac successfully collected , transferred, and sorted lunar regolith from the Moon using pressurized nitrogen gas, proving to be a low cost, low mass solution for future robotic sample collection. 
+
+ EDS: Also deployed on Blue Ghost’s surface access arm, the Electrodynamic Dust Shield (EDS) successfully lifted and removed lunar regolith using electrodynamic forces on the glass and thermal radiator surfaces. These results confirm EDS as a promising solution for dust mitigation on future lunar and interplanetary surface operations. 
+ 
+
+ 
+
+ During surface operations, Firefly’s Blue Ghost lander captured high-definition imagery of a total solar eclipse on March 14. This marks the first time in history a commercial company was actively operating on the Moon and able to observe a solar eclipse where the Earth blocks the sun and casts a shadow on the lunar surface. Blue Ghost operated the LMS, RAC, and SCALPSS payloads during this unique phenomenon to measure changes in the lunar dust and radiation environment. 
+
+ “This team continues to make near-impossible achievements look easy, but there is no such thing as an easy Moon landing, especially on your first attempt,” said Will Coogan, Blue Ghost Chief Engineer at Firefly Aerospace. “We battle tested every system on the lander and simulated every mission scenario we could think of to get to this point. But what really sets this team apart is the passion and commitment to each other. Our team may look younger and less experienced than those of many nations and companies that attempted Moon landings before us, but the support we have for one another is what fuels the hard work and dedication to finding every solution that made this mission a success.” 
+
+ Firefly also captured imagery of the lunar sunset on March 16, providing NASA with data on whether lunar dust levitates due to solar influences and creates a lunar horizon glow that was hypothesized and observed by Eugene Cernan on Apollo 17. Following the sunset, Blue Ghost operated for 5 hours into the lunar night and continued to capture imagery that measures how dust behavior changes after sunset. 
+
+ Firefly and NASA will host a news conference at 1 p.m. CDT on March 18 from NASA’s Johnson Space Center in Houston to discuss the mission operations and science collected on the Moon’s surface. The lunar sunset imagery and findings will also be shared at this time. 
+
+ Looking ahead, Firefly is ramping up for annual missions to the Moon. The team has begun qualifying and assembling flight hardware for Blue Ghost Mission 2 , which will utilize Firefly’s Blue Ghost lander stacked on an Elytra Dark orbital vehicle for operations in lunar orbit and on the far side of the Moon. 
+
+ About Firefly Aerospace Firefly Aerospace is an end-to-end responsive space company with launch, lunar, and on-orbit services. Headquartered in central Texas, Firefly is a portfolio company of AE Industrial Partners (“AEI”) focused on delivering rapid, reliable, and affordable space access for government and commercial customers. Firefly’s small- to medium-lift launch vehicles, lunar landers, and orbital vehicles provide the space industry with a single source for missions from low Earth orbit to the surface of the Moon and beyond. For more information, visit  www.fireflyspace.com . 
+
+ Media Contact [email protected] 
+ 
+
+ Media Gallery Blue Ghost Mission 1: Ghost Riders in the Sky | Flickr 
+
+ 
+ Firefly’s Blue Ghost lander captures image during sunset with Earth on the horizon. Credit: Firefly Aerospace 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Latest News 
+ 
+ 
+ Firefly Aerospace Signs Contract with SSC Space for Two Alpha Launches from Esrange Space Center 
+ 
+ Firefly Aerospace Signs Contract with SSC Space for Two Alpha Launches from Esrange Space Center ">
+ Read Article 
+ 
+ 
+ 
+ 
+ Firefly Aerospace Onboards Zeno Power on Blue Ghost Mission to Demonstrate Radioisotope Technologies to Survive the Lunar Night 
+ 
+ Firefly Aerospace Onboards Zeno Power on Blue Ghost Mission to Demonstrate Radioisotope Technologies to Survive the Lunar Night ">
+ Read Article 
+ 
+ 
+ 
+ 
+ Firefly Aerospace Onboarded to NASA Spacecraft Processing Operations Contract 
+ 
+ Firefly Aerospace Onboarded to NASA Spacecraft Processing Operations Contract ">
+ Read Article 
+ 
+ 
+ 
+ 
+ Firefly Aerospace Awarded Contract to Design Elytra Deorbit System for Defense Innovation Unit 
+ 
+ Firefly Aerospace Awarded Contract to Design Elytra Deorbit System for Defense Innovation Unit ">
+ Read Article 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ FIREFLY HEADQUARTERS 
+ 
+ 2203 Scottsdale Dr. 
+Leander, TX 78641 
+ 
+ 
+ 
+ Company 
+ 
+ About 
+ Ethics 
+ Suppliers 
+ Dream 
+ Shop 
+ Contact 
+ 
+ 
+ Launch 
+ 
+ Alpha Rocket 
+ Eclipse Rocket 
+ Responsive Space 
+ 
+ 
+ Spacecraft 
+ 
+ Blue Ghost Landers 
+ Elytra Orbiters 
+ Ocula Imaging 
+ Vision Systems 
+ 
+ 
+ Missions 
+ News 
+ 
+ Latest News 
+ Image Gallery 
+ 
+ 
+ Careers 
+ Investors 
+ 
+ 
+ 
+ 
+ Social 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ X/Twitter This field is for validation purposes and should be left unchanged. Subscribe (Required) 
+ 
+ 
+ Subscribe 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ © 2026 fireflyspace.com. All rights reserved. 
+ 
+ Terms and Conditions 
+ Privacy Policy

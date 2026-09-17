@@ -6,8 +6,10 @@ from pathlib import Path
 
 from night_line.cli import run_one
 from night_line.model import (
+    IDENTITY_DURATION_LINE,
     IDENTITY_LINE,
     IDENTITY_STORE_LINE,
+    CLAIM_VS_WITNESS,
     LINE_OPEN_TWO_KNOBS,
     LIVE_IF_STORE_ABOVE,
     ROOT,
@@ -99,6 +101,10 @@ def test_public_labels() -> None:
     assert store_open["label"] == LIVE_IF_STORE_ABOVE
     assert store_open["edge"] is False
     assert store_open["worst_corner_margin_Wh"] is None
+    claim = public_label([], claim_vs_witness=True)
+    assert claim["label"] == CLAIM_VS_WITNESS
+    assert claim["edge"] is False
+    assert claim["worst_corner_margin_Wh"] is None
 
 
 def test_lems_a3_published_line() -> None:
@@ -177,6 +183,7 @@ LEMS_MARK = {
 }
 LUSEE_MARK = {7160.0, 12.4, 0.15, 128.0, 50.0, 328.0, 8218.54}
 FLIP_MARK = {480.0, 30.0, 5420.0, 320.0, 450.0, 110.0}
+FSS_MARK = {1770.0, 19.0}
 
 
 def _walk_nums(obj: object, out: list[float]) -> None:
@@ -259,5 +266,62 @@ def test_fss_store_open_nameplate() -> None:
     for line in text.splitlines():
         if "2528.57" in line:
             assert "ASSUMED" in line
+    assert written["verify"]["ok"] is True
+    assert written["verify"]["ladder_recompute_ok"] is True
+
+
+def test_bgm1_claim_vs_witness() -> None:
+    rec = evaluate(load_box(PKG / "boxes" / "bgm1_flown.json"))
+    fix = load_box(PKG / "boxes" / "bgm1_flown.json")
+    nums: list[float] = []
+    _walk_nums(fix, nums)
+    for n in nums:
+        for bad in LEMS_MARK | LUSEE_MARK | FLIP_MARK | FSS_MARK:
+            assert abs(n - bad) > 1e-12, f"{bad} leaked into BGM1 box"
+    rec_nums: list[float] = []
+    _walk_nums(rec, rec_nums)
+    for n in rec_nums:
+        for bad in LEMS_MARK | LUSEE_MARK | FLIP_MARK | FSS_MARK:
+            assert abs(n - bad) > 1e-12, f"{bad} leaked into BGM1 rec"
+    assert 400.0 * 354.0 not in rec_nums
+
+    def walk_keys(o: object) -> None:
+        if isinstance(o, dict):
+            for k, v in o.items():
+                assert "leftover" not in str(k).lower(), k
+                walk_keys(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk_keys(v)
+
+    walk_keys(rec)
+    walk_keys(fix)
+    assert rec["label"] == CLAIM_VS_WITNESS
+    assert rec["label_display"] == CLAIM_VS_WITNESS
+    assert rec["identity"] == IDENTITY_DURATION_LINE
+    assert rec["after_sunset_h"] == 5.0
+    assert rec["energy_wh"] is None
+    assert rec["store_Wh"] is None
+    assert rec.get("E_night_Wh") is None
+    assert rec.get("leftover_Wh") is None
+    assert rec.get("leftover") is None
+    assert abs(float(rec["duration_gap_h"]) - 349.0) < 1e-12
+    assert rec["peak_vs_night_keepalive"] == "OPEN"
+    assert rec["product_surface_ops"] == "Lunar day + night"
+    assert rec["payload_power_quote"] == "> 400 W"
+    assert rec["witness"] == "flown"
+    assert rec["H_night_h"] is None
+    written = run_one(PKG / "boxes" / "bgm1_flown.json", OUT)
+    text = (OUT / "bgm1" / "LINE.md").read_text(encoding="utf-8")
+    assert CLAIM_VS_WITNESS in text
+    assert "5 h" in text
+    assert "349" in text
+    assert "Lunar day + night" in text
+    assert "> 400 W" in text
+    assert "Not a DIE" in text
+    assert "leftover" not in text.lower()
+    assert "LuSEE" not in text
+    assert "LEMS" not in text
+    assert "Farside Seismic" not in text
     assert written["verify"]["ok"] is True
     assert written["verify"]["ladder_recompute_ok"] is True
