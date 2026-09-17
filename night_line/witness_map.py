@@ -22,6 +22,31 @@ INHERIT_PAIRS = (
         "Griffin PUG excludes lunar night. That is not FLIP’s survive-the-night sentence. FLIP’s sentence is not a Griffin night-store.",
     ),
     (
+        "griffin1_lander",
+        "metal_flip",
+        "Griffin PUG excludes lunar night. METAL rides FLIP; it does not get a Griffin night-store.",
+    ),
+    (
+        "griffin1_lander",
+        "ldes_flip",
+        "Griffin PUG excludes lunar night. LDES rides FLIP; radiator-dust is not a Griffin night-store.",
+    ),
+    (
+        "griffin1_lander",
+        "lidar_flip",
+        "Griffin PUG excludes lunar night. The LiDAR rides FLIP; it does not get a Griffin night-store.",
+    ),
+    (
+        "griffin1_lander",
+        "lra_flip",
+        "Griffin PUG excludes lunar night. LRA takes no power; it does not need a Griffin night-store.",
+    ),
+    (
+        "flip_griffin1",
+        "lra_flip",
+        "FLIP’s survive-the-night sentence is a rover store still OPEN. LRA takes no power; it does not wait on that store.",
+    ),
+    (
         "bgm2_lander",
         "lusee_night",
         "Blue Ghost Mission 2 powers off before nightfall. That is not LuSEE’s store. LuSEE’s store is not a Blue Ghost night-store.",

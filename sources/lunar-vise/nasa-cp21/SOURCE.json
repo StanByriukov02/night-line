@@ -1,0 +1,23 @@
+{
+  "url": "https://science.nasa.gov/lunar-science/clps-deliveries/cp-21-science/",
+  "title": "NASA CP-21 Science: Firefly Blue Ghost 3 / Lunar-VISE PI Kerri Donaldson-Hanna, University of Central Florida",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "pi=Kerri_Donaldson-Hanna_UCF",
+    "host=Firefly_Blue_Ghost_3",
+    "site=Gruithuisen_Domes",
+    "P_night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "PI: Kerri Donaldson-Hanna, University of Central Florida",
+  "fetched_utc": "2026-09-17T16:10:00Z",
+  "bytes": 314765,
+  "sha256": "04eb3c34637f3ab09939faeee3083dcbb0380d890b4babba8e5fb468a244ae9a",
+  "sha256_by_file": {
+    "page.html": "04eb3c34637f3ab09939faeee3083dcbb0380d890b4babba8e5fb468a244ae9a"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

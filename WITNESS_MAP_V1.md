@@ -8,7 +8,7 @@ Dated **2026-09-17**. **MEASURED=false**. **MANIFEST_CLOSED=false**.
 
 I, Stanislav Byriukov, read the cited public pages on 17 September 2026 and wrote this map from those prints. It is not a seventh energy line. It is not a closed list of CLPS flights. A landing name is not a row.
 
-A lab can see, on one page, which named box on which host printed that it will **not** run the night — and which named box printed that it might, with the store still OPEN or with the lander already off.
+A lab can see, on one page, which named box on which host printed that it will **not** run the night — which named box printed that it might, with the store still OPEN or with the lander already off — which NASA-center guest waits on an OPEN host rover — and which box takes no power at all.
 
 ## What this is for
 
@@ -21,6 +21,9 @@ If you are sizing a night battery, a night TVAC, or a “next CLPS night” para
 - Blue Ghost Mission 1 already flew **5 h** after sunset and printed it was not designed for the cold night. That is not a full-night offer and not BGM2.
 - FSS on CP-12: the host task order is printed ended. Re-flight is UNVERIFIED — absent, not CANNOT.
 - Zeno on CS-8: launch no earlier than **2028**. Not this window. 5 Wt is heat, not bus watts.
+- GSFC **LRA** on FLIP: eight quartz cubes. The array **requires no power**. Do not wait for an LRA night-store.
+- NASA Ames / Interlune **METAL**, JSC **LDES**, MSFC **Lunar LiDAR** ride FLIP as guests. They print cameras, dust-on-radiators, and maps — not watt-hours. Night wait is FLIP’s OPEN store, not Griffin PUG, not a seventh energy line.
+- Lunar-VISE (UCF, PI Kerri Donaldson-Hanna) on Firefly Blue Ghost 3 / CP-21: **10-day** science investigation, **one lunar day** traverse, launch **2028**. Do not wait for a VISE night.
 
 Unnamed task orders and the unpublished NASA Lunar Payload Database are **absent**. Absent is not CANNOT.
 
@@ -30,6 +33,6 @@ Unnamed task orders and the unpublished NASA Lunar Payload Database are **absent
 night-line witness-map
 ```
 
-Writes `out/witness_map/{WITNESS_MAP.md,WITNESS_MAP.csv,WITNESS_MAP.json}`. The verifier recomputes each label from the cited flags and checks saved source hashes. The map prints **do not inherit** pairs: Griffin ↛ FLIP, BGM2 ↛ LuSEE. Energy lines stay on [LINES.md](LINES.md). FLIP sunset clock: [WITNESS_CLOCK_FLIP_V1.md](WITNESS_CLOCK_FLIP_V1.md). Lander inputs sheet: [PUG_NIGHT_LINE_INPUTS_V1.md](PUG_NIGHT_LINE_INPUTS_V1.md). LEMS leak courts (including the ICES 2026 TVAC **plan**): [TWO_COURTS_LEMS_V1.md](TWO_COURTS_LEMS_V1.md).
+Writes `out/witness_map/{WITNESS_MAP.md,WITNESS_MAP.csv,WITNESS_MAP.json}`. The verifier recomputes each label from the cited flags and checks saved source hashes. The map prints **do not inherit** pairs: Griffin ↛ FLIP, Griffin ↛ FLIP guests, FLIP ↛ LRA, BGM2 ↛ LuSEE. Energy lines stay on [LINES.md](LINES.md). FLIP sunset clock: [WITNESS_CLOCK_FLIP_V1.md](WITNESS_CLOCK_FLIP_V1.md). Lander inputs sheet: [PUG_NIGHT_LINE_INPUTS_V1.md](PUG_NIGHT_LINE_INPUTS_V1.md). LEMS leak courts (including the ICES 2026 TVAC **plan**): [TWO_COURTS_LEMS_V1.md](TWO_COURTS_LEMS_V1.md).
 
 The human who can lose the box signs which wait to keep. This page does not.

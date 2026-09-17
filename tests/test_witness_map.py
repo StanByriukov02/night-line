@@ -18,7 +18,7 @@ def _by_id():
 
 def test_not_a_seventh_energy_box() -> None:
     assert len(packaged_boxes()) == 6
-    assert len(packaged_rides()) == 9
+    assert len(packaged_rides()) == 14
     doc = evaluate_map()
     assert doc["manifest_closed"] is False
     assert doc["n_packaged_energy_boxes"] == 6
@@ -124,6 +124,12 @@ def test_inherit_forbidden_pairs() -> None:
     b = pairs[("bgm2_lander", "lusee_night")]
     assert b["allowed"] is False
     assert "not a Blue Ghost night-store" in b["why"]
+    m = pairs[("griffin1_lander", "metal_flip")]
+    assert m["allowed"] is False
+    assert "METAL" in m["why"]
+    passive = pairs[("flip_griffin1", "lra_flip")]
+    assert passive["allowed"] is False
+    assert "no power" in passive["why"]
 
 
 def test_flip_wh_still_open_after_venturi_pages() -> None:
@@ -138,3 +144,56 @@ def test_flip_wh_still_open_after_venturi_pages() -> None:
     row = _by_id()["flip_griffin1"]
     assert row["store_Wh_printed"] is False
     assert row["label"] == "NIGHT_CLAIMED_STORE_OPEN"
+
+
+def test_gsfc_lra_is_passive_no_power() -> None:
+    row = _by_id()["lra_flip"]
+    assert row["label"] == "PASSIVE_NO_POWER"
+    assert row["full_night_possible"] == "n/a"
+    html = (
+        ROOT / "sources" / "flip-nasa-guests" / "astrolab-nasa-payloads-20260518" / "page.html"
+    ).read_text(encoding="utf-8")
+    assert "no power" in html
+    assert "maintenance" in html
+    assert "Laser Retroreflector Array" in html
+
+
+def test_nasa_center_guests_wait_on_flip_not_griffin() -> None:
+    by = _by_id()
+    for ride_id in ("metal_flip", "ldes_flip", "lidar_flip"):
+        row = by[ride_id]
+        assert row["label"] == "GUEST_ON_OPEN_HOST"
+        assert row["full_night_possible"] == "pending"
+        assert row["store_Wh_printed"] is False
+        assert "FLIP" in row["host"]
+    html = (
+        ROOT / "sources" / "flip-nasa-guests" / "astrolab-nasa-payloads-20260518" / "page.html"
+    ).read_text(encoding="utf-8")
+    assert "Interlune" in html
+    assert "Moon Exploration for Titanium with Active Lighting" in html
+    assert "radiator cooling" in html
+    assert "Lunar LiDAR Demonstration" in html
+    assert "Marshall" in html
+
+
+def test_ucf_lunar_vise_is_day_only_2028() -> None:
+    row = _by_id()["lunar_vise_cp21"]
+    assert row["label"] == "DAY_ONLY_PRINTED"
+    assert row["full_night_possible"] == "no"
+    assert row["window"] == "2028+"
+    ucf = (ROOT / "sources" / "lunar-vise" / "ucf-lunarvise" / "page.html").read_text(
+        encoding="utf-8"
+    )
+    assert "10-day science investigation" in ucf
+    lpsc = (ROOT / "sources" / "lunar-vise" / "lpsc-2025-1750" / "page.txt").read_text(
+        encoding="utf-8"
+    )
+    assert "one lunar day" in lpsc
+    assert "2028" in lpsc
+    assert "CP-21" in lpsc
+    nasa = (ROOT / "sources" / "lunar-vise" / "nasa-cp21" / "page.html").read_text(
+        encoding="utf-8"
+    )
+    assert "Donaldson-Hanna" in nasa
+    assert "University of Central Florida" in nasa
+    assert "Blue Ghost 3" in nasa

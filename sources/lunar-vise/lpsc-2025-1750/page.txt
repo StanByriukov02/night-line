@@ -1,0 +1,74 @@
+A COMMERCIAL ROVER FOR THE LUNAR VULKAN IMAGING AND SPECTROSCOPY EXPLORER 
+MISSION TO GRUITHUISEN DOMES.  J. D. Lawrence1, J. Bailey1, J. Cerny1, Z. Fitzgerald1, K. Klein1, P. Ng1, 
+D. Sabahi 1, A. Shmavonian1, N. Steele 1, B. Vogel 1, V. Vendiola 1, A. Yaghi1, K. Zacny 1. 1Honeybee Robotics  
+Exploration Systems (jdlawrence@honeybeerobotics.com). 
+ 
+Introduction:  Firefly Aerospace is flying six 
+investigations to Gruithuisen Gamma Dome (36°N, 
+40°W) in 2028 for NASA’s Commercial Lunar 
+Payload Services  (CLPS) CP-21 mission . The 97 kg 
+science payload i ncludes the Lunar Vulkan Imaging 
+and Spectroscopy Explorer  (Lunar-VISE) instrument 
+suite. The Lunar-VISE investigation consists of  two 
+instruments (17.5 kg total)  mounted to Firefly’s lander 
+and three instruments (up to 16 kg total)  mounted to a 
+rover, the first commercial rover  contracted by NASA 
+through the CLPS initiative [1].  
+Firefly Aerospace has engaged Honeybee Robotics, 
+a Blue Origin Company, to provide the rover . Here we 
+describe the mobile concept of operations and 
+architecture in support of the Lunar -VISE 
+investigation. 
+The CP -21 Rover Mission : The Grui thuisen 
+Domes on the Moon are thought to be silica -rich 
+volcanic features – but similar domes on Earth  only 
+form through processes driven by interactions between 
+plate tectonics and liquid water.  The Lunar -VISE 
+investigation aims to resolve  the mystery of how the 
+lunar domes could have formed in the absence of plate 
+processes and volatiles.  
+The rover  will carry the Lunar -VISE (LV) VNIR 
+Imaging Camera (LV -VIC), a multispectral camera 
+and radiometer called Compact Infrared Imaging 
+System (LV-CIRiS), and the Gamma Ray and Neutron 
+Spectrometer (LV-GRNS). The rover will complete an 
+up to 1.1 km traverse over one lunar day and operate at 
+a radius of up to 500 m from Firefly’s lander. The 
+onboard Lunar-VISE instruments will collect high -
+resolution multispectral imagery  and map the 
+morphology, composition, and abundance  of surface 
+and near -surface minerals and elements  along the 
+traverse [2].  
+The Lunar-VISE team will also characterize spatial 
+variability in geotechnical regolith properties along the 
+traverse [2]. Both the rover and the lander -mounted 
+Lunar-VISE context camera will provide high -
+resolution observations of interactions between the 
+rover wheels and lunar regolith, in the context of 
+paired rover and drive system telemetry  (i.e., power or 
+torque at each wheel). 
+The CP -21 Rover: The rover is a four wheel, 
+solar-powered vehicle with a rechargeable battery . It is 
+designed to cover multiple km during the lunar day and 
+can traverse 20° slopes. The rover uses skid steering 
+with a dedicated drive actuator for each wheel to 
+enable forward, reverse, and turn in place operation.  
+Firefly’s lander provides a communications relay 
+for science data and rover command and control. In 
+addition to the Lunar -VISE instruments, the rover will 
+carry high resolution cameras, lights, and navigation 
+sensors for localization relative to the Firefly lander. 
+ 
+ 
+Figure 1. The Firefly lander and Honeybee Robotics 
+rover for CP -21 and the Lunar -VISE investigation into the 
+geologic origins of the Gruithuisen Domes.  Image: Firefly 
+Aerospace. 
+ 
+References: [1] NASA (2024) nasa.gov/news-
+release/more-nasa-science-tech-will-fly-to-moon-
+aboard-future-firefly-flight/. [2] Donaldson Hanna  K. 
+et al. (2023) LPSC LIV, 2806. 
+ 
+1750.pdf
+56th LPSC (2025)

@@ -1,0 +1,23 @@
+{
+  "url": "https://www.astrolab.space/2026/05/18/astrolab-announces-nasa-payloads-for-upcoming-mission-to-the-moon/",
+  "title": "Astrolab 2026-05-18: NASA payloads on FLIP — Ames METAL / Interlune, GSFC LRA no power, JSC LDES dust/radiators, MSFC Lunar LiDAR",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "no_power=true_LRA",
+    "store_Wh=NOT_PRINTED",
+    "P_night_W=NOT_PRINTED",
+    "host=FLIP_Griffin-1",
+    "centers=Ames_GSFC_JSC_MSFC"
+  ],
+  "quote": "the array requires no power or maintenance",
+  "fetched_utc": "2026-09-17T16:10:00Z",
+  "bytes": 62477,
+  "sha256": "a55072c0ea1a3a13bb756a979dc714176b3911ff30503c31353fdb58d8651ac8",
+  "sha256_by_file": {
+    "page.html": "a55072c0ea1a3a13bb756a979dc714176b3911ff30503c31353fdb58d8651ac8"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

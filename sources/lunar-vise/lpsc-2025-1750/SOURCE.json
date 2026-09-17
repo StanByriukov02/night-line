@@ -1,0 +1,27 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/lpsc2025/pdf/1750.pdf",
+  "title": "LPSC 2025 1750: Honeybee CP-21 rover for Lunar-VISE — one lunar day, 2028, 97 kg payload",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "extract": "page.txt",
+  "numbers_used": [
+    "daylight_only=true",
+    "ops=one_lunar_day",
+    "year=2028",
+    "host=Firefly_CP-21",
+    "payload_kg=97",
+    "P_night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "The rover will complete an up to 1.1 km traverse over one lunar day",
+  "fetched_utc": "2026-09-17T16:10:00Z",
+  "bytes": 110017,
+  "sha256": "85ff8c04ba2ad50eef9fc6c432ce805f1d792a3200e913e7b6b287742f14a56b",
+  "sha256_by_file": {
+    "page.pdf": "85ff8c04ba2ad50eef9fc6c432ce805f1d792a3200e913e7b6b287742f14a56b",
+    "page.txt": "cc57d0b7447ac1744ebc18577577fa808d7914d1f5bf29826ab8a0f1127bb34b"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

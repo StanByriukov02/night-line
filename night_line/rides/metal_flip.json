@@ -1,0 +1,33 @@
+{
+  "ride_id": "metal_flip",
+  "named_box": "METAL (NASA Ames / Interlune)",
+  "host": "FLIP rover (Venturi Astrolab) on Griffin-1",
+  "window": "2026-27",
+  "sources_dir": "sources/flip-nasa-guests",
+  "lab_use": "METAL has no printed night store. If it rides the night, the wait is FLIP’s OPEN watt-hours, not Griffin PUG and not an Ames battery line.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": true
+  },
+  "quotes": [
+    {
+      "text": "NASA Ames Research Center — Moon Exploration for Titanium with Active Lighting (METAL). A multicolor camera and radiometer developed by NASA Ames in partnership with Interlune",
+      "url": "https://www.astrolab.space/2026/05/18/astrolab-announces-nasa-payloads-for-upcoming-mission-to-the-moon/",
+      "page_or_figure": "Astrolab 2026-05-18 — NASA Ames METAL",
+      "source_slug": "astrolab-nasa-payloads-20260518"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

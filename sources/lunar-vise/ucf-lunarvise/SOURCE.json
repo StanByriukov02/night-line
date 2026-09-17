@@ -1,0 +1,22 @@
+{
+  "url": "https://www.ucf.edu/research/lunarvise/",
+  "title": "UCF Lunar-VISE: 10-day science investigation on lander and rover at Gruithuisen domes",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "science_days=10",
+    "daylight_only=true",
+    "P_night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "The 10-day science investigation will use the rover and lander operations",
+  "fetched_utc": "2026-09-17T16:10:00Z",
+  "bytes": 164197,
+  "sha256": "2698322fb5108aa828900d4c5bdc6ecf050007b33a865552bcbddef384bdd116",
+  "sha256_by_file": {
+    "page.html": "2698322fb5108aa828900d4c5bdc6ecf050007b33a865552bcbddef384bdd116"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

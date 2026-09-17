@@ -1,0 +1,33 @@
+{
+  "ride_id": "lidar_flip",
+  "named_box": "Lunar LiDAR Demonstration (NASA Marshall)",
+  "host": "FLIP rover (Venturi Astrolab) on Griffin-1",
+  "window": "2026-27",
+  "sources_dir": "sources/flip-nasa-guests",
+  "lab_use": "MSFC printed a hardened LiDAR for maps, not watt-hours. Night wait is FLIP’s OPEN store, not a Marshall battery line.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": true
+  },
+  "quotes": [
+    {
+      "text": "NASA Marshall Space Flight Center — Lunar LiDAR Demonstration. A hardened LiDAR system adapted for extreme lunar conditions",
+      "url": "https://www.astrolab.space/2026/05/18/astrolab-announces-nasa-payloads-for-upcoming-mission-to-the-moon/",
+      "page_or_figure": "Astrolab 2026-05-18 — NASA MSFC Lunar LiDAR",
+      "source_slug": "astrolab-nasa-payloads-20260518"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

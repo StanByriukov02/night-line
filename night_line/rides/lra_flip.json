@@ -1,0 +1,33 @@
+{
+  "ride_id": "lra_flip",
+  "named_box": "Laser Retroreflector Array (NASA GSFC)",
+  "host": "FLIP rover (Venturi Astrolab) on Griffin-1",
+  "window": "2026-27",
+  "sources_dir": "sources/flip-nasa-guests",
+  "lab_use": "Do not wait for an LRA night-store or night-TVAC. GSFC printed no power. After FLIP’s mission the cubes stay as a marker; that is not a battery.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": true,
+    "guest_on_open_host": false
+  },
+  "quotes": [
+    {
+      "text": "the array requires no power or maintenance. After the rover completes its mission, the LRA will remain as a permanent location marker on the Moon for future exploration.",
+      "url": "https://www.astrolab.space/2026/05/18/astrolab-announces-nasa-payloads-for-upcoming-mission-to-the-moon/",
+      "page_or_figure": "Astrolab 2026-05-18 — NASA GSFC LRA",
+      "source_slug": "astrolab-nasa-payloads-20260518"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

@@ -173,18 +173,22 @@ def independent_ride_label(cited: dict[str, Any]) -> str:
     """Recompute a witness-map label from cited flags. Does not import witness_map."""
     if cited.get("host_terminated"):
         return "HOST_TERMINATED"
-    if cited.get("out_of_window"):
-        return "OUT_OF_WINDOW"
     if cited.get("flown_after_sunset_h") is not None:
         return "NIGHT_WITNESS_FLOWN_SHORT"
     if cited.get("daylight_only"):
         return "DAY_ONLY_PRINTED"
+    if cited.get("out_of_window"):
+        return "OUT_OF_WINDOW"
     if cited.get("lander_off_before_night") and cited.get(
         "payload_continues_after_lander_off"
     ):
         return "PAYLOAD_NIGHT_LANDER_OFF"
     if cited.get("lander_off_before_night"):
         return "LANDER_OFF_BEFORE_NIGHT"
+    if cited.get("no_power"):
+        return "PASSIVE_NO_POWER"
+    if cited.get("guest_on_open_host"):
+        return "GUEST_ON_OPEN_HOST"
     if cited.get("survive_night_claim") and not cited.get("store_Wh_printed"):
         return "NIGHT_CLAIMED_STORE_OPEN"
     if cited.get("pug_thermal_excludes_night") and not cited.get("survive_night_claim"):
@@ -205,7 +209,13 @@ def independent_full_night_possible(label: str) -> str:
     }
     if label in no:
         return "no"
-    if label in {"NIGHT_CLAIMED_STORE_OPEN", "PAYLOAD_NIGHT_LANDER_OFF"}:
+    if label == "PASSIVE_NO_POWER":
+        return "n/a"
+    if label in {
+        "NIGHT_CLAIMED_STORE_OPEN",
+        "PAYLOAD_NIGHT_LANDER_OFF",
+        "GUEST_ON_OPEN_HOST",
+    }:
         return "pending"
     if label == "SURFACE_STAY_NIGHT_W_OPEN":
         return "unverified"

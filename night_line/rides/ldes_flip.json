@@ -1,0 +1,33 @@
+{
+  "ride_id": "ldes_flip",
+  "named_box": "LDES (NASA Johnson)",
+  "host": "FLIP rover (Venturi Astrolab) on Griffin-1",
+  "window": "2026-27",
+  "sources_dir": "sources/flip-nasa-guests",
+  "lab_use": "LDES prints dust vs radiator cooling / solar / loss of mission. That is the science object, not a night-store. Night wait is FLIP’s OPEN store.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": true
+  },
+  "quotes": [
+    {
+      "text": "Quantifies dust-induced degradation of critical Moon Base and Lander subsystems, including significant loss in radiator cooling, reduced solar array power generation, and potential loss of mission.",
+      "url": "https://www.astrolab.space/2026/05/18/astrolab-announces-nasa-payloads-for-upcoming-mission-to-the-moon/",
+      "page_or_figure": "Astrolab 2026-05-18 — NASA JSC LDES",
+      "source_slug": "astrolab-nasa-payloads-20260518"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}
