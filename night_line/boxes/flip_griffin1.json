@@ -1,0 +1,324 @@
+{
+  "schema": "night_line_box_v1",
+  "box_id": "flip_griffin1",
+  "name": "FLIP Griffin-1",
+  "full_name": "Venturi Astrolab FLIP (FLEX Lunar Innovation Platform) on Astrobotic Griffin-1",
+  "named_box": true,
+  "pre_landing": true,
+  "landing_status": "not_landed_as_of_2026-09-17",
+  "witness_expected": "first sunset after Griffin-1 landing (NET Nov 2026)",
+  "mission": "Griffin-1 / NASA Moon Base II",
+  "lander": "Astrobotic Griffin-1",
+  "pi": "Jaret Matthews",
+  "org": "Venturi Astrolab",
+  "note": "Printed public numbers only. Store Wh, hibernation load W, and geometry OPEN. LPSC 1874 ties FLIP to VIPER launch-mass/geometry envelope (480 kg), not battery/solar/thermal heritage. Griffin PUG 1.0/2.5 W/kg and polar 'up to 14 days' are lander offer, not FLIP store.",
+  "electrical_model": "Identity line, not ICES Fig.14 leak. usable_Wh / 354 h = hibernation load W. Store and load OPEN. 30% reserve on the example table is ASSUMED. Do not pick a store. Do not run Fourier leak without printed geometry and load.",
+  "witness_keys": [
+    "flip",
+    "griffin-1"
+  ],
+  "witness_note": "Griffin polar PUG surface thermal (−30°C to 80°C) 'does not include lunar night'; polar surface ops 'Up to 14 Days' is lander offer, not FLIP store.",
+  "killer_two_knobs": "store Wh and hibernation load W both OPEN. usable_Wh / 354 h = hibernation load W. Example table uses ASSUMED 30% reserve on 1/2/5/10 kWh nameplates — not printed, not a picked store. Griffin PUG polar thermal excludes lunar night; 1.0/2.5 W/kg is lander offer, not FLIP store. VIPER battery not inherited (LPSC 1874 quotes launch-mass/geometry envelope only).",
+  "thermal_hold_md": "No printed FLIP night hold T_box. LPSC 1874 names lunar hibernation in the CONOPS and 'thermal systems' as a characterization goal, without watts or kelvin. Astrolab FLIP page: Venturi battery enclosure 'store enough energy to survive the lunar night' — qualitative. Home: collapsible solar array charges the same full-size Venturi battery as FLEX. FLEX page prints enclosure withstand −90 to −230 °C as FLEX daily range — not mixed in as FLIP T_box. T_env OPEN: Paige 2011 below 23 K (PSR/polar floor, colder than Mons Mouton high point) and Williams 2019 110 K polar cold-trap contour (higher elevations less often below 110 K in summer). Neither is this rover's printed sink.",
+  "alloy_md": "No printed FLIP structure alloy. OPEN. No NIST map. Fourier not run.",
+  "honesty_md": "No printed FLIP Wh, hibernation W, solar W, or RHU. Do not pick a store. Do not copy VIPER 5420 Wh / 320 W arrays. Griffin lander has no night by PUG. 354 h is Cataldo/Mason darkness, not a Mons Mouton site-specific night length (none printed). 30% reserve on the identity table is ASSUMED.",
+  "fields": {
+    "mass_kg": {
+      "value": 480.0,
+      "unit": "kg",
+      "tier": "cited_public",
+      "quote": "FLIP is a four-wheeled skid steer rover limited to the geometry and launch mass (480kg) initially designed for VIPER.",
+      "cite": "LPSC 2026 1874: launch mass 480 kg (VIPER envelope). Not battery mass.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1874.pdf",
+      "source_slug": "lpsc-2026-1874",
+      "numbers_used": "mass_launch_kg=480",
+      "page_or_figure": "Vehicle Build and Test"
+    },
+    "payload_capacity_kg": {
+      "value": 30.0,
+      "unit": "kg",
+      "tier": "cited_public",
+      "cite": "Astrolab PR 2025-02-05: payload capacity of 30 kg.",
+      "url": "https://www.astrolab.space/2025/02/05/astrolabs-flip-rover-joins-astrobotics-griffin-1-to-the-moon/",
+      "source_slug": "astrolab-pr-20250205-griffin1",
+      "numbers_used": "payload_capacity_kg=30",
+      "page_or_figure": "Additional background on the FLIP rover"
+    },
+    "store_Wh": {
+      "value": null,
+      "unit": "Wh",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": "lpsc-2026-1874",
+      "numbers_used": "battery_kWh=NOT_PRINTED",
+      "page_or_figure": "LPSC 1874; Astrolab FLIP/home — qualitative survive-the-night only",
+      "close_with": "Printed FLIP nameplate or usable Wh. Do not inherit VIPER 5420 Wh. Do not pick 1/2/5/10 kWh from the ASSUMED table."
+    },
+    "battery_nameplate_Wh": {
+      "value": null,
+      "unit": "Wh",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": "astrolab-flip-rover",
+      "numbers_used": "battery_kWh=NOT_PRINTED",
+      "page_or_figure": "FLIP page Venturi enclosure; home 'same full-size battery as FLEX'",
+      "close_with": "Printed Venturi/FLIP nameplate Wh."
+    },
+    "P_keepalive_W": {
+      "value": null,
+      "unit": "W",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": "lpsc-2026-1874",
+      "numbers_used": "P_keepalive_W=NOT_PRINTED",
+      "page_or_figure": "LPSC 1874 hibernation CONOPS — no watt",
+      "close_with": "Printed FLIP hibernation / keepalive average W. Do not use Griffin PUG 1.0/2.5 W/kg as this rover's night load."
+    },
+    "P_array_W": {
+      "value": null,
+      "unit": "W",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": "astrolab-home",
+      "numbers_used": "solar_W=NOT_PRINTED",
+      "page_or_figure": "home: collapsible solar array named, watts not printed",
+      "close_with": "Printed FLIP array watts. Do not inherit VIPER 320/450 W panels. FLEX 3 m² is FLEX, not this box."
+    },
+    "rhu": {
+      "value": null,
+      "unit": "",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": "astrolab-flip-rover",
+      "numbers_used": "RHU=NOT_PRINTED",
+      "page_or_figure": "Astrolab FLIP/home/PR — no RHU statement found 2026-09-17",
+      "close_with": "Printed FLIP RHU count or a first-party statement that none is flown."
+    },
+    "viper_battery_heritage_Wh": {
+      "value": null,
+      "unit": "Wh",
+      "tier": "OPEN",
+      "cite": "OPEN — LPSC 1874 quotes VIPER launch-mass/geometry envelope only, not battery heritage.",
+      "source_slug": "lpsc-2026-1874",
+      "numbers_used": "viper_battery_heritage=NOT_PRINTED",
+      "page_or_figure": "Vehicle Build and Test 480 kg envelope",
+      "close_with": "A printed quote in LPSC 1874 (or later FLIP paper) tying FLIP's battery/solar/thermal subsystem to a VIPER number. Until then do not copy 5420 Wh."
+    },
+    "H_night_h": {
+      "value": 354.0,
+      "unit": "h",
+      "tier": "cited_public",
+      "cite": "Cataldo & Mason, Survive and Operate Through the Lunar Night Workshop 2018 (LPI Contrib. 2106): 354 h of darkness. No Mons Mouton site-specific night length printed. PUG '354 hours' is a lunar day sunrise-to-sunset for Peregrine mid-latitude — not used as FLIP polar night.",
+      "url": "https://www.lpi.usra.edu/lpi/contribution_docs/LPI-002106.pdf",
+      "source_slug": "cataldo-mason-2018-lpi-2106",
+      "numbers_used": "hours_night=354",
+      "page_or_figure": "Cataldo & Mason abstract in LPI-002106"
+    },
+    "T_box_C": {
+      "value": null,
+      "unit": "C",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": "no printed FLIP night hold",
+      "close_with": "Printed FLIP bus/pack night hold °C. Do not use FLEX enclosure −90/−230 °C as this box's hold."
+    },
+    "T_box_K": {
+      "value": null,
+      "unit": "K",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed FLIP night hold K, or a printed °C to derive."
+    },
+    "T_env_K": {
+      "value": null,
+      "unit": "K",
+      "tier": "OPEN",
+      "cite": "OPEN — no printed Mons Mouton night sink for FLIP. Two printed polar bounds, no middle. Paige 'below 23K' is a PSR excursion (OPEN_below_printed), colder than a Mons Mouton high point. Williams 110 K is a polar cold-trap contour, not this rover's sink.",
+      "close_with": "Printed FLIP/Mons Mouton night environment temperature of the rover as a single value.",
+      "page_or_figure": "Paige 2011 LPI 6058 p.1; Williams 2019 JGR 124:2505",
+      "source_slug": null,
+      "numbers_used": null,
+      "bracket_lo": {
+        "value": 23.0,
+        "printed": "below 23K",
+        "unit": "K",
+        "tier": "OPEN_below_printed",
+        "role": "cold_bound",
+        "cite": "Paige et al. 2011 LPI 6058 p.1: 'surface temperature excursions below 23K are briefly observed'. 23 K is the coldest printed number, not a floor — the paper says below. OPEN_below_printed. PSR/polar floor, colder than Mons Mouton high point — not this rover's sink. Annual average 'less than 38K' is not the cold bound.",
+        "quote": "surface temperature excursions below 23K are briefly observed",
+        "url": "https://www.lpi.usra.edu/meetings/volatiles2011/pdf/6058.pdf",
+        "source_slug": "paige-2011-diviner-polar-lpi",
+        "numbers_used": "T_polar_excursion_K_lt=23",
+        "page_or_figure": "p.1 Polar Mapping"
+      },
+      "bracket_hi": {
+        "value": 110.0,
+        "printed": "below 110 K",
+        "unit": "K",
+        "tier": "cited_public",
+        "role": "warm_bound",
+        "label": "Williams 2019 polar cold-trap contour — used as warm printed polar bound, not a box sink",
+        "cite": "Williams et al. 2019 JGR: surfaces below 110 K capable of cold trapping water; south-winter area ×2.8. Higher elevations have a low fraction of temperatures mapped below 110 K in summer. Not FLIP's printed sink.",
+        "quote": "surfaces below 110 K capable of cold trapping water over 1 Gyr increases by factors of 2.8 and 4.3 in the winter for the south and north polar regions, respectively",
+        "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JE006028",
+        "source_slug": "williams-2019-jgr-seasonal-polar",
+        "numbers_used": "T_polar_cold_trap_K=110",
+        "page_or_figure": "abstract; Fig. 9"
+      }
+    },
+    "landing_site_name": {
+      "value": "Mons Mouton",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "LPSC 2026 1874: Mons Mouton region of the lunar south pole. Aerospace America 2026-09-15: touch down at Mons Mouton. Dated 2025 PR said Nobile Region — not mixed; 2026 print used.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1874.pdf",
+      "source_slug": "lpsc-2026-1874",
+      "numbers_used": "site=Mons_Mouton",
+      "page_or_figure": "Introduction"
+    },
+    "launch_NET": {
+      "value": "2026-11",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "Aerospace America 2026-09-15: Griffin launch no earlier than November 2026. Space.com 2026-06-15: late 2026. LPSC 1874 mid-2026 is older and superseded.",
+      "url": "https://aerospaceamerica.aiaa.org/nasa-expects-one-lunar-launch-this-year-moon-base-manager-says/",
+      "source_slug": "aerospace-america-20260915-griffin-net",
+      "numbers_used": "launch_NET=2026-11",
+      "page_or_figure": "García-Galán Glenn Space Technology Symposium"
+    },
+    "lander_polar_surface_ops_days": {
+      "value": 14.0,
+      "unit": "day",
+      "tier": "cited_public",
+      "cite": "Astrobotic PUG 2022 Griffin polar configuration: Surface Operations Duration Up to 14 Days. Lander offer, not FLIP night duration.",
+      "url": "https://voyagertechnologies.com/wp-content/uploads/2026/07/PUGLanders_011222.pdf",
+      "source_slug": "astrobotic-pug-2022",
+      "numbers_used": "griffin_polar_surface_ops=up_to_14_days",
+      "page_or_figure": "Griffin polar configuration"
+    },
+    "lander_payload_nominal_W_per_kg": {
+      "value": 1.0,
+      "unit": "W/kg",
+      "tier": "cited_public",
+      "cite": "Astrobotic PUG 2022 POWER SERVICES: NOMINAL 1.0 W per kilogram of payload. Lander offer only, not FLIP store or hibernation load.",
+      "url": "https://voyagertechnologies.com/wp-content/uploads/2026/07/PUGLanders_011222.pdf",
+      "source_slug": "astrobotic-pug-2022",
+      "numbers_used": "payload_nominal_W_per_kg=1.0",
+      "page_or_figure": "POWER SERVICES"
+    },
+    "lander_payload_peak_W_per_kg": {
+      "value": 2.5,
+      "unit": "W/kg",
+      "tier": "cited_public",
+      "cite": "Astrobotic PUG 2022 POWER SERVICES: PEAK 2.5 W per kilogram of payload as scheduled by Astrobotic. Lander offer only, not FLIP store.",
+      "url": "https://voyagertechnologies.com/wp-content/uploads/2026/07/PUGLanders_011222.pdf",
+      "source_slug": "astrobotic-pug-2022",
+      "numbers_used": "payload_peak_W_per_kg=2.5",
+      "page_or_figure": "POWER SERVICES"
+    },
+    "lander_thermal_includes_night": {
+      "value": false,
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "This range is relevant for the nominal lunar surface operations duration and does not include lunar night or missions to equatorial latitudes.",
+      "cite": "Astrobotic PUG 2022 LUNAR SURFACE (−30°C TO 80°C) does not include lunar night. Griffin lander no night by PUG.",
+      "url": "https://voyagertechnologies.com/wp-content/uploads/2026/07/PUGLanders_011222.pdf",
+      "source_slug": "astrobotic-pug-2022",
+      "numbers_used": "thermal_excludes_lunar_night=true",
+      "page_or_figure": "LUNAR SURFACE (−30°C TO 80°C)"
+    },
+    "eps_eff": {
+      "value": null,
+      "unit": "1",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed FLIP radiator/MLI e*. Not LEMS 0.0028."
+    },
+    "A_rad_m2": {
+      "value": null,
+      "unit": "m2",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": "PR names a radiator as a dust-coating target; area not printed",
+      "close_with": "Printed FLIP radiator area. Do not use LuSEE 0.15 or LEMS declared 0.80."
+    },
+    "A_path_m2": {
+      "value": null,
+      "unit": "m2",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed conductive cross-section."
+    },
+    "L_path_m": {
+      "value": null,
+      "unit": "m",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed conductive length. Fourier not run while store and load are OPEN."
+    },
+    "night_strategy": {
+      "value": "Venturi battery + collapsible solar array; lunar hibernation in CONOPS; lander has no night by PUG",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "Astrolab home: Power to Survive the Lunar Night. FLIP page: enclosure stores enough energy to survive the lunar night. LPSC 1874: lunar hibernation in the operational concept. No printed hibernation watts. No RHU statement.",
+      "url": "https://www.astrolab.space/flip-rover/",
+      "source_slug": "astrolab-flip-rover",
+      "numbers_used": "survive_night_claim=qualitative",
+      "page_or_figure": "Engineered for Extremes; LPSC 1874 Operational Concept"
+    }
+  },
+  "geometry_bracket": {
+    "honesty": "OPEN. A_rad, e*, G, A_path, L_path not printed. No declared Fourier bracket — this is the identity line, not leak."
+  },
+  "k_path": {
+    "nist_id": null,
+    "temper_match": null,
+    "tier": "OPEN",
+    "source_slug": null,
+    "numbers_used": null,
+    "cite": "FLIP structure alloy NOT PRINTED. Fourier not run. no measurement by us."
+  },
+  "holes": [
+    {
+      "id": "store_Wh",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "No printed FLIP battery Wh. VIPER 5420 Wh not inherited."
+    },
+    {
+      "id": "P_hibernation_W",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "LPSC 1874 names hibernation; watt not printed."
+    },
+    {
+      "id": "geometry",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "A_rad / G / e* not printed. Fourier not run."
+    }
+  ],
+  "sources_dir": "sources/flip-griffin1"
+}

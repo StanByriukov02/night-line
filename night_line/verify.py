@@ -197,6 +197,30 @@ def verify_box(
     else:
         indep = None
 
+    if rec.get("label") == "LINE_OPEN_TWO_KNOBS":
+        for row in rec.get("identity_table") or []:
+            kwh = float(row["nameplate_kWh"])
+            usable = kwh * 1000.0 * 0.70
+            load = usable / float(rec["H_night_h"])
+            if abs(float(row["usable_Wh"]) - usable) > 1e-9:
+                ladder_ok = False
+            if abs(float(row["max_avg_hibernation_load_W"]) - load) > 1e-9:
+                ladder_ok = False
+            if "ASSUMED" not in str(row.get("reserve_label") or ""):
+                ladder_ok = False
+        open_upward = False
+        return {
+            "sources_sha256_ok": sources_ok,
+            "ladder_recompute_ok": ladder_ok,
+            "independent_ladder": None,
+            "independent_worst_corner": None,
+            "url_status": url_status,
+            "source_files": hash_rows,
+            "open_upward_knobs": ["store_Wh", "P_keepalive_W"],
+            "plain_LIVE_forbidden": True,
+            "ok": sources_ok and ladder_ok,
+        }
+
     hi = rec["hi"]
     corner = independent_corner(
         G=float(hi["G_W_per_K"]),

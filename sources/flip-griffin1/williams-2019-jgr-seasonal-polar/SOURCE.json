@@ -1,0 +1,23 @@
+{
+  "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JE006028",
+  "fetched_utc": "2026-09-17T08:23:43Z",
+  "title": "Williams et al. 2019 JGR Planets: Seasonal Polar Temperatures on the Moon (full-text HTML extract)",
+  "sha256": "189bac5a5d741216d83d52c2cbbf5c1eea9b3a83385b5a5080d42b1f37d7461f",
+  "filename": "page.txt",
+  "bytes": 74433,
+  "content_type": "text/plain; charset=utf-8",
+  "numbers_used": [
+    "T_polar_cold_trap_K=110",
+    "south_winter_cold_trap_area_factor=2.8",
+    "Connecting_Ridge_C2_summer_T_K~200"
+  ],
+  "redacted_personal_email": true,
+  "quote": "We find that surfaces below 110 K capable of cold trapping water over 1 Gyr increases by factors of 2.8 and 4.3 in the winter for the south and north polar regions, respectively",
+  "quote_elevation": "Limited regions of higher elevations have a low fraction of temperatures mapped below 110 K in the summer months as they experience periods of prolonged illumination.",
+  "sha256_by_file": {
+    "page.txt": "189bac5a5d741216d83d52c2cbbf5c1eea9b3a83385b5a5080d42b1f37d7461f"
+  },
+  "status_20260917": 200,
+  "note": "Wiley programmatic GET returned 403; this extract is the 2026-09-17 full-text HTML of doi 10.1029/2019JE006028. Mons Mouton is a high point; 110 K is a printed polar cold-trap contour, not this rover sink.",
+  "omitted_binaries": []
+}

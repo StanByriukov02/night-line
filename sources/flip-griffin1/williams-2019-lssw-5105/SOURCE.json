@@ -1,0 +1,19 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/lunarsurface2020/pdf/5105.pdf",
+  "fetched_utc": "2026-09-17T08:23:43Z",
+  "title": "Williams LSSW 2020 5105: surfaces below 110 K increase by 2.8 (south winter); cites Williams et al. 2019 JGR",
+  "sha256": "9278ace6d3d3b1b0d491292de9cab2e3f3defdb768e278238d59dc35770b1fe8",
+  "filename": "page.pdf",
+  "bytes": 691889,
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "T_polar_cold_trap_K=110",
+    "south_winter_cold_trap_area_factor=2.8"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.pdf": "9278ace6d3d3b1b0d491292de9cab2e3f3defdb768e278238d59dc35770b1fe8"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

@@ -1,0 +1,20 @@
+{
+  "url": "https://www.astrobotic.com/griffin-1-lunar-lander-unveiled-ahead-of-environmental-testing/",
+  "fetched_utc": "2026-09-17T08:22:14Z",
+  "title": "Astrobotic 2026-06-15: Griffin-1 unveiled; FLIP integrated in Florida; late 2026",
+  "sha256": "cf7a84fa09e8f37dfff1a5a08051551df81f34a327a1280a2687e90206edc75b",
+  "filename": "page.html",
+  "bytes": 97370,
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "launch=late_2026",
+    "FLIP_integrate_Florida=true",
+    "FLIP_store_Wh=NOT_PRINTED"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.html": "cf7a84fa09e8f37dfff1a5a08051551df81f34a327a1280a2687e90206edc75b"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

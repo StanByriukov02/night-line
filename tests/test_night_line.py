@@ -5,7 +5,16 @@ import ast
 from pathlib import Path
 
 from night_line.cli import run_one
-from night_line.model import ROOT, evaluate, load_box, packaged_boxes, public_label
+from night_line.model import (
+    IDENTITY_LINE,
+    LINE_OPEN_TWO_KNOBS,
+    ROOT,
+    evaluate,
+    identity_hibernation_table,
+    load_box,
+    packaged_boxes,
+    public_label,
+)
 
 PKG = Path(__file__).resolve().parents[1] / "night_line"
 OUT = Path(__file__).resolve().parents[1] / "out"
@@ -79,6 +88,10 @@ def test_public_labels() -> None:
     )
     assert iff["label"] == "LIVE_IF_P_NIGHT_BELOW"
     assert iff["edge"] is False
+    two = public_label([], two_knobs_open=True)
+    assert two["label"] == "LINE_OPEN_TWO_KNOBS"
+    assert two["edge"] is False
+    assert two["worst_corner_margin_Wh"] is None
 
 
 def test_lems_a3_published_line() -> None:
@@ -136,3 +149,73 @@ def test_lusee_night_published_ladder() -> None:
     assert written["verify"]["independent_ladder"]["derated"]
     assert abs(written["verify"]["independent_ladder"]["derated"] - 13.20) < 0.01
     assert abs(written["verify"]["independent_ladder"]["soc8"] - 17.34) < 0.01
+
+
+LEMS_MARK = {
+    640.0,
+    1.231,
+    0.297,
+    1.528,
+    541.0,
+    0.0028,
+    -28.0,
+    98.6,
+    37.99,
+    5.92,
+    245.15,
+    73.15,
+    0.8,
+    0.006,
+    0.05,
+}
+LUSEE_MARK = {7160.0, 12.4, 0.15, 128.0, 50.0, 328.0, 8218.54}
+
+
+def _walk_nums(obj: object, out: list[float]) -> None:
+    if isinstance(obj, bool) or obj is None:
+        return
+    if isinstance(obj, (int, float)):
+        out.append(float(obj))
+        return
+    if isinstance(obj, str):
+        return
+    if isinstance(obj, dict):
+        for v in obj.values():
+            _walk_nums(v, out)
+        return
+    if isinstance(obj, (list, tuple)):
+        for v in obj:
+            _walk_nums(v, out)
+
+
+def test_flip_griffin1_identity_table() -> None:
+    rec = evaluate(load_box(PKG / "boxes" / "flip_griffin1.json"))
+    fix = load_box(PKG / "boxes" / "flip_griffin1.json")
+    nums: list[float] = []
+    _walk_nums(fix, nums)
+    for n in nums:
+        for bad in LEMS_MARK | LUSEE_MARK:
+            assert abs(n - bad) > 1e-12, f"{bad} leaked into FLIP box"
+    assert rec["label"] == LINE_OPEN_TWO_KNOBS
+    assert rec["label_display"] == LINE_OPEN_TWO_KNOBS
+    assert rec["identity"] == IDENTITY_LINE
+    table = rec["identity_table"]
+    expected = (1.98, 3.95, 9.89, 19.77)
+    assert len(table) == 4
+    for row, p_w in zip(table, expected):
+        assert abs(float(row["max_avg_hibernation_load_W"]) - p_w) < 0.01
+        assert "ASSUMED" in row["reserve_label"]
+    rows = identity_hibernation_table(h_night=354.0)
+    assert abs(float(rows[0]["max_avg_hibernation_load_W"]) - 700.0 / 354.0) < 0.01
+    written = run_one(PKG / "boxes" / "flip_griffin1.json", OUT)
+    text = (OUT / "flip_griffin1" / "LINE.md").read_text(encoding="utf-8")
+    assert LINE_OPEN_TWO_KNOBS in text
+    assert "no store is chosen" in text
+    assert "ASSUMED" in text
+    for p_w in expected:
+        assert f"{p_w:.2f}" in text
+    for line in text.splitlines():
+        if line.startswith("|") and any(x in line for x in ("1.98", "3.95", "9.89", "19.77")):
+            assert "ASSUMED" in line
+    assert written["verify"]["ok"] is True
+    assert written["verify"]["ladder_recompute_ok"] is True

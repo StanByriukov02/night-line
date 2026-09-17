@@ -1,0 +1,19 @@
+{
+  "url": "https://www.lpi.usra.edu/meetings/volatiles2011/pdf/6058.pdf",
+  "fetched_utc": "2026-09-17T08:22:14Z",
+  "title": "Paige et al. 2011 LPI 6058: polar annual average <38 K; excursions below 23 K",
+  "sha256": "a97c924e6768f7ec7696f4badbfa5ed9140d676b731c7cbc6c5772bc7f4f26b2",
+  "filename": "page.pdf",
+  "bytes": 356653,
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "T_polar_annual_avg_K_lt=38",
+    "T_polar_excursion_K_lt=23"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.pdf": "a97c924e6768f7ec7696f4badbfa5ed9140d676b731c7cbc6c5772bc7f4f26b2"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

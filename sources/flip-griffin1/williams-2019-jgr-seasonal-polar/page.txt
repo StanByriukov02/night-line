@@ -1,0 +1,615 @@
+Seasonal Polar Temperatures on the Moon - Williams - 2019 - Journal of Geophysical Research: Planets - Wiley Online Library
+AGU Journals
+AGU Journals
+**
+Search withinThis JournalAGU JournalsWiley Online Library
+*
+Search term
+ Advanced Search Citation Search
+*
+Search term
+ Advanced Search Citation Search
+*
+Search term
+ Advanced Search Citation Search
+Login / Register
+* **
+Individual login
+
+* **
+Institutional login
+
+* **
+Log in with AGU
+
+* 
+REGISTER
+
+**
+Journal of Geophysical Research: Planets
+Volume 124, Issue 10 pp. 2505-2521Journal of Geophysical Research: Planets
+Research Article
+**
+Free Access
+# Seasonal Polar Temperatures on the Moon
+J.-P. Williams****, 
+Corresponding Author
+J.-P. Williams
+* **[email protected] ([email-redacted])
+* **orcid.org/0000-0003-4163-2760
+Earth, Planetary, and Space Sciences, University of California, Los Angeles, CA, USA
+Correspondence to: J.-P. Williams,
+[email-redacted]
+Search for more papers by this author
+B. T. Greenhagen**, 
+B. T. Greenhagen
+Applied Physics Laboratory, Johns Hopkins University, Laurel, MD, USA
+Search for more papers by this author
+D. A. Paige**, 
+D. A. Paige
+Earth, Planetary, and Space Sciences, University of California, Los Angeles, CA, USA
+Search for more papers by this author
+N. Schorghofer**, 
+N. Schorghofer
+* **orcid.org/0000-0002-5821-4066
+Planetary Science Institute, Tucson, AZ, USA
+Search for more papers by this author
+E. Sefton-Nash**, 
+E. Sefton-Nash
+European Space Research and Technology Center (ESTEC), European Space Agency, Noordwijk, the Netherlands
+Search for more papers by this author
+P. O. Hayne**, 
+P. O. Hayne
+Laboratory for Atmospheric and Space Physics, University of Colorado Boulder, Boulder, CO, USA
+Search for more papers by this author
+P. G. Lucey**, 
+P. G. Lucey
+Hawaii Institute of Geophysics and Planetology, University of Hawai‘i at Mānoa, Honolulu, HI, USA
+Search for more papers by this author
+M. A. Siegler**, 
+M. A. Siegler
+* **orcid.org/0000-0002-7940-3931
+Planetary Science Institute, Tucson, AZ, USA
+Search for more papers by this author
+K. Michael Aye**, 
+K. Michael Aye
+* **orcid.org/0000-0002-4088-1928
+Laboratory for Atmospheric and Space Physics, University of Colorado Boulder, Boulder, CO, USA
+Search for more papers by this author
+J.-P. Williams****, 
+Corresponding Author
+J.-P. Williams
+* **[email protected] ([email-redacted])
+* **orcid.org/0000-0003-4163-2760
+Earth, Planetary, and Space Sciences, University of California, Los Angeles, CA, USA
+Correspondence to: J.-P. Williams,
+[email-redacted]
+Search for more papers by this author
+B. T. Greenhagen**, 
+B. T. Greenhagen
+Applied Physics Laboratory, Johns Hopkins University, Laurel, MD, USA
+Search for more papers by this author
+D. A. Paige**, 
+D. A. Paige
+Earth, Planetary, and Space Sciences, University of California, Los Angeles, CA, USA
+Search for more papers by this author
+N. Schorghofer**, 
+N. Schorghofer
+* **orcid.org/0000-0002-5821-4066
+Planetary Science Institute, Tucson, AZ, USA
+Search for more papers by this author
+E. Sefton-Nash**, 
+E. Sefton-Nash
+European Space Research and Technology Center (ESTEC), European Space Agency, Noordwijk, the Netherlands
+Search for more papers by this author
+P. O. Hayne**, 
+P. O. Hayne
+Laboratory for Atmospheric and Space Physics, University of Colorado Boulder, Boulder, CO, USA
+Search for more papers by this author
+P. G. Lucey**, 
+P. G. Lucey
+Hawaii Institute of Geophysics and Planetology, University of Hawai‘i at Mānoa, Honolulu, HI, USA
+Search for more papers by this author
+M. A. Siegler**, 
+M. A. Siegler
+* **orcid.org/0000-0002-7940-3931
+Planetary Science Institute, Tucson, AZ, USA
+Search for more papers by this author
+K. Michael Aye**, 
+K. Michael Aye
+* **orcid.org/0000-0002-4088-1928
+Laboratory for Atmospheric and Space Physics, University of Colorado Boulder, Boulder, CO, USA
+Search for more papers by this author
+First published: 14 August 2019
+https://doi.org/10.1029/2019JE006028Digital Object Identifier (DOI)
+**
+view metrics
+PDF
+## Abstract
+The Diviner Lunar Radiometer Experiment on the Lunar Reconnaissance Orbiter has been acquiring visible and infrared radiance measurements of the Moon for nearly 10 years. These data have been compiled into polar stereographic maps of temperatures poleward of 80° latitude at fixed local times and fixed subsolar longitudes to provide an overview of diurnal temperatures of the polar regions. The data have been divided into winter and summer seasons, defined by the times of year when the subsolar latitude is above or below the equator, to characterize the variations in seasonal temperatures that result from the 1.54° angle between the Moon's spin pole and the ecliptic plane. Since the illumination in the polar regions is perpetually at grazing angles, topography plays a dominate role in surface temperatures. Consequently, the surface and near-surface thermal environment can vary in complex ways with time of day and season, which produces areas that are seasonally shadowed for prolonged periods and that are much more extensive than the permanently shadowed regions (PSRs). We find that surfaces below 110 K capable of cold trapping water over 1 Gyr increases by factors of 2.8 and 4.3 in the winter for the south and north polar regions, respectively, with seasonal residence times of adsorbed water molecules occurring at higher temperatures and thus larger areas.
+## Plain Language Summary
+The Diviner instrument on the Lunar Reconnaissance Orbiter has been providing temperature measurements of the lunar surface for nearly 10 years. These observations have been compiled into polar maps of the summer and winter seasonal temperatures. Illumination in the polar regions is perpetually at grazing angles, and therefore topography plays a large role in surface temperatures which can vary in complex ways with time of day and season. The areas that are cold enough to trap water during the winter season are significantly larger than the cold, permanently shadowed regions.
+## 1 Introduction
+The Diviner Lunar Radiometer Experiment, one of seven instruments on board the Lunar Reconnaissance Orbiter (LRO; Chin et al., 2007; Tooley et al., 2010; Vondrak et al., 2010), has been acquiring solar reflectance and midinfrared radiance measurements of the Moon since July of 2009 (Paige et al., 2010). These radiance measurements have provided information on how regolith on airless bodies store and exchange thermal energy with the space environment (Bandfield et al., 2011, 2015; Hayne et al., 2017; Vasavada et al., 2012). The thermal state of the regolith can have consequences for the transport and sequestration of volatiles. The polar regions, where solar illumination is perpetually at high incidence angles, are of special interest as permanently shadowed regions (PSRs) often possess temperatures low enough to cold-trap water ice and other volatile species where the residence times can become geologically long (billions of years; Watson et al., 1961; Arnold, 1979; Ingersoll et al., 1992; Vasavada et al., 1999; Schorghofer & Taylor, 2007; Zhang & Paige, 2009; Paige et al., 2010). The potential for near-surface water ice makes the polar regions of significant interest for in situ exploration; mission planning for landing and operating in these regions will require understanding the extreme thermal environment and illumination conditions (De Rosa et al., 2012; Kokhanov et al., 2018; Lemelin et al., 2014; Speyerer et al., 2016). The original LRO mission objectives included mapping temperatures of the PSRs along with characterizing the illumination conditions in the polar regions and identifying whether near-surface water ice exists (Vondrak et al., 2010).
+In this paper, we present temperature maps of the lunar polar regions to characterize the thermal environment and how it varies seasonally based on nearly 10 years of accumulated data from Diviner. The relatively small angle between the Moon's spin pole and the normal to the ecliptic plane of 1.54° results in regions that are permanently shadowed topographically from the Sun down to latitudes \~60° (McGovern et al., 2013; Siegler et al., 2015). Though seasonality has minimal influence on surface temperatures at middle to low latitudes, in the polar regions where solar illumination is perpetually at grazing angles, seasonality can have a large effect as topography exerts a significant influence on temperatures and regions of persistent shadowing or illumination can vary significantly with the position of the subsolar latitude as discussed in this paper (Figure 1). This is shown using Diviner's channel 1, spectral passband of 0.35–2.8 μm, providing visual brightness of the south polar region during the winter and summer (Figure 1). The channel 1 Reduced Data Records (RDR) data were binned at 240 m/pixel and 0.25 hr of local time. The maximum values were selected to generate polar stereographic maps of the maximum reflectance of the surface observed by Diviner relative to the reflectance of a normally illuminated Lambertian surface.
+
+ Details are in the caption following the image
+**Figure 1**
+Open in figure viewer**PowerPoint
+(top) Diviner channel 1 maximum visual brightness in south polar stereographic projection down to 80°S latitude for the summer and winter months with the large PSRs labeled. Colored stars are locations of the temperature profiles with corresponding marker colors. (middle) The subsolar latitude during the Lunar Reconnaissance Orbiter mission (July 2009 to February 2019) with color shading highlighting the data used for the southern summer/northern winter (red) and southern winter/northern summer (blue) mapping. Each season represents approximately half of the Moon's 346-day draconic year. (bottom) Diviner channel 9 brightness temperatures for locations within three PSRs—Amundsen (91.28°E, 83.68°S), a sizable PSR between craters Haworth and Nobile south of Malapert Mountain designated Region 5 (15.05°E, 87.03°S), and Haworth (−2.57°E, 87.35°S). Marker colors correspond to color of stars in visual brightness maps denoting locations. Haworth and Region 5 are two exceptionally cold locations identified by Paige and Siegler (2016) with winter temperatures extending below 20 K. The seasonal trend is more complicated in Amundsen as its southern wall receives large and varying amounts of solar illumination resulting in more complicated variations of reflected visible and emitted infrared radiance into its PSR. PSR = permanently shadowed regions.
+## 2 Diviner Mapping
+For this study, we compiled nearly 10 years of Diviner radiance observations to generate polar stereographic projected seasonal bolometric brightness temperature maps of the north and south polar regions of the Moon extending to latitudes 80°N and 80°S, respectively. All nadir-pointing observations from the Diviner RDRs were used from 5 July 2009 to 17 February 2019. The RDRs from Diviner's channels 3–9 provide calibrated radiance measurements over a wavelength range from 7.55 to 400 μm which were map projected and binned at 240-m/pixel resolution. Each channel consists of a line array of 21 detectors that are nominally nadir-pointing collecting data in a push broom mode of operation with an integration period of 128 ms. After a brief commissioning phase in an elliptical orbit, LRO transitioned into a near-circular 2-hr-period mapping orbit on 15 September 2009, with an average altitude of ∼50 km (referenced to a 1,737.4-km sphere; Mazarico et al., 2012). LRO eventually transitioned back into an elliptical low fuel consumption quasi-frozen orbit on 11 December 2011 with spacecraft altitude varying between ∼40 and 170 km and orbit periapsis near the lunar south pole (Mazarico et al., 2018).
+Prior to binning, the effective fields of view (EFOV) of the detectors were calculated for each RDR record using the spacecraft velocity, altitude, and each channel's average instantaneous field of view, to account for the spacecraft motion and thermal response time associated with each detector which results in an elongation in the in-track direction. The Monte Carlo method is then utilized to ray-trace the EFOV onto a Lunar Orbiter Laser Altimeter (LOLA) digital elevation model (Smith et al., 2010). This ensures all bins within the EFOV are populated (see Williams et al., 2016; Sefton-Nash et al., 2017, for further details). Variations in spacecraft altitude have been minimal over the south polar region, and as a result the ground-projected surface footprint of Diviner in the south high latitudes has remained relatively fixed during the mission: ∼140 m cross track and ∼400 m in track at a spacecraft altitude of 50 km (full-width half-maximum resolution; Paige, Foote, et al., 2010; Williams et al., 2016). The spacecraft altitude at high latitudes in the north, however, has varied due to the transition from the near-circular orbit to the elliptical orbit with apoapsis near the north pole where cross-track and in-track dimensions are \~460 and \~800 km, respectively, at a spacecraft altitude of 170 km. The cross-track width scales with altitude; however, the influence of the spacecraft motion and the detector response time are reduced with altitude which partially offsets the in-track broadening with altitude. The mixture of different orbit altitudes in the north polar region makes the EFOV modeling particularly important.
+The LRO orbit plane is in a near-polar orbit with an inclination approximately 90° from the equator. The orbit is nearly fixed in inertial space, and the subspacecraft longitude migrates 360° every sidereal rotation period (27.3 days) as the Moon rotates 360° relative to the LRO orbit plane. Each LRO orbit crosses the dayside and nightside of the Moon, and consequently Diviner makes observations at day and night local times separated by 180° longitude. Local time is expressed in hours by normalizing the angular distance between geographic longitude and the subsolar longitude to a 24-hr day (daytime is between 6 a.m. and 6 p.m., and nighttime is between 6 p.m. and 6 a.m. local time). The local time of the LRO orbit shifts ∼1.8 hr earlier each sidereal day as the Earth/Moon system orbits the Sun, providing a full range of local time observations over the course of half of an Earth year. As a result, many years of observations are required to provide a comprehensive view of global surface temperatures of the Moon with Diviner.
+Compiling the first \~5.5 years of Diviner observations into a gridded global data set, Williams et al. (2017) provided a global perspective on the lunar surface temperatures at a coarse 0.5°/pixel resolution. However, distinct seasonal temperature variations at the highest latitudes result from the ±1.54° variation in subsolar latitude during the Moon's 346-day draconic year (Figure 1). Measured temperatures within PSRs show a dominantly seasonal variation including exceptionally cold locations that experience minimum temperatures below 20 K (though the absolute calibration of the data at the lowest brightness temperatures is not well constrained) (Aye et al., 2013; Paige & Siegler, 2016**;** Paige, Siegler, et al., 2010**;** Sefton-Nash et al., 2013). For this reason, we split the cumulative data set into winter and summer defined by subsolar latitudes either above or below the equator for each pole. The data are further divided into fixed local time and fixed subsolar longitude in increments 0.25 hr of local time, or 3.75° of subsolar longitude resulting in 96 map planes of each covering a full lunation (Figures 2 and 3). Bolometric brightness temperatures are then determined from the binned radiance measurements from Diviner channels 3–9 (e.g., Paige, Siegler, et al., 2010). Variations in surface temperatures resulting from changes in celestial parameters such as the Moon-Sun distance or the 18.6-year nodal precession are not distinguished and are averaged during the binning of the data. Figures 2 and 3 provide examples of the fixed local time and subsolar longitude maps where four of the 0.25-hr local time maps are averaged to provide mean seasonal temperatures for the midnight hour and midday hour and similarly four of the 3.75° fixed subsolar longitude maps are averaged to provide mean seasonal temperatures over 15° of subsolar longitude.
+
+ Details are in the caption following the image
+**Figure 2**
+Open in figure viewer**PowerPoint
+Seasonal bolometric temperature maps (left column—summer; right column—winter) of the south polar region to 80°S latitude for (top) nighttime local time 0–1 hr, (middle) daytime local time 12–13 hr, and (bottom) subsolar longitude −90° to −105°E.
+
+ Details are in the caption following the image
+**Figure 3**
+Open in figure viewer**PowerPoint
+Seasonal bolometric temperature maps (left column—summer; right column—winter) of the north polar region to 80°N latitude for (top) nighttime local time 0–1 hr, (middle) daytime local time 12–13 hr, and (bottom) subsolar longitude −90° to −105°E.
+Local time coverage is more limited in two regions centered around 89°N/S latitude and ± 90°E longitude due to phasing of an intramonthly variation in spacecraft inclination of approximately ±0.7°. This corresponds to a reduction in local time coverage focused in these areas \~6–10 hr during summer and \~18–22 hr during winter in both hemispheres (Figure 4). Coverage is better in the north due to the larger surface footprints resulting from the higher spacecraft altitude during elliptical orbits. The spacecraft inclination has been systematically decreasing since the start of the mission from \~90.2° to \~86.0° by early 2019 due to the nodal precession of the Moon. As a result, a coverage gap has emerged over the poles and continues to widen to lower latitudes. This can be seen in the time series of temperatures in Figure 1 where temperature observations within the Haworth and Region 5 locations terminate when the boundary of the coverage gap crossed these latitudes.
+
+ Details are in the caption following the image
+**Figure 4**
+Open in figure viewer**PowerPoint
+Diviner local time coverage of (a) south and (b) north polar regions mapped as fractions of the 96 local time planes with observations in each spatial bin. (c–f) Histograms of spatial local time coverage within each local time plane.
+## 3 Polar Temperatures
+The polar maps provide an overview of the mean, minimum, and maximum seasonal temperatures (Figures 5 and 6) highlighting the variations in temperatures resulting from the half-year seasons when the subsolar latitude is either above or below the equator. The summer maximum temperatures show the extent of the PSRs. The black contours on the maximum temperature maps highlight the regions that are below 110 K, corresponding with the break between cool and warm temperatures of the color scale and the approximate maximum temperature of water ice stability against sublimation in a vacuum (e.g., Zhang & Paige, 2009). Extrapolation of the sublimation rate of crystalline water ice (e.g., Murphy & Koop, 2005) to lower temperatures indicates that at 110 K the loss rate is about 10 cm/Gyr. At this temperature, sublimation is so slow that it is no longer measurable in the laboratory and ice is usually in amorphous rather than crystalline form. The sublimation rate depends sensitively on temperature (it changes by a hundredfold between 110 and 120 K) so that the dependence of the effective cold trap area on ice structure and the choice of threshold value is expected to be minor. The temperatures permanently below 110 K in the south comprise a surface area of 1.30 × 104 km2 poleward of 80° latitude which is \~4.5% of the total area, similar to the \~1.1 × 104-km2 cold trap area poleward of 82.5° latitude estimated by Hayne et al. (2015). In winter, the regions that experience prolonged shadowing and are below 110 K expand by a factor of 2.8 to 3.73 × 104 km2, \~12.8% of the mapped area. These seasonally shadowed regions (SSRs) experience ≳100 K variations in maximum temperatures between the summer and winter months. Figure 7 shows the difference in maximum temperatures between summer and winter highlighting the SSRs. The extent of the region permanently below 110 K in the north polar region is smaller than in the south with a surface area of 5.3 × 103 km2, \~1.8% of the total mapped area. The seasonal difference in the north, however, is larger, and the region of maximum temperatures below 110 K increases by a factor of 4.3 to an area of 2.28 × 104 km2, \~7.9% of the mapped area. The larger extent of the cold regions in the south is in large part due to the close proximity of the large craters Faustini, Shoemaker, and Haworth to the South Pole (within a few degrees).
+
+ Details are in the caption following the image
+**Figure 5**
+Open in figure viewer**PowerPoint
+(top) Maximum, (middle) average, and (bottom) minimum winter and summer temperatures for the south polar region to 80°S latitude. The contour on the maximum temperature maps is 110 K.
+
+ Details are in the caption following the image
+**Figure 6**
+Open in figure viewer**PowerPoint
+(top) Maximum, (middle) average, and (bottom) minimum winter and summer temperatures for the north polar region to 80°N latitude. The contour on the maximum temperature maps is 110 K.
+
+ Details are in the caption following the image
+**Figure 7**
+Open in figure viewer**PowerPoint
+Difference in maximum summer and winter temperatures for the (a) south and (b) north polar regions highlighting seasonally shadowed regions where the change in maximum temperatures exceed 100 K. Amplitude of temperature extremes in the summer in (c) the south and (d) the north polar regions and amplitude of temperature extremes in the winter in the (e) south and (f) north polar regions. White boxes in (c) and (e) are locations of Figure 8.
+Ice retreat rate and average molecular residence times are related by simple physics; 10 cm/Gyr (110 K) corresponds to a residence time of 3 years, and 1 m/Gyr (115 K) corresponds to 0.3 years. However, this is the residence time for water molecules on ice, and adsorbed molecules on other mineral surfaces can have substantially longer residence times (e.g., Hibbitts et al., 2011; Schorghofer & Aharonson, 2014). Hence, water molecules can remain stable seasonally even outside of the cold trap area delineated by the 110-K threshold (Table 1).
+Table 1.
+Seasonal Winter Cold-Trapping Area for Threshold Temperatures 110–115 K
+|Cold trap temperature (K)|Area (km2)|
+|South|North|
+|110|3.73 × 104|2.28 × 104|
+|111|3.79 × 104|2.33 × 104|
+|112|3.86 × 104|2.38 × 104|
+|113|3.92 × 104|2.42 × 104|
+|114|3.98 × 104|2.47 × 104|
+|115|4.04 × 104|2.51 × 104|
+Illumination modeling by Mazarico et al. (2011) and McGovern et al. (2013) estimate similar total PSR areas between 1.6 × 104 and 1.7 × 104 km2 in the south and 1.2 × 104 and 1.3 × 104 km2 in the north poleward of 80° latitude, intermediate between our summer and winter cold trap areas below 110 K. These area estimates are consistent with our results as PSR temperatures can exceed 110 K in summer but are located within the regions below 110 K in winter.
+In addition to the seasonally changing regions of shadowing, the amplitude of temperature extremes observed within the PSRs, that is, the difference between the maximum and minimum temperatures, varies substantially with the seasons (Figures 7 and 8). For example, temperatures on the floor of Faustini vary \~30–40 K in winter, while the range is \~45–70 K in summer. The floor of Haworth, in addition to being one of the coldest PSRs, experiences smaller variations in temperatures: \~20–30 K in winter increasing to \~30–45 K in summer. The amplitude of near-surface temperatures can have consequences for the diffusion of water molecules into the subsurface as temperature cycles under the right conditions are predicted to drive ice downward along thermal gradients into the regolith (Schorghofer & Aharonson, 2014; Siegler et al., 2011). Thermal cycling of the regolith may also have consequences for regolith porosity. Most PSRs, such as those within Haworth, Shoemaker, Faustini, and Amundsen craters, have low surface reflectance at far-ultraviolet (far-UV) observed by LRO's Lyman Alpha Mapping Project (LAMP) interpreted to result from significantly higher porosity of the surface regolith (Gladstone et al., 2012). This could result from reduced thermal amplitudes experienced with the PSRs relative to non-PSRs as thermal cycling of the regolith may result in compaction through settling of grains (Blanc & Géminard, 2013; Byron et al., 2019; Chen et al., 2006, 2009; Divoux, 2010).
+
+ Details are in the caption following the image
+**Figure 8**
+Open in figure viewer**PowerPoint
+(a) Maximum summer temperatures within permanently shadowed regions in close proximity to the south pole and (b) the amplitude of summer temperature extremes and (c) maximum winter temperatures and (d) amplitude of winter temperature extremes. See Figure 7 for location.
+## 4 Discussion
+### 4.1 Cold Traps
+Water and other volatiles may reside within cold traps in the polar regions where temperatures are low enough that minimal sublimation loss occurs over billions of years. Remote sensing observations of the polar regions from orbiting spacecraft have provided evidence for volatile enhancement in PSRs (e.g., Lawrence, 2017, and references therein). The Lunar Crater Observation and Sensing Spacecraft impact experiment confirmed the presence of water and other volatile species within the PSR of Cabeus crater (Colaprete et al., 2010; Gladstone et al., 2010; Hayne et al., 2010; Schultz et al., 2010), and bistatic observations by LRO Miniature Radio Frequency (Mini-RF) instrument in Cabeus are consistent with a \~10- to 20-cm near-surface layer of water ice (Patterson et al., 2017). Enhanced hydrogen abundance at both poles has been found by both the Lunar Prospector Neutron Spectrometer (Eke et al., 2009; Feldman, 1998; Feldman et al., 2001; Lawrence et al., 2006; Teodoro et al., 2010) and LRO's Lunar Exploration Neutron Detector (Boynton et al., 2012; Mitrofanov et al., 2010, 2012) instruments.
+Evidence for surficial frost has also been observed. The spectral signature of reflected far-UV wavelengths in PSRs observed by LAMP suggests the presence of \~1–2% of water frost at the surface. Additionally, Hayne et al. (2015) found a strong change in UV spectral characteristics at temperatures below 110 K, providing compelling evidence for the presence of surface water frost. Reflectance at 1064 nm from the LOLA instrument has also been shown to correlate with Diviner-derived temperatures with a sharp increase in reflectance below \~110 K (Fisher et al., 2017; Lucey et al., 2014; Qiao et al., 2019). Most of the areas within the PSRs that exhibit reflectance values and UV spectra consistent with surface water frost also exhibit near-infrared absorption features diagnostic of water ice in reflectance spectra acquired by the Moon Mineralogy Mapper on the Chandrayaan-1 spacecraft (Li et al., 2018), and a recent study by Sefton-Nash et al. (2019) found that differential emissivities observed by Diviner between the PSR and adjacent non-PSR terrain on the floor of Amundsen crater may be related to the presence of water frost.
+The characterization of the abundance and spatial distribution of water, however, has remained challenging and has not been established definitively. Water does not appear to be uniform or emplaced in thick contiguous deposits like Mercury where ice is unambiguously detected wherever it is predicted to be thermally stable in its PSRs (Paige et al., 2013).
+Observations suggest global surface hydration (Pieters et al., 2009) and a potential time variability of temperature-driven transport of water through the exosphere (e.g., Sunshine et al., 2009). The seasonal changes in temperatures would influence the geographic pattern of diurnal variations in surface water concentrations in a lunar water exosphere, because substantial changes in surface temperatures with season affect volatile residence times (Schorghofer et al., 2017). Further, the substantial increase of cold-trapping surface area in winter may also play a role in the depletion of the exosphere by temporarily expanding the shadowed area that can capture and concentrate migrating volatiles in the polar region. In winter, water molecules residing in SSRs are exposed to destructive space weathering. The lifetime of adsorbed H2O exposed to H-Lyman-alpha radiation from the very local interstellar medium is 4 years (Morgan & Shemansky, 1991); therefore, the loss over half a draconic year is not negligible. In summer, as these molecules are mobilized, they are more likely to reach a permanent cold trap due to their vicinity to PSRs. Modeling by Prem et al. (2018) shows that surface roughness can have this effect by providing cold surfaces at high latitudes that can act as temporary reservoirs for molecules near the poles. A semiannual oscillation in argon observed by the Lunar Atmosphere and Dust Environment Explorer spacecraft has been linked to sequestration in transitory seasonal cold traps (Hodges & Mahaffy, 2016; Kegerreis et al., 2017). Hodges (2018) notes that the magnitude of seasonal oscillation implies that significant areas of high-energy adsorption sites on soil grains in the seasonal cold traps are free of water molecules, placing a restrictive upper bound on the exospheric transport of water.
+### 4.2 In Situ Exploration
+The enhancement in water, and possibly other volatiles, makes the polar regions a science-rich candidate for future landed missions and could facilitate human exploration by creating potential locations for in situ resource utilization. Ground truth via in situ exploration will ultimately be required to disentangle the ambiguities in our understanding of the nature, distribution, and accessibility of water from remote sensing (Neal & Lawrence, 2017) with the thermal data discussed here serving as a guide.
+The polar regions also offer the advantage of illumination conditions that can be more favorable for power generation and thermal stability than lower latitudes with surfaces that experience extended periods of sunlight and minimal shadowing. Landing site selection and traverse planning, for mobile platforms such as rovers, will need to contend with rapidly changing and complex illumination conditions, and seasonality should be an important consideration as surfaces of prolonged shadow and sunlight will vary seasonally. Figure 9 shows the fraction of observations mapped that were below 110 K. Unlike at lower latitudes where diurnal temperatures, in general, predictably change with latitude and local time of day once the local slope is accounted for (e.g., Hayne et al., 2017), within the polar regions, topography plays a dominant role, and illumination modeling accounting for terrain is necessary to predict temperatures (e.g., De Rosa et al., 2012; Gläser et al., 2014, 2018; Margot, 1999; Mazarico et al., 2011, 2018; Noda et al., 2008; Paige, Siegler, et al., 2010). Such complexity is highlighted in Figure 10 that shows the local time at which peak temperatures were observed, along with several temperature profiles for specific locations in the mapped area that demonstrate the diurnal and seasonal variability and spatial complexity of observed temperatures. The example in Figure 10b shows how peak temperatures can occur in the nighttime when the surface is illuminated by the Sun across the pole from the dayside. In this location (85.8°S, 30.0°E), peak temperatures are centered on the midnight hour in the summer. In winter the surface is illuminated briefly, seen as a spike in temperature > 150 K around 21 hr. The location in Figure 10c (88.0°S, 75.0°E) also experiences only brief periods of illumination in winter, around 12 and 18 hr. Higher and more consistent illumination of this location, in summer between 11 and 23 hr, is disrupted with brief periods of cold temperatures (before and after 18 hr) as shadows sweep across the surface. Figure 10d shows the seasonal diurnal temperatures on a ridge between Shackleton and de Gerlache craters that has been identified using Digital Terrain Model-based studies (Bussey et al., 1999, 2010; de Rosa et al., 2012; Gläser et al., 2014, 2018; Mazarico et al., 2011) and Lunar Reconnaissance Orbiter Camera (LROC) imagery (Speyerer et al., 2016; Speyerer & Robinson, 2013) as a location with high average illumination. Temperatures are shown for the site designated “Connecting Ridge C2” as reported by Gläser et al. (2018). Summer temperatures are systematically high, \~200 K; however, a decrease in temperatures at \~20–22 hr shows a period of local time that experiences shadowing, and winter months experience interspersed periods of illumination and shadowing.
+
+ Details are in the caption following the image
+**Figure 9**
+Open in figure viewer**PowerPoint
+Fraction of observed diurnal temperatures (lunation) below 110 K in the 96 local time maps for the summer (a) south and (b) north polar regions, and winter (c) south and (d) north polar region above 80° latitudes. White areas were colder than 110 K in all observations. Limited regions of higher elevations have a low fraction of temperatures mapped below 110 K in the summer months as they experience periods of prolonged illumination.
+
+ Details are in the caption following the image
+**Figure 10**
+Open in figure viewer**PowerPoint
+(a) Local time at which peak temperatures were observed in the summer south polar region and diurnal temperature profiles for (b) 85.8°S, 30.0°E (c) 88.0°S, 75.0°E, and (d) 89.3157°S, −114.06°E. Locations of (b–d) are denoted with black circles and labeled in (a). The location in (d) has been identified by Gläser et al. (2018) using Lunar Orbiter Laser Altimeter digital terrain modeling as a surface with high average illumination on a ridge between the craters Shackleton and de Gerlache and is designated “Connecting Ridge C2.”
+The potential for extreme and rapid temperature changes also presents challenges for the design of long-term habitats and other structures and needs to be accounted for in the selection of locations and construction materials, as designs will need to accommodate large amounts of thermal expansion and contraction and associated fatigue stresses with thermal cycling (Benaroya et al., 2002; Malla & Brown, 2015; Mottaghi & Benaroya, 2015; Naser & Chehab, 2018; Ruess et al., 2006; Sherwood & Toups, 1992).
+### 4.3 Illumination in PSRs
+Recent imaging and spectroscopic experiments have obtained data in regions of permanent shadow using indirect illumination from scattered light reflected from nearby topographic highs including crater walls and massifs (Haruyama et al., 2008; Koeber et al., 2014; Cisneros et al., 2017; Mitchell et al., 2018; Li et al., 2018). Figure 10a shows that the maximum available illumination, as indicated by the local time of maximum temperature, is not always at local noon due to the irregularities of surrounding topography but rather can occur over a wide range of local times. Illumination models can estimate this effect, but Diviner observations can provide validation of these models and help predict optimum times for observations.
+## 5 Conclusions
+Temperature fundamentally controls the stability and mobilization of water and other volatiles on the Moon. The thermal environment within the polar regions is complex with significant changes occurring over different spatial and temporal scales. Using nearly a decade of acquired radiance observations from Diviner, we have mapped the seasonal changes occurring poleward of 80° latitude. Surface areas that are capable of cold trapping water expand by a factor of \~2.8 and \~4.3 during the winter months for the south and north polar regions, respectively. Thermal cycling within PSRs has a significant seasonal component. Temperature extremes in PSRs are the result of diurnal variations superposed on seasonal variations. Reflected and emitted radiation into PSRs is strongly dependent on solar declination, even within areas that are double shadowed, that is, shadowed from indirect illumination reflected and radiated from surrounding terrain within PSRs; the location in Haworth crater and “Region 5” (Figure 1) are examples of this.
+Since Diviner does not continuously sample all local times at all seasons, but rather obtains data from high-resolution orbit tracks that migrate around the poles, many years of data must be compiled to provide a comprehensive picture of the polar temperatures. These maps provide seasonal temperatures at different local times and subsolar longitudes; however, illumination conditions can change rapidly as the subsolar latitude transitions between extremes (±1.54° latitude) and sampling of local time/subsolar latitude is not exhaustive (Figure 4). Additionally, any longer-term variation due to the 18.6-year nodal precession of the lunar orbit cannot be characterized with the current data. The mean, maximum, and minimum temperatures (Figures 5 and 6) are therefore approximations. As a result, detailed illumination models are required to extend temperature measurements from Diviner to accurately predict thermal conditions on the surface and to estimate the longer-term stability of volatiles in the subsurface. The stringent engineering and operations requirements for mission planning precludes the reliance on one-dimensional regolith models to establish thermophysical properties of the regolith and local thermal conditions, as has been successfully done at lower latitudes (e.g., Bandfield et al., 2011; Hayne et al., 2017; Vasavada et al., 2012; Yu & Fa, 2016). Recent efforts related to future missions instead move toward use of three-dimensional regolith thermophysical models (e.g., Warren et al., 2019) that aim for improved treatment of reradiation and high-order reflections, which play a more dominant role in the lunar polar thermal environment than at lower latitudes, due to diurnal and seasonal shadowing.
+## Acknowledgments
+We would like to thank the LRO and Diviner operations teams for the collection of the high-quality data sets used in this work and Tristram Warren and an anonymous reviewer for helpful comments and suggestions that improved the manuscript. The data used in this study are publicly available via the Geosciences Node of the Planetary Data System (http://pds-geosciences.wustl.edu/missions/lro/diviner.htm), and all maps generated for this study are available online (www.diviner.ucla.edu/data). The contributions of J.-P. Williams and N. Schorghofer were funded by NASA Lunar Data Analysis Program Grant 80NSSC19K1255. Part of this work was supported by the NASA Lunar Reconnaissance Orbiter project.
+##
+References**
+* Arnold, J. R. (1979). Ice in the lunar polar regions. *Journal of Geophysical Research*, 84(B10), 5659. https://doi.org/10.1029/JB084iB10p05659
+10.1029/JB084iB10p05659
+ADS **Web of Science® **Google Scholar**
+* Aye, M. K., Paige, D. A., Foote, M. C., Greenhagen, B. T., & Siegler, M. A. (2013). The coldest place on the Moon. 44th Lunar and Planetary Science Conference.
+Google Scholar**
+* Bandfield, J. L., Ghent, R. R., Vasavada, A. R., Paige, D. A., Lawrence, S. J., & Robinson, M. S. (2011). Lunar surface rock abundance and regolith fines temperatures derived from LRO Diviner Radiometer data. *Journal of Geophysical Research*, 116, E00H02. https://doi.org/10.1029/2011JE003866
+10.1029/2011JE003866
+CAS **ADS **Web of Science® **Google Scholar**
+* Bandfield, J. L., Hayne, P. O., Williams, J.-P., Greenhagen, B. T., & Paige, D. A. (2015). Lunar surface roughness derived from LRO Diviner Radiometer observations. *Icarus*, 248, 357–372. https://doi.org/10.1016/j.icarus.2014.11.009
+10.1016/j.icarus.2014.11.009
+ADS **Web of Science® **Google Scholar**
+* Benaroya, H., Bernold, L., & Chua, K. M. (2002). Engineering, design and construction of lunar bases. *Journal of Aerospace Engineering*, 15(2), 33–45. https://doi.org/10.1061/(ASCE)0893-1321(2002)15:2(33)
+10.1061/(ASCE)0893-1321(2002)15:2(33)
+Web of Science® **Google Scholar**
+* Blanc, B., & Géminard, J.-C. (2013). Intrinsic creep of a granular column subjected to temperature changes. *Physical Review E*, 88(2). https://doi.org/10.1103/PhysRevE.88.022201
+10.1103/PhysRevE.88.022201
+Web of Science® **Google Scholar**
+* Boynton, W. V., Droege, G. F., Mitrofanov, I. G., McClanahan, T. P., Sanin, A. B., Litvak, M. L., Schaffner, M., Chin, G., Evans, L. G., Garvin, J. B., Harshman, K., Malakhov, A., Milikh, G., Sagdeev, R., & Starr, R. (2012). High spatial resolution studies of epithermal neutron emission from the lunar poles: Constraints on hydrogen mobility: Constraints on lunar hydrogrn mobillity. *Journal of Geophysical Research*, 117, E00H33. https://doi.org/10.1029/2011JE003979
+10.1029/2011JE003979
+Web of Science® **Google Scholar**
+* Bussey, D. B. J., McGovern, J. A., Spudis, P. D., Neish, C. D., Noda, H., Ishihara, Y., & Sørensen, S.-A. (2010). Illumination conditions of the south pole of the Moon derived using Kaguya topography. *Icarus*, 208(2), 558–564. https://doi.org/10.1016/j.icarus.2010.03.028
+10.1016/j.icarus.2010.03.028
+ADS **Web of Science® **Google Scholar**
+* Bussey, D. B. J., Spudis, P. D., & Robinson, M. S. (1999). Illumination conditions at the lunar south pole. *Geophysical Research Letters*, 26(9), 1187–1190. https://doi.org/10.1029/1999GL900213
+10.1029/1999GL900213
+ADS **Web of Science® **Google Scholar**
+* Byron, B. D., Retherford, K. D., Greathouse, T. K., Mandt, K. E., Hendrix, A. R., Poston, M. J., Liu, Y., Cahill, J. T., & Mazarico, E. (2019). Effects of space weathering and porosity on the far-UV reflectance of Amundsen Crater. *Journal of Geophysical Research: Planets*, 124, 823–836. https://doi.org/10.1029/2018JE005908
+10.1029/2018JE005908
+CAS **ADS **Google Scholar**
+* Chen, K., Cole, J., Conger, C., Draskovic, J., Lohr, M., Klein, K., Scheidemantel, T., & Schiffer, P. (2006). Packing grains by thermal cycling. *Nature*, 442(7100), 257–257. https://doi.org/10.1038/442257a
+10.1038/442257a
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Chen, K., Harris, A., Draskovic, J., & Schiffer, P. (2009). Granular fragility under thermal cycles. *Granular Matter*, 11(4), 237–242. https://doi.org/10.1007/s10035-009-0141-7
+10.1007/s10035-009-0141-7
+Web of Science® **Google Scholar**
+* Chin, G., Brylow, S., Foote, M., Garvin, J., Kasper, J., Keller, J., Litvak, M., Mitrofanov, I., Paige, D., Raney, K., Robinson, M., Sanin, A., Smith, D., Spence, H., Spudis, P., Stern, S. A., & Zuber, M. (2007). Lunar Reconnaissance Orbiter overview: The instrument suite and mission. *Space Science Reviews*, 129(4), 391–419. https://doi.org/10.1007/s11214-007-9153-y
+10.1007/s11214-007-9153-y
+ADS **Web of Science® **Google Scholar**
+* Cisneros, E., Awumah, A., Brown, H. M., Martin, A. C., Paris, K. N., Povilaitis, R. Z., Boyd, A. K., Robinson, M. S., &
+the LROC Team (2017). Lunar Reconnaissance Orbiter Camera permanently shadowed region imaging—Atlas and controlled mosaics. 48th Lunar and Planetary Science Conference.
+Google Scholar**
+* Colaprete, A., Schultz, P., Heldmann, J., Wooden, D., Shirley, M., Ennico, K., Hermalyn, B., Marshall, W., Ricco, A., Elphic, R. C., Goldstein, D., Summy, D., Bart, G. D., Asphaug, E., Korycansky, D., Landis, D., & Sollitt, L. (2010). Detection of water in the LCROSS ejecta plume. *Science*, 330(6003), 463–468. https://doi.org/10.1126/science.1186986
+10.1126/science.1186986
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* de Rosa, D., Bussey, B., Cahill, J. T., Lutz, T., Crawford, I. A., Hackwill, T., van Gasselt, S., Neukum, G., Witte, L., McGovern, A., Grindrod, P. M., & Carpenter, J. D. (2012). Characterisation of potential landing sites for the European Space Agency's Lunar Lander project. *Planetary and Space Science*, 74(1), 224–246. https://doi.org/10.1016/j.pss.2012.08.002
+10.1016/j.pss.2012.08.002
+ADS **Web of Science® **Google Scholar**
+* Divoux, T. (2010). Invited review: Effect of temperature on a granular pile. *Papers in Physics*, 2(0). https://doi.org/10.4279/pip.020006
+10.4279/pip.020006
+Google Scholar**
+* Eke, V. R., Teodoro, L. F. A., & Elphic, R. C. (2009). The spatial distribution of polar hydrogen deposits on the Moon. *Icarus*, 200(1), 12–18. https://doi.org/10.1016/j.icarus.2008.10.013
+10.1016/j.icarus.2008.10.013
+CAS **ADS **Web of Science® **Google Scholar**
+* Feldman, W. C. (1998). Fluxes of fast and epithermal neutrons from Lunar Prospector: Evidence for water ice at the lunar poles. *Science*, 281(5382), 1496–1500. https://doi.org/10.1126/science.281.5382.1496
+10.1126/science.281.5382.1496
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Feldman, W. C., Maurice, S., Lawrence, D. J., Little, R. C., Lawson, S. L., Gasnault, O., Wiens, R. C., Barraclough, B. L., Elphic, R. C., Prettyman, T. H., Steinberg, J. T., & Binder, A. B. (2001). Evidence for water ice near the lunar poles. *Journal of Geophysical Research*, 106(E10), 23,231–23,251. https://doi.org/10.1029/2000JE001444
+10.1029/2000JE001444
+CAS **ADS **Web of Science® **Google Scholar**
+* Fisher, E. A., Lucey, P. G., Lemelin, M., Greenhagen, B. T., Siegler, M. A., Mazarico, E., Aharonson, O., Williams, J. P., Hayne, P. O., Neumann, G. A., Paige, D. A., Smith, D. E., & Zuber, M. T. (2017). Evidence for surface water ice in the lunar polar regions using reflectance measurements from the Lunar Orbiter Laser Altimeter and temperature measurements from the Diviner Lunar Radiometer Experiment. *Icarus*, 292, 74–85. https://doi.org/10.1016/j.icarus.2017.03.023
+10.1016/j.icarus.2017.03.023
+CAS **ADS **Web of Science® **Google Scholar**
+* Gladstone, G. R., Retherford, K. D., Egan, A. F., Kaufmann, D. E., Miles, P. F., Parker, J. W., Horvath, D., Rojas, P. M., Versteeg, M. H., Davis, M. W., Greathouse, T. K., Slater, D. C., Mukherjee, J., Steffl, A. J., Feldman, P. D., Hurley, D. M., Pryor, W. R., Hendrix, A. R., Mazarico, E., & Stern, S. A. (2012). Far-ultraviolet reflectance properties of the Moon's permanently shadowed regions: Albedo of Moon's permanently shadowed regions. *Journal of Geophysical Research*, 117, E00H04. https://doi.org/10.1029/2011JE003913
+10.1029/2011JE003913
+Web of Science® **Google Scholar**
+* Gladstone, G. R., Hurley, D. M., Retherford, K. D., Feldman, P. D., Pryor, W. R., Chaufray, J.-Y., Versteeg, M., Greathouse, T. K., Steffl, A. J., Throop, H., Parker, J. W., Kaufmann, D. E., Egan, A. F., Davis, M. W., Slater, D. C., Mukherjee, J., Miles, P. F., Hendrix, A. R., Colaprete, A., & Stern, S. A. (2010). LRO-LAMP observations of the LCROSS impact plume. *Science*, 330(6003), 472–476. https://doi.org/10.1126/science.1186474
+10.1126/science.1186474
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Gläser, P., Oberst, J., Neumann, G. A., Mazarico, E., Speyerer, E. J., & Robinson, M. S. (2018). Illumination conditions at the lunar poles: Implications for future exploration. *Planetary and Space Science*, 162, 170–178. https://doi.org/10.1016/j.pss.2017.07.006
+10.1016/j.pss.2017.07.006
+ADS **Web of Science® **Google Scholar**
+* Gläser, P., Scholten, F., de Rosa, D., Marco Figuera, R., Oberst, J., Mazarico, E., Neumann, G. A., & Robinson, M. S. (2014). Illumination conditions at the lunar south pole using high resolution Digital Terrain Models from LOLA. *Icarus*, 243, 78–90. https://doi.org/10.1016/j.icarus.2014.08.013
+10.1016/j.icarus.2014.08.013
+ADS **Web of Science® **Google Scholar**
+* Haruyama, J., Ohtake, M., Matsunaga, T., Morota, T., Honda, C., Yokota, Y., Pieters, C. M., Hara, S., Hioki, K., Saiki, K., Miyamoto, H., Iwasaki, A., Abe, M., Ogawa, Y., Takeda, H., Shirao, M., Yamaji, A., & Josset, J. L. (2008). Lack of exposed ice inside lunar south pole Shackleton crater. *Science*, 322(5903), 938–939. https://doi.org/10.1126/science.1164020
+10.1126/science.1164020
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Hayne, P. O., Bandfield, J. L., Siegler, M. A., Vasavada, A. R., Ghent, R. R., Williams, J.-P., Greenhagen, B. T., Aharonson, O., Elder, C. M., Lucey, P. G., & Paige, D. A. (2017). Global regolith thermophysical properties of the Moon from the Diviner Lunar Radiometer Experiment: Lunar regolith thermophysical properties. *Journal of Geophysical Research: Planets*, 122, 2371–2400. https://doi.org/10.1002/2017JE005387
+10.1002/2017JE005387
+ADS **Web of Science® **Google Scholar**
+* Hayne, P. O., Greenhagen, B. T., Foote, M. C., Siegler, M. A., Vasavada, A. R., & Paige, D. A. (2010). Diviner Lunar Radiometer observations of the LCROSS impact. *Science*, 330(6003), 477–479. https://doi.org/10.1126/science.1197135
+10.1126/science.1197135
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Hayne, P. O., Hendrix, A., Sefton-Nash, E., Siegler, M. A., Lucey, P. G., Retherford, K. D., Williams, J. P., Greenhagen, B. T., & Paige, D. A. (2015). Evidence for exposed water ice in the Moon's south polar regions from Lunar Reconnaissance Orbiter ultraviolet albedo and temperature measurements. *Icarus*, 255, 58–69. https://doi.org/10.1016/j.icarus.2015.03.032
+10.1016/j.icarus.2015.03.032
+CAS **ADS **Web of Science® **Google Scholar**
+* Hibbitts, C. A., Grieves, G. A., Poston, M. J., Dyar, M. D., Alexandrov, A. B., Johnson, M. A., & Orlando, T. M. (2011). Thermal stability of water and hydroxyl on the surface of the Moon from temperature-programmed desorption measurements of lunar analog materials. *Icarus*, 213(1), 64–72. https://doi.org/10.1016/j.icarus.2011.02.015
+10.1016/j.icarus.2011.02.015
+CAS **ADS **Web of Science® **Google Scholar**
+* Hodges, R. R. (2018). Semiannual oscillation of the lunar exosphere: Implications for water and polar ice: Semiannual oscillation of lunar exosphere. *Geophysical Research Letters*, 45, 7409–7416. https://doi.org/10.1029/2018GL077745
+10.1029/2018GL077745
+ADS **Web of Science® **Google Scholar**
+* Hodges, R. R., & Mahaffy, P. R. (2016). Synodic and semiannual oscillations of argon-40 in the lunar exosphere: Oscillation of lunar exosphere. *Geophysical Research Letters*, 43, 22–27. https://doi.org/10.1002/2015GL067293
+10.1002/2015GL067293
+ADS **Web of Science® **Google Scholar**
+* Ingersoll, A. P., Svitek, T., & Murray, B. C. (1992). Stability of polar frosts in spherical bowl-shaped craters on the Moon, Mercury, and Mars. *Icarus*, 100(1), 40–47. https://doi.org/10.1016/0019-1035(92)90016-Z
+10.1016/0019-1035(92)90016-Z
+ADS **Web of Science® **Google Scholar**
+* Kegerreis, J. A., Eke, V. R., Massey, R. J., Beaumont, S. K., Elphic, R. C., & Teodoro, L. F. (2017). Evidence for a localized source of argon in the lunar exosphere. *Journal of Geophysical Research: Planets*, 122, 2163–2181. https://doi.org/10.1002/2017JE005352
+10.1002/2017JE005352
+CAS **ADS **Web of Science® **Google Scholar**
+* Koeber, S. D., Robinson, M. S., & Speyerer, E. J. (2014). LROC observations of permanently shadowed regions on the Moon. 45th Lunar and Planetary Science Conference.
+Google Scholar**
+* Kokhanov, A. A., Karachevtseva, I. P., Zubarev, A. E., Patraty, V., Rodionova, Z. F., & Oberst, J. (2018). Mapping of potential lunar landing areas using LRO and SELENE data. *Planetary and Space Science*, 162, 179–189. https://doi.org/10.1016/j.pss.2017.08.002
+10.1016/j.pss.2017.08.002
+ADS **Web of Science® **Google Scholar**
+* Lawrence, D. J. (2017). A tale of two poles: Toward understanding the presence, distribution, and origin of volatiles at the polar regions of the Moon and Mercury: Polar volatiles at the Moon and Mercury. *Journal of Geophysical Research: Planets*, 122, 21–52. https://doi.org/10.1002/2016JE005167
+10.1002/2016JE005167
+CAS **ADS **Web of Science® **Google Scholar**
+* Lawrence, D. J., Feldman, W. C., Elphic, R. C., Hagerty, J. J., Maurice, S., McKinney, G. W., & Prettyman, T. H. (2006). Improved modeling of Lunar Prospector neutron spectrometer data: Implications for hydrogen deposits at the lunar poles. *Journal of Geophysical Research*, 111, E08001. https://doi.org/10.1029/2005JE002637
+10.1029/2005JE002637
+Web of Science® **Google Scholar**
+* Lemelin, M., Blair, D. M., Roberts, C. E., Runyon, K. D., Nowka, D., & Kring, D. A. (2014). High-priority lunar landing sites for in situ and sample return studies of polar volatiles. *Planetary and Space Science*, 101, 149–161. https://doi.org/10.1016/j.pss.2014.07.002
+10.1016/j.pss.2014.07.002
+CAS **ADS **Web of Science® **Google Scholar**
+* Li, S., Lucey, P. G., Milliken, R. E., Hayne, P. O., Fisher, E., Williams, J.-P., Hurley, D. M., & Elphic, R. C. (2018). Direct evidence of surface exposed water ice in the lunar polar regions. *Proceedings of the National Academy of Sciences*, 115(36), 8907–8912. https://doi.org/10.1073/pnas.1802345115
+10.1073/pnas.1802345115
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Lucey, P. G., Neumann, G. A., Riner, M. A., Mazarico, E., Smith, D. E., Zuber, M. T., Paige, D. A., Bussey, D. B., Cahill, J. T., McGovern, A., Isaacson, P., Corley, L. M., Torrence, M. H., Melosh, H. J., Head, J. W., & Song, E. (2014). The global albedo of the Moon at 1064 nm from LOLA: The global albedo of the Moon from LOLA. *Journal of Geophysical Research: Planets*, 119, 1665–1679. https://doi.org/10.1002/2013JE004592
+10.1002/2013JE004592
+ADS **Web of Science® **Google Scholar**
+* Malla, R. B., & Brown, K. M. (2015). Determination of temperature variation on lunar surface and subsurface for habitat analysis and design. *Acta Astronautica*, 107, 196–207. https://doi.org/10.1016/j.actaastro.2014.10.038
+10.1016/j.actaastro.2014.10.038
+ADS **Web of Science® **Google Scholar**
+* Margot, J. L. (1999). Topography of the lunar poles from radar interferometry: A survey of cold trap locations. *Science*, 284(5420), 1658–1660. https://doi.org/10.1126/science.284.5420.1658
+10.1126/science.284.5420.1658
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Mazarico, E., Neumann, G. A., Smith, D. E., Zuber, M. T., & Torrence, M. H. (2011). Illumination conditions of the lunar polar regions using LOLA topography. *Icarus*, 211(2), 1066–1081. https://doi.org/10.1016/j.icarus.2010.10.030
+10.1016/j.icarus.2010.10.030
+ADS **Web of Science® **Google Scholar**
+* Mazarico, E., Neumann, G. A., Barker, M. K., Goossens, S., Smith, D. E., & Zuber, M. T. (2018). Orbit determination of the Lunar Reconnaissance Orbiter: Status after seven years. *Planetary and Space Science*, 162, 2–19. https://doi.org/10.1016/j.pss.2017.10.004
+10.1016/j.pss.2017.10.004
+ADS **Web of Science® **Google Scholar**
+* Mazarico, E., Rowlands, D. D., Neumann, G. A., Smith, D. E., Torrence, M. H., Lemoine, F. G., & Zuber, M. T. (2012). Orbit determination of the Lunar Reconnaissance Orbiter. *Journal of Geodesy*, 86(3), 193–207. https://doi.org/10.1007/s00190-011-0509-4
+10.1007/s00190-011-0509-4
+ADS **Web of Science® **Google Scholar**
+* McGovern, J. A., Bussey, D. B., Greenhagen, B. T., Paige, D. A., Cahill, J. T. S., & Spudis, P. D. (2013). Mapping and characterization of non-polar permanent shadows on the lunar surface. *Icarus*, 223(1), 566–581. https://doi.org/10.1016/j.icarus.2012.10.018
+10.1016/j.icarus.2012.10.018
+ADS **Web of Science® **Google Scholar**
+* Mitchell, J., Lawrence, S., Robinson, M., Speyerer, E., & Denevi, B. (2018). Using complementary remote sensing techniques to assess the presence of volatiles at the lunar north pole. *Planetary and Space Science*, 162, 133–147. https://doi.org/10.1016/j.pss.2017.07.015
+10.1016/j.pss.2017.07.015
+ADS **Web of Science® **Google Scholar**
+* Mitrofanov, I., Litvak, M., Sanin, A., Malakhov, A., Golovin, D., Boynton, W., Droege, G., Chin, G., Evans, L., Harshman, K., Fedosov, F., Garvin, J., Kozyrev, A., McClanahan, T., Milikh, G., Mokrousov, M., Starr, R., Sagdeev, R., Shevchenko, V., Shvetsov, V., Tret'yakov, V., Trombka, J., Varenikov, A., & Vostrukhin, A. (2012). Testing polar spots of water-rich permafrost on the Moon: LEND observations onboard LRO: Water-rich permafrost spots on the Moon. *Journal of Geophysical Research*, 117, E00H27. https://doi.org/10.1029/2011JE003956
+10.1029/2011JE003956
+Web of Science® **Google Scholar**
+* Mitrofanov, I. G., Sanin, A. B., Boynton, W. V., Chin, G., Garvin, J. B., Golovin, D., Evans, L. G., Harshman, K., Kozyrev, A. S., Litvak, M. L., Malakhov, A., Mazarico, E., McClanahan, T., Milikh, G., Mokrousov, M., Nandikotkur, G., Neumann, G. A., Nuzhdin, I., Sagdeev, R., Shevchenko, V., Shvetsov, V., Smith, D. E., Starr, R., Tretyakov, V. I., Trombka, J., Usikov, D., Varenikov, A., Vostrukhin, A., & Zuber, M. T. (2010). Hydrogen mapping of the lunar south pole using the LRO Neutron Detector Experiment LEND. *Science*, 330(6003), 483–486. https://doi.org/10.1126/science.1185696
+10.1126/science.1185696
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Morgan, T. H., & Shemansky, D. E. (1991). Limits to the lunar atmosphere. *Journal of Geophysical Research*, 96(A2), 1351–1367. https://doi.org/10.1029/90JA02127
+10.1029/90JA02127
+ADS **Web of Science® **Google Scholar**
+* Mottaghi, S., & Benaroya, H. (2015). Design of a lunar surface structure. I: Design configuration and thermal analysis. *Journal of Aerospace Engineering*, 28(1). https://doi.org/10.1061/(ASCE)AS.1943-5525.0000382
+Web of Science® **Google Scholar**
+* Murphy, D. M., & Koop, T. (2005). Review of the vapor pressure of ice and supercooled water for atmospheric applications. *Quartely Journal of the Royal Meteorological Society*, 131(608), 1539–1565. https://doi.org/10.1256/qj.04.94
+10.1256/qj.04.94
+ADS **Web of Science® **Google Scholar**
+* Naser, M. Z., & Chehab, A. I. (2018). Materials and design concepts for space-resilient structures. *Progress in Aerospace Sciences*, 98, 74–90. https://doi.org/10.1016/j.paerosci.2018.03.004
+10.1016/j.paerosci.2018.03.004
+ADS **Web of Science® **Google Scholar**
+* Neal, C., & Lawrence, S. J. (2017). A multi-decadal sample return campaign will advance lunar and solar system science and exploration by 2050. Planetary Science Vision 2050 Workshop.
+Google Scholar**
+* Noda, H., Araki, H., Goossens, S., Ishihara, Y., Matsumoto, K., Tazawa, S., Kawano, N., & Sasaki, S. (2008). Illumination conditions at the lunar polar regions by KAGUYA (SELENE) laser altimeter. *Geophysical Research Letters*, 35, L24203. https://doi.org/10.1029/2008GL035692
+10.1029/2008GL035692
+ADS **Web of Science® **Google Scholar**
+* Paige, D., & Siegler, M. (2016). New constraints on lunar heat flow rates from LRO Diviner Lunar Radiometer Experiement polar observations. 47th Lunar Planetary Science Conference.
+Google Scholar**
+* Paige, D. A., Foote, M. C., Greenhagen, B. T., Schofield, J. T., Calcutt, S., Vasavada, A. R., Preston, D. J., Taylor, F. W., Allen, C. C., Snook, K. J., Jakosky, B. M., Murray, B. C., Soderblom, L. A., Jau, B., Loring, S., Bulharowski, J., Bowles, N. E., Thomas, I. R., Sullivan, M. T., Avis, C., de Jong, E. M., Hartford, W., & McCleese, D. J. (2010). The Lunar Reconnaissance Orbiter Diviner Lunar Radiometer Experiment. *Space Science Reviews*, 150(1–4), 125–160. https://doi.org/10.1007/s11214-009-9529-2
+10.1007/s11214-009-9529-2
+ADS **Web of Science® **Google Scholar**
+* Paige, D. A., Siegler, M. A., Harmon, J. K., Neumann, G. A., Mazarico, E. M., Smith, D. E., Zuber, M. T., Harju, E., Delitsky, M. L., & Solomon, S. C. (2013). Thermal stability of volatiles in the north polar region of Mercury. *Science*, 339(6117), 300–303. https://doi.org/10.1126/science.1231106
+10.1126/science.1231106
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Paige, D. A., Siegler, M. A., Zhang, J. A., Hayne, P. O., Foote, E. J., Bennett, K. A., Vasavada, A. R., Greenhagen, B. T., Schofield, J. T., McCleese, D. J., Foote, M. C., DeJong, E., Bills, B. G., Hartford, W., Murray, B. C., Allen, C. C., Snook, K., Soderblom, L. A., Calcutt, S., Taylor, F. W., Bowles, N. E., Bandfield, J. L., Elphic, R., Ghent, R., Glotch, T. D., Wyatt, M. B., & Lucey, P. G. (2010). Diviner Lunar Radiometer Observations of cold traps in the Moon's south polar region. *Science*, 330(6003), 479–482. https://doi.org/10.1126/science.1187726
+10.1126/science.1187726
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Patterson, G. W., Stickle, A. M., Turner, F. S., Jensen, J. R., Bussey, D. B. J., Spudis, P., Espiritu, R. C., Schulze, R. C., Yocky, D. A., Wahl, D. E., Zimmerman, M., Cahill, J. T. S., Nolan, M., Carter, L., Neish, C. D., Raney, R. K., Thomson, B. J., Kirk, R., Thompson, T. W., Tise, B. L., Erteza, I. A., & Jakowatz, C. V. (2017). Bistatic radar observations of the Moon using Mini-RF on LRO and the Arecibo Observatory. *Icarus*, 283, 2–19. https://doi.org/10.1016/j.icarus.2016.05.017
+10.1016/j.icarus.2016.05.017
+ADS **Web of Science® **Google Scholar**
+* Pieters, C. M., Goswami, J. N., Clark, R. N., Annadurai, M., Boardman, J., Buratti, B., Combe, J. P., Dyar, M. D., Green, R., Head, J. W., Hibbitts, C., Hicks, M., Isaacson, P., Klima, R., Kramer, G., Kumar, S., Livo, E., Lundeen, S., Malaret, E., McCord, T., Mustard, J., Nettles, J., Petro, N., Runyon, C., Staid, M., Sunshine, J., Taylor, L. A., Tompkins, S., & Varanasi, P. (2009). Character and spatial distribution of OH/H2O on the surface of the Moon seen by M3 on Chandrayaan-1. *Science*, 326(5952), 568–572. https://doi.org/10.1126/science.1178658
+10.1126/science.1178658
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Prem, P., Goldstein, D. B., Varghese, P. L., & Trafton, L. M. (2018). The influence of surface roughness on volatile transport on the Moon. *Icarus*, 299, 31–45. https://doi.org/10.1016/j.icarus.2017.07.010
+10.1016/j.icarus.2017.07.010
+CAS **ADS **Web of Science® **Google Scholar**
+* Qiao, L., Ling, Z., Head, J. W., Ivanov, M. A., & Liu, B. (2019). Analyses of Lunar Orbiter Laser Altimeter 1,064-nm albedo in permanently shadowed regions of polar crater flat floors: Implications for surface water ice occurrence and future in situ exploration. *Earth and Space Science*, 6. https://doi.org/10.1029/2019EA000567
+10.1029/2019EA000567
+Web of Science® **Google Scholar**
+* Ruess, F., Schänzlin, J., & Benaroya, H. (2006). Structural design of a lunar habitat. *Journal of Aerospace Engineering*, 3(133), 133–157. https://doi.org/10.1061/(ASCE)0893-1321(2006)19
+10.1061/(ASCE)0893-1321(2006)19:3(133)
+Web of Science® **Google Scholar**
+* Schorghofer, N., & Aharonson, O. (2014). The lunar thermal ice pump. *The Astrophysical Journal*, 788(2), 169. https://doi.org/10.1088/0004-637X/788/2/169
+10.1088/0004-637X/788/2/169
+ADS **Web of Science® **Google Scholar**
+* Schorghofer, N., Lucey, P., & Williams, J.-P. (2017). Theoretical time variability of mobile water on the Moon and its geographic pattern. *Icarus*, 298, 111–116. https://doi.org/10.1016/j.icarus.2017.01.029
+10.1016/j.icarus.2017.01.029
+ADS **Web of Science® **Google Scholar**
+* Schorghofer, N., & Taylor, G. J. (2007). Subsurface migration of H2O at lunar cold traps. *Journal of Geophysical Research*, 112, E02010. https://doi.org/10.1029/2006JE002779
+10.1029/2006JE002779
+CAS **Web of Science® **Google Scholar**
+* Schultz, P. H., Hermalyn, B., Colaprete, A., Ennico, K., Shirley, M., & Marshall, W. S. (2010). The LCROSS Cratering Experiment. *Science*, 330(6003), 468–472. https://doi.org/10.1126/science.1187454
+10.1126/science.1187454
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Sefton-Nash, E., Siegler, M. A., & Paige, D. A. (2013). Thermal extremes in permanently shadowed regions at the lunar south pole. 44th Lunar and Planetary Science Conference.
+Google Scholar**
+* Sefton-Nash, E., Williams, J.-P., Greenhagen, B., Warren, T., Bandfield, J., Aye, K.-M., Leader, F., Siegler, M. A., Hayne, P. O., Bowles, N., & Paige, D. A. (2019). Evidence for ultra-cold traps and surface water ice in the lunar south polar crater Amundsen. *Icarus*, 332, 1–13. https://doi.org/10.1016/j.icarus.2019.06.002
+10.1016/j.icarus.2019.06.002
+ADS **Web of Science® **Google Scholar**
+* Sefton-Nash, E., Williams, J.-P., Greenhagen, B. T., Aye, K.-M., & Paige, D. A. (2017). Diviner lunar radiometer gridded brightness temperatures from geodesic binning of modeled fields of view. *Icarus*, 298, 98–110. https://doi.org/10.1016/j.icarus.2017.04.007
+10.1016/j.icarus.2017.04.007
+ADS **Web of Science® **Google Scholar**
+* Sherwood, B., & Toups, L. (1992). Technical issues for lunar base structures. *Journal of Aerospace Engineering*, 5(2), 175–186. https://doi.org/10.1061/(ASCE)0893-1321(1992)5:2(175)
+10.1061/(ASCE)0893-1321(1992)5:2(175)
+ADS **Google Scholar**
+* Siegler, M., Paige, D., Williams, J.-P., & Bills, B. (2015). Evolution of lunar polar ice stability. *Icarus*, 255, 78–87. https://doi.org/10.1016/j.icarus.2014.09.037
+10.1016/j.icarus.2014.09.037
+ADS **Web of Science® **Google Scholar**
+* Siegler, M. A., Bills, B. G., & Paige, D. A. (2011). Effects of orbital evolution on lunar ice stability. *Journal of Geophysical Research*, 116, E03010. https://doi.org/10.1029/2010JE003652
+10.1029/2010JE003652
+Web of Science® **Google Scholar**
+* Smith, D. E., Zuber, M. T., Neumann, G. A., Lemoine, F. G., Mazarico, E., Torrence, M. H., McGarry, J. F., Rowlands, D. D., Head, J. W. III, Duxbury, T. H., Aharonson, O., Lucey, P. G., Robinson, M. S., Barnouin, O. S., Cavanaugh, J. F., Sun, X., Liiva, P., Mao, D. D., Smith, J. C., & Bartels, A. E. (2010). Initial observations from the Lunar Orbiter Laser Altimeter (LOLA): LOLA initial observations. *Geophysical Research Letters*, 37, L18204. https://doi.org/10.1029/2010GL043751
+10.1029/2010GL043751
+ADS **Web of Science® **Google Scholar**
+* Speyerer, E. J., Lawrence, S. J., Stopar, J. D., Gläser, P., Robinson, M. S., & Jolliff, B. L. (2016). Optimized traverse planning for future polar prospectors based on lunar topography. *Icarus*, 273, 337–345. https://doi.org/10.1016/j.icarus.2016.03.011
+10.1016/j.icarus.2016.03.011
+ADS **Web of Science® **Google Scholar**
+* Speyerer, E. J., & Robinson, M. S. (2013). Persistently illuminated regions at the lunar poles: Ideal sites for future exploration. *Icarus*, 222(1), 122–136. https://doi.org/10.1016/j.icarus.2012.10.010
+10.1016/j.icarus.2012.10.010
+ADS **Web of Science® **Google Scholar**
+* Sunshine, J. M., Farnham, T. L., Feaga, L. M., Groussin, O., Merlin, F., & Milliken, R. E. (2009). Lunar hydration as observed by the Deep Impact Spacecraft. *Science*, 326(5952), 565–568. https://doi.org/10.1126/science.1179788
+10.1126/science.1179788
+CAS **ADS **PubMed **Web of Science® **Google Scholar**
+* Teodoro, L. F. A., Eke, V. R., & Elphic, R. C. (2010). Spatial distribution of lunar polar hydrogen deposits after Kaguya (SELENE). *Geophysical Research Letters*, 37, L12201. https://doi.org/10.1029/2010GL042889
+10.1029/2010GL042889
+ADS **Web of Science® **Google Scholar**
+* Tooley, C. R., Houghton, M. B., Saylor, R. S., Peddie, C., Everett, D. F., Baker, C. L., & Safdie, K. N. (2010). Lunar Reconnaissance Orbiter mission and spacecraft design. *Space Science Reviews*, 150(1–4), 23–62. https://doi.org/10.1007/s11214-009-9624-4
+10.1007/s11214-009-9624-4
+ADS **Web of Science® **Google Scholar**
+* Vasavada, A. R., Bandfield, J. L., Greenhagen, B. T., Hayne, P. O., Siegler, M. A., Williams, J.-P., & Paige, D. A. (2012). Lunar equatorial surface temperatures and regolith properties from the Diviner Lunar Radiometer Experiment. *Journal of Geophysical Research*, 117, E00H18. https://doi.org/10.1029/2011JE003987
+10.1029/2011JE003987
+CAS **Web of Science® **Google Scholar**
+* Vasavada, A. R., Paige, D. A., & Wood, S. E. (1999). Near-surface temperatures on Mercury and the Moon and the stability of polar ice deposits. *Icarus*, 141(2), 179–193. https://doi.org/10.1006/icar.1999.6175
+10.1006/icar.1999.6175
+CAS **ADS **Web of Science® **Google Scholar**
+* Vondrak, R., Keller, J., Chin, G., & Garvin, J. (2010). Lunar Reconnaissance Orbiter (LRO): Observations for lunar exploration and science. *Space Science Reviews*, 150(1–4), 7–22. https://doi.org/10.1007/s11214-010-9631-5
+10.1007/s11214-010-9631-5
+ADS **Web of Science® **Google Scholar**
+* Warren, T., King, O., Bowles, N., Sefton-Nash, E., Fisackerly, R., & Trautner, R. (2019). The Oxford 3D Thermophysical Model with application to the Lunar PROSPECT mission. 50th Lunar and Planetary Science Conference. LPI Contribution No. 2132, id.2040.
+Google Scholar**
+* Watson, K., Murray, B. C., & Brown, H. (1961). The behavior of volatiles on the lunar surface. *Journal of Geophysical Research*, 66(9), 3033–3045. https://doi.org/10.1029/JZ066i009p03033
+10.1029/JZ066i009p03033
+ADS **Web of Science® **Google Scholar**
+* Williams, J.-P., Paige, D. A., Greenhagen, B. T., & Sefton-Nash, E. (2017). The global surface temperatures of the Moon as measured by the Diviner Lunar Radiometer Experiment. *Icarus*, 283, 300–325. https://doi.org/10.1016/j.icarus.2016.08.012
+10.1016/j.icarus.2016.08.012
+ADS **Web of Science® **Google Scholar**
+* Williams, J.-P., Sefton-Nash, E., & Paige, D. A. (2016). The temperatures of Giordano Bruno crater observed by the Diviner Lunar Radiometer Experiment: Application of an effective field of view model for a point-based data set. *Icarus*, 273, 205–213. https://doi.org/10.1016/j.icarus.2015.10.034
+10.1016/j.icarus.2015.10.034
+ADS **Web of Science® **Google Scholar**
+* Yu, S., & Fa, W. (2016). Thermal conductivity of surficial lunar regolith estimated from Lunar Reconnaissance Orbiter Diviner Radiometer data. *Planetary and Space Science*, 124, 48–61. https://doi.org/10.1016/j.pss.2016.02.001
+10.1016/j.pss.2016.02.001
+ADS **Web of Science® **Google Scholar**
+* Zhang, J. A., & Paige, D. A. (2009). Cold-trapped organic compounds at the poles of the Moon and Mercury: Implications for origins. *Geophysical Research Letters*, 36, L16203. https://doi.org/10.1029/2009GL038614
+10.1029/2009GL038614
+ADS **Web of Science® **Google Scholar**
+##
+Citing Literature**
+
+Volume124, Issue10
+October 2019
+Pages 2505-2521
+This article also appears in:
+* Science Enabled by the Lunar Reconnaissance Orbiter Cornerstone Mission
+* **## Figures
+
+* **## References
+
+* **## Related
+
+* **## Information
+
+**## Article Metrics
+### Citations (CrossRef):
+184
+When publishers deposit their content metadata to CrossRef, article citations are tracked and linked, allowing you to see how many times each article has been cited.
+### Altmetrics:
+### Scite metrics
+Scite uses AI to classify citations by whether they support, contradict, or merely mention the referenced claims.
+Explore this article's citation statements on scite.ai
+powered by Scite
+**## Share QR Code
+Generating QR code
+QR code linking to this article
+QR code copied to clipboard!
+Select Format
+PNG
+SVG
+JPG
+PDF
+Something went wrong while generating your QR code. Please try again in a moment. If the issue persists, refresh the page or contact support.
+**copy**download
+**back**download
+**retry
+**## Export citation
+Loading...
+Unable to load citation data. Please try again in a moment.
+**RETRY
+### How to cite
+Williams,
+J.-P., Greenhagen,
+B. T., Paige,
+D. A., Schorghofer,
+N., Sefton-Nash,
+E., Hayne,
+P. O., et al. (2019). Seasonal polar temperatures on the Moon. *Journal of Geophysical Research: Planets*, 124, 2505–2521. https://doi.org/10.1029/2019JE006028
+How to cite text copied to clipboard!
+**COPY TEXT
+### Download Citation
+If you have the appropriate software installed, you can download article citation data to the citation manager of your choice.
+Simply select your manager software from the list below and click on download.
+Select formatPlain textRIS (ProCite, Reference Manager)EndNoteBibTeXMedlarsRefWorks
+METADATA
+EXPAND**
+Citation metadata copied to clipboard!
+**COPY TEXT**DOWNLOADSubmit to RefWorks
+**Tips on downloading citation
+This feature enables you to download the bibliographic information (also called citation data, header data, or metadata) for the articles on our site.
+###
+Citation manager file format
+Use the dropdown list to choose how to format the bibliographic data you're harvesting. Several citation manager formats are available, including EndNote and BibTex. You can then copy the formatted citation (as displayed) or download it as file, to your device. If the RefWorks format is chosen, the 'Download' button will be replaced with an option to directly export to RefWorks
+Close Figure Viewer
+Previous FigureNext Figure
+Caption
+Download PDF
+
+**
+
+## Log in with AGU
+
+Log in with AGU
+
+## Log in to Wiley Online Library
+Email or Customer ID
+Password
+
+Forgot password?
+
+NEW USER \>
+
+INSTITUTIONAL LOGIN \>
+
+**
+
+## Change Password
+Old Password
+New Password
+Too Short
+Weak
+Medium
+Strong
+Very Strong
+Too Long
+####
+Your password must have 10 characters or more:
+* a lower case character, 
+* an upper case character, 
+* a special character 
+* or a digit
+Too Short
+
+## Password Changed Successfully
+Your password has been changed
+**
+## Create a new account
+Email
+
+Returning user
+
+**
+
+## Forgot your password?
+Enter your email address below.
+Email
+Please check your email for instructions on resetting your password.
+If you do not receive an email within 10 minutes, your email address may not be registered,
+and you may need to create a new Wiley Online Library account.
+**
+## Request Username
+Can't sign in? Forgot your username?
+Enter your email address below and we will send you your username
+Email
+Close
+If the address matches an existing account you will receive an email with instructions to retrieve your username

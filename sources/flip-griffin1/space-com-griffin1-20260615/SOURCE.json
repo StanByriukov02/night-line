@@ -1,0 +1,22 @@
+{
+  "url": "https://www.space.com/space-exploration/astrobotic-unveils-griffin-1-lunar-lander-for-nasa-moon-base-mission",
+  "fetched_utc": "2026-09-17T08:22:14Z",
+  "title": "Space.com 2026-06-15: Astrobotic unveils Griffin-1; late 2026; FLIP; lander 625 kg payload",
+  "sha256": "0342e9314f49aa6e3313686e16b899f54ae61cb2d70ca9ace2f44db913f630c9",
+  "filename": "page.html",
+  "bytes": 1872636,
+  "content_type": "text/html; charset=utf-8",
+  "numbers_used": [
+    "griffin_payload_kg=625",
+    "griffin_width_m=4.5",
+    "griffin_height_m=2",
+    "launch=late_2026",
+    "FLIP_store_Wh=NOT_PRINTED"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.html": "0342e9314f49aa6e3313686e16b899f54ae61cb2d70ca9ace2f44db913f630c9"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

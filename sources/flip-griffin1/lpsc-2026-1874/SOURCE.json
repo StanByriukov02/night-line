@@ -1,0 +1,28 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1874.pdf",
+  "fetched_utc": "2026-09-17T08:22:14Z",
+  "title": "LPSC 2026 1874: The FLIP Mission to Mons Mouton: Project Update",
+  "sha256": "0fe50ce97a7b180953633b6eb69c4bc2ebee419d28bf8f5891064202214cc239",
+  "filename": "page.pdf",
+  "bytes": 323763,
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "mass_launch_kg=480",
+    "hibernation_conops=true",
+    "site=Mons_Mouton",
+    "launch_mass_viper_envelope_kg=480",
+    "battery_kWh=NOT_PRINTED",
+    "solar_W=NOT_PRINTED",
+    "P_keepalive_W=NOT_PRINTED",
+    "viper_battery_heritage=NOT_PRINTED"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.pdf": "0fe50ce97a7b180953633b6eb69c4bc2ebee419d28bf8f5891064202214cc239"
+  },
+  "status_20260917": 200,
+  "quote_mass": "FLIP is a four-wheeled skid steer rover limited to the geometry and launch mass (480kg) initially designed for VIPER.",
+  "quote_hibernation": "Astrolab is developing FLIP's operational concept for flexibility in landing times, communications availability, and lunar hibernation.",
+  "note": "VIPER tie is launch-mass/geometry envelope only. Battery kWh, solar W, keepalive W, and thermal watts are not printed. Do not inherit VIPER 5420 Wh / 320 W arrays.",
+  "omitted_binaries": []
+}

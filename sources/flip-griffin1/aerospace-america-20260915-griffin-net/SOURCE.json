@@ -1,0 +1,19 @@
+{
+  "url": "https://aerospaceamerica.aiaa.org/nasa-expects-one-lunar-launch-this-year-moon-base-manager-says/",
+  "fetched_utc": "2026-09-17T08:22:14Z",
+  "title": "Aerospace America 2026-09-15: Griffin NET November 2026; Mons Mouton; FLIP rover",
+  "sha256": "846867a29dbbd9736738ca218076684ce1e1d712609c5b90607061401bcbc076",
+  "filename": "page.html",
+  "bytes": 138080,
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "launch_NET=2026-11",
+    "site=Mons_Mouton"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.html": "846867a29dbbd9736738ca218076684ce1e1d712609c5b90607061401bcbc076"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

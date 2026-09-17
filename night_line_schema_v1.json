@@ -36,7 +36,7 @@
     "label": {
       "description": "On declared corners only; not a claim that the box will live.",
       "oneOf": [
-        { "type": "string", "enum": ["LIVE", "DIE", "BRACKET"] },
+        { "type": "string", "enum": ["LIVE", "DIE", "BRACKET", "LINE_OPEN_TWO_KNOBS"] },
         {
           "type": "string",
           "pattern": "^LIVE_IF_[A-Z0-9_]+_BELOW$"
@@ -176,7 +176,12 @@
       "minItems": 1,
       "items": { "$ref": "#/$defs/cite" }
     },
-    "witness": { "const": "pending" },
+    "witness": {
+      "oneOf": [
+        { "const": "pending" },
+        { "const": "first sunset after landing" }
+      ]
+    },
     "verifier": {
       "type": "object",
       "additionalProperties": false,

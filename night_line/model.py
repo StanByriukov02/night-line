@@ -18,6 +18,10 @@ from night_line.nist import k_integral_w_m, k_mean_w_mk, nist_cite
 
 SIGMA_W_M2_K4 = 5.670374419e-8
 EDGE_FRAC_OF_STORE = 0.02
+LINE_OPEN_TWO_KNOBS = "LINE_OPEN_TWO_KNOBS"
+ASSUMED_SOC_RESERVE_FRAC = 0.30
+ASSUMED_NAMEPLATE_KWH = (1.0, 2.0, 5.0, 10.0)
+IDENTITY_LINE = "usable_Wh / H_night_h = hibernation load W"
 PKG = Path(__file__).resolve().parent
 BOXES = PKG / "boxes"
 ROOT = PKG.parent
@@ -112,10 +116,20 @@ def corner_live(store_Wh: float, e_night: float) -> str:
 def public_label(
     corners: list[dict[str, Any]],
     *,
-    store_Wh: float,
+    store_Wh: float | None = None,
     open_upward_knob: str | None = None,
+    two_knobs_open: bool = False,
 ) -> dict[str, Any]:
-    """Label on declared corners only. LIVE_IF_<knob>_BELOW when a knob has no upper bound."""
+    """Label on declared corners only. LIVE_IF_<knob>_BELOW when a knob has no upper bound.
+
+    Store and hibernation load both OPEN → LINE_OPEN_TWO_KNOBS (identity line).
+    """
+    if two_knobs_open:
+        return {
+            "label": LINE_OPEN_TWO_KNOBS,
+            "edge": False,
+            "worst_corner_margin_Wh": None,
+        }
     if not corners:
         raise ValueError("public_label needs declared corners")
     worst_margin = min(float(c["margin_Wh"]) for c in corners)
@@ -176,6 +190,46 @@ def _t_env_states(fix: dict[str, Any]) -> list[dict[str, Any]]:
         if abs(t_env - (273.15 + float(t_c_spec["value"]))) > 1e-9:
             raise ValueError("T_env_K must equal 273.15 + T_env_C")
     return [{"role": "cited", "T_env_K": t_env, "bound": spec}]
+
+
+def store_load_both_open(fix: dict[str, Any]) -> bool:
+    """True when usable store and hibernation load are both unprinted."""
+    st = field(fix, "store_Wh")
+    pk = field(fix, "P_keepalive_W")
+    return (
+        st.get("tier") == "OPEN"
+        and st.get("value") is None
+        and pk.get("tier") == "OPEN"
+        and pk.get("value") is None
+    )
+
+
+def identity_hibernation_table(
+    *,
+    h_night: float,
+    reserve_frac: float = ASSUMED_SOC_RESERVE_FRAC,
+    nameplates_kWh: tuple[float, ...] = ASSUMED_NAMEPLATE_KWH,
+) -> list[dict[str, Any]]:
+    """ASSUMED 30% reserve on example nameplates. Not a picked store."""
+    h = float(h_night)
+    if h <= 0.0:
+        raise ValueError("H_night must be > 0")
+    rows: list[dict[str, Any]] = []
+    for kwh in nameplates_kWh:
+        nameplate_Wh = float(kwh) * 1000.0
+        usable_Wh = nameplate_Wh * (1.0 - float(reserve_frac))
+        rows.append(
+            {
+                "nameplate_kWh": float(kwh),
+                "nameplate_Wh": nameplate_Wh,
+                "reserve_frac": float(reserve_frac),
+                "reserve_label": "ASSUMED 30% nameplate reserve — not printed for this box",
+                "usable_Wh": usable_Wh,
+                "max_avg_hibernation_load_W": usable_Wh / h,
+                "identity": IDENTITY_LINE,
+            }
+        )
+    return rows
 
 
 def electronics_upper_open(fix: dict[str, Any]) -> bool:
@@ -534,6 +588,72 @@ def _breaks(
 
 
 def evaluate(fix: dict[str, Any]) -> dict[str, Any]:
+    h_night = float(field_value(fix, "H_night_h"))
+    if store_load_both_open(fix):
+        table = identity_hibernation_table(h_night=h_night)
+        lab = public_label([], two_knobs_open=True)
+        t_env_spec = field(fix, "T_env_K")
+        t_env_states = _t_env_states(fix)
+        rec: dict[str, Any] = {
+            "schema": "night_line_record_v1",
+            "box": fix.get("name"),
+            "box_id": fix.get("box_id"),
+            "mission": fix.get("mission"),
+            "label": lab["label"],
+            "label_display": lab["label"],
+            "edge": False,
+            "worst_corner_margin_Wh": None,
+            "store_Wh": None,
+            "P_keepalive_W": None,
+            "T_box_K": None,
+            "T_env_K": max(float(s["T_env_K"]) for s in t_env_states),
+            "T_env": {
+                "tier": t_env_spec.get("tier"),
+                "states": [
+                    {
+                        "role": s["role"],
+                        "T_env_K": s["T_env_K"],
+                        "cite": (s["bound"] or {}).get("cite"),
+                    }
+                    for s in t_env_states
+                ],
+            },
+            "H_night_h": h_night,
+            "identity": IDENTITY_LINE,
+            "identity_line": (
+                f"{IDENTITY_LINE} ({h_night:g} h). "
+                "Both store Wh and hibernation load W are OPEN. Do not pick a store."
+            ),
+            "identity_table": table,
+            "assumed_reserve_frac": ASSUMED_SOC_RESERVE_FRAC,
+            "assumed_reserve_label": "ASSUMED — not printed for this box",
+            "P_electronics_W": None,
+            "P_electronics_tier": "OPEN",
+            "electronics_hi_open": False,
+            "p_night_threshold_W": None,
+            "p_night_threshold_soc8_W": None,
+            "ladder": [],
+            "ladder_soc8": [],
+            "lo": None,
+            "hi": None,
+            "corners": [],
+            "breaks": [],
+            "electrical_model": {
+                "P_elec": IDENTITY_LINE,
+                "reason": (
+                    "Store and load both OPEN. Identity: usable_Wh / night hours "
+                    "= hibernation load W. Do not run Fourier leak without printed "
+                    "geometry and load. Do not pick a store."
+                ),
+                "cite": str(fix.get("electrical_model") or IDENTITY_LINE),
+            },
+            "witness": "first sunset after landing",
+            "witness_expected": fix.get("witness_expected")
+            or "first sunset after landing",
+            "sources_dir": fix.get("sources_dir"),
+        }
+        _refuse(rec)
+        return rec
     t_box = float(field_value(fix, "T_box_K"))
     t_box_c = (fix.get("fields") or {}).get("T_box_C")
     if isinstance(t_box_c, dict) and t_box_c.get("value") is not None:

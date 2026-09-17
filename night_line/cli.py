@@ -30,6 +30,42 @@ def _label_line(rec: dict[str, Any]) -> str:
 
 def write_line_md(rec: dict[str, Any], dest: Path) -> None:
     h_night = float(rec["H_night_h"])
+    label = _label_line(rec)
+    box = rec["box"]
+    if rec["label"] == "LINE_OPEN_TWO_KNOBS":
+        table = rec.get("identity_table") or []
+        lines = [
+            f"# {box} Night Line — 2026-09-17",
+            "",
+            f"**Label: {label}**",
+            "",
+            f"`{rec.get('identity') or 'usable_Wh / H_night_h = hibernation load W'}` "
+            f"({h_night:g} h). Both store Wh and hibernation load W are OPEN.",
+            "no store is chosen",
+            "",
+            "| nameplate kWh | nameplate Wh | usable Wh | max avg hibernation load W | reserve |",
+            "|---|---|---|---|---|",
+        ]
+        for row in table:
+            lines.append(
+                f"| {row['nameplate_kWh']:g} | {row['nameplate_Wh']:.0f} | "
+                f"{row['usable_Wh']:.0f} | {row['max_avg_hibernation_load_W']:.2f} | "
+                f"ASSUMED |"
+            )
+        lines.extend(
+            [
+                "",
+                "30% nameplate reserve on every row is **ASSUMED**, not printed. "
+                "no store is chosen",
+                "",
+                "The label is not a claim that the box will live. "
+                "The human who can lose the box signs. No measurement by us; all values printed "
+                "by the team or NIST.",
+                "",
+            ]
+        )
+        dest.write_text("\n".join(lines), encoding="utf-8")
+        return
     hi = rec["hi"]
     lo = rec["lo"]
     label = _label_line(rec)
@@ -159,14 +195,15 @@ def write_inputs_csv(fix: dict[str, Any], rec: dict[str, Any], dest: Path) -> No
                 "cite": "true when label LIVE and worst-corner margin ≤ 2% of store",
             }
         )
-        w.writerow(
-            {
-                "input": "worst_corner_margin_Wh",
-                "value": f"{float(rec['worst_corner_margin_Wh']):.2f}",
-                "unit": "Wh",
-                "cite": "store minus E_night at the worst declared corner",
-            }
-        )
+        if rec.get("worst_corner_margin_Wh") is not None:
+            w.writerow(
+                {
+                    "input": "worst_corner_margin_Wh",
+                    "value": f"{float(rec['worst_corner_margin_Wh']):.2f}",
+                    "unit": "Wh",
+                    "cite": "store minus E_night at the worst declared corner",
+                }
+            )
         if rec.get("p_night_threshold_W") is not None:
             w.writerow(
                 {
@@ -204,39 +241,79 @@ def write_inputs_csv(fix: dict[str, Any], rec: dict[str, Any], dest: Path) -> No
                     "cite": f"hours={_fmt(b.get('hours'))}; {b.get('held')}",
                 }
             )
+        if rec.get("label") == "LINE_OPEN_TWO_KNOBS":
+            w.writerow(
+                {
+                    "input": "identity_line",
+                    "value": rec.get("identity") or "",
+                    "unit": "",
+                    "cite": f"H_night {rec['H_night_h']:g} h; no store is chosen",
+                }
+            )
+            for row in rec.get("identity_table") or []:
+                kwh = row["nameplate_kWh"]
+                w.writerow(
+                    {
+                        "input": f"assumed_nameplate_{kwh:g}kWh_usable_Wh",
+                        "value": f"{row['usable_Wh']:.6g}",
+                        "unit": "Wh",
+                        "cite": row["reserve_label"],
+                    }
+                )
+                w.writerow(
+                    {
+                        "input": f"assumed_nameplate_{kwh:g}kWh_max_hibernation_W",
+                        "value": f"{row['max_avg_hibernation_load_W']:.6g}",
+                        "unit": "W",
+                        "cite": row["reserve_label"],
+                    }
+                )
 
 
 def write_receipt(rec: dict[str, Any], report: dict[str, Any], dest: Path) -> None:
-    hi = rec["hi"]
     h_night = float(rec["H_night_h"])
-    brk = {b["knob"]: b for b in rec.get("breaks") or []}
     rows = [
         "NIGHT LINE RECEIPT",
         f"box {rec['box_id']}",
         f"label {rec['label_display']}",
-        (
+    ]
+    if rec.get("label") == "LINE_OPEN_TWO_KNOBS":
+        rows.append(str(rec.get("identity_line") or rec.get("identity") or ""))
+        rows.append("no store is chosen")
+        for row in rec.get("identity_table") or []:
+            rows.append(
+                f"ASSUMED {row['nameplate_kWh']:g} kWh  usable {row['usable_Wh']:.2f} Wh  "
+                f"load {row['max_avg_hibernation_load_W']:.2f} W"
+            )
+    else:
+        hi = rec["hi"]
+        brk = {b["knob"]: b for b in rec.get("breaks") or []}
+        rows.append(
             f"worst_corner {hi['E_night_Wh']:.2f} Wh / {hi['hours_lived']:.2f} h "
             f"of {h_night:g} / {hi['margin_Wh']:+.2f} Wh"
-        ),
-    ]
-    if rec.get("ladder"):
-        rows.append(
-            "ladder "
-            + " ".join(f"{r['rung']}={float(r['P_W']):.2f}W" for r in rec["ladder"])
         )
-    if rec.get("p_night_threshold_soc8_W") is not None:
-        rows.append(f"soc8_line {float(rec['p_night_threshold_soc8_W']):.2f} W")
-    a = brk.get("A_rad_m2")
-    g = brk.get("G_path_W_per_K")
-    pe = brk.get("P_electronics_W")
-    if a:
-        rows.append(f"BREAK A_rad {_fmt(a.get('value'), 3)} m2 hours={_fmt(a.get('hours'))}")
-    if g:
-        rows.append(f"BREAK G {_fmt(g.get('value'), 5)} W/K hours={_fmt(g.get('hours'))}")
-    if pe:
-        rows.append(
-            f"BREAK P_electronics {_fmt(pe.get('value'), 3)} W hours={_fmt(pe.get('hours'))}"
-        )
+        if rec.get("ladder"):
+            rows.append(
+                "ladder "
+                + " ".join(f"{r['rung']}={float(r['P_W']):.2f}W" for r in rec["ladder"])
+            )
+        if rec.get("p_night_threshold_soc8_W") is not None:
+            rows.append(f"soc8_line {float(rec['p_night_threshold_soc8_W']):.2f} W")
+        a = brk.get("A_rad_m2")
+        g = brk.get("G_path_W_per_K")
+        pe = brk.get("P_electronics_W")
+        if a:
+            rows.append(
+                f"BREAK A_rad {_fmt(a.get('value'), 3)} m2 hours={_fmt(a.get('hours'))}"
+            )
+        if g:
+            rows.append(
+                f"BREAK G {_fmt(g.get('value'), 5)} W/K hours={_fmt(g.get('hours'))}"
+            )
+        if pe:
+            rows.append(
+                f"BREAK P_electronics {_fmt(pe.get('value'), 3)} W hours={_fmt(pe.get('hours'))}"
+            )
     rows.append(f"sources_sha256 {'PASS' if report.get('sources_sha256_ok') else 'FAIL'}")
     rows.append(f"ladder_recompute {'PASS' if report.get('ladder_recompute_ok') else 'FAIL'}")
     for u in report.get("url_status") or []:
@@ -283,6 +360,9 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     for path in paths:
         rec = run_one(path, args.out)
+        if rec.get("label") == "LINE_OPEN_TWO_KNOBS":
+            print(rec["box_id"], rec["label_display"])
+            continue
         print(
             rec["box_id"],
             rec["label_display"],

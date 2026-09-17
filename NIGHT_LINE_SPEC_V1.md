@@ -65,6 +65,7 @@ The label is on declared corners only. It is not a claim that the box will live.
 - `DIE` — every declared corner fails the printed night hours.
 - `BRACKET` — declared corners disagree. Show both. Never a middle.
 - `LIVE_IF_<knob>_BELOW` — a knob has no printed upper bound. The line is the BREAK value on the team’s own reserve / efficiency / uncertainty rungs.
+- `LINE_OPEN_TWO_KNOBS` — store Wh and average night load W are both unprinted. Print the identity `usable_Wh / night hours = load W` and an **ASSUMED**-labelled example table. Do not pick a store. Do not print `LIVE`.
 
 ## Cite rule
 
@@ -72,7 +73,7 @@ Every number: URL + page or figure. Derived kelvin from printed celsius is `273.
 
 ## Verifier protocol
 
-A second person recomputes from the cited URLs, checks each URL still resolves, records sha256 of the source bytes they used, and will not print `LIVE` when a knob has no printed upper bound (use `LIVE_IF_<knob>_BELOW`). `LIVE` on declared corners still prints worst-corner margin; `edge` when that margin is ≤ 2 % of store.
+A second person recomputes from the cited URLs, checks each URL still resolves, records sha256 of the source bytes they used, and will not print `LIVE` when a knob has no printed upper bound (use `LIVE_IF_<knob>_BELOW`). When store and load are both OPEN, print `LINE_OPEN_TWO_KNOBS`, not `LIVE`. `LIVE` on declared corners still prints worst-corner margin; `edge` when that margin is ≤ 2 % of store.
 
 ## What Night Line is not
 

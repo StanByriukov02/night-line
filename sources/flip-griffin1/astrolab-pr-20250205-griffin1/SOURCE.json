@@ -1,0 +1,23 @@
+{
+  "url": "https://www.astrolab.space/2025/02/05/astrolabs-flip-rover-joins-astrobotics-griffin-1-to-the-moon/",
+  "fetched_utc": "2026-09-17T08:22:14Z",
+  "title": "Astrolab PR 2025-02-05: FLIP on Griffin-1; nearly half a metric ton; 30 kg payload; Venturi batteries",
+  "sha256": "d242e89e295b8793fe16a3969e828dfaa3cd1a3cbd482cd23ea6d405e89b72bd",
+  "filename": "page.html",
+  "bytes": 67733,
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "mass_nearly_half_metric_ton=true",
+    "payload_capacity_kg=30",
+    "site_dated=Nobile_Region",
+    "full_sized_batteries=named",
+    "battery_kWh=NOT_PRINTED",
+    "RHU=NOT_PRINTED"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.html": "d242e89e295b8793fe16a3969e828dfaa3cd1a3cbd482cd23ea6d405e89b72bd"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

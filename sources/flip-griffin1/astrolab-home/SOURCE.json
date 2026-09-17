@@ -1,0 +1,22 @@
+{
+  "url": "https://www.astrolab.space/",
+  "fetched_utc": "2026-09-17T08:22:14Z",
+  "title": "Astrolab home: Power to Survive the Lunar Night; same full-size Venturi battery as FLEX",
+  "sha256": "b8f518e0d85ef798c103bff0ce889797fb23dc5385f6c8919cad6d0e06c2b0e8",
+  "filename": "page.html",
+  "bytes": 213862,
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "survive_night_claim=qualitative",
+    "collapsible_solar_array=named",
+    "battery_same_as_FLEX=true",
+    "battery_kWh=NOT_PRINTED",
+    "solar_W=NOT_PRINTED"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.html": "b8f518e0d85ef798c103bff0ce889797fb23dc5385f6c8919cad6d0e06c2b0e8"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

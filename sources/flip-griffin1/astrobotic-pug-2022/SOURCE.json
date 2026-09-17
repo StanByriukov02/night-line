@@ -1,0 +1,33 @@
+{
+  "url": "https://voyagertechnologies.com/wp-content/uploads/2026/07/PUGLanders_011222.pdf",
+  "fetched_utc": "2026-09-17T08:22:14Z",
+  "title": "Astrobotic Payload Users Guide 2022-01-12: Griffin polar up to 14 days; thermal excludes lunar night; 1.0/2.5 W/kg lander offer",
+  "sha256": "bbb21c232b2dcfbf262996c745f2c28b30f8bc73fc7ccb18eac34f9f33234a24",
+  "filename": "page.pdf",
+  "bytes": 10445693,
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "griffin_polar_surface_ops=up_to_14_days",
+    "griffin_polar_payload_kg=625",
+    "lunar_surface_thermal_C=-30_to_80",
+    "thermal_excludes_lunar_night=true",
+    "payload_nominal_W_per_kg=1.0",
+    "payload_peak_W_per_kg=2.5",
+    "peregrine_lunar_day_h=354",
+    "FLIP_store_Wh=NOT_PRINTED"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.pdf": "bbb21c232b2dcfbf262996c745f2c28b30f8bc73fc7ccb18eac34f9f33234a24"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": [
+    {
+      "filename": "page.pdf",
+      "bytes": 10445693,
+      "omit_reason": "pdf > 5 MB; URL + sha256 only",
+      "sha256": "bbb21c232b2dcfbf262996c745f2c28b30f8bc73fc7ccb18eac34f9f33234a24",
+      "url": "https://voyagertechnologies.com/wp-content/uploads/2026/07/PUGLanders_011222.pdf"
+    }
+  ]
+}
