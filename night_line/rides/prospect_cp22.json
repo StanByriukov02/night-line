@@ -1,0 +1,42 @@
+{
+  "ride_id": "prospect_cp22",
+  "named_box": "ESA PROSPECT",
+  "host": "Intuitive Machines Nova-C / CLPS CP-22 (IM-4)",
+  "window": "2027",
+  "sources_dir": "sources/prospect-cp22",
+  "lab_use": "Printed day watts are sample-cycle averages (21.5 / 78 / 85.6 W) and peaks (80 / 150 / 200 W). Night is refused. Do not multiply 85.6 W × 354 h. Envelope 5–10 Earth days. Store Wh not printed. Not a seventh energy line.",
+  "cited": {
+    "daylight_only": true,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "day_W_printed": true,
+    "night_refused": true
+  },
+  "quotes": [
+    {
+      "text": "Since the mission is not planned to survive through the night, Prospect must maximise its use of the lunar daytime available and share resources with the other payloads on the platform. Prospect is expected to operate for between 5 and 10 Earth days, depending on the final mission profile.",
+      "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Prospect_searching_for_water_at_the_lunar_poles",
+      "page_or_figure": "ESA — Prospect searching for water at the lunar poles",
+      "source_slug": "esa-prospect"
+    },
+    {
+      "text": "Average power 21.5 W / 78 W / 85.6 W. Peak power 80 W / 150 W / 200 W (in-flight checkout / surface commissioning / nominal operations cycle).",
+      "url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+      "page_or_figure": "Frontiers Space Technologies 2024 PROSPECT Table (resource requirements)",
+      "source_slug": "frontiers-2024"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

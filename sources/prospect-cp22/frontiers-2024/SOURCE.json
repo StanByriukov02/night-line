@@ -1,0 +1,23 @@
+{
+  "url": "https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1331828/full",
+  "title": "Frontiers 2024 PROSPECT: average power 21.5 / 78 / 85.6 W; peak 80 / 150 / 200 W — daytime sample cycles, not night keep-alive",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "P_avg_W=21.5_78_85.6",
+    "P_peak_W=80_150_200",
+    "night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "Average power 85.6 W nominal operations cycle",
+  "note": "Do not multiply 85.6 W by Cataldo 354 h. Table is in-flight checkout / commissioning / nominal sample cycle.",
+  "fetched_utc": "2026-09-17T17:40:00Z",
+  "bytes": 763971,
+  "sha256": "a2905ce875647cb8cdfaa8a417aaaf2faa4e27216383e8edd656a907d1d1ae8b",
+  "sha256_by_file": {
+    "page.html": "a2905ce875647cb8cdfaa8a417aaaf2faa4e27216383e8edd656a907d1d1ae8b"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

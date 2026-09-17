@@ -25,6 +25,9 @@ If you are sizing a night battery, a night TVAC, or a “next CLPS night” para
 - NASA Ames / Interlune **METAL**, JSC **LDES**, MSFC **Lunar LiDAR** ride FLIP as guests. They print cameras, dust-on-radiators, and maps — not watt-hours. Night wait is FLIP’s OPEN store, not Griffin PUG, not a seventh energy line.
 - Lunar-VISE (UCF, PI Kerri Donaldson-Hanna) on Firefly Blue Ghost 3 / CP-21: **10-day** science investigation, **one lunar day** traverse, launch **2028**. Do not wait for a VISE night.
 - MoonRanger (Carnegie Mellon / NASA Ames NSS) on Firefly Blue Ghost 4 / CS-6: NASA prints **PSR**. Firefly prints host surface services **more than 12 days**, launch **2029**. PSR inside a polar day is not Cataldo 354 h. Do not wait for a MoonRanger night-store.
+- ESA **PROSPECT** on Intuitive Machines Nova-C / CP-22 (2027): night **refused**. Day envelope **5–10 Earth days**. Frontiers prints daytime sample-cycle **21.5 / 78 / 85.6 W** average and **80 / 150 / 200 W** peak. Do not multiply 85.6 W by 354 h. Not a seventh energy line.
+- LEIA (NASA Ames yeast) on the same CP-22 host: **10 Earth days or less**.
+- NMLS (Marshall / **University of Alabama in Huntsville**) and Heimdall on Firefly Blue Ghost 3 / CP-21: host **more than 14 days**. Same lunar-day envelope as Lunar-VISE. 2028.
 
 Unnamed task orders and the unpublished NASA Lunar Payload Database are **absent**. Absent is not CANNOT.
 

@@ -1,0 +1,36 @@
+{
+  "ride_id": "leia_cp22",
+  "named_box": "LEIA (NASA Ames — yeast / BioSensor)",
+  "host": "Intuitive Machines Nova-C / CLPS CP-22 (IM-4)",
+  "window": "2027",
+  "sources_dir": "sources/leia-cp22",
+  "lab_use": "Do not wait for a LEIA night-store. NASA prints the yeast experiment completes within 10 Earth days or less. Store Wh not printed.",
+  "cited": {
+    "daylight_only": true,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "day_W_printed": false,
+    "night_refused": false
+  },
+  "quotes": [
+    {
+      "text": "The experiment will likely be completed within 10 Earth days or less, and these data will be transmitted back to researchers through direct-to-Earth communications.",
+      "url": "https://www.nasa.gov/centers-and-facilities/ames/what-is-the-lunar-explorer-instrument-for-space-biology-applications/",
+      "page_or_figure": "NASA Ames — What is LEIA?",
+      "source_slug": "nasa-leia"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

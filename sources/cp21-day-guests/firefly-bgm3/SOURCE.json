@@ -1,0 +1,21 @@
+{
+  "url": "https://fireflyspace.com/missions/blue-ghost-elytra-gruithuisen-domes/",
+  "title": "Firefly BGM3 / CP-21: more than 14 days surface; NMLS MSFC/UAH; Heimdall cameras; NET 2028",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "host_surface_days_gt=14",
+    "launch_net=2028",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "operate six NASA-sponsored payloads for more than 14 days on the lunar surface",
+  "fetched_utc": "2026-09-17T17:40:00Z",
+  "bytes": 121060,
+  "sha256": "e5bddc30a9c36c1fbadc3b92f446ec4a9f28ba5c2f2e1b528d7efc23c60de680",
+  "sha256_by_file": {
+    "page.html": "e5bddc30a9c36c1fbadc3b92f446ec4a9f28ba5c2f2e1b528d7efc23c60de680"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

@@ -18,7 +18,7 @@ def _by_id():
 
 def test_not_a_seventh_energy_box() -> None:
     assert len(packaged_boxes()) == 6
-    assert len(packaged_rides()) == 15
+    assert len(packaged_rides()) == 19
     doc = evaluate_map()
     assert doc["manifest_closed"] is False
     assert doc["n_packaged_energy_boxes"] == 6
@@ -220,3 +220,39 @@ def test_moonranger_psr_is_not_lunar_night() -> None:
     ).read_text(encoding="utf-8")
     assert "2029 mission to the moon" in cmu
     assert "Carnegie Mellon" in cmu
+
+
+def test_esa_prospect_day_watts_are_not_night() -> None:
+    row = _by_id()["prospect_cp22"]
+    assert row["label"] == "DAY_W_PRINTED_NIGHT_NO"
+    assert row["full_night_possible"] == "no"
+    assert row["store_Wh_printed"] is False
+    esa = (ROOT / "sources" / "prospect-cp22" / "esa-prospect" / "page.html").read_text(
+        encoding="utf-8"
+    )
+    assert "not planned to survive through the night" in esa
+    assert "5 and 10 Earth days" in esa
+    fr = (
+        ROOT / "sources" / "prospect-cp22" / "frontiers-2024" / "page.html"
+    ).read_text(encoding="utf-8")
+    assert "85.6" in fr
+    assert "Peak power" in fr
+
+
+def test_leia_and_cp21_day_labs() -> None:
+    leia = _by_id()["leia_cp22"]
+    assert leia["label"] == "DAY_ONLY_PRINTED"
+    html = (ROOT / "sources" / "leia-cp22" / "nasa-leia" / "page.html").read_text(
+        encoding="utf-8"
+    )
+    assert "10 Earth days" in html
+    nmls = _by_id()["nmls_cp21"]
+    assert nmls["label"] == "DAY_ONLY_PRINTED"
+    heim = _by_id()["heimdall_cp21"]
+    assert heim["label"] == "DAY_ONLY_PRINTED"
+    fire = (
+        ROOT / "sources" / "cp21-day-guests" / "firefly-bgm3" / "page.html"
+    ).read_text(encoding="utf-8")
+    assert "University of Alabama in Huntsville" in fire
+    assert "more than 14 days on the lunar surface" in fire
+    assert "Heimdall" in fire

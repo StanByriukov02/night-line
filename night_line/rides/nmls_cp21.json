@@ -1,0 +1,42 @@
+{
+  "ride_id": "nmls_cp21",
+  "named_box": "NMLS (NASA Marshall / University of Alabama in Huntsville)",
+  "host": "Firefly Blue Ghost Mission 3 / CLPS CP-21",
+  "window": "2028+",
+  "sources_dir": "sources/cp21-day-guests",
+  "lab_use": "UAH/MSFC neutron ground-truth on a host that prints more than 14 days on the surface. That is one lunar day, not Cataldo night. Store Wh not printed.",
+  "cited": {
+    "daylight_only": true,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": true,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "day_W_printed": false,
+    "night_refused": false
+  },
+  "quotes": [
+    {
+      "text": "Blue Ghost will then land in the Gruithuisen Domes, deploy the rover, and operate six NASA-sponsored payloads for more than 14 days on the lunar surface.",
+      "url": "https://fireflyspace.com/missions/blue-ghost-elytra-gruithuisen-domes/",
+      "page_or_figure": "Firefly Blue Ghost + Elytra: Gruithuisen Domes",
+      "source_slug": "firefly-bgm3"
+    },
+    {
+      "text": "NASA Marshall Space Flight Center, University of Alabama in Huntsville",
+      "url": "https://fireflyspace.com/missions/blue-ghost-elytra-gruithuisen-domes/",
+      "page_or_figure": "Firefly — NMLS client line",
+      "source_slug": "firefly-bgm3"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

@@ -1,0 +1,22 @@
+{
+  "url": "https://www.nasa.gov/centers-and-facilities/ames/what-is-the-lunar-explorer-instrument-for-space-biology-applications/",
+  "title": "NASA Ames LEIA: yeast experiment completed within 10 Earth days or less",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "ops_earth_days_le=10",
+    "daylight_only=true",
+    "store_Wh=NOT_PRINTED",
+    "P_night_W=NOT_PRINTED"
+  ],
+  "quote": "The experiment will likely be completed within 10 Earth days or less",
+  "fetched_utc": "2026-09-17T17:40:00Z",
+  "bytes": 296826,
+  "sha256": "c3f5239a6723d6c9eaa3c313c6f81c9152ed84698310ce4cbf9f5696001e6759",
+  "sha256_by_file": {
+    "page.html": "c3f5239a6723d6c9eaa3c313c6f81c9152ed84698310ce4cbf9f5696001e6759"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}
