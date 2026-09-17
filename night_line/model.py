@@ -21,6 +21,7 @@ EDGE_FRAC_OF_STORE = 0.02
 LINE_OPEN_TWO_KNOBS = "LINE_OPEN_TWO_KNOBS"
 LIVE_IF_STORE_ABOVE = "LIVE_IF_STORE_ABOVE"
 CLAIM_VS_WITNESS = "CLAIM_VS_WITNESS"
+HEAT_VS_BONUS = "HEAT_VS_BONUS"
 ASSUMED_SOC_RESERVE_FRAC = 0.30
 ASSUMED_NAMEPLATE_KWH = (1.0, 2.0, 5.0, 10.0)
 IDENTITY_LINE = "usable_Wh / H_night_h = hibernation load W"
@@ -28,7 +29,13 @@ IDENTITY_STORE_LINE = "P_night_W × H_night_h = nameplate store Wh"
 IDENTITY_DURATION_LINE = (
     "hours_after_sunset_flown vs 354 h Cataldo/Mason = duration gap (not Wh)"
 )
+IDENTITY_HEAT_LINE = "5 Wt thermal is heat, not electrical bus watts"
+BONUS_DURATION_LINE = (
+    "NASA CS-8 bonus = radioisotope + transmit after a full lunar night "
+    "(duration claim, not Wh)"
+)
 CATALDO_NIGHT_H = 354.0
+P_THERMAL_W = 5.0
 PKG = Path(__file__).resolve().parent
 BOXES = PKG / "boxes"
 ROOT = PKG.parent
@@ -128,13 +135,21 @@ def public_label(
     two_knobs_open: bool = False,
     store_open_load_printed: bool = False,
     claim_vs_witness: bool = False,
+    heat_vs_bonus: bool = False,
 ) -> dict[str, Any]:
     """Label on declared corners only. LIVE_IF_<knob>_BELOW when a knob has no upper bound.
 
     Store and hibernation load both OPEN → LINE_OPEN_TWO_KNOBS (identity line).
     Load printed and store OPEN → LIVE_IF_STORE_ABOVE (nameplate P×H).
     Flown cited night vs public product sentence → CLAIM_VS_WITNESS (no Wh line).
+    Printed thermal watts vs NASA-paid full-night bonus → HEAT_VS_BONUS (heat not bus).
     """
+    if heat_vs_bonus:
+        return {
+            "label": HEAT_VS_BONUS,
+            "edge": False,
+            "worst_corner_margin_Wh": None,
+        }
     if claim_vs_witness:
         return {
             "label": CLAIM_VS_WITNESS,
@@ -240,6 +255,10 @@ def store_open_load_printed(fix: dict[str, Any]) -> bool:
 
 def claim_vs_witness_of(fix: dict[str, Any]) -> bool:
     return str(fix.get("label_family") or "") == CLAIM_VS_WITNESS
+
+
+def heat_vs_bonus_of(fix: dict[str, Any]) -> bool:
+    return str(fix.get("label_family") or "") == HEAT_VS_BONUS
 
 
 def identity_hibernation_table(
@@ -659,6 +678,109 @@ def _breaks(
 
 
 def evaluate(fix: dict[str, Any]) -> dict[str, Any]:
+    if heat_vs_bonus_of(fix):
+        thermal = field(fix, "P_thermal_W")
+        p_th = float(thermal["value"])
+        if abs(p_th - P_THERMAL_W) > 1e-12:
+            raise ValueError("P_thermal_W must stay the cited 5 Wt")
+        kind = str(thermal.get("kind") or "heat")
+        if kind not in {"heat", "thermal", "RHU"}:
+            raise ValueError("P_thermal_W kind must be heat")
+        pk = field(fix, "P_keepalive_W")
+        if pk.get("value") is not None:
+            raise ValueError("REFUSE electrical keep-alive filled")
+        store = field(fix, "store_Wh")
+        if store.get("value") is not None:
+            raise ValueError("REFUSE store_Wh filled")
+        fields = fix.get("fields") or {}
+        if "payload_power_W" in fields:
+            raise ValueError("REFUSE 400 W bus field on this box")
+        if "after_sunset_h" in fields:
+            after = fields["after_sunset_h"].get("value") if isinstance(fields["after_sunset_h"], dict) else None
+            if after is not None:
+                raise ValueError("REFUSE after_sunset_h on this box")
+        cataldo = float(field(fix, "cataldo_mason_night_h")["value"])
+        if abs(cataldo - CATALDO_NIGHT_H) > 1e-12:
+            raise ValueError("Cataldo/Mason night hours must stay 354")
+        if field(fix, "H_night_h").get("value") is not None:
+            raise ValueError("REFUSE H_night_h filled — bonus hours not printed")
+        net = str(field(fix, "launch_NET").get("value") or "")
+        if "2028" not in net:
+            raise ValueError("NET must stay as printed (2028)")
+        lab = public_label([], heat_vs_bonus=True)
+        identity = (
+            f"{IDENTITY_HEAT_LINE}. {BONUS_DURATION_LINE}. "
+            f"Do not compute {p_th:g} Wt × {cataldo:g} h as electrical watt-hours."
+        )
+        rec: dict[str, Any] = {
+            "schema": "night_line_record_v1",
+            "box": fix.get("name"),
+            "box_id": fix.get("box_id"),
+            "mission": fix.get("mission"),
+            "label": lab["label"],
+            "label_display": lab["label"],
+            "edge": False,
+            "worst_corner_margin_Wh": None,
+            "store_Wh": None,
+            "energy_wh": None,
+            "P_keepalive_W": None,
+            "P_thermal_W": p_th,
+            "P_thermal_kind": "heat",
+            "P_thermal_unit": str(thermal.get("unit") or "Wt"),
+            "payload_power_W": None,
+            "after_sunset_h": None,
+            "peak_vs_night_keepalive": "OPEN",
+            "launch_NET": net,
+            "cataldo_mason_night_h": cataldo,
+            "H_night_h": None,
+            "bonus_hours_printed": False,
+            "identity": IDENTITY_HEAT_LINE,
+            "identity_line": identity,
+            "bonus_duration_line": BONUS_DURATION_LINE,
+            "live_if_electrical": (
+                "LIVE_IF a printed electrical keep-alive W is covered through a "
+                "printed full-night duration by a printed store — not 5 Wt × 354 h."
+            ),
+            "T_box_K": None,
+            "T_env_K": None,
+            "P_electronics_W": None,
+            "electronics_hi_open": False,
+            "p_night_threshold_W": None,
+            "p_night_threshold_soc8_W": None,
+            "ladder": [],
+            "ladder_soc8": [],
+            "lo": None,
+            "hi": None,
+            "corners": [],
+            "breaks": [],
+            "electrical_model": {
+                "P_elec": IDENTITY_HEAT_LINE,
+                "reason": (
+                    "5 Wt is RHU heat. Electrical keep-alive OPEN. Store OPEN. "
+                    "NASA CS-8 bonus is radioisotope + transmit after a full lunar night "
+                    "(duration). Do not treat 5 Wt as P_keepalive. Do not mint watt-hours "
+                    "from 5 Wt × 354 h."
+                ),
+                "cite": str(fix.get("electrical_model") or IDENTITY_HEAT_LINE),
+            },
+            "heat_quotes": {
+                "thermal": str(thermal.get("quote") or ""),
+                "rhu": str((fields.get("rhu_heat") or {}).get("quote") or ""),
+            },
+            "bonus_quotes": {
+                "cs8": str((fields.get("cs8_bonus") or {}).get("quote") or ""),
+                "night_ops": str((fields.get("night_ops") or {}).get("quote") or ""),
+            },
+            "witness": "pending",
+            "witness_expected": "pending",
+            "sources_dir": fix.get("sources_dir"),
+        }
+        if rec.get("E_night_Wh") is not None:
+            raise ValueError("REFUSE watt-hours computed from heat")
+        if rec.get("nameplate_line_Wh") is not None:
+            raise ValueError("REFUSE nameplate from 5 Wt")
+        _refuse(rec)
+        return rec
     if claim_vs_witness_of(fix):
         energy_spec = field(fix, "energy_wh")
         store_spec = field(fix, "store_Wh")

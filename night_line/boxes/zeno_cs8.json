@@ -1,0 +1,269 @@
+{
+  "schema": "night_line_box_v1",
+  "box_id": "zeno_cs8",
+  "name": "Zeno Am-241 Survive-the-Night Package (Blue Ghost / CS-8 bonus)",
+  "full_name": "Zeno Power Survive-the-Night Package — 5 Wt Am-241 RHU on a Firefly Blue Ghost near-side CLPS flight (NET 2028); NASA CS-8 STN bonus",
+  "label_family": "HEAT_VS_BONUS",
+  "named_box": true,
+  "pre_landing": true,
+  "flown": false,
+  "landing_status": "not_landed_as_of_2026-09-17",
+  "mission": "Firefly Blue Ghost near-side CLPS (NET 2028) / NASA CS-8 STN bonus",
+  "lander": "Firefly Blue Ghost",
+  "org": "Zeno Power Systems / Firefly Aerospace",
+  "note": "HEAT_VS_BONUS. 5 Watts thermal Am-241 RHU is heat, not electrical bus watts. Electrical keep-alive OPEN. Store OPEN. NASA CS-8 bonus = radioisotope + transmit after a full lunar night (duration, not watt-hours). Firefly PR does not print CS-8. Do not put Blue Ghost >400 W bus on this box. Do not use BGM1 5 h as this box's after_sunset.",
+  "electrical_model": "5 Wt is RHU heat (passive decay). Dedicated platform (comms/EPS/C&DH/thermal) is electrically powered — watts not printed. Do not treat 5 Wt as P_keepalive. Do not compute 5 Wt x 354 h watt-hours. LIVE_IF a printed electrical keep-alive W is covered through a printed full-night duration by a printed store.",
+  "witness_keys": [
+    "zeno",
+    "cs8",
+    "survive-the-night-package"
+  ],
+  "witness_note": "none flown — Zeno package NET 2028, pre-landing. BGM1 ~5 h after sunset is a different mission; cited only as why NASA pays a full-night radioisotope+transmit bonus. Do not use 5.0 h as this box's after_sunset. Do not join firefly_blue_ghost_m1 400 W as this box.",
+  "killer_heat_vs_bonus": "5 Wt is heat, not electrical bus watts. Electrical keep-alive OPEN. Store OPEN. NASA CS-8 bonus is radioisotope + transmit after a full lunar night (duration claim, not watt-hours). Do not compute 5 Wt x 354 h watt-hours. Do not put Blue Ghost bus watts on this box. Do not use BGM1 5 h as this box's after_sunset.",
+  "thermal_hold_md": "No printed Zeno night hold T_box. Firefly/Zeno: RHU keeps critical components operational; night/PSR language below -280 F is design environment, not this box's printed sink. Allensworth >230 F / below -275 F is BGM1 measured, a different mission — not this T_env. T_env OPEN. Do not invent kelvin.",
+  "alloy_md": "No printed night-path alloy. Fourier not run. Store OPEN. 5 Wt is heat, not a leak table.",
+  "honesty_md": "We did not measure; Firefly 2026-08-19 / Zeno copy / NASA Ignition / Cataldo-Mason cited. 5 Wt thermal is heat. Electrical keep-alive not printed. Store not printed. Bonus hours not printed (120 h unverified, not used). Firefly printed no earlier than 2028, not the string CS-8. 14-day lunar night is qualitative, not 336 h watt-hours. Do not mix BGM1 5 h or Blue Ghost >400 W bus into this box.",
+  "fields": {
+    "P_thermal_W": {
+      "value": 5.0,
+      "unit": "Wt",
+      "kind": "heat",
+      "tier": "cited_public",
+      "quote": "Zeno’s payload is comprised of a 5 Watts thermal americium-241 RHU and dedicated platform that includes structural, communications, electrical power, command and data handling, and thermal management subsystems.",
+      "cite": "Firefly 2026-08-19 / Zeno copy: 5 Watts thermal americium-241 RHU. Identity: heat, not electrical bus watts.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night/",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": "P_thermal_W=5",
+      "page_or_figure": "Firefly 2026-08-19 payload paragraph"
+    },
+    "rhu_heat": {
+      "value": "passive_thermal_decay",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "The RHU generates passive thermal energy through the natural decay of radioactive material, providing continuous heat without relying on solar power.",
+      "cite": "Firefly 2026-08-19: RHU is passive heat. Not a printed electrical watt.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night/",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": "heated=RHU_passive_thermal",
+      "page_or_figure": "Firefly 2026-08-19 RHU sentence"
+    },
+    "electrical_platform": {
+      "value": "comms_EPS_CDH_thermal_W_OPEN",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "dedicated platform that includes structural, communications, electrical power, command and data handling, and thermal management subsystems",
+      "cite": "Firefly 2026-08-19: electrically powered subsystems named. Watts not printed.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night/",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": "electrically_powered=platform_subsystems_W_NOT_PRINTED",
+      "page_or_figure": "Firefly 2026-08-19 payload paragraph"
+    },
+    "P_keepalive_W": {
+      "value": null,
+      "unit": "W",
+      "tier": "OPEN",
+      "cite": "OPEN — electrical keep-alive / night bus watts not printed. 5 Wt is heat. Do not treat RHU thermal as P_elec.",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": "P_keepalive_W=NOT_PRINTED",
+      "page_or_figure": "Firefly 2026-08-19; NASA Ignition CS-8",
+      "close_with": "Printed electrical keep-alive W for this Zeno package (not 5 Wt heat, not Blue Ghost bus watts)."
+    },
+    "store_Wh": {
+      "value": null,
+      "unit": "Wh",
+      "tier": "OPEN",
+      "cite": "OPEN — Wh not printed. Do not invent watt-hours from 5 Wt x 354 h.",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": "store_Wh=NOT_PRINTED",
+      "page_or_figure": "Firefly 2026-08-19; NASA Ignition CS-8",
+      "close_with": "Printed nameplate or usable night store Wh for this package."
+    },
+    "isotope": {
+      "value": "Am-241",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "5 Watts thermal americium-241 RHU",
+      "cite": "Firefly 2026-08-19: americium-241 RHU.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night/",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": "isotope=Am-241",
+      "page_or_figure": "Firefly 2026-08-19 payload paragraph"
+    },
+    "launch_NET": {
+      "value": "NET 2028",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "Scheduled to launch no earlier than 2028",
+      "cite": "Firefly 2026-08-19: no earlier than 2028. NASA CS-8: readiness by the end of 2028. NET as printed, not a landing date.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night/",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": "launch_NET=2028",
+      "page_or_figure": "Firefly 2026-08-19 lead"
+    },
+    "cs8_bonus": {
+      "value": "radioisotope_plus_transmit_after_full_lunar_night",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "NASA has included a performance bonus for contractors who successfully demonstrate “survive the night” capabilities by deploying a radioisotope device and transmitting signals from the lunar surface after enduring a full lunar night.",
+      "cite": "NASA Ignition CS-8 Task Order 1.0. Duration + transmit, not watt-hours Wh. Hours not printed.",
+      "url": "https://www.nasa.gov/ignition/",
+      "source_slug": "nasa-ignition-cs8",
+      "numbers_used": "cs8_stn_bonus=radioisotope_plus_transmit_after_full_lunar_night",
+      "page_or_figure": "Commercial Lunar Payloads Delivery CS-8 Task Order 1.0 Contract"
+    },
+    "cs8_readiness": {
+      "value": "end of 2028",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "ensuring readiness for deployment by the end of 2028",
+      "cite": "NASA Ignition CS-8: readiness by the end of 2028. Not a landing date.",
+      "url": "https://www.nasa.gov/ignition/",
+      "source_slug": "nasa-ignition-cs8",
+      "numbers_used": "cs8_readiness_end=2028",
+      "page_or_figure": "CS-8 Task Order 1.0 Contract"
+    },
+    "cs8_deliveries": {
+      "value": "FY2029",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "deliveries through Fiscal Year 2029",
+      "cite": "NASA Ignition CS-8: deliveries through Fiscal Year 2029.",
+      "url": "https://www.nasa.gov/ignition/",
+      "source_slug": "nasa-ignition-cs8",
+      "numbers_used": "cs8_deliveries_through=FY2029",
+      "page_or_figure": "CS-8 Task Order 1.0 Contract"
+    },
+    "cs8_printed_on_firefly_pr": {
+      "value": false,
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "Firefly 2026-08-19 prints existing Blue Ghost near-side CLPS NET 2028. Does not print the string CS-8. CS-8 is the NASA Ignition paid TO / bonus.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night/",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": "cs8=NOT_PRINTED_ON_THIS_PAGE",
+      "page_or_figure": "Firefly 2026-08-19"
+    },
+    "night_ops": {
+      "value": "operate_night_and_transmit",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "Zeno’s payload will then operate during the lunar night and transmit operational data back to Earth.",
+      "cite": "Firefly 2026-08-19: night operate + transmit. Watts not printed.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night/",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": "electrically_powered=platform_subsystems_W_NOT_PRINTED",
+      "page_or_figure": "Firefly 2026-08-19 night-ops sentence"
+    },
+    "lander_solar_day": {
+      "value": "solar_NASA_payloads_lunar_day",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "Upon landing, Blue Ghost will first operate multiple NASA CLPS payloads using solar power for the full lunar day, equivalent to approximately 14 Earth days.",
+      "cite": "Firefly 2026-08-19: lander NASA payloads on solar for the lunar day. Not this RHU's electrical watt. Not watt-hours hours.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night/",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": "hours_bonus=NOT_PRINTED",
+      "page_or_figure": "Firefly 2026-08-19 solar-day sentence"
+    },
+    "cataldo_mason_night_h": {
+      "value": 354.0,
+      "unit": "h",
+      "tier": "cited_public",
+      "quote": "A complete lunar day cycle is 354 hours of sunlight and 354 hours of darkness.",
+      "cite": "Cataldo & Mason, Survive and Operate Through the Lunar Night Workshop 2018 (LPI Contrib. 2106): 354 h of darkness. Duration identity for the NASA full-lunar-night bonus. Firefly/NASA Ignition do not print bonus hours. Not watt-hours Wh. Not BGM1 5 h.",
+      "url": "https://www.lpi.usra.edu/lpi/contribution_docs/LPI-002106.pdf",
+      "source_slug": "cataldo-mason-2018-lpi-2106",
+      "numbers_used": "hours_night=354",
+      "page_or_figure": "Cataldo & Mason abstract in LPI-002106"
+    },
+    "H_night_h": {
+      "value": null,
+      "unit": "h",
+      "tier": "OPEN",
+      "cite": "OPEN as watt-hours night length. NASA prints full lunar night, not hours. 120 h secondary reporting UNVERIFIED, not used. Cataldo/Mason 354 h is duration identity only. Do not multiply 5 Wt by 354 h.",
+      "source_slug": "nasa-ignition-cs8",
+      "numbers_used": "hours_bonus=NOT_PRINTED",
+      "page_or_figure": "NASA Ignition CS-8 bonus sentence",
+      "close_with": "Printed full-night hours for this CS-8 / Zeno bonus (not 120 h unless they print it; not BGM1 5 h)."
+    },
+    "bonus_hours_printed": {
+      "value": false,
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "NASA Ignition does not print bonus hours. 120 h is UNVERIFIED and not used.",
+      "url": "https://www.nasa.gov/ignition/",
+      "source_slug": "nasa-ignition-cs8",
+      "numbers_used": "bonus_120h=UNVERIFIED_NOT_USED",
+      "page_or_figure": "CS-8 Task Order 1.0 Contract"
+    },
+    "bgm1_why_bonus": {
+      "value": "different_mission_cited_as_why_bonus_exists",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "Our first Blue Ghost mission gave us firsthand insight into the Moon’s extreme thermal environment, where we measured temperatures ranging from more than 230°F during the lunar day to below -275°F at night.",
+      "cite": "Firefly 2026-08-19 Allensworth: BGM1 temps. Different mission. Why a full-night bonus exists. Not this box's after_sunset_h.",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night/",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": "after_sunset_h=NOT_THIS_BOX",
+      "page_or_figure": "Firefly 2026-08-19 Allensworth quote"
+    },
+    "T_box_K": {
+      "value": null,
+      "unit": "K",
+      "tier": "OPEN",
+      "cite": "OPEN — no printed Zeno night hold K.",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": "Firefly 2026-08-19 — T_box not printed",
+      "close_with": "Printed Zeno package night hold K."
+    },
+    "T_env_K": {
+      "value": null,
+      "unit": "K",
+      "tier": "OPEN",
+      "cite": "OPEN — Firefly -280 F / Allensworth BGM1 -275 F are not this box's printed sink. Do not invent T_env.",
+      "source_slug": "firefly-zeno-pr-20260819",
+      "numbers_used": null,
+      "page_or_figure": "Firefly 2026-08-19 environment language; BGM1 temps are another mission",
+      "close_with": "Printed night environment temperature for this Zeno package as a single value."
+    }
+  },
+  "geometry_bracket": {
+    "honesty": "OPEN. Fourier not run. HEAT_VS_BONUS is heat vs electrical vs bonus duration, not leak."
+  },
+  "k_path": {
+    "nist_id": null,
+    "temper_match": null,
+    "tier": "OPEN",
+    "source_slug": null,
+    "numbers_used": null,
+            "cite": "Fourier not run."
+  },
+  "holes": [
+    {
+      "id": "P_keepalive_W",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "Electrical keep-alive watts not printed. 5 Wt is heat."
+    },
+    {
+      "id": "store_Wh",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "No printed store Wh. Do not mint watt-hours from 5 Wt x 354 h."
+    },
+    {
+      "id": "bonus_hours",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "NASA full lunar night has no printed hours. 120 h not used."
+    }
+  ],
+  "sources_dir": "sources/zeno-cs8"
+}

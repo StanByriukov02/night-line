@@ -9,9 +9,12 @@ from pathlib import Path
 from typing import Any
 
 from night_line.model import (
+    BONUS_DURATION_LINE,
     IDENTITY_DURATION_LINE,
+    IDENTITY_HEAT_LINE,
     IDENTITY_STORE_LINE,
     CLAIM_VS_WITNESS,
+    HEAT_VS_BONUS,
     LINE_OPEN_TWO_KNOBS,
     LIVE_IF_STORE_ABOVE,
     ROOT,
@@ -41,6 +44,52 @@ def _label_line(rec: dict[str, Any]) -> str:
 def write_line_md(rec: dict[str, Any], dest: Path) -> None:
     label = _label_line(rec)
     box = rec["box"]
+    if rec["label"] == HEAT_VS_BONUS:
+        p_th = rec.get("P_thermal_W")
+        hq = rec.get("heat_quotes") or {}
+        bq = rec.get("bonus_quotes") or {}
+        lines = [
+            f"# {box} Night Line — 2026-09-17",
+            "",
+            f"**Label: {label}**",
+            "",
+            str(rec.get("identity_line") or rec.get("identity") or IDENTITY_HEAT_LINE),
+            "",
+            rec.get("live_if_electrical")
+            or (
+                "LIVE_IF a printed electrical keep-alive W is covered through a "
+                "printed full-night duration by a printed store — not 5 Wt × 354 h."
+            ),
+            "",
+            "## Heat identity (5 Wt is heat)",
+            "",
+            f"P_thermal_W **{p_th:g} Wt**. Kind: heat. Not electrical bus watts.",
+            f'"{hq.get("thermal") or ""}"',
+            f'"{hq.get("rhu") or ""}"',
+            "Electrical keep-alive **OPEN**. Store **OPEN**. Do not treat 5 Wt as P_elec.",
+            "",
+            "## NASA CS-8 bonus (duration + transmit, not Wh)",
+            "",
+            rec.get("bonus_duration_line") or BONUS_DURATION_LINE,
+            f'"{bq.get("cs8") or ""}"',
+            "Bonus hours **not printed**. Cataldo/Mason 354 h is duration identity only. "
+            "Do not compute 5 Wt × 354 h as electrical watt-hours.",
+            "",
+            "## NET as printed",
+            "",
+            f"launch_NET **{rec.get('launch_NET')}**. Firefly PR does not print CS-8. "
+            "CS-8 is the NASA Ignition paid bonus.",
+            "",
+            "BGM1 ~5 h after sunset is a different mission. It is not this box's after_sunset. "
+            "Do not put Blue Ghost >400 W bus on this package.",
+            "",
+            "The label is not a claim that the box will live. "
+            "The human who can lose the box signs. No measurement by us; all values printed "
+            "by the team or NIST.",
+            "",
+        ]
+        dest.write_text("\n".join(lines), encoding="utf-8")
+        return
     if rec["label"] == CLAIM_VS_WITNESS:
         after = rec.get("after_sunset_h")
         cataldo = rec.get("cataldo_mason_night_h")
@@ -427,6 +476,39 @@ def write_inputs_csv(fix: dict[str, Any], rec: dict[str, Any], dest: Path) -> No
                     "cite": "Cataldo/Mason 354 h minus flown after_sunset_h",
                 }
             )
+        if rec.get("label") == HEAT_VS_BONUS:
+            w.writerow(
+                {
+                    "input": "identity_line",
+                    "value": rec.get("identity") or IDENTITY_HEAT_LINE,
+                    "unit": "",
+                    "cite": rec.get("identity_line") or "",
+                }
+            )
+            w.writerow(
+                {
+                    "input": "P_thermal_W",
+                    "value": f"{float(rec['P_thermal_W']):g}",
+                    "unit": "Wt",
+                    "cite": "heat, not electrical bus watts",
+                }
+            )
+            w.writerow(
+                {
+                    "input": "after_sunset_h",
+                    "value": "null",
+                    "unit": "h",
+                    "cite": "not this box; BGM1 5 h is another mission",
+                }
+            )
+            w.writerow(
+                {
+                    "input": "bonus_duration_line",
+                    "value": rec.get("bonus_duration_line") or BONUS_DURATION_LINE,
+                    "unit": "",
+                    "cite": "NASA CS-8 STN bonus",
+                }
+            )
 
 
 def write_receipt(rec: dict[str, Any], report: dict[str, Any], dest: Path) -> None:
@@ -435,7 +517,14 @@ def write_receipt(rec: dict[str, Any], report: dict[str, Any], dest: Path) -> No
         f"box {rec['box_id']}",
         f"label {rec['label_display']}",
     ]
-    if rec.get("label") == CLAIM_VS_WITNESS:
+    if rec.get("label") == HEAT_VS_BONUS:
+        rows.append(str(rec.get("identity_line") or rec.get("identity") or ""))
+        rows.append(f"P_thermal_W {float(rec['P_thermal_W']):g} Wt heat")
+        rows.append("P_keepalive OPEN; store OPEN")
+        rows.append("after_sunset_h null; not BGM1 5 h")
+        rows.append(str(rec.get("bonus_duration_line") or BONUS_DURATION_LINE))
+        rows.append("do not mint watt-hours from 5 Wt x 354 h")
+    elif rec.get("label") == CLAIM_VS_WITNESS:
         rows.append(str(rec.get("identity_line") or rec.get("identity") or ""))
         rows.append(f"after_sunset_h {float(rec['after_sunset_h']):g}")
         rows.append("energy_wh null")
@@ -538,7 +627,12 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     for path in paths:
         rec = run_one(path, args.out)
-        if rec.get("label") in (LINE_OPEN_TWO_KNOBS, LIVE_IF_STORE_ABOVE, CLAIM_VS_WITNESS):
+        if rec.get("label") in (
+            LINE_OPEN_TWO_KNOBS,
+            LIVE_IF_STORE_ABOVE,
+            CLAIM_VS_WITNESS,
+            HEAT_VS_BONUS,
+        ):
             print(rec["box_id"], rec["label_display"])
             continue
         print(

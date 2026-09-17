@@ -1,0 +1,23 @@
+{
+  "url": "https://www.lpi.usra.edu/lpi/contribution_docs/LPI-002106.pdf",
+  "title": "Cataldo & Mason 2018 LPI Contrib. 2106: 354 h of sunlight and 354 h of darkness",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "hours_night=354",
+    "hours_sunlight=354"
+  ],
+  "status_20260917": 200,
+  "quote": "A complete lunar day cycle is 354 hours of sunlight and 354 hours of darkness.",
+  "note": "Duration identity for the CS-8 / NASA full-lunar-night bonus. Zeno/Firefly/NASA Ignition do not print bonus hours. Do not multiply 5 Wt thermal by 354 h as electrical leftover. Not BGM1 flown 5 h.",
+  "sha256_by_file": {
+    "page.pdf": "1fb102636c5266525751f3168bdc3c6024667df703af9e97d354b77a430da617",
+    "page.txt": "2fd2049fa6f2ce48ad473ef6a1ceac0759d906f2278296923b73e5e2f70a5f6b"
+  },
+  "sha256": "1fb102636c5266525751f3168bdc3c6024667df703af9e97d354b77a430da617",
+  "bytes": 4853546,
+  "fetched_utc": "2026-09-17T10:05:12Z",
+  "redacted_personal_email": true,
+  "copied_from": "W_NIGHT_BOX_BGM1_V1/cataldo-mason-2018-lpi-2106",
+  "omitted_binaries": []
+}

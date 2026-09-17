@@ -197,6 +197,38 @@ def verify_box(
     else:
         indep = None
 
+    if rec.get("label") == "HEAT_VS_BONUS":
+        p_th = float(rec["P_thermal_W"])
+        if abs(p_th - 5.0) > 1e-12:
+            ladder_ok = False
+        if rec.get("P_thermal_kind") != "heat":
+            ladder_ok = False
+        if rec.get("P_keepalive_W") is not None:
+            ladder_ok = False
+        if rec.get("store_Wh") is not None:
+            ladder_ok = False
+        if rec.get("after_sunset_h") is not None:
+            ladder_ok = False
+        if rec.get("payload_power_W") is not None:
+            ladder_ok = False
+        if rec.get("E_night_Wh") is not None:
+            ladder_ok = False
+        if rec.get("nameplate_line_Wh") is not None:
+            ladder_ok = False
+        if abs(p_th * 354.0 - 1770.0) < 1e-9 and rec.get("E_night_Wh") is not None:
+            ladder_ok = False
+        return {
+            "sources_sha256_ok": sources_ok,
+            "ladder_recompute_ok": ladder_ok,
+            "independent_ladder": None,
+            "independent_worst_corner": None,
+            "url_status": url_status,
+            "source_files": hash_rows,
+            "open_upward_knobs": ["store_Wh", "P_keepalive_W", "H_night_h"],
+            "plain_LIVE_forbidden": True,
+            "ok": sources_ok and ladder_ok,
+        }
+
     if rec.get("label") == "CLAIM_VS_WITNESS":
         after = float(rec["after_sunset_h"])
         cataldo = float(rec["cataldo_mason_night_h"])

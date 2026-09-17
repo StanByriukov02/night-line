@@ -1,0 +1,71 @@
+Firefly Aerospace Onboards Zeno Power on Blue Ghost Mission to Demonstrate Radioisotope Technologies to Survive the Lunar Night 
+
+Home 
+
+ABOUT 
+
+TEAM 
+
+Tech 
+
+News 
+
+Careers 
+
+RETURN TO ARTICLES 
+
+5 
+min read 
+
+Firefly Aerospace Onboards Zeno Power on Blue Ghost Mission to Demonstrate Radioisotope Technologies to Survive the Lunar Night 
+
+Cedar Park, Texas, August 19, 2026 – Firefly Aerospace (Nasdaq: FLY), a market leading space and defense technology company, today announced a commercial payload agreement with Zeno Power Systems to deliver its Survive-the-Night Package with a Radioisotope Heater Unit (RHU) on a Firefly mission to the Moon’s near side. Scheduled to launch no earlier than 2028, the mission will demonstrate Zeno’s technologies designed to enable spacecraft, lunar infrastructure, and future Moon Base systems to operate through the extreme cold and prolonged darkness of the 14-day lunar night. 
+"Firefly is proud to collaborate with innovative companies like Zeno to solve one of the most complex challenges of lunar exploration—surviving the lunar night," said Ray Allensworth, Vice President of Spacecraft at Firefly Aerospace. "Our first Blue Ghost mission gave us firsthand insight into the Moon's extreme thermal environment, where we measured temperatures ranging from more than 230°F during the lunar day to below -275°F at night. Now we’re looking forward to advancing technologies that can extend missions beyond sunset and support long-duration surface operations required for NASA’s Moon Base initiative and the growing lunar economy." 
+Zeno’s Survive-the-Night Package will be onboarded to one of Firefly’s existing Blue Ghost mission returning to the Moon’s near side as part of NASA’s Commercial Lunar Payload Services (CLPS) initiative. Upon landing, Blue Ghost will first operate multiple NASA CLPS payloads using solar power for the full lunar day, equivalent to approximately 14 Earth days. Zeno’s payload will then operate during the lunar night and transmit operational data back to Earth. 
+Zeno’s payload is comprised of a 5 Watts thermal americium-241 RHU and dedicated platform that includes structural, communications, electrical power, command and data handling, and thermal management subsystems. The RHU generates passive thermal energy through the natural decay of radioactive material, providing continuous heat without relying on solar power. The lightweight, compact system is designed to keep critical spacecraft components operational during the frigid lunar night, when temperatures can fall below -280°F, as well as within permanently shadowed regions that never receive direct sunlight. 
+"Hardware capable of surviving the extreme cold of the lunar night will be essential to enabling sustained operations on the Moon," said Tyler Bernstein, CEO and Co-Founder of Zeno Power. "NASA’s Moon Base Program has identified the need for technologies such as radioisotope power systems to support future lunar exploration, and Zeno is proud to answer that call to demonstrate this capability aboard Firefly's Blue Ghost mission. As demand for long-duration lunar infrastructure grows, we are building the production capacity to support future commercial and government missions." 
+This demonstration on Blue Ghost will provide critical data to advance radioisotope and nuclear-powered technologies for future robotic and human lunar missions requiring extended operations beyond sunset. The mission builds on the success of Blue Ghost Mission 1 , which achieved the first successful commercial Moon landing in 2025, and follows Firefly’s upcoming missions to the Moon’s far side and Gruithuisen Domes . 
+
+‍ 
+About Firefly Aerospace 
+Firefly Aerospace is a space and defense technology company on a mission to reliably and repeatedly launch, land, and operate space systems from Earth to the Moon and beyond. As the partner of choice for responsive space missions, Firefly is the first commercial company to launch a satellite to orbit with approximately 24-hour notice and the first to achieve a successful landing on the Moon. Established in 2017, Firefly’s engineering, manufacturing, and test facilities are co-located in central Texas to enable rapid innovation and vertical integration for the company’s small- to medium-lift launch vehicles, lunar landers, and orbital vehicles. For more information, visit www.fireflyspace.com . 
+‍ Forward-Looking Statements 
+This press release contains “forward-looking statements” including, but not limited to, statements regarding expectations regarding expected demonstrations, RHU capabilities, mission timing, necessary operations, statements of Firefly’s chief executive officer and VP of spacecraft, and other statements regarding Firefly’s future expectations, beliefs, plans, objectives, financial condition, assumptions, future events, or performance that are not historical facts. In some cases, you can identify forward-looking statements because they contain words such as “expand,” “help,” “may,” “pave,” “will,” “expects,” “plans,” “anticipates,” “could,” “would,” “target”, “set,” “intends,” “support,” and “believes.” There may also be negative words or other similar terms or expressions that concern our expectations, strategy, plans, or intentions. Not all forward-looking statements contain such identifying words. The inclusion of forward-looking statements should not be regarded as a representation that such plans, estimates, or expectations will be achieved. 
+Various risks that could cause actual results to differ from those expressed by the forward-looking statements included in this press release include, but are not limited to: our failure to manage our growth effectively, including the increasing technological complexity of our business, and our ability to achieve and maintain profitability; the potential for delayed or failed launches, and any failure of our launch vehicles and spacecraft to operate as intended; our inability to deliver software on time or of a quality that our customers demand; the hazards and operational risks that our products and service offerings are exposed to, including the wide and unique range of risks due to the unpredictability of space; the inability to realize our backlog; the fluctuation of our operating results; adverse publicity stemming from any incident involving us, our competitors, or our customers; the failure to adequately protect our proprietary intellectual property rights; our inability to comply with our contractual obligations; and other risk factors set forth in our filings with the Securities and Exchange Commission. 
+Readers are cautioned not to place undue reliance on the forward-looking statements contained herein, which speak only as of the date hereof. These statements are based on management’s current expectations, assumptions, and beliefs concerning future developments, which are inherently subject to uncertainties, risks, and changes in circumstances that are difficult to predict. We cannot assure you that the events reflected in the forward-looking statements will occur; actual events could differ materially from those described in the forward-looking statements. We undertake no intent or obligation to publicly update or revise any of the estimates and other forward-looking statements made in this announcement, whether as a result of new information, future events or otherwise, except as required by law. 
+Media Contact 
+[email protected] 
+‍ 
+
+newsletter 
+
+Stay up to date on our journey deploying nuclear batteries in deep sea and deep space. 
+
+Email is not valid. 
+Thanks for signing up! 
+
+Oops! Something went wrong while submitting the form. 
+
+Copyright 2025 
+// 
+Washington, D.C. & Seattle, WA 
+// 
+All Rights Reserved 
+
+Home 
+
+About 
+
+Team 
+
+Tech 
+
+News 
+
+Careers 
+
+LinkedIn 
+
+X 
+
+Contact Us

@@ -6,10 +6,13 @@ from pathlib import Path
 
 from night_line.cli import run_one
 from night_line.model import (
+    BONUS_DURATION_LINE,
     IDENTITY_DURATION_LINE,
+    IDENTITY_HEAT_LINE,
     IDENTITY_LINE,
     IDENTITY_STORE_LINE,
     CLAIM_VS_WITNESS,
+    HEAT_VS_BONUS,
     LINE_OPEN_TWO_KNOBS,
     LIVE_IF_STORE_ABOVE,
     ROOT,
@@ -105,6 +108,10 @@ def test_public_labels() -> None:
     assert claim["label"] == CLAIM_VS_WITNESS
     assert claim["edge"] is False
     assert claim["worst_corner_margin_Wh"] is None
+    heat = public_label([], heat_vs_bonus=True)
+    assert heat["label"] == HEAT_VS_BONUS
+    assert heat["edge"] is False
+    assert heat["worst_corner_margin_Wh"] is None
 
 
 def test_lems_a3_published_line() -> None:
@@ -323,5 +330,52 @@ def test_bgm1_claim_vs_witness() -> None:
     assert "LuSEE" not in text
     assert "LEMS" not in text
     assert "Farside Seismic" not in text
+    assert written["verify"]["ok"] is True
+    assert written["verify"]["ladder_recompute_ok"] is True
+
+
+def test_zeno_cs8_heat_vs_bonus() -> None:
+    rec = evaluate(load_box(PKG / "boxes" / "zeno_cs8.json"))
+    fix = load_box(PKG / "boxes" / "zeno_cs8.json")
+    nums: list[float] = []
+    _walk_nums(fix, nums)
+    for n in nums:
+        for bad in LEMS_MARK | LUSEE_MARK | FLIP_MARK | FSS_MARK:
+            assert abs(n - bad) > 1e-12, f"{bad} leaked into Zeno box"
+        assert abs(n - 400.0) > 1e-12, "400 W bus leaked into Zeno box"
+        assert abs(n - 1770.0) > 1e-12, "5 Wt x 354 electrical mint leaked into Zeno box"
+    rec_nums: list[float] = []
+    _walk_nums(rec, rec_nums)
+    for n in rec_nums:
+        for bad in LEMS_MARK | LUSEE_MARK | FLIP_MARK | FSS_MARK:
+            assert abs(n - bad) > 1e-12, f"{bad} leaked into Zeno rec"
+        assert abs(n - 400.0) > 1e-12
+        assert abs(n - 1770.0) > 1e-12
+    assert 5.0 * 354.0 not in rec_nums
+    assert rec["label"] == HEAT_VS_BONUS
+    assert rec["identity"] == IDENTITY_HEAT_LINE
+    assert BONUS_DURATION_LINE in rec["bonus_duration_line"]
+    assert rec["P_thermal_W"] == 5.0
+    assert rec["P_thermal_kind"] == "heat"
+    assert rec["P_thermal_W"] != 400.0
+    assert rec["payload_power_W"] is None
+    assert rec["P_keepalive_W"] is None
+    assert rec["store_Wh"] is None
+    assert rec["after_sunset_h"] is None
+    assert rec["after_sunset_h"] != 5.0
+    assert "after_sunset_h" not in (fix.get("fields") or {})
+    assert rec.get("E_night_Wh") is None
+    assert rec.get("nameplate_line_Wh") is None
+    assert rec.get("leftover") is None
+    assert rec.get("leftover_Wh") is None
+    assert rec["H_night_h"] is None
+    assert rec["witness"] == "pending"
+    assert "2028" in str(rec["launch_NET"])
+    written = run_one(PKG / "boxes" / "zeno_cs8.json", OUT)
+    text = (OUT / "zeno_cs8" / "LINE.md").read_text(encoding="utf-8")
+    assert HEAT_VS_BONUS in text
+    assert "5 Wt" in text
+    assert "heat" in text.lower()
+    assert "leftover" not in text.lower()
     assert written["verify"]["ok"] is True
     assert written["verify"]["ladder_recompute_ok"] is True
