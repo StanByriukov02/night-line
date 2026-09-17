@@ -1,0 +1,31 @@
+{
+  "ride_id": "griffin1_lander",
+  "named_box": "Astrobotic Griffin-1 lander",
+  "host": "Astrobotic Griffin-1 (CLPS TO20A)",
+  "window": "2026-27",
+  "sources_dir": "sources/flip-griffin1",
+  "lab_use": "Do not use Griffin polar 14-day ops or the −30°C to 80°C envelope as a night. FLIP is a different row.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": true,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN"
+  },
+  "quotes": [
+    {
+      "text": "This range is relevant for the nominal lunar surface operations duration and does not include lunar night or missions to equatorial latitudes.",
+      "url": "https://voyagertechnologies.com/wp-content/uploads/2026/07/PUGLanders_011222.pdf",
+      "page_or_figure": "Astrobotic PUG 2022 p.35 Thermal Environment",
+      "source_slug": "astrobotic-pug-2022"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

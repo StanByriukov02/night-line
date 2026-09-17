@@ -1,0 +1,37 @@
+{
+  "ride_id": "zeno_cs8",
+  "named_box": "Zeno Survive-the-Night Package (Am-241 RHU)",
+  "host": "Firefly Blue Ghost near-side / NASA CS-8 bonus",
+  "window": "2028+",
+  "sources_dir": "sources/zeno-cs8",
+  "lab_use": "Do not put Zeno in a 2026–27 night wait. NET 2028. 5 Wt is heat, not bus watts.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": true,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": true,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN"
+  },
+  "quotes": [
+    {
+      "text": "Scheduled to launch no earlier than 2028",
+      "url": "https://fireflyspace.com/news/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night/",
+      "page_or_figure": "Firefly 2026-08-19",
+      "source_slug": "firefly-zeno-pr-20260819"
+    },
+    {
+      "text": "ensuring readiness for deployment by the end of 2028",
+      "url": "https://www.nasa.gov/ignition/",
+      "page_or_figure": "NASA Ignition CS-8",
+      "source_slug": "nasa-ignition-cs8"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

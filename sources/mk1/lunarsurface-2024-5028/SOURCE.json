@@ -1,0 +1,26 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/lunarsurface24/pdf/5028.pdf",
+  "fetched_utc": "2026-09-17T15:30:00Z",
+  "title": "LSSW 2024 5028: Blue Moon MK1 — 3 t cargo; PUG MLMA-96737 named, not public here; no night W printed",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "extract": "page.txt",
+  "numbers_used": [
+    "payload_t=3",
+    "night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED",
+    "pug=MLMA-96737_NOT_OPENED"
+  ],
+  "quote_mass": "MK1 is designed to deliver up to three metric tons to anywhere on the lunar surface.",
+  "quote_pug": "The MK1 Payload User’s Guide (PUG) [1] provides a technical point of entry",
+  "note": "Do not mint night watts from “significant power, thermal, and data services”. PUG not saved. Blueorigin.com/blue-moon/mark-1 returned HTTP 429 on 2026-09-17.",
+  "status_20260917": 200,
+  "sha256": "452ede8054bbb71c93b46d88b2b735523d7e932e410526ccb28addba76143375",
+  "bytes": 321793,
+  "sha256_by_file": {
+    "page.pdf": "452ede8054bbb71c93b46d88b2b735523d7e932e410526ccb28addba76143375",
+    "page.txt": "b37134fec286ddc09b1fb1883a4692e5c264e0083f9cf2274478fa654356dfa5"
+  },
+  "hash_newline": "lf",
+  "omitted_binaries": []
+}

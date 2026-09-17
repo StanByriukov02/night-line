@@ -32,7 +32,7 @@ include = ["night_line*"]
 exclude = ["tests*", "out*", "sources*"]
 
 [tool.setuptools.package-data]
-night_line = ["py.typed", "boxes/*.json"]
+night_line = ["py.typed", "boxes/*.json", "rides/*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

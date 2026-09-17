@@ -1,0 +1,37 @@
+{
+  "ride_id": "mk1",
+  "named_box": "Blue Moon Mark 1 (MK1)",
+  "host": "Blue Origin MK1 (self)",
+  "window": "year_unverified",
+  "sources_dir": "sources/mk1",
+  "lab_use": "Do not mint MK1 night watts. Public PUG not opened (product page HTTP 429; MLMA-96737 named, not saved). Surface stay is not a keep-alive W.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": true,
+    "night_W_printed": false,
+    "landing_date": "OPEN"
+  },
+  "quotes": [
+    {
+      "text": "MK1 is designed to deliver up to three metric tons to anywhere on the lunar surface.",
+      "url": "https://www.hou.usra.edu/meetings/lunarsurface24/pdf/5028.pdf",
+      "page_or_figure": "LSSW 2024 5028 Technical Capabilities",
+      "source_slug": "lunarsurface-2024-5028"
+    },
+    {
+      "text": "The MK1 Payload User’s Guide (PUG) [1] provides a technical point of entry for users of both hosted and deployed payloads",
+      "url": "https://www.hou.usra.edu/meetings/lunarsurface24/pdf/5028.pdf",
+      "page_or_figure": "LSSW 2024 5028; PUG MLMA-96737 not opened",
+      "source_slug": "lunarsurface-2024-5028"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

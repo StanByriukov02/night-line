@@ -12,9 +12,15 @@ def test_allowlist_classes() -> None:
     assert classify_name("LINES.md") == "record"
     assert classify_name("NIGHT_LINE_SPEC_V1.md") == "record"
     assert classify_name("PUG_NIGHT_LINE_INPUTS_V1.md") == "method"
+    assert classify_name("PUG_SHALL_V1.md") == "method"
     assert classify_name("PO_SCOPE_V1.md") == "offer"
     assert classify_name("TO_NIGHT_APPENDIX_V1.md") == "offer"
+    assert classify_name("EXPORT_AP_MEMO_V1.md") == "offer"
     assert classify_name("TWO_COURTS_LUSEE_V1.md") == "honesty"
+    assert classify_name("TWO_COURTS_LEMS_V1.md") == "honesty"
+    assert classify_name("BREAK_SURFACE_LEMS_V1.md") == "method"
+    assert classify_name("MEASURE_LEMS_V1.md") == "method"
+    assert classify_name("WITNESS_MAP_V1.md") == "method"
     assert classify_name("RANDOM_F_PAGE.md") == "unknown"
 
 
@@ -55,8 +61,17 @@ def test_live_tree_offer_and_honesty_are_visible() -> None:
     if "TO_NIGHT_APPENDIX_V1.md" in names:
         assert names["TO_NIGHT_APPENDIX_V1.md"]["class"] == "offer"
         assert names["TO_NIGHT_APPENDIX_V1.md"]["ok"] is False
+    if "EXPORT_AP_MEMO_V1.md" in names:
+        assert names["EXPORT_AP_MEMO_V1.md"]["class"] == "offer"
+        assert names["EXPORT_AP_MEMO_V1.md"]["ok"] is False
     spec = names.get("NIGHT_LINE_SPEC_V1.md")
     assert spec is not None
     assert spec["class"] == "record"
     assert spec["ok"] is True
+    if "PUG_SHALL_V1.md" in names:
+        assert names["PUG_SHALL_V1.md"]["class"] == "method"
+        assert names["PUG_SHALL_V1.md"]["ok"] is True
+    if "TWO_COURTS_LEMS_V1.md" in names:
+        assert names["TWO_COURTS_LEMS_V1.md"]["class"] == "honesty"
+        assert names["TWO_COURTS_LEMS_V1.md"]["ok"] is True
     assert doc["ok"] is False

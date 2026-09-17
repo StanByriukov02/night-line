@@ -1,0 +1,37 @@
+{
+  "ride_id": "bgm2_lander",
+  "named_box": "Firefly Blue Ghost Mission 2 lander",
+  "host": "Firefly Blue Ghost Mission 2 (CLPS CS-3)",
+  "window": "2026-27",
+  "sources_dir": "sources/lusee-night",
+  "lab_use": "Do not treat BGM2 as a lander night-store. It prints power-off before nightfall. LuSEE is a different row.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": true,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN"
+  },
+  "quotes": [
+    {
+      "text": "Blue Ghost will power off prior to lunar nightfall to avoid interfering with NASA’s LuSEE-Night radio telescope",
+      "url": "https://fireflyspace.com/missions/blue-ghost-mission-2/",
+      "page_or_figure": "Firefly BGM2 mission page",
+      "source_slug": "firefly-bgm2"
+    },
+    {
+      "text": "The lander and all other scientific payloads aboard will permanently shut down at the end of the first solar day after landing on the moon",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "page_or_figure": "arXiv 2407.07173 §2",
+      "source_slug": "arxiv-2407-07173"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

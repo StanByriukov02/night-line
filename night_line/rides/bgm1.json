@@ -1,0 +1,31 @@
+{
+  "ride_id": "bgm1",
+  "named_box": "Firefly Blue Ghost Mission 1 lander",
+  "host": "Firefly Blue Ghost Mission 1 / NASA CLPS",
+  "window": "flown",
+  "sources_dir": "sources/bgm1-flown",
+  "lab_use": "Do not treat BGM1’s 5 h after sunset as a full-night offer, and do not paste it onto BGM2.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": 5.0,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "2025-03-02"
+  },
+  "quotes": [
+    {
+      "text": "The mission was concluded as Blue Ghost was not designed to survive the cold lunar night.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1958.pdf",
+      "page_or_figure": "LPSC 2026 1958 End Of Mission",
+      "source_slug": "lpsc-2026-1958"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

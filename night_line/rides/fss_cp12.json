@@ -1,0 +1,31 @@
+{
+  "ride_id": "fss_cp12",
+  "named_box": "Farside Seismic Suite (FSS)",
+  "host": "CLPS CP-12 (ispace-U.S. / Draper) — terminated",
+  "window": "host_dead",
+  "sources_dir": "sources/fss",
+  "lab_use": "Do not wait for a CP-12 night. The host task order is printed ended. Re-flight UNVERIFIED — absent, not CANNOT.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": true,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN"
+  },
+  "quotes": [
+    {
+      "text": "Draper has mutually agreed with NASA to end the Commercial Lunar Payload Services (CLPS) task order CP-12.",
+      "url": "https://www.ispace-inc.com/wp-content/uploads/2026/07/20260715-CP-12-update.pdf",
+      "page_or_figure": "ispace-U.S. 2026-07-15",
+      "source_slug": "ispace-cp12-20260715"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

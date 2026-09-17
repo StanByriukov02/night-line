@@ -1,0 +1,27 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/lpsc2025/pdf/1233.pdf",
+  "fetched_utc": "2026-09-17T15:30:00Z",
+  "title": "LPSC 2025 1233: Lunar Vertex PRISM — one lunar daylight period, no night operations or survival; IM-3 / CP-11",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "extract": "page.txt",
+  "numbers_used": [
+    "night_operations=false",
+    "night_survival=false",
+    "daylight_only=true",
+    "ops_earth_days=10_to_13",
+    "host=IM_Nova-C_CP-11",
+    "P_night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "The lander and payload are designed for operation during one lunar daylight period (i.e., no night operations or survival).",
+  "status_20260917": 200,
+  "sha256": "c88359b8c9b8ff7710e0aea67bd6d8f234051f77c35f9c5617c00394f69dfa4b",
+  "bytes": 168325,
+  "sha256_by_file": {
+    "page.pdf": "c88359b8c9b8ff7710e0aea67bd6d8f234051f77c35f9c5617c00394f69dfa4b",
+    "page.txt": "4eddc779ad19e966f669893a8b35750b18caacf24501352e2b010aa35c1ec092"
+  },
+  "hash_newline": "lf",
+  "omitted_binaries": []
+}

@@ -1,0 +1,37 @@
+{
+  "ride_id": "vertex_im3",
+  "named_box": "Lunar Vertex",
+  "host": "Intuitive Machines IM-3 / Nova-C (CLPS CP-11)",
+  "window": "2026-27",
+  "sources_dir": "sources/im3-vertex",
+  "lab_use": "Do not wait for a Vertex or IM-3 night, night-TVAC, or night CONOPS. They printed day-only.",
+  "cited": {
+    "daylight_only": true,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN"
+  },
+  "quotes": [
+    {
+      "text": "The lander and payload are designed for operation during one lunar daylight period (i.e., no night operations or survival).",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2025/pdf/1233.pdf",
+      "page_or_figure": "LPSC 2025 1233 §1",
+      "source_slug": "lpsc-2025-1233"
+    },
+    {
+      "text": "Duration One lunar daylight period (approximately 13 Earth days). The lander will arrive on the surface shortly after local sunrise at Reiner Gamma, and the mission will conclude near sunset.",
+      "url": "https://www.jhuapl.edu/destinations/missions/lunar-vertex",
+      "page_or_figure": "APL Mission Facts",
+      "source_slug": "apl-lunar-vertex"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

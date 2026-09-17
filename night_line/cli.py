@@ -618,6 +618,8 @@ def main(argv: list[str] | None = None) -> int:
         from night_line.ship_gate import main as ship_gate_main
 
         return ship_gate_main(argv_list[1:])
+    if argv_list and argv_list[0] in {"witness-map", "witness_map"}:
+        return witness_map_main(argv_list[1:])
     p = argparse.ArgumentParser(prog="night-line")
     p.add_argument("box", nargs="?", help="path to a box JSON (default: packaged boxes)")
     p.add_argument("--all", action="store_true", help="run every packaged box")
@@ -654,6 +656,47 @@ def main(argv: list[str] | None = None) -> int:
         )
     return 0
 
+
+
+def witness_map_main(argv: list[str] | None = None) -> int:
+    from night_line.model import ROOT
+    from night_line.verify import verify_ride
+    from night_line.witness_map import (
+        evaluate_map,
+        load_ride,
+        packaged_rides,
+        write_map_csv,
+        write_map_md,
+    )
+
+    p = argparse.ArgumentParser(prog="night-line witness-map")
+    p.add_argument("--out", type=Path, default=OUT_DEFAULT)
+    args = p.parse_args(argv)
+    doc = evaluate_map()
+    dest = args.out / "witness_map"
+    dest.mkdir(parents=True, exist_ok=True)
+    reports = []
+    by_id = {r["ride_id"]: r for r in doc["rows"]}
+    all_ok = True
+    for path in packaged_rides():
+        fix = load_ride(path)
+        rec = by_id[str(fix["ride_id"])]
+        report = verify_ride(fix, rec, root=ROOT)
+        reports.append({"ride_id": rec["ride_id"], "verify": report})
+        if not report["ok"]:
+            all_ok = False
+        print(rec["ride_id"], rec["label"], rec["full_night_possible"])
+    doc["verify"] = reports
+    doc["verify_ok"] = all_ok
+    write_map_md(doc, dest / "WITNESS_MAP.md")
+    write_map_csv(doc, dest / "WITNESS_MAP.csv")
+    (dest / "WITNESS_MAP.json").write_text(
+        json.dumps(doc, indent=2, ensure_ascii=False) + chr(10),
+        encoding="utf-8",
+        newline=chr(10),
+    )
+    print("manifest_closed", doc["manifest_closed"], "verify_ok", all_ok)
+    return 0 if all_ok else 1
 
 if __name__ == "__main__":
     raise SystemExit(main())

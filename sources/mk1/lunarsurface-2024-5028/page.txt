@@ -1,0 +1,63 @@
+Blue Origin Mark-1 Payloads For Lunar Surface Science.  E. B. Wagner1, S.B. Martinez1, and J.A. Cortese1, 1Blue 
+Origin (21218 76th Ave S, Kent, WA 98032; lunarsales@blueorigin.com). 
+ 
+ 
+Introduction:  Blue Origin is committed to building 
+a road to space so that the next generation can access the 
+limitless resources of space and improve life here on 
+Earth. With Blue Moon, the team has defined and de-
+veloped a state-of-the-art lunar lander architecture to 
+provide reliable, low-cost launch and commercial lunar 
+transport vehicles that will enable a thriving cislunar 
+and lunar surface ecosystem. Blue Moon Mark-1 (MK1) 
+is Blue Origin’s single-launch, expendable cargo lander, 
+designed to deliver payloads and multiple metric tons 
+into lunar orbit and down to the surface of the Moon, 
+providing safe, reliable, and affordable access to the lu-
+nar environment. This sizable capacity is paired with 
+significant power, thermal, and data services, and preci-
+sion landing capabilities to any lunar destination, mak-
+ing MK1 a market-leading platform for science, tech-
+nology, exploration, and commerce.  
+The MK1 Payload User’s Guide (PUG) [1] provides 
+a technical point of entry for users of both hosted and 
+deployed payloads, describing MK1’s performance, en-
+vironments, requirements, interfaces, facilities, and op-
+erations. Researchers can engage with interests in sus-
+tainable lunar presence, novel scientific inquiries, 
+demonstrating space technologies, commercializing 
+services and products on the Moon, or engaging com-
+munities back on Earth.  
+ Figure 1: Blue Origin’s Mark-1 Lunar Lander supports 
+up to three metric tons of lunar surface science payload 
+ 
+Technical Capabilities: MK1 leverages the seven-
+meter fairing of the New Glenn launch vehicle to pro-
+vide large lunar cargo transport, including industrial-
+scale infrastructure payloads. MK1 is designed to de-
+liver up to three metric tons to anywhere on the lunar 
+surface. The first Pathfinder Mission in 2025 will be a 
+demonstration mission to prove out the design of the 
+MK1 system. Follow-on flights will be available to pay-
+load customers to meet research needs in biological and 
+physical sciences, astrophysics, heliophysics, and tech-
+nology maturation. 
+Standard payload interfaces are available on both the 
+aft module and top deck. Each interface is served with 
+structural mounts, regulated DC power,  
+RS-485/RS-422 data handling, and direct to Earth com-
+munications. Additional optional services include active 
+thermal management, offloading to the lunar surface, 
+custom interfaces, and mission-unique design and anal-
+ysis support. 
+This talk will present updated plans and technology 
+development efforts currently underway for MK1, de-
+scribe how these efforts will serve the science and tech-
+nology development community, and provide high-
+level descriptions of how the research community can 
+manifest payloads for lunar access. 
+References: 
+[1] Blue Origin (2023) MLMA-96737, Blue Moon 
+MK1 Payload User’s Guide. 
+5028.pdf
+Lunar Surface Science Workshop 24 2024 (LPI Contrib. No. 3065)

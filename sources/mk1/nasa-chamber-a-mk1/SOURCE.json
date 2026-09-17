@@ -1,0 +1,23 @@
+{
+  "url": "https://www.nasa.gov/missions/artemis/blue-origin-moon-lander-completes-testing-at-nasa-vacuum-chamber/",
+  "fetched_utc": "2026-09-17T15:30:00Z",
+  "title": "NASA: MK1 Chamber A TVAC; South Pole SCALPSS + LRA. Night keep-alive W not printed.",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "extract": "page.txt",
+  "numbers_used": [
+    "night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED",
+    "payloads=SCALPSS_LRA"
+  ],
+  "status_20260917": 200,
+  "note": "Descent/landing payloads named. Not a printed lunar-night electrical keep-alive.",
+  "sha256": "0e12b088d66629933ab3dd58ad9d599c0cf89e92e424ea26a78100e4fffe6ecf",
+  "bytes": 292775,
+  "sha256_by_file": {
+    "page.html": "0e12b088d66629933ab3dd58ad9d599c0cf89e92e424ea26a78100e4fffe6ecf",
+    "page.txt": "fd8d2b73fdeb78ed46fd9069645283ed5dc273153d857001a8ec6f1fecda15cb"
+  },
+  "hash_newline": "lf",
+  "omitted_binaries": []
+}

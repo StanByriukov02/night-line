@@ -31,19 +31,25 @@ RECORD = {
 
 METHOD = {
     "PUG_NIGHT_LINE_INPUTS_V1.md",
+    "PUG_SHALL_V1.md",
     "WITNESS_CLOCK_FLIP_V1.md",
     "CLOSE_PROTOCOL_V1.md",
+    "BREAK_SURFACE_LEMS_V1.md",
+    "MEASURE_LEMS_V1.md",
+    "WITNESS_MAP_V1.md",
     "PUBLIC_SHIP.md",
 }
 
 HONESTY = {
     "TWO_COURTS_LUSEE_V1.md",
+    "TWO_COURTS_LEMS_V1.md",
 }
 
 # Money, W-8BEN, bid/TO language. Not auto-push.
 OFFER = {
     "PO_SCOPE_V1.md",
     "TO_NIGHT_APPENDIX_V1.md",
+    "EXPORT_AP_MEMO_V1.md",
 }
 
 SKIP_DIRS = {

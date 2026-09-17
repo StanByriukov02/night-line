@@ -1,0 +1,25 @@
+{
+  "url": "https://www.jhuapl.edu/destinations/missions/lunar-vertex",
+  "fetched_utc": "2026-09-17T15:30:00Z",
+  "title": "JHU APL Lunar Vertex: duration one lunar daylight period ~13 Earth days; conclude near sunset; launch NET 2026",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "extract": "page.txt",
+  "numbers_used": [
+    "launch_NET=2026",
+    "duration=one_lunar_daylight_period",
+    "ops_earth_days=13",
+    "P_night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "Duration One lunar daylight period (approximately 13 Earth days). The lander will arrive on the surface shortly after local sunrise at Reiner Gamma, and the mission will conclude near sunset.",
+  "status_20260917": 200,
+  "sha256": "725c1034927aed50e11f8d3ecd9363cf125eb7784e16ba093d5573b26330d6e3",
+  "bytes": 220970,
+  "sha256_by_file": {
+    "page.html": "725c1034927aed50e11f8d3ecd9363cf125eb7784e16ba093d5573b26330d6e3",
+    "page.txt": "8b0a4bf8d163190f3bace0ec6df8a2f84f77557272601cad1acf45655669e1d1"
+  },
+  "hash_newline": "lf",
+  "omitted_binaries": []
+}

@@ -1,0 +1,31 @@
+{
+  "ride_id": "flip_griffin1",
+  "named_box": "FLIP rover (Venturi Astrolab)",
+  "host": "Astrobotic Griffin-1",
+  "window": "2026-27",
+  "sources_dir": "sources/flip-griffin1",
+  "lab_use": "Keep the wait on FLIP’s first sunset after landing. Landing date OPEN. NET November 2026 is launch, not sunset. Store Wh still OPEN.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": true,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": true,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN"
+  },
+  "quotes": [
+    {
+      "text": "enables FLIP to store enough energy to survive the lunar night",
+      "url": "https://www.astrolab.space/flip-rover/",
+      "page_or_figure": "Astrolab FLIP — Engineered for Extremes",
+      "source_slug": "astrolab-flip-rover"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

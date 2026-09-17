@@ -169,6 +169,78 @@ def independent_corner(
     }
 
 
+def independent_ride_label(cited: dict[str, Any]) -> str:
+    """Recompute a witness-map label from cited flags. Does not import witness_map."""
+    if cited.get("host_terminated"):
+        return "HOST_TERMINATED"
+    if cited.get("out_of_window"):
+        return "OUT_OF_WINDOW"
+    if cited.get("flown_after_sunset_h") is not None:
+        return "NIGHT_WITNESS_FLOWN_SHORT"
+    if cited.get("daylight_only"):
+        return "DAY_ONLY_PRINTED"
+    if cited.get("lander_off_before_night") and cited.get(
+        "payload_continues_after_lander_off"
+    ):
+        return "PAYLOAD_NIGHT_LANDER_OFF"
+    if cited.get("lander_off_before_night"):
+        return "LANDER_OFF_BEFORE_NIGHT"
+    if cited.get("survive_night_claim") and not cited.get("store_Wh_printed"):
+        return "NIGHT_CLAIMED_STORE_OPEN"
+    if cited.get("pug_thermal_excludes_night") and not cited.get("survive_night_claim"):
+        return "LANDER_NIGHT_NOT_IN_PUG"
+    if cited.get("surface_stay_claim") and not cited.get("night_W_printed"):
+        return "SURFACE_STAY_NIGHT_W_OPEN"
+    raise ValueError("unclassified ride")
+
+
+def independent_full_night_possible(label: str) -> str:
+    no = {
+        "HOST_TERMINATED",
+        "OUT_OF_WINDOW",
+        "NIGHT_WITNESS_FLOWN_SHORT",
+        "DAY_ONLY_PRINTED",
+        "LANDER_OFF_BEFORE_NIGHT",
+        "LANDER_NIGHT_NOT_IN_PUG",
+    }
+    if label in no:
+        return "no"
+    if label in {"NIGHT_CLAIMED_STORE_OPEN", "PAYLOAD_NIGHT_LANDER_OFF"}:
+        return "pending"
+    if label == "SURFACE_STAY_NIGHT_W_OPEN":
+        return "unverified"
+    raise ValueError(f"unclassified full-night: {label}")
+
+
+def verify_ride(fix: dict[str, Any], rec: dict[str, Any], *, root: Path) -> dict[str, Any]:
+    rel = str(fix.get("sources_dir") or "")
+    sources = (root / rel) if rel else None
+    hash_rows: list[dict[str, Any]] = []
+    sources_ok = True
+    if sources is not None and sources.is_dir():
+        for folder in sorted(p for p in sources.iterdir() if p.is_dir()):
+            if not (folder / "SOURCE.json").is_file():
+                continue
+            row = _source_hashes(folder)
+            hash_rows.append(row)
+            if not row["ok"]:
+                sources_ok = False
+    want = independent_ride_label(dict(fix.get("cited") or {}))
+    label_ok = rec.get("label") == want
+    night_ok = rec.get("full_night_possible") == independent_full_night_possible(want)
+    closed_ok = rec.get("manifest_closed") is False
+    seventh_ok = rec.get("adds_energy_box") is not True
+    return {
+        "sources_sha256_ok": sources_ok,
+        "label_recompute_ok": label_ok,
+        "full_night_recompute_ok": night_ok,
+        "manifest_closed_false": closed_ok,
+        "not_a_seventh_box": seventh_ok,
+        "source_files": hash_rows,
+        "ok": sources_ok and label_ok and night_ok and closed_ok and seventh_ok,
+    }
+
+
 def independent_integral_cond(
     *, nist_id: str, A_path: float, L_path: float, T_box: float, T_env: float
 ) -> float:
