@@ -177,6 +177,8 @@ def independent_ride_label(cited: dict[str, Any]) -> str:
         return "NIGHT_WITNESS_FLOWN_SHORT"
     if cited.get("daylight_only"):
         return "DAY_ONLY_PRINTED"
+    if cited.get("psr_in_host_day"):
+        return "PSR_IN_HOST_DAY"
     if cited.get("out_of_window"):
         return "OUT_OF_WINDOW"
     if cited.get("lander_off_before_night") and cited.get(
@@ -204,6 +206,7 @@ def independent_full_night_possible(label: str) -> str:
         "OUT_OF_WINDOW",
         "NIGHT_WITNESS_FLOWN_SHORT",
         "DAY_ONLY_PRINTED",
+        "PSR_IN_HOST_DAY",
         "LANDER_OFF_BEFORE_NIGHT",
         "LANDER_NIGHT_NOT_IN_PUG",
     }

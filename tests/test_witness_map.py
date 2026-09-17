@@ -18,7 +18,7 @@ def _by_id():
 
 def test_not_a_seventh_energy_box() -> None:
     assert len(packaged_boxes()) == 6
-    assert len(packaged_rides()) == 14
+    assert len(packaged_rides()) == 15
     doc = evaluate_map()
     assert doc["manifest_closed"] is False
     assert doc["n_packaged_energy_boxes"] == 6
@@ -197,3 +197,26 @@ def test_ucf_lunar_vise_is_day_only_2028() -> None:
     assert "Donaldson-Hanna" in nasa
     assert "University of Central Florida" in nasa
     assert "Blue Ghost 3" in nasa
+
+
+def test_moonranger_psr_is_not_lunar_night() -> None:
+    row = _by_id()["moonranger_cs6"]
+    assert row["label"] == "PSR_IN_HOST_DAY"
+    assert row["full_night_possible"] == "no"
+    assert row["window"] == "2029+"
+    assert row["store_Wh_printed"] is False
+    nasa = (ROOT / "sources" / "moonranger-cs6" / "nasa-cs6" / "page.html").read_text(
+        encoding="utf-8"
+    )
+    assert "permanently shadowed regions" in nasa
+    assert "MoonRanger" in nasa
+    fire = (
+        ROOT / "sources" / "moonranger-cs6" / "firefly-bgm4" / "page.html"
+    ).read_text(encoding="utf-8")
+    assert "more than 12 days on the lunar surface" in fire
+    assert "2029" in fire
+    cmu = (
+        ROOT / "sources" / "moonranger-cs6" / "cmu-2025-08" / "page.html"
+    ).read_text(encoding="utf-8")
+    assert "2029 mission to the moon" in cmu
+    assert "Carnegie Mellon" in cmu

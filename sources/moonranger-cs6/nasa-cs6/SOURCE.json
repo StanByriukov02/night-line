@@ -1,0 +1,23 @@
+{
+  "url": "https://science.nasa.gov/lunar-science/programs/clps/cs-6-science/",
+  "title": "NASA CS-6 Science: MoonRanger will brave PSRs with Neutron Spectrometer System; Firefly Blue Ghost 4 south pole",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "psr=true",
+    "store_Wh=NOT_PRINTED",
+    "P_night_W=NOT_PRINTED",
+    "H_night_h=NOT_PRINTED",
+    "host=Firefly_BGM4_CS-6"
+  ],
+  "quote": "MoonRanger will brave the coldest spots in the Moon’s PSRs (permanently shadowed regions)",
+  "fetched_utc": "2026-09-17T17:20:00Z",
+  "bytes": 313974,
+  "sha256": "2326393c4f0d92d1262fb7f0794b67029d18c0203b32f157c64158d9c0271d0c",
+  "sha256_by_file": {
+    "page.html": "2326393c4f0d92d1262fb7f0794b67029d18c0203b32f157c64158d9c0271d0c"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}
