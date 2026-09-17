@@ -21,11 +21,12 @@
   "redacted_personal_email": true,
   "sha256_by_file": {
     "page.pdf": "929d14b2c16c6d0cad08d17a142fa1f26c4b55e36e5146ba0f9afa7bed4c902b",
-    "page.txt": "3e3b442d76db249a28f4a94b8db9283571c32deca9479da6d2b247765fd2cf86"
+    "page.txt": "c315e04b0792345da1916b03fcd063282c338dfc50cec1e13930ab826bb59573"
   },
   "status_20260917": 200,
   "quote_P_electronics": "heating primarily provided through ~5W of dissipation from electronics needed to operate the seismometers through the night",
   "quote_battery": "Power for night operations is provided by a ~19 kg battery system which is charged by a solar array during the day.",
   "note": "Wh not printed. Do not convert 19 kg to Wh. Do not invent chemistry. Night length not printed.",
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

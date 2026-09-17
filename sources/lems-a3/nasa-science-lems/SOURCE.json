@@ -2,7 +2,7 @@
   "url": "https://science.nasa.gov/lems/",
   "fetched_utc": "2026-09-17T06:34:37Z",
   "title": "LEMS - NASA Science",
-  "sha256": "c25af7c845a030c84508008f536827551215ae3605af44cfec15a77b84238eb7",
+  "sha256": "146424a1017353e7efb8c40040416419ab1df78d873d81ce3a59a01eb6befc1d",
   "filename": "page.html",
   "bytes": 276973,
   "content_type": "text/html; charset=UTF-8",
@@ -14,8 +14,9 @@
   ],
   "redacted_personal_email": true,
   "sha256_by_file": {
-    "page.html": "c25af7c845a030c84508008f536827551215ae3605af44cfec15a77b84238eb7"
+    "page.html": "146424a1017353e7efb8c40040416419ab1df78d873d81ce3a59a01eb6befc1d"
   },
   "status_20260917": 200,
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

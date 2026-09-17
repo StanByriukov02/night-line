@@ -15,14 +15,15 @@
   "final_url": "https://www.zenopower.com/announcements/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night",
   "redacted_personal_email": true,
   "sha256_by_file": {
-    "page.html": "fcc40c3a4f4ff9f181ea0c92ceede6cd5ca60483e627d1e11c17784850f5a70f",
-    "page.txt": "a1400c108fcfc29fa1b57d522505f36af77b65bc84022b0e99786f1af0eea30e"
+    "page.html": "fd75f28a3f024fc57c0d89973d8826e8a1ea95b8e9d4909e120c3c6e06d468aa",
+    "page.txt": "8e4b21b2c2939b4744d0f71d69e245432d77d8e0a48e8075dae9872f29846a38"
   },
-  "sha256": "fcc40c3a4f4ff9f181ea0c92ceede6cd5ca60483e627d1e11c17784850f5a70f",
+  "sha256": "fd75f28a3f024fc57c0d89973d8826e8a1ea95b8e9d4909e120c3c6e06d468aa",
   "bytes": 74524,
   "fetched_utc": "2026-09-17T10:05:12Z",
   "note": "Same thermal/electrical split as Firefly PR. Electrical watts not printed.",
   "quote_thermal": "Zeno’s payload is comprised of a 5 Watts thermal americium-241 RHU and dedicated platform that includes structural, communications, electrical power, command and data handling, and thermal management subsystems.",
   "quote_net": "Scheduled to launch no earlier than 2028",
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

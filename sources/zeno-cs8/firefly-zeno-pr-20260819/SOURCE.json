@@ -21,10 +21,10 @@
   "final_url": "https://fireflyspace.com/news/firefly-aerospace-onboards-zeno-power-on-blue-ghost-mission-to-demonstrate-radioisotope-technologies-to-survive-the-lunar-night/",
   "redacted_personal_email": true,
   "sha256_by_file": {
-    "page.html": "327323a98b00be256e342c9b2476793601e8a7d6497f105c928ea592a4032fd2",
-    "page.txt": "97efd8e94134cce854a3412006dc19614bfa61a8138484b47ebd410e85103f72"
+    "page.html": "7c8e5b82ece302f681bd7b1bc0c0c0a17c80408b360aca379f4857cf90399cfa",
+    "page.txt": "74c96c471944c99f2f1460aeabd15afd175673e540a95e2aaaaa7107f9676b42"
   },
-  "sha256": "327323a98b00be256e342c9b2476793601e8a7d6497f105c928ea592a4032fd2",
+  "sha256": "7c8e5b82ece302f681bd7b1bc0c0c0a17c80408b360aca379f4857cf90399cfa",
   "bytes": 127123,
   "fetched_utc": "2026-09-17T10:05:12Z",
   "note": "5 Wt is heat (RHU), not electrical bus watts. Electrical keep-alive W not printed. Store Wh not printed. Firefly does not print CS-8. Does not print 400 W on this package. BGM1 is a different mission.",
@@ -33,5 +33,6 @@
   "quote_night_ops": "Zeno’s payload will then operate during the lunar night and transmit operational data back to Earth.",
   "quote_solar_day": "Upon landing, Blue Ghost will first operate multiple NASA CLPS payloads using solar power for the full lunar day, equivalent to approximately 14 Earth days.",
   "quote_heat": "The RHU generates passive thermal energy through the natural decay of radioactive material, providing continuous heat without relying on solar power.",
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

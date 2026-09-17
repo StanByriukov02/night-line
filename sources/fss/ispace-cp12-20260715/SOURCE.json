@@ -13,10 +13,11 @@
   "redacted_personal_email": true,
   "sha256_by_file": {
     "page.pdf": "f568976396180d18098adfdd39b9a5fe40f3afb6bf805afecb4282c13304e4bf",
-    "page.txt": "2ca311dcbab0f07a3d7b1a12690a03c729b82bc26cc444fb64ed0563274f3dd7"
+    "page.txt": "b0111a1b4f69e67fd8e58650f827b191ad2f31c27ef1bb8b7b1115846bb5eb1a"
   },
   "status_20260917": 200,
   "quote": "Draper has mutually agreed with NASA to end the Commercial Lunar Payload Services (CLPS) task order CP-12.",
   "note": "Termination printed. FSS re-flight not printed here. Re-flight UNVERIFIED. Do not mine LuSEE-Lite.",
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

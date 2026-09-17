@@ -2,7 +2,7 @@
   "url": "https://www.astrolab.space/flex-rover/",
   "fetched_utc": "2026-09-17T08:22:14Z",
   "title": "Astrolab FLEX rover: Venturi enclosure −90 to −230 C; 3 m2 array — FLEX not FLIP flight numbers",
-  "sha256": "129c09e268317b1d1807ada7d7a4ba6452aa5c8092e9ff6094a9bb435f8def0c",
+  "sha256": "cd86a623af91001c39c59dd937c85a3944e649dd1ac30b31487553382eaedb90",
   "filename": "page.html",
   "bytes": 68188,
   "content_type": "text/html; charset=UTF-8",
@@ -14,8 +14,9 @@
   ],
   "redacted_personal_email": true,
   "sha256_by_file": {
-    "page.html": "129c09e268317b1d1807ada7d7a4ba6452aa5c8092e9ff6094a9bb435f8def0c"
+    "page.html": "cd86a623af91001c39c59dd937c85a3944e649dd1ac30b31487553382eaedb90"
   },
   "status_20260917": 200,
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

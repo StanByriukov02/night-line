@@ -2,7 +2,7 @@
   "url": "https://www.astrolab.space/flip-rover/",
   "fetched_utc": "2026-09-17T08:22:14Z",
   "title": "Astrolab FLIP rover page: Venturi enclosure stores enough energy to survive the lunar night",
-  "sha256": "17843e7d2a0912e79bcced0dba22b8079c522e8df31a5ee0c1b46fb5ab0f67d6",
+  "sha256": "7484cf5408bda4b6ce60ccb7f09f7bc6b5b49857f7419fc5a83d2298183882f6",
   "filename": "page.html",
   "bytes": 47676,
   "content_type": "text/html; charset=UTF-8",
@@ -15,8 +15,9 @@
   ],
   "redacted_personal_email": true,
   "sha256_by_file": {
-    "page.html": "17843e7d2a0912e79bcced0dba22b8079c522e8df31a5ee0c1b46fb5ab0f67d6"
+    "page.html": "7484cf5408bda4b6ce60ccb7f09f7bc6b5b49857f7419fc5a83d2298183882f6"
   },
   "status_20260917": 200,
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

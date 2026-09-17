@@ -50,8 +50,9 @@
   "extract": "page.txt",
   "sha256_by_file": {
     "page.pdf": "20a74e2de45184de5538aff496b2998ec21b68abdb30d4688d6c28ce80b4e882",
-    "page.txt": "f62197ba4ae87c170c0996f272d848732b4f9a3aa6ffec96d460f3f064708314"
+    "page.txt": "f708c0243a4e02c1cc33320d1e09c284c0730013dc4311350e1897407921944e"
   },
   "status_20260917": 200,
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

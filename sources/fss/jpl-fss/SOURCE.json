@@ -17,11 +17,12 @@
   "redacted_personal_email": true,
   "sha256_by_file": {
     "page.html": "42fa7e7b2c7730ca84c6f8a9bef9281f5109a4f2b01a8e0892b34c80501a28fc",
-    "page.txt": "665d01fa07ab831e5ea319e84770156d7a9e50a53b8f4fc95c284a7d99875e38"
+    "page.txt": "7ce8b0bffb6d588d90d4eae6e8a7d6d967ff1fa6ec406a5eb39559755113ace4"
   },
   "status_20260917": 200,
   "quote_lifetime": "It will operate for at least 4½ months, providing a long-lived seismic experiment capable of answering key scientific questions.",
   "quote_cube": "Using a cube-within-a-cube design, FSS is packaged as a self-sufficient payload, with independent power, communications, and thermal control to enable survival through the Moon's frigid nights and searing days.",
   "note": "Launch 2027 still listed after CP-12 termination. No W/Wh. Site temperature not printed. PALETTE toolbox not mixed.",
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

@@ -27,5 +27,10 @@
   "status_20260917": {
     "https://fireflyspace.com/missions/blue-ghost-mission-2/": 200
   },
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "sha256_by_file": {
+    "page.html": "3d21ce7f5c4cfeb108a768551d7088b625b94b60bda671cc4c817060f15f4cae",
+    "page.txt": "a37d1ab67115779c8d8fba316190709cf319ef6d5ea6449d4a534ac7c6695d34"
+  },
+  "hash_newline": "lf"
 }

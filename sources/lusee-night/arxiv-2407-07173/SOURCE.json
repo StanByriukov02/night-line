@@ -65,5 +65,12 @@
     "https://arxiv.org/html/2407.07173": 200
   },
   "omitted_binaries": [],
-  "redacted_personal_email": true
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.html": "dbaff9a2a00bb420f503e3f1fd28be52035f2f7d7f3111bb24c2be87091eac67",
+    "page.pdf": "5b7372da61406ddf391d300a1e2253150197bdf7c153b404dcfa3f357476b755",
+    "page.txt": "b05da82603c62ff9bc105350705de61f5b4b3e64c96bb21ad258a9d2bea75382",
+    "pdf.txt": "2dda4d09d44efc597abf15a599726f7ed0b693afa21e5dd834a05615c230b492"
+  },
+  "hash_newline": "lf"
 }

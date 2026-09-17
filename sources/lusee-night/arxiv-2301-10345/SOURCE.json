@@ -47,5 +47,12 @@
       "url": "https://arxiv.org/pdf/2301.10345"
     }
   ],
-  "redacted_personal_email": true
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.html": "b7dafd45617d7bf33482a9fd11be07ce4bcde93e6472fe3e82943591e9b817ba",
+    "page.pdf": "1d53178bd8e3197958b8fd08985b90001617fd4210b6e2d89644ff7b90cf67df",
+    "page.txt": "9143e22e25ae13f6c9ad14a26a40e0f4965ab1c55afa96f72f9d983b4955bfff",
+    "pdf.txt": "69f3182489c9bd7af192630fba72fde339aac43d9d82a5f4eec08030552df81b"
+  },
+  "hash_newline": "lf"
 }

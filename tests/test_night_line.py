@@ -28,6 +28,16 @@ PKG = Path(__file__).resolve().parents[1] / "night_line"
 OUT = Path(__file__).resolve().parents[1] / "out"
 
 
+def test_text_sha_ignores_crlf(tmp_path: Path) -> None:
+    from night_line.verify import _sha256
+
+    a = tmp_path / "a.txt"
+    b = tmp_path / "b.txt"
+    a.write_bytes(b"hello\r\nworld\n")
+    b.write_bytes(b"hello\nworld\n")
+    assert _sha256(a) == _sha256(b)
+
+
 def test_no_kitchen_imports() -> None:
     for p in PKG.rglob("*.py"):
         tree = ast.parse(p.read_text(encoding="utf-8"))
@@ -142,8 +152,9 @@ def test_lems_a3_published_line() -> None:
     assert "0.828 m²" in text or "0.828 m2" in text
     receipt = (OUT / "lems_a3" / "RECEIPT.txt").read_text(encoding="utf-8")
     assert "LIVE (edge)" in receipt
-    assert written["verify"]["ok"] is True
-    assert written["verify"]["ladder_recompute_ok"] is True
+    v = written["verify"]
+    assert v["ok"] is True, v
+    assert v["ladder_recompute_ok"] is True
 
 
 def test_lusee_night_published_ladder() -> None:
@@ -165,10 +176,11 @@ def test_lusee_night_published_ladder() -> None:
     assert "21.83" in text
     assert "15.28" in text
     assert "17.34" in text
-    assert written["verify"]["ok"] is True
-    assert written["verify"]["independent_ladder"]["derated"]
-    assert abs(written["verify"]["independent_ladder"]["derated"] - 13.20) < 0.01
-    assert abs(written["verify"]["independent_ladder"]["soc8"] - 17.34) < 0.01
+    v = written["verify"]
+    assert v["ok"] is True, v
+    assert v["independent_ladder"]["derated"]
+    assert abs(v["independent_ladder"]["derated"] - 13.20) < 0.01
+    assert abs(v["independent_ladder"]["soc8"] - 17.34) < 0.01
 
 
 LEMS_MARK = {

@@ -29,5 +29,10 @@
     "https://science.nasa.gov/lunar-science/clps-deliveries/cs-3/": 200
   },
   "omitted_binaries": [],
-  "redacted_personal_email": true
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.html": "a5ee3ac4e3ba54b572590aa967a7576168894c36bb1300a43bd72291b27ea8dc",
+    "page.txt": "20950d77e241431241fb84613d56ed3f24bf16fa4823688c1f7ce713df62a413"
+  },
+  "hash_newline": "lf"
 }

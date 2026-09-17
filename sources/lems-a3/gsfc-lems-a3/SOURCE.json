@@ -2,7 +2,7 @@
   "url": "https://science.gsfc.nasa.gov/solarsystem/projects/635",
   "fetched_utc": "2026-09-17T06:34:37Z",
   "title": "Lunar Environment Monitoring Station for Artemis 3 (LEMS-A3) | NASA GSFC",
-  "sha256": "a52fd36a1f9b8205eca7d1c8f1dcfeba4d19a37f6e1815add90b04df4aad6913",
+  "sha256": "dcad41431ff4a256a5a69c55c0ad7665958c9d2ea3f283e539f5be77ff3211f8",
   "filename": "page.html",
   "bytes": 246760,
   "content_type": "text/html; charset=utf-8",
@@ -13,8 +13,9 @@
   ],
   "redacted_personal_email": true,
   "sha256_by_file": {
-    "page.html": "a52fd36a1f9b8205eca7d1c8f1dcfeba4d19a37f6e1815add90b04df4aad6913"
+    "page.html": "dcad41431ff4a256a5a69c55c0ad7665958c9d2ea3f283e539f5be77ff3211f8"
   },
   "status_20260917": 200,
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

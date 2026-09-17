@@ -13,8 +13,9 @@
   ],
   "sha256_by_file": {
     "page.pdf": "09f40aed68b593192016c2a0b654fb7b8082fa846cef698a5630e7219ca3d001",
-    "page.txt": "46ab76766034837327f64f7a67dd71478a7aa3b9c49dae627233511dd7aa7294"
+    "page.txt": "9a22b2571b9bb7f35d68aaae797cb3e784b0d0c15e0573d391b2009583f284c1"
   },
   "status_20260917": 200,
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

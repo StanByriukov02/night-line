@@ -11,10 +11,51 @@ from urllib.request import Request, urlopen
 from night_line.nist import k_integral_w_m
 
 SIGMA_W_M2_K4 = 5.670374419e-8
+TEXT_SUFFIXES = {".txt", ".html", ".htm", ".md", ".csv", ".json", ".xml"}
+
+
+def canonical_bytes(path: Path) -> bytes:
+    """Hash text as LF so Windows CRLF and Linux checkout agree."""
+    raw = path.read_bytes()
+    if path.suffix.lower() in TEXT_SUFFIXES:
+        return raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return raw
 
 
 def _sha256(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    return hashlib.sha256(canonical_bytes(path)).hexdigest()
+
+
+def refresh_source_hashes(root: Path) -> int:
+    """Rewrite sha256_by_file to canonical LF hashes. Returns files changed."""
+    sources = root / "sources"
+    if not sources.is_dir():
+        return 0
+    n = 0
+    for srcp in sorted(sources.rglob("SOURCE.json")):
+        rec = json.loads(srcp.read_text(encoding="utf-8"))
+        by = dict(rec.get("sha256_by_file") or rec.get("saved_sha256") or {})
+        changed = False
+        for f in sorted(srcp.parent.iterdir(), key=lambda p: p.name.lower()):
+            if not f.is_file() or f.name == "SOURCE.json":
+                continue
+            digest = _sha256(f)
+            if by.get(f.name) != digest:
+                by[f.name] = digest
+                changed = True
+            if rec.get("filename") == f.name and rec.get("sha256") != digest:
+                rec["sha256"] = digest
+                changed = True
+        rec["sha256_by_file"] = by
+        rec["hash_newline"] = "lf"
+        if changed:
+            srcp.write_text(
+                json.dumps(rec, indent=2, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+                newline="\n",
+            )
+            n += 1
+    return n
 
 
 def _source_hashes(folder: Path) -> dict[str, Any]:

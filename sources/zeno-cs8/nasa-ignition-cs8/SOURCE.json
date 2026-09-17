@@ -17,15 +17,16 @@
   "final_url": "https://www.nasa.gov/ignition/",
   "redacted_personal_email": true,
   "sha256_by_file": {
-    "page.html": "9259dc200ed23407b5597e873e0aca6921a3d5f8f61be59b7d855141e2fcc3fe",
-    "page.txt": "aa21f6585efe745c3a5e97ed4a68501302ad1828291cc362c994999e3a7ad199"
+    "page.html": "e635d6022a9fa4e4ce82034166703eec6621fe7e2b13caf8dff1a9874f29d6b6",
+    "page.txt": "ce8f7309c51ee9012dc89efba3a00ab2d9749c4ead8b5cd6708cd13ac4d7962c"
   },
-  "sha256": "9259dc200ed23407b5597e873e0aca6921a3d5f8f61be59b7d855141e2fcc3fe",
+  "sha256": "e635d6022a9fa4e4ce82034166703eec6621fe7e2b13caf8dff1a9874f29d6b6",
   "bytes": 377698,
   "fetched_utc": "2026-09-17T10:05:12Z",
   "note": "CS-8 bonus is duration+transmit, not leftover Wh. Hours not printed. 120 h secondary reporting not used. Does not print 5 Wt or 400 W.",
   "quote_bonus": "NASA has included a performance bonus for contractors who successfully demonstrate “survive the night” capabilities by deploying a radioisotope device and transmitting signals from the lunar surface after enduring a full lunar night.",
   "quote_readiness": "ensuring readiness for deployment by the end of 2028",
   "quote_fy": "deliveries through Fiscal Year 2029",
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }

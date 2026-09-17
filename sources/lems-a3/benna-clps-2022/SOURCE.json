@@ -14,7 +14,7 @@
   ],
   "sha256_by_file": {
     "page.pdf": "8c0d752a030a9bc3ea42004b5033b9e805b191cf971af82a96b90f159569aa35",
-    "page.txt": "d15f182ee37287716e6634e4dffa658eddf656a35cb7270a0690ee1fbb715608"
+    "page.txt": "6fac104758984532e0fa04788d25599313c029a65fdb1cbc95dc59ff94a46ec0"
   },
   "status_20260917": 200,
   "omitted_binaries": [
@@ -25,5 +25,6 @@
       "sha256": "8c0d752a030a9bc3ea42004b5033b9e805b191cf971af82a96b90f159569aa35",
       "url": "https://www.hou.usra.edu/meetings/clps2022/presentations/003_Benna.pdf"
     }
-  ]
+  ],
+  "hash_newline": "lf"
 }

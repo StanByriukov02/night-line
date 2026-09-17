@@ -41,5 +41,10 @@
       "sha256": "c06e22e1987369bbef58fc9c6b72a91df5ea65055fd8b53285beab27a47a2f22",
       "url": "https://doi.org/10.5281/zenodo.8173062"
     }
-  ]
+  ],
+  "sha256_by_file": {
+    "page.pdf": "c06e22e1987369bbef58fc9c6b72a91df5ea65055fd8b53285beab27a47a2f22",
+    "pdf.txt": "4f7baad0ab474f7052390b8494d67894f19124aee908a8405052473a826a9168"
+  },
+  "hash_newline": "lf"
 }

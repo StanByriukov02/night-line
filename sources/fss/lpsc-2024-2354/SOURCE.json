@@ -18,11 +18,12 @@
   "redacted_personal_email": true,
   "sha256_by_file": {
     "page.pdf": "a4a59a29a40277401fde493136a928078fca705648dd8347ab3c6c33a5f73342",
-    "page.txt": "d6dffa075354635d983f481e860191017de94c72e626ff8eb60f3f776fd5914d"
+    "page.txt": "df7eba6a3fc8c95c7a0c828450c88f86a5a5a5c15e9c6eadd12cb9a49cf14b5b"
   },
   "status_20260917": 200,
   "quote_inner_cube": "The inner cube houses all of the seismometers, the battery, the avionics and instrument electronics.",
   "quote_ti": "the inner cube will be mounted within the outer cube using titanium tube supports",
   "note": "Does not reprint ~5 W or ~19 kg. No Wh. Titanium named; alloy OPEN. Do not mix PALETTE toolbox.",
-  "omitted_binaries": []
+  "omitted_binaries": [],
+  "hash_newline": "lf"
 }
