@@ -1,0 +1,21 @@
+{
+  "url": "https://www.lpi.usra.edu/lpi/contribution_docs/LPI-002106.pdf",
+  "fetched_utc": "2026-09-17T09:22:00Z",
+  "title": "Cataldo & Mason 2018 LPI Contrib. 2106: 354 h of sunlight and 354 h of darkness",
+  "sha256": "1fb102636c5266525751f3168bdc3c6024667df703af9e97d354b77a430da617",
+  "filename": "page.pdf",
+  "bytes": 4853546,
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "hours_night=354",
+    "hours_sunlight=354"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.pdf": "1fb102636c5266525751f3168bdc3c6024667df703af9e97d354b77a430da617"
+  },
+  "status_20260917": 200,
+  "quote": "A complete lunar day cycle is 354 hours of sunlight and 354 hours of darkness.",
+  "note": "FSS abstracts do not print a night length. 354 h is Cataldo/Mason darkness, not a Schrödinger site-specific night.",
+  "omitted_binaries": []
+}

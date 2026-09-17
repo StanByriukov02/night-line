@@ -1,0 +1,28 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/lpsc2024/pdf/2354.pdf",
+  "fetched_utc": "2026-09-17T09:22:00Z",
+  "title": "LPSC 2024 2354: Farside Seismic Suite status update",
+  "sha256": "a4a59a29a40277401fde493136a928078fca705648dd8347ab3c6c33a5f73342",
+  "filename": "page.pdf",
+  "bytes": 3045792,
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "P_electronics_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED",
+    "battery_mass_kg=NOT_PRINTED",
+    "lifetime_months=4.5",
+    "site=Schrodinger_Basin",
+    "cube_in_cube=true",
+    "titanium_tube_supports=named_alloy_OPEN"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.pdf": "a4a59a29a40277401fde493136a928078fca705648dd8347ab3c6c33a5f73342",
+    "page.txt": "d6dffa075354635d983f481e860191017de94c72e626ff8eb60f3f776fd5914d"
+  },
+  "status_20260917": 200,
+  "quote_inner_cube": "The inner cube houses all of the seismometers, the battery, the avionics and instrument electronics.",
+  "quote_ti": "the inner cube will be mounted within the outer cube using titanium tube supports",
+  "note": "Does not reprint ~5 W or ~19 kg. No Wh. Titanium named; alloy OPEN. Do not mix PALETTE toolbox.",
+  "omitted_binaries": []
+}

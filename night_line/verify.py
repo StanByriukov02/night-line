@@ -197,6 +197,37 @@ def verify_box(
     else:
         indep = None
 
+    if rec.get("label") == "LIVE_IF_STORE_ABOVE":
+        p_load = float(rec["P_keepalive_W"])
+        h = float(rec["H_night_h"])
+        nameplate = p_load * h
+        if abs(float(rec["nameplate_line_Wh"]) - nameplate) > 1e-9:
+            ladder_ok = False
+        for i, row in enumerate(rec.get("identity_table") or []):
+            if i == 0:
+                expect = nameplate
+                if "OPEN" not in str(row.get("reserve_label") or ""):
+                    ladder_ok = False
+            else:
+                expect = nameplate / 0.70
+                if "ASSUMED" not in str(row.get("reserve_label") or ""):
+                    ladder_ok = False
+            if abs(float(row["nameplate_line_Wh"]) - expect) > 1e-6:
+                ladder_ok = False
+            if abs(float(row["usable_Wh"]) - nameplate) > 1e-9:
+                ladder_ok = False
+        return {
+            "sources_sha256_ok": sources_ok,
+            "ladder_recompute_ok": ladder_ok,
+            "independent_ladder": None,
+            "independent_worst_corner": None,
+            "url_status": url_status,
+            "source_files": hash_rows,
+            "open_upward_knobs": ["store_Wh"],
+            "plain_LIVE_forbidden": True,
+            "ok": sources_ok and ladder_ok,
+        }
+
     if rec.get("label") == "LINE_OPEN_TWO_KNOBS":
         for row in rec.get("identity_table") or []:
             kwh = float(row["nameplate_kWh"])

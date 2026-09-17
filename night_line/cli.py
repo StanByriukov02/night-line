@@ -8,7 +8,15 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from night_line.model import ROOT, evaluate, load_box, packaged_boxes
+from night_line.model import (
+    IDENTITY_STORE_LINE,
+    LINE_OPEN_TWO_KNOBS,
+    LIVE_IF_STORE_ABOVE,
+    ROOT,
+    evaluate,
+    load_box,
+    packaged_boxes,
+)
 from night_line.verify import verify_box
 
 OUT_DEFAULT = ROOT / "out"
@@ -32,7 +40,7 @@ def write_line_md(rec: dict[str, Any], dest: Path) -> None:
     h_night = float(rec["H_night_h"])
     label = _label_line(rec)
     box = rec["box"]
-    if rec["label"] == "LINE_OPEN_TWO_KNOBS":
+    if rec["label"] == LINE_OPEN_TWO_KNOBS:
         table = rec.get("identity_table") or []
         lines = [
             f"# {box} Night Line — 2026-09-17",
@@ -57,6 +65,51 @@ def write_line_md(rec: dict[str, Any], dest: Path) -> None:
                 "",
                 "30% nameplate reserve on every row is **ASSUMED**, not printed. "
                 "no store is chosen",
+                "",
+                "The label is not a claim that the box will live. "
+                "The human who can lose the box signs. No measurement by us; all values printed "
+                "by the team or NIST.",
+                "",
+            ]
+        )
+        dest.write_text("\n".join(lines), encoding="utf-8")
+        return
+    if rec["label"] == LIVE_IF_STORE_ABOVE:
+        table = rec.get("identity_table") or []
+        p_load = rec.get("P_keepalive_W")
+        nameplate = rec.get("nameplate_line_Wh")
+        lines = [
+            f"# {box} Night Line — 2026-09-17",
+            "",
+            f"**Label: {label}**",
+            "",
+            f"Lives iff night store > {float(nameplate):.0f} Wh "
+            f"(printed ~{p_load:g} W × {h_night:g} h). "
+            "Reserve OPEN — SOC/efficiency not printed. "
+            "~19 kg battery is mass, not watt-hours.",
+            "",
+            f"`{rec.get('identity') or IDENTITY_STORE_LINE}`",
+            f"Printed overnight electronics **{p_load:g} W** × H_night **{h_night:g} h** "
+            f"(Cataldo/Mason) = **{float(nameplate):.0f} Wh** nameplate. "
+            "Store **OPEN**. Reserve **OPEN**.",
+            "",
+            "SOC/efficiency not printed. Nameplate 1770 Wh stands. "
+            "The 30% ConOps row is **ASSUMED** — usable line is a higher store, "
+            "not a picked Wh.",
+            "",
+            "| reserve | nameplate store Wh | usable Wh | label |",
+            "|---|---|---|---|",
+        ]
+        for row in table:
+            frac = float(row["reserve_frac"])
+            lines.append(
+                f"| {frac:.0%} | {float(row['nameplate_line_Wh']):.2f} | "
+                f"{float(row['usable_Wh']):.2f} | {row['reserve_label']} |"
+            )
+        lines.extend(
+            [
+                "",
+                "Do not convert 19 kg to Wh. Do not pick the ASSUMED nameplate.",
                 "",
                 "The label is not a claim that the box will live. "
                 "The human who can lose the box signs. No measurement by us; all values printed "
@@ -241,7 +294,7 @@ def write_inputs_csv(fix: dict[str, Any], rec: dict[str, Any], dest: Path) -> No
                     "cite": f"hours={_fmt(b.get('hours'))}; {b.get('held')}",
                 }
             )
-        if rec.get("label") == "LINE_OPEN_TWO_KNOBS":
+        if rec.get("label") == LINE_OPEN_TWO_KNOBS:
             w.writerow(
                 {
                     "input": "identity_line",
@@ -268,6 +321,32 @@ def write_inputs_csv(fix: dict[str, Any], rec: dict[str, Any], dest: Path) -> No
                         "cite": row["reserve_label"],
                     }
                 )
+        if rec.get("label") == LIVE_IF_STORE_ABOVE:
+            w.writerow(
+                {
+                    "input": "identity_line",
+                    "value": rec.get("identity") or IDENTITY_STORE_LINE,
+                    "unit": "",
+                    "cite": rec.get("identity_line") or "",
+                }
+            )
+            w.writerow(
+                {
+                    "input": "nameplate_line_Wh",
+                    "value": f"{float(rec['nameplate_line_Wh']):.6g}",
+                    "unit": "Wh",
+                    "cite": "printed load × H_night; store OPEN",
+                }
+            )
+            for i, row in enumerate(rec.get("identity_table") or []):
+                w.writerow(
+                    {
+                        "input": f"store_line_{i}_nameplate_Wh",
+                        "value": f"{float(row['nameplate_line_Wh']):.6g}",
+                        "unit": "Wh",
+                        "cite": row["reserve_label"],
+                    }
+                )
 
 
 def write_receipt(rec: dict[str, Any], report: dict[str, Any], dest: Path) -> None:
@@ -277,13 +356,25 @@ def write_receipt(rec: dict[str, Any], report: dict[str, Any], dest: Path) -> No
         f"box {rec['box_id']}",
         f"label {rec['label_display']}",
     ]
-    if rec.get("label") == "LINE_OPEN_TWO_KNOBS":
+    if rec.get("label") == LINE_OPEN_TWO_KNOBS:
         rows.append(str(rec.get("identity_line") or rec.get("identity") or ""))
         rows.append("no store is chosen")
         for row in rec.get("identity_table") or []:
             rows.append(
                 f"ASSUMED {row['nameplate_kWh']:g} kWh  usable {row['usable_Wh']:.2f} Wh  "
                 f"load {row['max_avg_hibernation_load_W']:.2f} W"
+            )
+    elif rec.get("label") == LIVE_IF_STORE_ABOVE:
+        rows.append(str(rec.get("identity_line") or rec.get("identity") or ""))
+        rows.append(
+            f"nameplate {float(rec['nameplate_line_Wh']):.2f} Wh  "
+            f"load {rec['P_keepalive_W']:g} W × {h_night:g} h"
+        )
+        for row in rec.get("identity_table") or []:
+            tag = "ASSUMED" if "ASSUMED" in str(row.get("reserve_label") or "") else "OPEN"
+            rows.append(
+                f"{tag} nameplate {float(row['nameplate_line_Wh']):.2f} Wh  "
+                f"usable {float(row['usable_Wh']):.2f} Wh"
             )
     else:
         hi = rec["hi"]
@@ -360,7 +451,7 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     for path in paths:
         rec = run_one(path, args.out)
-        if rec.get("label") == "LINE_OPEN_TWO_KNOBS":
+        if rec.get("label") in (LINE_OPEN_TWO_KNOBS, LIVE_IF_STORE_ABOVE):
             print(rec["box_id"], rec["label_display"])
             continue
         print(

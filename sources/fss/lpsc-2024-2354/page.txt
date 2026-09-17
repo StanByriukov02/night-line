@@ -1,0 +1,104 @@
+55th LPSC (2024)                                                                                                           2354.pdf
+
+
+
+       Farside Seismic Suite: Update on the status of the first seismic station on the farside of the Moon. M. P.
+       Panning1, Sharon Kedar1, Asad Aboobaker1, Glenn Aveni2, Kevin Biernacki3, Neil Bowles4, Simon Calcutt4, Gabrielle
+       Chabaud2, Melanie Drilleau5, Taoufik Gabsi2, Raphael Garcia5, Charlotte Giroud6, Alain Givaudan3, Anna Horleston7,
+       Maurice Karakak3, Taichi Kawamura2, Thelma Lestage8, Phillipe Lognonné2,9, Josipa Majstorovic9, Ed Miller1, David
+       Mimoun5, Tanguy Nebut2, Ceri Nunn1, Sreejaya Kizhaekke Pakkathillam2,9, Constanza Pardo2, W. Tom Pike10,
+       Gabriel Pont11, Sebastien de Raucourt2, Olivier Robert2, Daniel Sheward12, Sylvain Tillier2, Renee Weber13, and
+       Arnaud Wilhelm5 1Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Dr., Pasadena, CA
+       91109, USA, 2Institut de Physique du Globe, Paris, France, 3Astroparticule et Cosmologie (APC), France, 4University
+       of Oxford, UK, 5ISAE Supaero, France, 6ESTACA, France, 7University of Bristol, UK, 8Hensoldt Space Consulting,
+       France, 9Université Paris Cité, France, 10Imperial College, London, UK, 11CNES, France, 12Observatoire de la Côte
+       d’Azur, France, 13NASA Marshall Space Flight Center
+
+           Introduction: The Farside Seismic Suite (FSS),          which the flight unit will be kept in storage until
+       selected in 2021 for flight as part of the NASA PRISM       integration on the lander, which is planned for 2025 to
+       (Payloads and Research Investigations on the Surface of     prepare for a launch to the Moon in 2026.
+       the Moon) program and planned for flight in 2026 on a
+       lander provided by a group led by the commercial
+       vendor Draper, would deliver two seismometers (both
+       flight-proven through the InSight mission to Mars [1])
+       to Schrödinger Basin, as part of a package of payloads
+       called CP-12 by NASA. The vertical Very BroadBand
+       (VBB) seismometer, provided by CNES with design
+       work from IPG, Paris, is the most sensitive flight-ready
+       seismometer ever built [2], while the Short Period (SP)
+       sensor, delivered by Kinemetrics, Inc. with design work
+       at Imperial College, London and Oxford Unviersity, is
+       the most sensitive and mature compact triaxial sensor
+       available for space application [2]. FSS delivers a self-
+       sufficient payload, with independent power,                 Figure 1. FSS will return data from Schrödinger Basin
+       communications and thermal control allowing survival        over multiple lunar diurnal cycles after outliving the
+       and operation over the long lunar night independent of      delivery lander. FSS provides: (1) The first seismic data
+       the lander which it will outlive.                           probing the deep lunar interior and determining the
+           CP-12 also includes a magnetotelluric sounding          differences between near and farside activity (green);
+       system [3] and heat flow probe [4], meaning that CP-12      (2) Measurement of crustal thickness and layering that
+       represents deployment of most key geophysical               illuminates the process of crater formation (pink); (3)
+       instrumentation proposed for the Lunar Geophysical          Current micrometeorite impact rate through recording
+       Network [5]. While FSS is only originally proposed to       of background seismic vibrations (blue). Figure
+       last 4.5 months, the basic thermal design suggests a        adapted from [7] and [8].Lander image courtesy of
+       powerful path forward to implement a lunar seismic          Draper Labs.
+       network using relatively small payloads with seismic
+       instrumentation designed for multi-year survival                The FSS design consists of a cube within a cube
+       delivered by affordable, short-lived landers.               (Figure 2, top). The inner cube houses all of the
+           FSS science is described in more detail in previous     seismometers, the battery, the avionics and instrument
+       LPSC abstracts [e.g. 6]. In short, FSS was designed to      electronics. The outer cube allows for mounting to the
+       meet 3 key science objectives (Fig. 1):                     lander deck as well as supporting the solar array,
+           1. Investigate deep lunar structure and the             radiator, and S band antenna for communications with a
+       difference between near and farside activity.               Draper-provided relay satellite. Between the cubes,
+           2. Understand how the lunar crust is affected by the    several layers of spacerless multi-layer insulation (MLI)
+       development of an impact melt basin.                        provides thermal control with a thermal switch and mini
+           3. Evaluate the current micrometeorite impact rate      loop heat pipe linking the inner assembly to the radiator
+       and local tectonic activity at Schrödinger Basin.           permitting both efficient heat transport during the hot
+           Current Status: The FSS flight model is currently       lunar day and effective insulation during the cold lunar
+       in final integration and testing (I&T). Environmental       night. As of early January, 2024, the inner cube has been
+       testing is expected to be completed in early 2024, after
+55th LPSC (2024)                                                                                                           2354.pdf
+
+
+
+       fully assembled (Figure 2, middle), allowing for initial       Upcoming I&T work: In the coming few months,
+       tests of system and instrument functionality as well as    the inner cube will be mounted within the outer cube
+       electromagnetic conductance and radiation testing          using titanium tube supports, and the MLI, solar array,
+       (Figure 2, bottom).                                        radiator, and radio antenna will be mounted. At that
+                                                                  point, assembly will be complete, and vibration, as well
+                                                                  as thermal and vacuum testing will be performed. Upon
+                                                                  successful completion of testing and post-
+                                                                  environmental functional verification, FSS will be
+                                                                  moved into storage at JPL until Draper is ready for
+                                              battery             payload integration on the lander (anticipated in 2025).
+                                                                      Acknowledgments: This work was partially carried
+                                                                  out at the Jet Propulsion Laboratory, California Institute
+                                                                  of Technology, under a contract with the National
+                                                                  Aeronautics and Space Administration. Farside Seismic
+                   SP                                             Suite is funded through the NASA PRISM program.
+                                 VBB
+                                                                  ©2023, California Institute of Technology. Government
+                                                                  sponsorship acknowledged.
+                                                                      References: [1] Banerdt W. B. et al. (2020) Nature
+                                                                  Geo. 13, 183-189, [2] Lognonné P. et al. (2019) Space
+                                                                  Sci. Rev. 215, 12, [3] Grimm, R. E. and G. T. Delory
+                                                                  (2012) Adv. Space Sci. 50, 1687-1701, [4] Nagihara, S.
+                                                                  et al. (2020) LPSC 51, Abstract #1432, [5] Neal, C. R.
+                                                                  et al. (2020) LGN PMCS final report, [6] Panning, M.
+                                                                  P. et al. (2022) LPSC 53, Abstract #1576, [7] Wieczorek
+                                                                  (2009) Elements 5, 35-40, [8] Kring D. A. et al. (2016)
+                                                                  Nature Comm. 7, 13161
+
+
+
+
+       Figure 2. (Top) CAD rendering of FSS design
+       illustrating the cube within a cube design.. (Middle)
+       Image of a partial flight assembly of the inner cube,
+       clearly showing the flight instruments and battery pack.
+       The completed inner cube assembly also includes
+       avionics, instrument electronics, and a loop heat pipe
+       and thermal switch. (Bottom) Completed inner cube
+       assembly mounted on tilt fixture allowing for testing of
+       seismometer with simulated lunar gravity along the
+       sensing axis.
+

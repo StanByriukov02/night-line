@@ -1,0 +1,165 @@
+Farside Seismic Suite | NASA Jet Propulsion Laboratory (JPL)
+Skip to main content
+JPL
+Careers
+Education
+Science & Technology
+About JPL
+Missions
+News
+Galleries
+Events
+Visit
+Topics
+Farside Seismic Suite
+Farside Seismic Suite
+Farside Seismic Suite will deliver two sensitive seismometers to the far side of the Moon, where they will measure far-side moonquakes and meteor impacts for the first time ever.
+Mission Statistics
+Launch Date
+2027
+Target
+Earth's Moon
+Status
+Future
+About the mission
+Arriving at Schrödinger basin via a lunar lander as part of NASA’s CLPS (Commercial Lunar Payload Services) initiative, FSS will record the agency’s first seismic data from the Moon since the Apollo missions nearly 50 years ago.
+The solar-powered suite’s vertical Very Broadband (VBB) seismometer, contributed by the French space agency CNES (Centre National d’Études Spatiales), was originally constructed as a flight spare for NASA’s InSight Mars lander. The most sensitive seismometer ever built for use in space exploration, the VBB can detect ground motions smaller than the size of a single hydrogen atom. The Short Period (SP) sensor on FSS, based on a design used on InSight, was built by Kinemetrics in collaboration with the University of Oxford and Imperial College, London. The SP is the most sensitive and mature compact triaxial sensor available for space applications.
+Using a cube-within-a-cube design, FSS is packaged as a self-sufficient payload, with independent power, communications, and thermal control to enable survival through the Moon’s frigid nights and searing days. It will operate for at least 4½ months, providing a long-lived seismic experiment capable of answering key scientific questions.
+Data from FSS will help define the interior structure of the Moon, information critical to understanding how rocky planetary bodies are formed. It will help scientists explain why Apollo data showed few quakes on the far side of the Moon, determining the differences between near-side and far-side seismic activity. And the suite will record the Moon’s seismic “background” vibration, which is driven by micrometeorite impacts. That will help determine how often these tiny rocks strike the surface — a key insight as NASA prepares to send Artemis astronauts to the lunar surface.
+More about Solar System
+Image
+.
+Curiosity Postcard Celebrates Rover’s 5,000th Day on Mars
+Video
+.
+What's Up: September 2026 Skywatching Tips from NASA
+Image
+.
+Ribbon-Cutting Event for NASA Deep Space Network’s Deep Space Station 23
+Image
+.
+Panorama Showcasing the 34-Meter Antennas of the DSN’s Goldstone Complex
+Image
+.
+NASA Deep Space Network’s New Goldstone Antenna Goes Online
+Image
+.
+Perseverance Captures Another Phobos Transit
+News
+.
+NASA’s Perseverance Rover Watches Earth Vanish Behind Martian Moon
+News
+.
+NASA Engineers Help Prolong Voyager 2’s Science Mission
+Image
+.
+NASA’s Perseverance Captures Phobos and Earth
+Video
+.
+What's Up: August 2026 Skywatching Tips from NASA
+Explore Other Missions
+Genesis
+Juno
+Infrared Astronomical Satellite
+Cassini-Huygens
+Europa Clipper
+Galileo
+Europa Lander
+Dawn
+Magellan
+GRAIL
+About JPL
+Who We Are
+Directors
+Careers
+Internships
+The JPL Story
+JPL Achievements
+Documentary Series
+JPL Annual Report
+Executive Council
+Missions
+Current
+Past
+Future
+All
+News
+All
+Earth
+Solar System
+Stars and Galaxies
+Eyes on the News
+Subscribe to JPL News
+Galleries
+Images
+Videos
+Audio
+Podcasts
+Apps
+Visions of the Future
+Slice of History
+Robotics at JPL
+Events
+Lecture Series
+Speakers Bureau
+Calendar
+Explore JPL
+Visit
+Public Tours
+Virtual Tour
+Directions and Maps
+Explore JPL
+Topics
+JPL Life
+Solar System
+Mars
+Earth
+Climate Change
+Exoplanets
+Stars and Galaxies
+Robotics
+More
+Asteroid Watch
+NASA's Eyes Visualizations
+Universe - Internal Newsletter
+Social Media
+Accessibility at NASA
+Contact Us
+Get the Latest from JPL
+Follow Us
+JPL is a federally funded research and development center managed for NASA by Caltech.
+More from JPL
+Careers
+Education
+Science & Technology
+Acquisition
+JPL Store
+Careers
+Education
+Science & Technology
+Acquisition
+JPL Store
+Related NASA Sites
+Basics of Spaceflight
+NASA Kids Science - Earth
+Earth / Global Climate Change
+Exoplanet Exploration
+Mars Exploration
+Solar System Exploration
+Space Place
+NASA's Eyes Visualization Project
+Voyager Interstellar Mission
+NASA
+Caltech
+Privacy
+Image Policy
+FAQ
+Feedback
+Version:
+v3.2.0 - f0b8d8a
+Site Managers:
+Emilee Richardson, Alicia Cermak
+Site Editors:
+Steve Carney
+CL#:
+21-0018

@@ -1,0 +1,22 @@
+{
+  "url": "https://www.ispace-inc.com/wp-content/uploads/2026/07/20260715-CP-12-update.pdf",
+  "fetched_utc": "2026-09-17T09:22:00Z",
+  "title": "ispace-U.S. 2026-07-15: Draper and NASA end CLPS task order CP-12",
+  "sha256": "f568976396180d18098adfdd39b9a5fe40f3afb6bf805afecb4282c13304e4bf",
+  "filename": "page.pdf",
+  "bytes": 138805,
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "cp12_terminated=2026-07-15",
+    "reflight=NOT_PRINTED"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.pdf": "f568976396180d18098adfdd39b9a5fe40f3afb6bf805afecb4282c13304e4bf",
+    "page.txt": "2ca311dcbab0f07a3d7b1a12690a03c729b82bc26cc444fb64ed0563274f3dd7"
+  },
+  "status_20260917": 200,
+  "quote": "Draper has mutually agreed with NASA to end the Commercial Lunar Payload Services (CLPS) task order CP-12.",
+  "note": "Termination printed. FSS re-flight not printed here. Re-flight UNVERIFIED. Do not mine LuSEE-Lite.",
+  "omitted_binaries": []
+}

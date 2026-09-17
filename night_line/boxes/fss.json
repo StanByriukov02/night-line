@@ -1,0 +1,282 @@
+{
+  "schema": "night_line_box_v1",
+  "box_id": "fss",
+  "name": "Farside Seismic Suite",
+  "full_name": "Farside Seismic Suite (FSS) — PRISM / CLPS CP-12, PI Mark Panning JPL",
+  "named_box": true,
+  "pre_landing": true,
+  "landing_status": "cp12_terminated_jul_2026_reflight_UNVERIFIED",
+  "witness_expected": "first sunset after a re-flight landing — UNVERIFIED",
+  "mission": "PRISM / CLPS CP-12 (terminated Jul 2026)",
+  "lander": "Draper / ispace-U.S. CP-12 (terminated); re-flight UNVERIFIED",
+  "pi": "Mark Panning",
+  "org": "NASA Jet Propulsion Laboratory",
+  "note": "Printed public numbers only. LPSC 2023 1266: ~5 W overnight electronics dissipation; ~19 kg night battery; cube-in-cube; solar recharge by day; 4.5 months including nights. Wh not printed. Do not convert 19 kg to Wh. Do not invent chemistry. ICES PALETTE is JPL toolbox, not an FSS Wh table — not mixed. CP-12 terminated Jul 2026 (ispace-U.S.); JPL page still lists 2027; re-flight UNVERIFIED. PI Mark Panning JPL; university co-Is University of Arizona and University of Notre Dame (LPSC 2023 1266).",
+  "electrical_model": "Identity line, not ICES Fig.14 leak. Printed ~5 W × 354 h = 1770 Wh nameplate. Store OPEN. Reserve OPEN (SOC/efficiency not printed). Optional ASSUMED 30% ConOps table needs a higher nameplate. Do not convert 19 kg to Wh. Do not run Fourier leak without printed store and geometry.",
+  "witness_keys": [
+    "fss",
+    "farside-seismic",
+    "schrodinger",
+    "cp-12",
+    "draper"
+  ],
+  "witness_note": "none flown for FSS. CP-12 terminated Jul 2026. Re-flight UNVERIFIED. Do not join LuSEE-Lite on the same terminated task order.",
+  "killer_store_open": "printed ~5 W overnight electronics × 354 h Cataldo/Mason = 1770 Wh nameplate. Store Wh OPEN (~19 kg printed; kg ≠ Wh; chemistry not printed). Reserve OPEN. Lives iff store > 1770 Wh at nameplate. Do not pick Wh from 19 kg.",
+  "thermal_hold_md": "No printed FSS night hold T_box. LPSC 1266: cube-in-cube, vectran cables, spacerless MLI, thermal switch, mini loop heat pipe, radiator; heating primarily ~5 W electronics dissipation through the night. LPSC 2354: inner cube houses seismometers, battery, avionics; titanium tube supports named, alloy OPEN. JPL: survive frigid nights / searing days — no kelvin. T_env OPEN: Schrödinger Basin is the printed site, not a printed sink temperature. Do not mix polar PSR 23 K or PALETTE toolbox KPP.",
+  "alloy_md": "Vectran tension cables named (LPSC 1266). Titanium tube supports named (LPSC 2354). Alloys OPEN. No NIST map. Fourier not run.",
+  "honesty_md": "~5 W and ~19 kg are printed with tildes. Wh not printed. SOC/efficiency not printed — reserve OPEN. 354 h is Cataldo/Mason darkness, not a Schrödinger site night. 4.5 months / 4½ months is lifetime including nights, not H_night. ICES PALETTE not mixed (no FSS-specific W/Wh opened). CP-12 terminated Jul 2026; JPL launch 2027 still listed; re-flight UNVERIFIED.",
+  "fields": {
+    "battery_mass_kg": {
+      "value": 19.0,
+      "unit": "kg",
+      "tier": "cited_public",
+      "quote": "Power for night operations is provided by a ~19 kg battery system which is charged by a solar array during the day.",
+      "cite": "LPSC 2023 1266: ~19 kg battery system. Mass, not watt-hours. Chemistry not printed.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2023/pdf/1266.pdf",
+      "source_slug": "lpsc-2023-1266",
+      "numbers_used": "battery_mass_kg~=19",
+      "page_or_figure": "FSS packaging"
+    },
+    "store_Wh": {
+      "value": null,
+      "unit": "Wh",
+      "tier": "OPEN",
+      "cite": "OPEN — Wh not printed. ~19 kg is mass. Do not convert kg to Wh. Do not invent chemistry.",
+      "source_slug": "lpsc-2023-1266",
+      "numbers_used": "store_Wh=NOT_PRINTED",
+      "page_or_figure": "LPSC 1266 battery paragraph; LPSC 2354; JPL FSS page",
+      "close_with": "Printed FSS nameplate or usable Wh. Do not pick Wh from 19 kg. Do not mix PALETTE toolbox."
+    },
+    "battery_nameplate_Wh": {
+      "value": null,
+      "unit": "Wh",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": "lpsc-2023-1266",
+      "numbers_used": "store_Wh=NOT_PRINTED",
+      "page_or_figure": "LPSC 1266 / 2354 / JPL — no Wh",
+      "close_with": "Printed FSS battery nameplate Wh."
+    },
+    "battery_chemistry": {
+      "value": null,
+      "unit": "",
+      "tier": "OPEN",
+      "cite": "OPEN — chemistry not printed. Do not invent Li-ion or specific energy.",
+      "source_slug": "lpsc-2023-1266",
+      "numbers_used": "chemistry=NOT_PRINTED",
+      "page_or_figure": "LPSC 1266 battery paragraph",
+      "close_with": "Printed FSS cell chemistry."
+    },
+    "P_keepalive_W": {
+      "value": 5.0,
+      "unit": "W",
+      "tier": "cited_public",
+      "quote": "heating primarily provided through ~5W of dissipation from electronics needed to operate the seismometers through the night",
+      "cite": "LPSC 2023 1266: ~5 W overnight electronics dissipation. Tilde printed. LPSC 2354 does not reprint a watt.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2023/pdf/1266.pdf",
+      "source_slug": "lpsc-2023-1266",
+      "numbers_used": "P_electronics_W~=5",
+      "page_or_figure": "FSS packaging"
+    },
+    "SOC_min_conops_pct": {
+      "value": null,
+      "unit": "%",
+      "tier": "OPEN",
+      "cite": "OPEN — SOC not printed. Reserve OPEN. Optional 30% ConOps table is ASSUMED only.",
+      "source_slug": "lpsc-2023-1266",
+      "numbers_used": "SOC=NOT_PRINTED",
+      "page_or_figure": "LPSC 1266 / 2354 / JPL",
+      "close_with": "Printed FSS SOC reserve or usable fraction."
+    },
+    "charge_discharge_eff_pct": {
+      "value": null,
+      "unit": "%",
+      "tier": "OPEN",
+      "cite": "OPEN — charge/discharge efficiency not printed.",
+      "source_slug": "lpsc-2023-1266",
+      "numbers_used": "SOC=NOT_PRINTED",
+      "page_or_figure": "LPSC 1266 / 2354 / JPL",
+      "close_with": "Printed FSS charge/discharge efficiency."
+    },
+    "H_night_h": {
+      "value": 354.0,
+      "unit": "h",
+      "tier": "cited_public",
+      "cite": "Cataldo & Mason, Survive and Operate Through the Lunar Night Workshop 2018 (LPI Contrib. 2106): 354 h of darkness. FSS abstracts do not print a night length. 4.5 months is lifetime including nights, not H_night.",
+      "url": "https://www.lpi.usra.edu/lpi/contribution_docs/LPI-002106.pdf",
+      "source_slug": "cataldo-mason-2018-lpi-2106",
+      "numbers_used": "hours_night=354",
+      "page_or_figure": "Cataldo & Mason abstract in LPI-002106"
+    },
+    "lifetime_months": {
+      "value": 4.5,
+      "unit": "month",
+      "tier": "cited_public",
+      "quote": "While FSS is only originally proposed to last 4.5 months",
+      "cite": "LPSC 2023 1266 / LPSC 2024 2354: originally proposed to last 4.5 months. JPL: at least 4½ months. Lifetime including nights, not H_night.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2023/pdf/1266.pdf",
+      "source_slug": "lpsc-2023-1266",
+      "numbers_used": "lifetime_months=4.5",
+      "page_or_figure": "Introduction"
+    },
+    "T_box_C": {
+      "value": null,
+      "unit": "C",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": "no printed FSS night hold",
+      "close_with": "Printed FSS bus/pack night hold °C."
+    },
+    "T_box_K": {
+      "value": null,
+      "unit": "K",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed FSS night hold K, or a printed °C to derive."
+    },
+    "T_env_K": {
+      "value": null,
+      "unit": "K",
+      "tier": "OPEN",
+      "cite": "OPEN — Schrödinger Basin is the printed site, not a printed sink temperature. Do not mix polar PSR bounds or PALETTE toolbox KPP.",
+      "close_with": "Printed FSS/Schrödinger night environment temperature of the box as a single value.",
+      "page_or_figure": "LPSC 1266 Schrödinger Basin; JPL Schrödinger basin; no kelvin",
+      "source_slug": "lpsc-2023-1266",
+      "numbers_used": "site=Schrodinger_Basin"
+    },
+    "landing_site_name": {
+      "value": "Schrödinger Basin",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "LPSC 2023 1266 / LPSC 2024 2354: Schrödinger Basin. JPL: Schrödinger basin.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2023/pdf/1266.pdf",
+      "source_slug": "lpsc-2023-1266",
+      "numbers_used": "site=Schrodinger_Basin",
+      "page_or_figure": "Introduction"
+    },
+    "launch_NET": {
+      "value": "2027",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "JPL FSS page Launch Date 2027 still listed. CP-12 terminated Jul 2026. Re-flight UNVERIFIED — 2027 is not a confirmed host.",
+      "url": "https://www.jpl.nasa.gov/missions/farside-seismic-suite/",
+      "source_slug": "jpl-fss",
+      "numbers_used": "launch=2027",
+      "page_or_figure": "Mission Statistics"
+    },
+    "cp12_terminated": {
+      "value": "2026-07-15",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "Draper has mutually agreed with NASA to end the Commercial Lunar Payload Services (CLPS) task order CP-12.",
+      "cite": "ispace-U.S. 2026-07-15 press PDF. Re-flight not printed. Re-flight UNVERIFIED.",
+      "url": "https://www.ispace-inc.com/wp-content/uploads/2026/07/20260715-CP-12-update.pdf",
+      "source_slug": "ispace-cp12-20260715",
+      "numbers_used": "cp12_terminated=2026-07-15",
+      "page_or_figure": "ispace-U.S. Update on Contract with Draper"
+    },
+    "reflight": {
+      "value": null,
+      "unit": "",
+      "tier": "OPEN",
+      "cite": "OPEN / UNVERIFIED. ispace PDF does not name an FSS re-flight. JPL still lists 2027.",
+      "source_slug": "ispace-cp12-20260715",
+      "numbers_used": "reflight=NOT_PRINTED",
+      "page_or_figure": "ispace-U.S. 2026-07-15; JPL FSS page",
+      "close_with": "Printed host, date, and NASA first-party re-flight of this named box."
+    },
+    "eps_eff": {
+      "value": null,
+      "unit": "1",
+      "tier": "OPEN",
+      "cite": "OPEN — spacerless MLI named; e* not printed. Do not mix PALETTE KPP e*.",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": "LPSC 1266 / 2354 spacerless MLI",
+      "close_with": "Printed FSS radiator/MLI e*."
+    },
+    "A_rad_m2": {
+      "value": null,
+      "unit": "m2",
+      "tier": "OPEN",
+      "cite": "OPEN — radiator named; area not printed.",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": "LPSC 1266 / 2354 radiator",
+      "close_with": "Printed FSS radiator area. Do not use LuSEE or LEMS declared areas."
+    },
+    "A_path_m2": {
+      "value": null,
+      "unit": "m2",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed conductive cross-section."
+    },
+    "L_path_m": {
+      "value": null,
+      "unit": "m",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed conductive length. Fourier not run while store is OPEN."
+    },
+    "night_strategy": {
+      "value": "cube-in-cube + ~5 W electronics dissipation + ~19 kg battery + solar recharge by day; no RHU printed",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "LPSC 2023 1266: cube in cube, ~5 W electronics, ~19 kg battery charged by solar array during the day. JPL: cube-within-a-cube; solar-powered; ≥4½ months.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2023/pdf/1266.pdf",
+      "source_slug": "lpsc-2023-1266",
+      "numbers_used": "cube_in_cube=true",
+      "page_or_figure": "FSS packaging; JPL About the mission"
+    }
+  },
+  "geometry_bracket": {
+    "honesty": "OPEN. A_rad, e*, G, A_path, L_path not printed. No declared Fourier bracket — this is the nameplate store line, not leak. Do not mix PALETTE toolbox."
+  },
+  "k_path": {
+    "nist_id": null,
+    "temper_match": null,
+    "tier": "OPEN",
+    "source_slug": null,
+    "numbers_used": null,
+            "cite": "Vectran named; titanium tube supports named; alloys OPEN. Fourier not run."
+  },
+  "holes": [
+    {
+      "id": "store_Wh",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "No printed FSS battery Wh. ~19 kg is mass. Do not convert kg to Wh."
+    },
+    {
+      "id": "reserve_SOC",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "SOC/efficiency not printed. Reserve OPEN. 30% ConOps table is ASSUMED."
+    },
+    {
+      "id": "geometry",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "A_rad / G / e* not printed. Fourier not run."
+    }
+  ],
+  "sources_dir": "sources/fss"
+}

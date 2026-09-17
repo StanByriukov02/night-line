@@ -19,9 +19,11 @@ from night_line.nist import k_integral_w_m, k_mean_w_mk, nist_cite
 SIGMA_W_M2_K4 = 5.670374419e-8
 EDGE_FRAC_OF_STORE = 0.02
 LINE_OPEN_TWO_KNOBS = "LINE_OPEN_TWO_KNOBS"
+LIVE_IF_STORE_ABOVE = "LIVE_IF_STORE_ABOVE"
 ASSUMED_SOC_RESERVE_FRAC = 0.30
 ASSUMED_NAMEPLATE_KWH = (1.0, 2.0, 5.0, 10.0)
 IDENTITY_LINE = "usable_Wh / H_night_h = hibernation load W"
+IDENTITY_STORE_LINE = "P_night_W × H_night_h = nameplate store Wh"
 PKG = Path(__file__).resolve().parent
 BOXES = PKG / "boxes"
 ROOT = PKG.parent
@@ -119,14 +121,22 @@ def public_label(
     store_Wh: float | None = None,
     open_upward_knob: str | None = None,
     two_knobs_open: bool = False,
+    store_open_load_printed: bool = False,
 ) -> dict[str, Any]:
     """Label on declared corners only. LIVE_IF_<knob>_BELOW when a knob has no upper bound.
 
     Store and hibernation load both OPEN → LINE_OPEN_TWO_KNOBS (identity line).
+    Load printed and store OPEN → LIVE_IF_STORE_ABOVE (nameplate P×H).
     """
     if two_knobs_open:
         return {
             "label": LINE_OPEN_TWO_KNOBS,
+            "edge": False,
+            "worst_corner_margin_Wh": None,
+        }
+    if store_open_load_printed:
+        return {
+            "label": LIVE_IF_STORE_ABOVE,
             "edge": False,
             "worst_corner_margin_Wh": None,
         }
@@ -204,6 +214,17 @@ def store_load_both_open(fix: dict[str, Any]) -> bool:
     )
 
 
+def store_open_load_printed(fix: dict[str, Any]) -> bool:
+    """True when hibernation load is printed and usable store is not."""
+    st = field(fix, "store_Wh")
+    pk = field(fix, "P_keepalive_W")
+    return (
+        st.get("tier") == "OPEN"
+        and st.get("value") is None
+        and pk.get("value") is not None
+    )
+
+
 def identity_hibernation_table(
     *,
     h_night: float,
@@ -230,6 +251,39 @@ def identity_hibernation_table(
             }
         )
     return rows
+
+
+def identity_store_table(
+    *,
+    p_load: float,
+    h_night: float,
+    reserve_frac: float = ASSUMED_SOC_RESERVE_FRAC,
+) -> list[dict[str, Any]]:
+    """Nameplate line from printed load. ASSUMED 30% needs a higher store. Not a picked Wh."""
+    h = float(h_night)
+    p = float(p_load)
+    if h <= 0.0 or p < 0.0:
+        raise ValueError("H_night must be > 0 and P_load >= 0")
+    nameplate_Wh = p * h
+    assumed_nameplate_Wh = nameplate_Wh / (1.0 - float(reserve_frac))
+    return [
+        {
+            "reserve_frac": 0.0,
+            "reserve_label": "OPEN — SOC/efficiency not printed",
+            "nameplate_line_Wh": nameplate_Wh,
+            "usable_Wh": nameplate_Wh,
+            "identity": IDENTITY_STORE_LINE,
+            "note": "nameplate = printed load × H_night",
+        },
+        {
+            "reserve_frac": float(reserve_frac),
+            "reserve_label": "ASSUMED 30% ConOps reserve — not printed for this box",
+            "nameplate_line_Wh": assumed_nameplate_Wh,
+            "usable_Wh": nameplate_Wh,
+            "identity": IDENTITY_STORE_LINE,
+            "note": "usable line is higher store",
+        },
+    ]
 
 
 def electronics_upper_open(fix: dict[str, Any]) -> bool:
@@ -650,6 +704,71 @@ def evaluate(fix: dict[str, Any]) -> dict[str, Any]:
             "witness": "first sunset after landing",
             "witness_expected": fix.get("witness_expected")
             or "first sunset after landing",
+            "sources_dir": fix.get("sources_dir"),
+        }
+        _refuse(rec)
+        return rec
+    if store_open_load_printed(fix):
+        pk = field(fix, "P_keepalive_W")
+        p_load = float(pk["value"])
+        nameplate_Wh = p_load * h_night
+        table = identity_store_table(p_load=p_load, h_night=h_night)
+        lab = public_label([], store_open_load_printed=True)
+        t_env_spec = field(fix, "T_env_K")
+        rec = {
+            "schema": "night_line_record_v1",
+            "box": fix.get("name"),
+            "box_id": fix.get("box_id"),
+            "mission": fix.get("mission"),
+            "label": lab["label"],
+            "label_display": lab["label"],
+            "edge": False,
+            "worst_corner_margin_Wh": None,
+            "store_Wh": None,
+            "P_keepalive_W": p_load,
+            "T_box_K": None,
+            "T_env_K": None,
+            "T_env": {
+                "tier": t_env_spec.get("tier"),
+                "states": [],
+                "cite": t_env_spec.get("cite"),
+                "printed_site": (fix.get("fields") or {})
+                .get("landing_site_name", {})
+                .get("value"),
+            },
+            "H_night_h": h_night,
+            "identity": IDENTITY_STORE_LINE,
+            "identity_line": (
+                f"{IDENTITY_STORE_LINE} ({p_load:g} W × {h_night:g} h = {nameplate_Wh:g} Wh). "
+                "Store Wh OPEN. Reserve OPEN. Do not convert battery kg to Wh."
+            ),
+            "identity_table": table,
+            "nameplate_line_Wh": nameplate_Wh,
+            "reserve_tier": "OPEN",
+            "assumed_reserve_frac": ASSUMED_SOC_RESERVE_FRAC,
+            "assumed_reserve_label": "ASSUMED — not printed for this box",
+            "P_electronics_W": p_load,
+            "P_electronics_tier": str(pk.get("tier") or "cited_public"),
+            "electronics_hi_open": False,
+            "p_night_threshold_W": None,
+            "p_night_threshold_soc8_W": None,
+            "ladder": [],
+            "ladder_soc8": [],
+            "lo": None,
+            "hi": None,
+            "corners": [],
+            "breaks": [],
+            "electrical_model": {
+                "P_elec": IDENTITY_STORE_LINE,
+                "reason": (
+                    "Load printed. Store OPEN. Identity: printed load × night hours "
+                    "= nameplate store Wh. Do not convert battery kg to Wh. "
+                    "Do not run Fourier leak without printed store and geometry."
+                ),
+                "cite": str(fix.get("electrical_model") or IDENTITY_STORE_LINE),
+            },
+            "witness": "pending",
+            "witness_expected": fix.get("witness_expected") or "pending",
             "sources_dir": fix.get("sources_dir"),
         }
         _refuse(rec)

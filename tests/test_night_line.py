@@ -7,10 +7,13 @@ from pathlib import Path
 from night_line.cli import run_one
 from night_line.model import (
     IDENTITY_LINE,
+    IDENTITY_STORE_LINE,
     LINE_OPEN_TWO_KNOBS,
+    LIVE_IF_STORE_ABOVE,
     ROOT,
     evaluate,
     identity_hibernation_table,
+    identity_store_table,
     load_box,
     packaged_boxes,
     public_label,
@@ -89,9 +92,13 @@ def test_public_labels() -> None:
     assert iff["label"] == "LIVE_IF_P_NIGHT_BELOW"
     assert iff["edge"] is False
     two = public_label([], two_knobs_open=True)
-    assert two["label"] == "LINE_OPEN_TWO_KNOBS"
+    assert two["label"] == LINE_OPEN_TWO_KNOBS
     assert two["edge"] is False
     assert two["worst_corner_margin_Wh"] is None
+    store_open = public_label([], store_open_load_printed=True)
+    assert store_open["label"] == LIVE_IF_STORE_ABOVE
+    assert store_open["edge"] is False
+    assert store_open["worst_corner_margin_Wh"] is None
 
 
 def test_lems_a3_published_line() -> None:
@@ -169,6 +176,7 @@ LEMS_MARK = {
     0.05,
 }
 LUSEE_MARK = {7160.0, 12.4, 0.15, 128.0, 50.0, 328.0, 8218.54}
+FLIP_MARK = {480.0, 30.0, 5420.0, 320.0, 450.0, 110.0}
 
 
 def _walk_nums(obj: object, out: list[float]) -> None:
@@ -216,6 +224,40 @@ def test_flip_griffin1_identity_table() -> None:
         assert f"{p_w:.2f}" in text
     for line in text.splitlines():
         if line.startswith("|") and any(x in line for x in ("1.98", "3.95", "9.89", "19.77")):
+            assert "ASSUMED" in line
+    assert written["verify"]["ok"] is True
+    assert written["verify"]["ladder_recompute_ok"] is True
+
+
+def test_fss_store_open_nameplate() -> None:
+    rec = evaluate(load_box(PKG / "boxes" / "fss.json"))
+    fix = load_box(PKG / "boxes" / "fss.json")
+    nums: list[float] = []
+    _walk_nums(fix, nums)
+    for n in nums:
+        for bad in LEMS_MARK | LUSEE_MARK | FLIP_MARK:
+            assert abs(n - bad) > 1e-12, f"{bad} leaked into FSS box"
+    assert rec["label"] == LIVE_IF_STORE_ABOVE
+    assert rec["label_display"] == LIVE_IF_STORE_ABOVE
+    assert rec["identity"] == IDENTITY_STORE_LINE
+    assert abs(float(rec["nameplate_line_Wh"]) - 1770.0) < 0.5
+    table = rec["identity_table"]
+    assert abs(float(table[0]["nameplate_line_Wh"]) - 1770.0) < 0.5
+    assert table[0]["reserve_label"].startswith("OPEN")
+    assert "ASSUMED" in table[1]["reserve_label"]
+    assert abs(float(table[1]["usable_Wh"]) - 1770.0) < 0.5
+    assert abs(float(table[1]["nameplate_line_Wh"]) - (1770.0 / 0.70)) < 0.5
+    rows = identity_store_table(p_load=5.0, h_night=354.0)
+    assert abs(float(rows[0]["nameplate_line_Wh"]) - 1770.0) < 0.5
+    assert rows[0]["identity"] == IDENTITY_STORE_LINE
+    written = run_one(PKG / "boxes" / "fss.json", OUT)
+    text = (OUT / "fss" / "LINE.md").read_text(encoding="utf-8")
+    assert LIVE_IF_STORE_ABOVE in text
+    assert "1770" in text
+    assert "ASSUMED" in text
+    assert "2528.57" in text
+    for line in text.splitlines():
+        if "2528.57" in line:
             assert "ASSUMED" in line
     assert written["verify"]["ok"] is True
     assert written["verify"]["ladder_recompute_ok"] is True

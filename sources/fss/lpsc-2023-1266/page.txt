@@ -1,0 +1,119 @@
+54th Lunar and Planetary Science Conference 2023 (LPI Contrib. No. 2806)                                                                                      1266.pdf
+
+
+
+
+     FARSIDE SEISMIC SUITE: A LONG-LIVED GEOPHYSICAL PACKAGE AND A MODEL FOR A
+     POTENTIAL LUNAR SEISMIC NETWORK. M. P. Panning1, B. Avenson2, S. H. Bailey3, P. M. Bremner4, D.
+     Bugby1, S. De Raucourt5, R. Garcia6, D. DellaGiustina3, T. Kawamura5, S. Kedar1, P. Lognonné5, C. Neal7, W. T.
+     Pike8, and R. C. Weber4, 1Jet Propulsion Laboratory, California Institute of Technology, 4800 Oak Grove Dr.,
+     Pasadena, CA 91109, USA, 2Silicon Audio, 3University of Arizona, 4NASA Marshall Space Flight Center, 5Institut
+     de Physique du Globe, Paris, 6ISAE Supaero, Toulouse, 7University of Notre Dame, 8Imperial College, London
+
+         Introduction: The Farside Seismic Suite (FSS),
+     selected in 2021 for flight as part of the NASA PRISM
+     (Payloads and Research Investigations on the Surface of
+     the Moon) program and planned for flight in 2025 on a
+     lander provided by a group led by the commercial
+     vendor Draper, would deliver two seismometers (both
+     flight-proven through the InSight mission to Mars [1])
+     to Schrödinger Basin, as part of a package of payloads
+     called CP-12 by NASA. The vertical Very BroadBand
+     (VBB) seismometer is the most sensitive flight-ready
+     seismometer ever built [2], while the Short Period (SP)
+     sensor is the most sensitive and mature compact triaxial
+     sensor available for space application [2]. FSS delivers
+     a self-sufficient payload, with independent power,          Figure 1. FSS will return data from Schrödinger Basin
+     communications and thermal control allowing survival        over multiple lunar diurnal cycles after outliving the
+     and operation over the long lunar night independent of      delivery lander. FSS provides: (1) The first seismic data
+     the lander which it will outlive.                           probing the deep lunar interior and determining the
+         CP-12 also includes a magnetotelluric sounding          differences between near and farside activity (green);
+     system [3] and heat flow probe [4]. These instruments,      (2) Measurement of crustal thickness and layering that
+     in combination with a Next Generation Lunar                 illuminates the process of crater formation (pink); (3)
+     Retroreflector [5], make up the key proposed                Current micrometeorite impact rate through recording
+     instrumentation for nodes of the proposed Lunar             of background seismic vibrations (blue). Figure
+     Geophysical Network [LGN, 6]. While FSS is only             adapted from [8] and [9].
+     originally proposed to last 4.5 months, the basic thermal       These objectives have been described more
+     design or other proposed lunar nighttime survival           thoroughly in previous work [10], but it is interesting to
+     systems [e.g. 7] suggest a powerful path forward to         compare this explicitly with the overall science
+     implement a lunar seismic network using relatively          objectives of a prospective Lunar Geophysical Network
+     small payloads with seismic instrumentation designed        [e.g. 6, 11], which can be summarized with 4 major           Formatted: Font color: Text 1
+     for multi-year survival delivered by affordable, short-     objectives:
+     lived landers. The thermal packaging of FSS can                 1. Evaluate the interior structure and dynamics of
+     additionally be expanded to include electronics for other   the Moon.
+     geophysical instrumentation that may be included in a           2. Constrain the interior and bulk composition of the
+     future Lunar Geophysical Network.                           Moon.
+         FSS science objectives and relationship to LGN              3. Delineate the vertical and lateral heterogeneities
+     seismology science objectives: FSS was designed to          within the interior of the Moon as they relate to surface
+     meet 3 key science objectives (Fig. 1):                     features and terranes.
+         1. Investigate deep lunar structure and the                 4. Evaluate the current seismo-tectonic activity of
+     difference between near and farside activity.               the Moon.
+         2. Understand how the lunar crust is affected by the        Obviously, the 4.5 months initially planned for a
+     development of an impact melt basin.                        single FSS station can only partially address small,
+         3. Evaluate the current micrometeorite impact rate      targeted aspects of each of these objectives, and the
+     and local tectonic activity at Schrödinger Basin.           other geophysical instrumentation is absolutely key to
+                                                                 achieving these goals. The contribution of seismic data,
+                                                                 however, towards reaching a global, but also high-
+                                                                 resolution, view of these major objectives requires
+                                                                 networked seismic stations with multi-year nodes.
+54th Lunar and Planetary Science Conference 2023 (LPI Contrib. No. 2806)                                                       1266.pdf
+
+
+
+
+         FSS packaging and the path forward for possible          objectives, horizontal component measurements at this
+     lunar seismic network nodes: FSS achieves                    sensitivity level will also be needed, and there are not
+     performance outliving the delivery lander through an         enough existing VBB components to carry this out. Two
+     innovative thermal design that makes use of a cube           systems are currently in development that can meet the
+     suspended within a cube supported by tensioned vectran       performance requirements, with a target of an extremely
+     cables with “spacerless” multi-layer insulation (Fig. 2),    sensitive vertical component sensor developed at the
+     as well as an efficient thermal switch and a mini loop       Institut de Physique du Globe, Paris (called the Lunar
+     heat pipe system connected to a radiator. This setup         Optical VBB or LOVBB) capable of sensitivity of ~10-
+                                                                  11
+     allows the system to stay cool during the hot lunar days        m/s2/rtHz from 0.01 to 5 Hz [12] complemented with
+     and warm during the cold lunar nights with heating           a 3-component system with a sensitivity of ~10-10
+     primarily provided through ~5W of dissipation from           m/s2/rtHz developed by Silicon Audio and the
+     electronics needed to operate the seismometers through       University of Arizona (the Lunar Very Broadband
+     the night. Power for night operations is provided by a       seismometer, LVBB). In order to maximize the
+     ~19 kg battery system which is charged by a solar array      frequency band of sensitivity and decouple the sensors
+     during the day.                                              from lander noise, this package may be deployed to the
+                                                                  surface, while an SP seismometer system similar to that
+                                                                  included in FSS may remain on the lander to monitor
+                                                                  what will likely remain a significant local noise source.
+                                                                      With the increase in number of broadband sensing
+                                                                  components relative to FSS, the package design will
+                                             battery              have to be larger, which will increase the power
+                                                                  requirements to maintain warmth overnight. Combined
+                                                                  with longer desired lifespan leading to greater
+                                                                  allowance of battery degradation, a significant increase
+                                                                  in battery mass will also be required to use such a design
+                 SP                                               for LGN purposes, but this is an incremental change to
+                                VBB
+                                                                  the overall design of the package. This suggests that an
+                                                                  approach of using self-contained packages delivered by
+                                                                  low-cost landers remains a viable and likely affordable
+                                                                  option for building a lunar seismic network.
+                                                                      Acknowledgments: This work was partially carried
+                                                                  out at the Jet Propulsion Laboratory, California Institute
+                                                                  of Technology, under a contract with the National
+                                                                  Aeronautics and Space Administration. Farside Seismic
+                                                                  Suite is funded through the NASA PRISM program.
+                                                                  ©2023, California Institute of Technology. Government
+                                                                  sponsorship acknowledged.
+                                                                      References: Banerdt W. B. et al. (2020) Nature
+                                                                  Geo. 13, 183-189, [2] Lognonné P. et al. (2019) Space
+                                                                  Sci. Rev. 215, 12, [3] Grimm, R. E. and G. T. Delory
+     Figure 2. (Top) CAD rendering of FSS design                  (2012) Adv. Space Sci. 50, 1687-1701, [4] Nagihara, S.
+     illustrating the cube within a cube design, as well as the   et al. (2020) LPSC 51, Abstract #1432, [5] Williams,
+     locations of the two seismometers and the battery.           J.G. et al. (2020), Artemis III white paper, [6] Neal, C.
+     (Bottom) Image of the prototype mechanical frame of          R. et al. (2020) LGN PMCS final report, [7] Benna et al.
+     FSS with mounted insulation already tested and               (2020) LSSW, Abstract #5022, [8] Wieczorek (2009)
+     intended to be reused for flight.                            Elements 5, 35-40, [9] Kring D. A. et al. (2016) Nature
+         In order to adapt this configuration for use as nodes    Comm. 7, 13161, [10] Panning, M. P. et al. (2022) LPSC
+     of a future lunar seismic network, several key adaptions     53, Abstract #1576, [11] Haviland, H. F. et al. (2022)
+     will be necessary.                                           Plan. Sci. J. 3, 40, [12] De Raucourt, S. et al. (2022),
+         Instrumentation: FSS relies on a flight spare VBB        IAC 73, Abstract #73001
+     from InSight, and therefore only includes a single
+     vertical component sensor at this sensitivity level. For a
+     seismic network to contribute to LGN-like science
+

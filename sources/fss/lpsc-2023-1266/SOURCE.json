@@ -1,0 +1,31 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/lpsc2023/pdf/1266.pdf",
+  "fetched_utc": "2026-09-17T09:22:00Z",
+  "title": "LPSC 2023 1266: Farside Seismic Suite — long-lived geophysical package",
+  "sha256": "929d14b2c16c6d0cad08d17a142fa1f26c4b55e36e5146ba0f9afa7bed4c902b",
+  "filename": "page.pdf",
+  "bytes": 897896,
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "P_electronics_W~=5",
+    "battery_mass_kg~=19",
+    "store_Wh=NOT_PRINTED",
+    "lifetime_months=4.5",
+    "site=Schrodinger_Basin",
+    "cube_in_cube=true",
+    "solar_recharge_day=true",
+    "hours_night=NOT_PRINTED",
+    "SOC=NOT_PRINTED",
+    "chemistry=NOT_PRINTED"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.pdf": "929d14b2c16c6d0cad08d17a142fa1f26c4b55e36e5146ba0f9afa7bed4c902b",
+    "page.txt": "3e3b442d76db249a28f4a94b8db9283571c32deca9479da6d2b247765fd2cf86"
+  },
+  "status_20260917": 200,
+  "quote_P_electronics": "heating primarily provided through ~5W of dissipation from electronics needed to operate the seismometers through the night",
+  "quote_battery": "Power for night operations is provided by a ~19 kg battery system which is charged by a solar array during the day.",
+  "note": "Wh not printed. Do not convert 19 kg to Wh. Do not invent chemistry. Night length not printed.",
+  "omitted_binaries": []
+}
