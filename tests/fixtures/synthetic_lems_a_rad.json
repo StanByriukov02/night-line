@@ -1,0 +1,10 @@
+{
+  "label": "SYNTHETIC",
+  "note": "Test fixture only. Not a Benna / LEMS-A3 printed radiator area. Do not publish as their number.",
+  "box": "lems-a3",
+  "input": "A_rad_m2",
+  "value": 0.31,
+  "unit": "m2",
+  "url": "https://example.invalid/synthetic-lems-a-rad",
+  "page_or_figure": "Fig. SYNTHETIC-1"
+}

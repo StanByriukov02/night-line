@@ -609,6 +609,15 @@ def run_one(path: Path, out_root: Path) -> dict[str, Any]:
 def main(argv: list[str] | None = None) -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    argv_list = list(sys.argv[1:] if argv is None else argv)
+    if argv_list and argv_list[0] == "close":
+        from night_line.close import close_main
+
+        return close_main(argv_list[1:])
+    if argv_list and argv_list[0] in {"ship-gate", "ship_gate"}:
+        from night_line.ship_gate import main as ship_gate_main
+
+        return ship_gate_main(argv_list[1:])
     p = argparse.ArgumentParser(prog="night-line")
     p.add_argument("box", nargs="?", help="path to a box JSON (default: packaged boxes)")
     p.add_argument("--all", action="store_true", help="run every packaged box")

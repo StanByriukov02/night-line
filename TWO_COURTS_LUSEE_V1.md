@@ -38,13 +38,13 @@ Nameplate 7160/328 = **21.83 W** is not the survival line. 2024 average night lo
 
 This court is **not** their 2024 print.
 
-DIE leftover **−8218.54 Wh** = 7160 − (derived heater **34.49 W** + **12.4 W**) × 328 h. The heater is a consequence of **assumed** A_rad **0.15 m²**, catalog dust **3 g/m²**, assumed `e*` and k_ins **5e-4 W/m·K**, assumed T_env **70 K**. P_ops **12.4 W** is CDR 2023 ([Zenodo 8173058](https://doi.org/10.5281/zenodo.8173058)), older than 2024.
+On **assumed** A_rad **0.15 m²**, catalog dust **3 g/m²**, assumed `e*` and k_ins **5e-4 W/m·K**, assumed T_env **70 K**, a derived heater **~34.5 W** plus CDR **12.4 W** exhausts the 7160 Wh nameplate before 328 h (**DIE**). P_ops **12.4 W** is CDR 2023 ([Zenodo 8173058](https://doi.org/10.5281/zenodo.8173058)), older than 2024. Those fills are not the 2024 print.
 
 The 2024 paper prints night surface as low as **100 K**, pack **−5…+30 °C**, thermal switch **open** at night, and does **not** print radiator area.
 
 `verdict_stands_on_latest_print: false`. Weakest knob: **A_rad**. Ops at **0 W** still DIE on that dusty assumed radiator — so DIE is not “they drew 12.4 W”.
 
-A Dual-hostile leftover of −8218.54 Wh exists on those assumed fills. It is not the Night Line.
+That DIE exists only on those assumed fills. It is not the Night Line.
 
 | Stands on | Does not stand on |
 |---|---|
@@ -70,7 +70,7 @@ The human who can lose the box signs. The label is on the dated set named in the
 | Dated set | Signer may use | Signer may not use |
 |---|---|---|
 | 2024 arXiv 2407.07173, geometry OPEN | `LIVE_IF_P_NIGHT_BELOW` 13.20 W | `LIVE` (average load unprinted); `DIE` from assumed A_rad |
-| Reconstruction on assumed A_rad 0.15 m² + dust 3 g/m² + T_env 70 K + CDR 12.4 W | `DIE` on those assumed fills | “the 2024 paper says DIE”; −8218.54 Wh as the Night Line |
+| Reconstruction on assumed A_rad 0.15 m² + dust 3 g/m² + T_env 70 K + CDR 12.4 W | `DIE` on those assumed fills | “the 2024 paper says DIE”; that DIE as the Night Line |
 | CDR 2023 12.4 W × 2024 328 h vs 2024 7160 Wh | LIVE on nameplate (+3092.8 Wh) | Court A’s 13.20 W; Court B’s DIE |
 
 ## Which knob flips them
@@ -78,7 +78,7 @@ The human who can lose the box signs. The label is on the dated set named in the
 | Knob | Court A | Court B |
 |---|---|---|
 | Printed 2024 average night load W | Closes `LIVE_IF` to `LIVE` or `DIE` | Unchanged (not this court’s load) |
-| Printed radiator area m² (weakest on Court B) | Stays OPEN until printed; no assumed DIE | Heater and leftover move; 0.15 m² is the assumed fill |
+| Printed radiator area m² (weakest on Court B) | Stays OPEN until printed; no assumed DIE | Heater and DIE energy move; 0.15 m² is the assumed fill |
 | Drop assumed dust / 70 K / `e*` / k | No effect (those fills unused) | Can flip DIE |
 
 Publishing only Court A while Court B exists on assumed fills is a false night-sign. Both, dated and unmixed, is the honest sign.
