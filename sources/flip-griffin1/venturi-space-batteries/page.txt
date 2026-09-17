@@ -1,0 +1,182 @@
+Batteries - Venturi Space
+Moon
+384 000 km
+from Earth
+Shackleton
+129.78°E
+-89.67°S
+Ready for launch
+Take-off
+00:05:00
+About
+About
+About
+Learn more
+About
+Exploration
+Learn more
+About
+Terrestrial activities
+Learn more
+The Group
+Rovers
+Programmes
+An image of a space view to our planet earth from moon
+Programmes
+Programme US
+Learn more
+Programmes
+Programme EU
+Learn more
+Technologies
+Technologies
+Batteries
+Learn more
+Technologies
+Wheels
+Learn more
+An image of a space view to our planet earth from moon
+Technologies
+Onboard management systems
+Learn more
+Newsroom
+Careers
+English
+Français
+Contact us
+Menu
+Close
+en
+fr
+Contact
+Cookie settings
+Essential
+These cookies are necessary for the proper functioning of the site. They cannot be deactivated.
+Analytics
+These cookies enable us to measure the number of visits, visitors and sources of traffic to our site (content of paths, etc.), and to compile statistics in order to improve its quality, ergonomics and performance.
+Accept
+Refuse
+This site uses cookies to improve our services. By clicking on “accept”, you agree to the use of all cookies.
+Accept
+Settings
+Close
+Wheels
+Batteries
+Robust
+and efficient
+batteries
+Scroll down
+Harnessing two decades of expertise for the space sector
+Harnessing two decades of expertise for the space sector
+From 2000 to 2021
+Venturi high performance electric vehicle specialist
+Venturi
+2000
+Monegasque entrepreneur Gildo Pastor bought French carmaker Venturi in 2000, and moved the business to Monaco
+26
+World speed records with two and four wheel vehicles
+8
+Venturi Formula E Team, which later became Venturi Racing, competed in 8 seasons of the Formula E World Championship
+3
+From its Monaco base, Venturi designed and manufactured 3 polar exploration vehicles called Antarctica
+549
+The Venturi VVB-3 is the fastest four-wheel electric vehicle in history. Its FIA world record of 549 km/h (341 mph) stands unbeaten to this day
+-40
+The Venturi Antarctica, the world’s first and only polar exploration vehicle, was made available for use by the scientists at the Princess Elisabeth Antarctica research station, where it operates at temperatures of -40°C
+Strategic partnership
+The teams at Venturi Space’s facilities in Monaco are today using their vast experience to design and manufacture the battery packs that will equip the rover made by Venturi Astrolab, Inc.
+Venturi Astrolab, Inc.
+Battery
+Batteries Technical Datasheet
+The four batteries must be able to withstand extreme temperatures and intense solar radiation at the lunar South Pole.
+Number
+of cells
+10,000
+1/5
+To power the rovers, Venturi Space acquires and tests cells
+Infos
+1/5
+To power the rovers, Venturi Space acquires and tests cells
+90%
+of them are selected.
+Robust
+-240
+°C
+2/5
+The battery packs are designed to withstand an external temperature variation close to 400°C (from -240°C up to +130°C)
+Surge protection
+4.2
+V
+3/5
+The maximum voltage of each cell is 4.2V
+Infos
+3/5
+The maximum voltage of each cell is 4.2V
+The cells are tested under overload beyond 4.2V, at which point
+the current interruption devise is activated.
+External
+short circuit protection
+0
+V
+4/5
+External short circuit protection
+Infos
+4/5
+External short circuit protection
+The cells are tested to prevent thermal runaway. In the event of a short-circuit, an internal protection device activates and the cell potential falls to 0V.
+Battery
+packs
+5/5
+Battery Packs
+Infos
+5/5
+Battery Packs
+Each rover is equipped with several battery packs to ensure functional redundancy.
+Rigorous selection, critical testing
+Cell after cell
+Each cell is analysed and subjected to a series of tests, from delivery to final installation in the battery pack. Of the 10,000 units delivered to the Monaco laboratory, only 80% will be selected.
+The cells are subjected to a sequence of performance and destructive testing:
+Step 1 : Dimensions
+Mass | Length | Diameter
+Step 2 : Performance
+Charge | Discharge | Internal resistance
+Step 3 : Endurance
+Simulations over lunar cycles under vacuum conditions and at a range of temperatures storage
+Step 4 : Safety
+External short circuit | Internal short circuit | Overload | Over-discharge | Vibrations | Shocks | Impacts | Vacuum resistance | Radiations resistance
+Battery pack
+The battery pack (i.e. cell assembly) is put through the same tests as the cells, but also needs to be resistant to thermal runaway and the potential leakage of active components at 1,600°C.
+Laboratory 209
+Discover the Laboratory 209 based in Monaco.
+Hyper-Deformable
+Wheels
+Learn more
+Matured
+Onboard management systems
+Learn more
+Contact
+CONTACT US
+RECRUITMENT
+English
+Français
+-
+Privacy Policy
+Terms of use
+Flight - T&Cs
+Non-Flight - T&Cs
+Links
+About
+Rovers
+Programme US
+Programme EU
+Technologies
+Newsroom
+Careers
+Networks
+English
+Français
+-
+Privacy Policy
+Terms of use
+Flight - T&Cs
+Non-Flight - T&Cs

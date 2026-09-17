@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta charset="UTF-8" />
+<title>
+A rover to deliver small payloads to the Moon - Venturi Space
+</title>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="fr" href="https://venturi.space/article/iac2024-rover-lunaire-flip/" />
+<link rel="alternate" hreflang="en" href="https://venturi.space/en/article/venturi-space-and-venturi-astrolab-introduce-lunar-rover/" />
+<link rel="alternate" hreflang="x-default" href="https://venturi.space/article/iac2024-rover-lunaire-flip/" />
+<meta name="description" content="A prototype of the rover was unveiled in Venturi Space’s exhibition booth at the 75th International Astronautical Congress." />
+<link rel="canonical" href="https://venturi.space/en/article/venturi-space-and-venturi-astrolab-introduce-lunar-rover/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="A rover to deliver small payloads to the Moon - Venturi Space" />
+<meta property="og:description" content="A prototype of the rover was unveiled in Venturi Space’s exhibition booth at the 75th International Astronautical Congress." />
+<meta property="og:url" content="https://venturi.space/en/article/venturi-space-and-venturi-astrolab-introduce-lunar-rover/" />
+<meta property="og:site_name" content="Venturi Space" />
+<meta property="article:modified_time" content="2025-07-17T13:06:08+00:00" />
+<meta property="og:image" content="https://venturi.space/wp-content/uploads/2024/10/1.jpg" />
+<meta property="og:image:width" content="2048" />
+<meta property="og:image:height" content="1224" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:label1" content="Est. reading time" />
+<meta name="twitter:data1" content="1 minute" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://venturi.space/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fventuri.space%2Fen%2Farticle%2Fventuri-space-and-venturi-astrolab-introduce-lunar-rover%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://venturi.space/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fventuri.space%2Fen%2Farticle%2Fventuri-space-and-venturi-astrolab-introduce-lunar-rover%2F&#038;format=xml" />
+<link rel='stylesheet' href='https://venturi.space/wp-content/themes/api/../front/build/app.min.css?v=1.0.46&#038;ver=1.0.46' media='all' />
+<meta name="generator" content="WPML ver:4.9.7 stt:1,4;" />
+<link rel="icon" href="https://venturi.space/wp-content/uploads/2025/07/cropped-venturi-space-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://venturi.space/wp-content/uploads/2025/07/cropped-venturi-space-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://venturi.space/wp-content/uploads/2025/07/cropped-venturi-space-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://venturi.space/wp-content/uploads/2025/07/cropped-venturi-space-270x270.jpg" />
+<script>
+window.initAt = Date.now();
+</script>
+<link rel="icon"
+type="image/x-icon"
+href="https://venturi.space/wp-content/themes/front/assets/images/favicon.ico" />
+<link rel="icon" href="https://venturi.space/wp-content/uploads/2025/07/cropped-venturi-space-32x32.jpg" sizes="32x32" />
+<link rel="shortcut icon" href="https://venturi.space/wp-content/uploads/2025/07/cropped-venturi-space-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://venturi.space/wp-content/uploads/2025/07/cropped-venturi-space-180x180.jpg" sizes="180x180" />
+</head>
+<body>
+<v-once class="space">
+<canvas class="space-canvas"></canvas>
+<v-module class="sun space-sun"></v-module>
+<v-module class="moon space-moon">
+<div class="moon-info">
+<v-atom class="icon moon-marker"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+<v-module class="coords moon-coords">
+<v-atom data-size="default" class="label coords-label" >		<span class="label-title" c-font="label_2">Moon</span>
+</v-atom>
+<p c-font="body_3">
+384 000 km<br />
+from Earth
+</p>
+</v-module>
+</div>
+<div class="moon-crater">
+<v-atom class="marker moon-marker">
+<canvas class="marker-canvas"></canvas>
+<v-atom class="icon marker-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+</v-atom>
+<v-module class="coords moon-coords">
+<v-atom data-size="default" class="label coords-label" >		<span class="label-title" c-font="label_2">Shackleton</span>
+</v-atom>
+<p c-font="body_3">
+129.78°E<br />
+-89.67°S
+</p>
+</v-module>
+</div>
+</v-module>
+<v-module class="earth space-earth"></v-module>
+<v-module class="mars space-mars"></v-module>
+<v-module class="skybox space-skybox"></v-module>
+<v-module class="camera space-camera">
+</v-modu></v-once>
+<v-once class="loader" active>
+<div class="loader-fill"></div>
+<div c-flux="large">
+<div class="loader-data">
+<div>
+<svg class="asset loader-logo" viewBox="0 0 229 10" xmlns="http://www.w3.org/2000/svg"><path d="m158.1.7c-.1 0-.3-.2-.6-.2-.4-.1-.9-.2-1.6-.3-.7 0-1.4 0-2.2-.1-.8 0-1.4 0-2.1 0-1 0-2 0-2.9 0s-1.8.2-2.6.3c-.8.2-1.5.4-2 .8s-.9.9-1 1.6c-.2.6-.1 1.1.2 1.5.3.3.7.6 1.3.7.5.1 1.1.2 1.7.2h1.9 3.7c.7 0 1.4 0 1.9.1.4 0 .7.2.9.4 0 0 .2.2 0 .7-.1.5-.4.8-.8 1.1-.5.3-1.1.5-1.8.6-.8.1-1.6.2-2.6.2-.2 0-.5 0-.7 0h-.7c-.6 0-1.2 0-2 0s-1.5 0-2.2-.2c-.7 0-1.2-.2-1.6-.4h-.3c0-.1-.2.6-.2.6 0 .3 0 .6.8.8.4.1.9.2 1.6.3.6 0 1.3 0 1.9.1h1.6 1.2 1.2c1.2 0 2.3-.1 3.3-.3s1.8-.4 2.5-.8 1.1-1 1.3-1.8 0-1.4-.3-1.8c-.4-.3-1-.6-1.8-.7-.7 0-1.6-.1-2.6-.1h-3.8c-.8 0-1.4 0-2 0-.5 0-.9-.2-1.1-.3-.1 0-.2-.2-.1-.7s.4-.8.9-1.1c.5-.2 1.1-.4 1.9-.5.8 0 1.6-.1 2.5-.1h1.7 1.3 1.6c.5 0 1.1.1 1.5.2.5.1.7.2.8.3l.3.2.2-.3s0 0 0-.2c0 0 0-.1 0-.2 0 0 0-.1 0-.2 0-.2 0-.4-.2-.5z" fill="#969696"/><path d="m177.2 1.5c-.2-.4-.7-.7-1.3-.9s-1.3-.3-2.3-.3c-.7 0-1.6 0-2.6 0s-2 0-3.1 0c-1 0-2 0-2.7 0-.6 0-1.1 0-1.5.2-.3.1-.7.4-.8 1-.3 1.3-.7 2.6-1 3.9s-.6 2.6-.9 3.9v.4h2.3v-.2c.4-1.3.7-2.6 1-3.8.3-1.3.6-2.5.9-3.8 0 0 0-.2.3-.2h.5 2 2.6 2.5c1 0 1.4.3 1.6.5.2.1.3.4.2 1-.1.5-.3.9-.7 1.1-.4.3-.8.5-1.3.6s-1.1.2-1.6.2h-5.6c-.2 0-.4 0-.5.1-.1 0-.2.2-.3.3 0 0 0 .2-.1.4v.4c-.1 0 6.9 0 6.9 0 1.5 0 2.7-.2 3.7-.7s1.7-1.2 1.9-2.2c.2-.6.1-1.1-.1-1.5z" fill="#969696"/><path d="m189.4.4c-.4-.2-1.1-.3-2.2-.3s-1.9.1-2.4.4c-.5.2-1 .6-1.4 1l-6.6 8h2.2l2-2.5h8.5l.8 2.5h2.5l-2.6-7.9c-.2-.5-.5-.9-.9-1.1zm-7.3 5.5 2.9-3.7c.1-.2.3-.3.6-.5.1 0 .4-.2 1.3-.2s1 .1 1 .2c.1.1.2.3.3.4l1.2 3.8h-7.2z" fill="#969696"/><path d="m211.3.5c-.1 0-.4-.2-1.2-.2s-1.5-.1-2.3-.2c-.8 0-1.6 0-2.4 0-1.4 0-2.6 0-3.7.2-1.1.1-2.1.3-2.9.7-.8.3-1.5.8-2.1 1.4-.5.6-.9 1.4-1.2 2.4-.2 1-.3 1.8 0 2.4.2.7.6 1.2 1.3 1.5.6.3 1.5.6 2.5.7s2.3.2 3.8.2 1.7 0 2.4 0c.8 0 1.6 0 2.4-.2.6 0 1.1-.1 1.3-.2.3-.1.5-.3.5-.5l.2-.8h-.5c-.4.2-1 .3-1.8.4-.7 0-1.5.1-2.3.2-.8 0-1.5 0-2.1 0-1.7 0-3-.1-3.9-.3-.8-.2-1.3-.6-1.5-1-.2-.5-.2-1.2 0-2.2.2-.9.6-1.7 1.1-2.2s1.3-.9 2.2-1.1c1-.2 2.3-.3 3.9-.3s1.4 0 2.2 0 1.6.1 2.3.2c.7 0 1.2.2 1.6.3h.3s.1-.6.1-.6c0-.3 0-.5-.3-.7z" fill="#969696"/><path d="m228.3 1.4.3-1.2h-13.2c-.2 0-.4 0-.6 0-.3 0-.4.2-.4.4v.3l-2.1 8.6h14.1l.3-1.2h-11.7l.8-3.1h10.8l.3-1.2h-10.7l.7-2.6h11.7z" fill="#969696"/><g fill="#fff"><path d="m39.8.2h-16c-.4 0-.8.3-.8.8v6.8.9c0 .4.3.8.8.8h2.5s13.6 0 13.6 0c.2 0 .4-.2.4-.4v-.9c0-.2-.2-.4-.4-.4h-14.1c-.3 0-.6-.3-.6-.6v-1.3c0-.2.2-.4.4-.4h10.6c.2 0 .4-.2.4-.4v-.9c0-.2-.2-.4-.4-.4h-10.6c-.2 0-.4-.2-.4-.4v-1.2c0-.3.3-.6.6-.6h14.1c.2 0 .4-.2.4-.4v-.9c0-.2-.2-.4-.4-.4"/><path d="m81.9 0h-16.3c-.3 0-.5.2-.5.5v.9c0 .3.2.5.5.5h6.7c.2 0 .4.2.4.4v6.7c0 .3.2.5.5.5h1c.2 0 .4-.2.5-.4v-6.7c0-.2.2-.4.4-.4h6.7c.3 0 .5-.2.5-.5v-.9c0-.3-.2-.5-.5-.5"/><path d="m19 0h-.6c-.5 0-.6 0-.9.4l-5.5 5.5c-.9 1.1-1.5 1.6-2 1.6s-1.1-.6-2.1-1.6l-5.5-5.4c-.3-.4-.4-.4-.9-.4h-.6c-.5-.1-.8.1-.9.3 0 .2 0 .5.4.9l6.4 6.5s.1.1.2.2c.6.6 1.1 1.1 1.5 1.4.5.4.9.5 1.3.5v-.2s0 .2 0 .2c.5 0 .9-.2 1.3-.5s.9-.8 1.5-1.4c0 0 .1-.1.2-.2s0 0 0 0l6.4-6.5c.4-.4.5-.7.4-.9 0-.2-.3-.3-.8-.3"/><path d="m60.9 0h-1c-.3 0-.5.2-.5.5h.2s-.2 0-.2 0v6.7.3c-.1.1-.5.1-1.1.1-.1 0-.2 0-.3 0s-.2 0-.3 0l-9.1-7.3s0 0 0 0c-.2-.1-.3-.2-.6-.2h-3.2c-.5 0-.9.4-.9.9v8.1c0 .3.2.5.5.5h1c.3 0 .5-.2.5-.5s0-6.7 0-6.7c0-.2 0-.3 0-.3.1-.1.6-.1 1.5 0 .1 0 .2 0 .3.1l8.9 7.3c.2.1.4.2.6.2h3.2c.5 0 .9-.4.9-.9v-8.2c0-.3-.2-.5-.5-.5"/><path d="m102.9 0h-1c-.2 0-.4.2-.5.4v4.3s0 0 0 0v1.7c0 .2-.1.4-.3.6-.3.3-.8.6-1.5.6-.4 0-.8 0-1.1 0s-1.3 0-3.2 0c-1.6 0-3.8 0-4.1 0-.4 0-.7 0-1.1 0-.7 0-1.2-.3-1.5-.6-.1-.2-.2-.3-.3-.6 0-.2 0-.8 0-1.7v-3.9s0-.2 0-.2 0-.2 0-.2c0-.2-.3-.4-.5-.4h-1c-.3 0-.5.2-.5.5v.2 3.7s0 .7 0 .7c0 1.2 0 2 .1 2.4 0 .4.2.7.4 1 .5.5 1.2.9 2.2 1 .6 0 1.1.1 1.6.1h3.3 1 1 3.3c.5 0 1 0 1.6-.1 1-.1 1.7-.5 2.2-1 .2-.3.4-.6.4-1s0-1.2.1-2.4v-.6s0 0 0 0v-3.5s0-.2 0-.2v-.2c0-.3-.2-.5-.5-.5"/><path d="m109.4 2.4c0-.1 0-.3 0-.3h.4 8.9c1.5 0 2.6 0 3.2.2.5.1.6.4.6.8 0 .5-.2.7-.7.8-.6.1-1.5.1-3.2.1h-9.3v-1.5zm13.8-1.8c-1-.4-2.7-.5-5.2-.5h-10c-.5 0-.9.4-.9.9v8.1c0 .3.2.5.5.5h1.2c.3 0 .5-.2.5-.5v-3.4h8.3c1.1 0 1.1 0 1.8.7l2.8 2.8c.3.4.4.4.9.4h.6c.4 0 .7-.1.8-.3 0-.2 0-.5-.4-.9l-2.6-2.5c-.2-.2-.2-.3-.2-.3h.3c1-.1 1.7-.3 2.2-.7s.8-.9.8-1.7c0-.7-.1-1.3-.3-1.7s-.6-.8-1.1-1"/><path d="m131.7.4c0-.2-.3-.3-.5-.3h-1.2c-.3 0-.5.2-.5.5v8.5c0 .3.2.6.5.6h1.2c.2 0 .4-.2.5-.4v-8.7s0-.2 0-.2z"/></g></svg>
+</div>
+<div>
+<v-atom class="icon loader-marker"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+</div>
+<div></div>
+<div class="loader-status" c-font="body_3">
+<span class="loader-prepare">Ready for launch</span>
+<span class="loader-ready">Take-off</span>
+</div>
+<div class="loader-countdown">
+<svg class="asset loader-bars" width="39" height="10" viewBox="0 0 39 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.2" width="1" height="10" transform="matrix(-1 0 0 1 39 0)" fill="#D9D9D9"/>
+<rect opacity="0.6" width="1" height="10" transform="matrix(-1 0 0 1 22 0)" fill="#D9D9D9"/>
+<rect opacity="0.3" width="2" height="10" transform="matrix(-1 0 0 1 26 0)" fill="#D9D9D9"/>
+<rect opacity="0.1" width="2" height="10" transform="matrix(-1 0 0 1 2 0)" fill="#D9D9D9"/>
+<rect opacity="0.8" width="3" height="10" transform="matrix(-1 0 0 1 8 0)" fill="#D9D9D9"/>
+<rect opacity="0.1" width="4" height="10" transform="matrix(-1 0 0 1 34 0)" fill="#D9D9D9"/>
+<rect opacity="0.1" width="8" height="10" transform="matrix(-1 0 0 1 19 0)" fill="#D9D9D9"/>
+</svg>
+<v-atom class="icon loader-marker_right"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+<span class="loader-time">00:05:00</span>
+</div>
+</div>
+</div>
+</v-once>
+<v-once class="overlay" aria-hidden="true">
+</v-once>
+<v-once class="header" aria-hidden="true" data-expanded="false" data-bannered=1>
+<div class="header-container">
+<div c-flux="large" class="header-flux">
+<a href="https://venturi.space/en/" class="header-logo">
+<svg class="asset " viewBox="0 0 229 10" xmlns="http://www.w3.org/2000/svg"><path d="m158.1.7c-.1 0-.3-.2-.6-.2-.4-.1-.9-.2-1.6-.3-.7 0-1.4 0-2.2-.1-.8 0-1.4 0-2.1 0-1 0-2 0-2.9 0s-1.8.2-2.6.3c-.8.2-1.5.4-2 .8s-.9.9-1 1.6c-.2.6-.1 1.1.2 1.5.3.3.7.6 1.3.7.5.1 1.1.2 1.7.2h1.9 3.7c.7 0 1.4 0 1.9.1.4 0 .7.2.9.4 0 0 .2.2 0 .7-.1.5-.4.8-.8 1.1-.5.3-1.1.5-1.8.6-.8.1-1.6.2-2.6.2-.2 0-.5 0-.7 0h-.7c-.6 0-1.2 0-2 0s-1.5 0-2.2-.2c-.7 0-1.2-.2-1.6-.4h-.3c0-.1-.2.6-.2.6 0 .3 0 .6.8.8.4.1.9.2 1.6.3.6 0 1.3 0 1.9.1h1.6 1.2 1.2c1.2 0 2.3-.1 3.3-.3s1.8-.4 2.5-.8 1.1-1 1.3-1.8 0-1.4-.3-1.8c-.4-.3-1-.6-1.8-.7-.7 0-1.6-.1-2.6-.1h-3.8c-.8 0-1.4 0-2 0-.5 0-.9-.2-1.1-.3-.1 0-.2-.2-.1-.7s.4-.8.9-1.1c.5-.2 1.1-.4 1.9-.5.8 0 1.6-.1 2.5-.1h1.7 1.3 1.6c.5 0 1.1.1 1.5.2.5.1.7.2.8.3l.3.2.2-.3s0 0 0-.2c0 0 0-.1 0-.2 0 0 0-.1 0-.2 0-.2 0-.4-.2-.5z" fill="#969696"/><path d="m177.2 1.5c-.2-.4-.7-.7-1.3-.9s-1.3-.3-2.3-.3c-.7 0-1.6 0-2.6 0s-2 0-3.1 0c-1 0-2 0-2.7 0-.6 0-1.1 0-1.5.2-.3.1-.7.4-.8 1-.3 1.3-.7 2.6-1 3.9s-.6 2.6-.9 3.9v.4h2.3v-.2c.4-1.3.7-2.6 1-3.8.3-1.3.6-2.5.9-3.8 0 0 0-.2.3-.2h.5 2 2.6 2.5c1 0 1.4.3 1.6.5.2.1.3.4.2 1-.1.5-.3.9-.7 1.1-.4.3-.8.5-1.3.6s-1.1.2-1.6.2h-5.6c-.2 0-.4 0-.5.1-.1 0-.2.2-.3.3 0 0 0 .2-.1.4v.4c-.1 0 6.9 0 6.9 0 1.5 0 2.7-.2 3.7-.7s1.7-1.2 1.9-2.2c.2-.6.1-1.1-.1-1.5z" fill="#969696"/><path d="m189.4.4c-.4-.2-1.1-.3-2.2-.3s-1.9.1-2.4.4c-.5.2-1 .6-1.4 1l-6.6 8h2.2l2-2.5h8.5l.8 2.5h2.5l-2.6-7.9c-.2-.5-.5-.9-.9-1.1zm-7.3 5.5 2.9-3.7c.1-.2.3-.3.6-.5.1 0 .4-.2 1.3-.2s1 .1 1 .2c.1.1.2.3.3.4l1.2 3.8h-7.2z" fill="#969696"/><path d="m211.3.5c-.1 0-.4-.2-1.2-.2s-1.5-.1-2.3-.2c-.8 0-1.6 0-2.4 0-1.4 0-2.6 0-3.7.2-1.1.1-2.1.3-2.9.7-.8.3-1.5.8-2.1 1.4-.5.6-.9 1.4-1.2 2.4-.2 1-.3 1.8 0 2.4.2.7.6 1.2 1.3 1.5.6.3 1.5.6 2.5.7s2.3.2 3.8.2 1.7 0 2.4 0c.8 0 1.6 0 2.4-.2.6 0 1.1-.1 1.3-.2.3-.1.5-.3.5-.5l.2-.8h-.5c-.4.2-1 .3-1.8.4-.7 0-1.5.1-2.3.2-.8 0-1.5 0-2.1 0-1.7 0-3-.1-3.9-.3-.8-.2-1.3-.6-1.5-1-.2-.5-.2-1.2 0-2.2.2-.9.6-1.7 1.1-2.2s1.3-.9 2.2-1.1c1-.2 2.3-.3 3.9-.3s1.4 0 2.2 0 1.6.1 2.3.2c.7 0 1.2.2 1.6.3h.3s.1-.6.1-.6c0-.3 0-.5-.3-.7z" fill="#969696"/><path d="m228.3 1.4.3-1.2h-13.2c-.2 0-.4 0-.6 0-.3 0-.4.2-.4.4v.3l-2.1 8.6h14.1l.3-1.2h-11.7l.8-3.1h10.8l.3-1.2h-10.7l.7-2.6h11.7z" fill="#969696"/><g fill="#fff"><path d="m39.8.2h-16c-.4 0-.8.3-.8.8v6.8.9c0 .4.3.8.8.8h2.5s13.6 0 13.6 0c.2 0 .4-.2.4-.4v-.9c0-.2-.2-.4-.4-.4h-14.1c-.3 0-.6-.3-.6-.6v-1.3c0-.2.2-.4.4-.4h10.6c.2 0 .4-.2.4-.4v-.9c0-.2-.2-.4-.4-.4h-10.6c-.2 0-.4-.2-.4-.4v-1.2c0-.3.3-.6.6-.6h14.1c.2 0 .4-.2.4-.4v-.9c0-.2-.2-.4-.4-.4"/><path d="m81.9 0h-16.3c-.3 0-.5.2-.5.5v.9c0 .3.2.5.5.5h6.7c.2 0 .4.2.4.4v6.7c0 .3.2.5.5.5h1c.2 0 .4-.2.5-.4v-6.7c0-.2.2-.4.4-.4h6.7c.3 0 .5-.2.5-.5v-.9c0-.3-.2-.5-.5-.5"/><path d="m19 0h-.6c-.5 0-.6 0-.9.4l-5.5 5.5c-.9 1.1-1.5 1.6-2 1.6s-1.1-.6-2.1-1.6l-5.5-5.4c-.3-.4-.4-.4-.9-.4h-.6c-.5-.1-.8.1-.9.3 0 .2 0 .5.4.9l6.4 6.5s.1.1.2.2c.6.6 1.1 1.1 1.5 1.4.5.4.9.5 1.3.5v-.2s0 .2 0 .2c.5 0 .9-.2 1.3-.5s.9-.8 1.5-1.4c0 0 .1-.1.2-.2s0 0 0 0l6.4-6.5c.4-.4.5-.7.4-.9 0-.2-.3-.3-.8-.3"/><path d="m60.9 0h-1c-.3 0-.5.2-.5.5h.2s-.2 0-.2 0v6.7.3c-.1.1-.5.1-1.1.1-.1 0-.2 0-.3 0s-.2 0-.3 0l-9.1-7.3s0 0 0 0c-.2-.1-.3-.2-.6-.2h-3.2c-.5 0-.9.4-.9.9v8.1c0 .3.2.5.5.5h1c.3 0 .5-.2.5-.5s0-6.7 0-6.7c0-.2 0-.3 0-.3.1-.1.6-.1 1.5 0 .1 0 .2 0 .3.1l8.9 7.3c.2.1.4.2.6.2h3.2c.5 0 .9-.4.9-.9v-8.2c0-.3-.2-.5-.5-.5"/><path d="m102.9 0h-1c-.2 0-.4.2-.5.4v4.3s0 0 0 0v1.7c0 .2-.1.4-.3.6-.3.3-.8.6-1.5.6-.4 0-.8 0-1.1 0s-1.3 0-3.2 0c-1.6 0-3.8 0-4.1 0-.4 0-.7 0-1.1 0-.7 0-1.2-.3-1.5-.6-.1-.2-.2-.3-.3-.6 0-.2 0-.8 0-1.7v-3.9s0-.2 0-.2 0-.2 0-.2c0-.2-.3-.4-.5-.4h-1c-.3 0-.5.2-.5.5v.2 3.7s0 .7 0 .7c0 1.2 0 2 .1 2.4 0 .4.2.7.4 1 .5.5 1.2.9 2.2 1 .6 0 1.1.1 1.6.1h3.3 1 1 3.3c.5 0 1 0 1.6-.1 1-.1 1.7-.5 2.2-1 .2-.3.4-.6.4-1s0-1.2.1-2.4v-.6s0 0 0 0v-3.5s0-.2 0-.2v-.2c0-.3-.2-.5-.5-.5"/><path d="m109.4 2.4c0-.1 0-.3 0-.3h.4 8.9c1.5 0 2.6 0 3.2.2.5.1.6.4.6.8 0 .5-.2.7-.7.8-.6.1-1.5.1-3.2.1h-9.3v-1.5zm13.8-1.8c-1-.4-2.7-.5-5.2-.5h-10c-.5 0-.9.4-.9.9v8.1c0 .3.2.5.5.5h1.2c.3 0 .5-.2.5-.5v-3.4h8.3c1.1 0 1.1 0 1.8.7l2.8 2.8c.3.4.4.4.9.4h.6c.4 0 .7-.1.8-.3 0-.2 0-.5-.4-.9l-2.6-2.5c-.2-.2-.2-.3-.2-.3h.3c1-.1 1.7-.3 2.2-.7s.8-.9.8-1.7c0-.7-.1-1.3-.3-1.7s-.6-.8-1.1-1"/><path d="m131.7.4c0-.2-.3-.3-.5-.3h-1.2c-.3 0-.5.2-.5.5v8.5c0 .3.2.6.5.6h1.2c.2 0 .4-.2.5-.4v-8.7s0-.2 0-.2z"/></g></svg>
+</a>
+<div class="header-menu" aria-hidden="true">
+<div class="header-navs">
+<nav class="header-items">
+<div class="header-item" data-sub="true">
+<a class="header-main_link" href="https://venturi.space/en/about-venturi-space/">
+<span>About</span>
+<v-atom class="icon header-item-chevron"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m22.4332 12.5089h-.4568c-.1255-.0207-.2542-.0052-.3712.0448s-.2175.1323-.2898.2375l-3.8545 3.941-.0033.003c-.6676.7474-1.0471 1.1045-1.3997 1.1141-.3814.0107-.8035-.3953-1.5164-1.1127l-3.8548-3.9411c-.0724-.105-.173-.1871-.29-.2369s-.2457-.0652-.3711-.0443h-.45672c-.30903 0-.4885.0701-.54832.2137-.0661.158.02644.3551.28853.6211l4.51811 4.6169.1461.1486c.3374.3638.6987.7045 1.0815 1.0197.265.2256.5982.3545.9452.3657.347-.0113.68-.1402.945-.3657.3828-.3148.744-.6552 1.0811-1.019.0478-.0481.0968-.0979.1471-.1493l-.0024-.0026.0027-.0027 4.5175-4.6163c.2624-.2659.3539-.4634.2888-.6207-.0598-.1446-.2393-.2148-.5483-.2148" fill="#fff"/></svg>
+</v-atom>
+</a>
+<v-module class="submenu header-submenu" aria-hidden="true">
+<div c-flux="large">
+<div class="submenu-items" data-cols="">
+<v-module class="card_submenu submenu-submenu-item">
+<v-atom class="media card_submenu-media"
+portrait="false"
+ratio="1.7777777777778"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2026/02/venturi-mona-luna-at-luna-esa-1-november-2025-venturiromero-1-scaled.jpg"
+srcset="https://venturi.space/wp-content/uploads/2026/02/venturi-mona-luna-at-luna-esa-1-november-2025-venturiromero-1-150x84.jpg 150w, https://venturi.space/wp-content/uploads/2026/02/venturi-mona-luna-at-luna-esa-1-november-2025-venturiromero-1-800x450.jpg 800w, https://venturi.space/wp-content/uploads/2026/02/venturi-mona-luna-at-luna-esa-1-november-2025-venturiromero-1-1920x1080.jpg 1920w, https://venturi.space/wp-content/uploads/2026/02/venturi-mona-luna-at-luna-esa-1-november-2025-venturiromero-1-1536x864.jpg 1536w, https://venturi.space/wp-content/uploads/2026/02/venturi-mona-luna-at-luna-esa-1-november-2025-venturiromero-1-2048x1152.jpg 2048w, https://venturi.space/wp-content/uploads/2026/02/venturi-mona-luna-at-luna-esa-1-november-2025-venturiromero-1-400x225.jpg 400w, https://venturi.space/wp-content/uploads/2026/02/venturi-mona-luna-at-luna-esa-1-november-2025-venturiromero-1-1280x720.jpg 1280w"
+width="2560"
+height="1440"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+<a href="https://venturi.space/en/about-venturi-space/" class="card_submenu-content">
+<v-atom class="marker card_submenu-marker">
+<canvas class="marker-canvas"></canvas>
+<v-atom class="icon marker-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+</v-atom>
+<v-atom data-size="default" class="label card_submenu-label" >		<span class="label-title" c-font="label_2">About</span>
+</v-atom>
+<span class="card_submenu-title">About</span>
+<span class="button card_submenu-button"
+href=""
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Learn more
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</span>
+</a>
+</v-module>
+<v-module class="card_submenu submenu-submenu-item">
+<v-atom class="media card_submenu-media"
+portrait="false"
+ratio="1.6721097322012"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2026/04/flex-ltv-astronaute-environnement-lunaire-venturi-space-scaled.jpg"
+srcset="https://venturi.space/wp-content/uploads/2026/04/flex-ltv-astronaute-environnement-lunaire-venturi-space-150x90.jpg 150w, https://venturi.space/wp-content/uploads/2026/04/flex-ltv-astronaute-environnement-lunaire-venturi-space-800x478.jpg 800w, https://venturi.space/wp-content/uploads/2026/04/flex-ltv-astronaute-environnement-lunaire-venturi-space-1920x1148.jpg 1920w, https://venturi.space/wp-content/uploads/2026/04/flex-ltv-astronaute-environnement-lunaire-venturi-space-1536x919.jpg 1536w, https://venturi.space/wp-content/uploads/2026/04/flex-ltv-astronaute-environnement-lunaire-venturi-space-2048x1225.jpg 2048w, https://venturi.space/wp-content/uploads/2026/04/flex-ltv-astronaute-environnement-lunaire-venturi-space-400x239.jpg 400w, https://venturi.space/wp-content/uploads/2026/04/flex-ltv-astronaute-environnement-lunaire-venturi-space-1280x765.jpg 1280w"
+width="2560"
+height="1531"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+<a href="https://venturi.space/en/exploration/" class="card_submenu-content">
+<v-atom class="marker card_submenu-marker">
+<canvas class="marker-canvas"></canvas>
+<v-atom class="icon marker-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+</v-atom>
+<v-atom data-size="default" class="label card_submenu-label" >		<span class="label-title" c-font="label_2">About</span>
+</v-atom>
+<span class="card_submenu-title">Exploration</span>
+<span class="button card_submenu-button"
+href=""
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Learn more
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</span>
+</a>
+</v-module>
+<v-module class="card_submenu submenu-submenu-item">
+<v-atom class="media card_submenu-media"
+portrait="false"
+ratio="1.4997070884593"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2026/05/spacesuit-media-shivraj-gohil-venturi-vbb3-bonneville-utah-usa-september-2016-5d4-4170-scaled-e1779115232196.webp"
+srcset="https://venturi.space/wp-content/uploads/2026/05/spacesuit-media-shivraj-gohil-venturi-vbb3-bonneville-utah-usa-september-2016-5d4-4170-150x100.webp 150w, https://venturi.space/wp-content/uploads/2026/05/spacesuit-media-shivraj-gohil-venturi-vbb3-bonneville-utah-usa-september-2016-5d4-4170-800x533.webp 800w, https://venturi.space/wp-content/uploads/2026/05/spacesuit-media-shivraj-gohil-venturi-vbb3-bonneville-utah-usa-september-2016-5d4-4170-1920x1280.webp 1920w, https://venturi.space/wp-content/uploads/2026/05/spacesuit-media-shivraj-gohil-venturi-vbb3-bonneville-utah-usa-september-2016-5d4-4170-1536x1024.webp 1536w, https://venturi.space/wp-content/uploads/2026/05/spacesuit-media-shivraj-gohil-venturi-vbb3-bonneville-utah-usa-september-2016-5d4-4170-2048x1365.webp 2048w, https://venturi.space/wp-content/uploads/2026/05/spacesuit-media-shivraj-gohil-venturi-vbb3-bonneville-utah-usa-september-2016-5d4-4170-400x267.webp 400w, https://venturi.space/wp-content/uploads/2026/05/spacesuit-media-shivraj-gohil-venturi-vbb3-bonneville-utah-usa-september-2016-5d4-4170-1280x853.webp 1280w"
+width="2560"
+height="1707"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+<a href="https://www.venturi.com/en/" class="card_submenu-content">
+<v-atom class="marker card_submenu-marker">
+<canvas class="marker-canvas"></canvas>
+<v-atom class="icon marker-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+</v-atom>
+<v-atom data-size="default" class="label card_submenu-label" >		<span class="label-title" c-font="label_2">About</span>
+</v-atom>
+<span class="card_submenu-title">Terrestrial activities</span>
+<span class="button card_submenu-button"
+href=""
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Learn more
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</span>
+</a>
+</v-module>
+</div>
+</div>
+</v-module>
+</div>
+<div class="header-item" data-sub="false">
+<a class="header-main_link" href="https://venturi.space/en/the-group/">
+<span>The Group</span>
+</a>
+</div>
+<div class="header-item" data-sub="false">
+<a class="header-main_link" href="https://venturi.space/en/rovers/">
+<span>Rovers</span>
+</a>
+</div>
+<div class="header-item" data-sub="true">
+<a class="header-main_link" href="https://venturi.space/programme-us">
+<span>Programmes</span>
+<v-atom class="icon header-item-chevron"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m22.4332 12.5089h-.4568c-.1255-.0207-.2542-.0052-.3712.0448s-.2175.1323-.2898.2375l-3.8545 3.941-.0033.003c-.6676.7474-1.0471 1.1045-1.3997 1.1141-.3814.0107-.8035-.3953-1.5164-1.1127l-3.8548-3.9411c-.0724-.105-.173-.1871-.29-.2369s-.2457-.0652-.3711-.0443h-.45672c-.30903 0-.4885.0701-.54832.2137-.0661.158.02644.3551.28853.6211l4.51811 4.6169.1461.1486c.3374.3638.6987.7045 1.0815 1.0197.265.2256.5982.3545.9452.3657.347-.0113.68-.1402.945-.3657.3828-.3148.744-.6552 1.0811-1.019.0478-.0481.0968-.0979.1471-.1493l-.0024-.0026.0027-.0027 4.5175-4.6163c.2624-.2659.3539-.4634.2888-.6207-.0598-.1446-.2393-.2148-.5483-.2148" fill="#fff"/></svg>
+</v-atom>
+</a>
+<v-module class="submenu header-submenu" aria-hidden="true">
+<div c-flux="large">
+<div class="submenu-items" data-cols="">
+<v-module class="card_submenu submenu-submenu-item">
+<v-atom class="media card_submenu-media"
+portrait="false"
+ratio="1.4997070884593"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2026/04/moon-obs-scaled.jpeg"
+srcset="https://venturi.space/wp-content/uploads/2026/04/moon-obs-150x100.jpeg 150w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-800x533.jpeg 800w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-1920x1280.jpeg 1920w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-1536x1024.jpeg 1536w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-2048x1365.jpeg 2048w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-400x267.jpeg 400w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-1280x853.jpeg 1280w"
+width="2560"
+height="1707"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+<span>An image of a space view to our planet earth from moon</span>
+</span>
+</v-atom>
+<a href="https://venturi.space/en/us-programme/" class="card_submenu-content">
+<v-atom class="marker card_submenu-marker">
+<canvas class="marker-canvas"></canvas>
+<v-atom class="icon marker-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+</v-atom>
+<v-atom data-size="default" class="label card_submenu-label" >		<span class="label-title" c-font="label_2">Programmes</span>
+</v-atom>
+<span class="card_submenu-title">Programme US</span>
+<span class="button card_submenu-button"
+href=""
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Learn more
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</span>
+</a>
+</v-module>
+<v-module class="card_submenu submenu-submenu-item">
+<v-atom class="media card_submenu-media"
+portrait="false"
+ratio="1.7777777777778"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-scaled.jpg"
+srcset="https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-150x84.jpg 150w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-800x450.jpg 800w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-1920x1080.jpg 1920w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-1536x864.jpg 1536w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-2048x1152.jpg 2048w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-400x225.jpg 400w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-1280x720.jpg 1280w"
+width="2560"
+height="1440"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+<a href="https://venturi.space/en/programme-eu/" class="card_submenu-content">
+<v-atom class="marker card_submenu-marker">
+<canvas class="marker-canvas"></canvas>
+<v-atom class="icon marker-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+</v-atom>
+<v-atom data-size="default" class="label card_submenu-label" >		<span class="label-title" c-font="label_2">Programmes</span>
+</v-atom>
+<span class="card_submenu-title">Programme EU</span>
+<span class="button card_submenu-button"
+href=""
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Learn more
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</span>
+</a>
+</v-module>
+</div>
+</div>
+</v-module>
+</div>
+<div class="header-item" data-sub="true">
+<a class="header-main_link" href="https://venturi.space/en/technologies">
+<span>Technologies</span>
+<v-atom class="icon header-item-chevron"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m22.4332 12.5089h-.4568c-.1255-.0207-.2542-.0052-.3712.0448s-.2175.1323-.2898.2375l-3.8545 3.941-.0033.003c-.6676.7474-1.0471 1.1045-1.3997 1.1141-.3814.0107-.8035-.3953-1.5164-1.1127l-3.8548-3.9411c-.0724-.105-.173-.1871-.29-.2369s-.2457-.0652-.3711-.0443h-.45672c-.30903 0-.4885.0701-.54832.2137-.0661.158.02644.3551.28853.6211l4.51811 4.6169.1461.1486c.3374.3638.6987.7045 1.0815 1.0197.265.2256.5982.3545.9452.3657.347-.0113.68-.1402.945-.3657.3828-.3148.744-.6552 1.0811-1.019.0478-.0481.0968-.0979.1471-.1493l-.0024-.0026.0027-.0027 4.5175-4.6163c.2624-.2659.3539-.4634.2888-.6207-.0598-.1446-.2393-.2148-.5483-.2148" fill="#fff"/></svg>
+</v-atom>
+</a>
+<v-module class="submenu header-submenu" aria-hidden="true">
+<div c-flux="large">
+<div class="submenu-items" data-cols="">
+<v-module class="card_submenu submenu-submenu-item">
+<v-atom class="media card_submenu-media"
+portrait="false"
+ratio="1.4997070884593"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2024/06/pf1-7568-scaled.jpg"
+srcset="https://venturi.space/wp-content/uploads/2024/06/pf1-7568-150x100.jpg 150w, https://venturi.space/wp-content/uploads/2024/06/pf1-7568-800x534.jpg 800w, https://venturi.space/wp-content/uploads/2024/06/pf1-7568-1920x1280.jpg 1920w, https://venturi.space/wp-content/uploads/2024/06/pf1-7568-1536x1024.jpg 1536w, https://venturi.space/wp-content/uploads/2024/06/pf1-7568-2048x1366.jpg 2048w, https://venturi.space/wp-content/uploads/2024/06/pf1-7568-400x267.jpg 400w, https://venturi.space/wp-content/uploads/2024/06/pf1-7568-1280x854.jpg 1280w"
+width="2560"
+height="1707"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+<a href="https://venturi.space/en/batteries/" class="card_submenu-content">
+<v-atom class="marker card_submenu-marker">
+<canvas class="marker-canvas"></canvas>
+<v-atom class="icon marker-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+</v-atom>
+<v-atom data-size="default" class="label card_submenu-label" >		<span class="label-title" c-font="label_2">Technologies</span>
+</v-atom>
+<span class="card_submenu-title">Batteries</span>
+<span class="button card_submenu-button"
+href=""
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Learn more
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</span>
+</a>
+</v-module>
+<v-module class="card_submenu submenu-submenu-item">
+<v-atom class="media card_submenu-media"
+portrait="false"
+ratio="2.14405360134"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2024/06/dsc01921-1.png"
+srcset="https://venturi.space/wp-content/uploads/2024/06/dsc01921-1-150x70.png 150w, https://venturi.space/wp-content/uploads/2024/06/dsc01921-1-800x373.png 800w, https://venturi.space/wp-content/uploads/2024/06/dsc01921-1.png 1280w, https://venturi.space/wp-content/uploads/2024/06/dsc01921-1.png 1280w, https://venturi.space/wp-content/uploads/2024/06/dsc01921-1.png 1280w, https://venturi.space/wp-content/uploads/2024/06/dsc01921-1-400x187.png 400w, https://venturi.space/wp-content/uploads/2024/06/dsc01921-1.png 1280w"
+width="1280"
+height="597"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+<a href="https://venturi.space/en/wheel/" class="card_submenu-content">
+<v-atom class="marker card_submenu-marker">
+<canvas class="marker-canvas"></canvas>
+<v-atom class="icon marker-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+</v-atom>
+<v-atom data-size="default" class="label card_submenu-label" >		<span class="label-title" c-font="label_2">Technologies</span>
+</v-atom>
+<span class="card_submenu-title">Wheels</span>
+<span class="button card_submenu-button"
+href=""
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Learn more
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</span>
+</a>
+</v-module>
+<v-module class="card_submenu submenu-submenu-item">
+<v-atom class="media card_submenu-media"
+portrait="false"
+ratio="1.4997070884593"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2026/04/moon-obs-scaled.jpeg"
+srcset="https://venturi.space/wp-content/uploads/2026/04/moon-obs-150x100.jpeg 150w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-800x533.jpeg 800w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-1920x1280.jpeg 1920w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-1536x1024.jpeg 1536w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-2048x1365.jpeg 2048w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-400x267.jpeg 400w, https://venturi.space/wp-content/uploads/2026/04/moon-obs-1280x853.jpeg 1280w"
+width="2560"
+height="1707"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+<span>An image of a space view to our planet earth from moon</span>
+</span>
+</v-atom>
+<a href="https://venturi.space/en/onboard-management-systems/" class="card_submenu-content">
+<v-atom class="marker card_submenu-marker">
+<canvas class="marker-canvas"></canvas>
+<v-atom class="icon marker-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+</v-atom>
+<v-atom data-size="default" class="label card_submenu-label" >		<span class="label-title" c-font="label_2">Technologies</span>
+</v-atom>
+<span class="card_submenu-title">Onboard management systems</span>
+<span class="button card_submenu-button"
+href=""
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Learn more
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</span>
+</a>
+</v-module>
+</div>
+</div>
+</v-module>
+</div>
+<div class="header-item" data-sub="false">
+<a class="header-main_link" href="https://venturi.space/en/newsroom/">
+<span>Newsroom</span>
+</a>
+</div>
+<div class="header-item" data-sub="false">
+<a class="header-main_link" href="https://venturi.space/en/careers/">
+<span>Careers</span>
+</a>
+</div>
+</nav>
+<div class="header-actions">
+<v-atom class="langs header-langs_mobile" data-wg-notranslate>
+<div class="langs-items">
+<a class="langs-item"
+c-font="body_3"
+href="https://venturi.space/en/"
+v-barba-prevent="self"
+data-wg-notranslate
+aria-current="true">
+English
+</a>
+<a class="langs-item"
+c-font="body_3"
+href="https://venturi.space/"
+v-barba-prevent="self"
+data-wg-notranslate
+aria-current="false">
+Français
+</a>
+</div>
+</v-atom>
+<a class="button header-contact_mobile"
+href="https://venturi.space/en/contact/"
+s-cursor="pointer"
+size='large'
+>
+<div class="button-shape"><svg class="" width="792" height="394" viewBox="0 0 792 394" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask fill="white">
+<path d="M758.994 0.502378H733.186C726.098 -0.662822 718.825 0.208586 712.213 3.01536C705.601 5.82214 699.922 10.4489 695.837 16.3571L478.054 237.725L477.868 237.894C440.145 279.874 418.706 299.93 398.78 300.472C377.23 301.07 353.383 278.268 313.102 237.968L95.2999 16.5998C91.2076 10.7019 85.5261 6.08643 78.9146 3.28977C72.3031 0.493118 65.0332 -0.370072 57.9508 0.801007H32.1427C14.682 0.801007 4.54177 4.74144 1.16168 12.8089C-2.57324 21.6793 2.65538 32.7532 17.4643 47.6929L272.746 307.027L281 315.374C300.065 335.81 320.478 354.944 342.103 372.649C357.081 385.323 375.903 392.562 395.513 393.191C415.116 392.558 433.931 385.319 448.903 372.649C470.532 354.968 490.94 335.846 509.988 315.411C512.689 312.71 515.459 309.915 518.298 307.027L518.167 306.877L518.316 306.728L773.56 47.4316C788.388 32.4919 793.561 21.3991 789.882 12.5661C786.502 4.44264 776.361 0.502378 758.901 0.502378"/>
+</mask>
+<path d="M396.013 393.191V387.122H395.013V393.191H396.013ZM733.186 0.502378L733.024 1.48913L733.105 1.50238H733.186V0.502378ZM695.837 16.3571L696.55 17.0584L696.61 16.9968L696.66 16.9258L695.837 16.3571ZM478.054 237.725L478.724 238.468L478.746 238.448L478.767 238.427L478.054 237.725ZM477.868 237.894L477.198 237.151L477.159 237.186L477.124 237.225L477.868 237.894ZM398.78 300.472L398.753 299.472L398.753 299.472L398.78 300.472ZM313.102 237.968L312.389 238.67L312.395 238.675L313.102 237.968ZM95.2999 16.5998L94.4783 17.1699L94.5271 17.2402L94.5871 17.3012L95.2999 16.5998ZM57.9508 0.801007V1.80101H58.0329L58.1139 1.78761L57.9508 0.801007ZM1.16168 12.8089L2.08331 13.1969L2.08399 13.1953L1.16168 12.8089ZM17.4643 47.6929L18.177 46.9914L18.1745 46.9889L17.4643 47.6929ZM272.746 307.027L272.033 307.728L272.035 307.73L272.746 307.027ZM281 315.374L281.731 314.692L281.721 314.681L281.711 314.671L281 315.374ZM342.103 372.649L342.749 371.886L342.743 371.88L342.737 371.875L342.103 372.649ZM395.513 393.191L395.481 394.191L395.513 394.192L395.545 394.191L395.513 393.191ZM448.903 372.649L448.27 371.875L448.264 371.88L448.257 371.886L448.903 372.649ZM509.988 315.411L509.281 314.704L509.268 314.717L509.256 314.73L509.988 315.411ZM518.298 307.027L519.011 307.728L519.661 307.067L519.05 306.369L518.298 307.027ZM518.167 306.877L517.459 306.171L516.799 306.832L517.414 307.536L518.167 306.877ZM518.316 306.728L519.024 307.434L519.029 307.429L518.316 306.728ZM773.56 47.4316L772.851 46.7271L772.848 46.7301L773.56 47.4316ZM789.882 12.5661L788.959 12.9502L788.959 12.9506L789.882 12.5661ZM758.994 -0.497622H733.186V1.50238H758.994V-0.497622ZM733.348 -0.484377C726.074 -1.6803 718.609 -0.785917 711.822 2.09487L712.604 3.93586C719.042 1.20309 726.123 0.354653 733.024 1.48913L733.348 -0.484377ZM711.822 2.09487C705.036 4.97565 699.207 9.72436 695.015 15.7883L696.66 16.9258C700.637 11.1734 706.166 6.66863 712.604 3.93586L711.822 2.09487ZM695.124 15.6558L477.341 237.024L478.767 238.427L696.55 17.0584L695.124 15.6558ZM477.384 236.983L477.198 237.151L478.537 238.636L478.724 238.468L477.384 236.983ZM477.124 237.225C458.26 258.218 443.516 273.674 431.015 283.95C418.506 294.232 408.381 299.211 398.753 299.472L398.808 301.472C409.106 301.192 419.662 295.871 432.285 285.495C444.916 275.112 459.752 259.55 478.611 238.562L477.124 237.225ZM398.753 299.472C388.341 299.761 377.229 294.399 363.58 283.768C349.948 273.15 333.962 257.423 313.809 237.261L312.395 238.675C332.523 258.813 348.601 274.637 362.351 285.346C376.083 296.041 387.669 301.781 398.808 301.472L398.753 299.472ZM313.815 237.267L96.0127 15.8985L94.5871 17.3012L312.389 238.67L313.815 237.267ZM96.1215 16.0298C91.9214 9.97631 86.09 5.23918 79.3042 2.36878L78.525 4.21076C84.9622 6.93367 90.4939 11.4274 94.4783 17.1699L96.1215 16.0298ZM79.3042 2.36878C72.5184 -0.501603 65.0569 -1.38755 57.7876 -0.185597L58.1139 1.78761C65.0096 0.647412 72.0879 1.48784 78.525 4.21076L79.3042 2.36878ZM57.9508 -0.198993H32.1427V1.80101H57.9508V-0.198993ZM32.1427 -0.198993C23.3532 -0.198993 16.3137 0.790506 11.0104 2.84731C5.68446 4.91289 2.05944 8.07836 0.239359 12.4224L2.08399 13.1953C3.64401 9.47194 6.77915 6.63348 11.7336 4.71199C16.7106 2.78173 23.4715 1.80101 32.1427 1.80101V-0.198993ZM0.240041 12.4208C-1.76792 17.1897 -1.31976 22.4797 1.4535 28.3992C4.2159 34.2954 9.31716 40.8943 16.7541 48.3969L18.1745 46.9889C10.8025 39.5518 5.88502 33.1439 3.2646 27.5507C0.655047 21.9806 0.356359 17.2984 2.08331 13.1969L0.240041 12.4208ZM16.7517 48.3944L272.033 307.728L273.459 306.325L18.177 46.9914L16.7517 48.3944ZM272.035 307.73L280.289 316.077L281.711 314.671L273.457 306.324L272.035 307.73ZM280.269 316.056C299.364 336.525 319.81 355.69 341.47 373.423L342.737 371.875C321.146 354.199 300.766 335.095 281.731 314.692L280.269 316.056ZM341.457 373.412C356.607 386.232 375.645 393.554 395.481 394.191L395.545 392.192C376.16 391.57 357.555 384.414 342.749 371.886L341.457 373.412ZM395.545 394.191C415.374 393.55 434.405 386.228 449.549 373.412L448.257 371.886C433.457 384.41 414.859 391.565 395.48 392.192L395.545 394.191ZM449.536 373.423C471.199 355.714 491.64 336.56 510.719 316.093L509.256 314.73C490.239 335.131 469.864 354.223 448.27 371.875L449.536 373.423ZM510.695 316.119C513.399 313.415 516.17 310.618 519.011 307.728L517.584 306.326C514.748 309.212 511.98 312.005 509.281 314.704L510.695 316.119ZM519.05 306.369L518.92 306.219L517.414 307.536L517.545 307.685L519.05 306.369ZM518.875 307.584L519.024 307.434L517.609 306.021L517.459 306.171L518.875 307.584ZM519.029 307.429L774.273 48.1331L772.848 46.7301L517.604 306.026L519.029 307.429ZM774.27 48.136C781.717 40.6325 786.809 34.0288 789.567 28.1325C792.335 22.2138 792.783 16.9304 790.805 12.1816L788.959 12.9506C790.66 17.0348 790.361 21.7143 787.755 27.2852C785.139 32.8784 780.231 39.291 772.851 46.7271L774.27 48.136ZM790.805 12.1819C788.986 7.81 785.362 4.62939 780.034 2.55603C774.73 0.491784 767.69 -0.497622 758.901 -0.497622V1.50238C767.572 1.50238 774.332 2.4831 779.309 4.41985C784.262 6.34748 787.398 9.19871 788.959 12.9502L790.805 12.1819Z" fill="white" fill-opacity="0.2" mask="url(#path-1-inside-1_1865_5081)"/>
+</svg>
+</div>
+<span class="button-text" c-font="label_2">
+Contact us
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class=""
+fill="none"
+height="32"
+viewBox="0 0 32 32"
+width="32"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+><g stroke="#f4f4f4"><rect height="8" rx=".5" width="13" x="9.5" y="12" /><path
+d="m9.37468 12.0188 6.00062 4.6637c.3675.2857.8873.2857 1.2549 0l6.0006-4.6637"
+/></g></svg>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m10.5 5h-4.3c-.66274 0-1.2.53726-1.2 1.2v4.3m16.5-5.5h4.3c.6627 0 1.2.53726 1.2 1.2v4.3m0 11v4.3c0 .6627-.5373 1.2-1.2 1.2h-4.3m-11 0h-4.3c-.66274 0-1.2-.5373-1.2-1.2v-4.3" opacity=".2" stroke="#f4f4f4" stroke-width="1.2"/><g fill="#f4f4f4"><path d="m26.4 15.4h1.2v1.2h-1.2z"/><path d="m4.4 15.4h1.2v1.2h-1.2z"/></g></svg>
+</v-atom>
+</a>
+<v-module class="social_links header-social" data-list="false">
+<a class="social_links-link" href="https://www.facebook.com/Venturi/" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m22.7442 15.8721c0-3.7953-3.0768-6.8721-6.8721-6.8721s-6.8721 3.0768-6.8721 6.8721c0 3.2227 2.2189 5.927 5.2121 6.6698v-4.5697h-1.4171v-2.1001h1.4171v-.9049c0-2.339 1.0585-3.4232 3.3549-3.4232.4354 0 1.1867.0855 1.494.1707v1.9036c-.1622-.017-.4439-.0255-.7939-.0255-1.1267 0-1.5621.4268-1.5621 1.5365v.7428h2.2447l-.3857 2.1001h-1.859v4.7217c3.4028-.411 6.0394-3.3083 6.0394-6.8218z" fill="#fff"/></svg>
+</v-atom>
+</a>
+<a class="social_links-link" href="https://www.instagram.com/venturi.official/" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.8721 10.2375c1.8361 0 2.0536.0081 2.7757.0403.6711.0295 1.0335.1423 1.2751.2362.3194.1235.5503.2738.7892.5127.2416.2416.3892.4698.5127.7892.0939.2416.2067.6067.2362 1.2751.0322.7248.0403.9423.0403 2.7757 0 1.8362-.0081 2.0536-.0403 2.7757-.0295.6711-.1423 1.0335-.2362 1.2751-.1235.3194-.2738.5503-.5127.7892-.2416.2416-.4698.3892-.7892.5127-.2416.094-.6067.2067-1.2751.2363-.7248.0322-.9423.0402-2.7757.0402-1.8362 0-2.0536-.008-2.7757-.0402-.6711-.0296-1.0335-.1423-1.2751-.2363-.3194-.1235-.5503-.2738-.7892-.5127-.2416-.2416-.3892-.4698-.5127-.7892-.094-.2416-.2067-.6067-.2363-1.2751-.0322-.7248-.0402-.9422-.0402-2.7757 0-1.8361.008-2.0536.0402-2.7757.0296-.6711.1423-1.0335.2363-1.2751.1235-.3194.2738-.5503.5127-.7892.2416-.2416.4698-.3892.7892-.5127.2416-.0939.6067-.2067 1.2751-.2362.7221-.0322.9395-.0403 2.7757-.0403zm0-1.2375c-1.8657 0-2.0992.00805-2.8321.04027-.7301.03221-1.2321.15032-1.667.31944-.4536.17717-.8375.41072-1.2187.79459-.38387.3812-.61742.7651-.79459 1.216-.16912.4376-.28723.9369-.31944 1.667-.03222.7356-.04027.9691-.04027 2.8348 0 1.8656.00805 2.0992.04027 2.832.03221.7302.15032 1.2322.31944 1.6671.17717.4536.41072.8375.79459 1.2187.3812.3812.7651.6174 1.216.7919.4376.1691.9369.2872 1.667.3194.7329.0322.9664.0403 2.8321.0403s2.0992-.0081 2.8321-.0403c.7301-.0322 1.2321-.1503 1.667-.3194.4509-.1745.8348-.4107 1.216-.7919s.6174-.7651.7919-1.2161c.1691-.4375.2872-.9368.3194-1.667.0323-.7328.0403-.9664.0403-2.832 0-1.8657-.008-2.0992-.0403-2.8321-.0322-.7301-.1503-1.2321-.3194-1.667-.1691-.4563-.4027-.8402-.7865-1.2214-.3812-.38119-.7651-.61742-1.2161-.7919-.4375-.16912-.9368-.28724-1.667-.31945-.7355-.0349-.9691-.04295-2.8347-.04295z"/><path d="m15.872 12.3418c-1.949 0-3.5302 1.5812-3.5302 3.5302s1.5812 3.5302 3.5302 3.5302 3.5302-1.5812 3.5302-3.5302-1.5812-3.5302-3.5302-3.5302zm0 5.8201c-1.2644 0-2.2899-1.0255-2.2899-2.2899s1.0255-2.2899 2.2899-2.2899 2.2899 1.0255 2.2899 2.2899-1.0255 2.2899-2.2899 2.2899z"/><path d="m20.3663 12.2032c0 .4565-.3706.8245-.8245.8245-.4566 0-.8245-.3707-.8245-.8245 0-.4566.3706-.8246.8245-.8246s.8245.3707.8245.8246z"/></g></svg>
+</v-atom>
+</a>
+<a class="social_links-link" href="https://www.linkedin.com/company/venturi-official/" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m21.7289 9h-11.7144c-.26904 0-.52709.10689-.71735.29715s-.29715.44831-.29715.71735v11.7144c0 .2691.10689.5271.29715.7174s.44831.2971.71735.2971h11.7144c.2691 0 .5271-.1068.7174-.2971s.2971-.4483.2971-.7174v-11.7144c0-.26904-.1068-.52709-.2971-.71735s-.4483-.29715-.7174-.29715zm-8.6326 11.7077h-2.0663v-6.5635h2.0663zm-1.0346-7.473c-.2344-.0013-.4631-.072-.6573-.2032-.1943-.1312-.3453-.317-.434-.534-.0887-.2169-.1112-.4553-.0646-.685s.1602-.4405.3265-.6057c.1662-.1652.3777-.2774.6077-.3225.23-.0452.4682-.0212.6846.069.2164.0901.4012.2423.5311.4374.13.195.1992.4242.199.6586.0023.1569-.0272.3127-.0864.458-.0593.1453-.1472.2772-.2585.3879-.1114.1106-.2438.1976-.3895.256-.1457.0583-.3017.0867-.4586.0835zm8.6508 7.4787h-2.0654v-3.5857c0-1.0575-.4495-1.3839-1.0298-1.3839-.6127 0-1.214.462-1.214 1.4106v3.559h-2.0663v-6.5644h1.9871v.9096h.0267c.1995-.4037.8981-1.0938 1.9642-1.0938 1.1529 0 2.3984.6843 2.3984 2.6886z" fill="#fefefe"/></svg>
+</v-atom>
+</a>
+<a class="social_links-link" href="https://x.com/i/flow/login?redirect_after_login=%2FVenturi" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m19.9223 10h1.9319l-4.2206 4.8239 4.9652 6.5643h-3.8877l-3.045-3.9812-3.4842 3.9812h-1.9331l4.5144-5.1597-4.7632-6.2285h3.9864l2.7525 3.639zm-.678 10.2318h1.0705l-6.91-9.1362h-1.1488z" fill="#fff"/></svg>
+</v-atom>
+</a>
+<a class="social_links-link" href="https://www.tiktok.com/@venturi.official" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m18.9795 9c.1989 1.8496 1.7239 3.2943 3.6205 3.4299v2.3961h-.0021c-.1203.0114-.2411.0174-.362.0179-1.3259.0002-2.5626-.6534-3.2889-1.7383v5.9194c0 2.4162-2.0028 4.375-4.4735 4.375-2.4706 0-4.4735-1.9588-4.4735-4.375s2.0029-4.375 4.4735-4.375c.0934 0 .1847.0082.2765.0138v2.156c-.0918-.0108-.1821-.0272-.2765-.0272-1.261 0-2.2832.9997-2.2832 2.2329s1.0222 2.2329 2.2832 2.2329c1.2612 0 2.375-.9717 2.375-2.2052l.022-10.0532z" fill="#fff" fill-rule="evenodd"/></svg>
+</v-atom>
+</a>
+<a class="social_links-link" href="https://www.youtube.com/user/Venturiautomobiles/videos" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m23.5471 10.9384c.2711.2729.4659.6123.5647.9841.3654 1.3724.3654 4.2342.3654 4.2342s0 2.8619-.3654 4.2343c-.0988.3718-.2936.7112-.5647.9841-.2712.2729-.6093.4698-.9805.571-1.3664.3674-6.828.3674-6.828.3674s-5.4616 0-6.82802-.3674c-.37118-.1012-.70927-.2981-.98044-.571-.27116-.2729-.4659-.6123-.56471-.9841-.36543-1.3724-.36543-4.2343-.36543-4.2343s0-2.8618.36543-4.2342c.09881-.3718.29355-.7112.56471-.9841.27117-.2729.60926-.4698.98044-.571 1.36642-.3674 6.82802-.3674 6.82802-.3674s5.4616 0 6.828.3674c.3712.1012.7093.2981.9805.571zm-5.0276 5.2188-4.5687-2.5992v5.1984z" fill="#fefefe" fill-rule="evenodd"/></svg>
+</v-atom>
+</a>
+</v-module>
+</div>
+</div>
+</div>
+<button class="button header-toggle"
+s-cursor="pointer"
+size=''
+v-preset='button:white'
+>
+<span class="button-text" c-font="label_2">
+<span class="header-toggle_text">
+<span class="header-toggle_open">Menu</span>
+<span class="header-toggle_close">Close</span>
+</span>
+</span>
+<div class="header-menu_icons">
+<v-atom class="icon header-menu_burger"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m20.9981 15.0334h.934185v8.99815h-.934185z" transform="matrix(0 1 -1 0 36.0315 -5.9647)"/><path d="m20.9991 18.0658h.934185v8.99815h-.934185z" transform="matrix(0 1 -1 0 39.0649 -2.9333)"/><path d="m20.9999 12h.934185v8.99815h-.934185z" transform="matrix(0 1 -1 0 32.9999 -8.9999)"/></g></svg>
+</v-atom>
+<v-atom class="icon header-menu_close"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</div>
+</button>
+</div>
+<div class="header-right_desktop">
+<v-atom class="langs header-langs" data-wg-notranslate>
+<div class="langs-items">
+<a class="langs-item"
+c-font="body_3"
+href="https://venturi.space/en/"
+v-barba-prevent="self"
+data-wg-notranslate
+aria-current="true">
+en
+</a>
+<a class="langs-item"
+c-font="body_3"
+href="https://venturi.space/"
+v-barba-prevent="self"
+data-wg-notranslate
+aria-current="false">
+fr
+</a>
+</div>
+</v-atom>
+<a class="button header-contact_desktop"
+href="https://venturi.space/en/contact/"
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Contact
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class=""
+fill="none"
+height="32"
+viewBox="0 0 32 32"
+width="32"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+><g stroke="#f4f4f4"><rect height="8" rx=".5" width="13" x="9.5" y="12" /><path
+d="m9.37468 12.0188 6.00062 4.6637c.3675.2857.8873.2857 1.2549 0l6.0006-4.6637"
+/></g></svg>
+</v-atom>
+</a>
+</div>
+</div>
+</v-once>
+<v-once class="popup_event" data-active=1 aria-hidden="true">
+<div class="popup_event-container">
+<div class="popup_event-background">
+<v-atom class="media popup_event-image"
+portrait="false"
+ratio="1.4721104082806"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2026/05/pop-up-clv-1-rover-venturi-astrolab-scaled.jpg"
+srcset="https://venturi.space/wp-content/uploads/2026/05/pop-up-clv-1-rover-venturi-astrolab-150x102.jpg 150w, https://venturi.space/wp-content/uploads/2026/05/pop-up-clv-1-rover-venturi-astrolab-800x543.jpg 800w, https://venturi.space/wp-content/uploads/2026/05/pop-up-clv-1-rover-venturi-astrolab-1920x1304.jpg 1920w, https://venturi.space/wp-content/uploads/2026/05/pop-up-clv-1-rover-venturi-astrolab-1536x1043.jpg 1536w, https://venturi.space/wp-content/uploads/2026/05/pop-up-clv-1-rover-venturi-astrolab-2048x1391.jpg 2048w, https://venturi.space/wp-content/uploads/2026/05/pop-up-clv-1-rover-venturi-astrolab-400x272.jpg 400w, https://venturi.space/wp-content/uploads/2026/05/pop-up-clv-1-rover-venturi-astrolab-1280x869.jpg 1280w"
+width="2560"
+height="1739"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+</div>
+<div class="popup_event-background_mobile">
+<v-atom class="media popup_event-image"
+portrait="false"
+ratio="1"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://picsum.photos/800/800.jpg?random=533"
+srcset=""
+width="0"
+height="0"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+</div>
+<div class="popup_event-content">
+<p c-font="title_5" class="popup_event-title">&nbsp;<br/>
+&nbsp;</h2>
+<p class="popup_event-text" c-font="body_1"></p>
+</div>
+<button class="icon_button popup_event-close"
+type="button"
+v-preset='button:white'
+s-cursor="pointer"
+aria-label="">
+<v-atom class="icon icon_button-icon"
+>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+<!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+<defs>
+<style>
+.st0 {
+fill: #fff;
+}
+</style>
+</defs>
+<path d="M12.7,19l-.7-.7,6.4-6.4.7.7-6.4,6.4Z"/>
+<path d="M12,12.7l.7-.7,6.4,6.4-.7.7-6.4-6.4Z"/>
+</svg>
+</v-atom>
+</button>
+</div>
+</v-once>
+<v-once class="cookie_options">
+<div class="cookie_options-header">
+<span class="cookie_options-title" c-font="label_3">Cookie settings</span>
+</div>
+<div class="cookie_options-choices">
+<div class="cookie_options-choice">
+<label class="checkbox cookie_options-checkbox"
+s-cursor="pointer">
+<input type="checkbox"
+name=""
+value=""
+checked
+disabled
+/>
+<span class="checkbox-tick"></span>
+<span class="checkbox-label">
+<span c-font="body_5">Essential</span>
+</span>
+</label>
+<p c-font="label_3">
+These cookies are necessary for the proper functioning of the site. They cannot be deactivated.
+</p>
+</div>
+<div class="cookie_options-choice">
+<label class="checkbox cookie_options-checkbox"
+s-cursor="pointer">
+<input type="checkbox"
+name="analytics"
+value=""
+/>
+<span class="checkbox-tick"></span>
+<span class="checkbox-label">
+<span c-font="body_5">Analytics</span>
+</span>
+</label>
+<p c-font="label_3">
+These cookies enable us to measure the number of visits, visitors and sources of traffic to our site (content of paths, etc.), and to compile statistics in order to improve its quality, ergonomics and performance.
+</p>
+</div>
+</div>
+<div class="cookie_options-buttons">
+<button class="button cookie_options-accept"
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Accept
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</button>
+<button c-font="label_3" class="cookie_options-refuse">Refuse</button>
+</div>
+</v-once>
+<v-once class="cookie_banner" aria-hidden="true">
+<div class="cookie_banner-content">
+<span class="cookie_banner-text" c-font="label_3">This site uses cookies to improve our services. By clicking on “accept”, you agree to the use of all cookies.</span>
+<div class="cookie_banner-buttons">
+<button class="button cookie_banner-accept"
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Accept
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</button>
+<button c-font="label_3" class="cookie_banner-params">
+Settings
+</button>
+</div>
+</div>
+</v-once>
+<v-once class="popin_product ">
+<div class="popin_product-container">
+<button class="button popin_product-close"
+s-cursor="pointer"
+size=''
+v-preset='button:white'
+>
+<span class="button-text" c-font="label_2">
+Close
+</span>
+<v-atom class="icon button-icon"
+>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 32">
+<!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+<defs>
+<style>
+.st0 {
+fill: #fff;
+}
+</style>
+</defs>
+<path d="M12.7,19l-.7-.7,6.4-6.4.7.7-6.4,6.4Z"/>
+<path d="M12,12.7l.7-.7,6.4,6.4-.7.7-6.4-6.4Z"/>
+</svg>
+</v-atom>
+</button>
+<div class="popin_product-content" s-scroll></div>
+</div>
+</v-once>
+<v-once class="popin" aria-hidden="true">
+<button class="popin-close">
+<v-atom class="close " s-anim="scale-glitch">
+<v-atom class="icon "
+>
+<svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6L18 18" stroke="black" stroke-width="2"/>
+<path d="M18 6L6 18" stroke="black" stroke-width="2"/>
+</svg>
+</v-atom>
+</v-atom>
+</button>
+<div class="popin-content" s-scroll="content">
+</div>
+</v-once>
+<v-atom class="scrollbar" a-main>
+<div class="scrollbar-bar"></div>
+</v-atom>
+<main class="layout" v-barba="wrapper">
+<v-page class="article"
+v-barba="container"
+v-barba-namespace="page"
+s-scroll="main"
+data-ancestor="1600"
+data-id="1600">
+<v-block class="article_cover" data-anchor="Article">
+<div c-flux="default">
+<div class="article_cover-container">
+<v-atom class="icon article_cover-marker"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#d9d9d9"><path d="m15.7305 6.9502h1v20h-1z" opacity=".2"/><path d="m26.2305 16.4502h1v20h-1z" opacity=".2" transform="matrix(0 1 -1 0 42.6807 -9.7803)"/><path d="m15.7305 13.9502h1v6h-1z"/><path d="m19.2305 16.4502h1v6h-1z" transform="matrix(0 1 -1 0 35.6807 -2.7803)"/></g></svg>
+</v-atom>
+<v-atom class="bar article_cover-bar">
+<span class="bar-progress"></span>
+</v-atom>
+<div class="article_cover-bar"></div>
+<v-atom class="post_info article_cover-info">
+<v-atom class="tag">
+<span c-font="body_3">Technologie</span>
+</v-atom>		
+<v-atom class="date">
+<span c-font="body_3">15 Oct 2024</span>
+</v-atom></v-atom>
+<h1 c-font="title_2" class="article_cover-heading" s-anim="title">A rover to deliver small payloads to the Moon</h1>
+</div>
+</div>
+</v-block>
+<v-block class="media_full" c-margin="">
+<div c-flux="large">
+<v-atom class="media media_full-media"
+portrait="false"
+ratio="1.6732026143791"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2024/10/1.jpg"
+srcset="https://venturi.space/wp-content/uploads/2024/10/1-150x90.jpg 150w, https://venturi.space/wp-content/uploads/2024/10/1-800x478.jpg 800w, https://venturi.space/wp-content/uploads/2024/10/1-1920x1148.jpg 1920w, https://venturi.space/wp-content/uploads/2024/10/1-1536x918.jpg 1536w, https://venturi.space/wp-content/uploads/2024/10/1.jpg 2048w, https://venturi.space/wp-content/uploads/2024/10/1-400x239.jpg 400w, https://venturi.space/wp-content/uploads/2024/10/1-1280x765.jpg 1280w"
+width="2048"
+height="1224"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+</div>
+</v-block>
+<v-block class="flex_paragraph" c-margin="medium" s-anim="fade-up">
+<div c-flux="medium">
+<div class="flex_paragraph-text" c-font="format"><p><strong>MILAN, Italy &#8212; October 15, 2024 – Today, Venturi Space, which invents, studies, designs and manufactures mobility solutions capable of handling the extreme environmental conditions found on the Moon and Mars, and Venturi Astrolab, Inc. (<a href="https://www.astrolab.space/" target="_blank" rel="noopener">Astrolab</a>), the designer, manufacturer, and operator of multi-purpose rovers for the Moon and Mars, announced their collaboration to produce a lunar rover, designed to respond to the growing number of institutional, businesses and scientific organizations in the U.S. and European markets, that are seeking access to the Moon for smaller payloads. A development prototype of the rover was unveiled today in Venturi Space’s exhibition booth at the 75th International Astronautical Congress here.</strong></p>
+<p>Known currently by its internal name FLIP (FLEX Lunar Innovation Platform), the rover uses the same technology used by Astrolab’s FLEX rover, which was introduced in 2022. Just as with FLEX, Astrolab is responsible for the overall design and manufacturing of the rover. Specifically, the company has developed the vehicle’s actuators, chassis, launch mount and release, avionics, solar panel, communications system, flight and ground software. As is also the case with FLEX, this rover relies on three key technologies when it comes to facing the extreme conditions of the lunar South Pole: proprietary materials for cryogenic conditions, hyper-deformable wheels and batteries as well as the related testing systems and fabrication processes. Those have been designed and developed by Venturi Space within its facilities in Monaco, Switzerland, France, and the United States. Astrolab is leading and conducting the vehicle’s integrated testing and operations, from its headquarters in California.</p>
+<p>This rover is a key step in Astrolab’s rapid spiral development approach for FLEX: design-build-test-fly cycles that demonstrate increased capabilities and incorporate lessons learned during development and qualification testing.</p>
+</div>
+</div>
+</v-block>
+<v-block class="flex_gallery" c-margin="medium">
+<div c-flux="large">
+<v-module class="carousel_media">
+<div class="carousel_media-items">
+<v-atom class="media carousel_media-item"
+portrait="false"
+ratio="1.3290071382219"
+type="image"
+loading="lazy"
+s-anim='fade-in'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2024/10/2-1.jpg"
+srcset="https://venturi.space/wp-content/uploads/2024/10/2-1-150x113.jpg 150w, https://venturi.space/wp-content/uploads/2024/10/2-1-800x602.jpg 800w, https://venturi.space/wp-content/uploads/2024/10/2-1-1920x1445.jpg 1920w, https://venturi.space/wp-content/uploads/2024/10/2-1-1536x1156.jpg 1536w, https://venturi.space/wp-content/uploads/2024/10/2-1.jpg 2048w, https://venturi.space/wp-content/uploads/2024/10/2-1-400x301.jpg 400w, https://venturi.space/wp-content/uploads/2024/10/2-1-1280x963.jpg 1280w"
+width="2048"
+height="1541"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+<v-atom class="media carousel_media-item"
+portrait="false"
+ratio="1.3290071382219"
+type="image"
+loading="lazy"
+s-anim='fade-in'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2024/10/1-2.jpg"
+srcset="https://venturi.space/wp-content/uploads/2024/10/1-2-150x113.jpg 150w, https://venturi.space/wp-content/uploads/2024/10/1-2-800x602.jpg 800w, https://venturi.space/wp-content/uploads/2024/10/1-2-1920x1445.jpg 1920w, https://venturi.space/wp-content/uploads/2024/10/1-2-1536x1156.jpg 1536w, https://venturi.space/wp-content/uploads/2024/10/1-2.jpg 2048w, https://venturi.space/wp-content/uploads/2024/10/1-2-400x301.jpg 400w, https://venturi.space/wp-content/uploads/2024/10/1-2-1280x963.jpg 1280w"
+width="2048"
+height="1541"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+<v-atom class="media carousel_media-item"
+portrait="false"
+ratio="1.3290071382219"
+type="image"
+loading="lazy"
+s-anim='fade-in'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2024/10/3.jpg"
+srcset="https://venturi.space/wp-content/uploads/2024/10/3-150x113.jpg 150w, https://venturi.space/wp-content/uploads/2024/10/3-800x602.jpg 800w, https://venturi.space/wp-content/uploads/2024/10/3-1920x1445.jpg 1920w, https://venturi.space/wp-content/uploads/2024/10/3-1536x1156.jpg 1536w, https://venturi.space/wp-content/uploads/2024/10/3.jpg 2048w, https://venturi.space/wp-content/uploads/2024/10/3-400x301.jpg 400w, https://venturi.space/wp-content/uploads/2024/10/3-1280x963.jpg 1280w"
+width="2048"
+height="1541"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+</div>
+<v-module class="nav_carousel carousel_media-nav">
+<progress class="nav_carousel-bar" max="100" value="50"></progress>
+<v-module class="nav_buttons nav_carousel-buttons">
+<button class="nav_button nav_buttons-previous" orientation="left">
+<v-atom class="icon nav_button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m19.4911 9.56684v.45676c.0207.1255.0052.2542-.0448.3712s-.1323.2175-.2375.2898l-3.941 3.8545-.003.0033c-.7474.6676-1.1045 1.0471-1.1141 1.3997-.0107.3814.3953.8035 1.1127 1.5164l3.9411 3.8548c.105.0724.1871.173.2369.29s.0652.2457.0443.3711v.4567c0 .309-.0701.4885-.2137.5483-.158.0661-.3551-.0264-.6211-.2885l-4.6169-4.5181-.1486-.1461c-.3638-.3374-.7045-.6987-1.0197-1.0815-.2256-.265-.3545-.5982-.3657-.9452.0113-.347.1402-.68.3657-.945.3148-.3828.6552-.744 1.019-1.0811.0481-.0478.0979-.0968.1493-.1471l.0026.0024.0027-.0027 4.6163-4.51746c.2659-.26243.4634-.35398.6207-.28887.1446.05982.2148.23929.2148.54832" fill="#fff"/></svg>
+</v-atom>
+</button>
+<button class="nav_button nav_buttons-next" orientation="right">
+<v-atom class="icon nav_button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m12.5089 9.56684v.45676c-.0207.1255-.0052.2542.0448.3712s.1323.2175.2375.2898l3.941 3.8545.003.0033c.7474.6676 1.1045 1.0471 1.1141 1.3997.0107.3814-.3953.8035-1.1127 1.5164l-3.9411 3.8548c-.105.0724-.1871.173-.2369.29s-.0652.2457-.0443.3711v.4567c0 .309.0701.4885.2137.5483.158.0661.3551-.0264.6211-.2885l4.6169-4.5181.1486-.1461c.3638-.3374.7045-.6987 1.0197-1.0815.2256-.265.3545-.5982.3657-.9452-.0113-.347-.1402-.68-.3657-.945-.3148-.3828-.6552-.744-1.019-1.0811-.0481-.0478-.0979-.0968-.1493-.1471l-.0026.0024-.0027-.0027-4.6163-4.51746c-.2659-.26243-.4634-.35398-.6207-.28887-.1446.05982-.2148.23929-.2148.54832" fill="#fff"/></svg>
+</v-atom>
+</button>
+</v-module>
+</v-module>
+</v-module>
+</div>
+</v-block>
+<v-block class="flex_paragraph" c-margin="medium" s-anim="fade-up">
+<div c-flux="medium">
+<div class="flex_paragraph-text" c-font="format"><p>The rover has a mass of a half ton, a payload capacity of 30 kg, and has been designed to be compatible with the growing number of medium-class lunar landers now entering the commercial space market. In addition, the rover offers customers opportunities to perform technology demonstrations and commercial exploration as well as gather valuable science data. It also features critical components, subsystems, and processes common to the core platform used by the <a href="https://venturi.space/en/us-programme/#program_flex">FLEX rover</a>.</p>
+<p>“For 25 years, we have been pioneers in the field of high-performance electric terrestrial vehicles. This expertise now allows us to offer viable and efficient solutions, in the long term, to face ‘the hell’ of the lunar South Pole. Our batteries and hyper-deformable wheels can withstand temperature variations of more than 300°C, aggressive solar radiation, and 180 hours of nights under -180°C. To say that I am proud of my Team is an understatement” said Gildo Pastor, President of Venturi Space and Venturi.</p>
+<p>“This rover offers customers many of the same payload space configurations as the larger FLEX rover we are using on our upcoming commercial mission, Mission One. This continues a goal we set for ourselves when we introduced the FLEX in 2022,” said Jaret Matthews, founder and CEO, Astrolab. “We want to set the standard for lunar logistics. Just as there are standard sizes of shipping containers used in intermodal shipping on Earth, we seek to do the same on the Moon.”</p>
+</div>
+</div>
+</v-block>
+<v-block class="list_cards" c-margin="default_top" c-padding="">
+<div c-flux="large">
+<div class="list_cards-container">
+<div c-flux="default">
+<h2 class="list_cards-title" c-font="title_2" s-anim="title">
+Press releases
+</h2>
+</div>
+<div c-flux="default">
+<div class="list_cards-items">
+<article class="card_post list_cards-article" >
+<div class="card_post-top">
+<v-atom class="media card_post-image"
+portrait="false"
+ratio="2.5"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2024/11/3d-artwork-venturi-x-nasa-scaled.webp"
+srcset="https://venturi.space/wp-content/uploads/2024/11/3d-artwork-venturi-x-nasa-150x60.webp 150w, https://venturi.space/wp-content/uploads/2024/11/3d-artwork-venturi-x-nasa-800x320.webp 800w, https://venturi.space/wp-content/uploads/2024/11/3d-artwork-venturi-x-nasa-1920x768.webp 1920w, https://venturi.space/wp-content/uploads/2024/11/3d-artwork-venturi-x-nasa-1536x614.webp 1536w, https://venturi.space/wp-content/uploads/2024/11/3d-artwork-venturi-x-nasa-2048x819.webp 2048w, https://venturi.space/wp-content/uploads/2024/11/3d-artwork-venturi-x-nasa-400x160.webp 400w, https://venturi.space/wp-content/uploads/2024/11/3d-artwork-venturi-x-nasa-1280x512.webp 1280w"
+width="2560"
+height="1024"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+</div>
+<div class="card_post-bottom">
+<v-atom class="post_info ">
+<v-atom class="tag">
+<span c-font="body_3">NASA</span>
+</v-atom>		
+<v-atom class="date">
+<span c-font="body_3"></span>
+</v-atom></v-atom>
+<span class="card_post-title" c-font="title_4">Venturi Astrolab awarded by NASA</span>
+<p class="card_post-recap">The American company Venturi Astrolab, Inc. (Astrolab), a strategic partner of the Monegasque Venturi Group, has awarded a NASA contract to support the development of Artemis campaign’s lunar terrain vehicle.</p>
+<a class="button card_post-link"
+href="https://venturi.space/en/article/venturi-astrolab-awarded-by-nasa/"
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Discover
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</a>
+</div>
+</article>
+<article class="card_post list_cards-article" >
+<div class="card_post-top">
+<v-atom class="media card_post-image"
+portrait="false"
+ratio="1.499700059988"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2024/05/astrolab-dsc-9045re-1.jpg"
+srcset="https://venturi.space/wp-content/uploads/2024/05/astrolab-dsc-9045re-1-150x100.jpg 150w, https://venturi.space/wp-content/uploads/2024/05/astrolab-dsc-9045re-1-800x533.jpg 800w, https://venturi.space/wp-content/uploads/2024/05/astrolab-dsc-9045re-1-1920x1280.jpg 1920w, https://venturi.space/wp-content/uploads/2024/05/astrolab-dsc-9045re-1-1536x1024.jpg 1536w, https://venturi.space/wp-content/uploads/2024/05/astrolab-dsc-9045re-1-2048x1366.jpg 2048w, https://venturi.space/wp-content/uploads/2024/05/astrolab-dsc-9045re-1-400x267.jpg 400w, https://venturi.space/wp-content/uploads/2024/05/astrolab-dsc-9045re-1-1280x854.jpg 1280w"
+width="2500"
+height="1667"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+</div>
+<div class="card_post-bottom">
+<v-atom class="post_info ">
+<v-atom class="tag">
+<span c-font="body_3">Technologie</span>
+</v-atom>		
+<v-atom class="date">
+<span c-font="body_3"></span>
+</v-atom></v-atom>
+<span class="card_post-title" c-font="title_4">World premiere : Venturi’s hyper-deformable Lunar wheel</span>
+<p class="card_post-recap">Venturi Group presented its latest invention at the international Paris Air Show in Le Bourget, France: a hyper-deformable Lunar wheel. Venturi Lab designed and manufactured the wheel using materials it created. The Venturi wheel is a world first.</p>
+<a class="button card_post-link"
+href="https://venturi.space/en/article/world-premiere-venturi-hyper-deformable-lunar-wheel/"
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Discover
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</a>
+</div>
+</article>
+<article class="card_post list_cards-article" >
+<div class="card_post-top">
+<v-atom class="media card_post-image"
+portrait="true"
+ratio="0.92421875"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2024/06/programme-us.jpg"
+srcset="https://venturi.space/wp-content/uploads/2024/06/programme-us-150x162.jpg 150w, https://venturi.space/wp-content/uploads/2024/06/programme-us-800x866.jpg 800w, https://venturi.space/wp-content/uploads/2024/06/programme-us.jpg 1183w, https://venturi.space/wp-content/uploads/2024/06/programme-us.jpg 1183w, https://venturi.space/wp-content/uploads/2024/06/programme-us.jpg 1183w, https://venturi.space/wp-content/uploads/2024/06/programme-us-400x433.jpg 400w, https://venturi.space/wp-content/uploads/2024/06/programme-us.jpg 1183w"
+width="1183"
+height="1280"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+</div>
+<div class="card_post-bottom">
+<v-atom class="post_info ">
+<v-atom class="tag">
+<span c-font="body_3">SpaceX</span>
+</v-atom>		
+<v-atom class="date">
+<span c-font="body_3"></span>
+</v-atom></v-atom>
+<span class="card_post-title" c-font="title_4">Venturi Astrolab’s rover to launch to the Moon on an upcoming SpaceX mission</span>
+<p class="card_post-recap">The American company SpaceX will be responsible for transporting the rover, which will be the largest and most capable in the history of lunar vehicles. SpaceX will use its Starship launch and landing system to transport the astromobile to the lunar surface.</p>
+<a class="button card_post-link"
+href="https://venturi.space/en/article/flex-rover-to-head-for-the-moon-on-upcoming-spacex-mission/"
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Discover
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</a>
+</div>
+</article>
+<article class="card_post list_cards-article" >
+<div class="card_post-top">
+<v-atom class="media card_post-image"
+portrait="false"
+ratio="1.7777777777778"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-scaled.jpg"
+srcset="https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-150x84.jpg 150w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-800x450.jpg 800w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-1920x1080.jpg 1920w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-1536x864.jpg 1536w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-2048x1152.jpg 2048w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-400x225.jpg 400w, https://venturi.space/wp-content/uploads/2026/09/alta-luna-x-astronaute-venturi-space-1280x720.jpg 1280w"
+width="2560"
+height="1440"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+</div>
+<div class="card_post-bottom">
+<v-atom class="post_info ">
+<v-atom class="tag">
+<span c-font="body_3">Venturi Space</span>
+</v-atom>		
+<v-atom class="date">
+<span c-font="body_3"></span>
+</v-atom></v-atom>
+<span class="card_post-title" c-font="title_4">ALTA LUNA, Venturi Space&#039;s new lunar utility vehicle</span>
+<p class="card_post-recap">Venturi Space unveils ALTA LUNA, a compact and manoeuvrable rover designed for local operations around future lunar bases. Designed to assist astronauts, it will also be able to carry out missions involving the handling and transport of payloads</p>
+<a class="button card_post-link"
+href="https://venturi.space/en/article/alta-luna-venturi-spaces-new-lunar-utility-vehicle/"
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Discover
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</a>
+</div>
+</article>
+<article class="card_post list_cards-article" >
+<div class="card_post-top">
+<v-atom class="media card_post-image"
+portrait="false"
+ratio="1.7777777777778"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2026/06/venturi-space-venturi-astrolab-rovers-venturi-space-scaled.jpg"
+srcset="https://venturi.space/wp-content/uploads/2026/06/venturi-space-venturi-astrolab-rovers-venturi-space-150x84.jpg 150w, https://venturi.space/wp-content/uploads/2026/06/venturi-space-venturi-astrolab-rovers-venturi-space-800x450.jpg 800w, https://venturi.space/wp-content/uploads/2026/06/venturi-space-venturi-astrolab-rovers-venturi-space-1920x1080.jpg 1920w, https://venturi.space/wp-content/uploads/2026/06/venturi-space-venturi-astrolab-rovers-venturi-space-1536x864.jpg 1536w, https://venturi.space/wp-content/uploads/2026/06/venturi-space-venturi-astrolab-rovers-venturi-space-2048x1152.jpg 2048w, https://venturi.space/wp-content/uploads/2026/06/venturi-space-venturi-astrolab-rovers-venturi-space-400x225.jpg 400w, https://venturi.space/wp-content/uploads/2026/06/venturi-space-venturi-astrolab-rovers-venturi-space-1280x720.jpg 1280w"
+width="2560"
+height="1440"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+</div>
+<div class="card_post-bottom">
+<v-atom class="post_info ">
+<v-atom class="tag">
+<span c-font="body_3">Venturi Space</span>
+</v-atom>		
+<v-atom class="date">
+<span c-font="body_3"></span>
+</v-atom></v-atom>
+<span class="card_post-title" c-font="title_4">Venturi Space invests €250 million in France and will create nearly 200 jobs in Toulouse by 2030</span>
+<p class="card_post-recap">At Choose France, the summit dedicated to France’s economic attractiveness, Venturi Space announced a €250 million investment in France to establish its new 16,000 sq m technology centre in Toulouse.</p>
+<a class="button card_post-link"
+href="https://venturi.space/en/article/venturi-space-invests-in-france/"
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Discover
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</a>
+</div>
+</article>
+<article class="card_post list_cards-article" >
+<div class="card_post-top">
+<v-atom class="media card_post-image"
+portrait="false"
+ratio="1.7777777777778"
+type="image"
+loading="lazy"
+fit='cover'
+preload='false'>
+<span class="media-container">
+<img class="media-image"
+src="https://venturi.space/wp-content/uploads/2026/05/clv-1-rover-venturi-astrolab-scaled.jpeg"
+srcset="https://venturi.space/wp-content/uploads/2026/05/clv-1-rover-venturi-astrolab-150x84.jpeg 150w, https://venturi.space/wp-content/uploads/2026/05/clv-1-rover-venturi-astrolab-800x450.jpeg 800w, https://venturi.space/wp-content/uploads/2026/05/clv-1-rover-venturi-astrolab-1920x1080.jpeg 1920w, https://venturi.space/wp-content/uploads/2026/05/clv-1-rover-venturi-astrolab-1536x864.jpeg 1536w, https://venturi.space/wp-content/uploads/2026/05/clv-1-rover-venturi-astrolab-2048x1152.jpeg 2048w, https://venturi.space/wp-content/uploads/2026/05/clv-1-rover-venturi-astrolab-400x225.jpeg 400w, https://venturi.space/wp-content/uploads/2026/05/clv-1-rover-venturi-astrolab-1280x720.jpeg 1280w"
+width="2560"
+height="1440"
+loading="lazy"
+fetchpriority="auto"
+alt="" />
+</span>
+</v-atom>
+</div>
+<div class="card_post-bottom">
+<v-atom class="post_info ">
+<v-atom class="tag">
+<span c-font="body_3">NASA</span>
+</v-atom>		
+<v-atom class="date">
+<span c-font="body_3"></span>
+</v-atom></v-atom>
+<span class="card_post-title" c-font="title_4">NASA selects Astrolab to provide lunar rover for Artemis astronauts&#039; return to the Moon</span>
+<p class="card_post-recap">NASA announced today that it has selected the US-based company Venturi Astrolab, Inc. (Astrolab) as one of two providers of a crewed lunar rover for the Artemis campaign, advancing the agency’s plans to establish sustained surface mobility at the lunar South Pole.</p>
+<a class="button card_post-link"
+href="https://venturi.space/en/article/nasa-selects-astrolab-to-provide-lunar-rover-for-artemis-astronauts-return-to-the-moon/"
+s-cursor="pointer"
+size=''
+>
+<span class="button-text" c-font="label_2">
+Discover
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.9736 20.0001h.948056v9h-.948056z" transform="matrix(-1 0 0 -1 31.9472 40.0002)"/><path d="m11 15.9745h.948056v9h-.948056z" transform="matrix(0 -1 1 0 -4.9745 26.9745)"/></g></svg>
+</v-atom>
+</a>
+</div>
+</article>
+</div>
+<v-module class="nav_carousel list_cards-nav">
+<progress class="nav_carousel-bar" max="100" value="50"></progress>
+<v-module class="nav_buttons nav_carousel-buttons">
+<button class="nav_button nav_buttons-previous" orientation="left">
+<v-atom class="icon nav_button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m19.4911 9.56684v.45676c.0207.1255.0052.2542-.0448.3712s-.1323.2175-.2375.2898l-3.941 3.8545-.003.0033c-.7474.6676-1.1045 1.0471-1.1141 1.3997-.0107.3814.3953.8035 1.1127 1.5164l3.9411 3.8548c.105.0724.1871.173.2369.29s.0652.2457.0443.3711v.4567c0 .309-.0701.4885-.2137.5483-.158.0661-.3551-.0264-.6211-.2885l-4.6169-4.5181-.1486-.1461c-.3638-.3374-.7045-.6987-1.0197-1.0815-.2256-.265-.3545-.5982-.3657-.9452.0113-.347.1402-.68.3657-.945.3148-.3828.6552-.744 1.019-1.0811.0481-.0478.0979-.0968.1493-.1471l.0026.0024.0027-.0027 4.6163-4.51746c.2659-.26243.4634-.35398.6207-.28887.1446.05982.2148.23929.2148.54832" fill="#fff"/></svg>
+</v-atom>
+</button>
+<button class="nav_button nav_buttons-next" orientation="right">
+<v-atom class="icon nav_button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m12.5089 9.56684v.45676c-.0207.1255-.0052.2542.0448.3712s.1323.2175.2375.2898l3.941 3.8545.003.0033c.7474.6676 1.1045 1.0471 1.1141 1.3997.0107.3814-.3953.8035-1.1127 1.5164l-3.9411 3.8548c-.105.0724-.1871.173-.2369.29s-.0652.2457-.0443.3711v.4567c0 .309.0701.4885.2137.5483.158.0661.3551-.0264.6211-.2885l4.6169-4.5181.1486-.1461c.3638-.3374.7045-.6987 1.0197-1.0815.2256-.265.3545-.5982.3657-.9452-.0113-.347-.1402-.68-.3657-.945-.3148-.3828-.6552-.744-1.019-1.0811-.0481-.0478-.0979-.0968-.1493-.1471l-.0026.0024-.0027-.0027-4.6163-4.51746c-.2659-.26243-.4634-.35398-.6207-.28887-.1446.05982-.2148.23929-.2148.54832" fill="#fff"/></svg>
+</v-atom>
+</button>
+</v-module>
+</v-module>
+</div>
+</div>
+</div>
+</v-block>
+<v-block class="footer "
+c-margin=''
+c-padding=''>
+<div class="footer-content">
+<div c-flux="large" class="footer-flux">
+<div class="footer-container">
+<div class="footer-columns">
+<div class="footer-left">
+<div class="footer-contact">
+<span class="footer-caption" c-font="body_3">
+Contact
+</span>
+<a class="button "
+href="https://venturi.space/en/contact/"
+s-cursor="pointer"
+size='large'
+>
+<div class="button-shape"><svg class="" width="792" height="394" viewBox="0 0 792 394" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask fill="white">
+<path d="M758.994 0.502378H733.186C726.098 -0.662822 718.825 0.208586 712.213 3.01536C705.601 5.82214 699.922 10.4489 695.837 16.3571L478.054 237.725L477.868 237.894C440.145 279.874 418.706 299.93 398.78 300.472C377.23 301.07 353.383 278.268 313.102 237.968L95.2999 16.5998C91.2076 10.7019 85.5261 6.08643 78.9146 3.28977C72.3031 0.493118 65.0332 -0.370072 57.9508 0.801007H32.1427C14.682 0.801007 4.54177 4.74144 1.16168 12.8089C-2.57324 21.6793 2.65538 32.7532 17.4643 47.6929L272.746 307.027L281 315.374C300.065 335.81 320.478 354.944 342.103 372.649C357.081 385.323 375.903 392.562 395.513 393.191C415.116 392.558 433.931 385.319 448.903 372.649C470.532 354.968 490.94 335.846 509.988 315.411C512.689 312.71 515.459 309.915 518.298 307.027L518.167 306.877L518.316 306.728L773.56 47.4316C788.388 32.4919 793.561 21.3991 789.882 12.5661C786.502 4.44264 776.361 0.502378 758.901 0.502378"/>
+</mask>
+<path d="M396.013 393.191V387.122H395.013V393.191H396.013ZM733.186 0.502378L733.024 1.48913L733.105 1.50238H733.186V0.502378ZM695.837 16.3571L696.55 17.0584L696.61 16.9968L696.66 16.9258L695.837 16.3571ZM478.054 237.725L478.724 238.468L478.746 238.448L478.767 238.427L478.054 237.725ZM477.868 237.894L477.198 237.151L477.159 237.186L477.124 237.225L477.868 237.894ZM398.78 300.472L398.753 299.472L398.753 299.472L398.78 300.472ZM313.102 237.968L312.389 238.67L312.395 238.675L313.102 237.968ZM95.2999 16.5998L94.4783 17.1699L94.5271 17.2402L94.5871 17.3012L95.2999 16.5998ZM57.9508 0.801007V1.80101H58.0329L58.1139 1.78761L57.9508 0.801007ZM1.16168 12.8089L2.08331 13.1969L2.08399 13.1953L1.16168 12.8089ZM17.4643 47.6929L18.177 46.9914L18.1745 46.9889L17.4643 47.6929ZM272.746 307.027L272.033 307.728L272.035 307.73L272.746 307.027ZM281 315.374L281.731 314.692L281.721 314.681L281.711 314.671L281 315.374ZM342.103 372.649L342.749 371.886L342.743 371.88L342.737 371.875L342.103 372.649ZM395.513 393.191L395.481 394.191L395.513 394.192L395.545 394.191L395.513 393.191ZM448.903 372.649L448.27 371.875L448.264 371.88L448.257 371.886L448.903 372.649ZM509.988 315.411L509.281 314.704L509.268 314.717L509.256 314.73L509.988 315.411ZM518.298 307.027L519.011 307.728L519.661 307.067L519.05 306.369L518.298 307.027ZM518.167 306.877L517.459 306.171L516.799 306.832L517.414 307.536L518.167 306.877ZM518.316 306.728L519.024 307.434L519.029 307.429L518.316 306.728ZM773.56 47.4316L772.851 46.7271L772.848 46.7301L773.56 47.4316ZM789.882 12.5661L788.959 12.9502L788.959 12.9506L789.882 12.5661ZM758.994 -0.497622H733.186V1.50238H758.994V-0.497622ZM733.348 -0.484377C726.074 -1.6803 718.609 -0.785917 711.822 2.09487L712.604 3.93586C719.042 1.20309 726.123 0.354653 733.024 1.48913L733.348 -0.484377ZM711.822 2.09487C705.036 4.97565 699.207 9.72436 695.015 15.7883L696.66 16.9258C700.637 11.1734 706.166 6.66863 712.604 3.93586L711.822 2.09487ZM695.124 15.6558L477.341 237.024L478.767 238.427L696.55 17.0584L695.124 15.6558ZM477.384 236.983L477.198 237.151L478.537 238.636L478.724 238.468L477.384 236.983ZM477.124 237.225C458.26 258.218 443.516 273.674 431.015 283.95C418.506 294.232 408.381 299.211 398.753 299.472L398.808 301.472C409.106 301.192 419.662 295.871 432.285 285.495C444.916 275.112 459.752 259.55 478.611 238.562L477.124 237.225ZM398.753 299.472C388.341 299.761 377.229 294.399 363.58 283.768C349.948 273.15 333.962 257.423 313.809 237.261L312.395 238.675C332.523 258.813 348.601 274.637 362.351 285.346C376.083 296.041 387.669 301.781 398.808 301.472L398.753 299.472ZM313.815 237.267L96.0127 15.8985L94.5871 17.3012L312.389 238.67L313.815 237.267ZM96.1215 16.0298C91.9214 9.97631 86.09 5.23918 79.3042 2.36878L78.525 4.21076C84.9622 6.93367 90.4939 11.4274 94.4783 17.1699L96.1215 16.0298ZM79.3042 2.36878C72.5184 -0.501603 65.0569 -1.38755 57.7876 -0.185597L58.1139 1.78761C65.0096 0.647412 72.0879 1.48784 78.525 4.21076L79.3042 2.36878ZM57.9508 -0.198993H32.1427V1.80101H57.9508V-0.198993ZM32.1427 -0.198993C23.3532 -0.198993 16.3137 0.790506 11.0104 2.84731C5.68446 4.91289 2.05944 8.07836 0.239359 12.4224L2.08399 13.1953C3.64401 9.47194 6.77915 6.63348 11.7336 4.71199C16.7106 2.78173 23.4715 1.80101 32.1427 1.80101V-0.198993ZM0.240041 12.4208C-1.76792 17.1897 -1.31976 22.4797 1.4535 28.3992C4.2159 34.2954 9.31716 40.8943 16.7541 48.3969L18.1745 46.9889C10.8025 39.5518 5.88502 33.1439 3.2646 27.5507C0.655047 21.9806 0.356359 17.2984 2.08331 13.1969L0.240041 12.4208ZM16.7517 48.3944L272.033 307.728L273.459 306.325L18.177 46.9914L16.7517 48.3944ZM272.035 307.73L280.289 316.077L281.711 314.671L273.457 306.324L272.035 307.73ZM280.269 316.056C299.364 336.525 319.81 355.69 341.47 373.423L342.737 371.875C321.146 354.199 300.766 335.095 281.731 314.692L280.269 316.056ZM341.457 373.412C356.607 386.232 375.645 393.554 395.481 394.191L395.545 392.192C376.16 391.57 357.555 384.414 342.749 371.886L341.457 373.412ZM395.545 394.191C415.374 393.55 434.405 386.228 449.549 373.412L448.257 371.886C433.457 384.41 414.859 391.565 395.48 392.192L395.545 394.191ZM449.536 373.423C471.199 355.714 491.64 336.56 510.719 316.093L509.256 314.73C490.239 335.131 469.864 354.223 448.27 371.875L449.536 373.423ZM510.695 316.119C513.399 313.415 516.17 310.618 519.011 307.728L517.584 306.326C514.748 309.212 511.98 312.005 509.281 314.704L510.695 316.119ZM519.05 306.369L518.92 306.219L517.414 307.536L517.545 307.685L519.05 306.369ZM518.875 307.584L519.024 307.434L517.609 306.021L517.459 306.171L518.875 307.584ZM519.029 307.429L774.273 48.1331L772.848 46.7301L517.604 306.026L519.029 307.429ZM774.27 48.136C781.717 40.6325 786.809 34.0288 789.567 28.1325C792.335 22.2138 792.783 16.9304 790.805 12.1816L788.959 12.9506C790.66 17.0348 790.361 21.7143 787.755 27.2852C785.139 32.8784 780.231 39.291 772.851 46.7271L774.27 48.136ZM790.805 12.1819C788.986 7.81 785.362 4.62939 780.034 2.55603C774.73 0.491784 767.69 -0.497622 758.901 -0.497622V1.50238C767.572 1.50238 774.332 2.4831 779.309 4.41985C784.262 6.34748 787.398 9.19871 788.959 12.9502L790.805 12.1819Z" fill="white" fill-opacity="0.2" mask="url(#path-1-inside-1_1865_5081)"/>
+</svg>
+</div>
+<span class="button-text" c-font="label_2">
+CONTACT US
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class=""
+fill="none"
+height="32"
+viewBox="0 0 32 32"
+width="32"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+><g stroke="#f4f4f4"><rect height="8" rx=".5" width="13" x="9.5" y="12" /><path
+d="m9.37468 12.0188 6.00062 4.6637c.3675.2857.8873.2857 1.2549 0l6.0006-4.6637"
+/></g></svg>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m10.5 5h-4.3c-.66274 0-1.2.53726-1.2 1.2v4.3m16.5-5.5h4.3c.6627 0 1.2.53726 1.2 1.2v4.3m0 11v4.3c0 .6627-.5373 1.2-1.2 1.2h-4.3m-11 0h-4.3c-.66274 0-1.2-.5373-1.2-1.2v-4.3" opacity=".2" stroke="#f4f4f4" stroke-width="1.2"/><g fill="#f4f4f4"><path d="m26.4 15.4h1.2v1.2h-1.2z"/><path d="m4.4 15.4h1.2v1.2h-1.2z"/></g></svg>
+</v-atom>
+</a>
+<a class="button "
+href="https://venturi.space/en/careers/"
+s-cursor="pointer"
+size='large'
+>
+<div class="button-shape"><svg class="" width="792" height="394" viewBox="0 0 792 394" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask fill="white">
+<path d="M758.994 0.502378H733.186C726.098 -0.662822 718.825 0.208586 712.213 3.01536C705.601 5.82214 699.922 10.4489 695.837 16.3571L478.054 237.725L477.868 237.894C440.145 279.874 418.706 299.93 398.78 300.472C377.23 301.07 353.383 278.268 313.102 237.968L95.2999 16.5998C91.2076 10.7019 85.5261 6.08643 78.9146 3.28977C72.3031 0.493118 65.0332 -0.370072 57.9508 0.801007H32.1427C14.682 0.801007 4.54177 4.74144 1.16168 12.8089C-2.57324 21.6793 2.65538 32.7532 17.4643 47.6929L272.746 307.027L281 315.374C300.065 335.81 320.478 354.944 342.103 372.649C357.081 385.323 375.903 392.562 395.513 393.191C415.116 392.558 433.931 385.319 448.903 372.649C470.532 354.968 490.94 335.846 509.988 315.411C512.689 312.71 515.459 309.915 518.298 307.027L518.167 306.877L518.316 306.728L773.56 47.4316C788.388 32.4919 793.561 21.3991 789.882 12.5661C786.502 4.44264 776.361 0.502378 758.901 0.502378"/>
+</mask>
+<path d="M396.013 393.191V387.122H395.013V393.191H396.013ZM733.186 0.502378L733.024 1.48913L733.105 1.50238H733.186V0.502378ZM695.837 16.3571L696.55 17.0584L696.61 16.9968L696.66 16.9258L695.837 16.3571ZM478.054 237.725L478.724 238.468L478.746 238.448L478.767 238.427L478.054 237.725ZM477.868 237.894L477.198 237.151L477.159 237.186L477.124 237.225L477.868 237.894ZM398.78 300.472L398.753 299.472L398.753 299.472L398.78 300.472ZM313.102 237.968L312.389 238.67L312.395 238.675L313.102 237.968ZM95.2999 16.5998L94.4783 17.1699L94.5271 17.2402L94.5871 17.3012L95.2999 16.5998ZM57.9508 0.801007V1.80101H58.0329L58.1139 1.78761L57.9508 0.801007ZM1.16168 12.8089L2.08331 13.1969L2.08399 13.1953L1.16168 12.8089ZM17.4643 47.6929L18.177 46.9914L18.1745 46.9889L17.4643 47.6929ZM272.746 307.027L272.033 307.728L272.035 307.73L272.746 307.027ZM281 315.374L281.731 314.692L281.721 314.681L281.711 314.671L281 315.374ZM342.103 372.649L342.749 371.886L342.743 371.88L342.737 371.875L342.103 372.649ZM395.513 393.191L395.481 394.191L395.513 394.192L395.545 394.191L395.513 393.191ZM448.903 372.649L448.27 371.875L448.264 371.88L448.257 371.886L448.903 372.649ZM509.988 315.411L509.281 314.704L509.268 314.717L509.256 314.73L509.988 315.411ZM518.298 307.027L519.011 307.728L519.661 307.067L519.05 306.369L518.298 307.027ZM518.167 306.877L517.459 306.171L516.799 306.832L517.414 307.536L518.167 306.877ZM518.316 306.728L519.024 307.434L519.029 307.429L518.316 306.728ZM773.56 47.4316L772.851 46.7271L772.848 46.7301L773.56 47.4316ZM789.882 12.5661L788.959 12.9502L788.959 12.9506L789.882 12.5661ZM758.994 -0.497622H733.186V1.50238H758.994V-0.497622ZM733.348 -0.484377C726.074 -1.6803 718.609 -0.785917 711.822 2.09487L712.604 3.93586C719.042 1.20309 726.123 0.354653 733.024 1.48913L733.348 -0.484377ZM711.822 2.09487C705.036 4.97565 699.207 9.72436 695.015 15.7883L696.66 16.9258C700.637 11.1734 706.166 6.66863 712.604 3.93586L711.822 2.09487ZM695.124 15.6558L477.341 237.024L478.767 238.427L696.55 17.0584L695.124 15.6558ZM477.384 236.983L477.198 237.151L478.537 238.636L478.724 238.468L477.384 236.983ZM477.124 237.225C458.26 258.218 443.516 273.674 431.015 283.95C418.506 294.232 408.381 299.211 398.753 299.472L398.808 301.472C409.106 301.192 419.662 295.871 432.285 285.495C444.916 275.112 459.752 259.55 478.611 238.562L477.124 237.225ZM398.753 299.472C388.341 299.761 377.229 294.399 363.58 283.768C349.948 273.15 333.962 257.423 313.809 237.261L312.395 238.675C332.523 258.813 348.601 274.637 362.351 285.346C376.083 296.041 387.669 301.781 398.808 301.472L398.753 299.472ZM313.815 237.267L96.0127 15.8985L94.5871 17.3012L312.389 238.67L313.815 237.267ZM96.1215 16.0298C91.9214 9.97631 86.09 5.23918 79.3042 2.36878L78.525 4.21076C84.9622 6.93367 90.4939 11.4274 94.4783 17.1699L96.1215 16.0298ZM79.3042 2.36878C72.5184 -0.501603 65.0569 -1.38755 57.7876 -0.185597L58.1139 1.78761C65.0096 0.647412 72.0879 1.48784 78.525 4.21076L79.3042 2.36878ZM57.9508 -0.198993H32.1427V1.80101H57.9508V-0.198993ZM32.1427 -0.198993C23.3532 -0.198993 16.3137 0.790506 11.0104 2.84731C5.68446 4.91289 2.05944 8.07836 0.239359 12.4224L2.08399 13.1953C3.64401 9.47194 6.77915 6.63348 11.7336 4.71199C16.7106 2.78173 23.4715 1.80101 32.1427 1.80101V-0.198993ZM0.240041 12.4208C-1.76792 17.1897 -1.31976 22.4797 1.4535 28.3992C4.2159 34.2954 9.31716 40.8943 16.7541 48.3969L18.1745 46.9889C10.8025 39.5518 5.88502 33.1439 3.2646 27.5507C0.655047 21.9806 0.356359 17.2984 2.08331 13.1969L0.240041 12.4208ZM16.7517 48.3944L272.033 307.728L273.459 306.325L18.177 46.9914L16.7517 48.3944ZM272.035 307.73L280.289 316.077L281.711 314.671L273.457 306.324L272.035 307.73ZM280.269 316.056C299.364 336.525 319.81 355.69 341.47 373.423L342.737 371.875C321.146 354.199 300.766 335.095 281.731 314.692L280.269 316.056ZM341.457 373.412C356.607 386.232 375.645 393.554 395.481 394.191L395.545 392.192C376.16 391.57 357.555 384.414 342.749 371.886L341.457 373.412ZM395.545 394.191C415.374 393.55 434.405 386.228 449.549 373.412L448.257 371.886C433.457 384.41 414.859 391.565 395.48 392.192L395.545 394.191ZM449.536 373.423C471.199 355.714 491.64 336.56 510.719 316.093L509.256 314.73C490.239 335.131 469.864 354.223 448.27 371.875L449.536 373.423ZM510.695 316.119C513.399 313.415 516.17 310.618 519.011 307.728L517.584 306.326C514.748 309.212 511.98 312.005 509.281 314.704L510.695 316.119ZM519.05 306.369L518.92 306.219L517.414 307.536L517.545 307.685L519.05 306.369ZM518.875 307.584L519.024 307.434L517.609 306.021L517.459 306.171L518.875 307.584ZM519.029 307.429L774.273 48.1331L772.848 46.7301L517.604 306.026L519.029 307.429ZM774.27 48.136C781.717 40.6325 786.809 34.0288 789.567 28.1325C792.335 22.2138 792.783 16.9304 790.805 12.1816L788.959 12.9506C790.66 17.0348 790.361 21.7143 787.755 27.2852C785.139 32.8784 780.231 39.291 772.851 46.7271L774.27 48.136ZM790.805 12.1819C788.986 7.81 785.362 4.62939 780.034 2.55603C774.73 0.491784 767.69 -0.497622 758.901 -0.497622V1.50238C767.572 1.50238 774.332 2.4831 779.309 4.41985C784.262 6.34748 787.398 9.19871 788.959 12.9502L790.805 12.1819Z" fill="white" fill-opacity="0.2" mask="url(#path-1-inside-1_1865_5081)"/>
+</svg>
+</div>
+<span class="button-text" c-font="label_2">
+RECRUITMENT
+</span>
+<v-atom class="icon button-icon"
+>
+<svg class=""
+fill="none"
+height="32"
+viewBox="0 0 32 32"
+width="32"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+><g stroke="#f4f4f4"><rect height="8" rx=".5" width="13" x="9.5" y="12" /><path
+d="m9.37468 12.0188 6.00062 4.6637c.3675.2857.8873.2857 1.2549 0l6.0006-4.6637"
+/></g></svg>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m10.5 5h-4.3c-.66274 0-1.2.53726-1.2 1.2v4.3m16.5-5.5h4.3c.6627 0 1.2.53726 1.2 1.2v4.3m0 11v4.3c0 .6627-.5373 1.2-1.2 1.2h-4.3m-11 0h-4.3c-.66274 0-1.2-.5373-1.2-1.2v-4.3" opacity=".2" stroke="#f4f4f4" stroke-width="1.2"/><g fill="#f4f4f4"><path d="m26.4 15.4h1.2v1.2h-1.2z"/><path d="m4.4 15.4h1.2v1.2h-1.2z"/></g></svg>
+</v-atom>
+</a>
+</div>
+<v-module class="newsletter footer-newsletter"
+data-error-message="An error occurred"
+data-success-message="Thank you, you are registered">
+<form class="newsletter-form">
+<label class="input newsletter-input"
+>
+<div class="input-field">
+<input class="input-area"
+type="text"
+placeholder="Subscribe to our Newsletter"
+name='email'
+required
+/>
+<button class="icon_button newsletter-submit"
+type="submit"
+s-cursor="pointer"
+aria-label="Subscribe">
+<v-atom class="icon icon_button-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m12.5089 9.56684v.45676c-.0207.1255-.0052.2542.0448.3712s.1323.2175.2375.2898l3.941 3.8545.003.0033c.7474.6676 1.1045 1.0471 1.1141 1.3997.0107.3814-.3953.8035-1.1127 1.5164l-3.9411 3.8548c-.105.0724-.1871.173-.2369.29s-.0652.2457-.0443.3711v.4567c0 .309.0701.4885.2137.5483.158.0661.3551-.0264.6211-.2885l4.6169-4.5181.1486-.1461c.3638-.3374.7045-.6987 1.0197-1.0815.2256-.265.3545-.5982.3657-.9452-.0113-.347-.1402-.68-.3657-.945-.3148-.3828-.6552-.744-1.019-1.0811-.0481-.0478-.0979-.0968-.1493-.1471l-.0026.0024-.0027-.0027-4.6163-4.51746c-.2659-.26243-.4634-.35398-.6207-.28887-.1446.05982-.2148.23929-.2148.54832" fill="#fff"/></svg>
+</v-atom>
+</button>
+<button class="icon_button newsletter-spinner"
+type="button"
+s-cursor="pointer"
+aria-label="Loading">
+<v-atom class="spinner">
+<div class="spinner-circle"></div>
+</v-atom>
+</button>
+</div>
+</label>
+</form>
+</v-module>
+<div class="footer-legals">
+<v-atom class="langs footer-langs" data-wg-notranslate>
+<div class="langs-items">
+<a class="langs-item"
+c-font="body_3"
+href="https://venturi.space/en/"
+v-barba-prevent="self"
+data-wg-notranslate
+aria-current="true">
+English
+</a>
+<a class="langs-item"
+c-font="body_3"
+href="https://venturi.space/"
+v-barba-prevent="self"
+data-wg-notranslate
+aria-current="false">
+Français
+</a>
+</div>
+</v-atom>
+<span class="footer-legal" c-font="body_3">-</span>
+<a class="footer-legal" c-font="body_3" href="https://venturi.space/en/privacy-policy/" target="">
+Privacy Policy
+</a>
+<a class="footer-legal" c-font="body_3" href="https://venturi.space/en/terms-of-use/" target="">
+Terms of use
+</a>
+<a class="footer-legal" c-font="body_3" href="https://venturi.space/wp-content/uploads/2026/02/venturi-sam-terms-and-conditions-of-purchase-flight-suppliers-february-2026.pdf" target="_blank">
+Flight - T&Cs
+</a>
+<a class="footer-legal" c-font="body_3" href="https://venturi.space/wp-content/uploads/2026/02/venturi-sam-terms-and-conditions-of-purchase-non-flight-suppliers-february-2026.pdf" target="_blank">
+Non-Flight - T&Cs
+</a>
+</div>
+</div>
+<div class="footer-links">
+<span class="footer-caption" c-font="body_3">Links</span>
+<ul class="footer-list">
+<li class="footer-item">
+<a href="https://venturi.space/en/about-venturi-space/" class="footer-link" target="">
+<v-atom class="icon footer-item_arrow"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m12.5089 9.56684v.45676c-.0207.1255-.0052.2542.0448.3712s.1323.2175.2375.2898l3.941 3.8545.003.0033c.7474.6676 1.1045 1.0471 1.1141 1.3997.0107.3814-.3953.8035-1.1127 1.5164l-3.9411 3.8548c-.105.0724-.1871.173-.2369.29s-.0652.2457-.0443.3711v.4567c0 .309.0701.4885.2137.5483.158.0661.3551-.0264.6211-.2885l4.6169-4.5181.1486-.1461c.3638-.3374.7045-.6987 1.0197-1.0815.2256-.265.3545-.5982.3657-.9452-.0113-.347-.1402-.68-.3657-.945-.3148-.3828-.6552-.744-1.019-1.0811-.0481-.0478-.0979-.0968-.1493-.1471l-.0026.0024-.0027-.0027-4.6163-4.51746c-.2659-.26243-.4634-.35398-.6207-.28887-.1446.05982-.2148.23929-.2148.54832" fill="#fff"/></svg>
+</v-atom>
+<span>About</span>
+</a>
+</li>
+<li class="footer-item">
+<a href="https://venturi.space/en/rovers/" class="footer-link" target="">
+<v-atom class="icon footer-item_arrow"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m12.5089 9.56684v.45676c-.0207.1255-.0052.2542.0448.3712s.1323.2175.2375.2898l3.941 3.8545.003.0033c.7474.6676 1.1045 1.0471 1.1141 1.3997.0107.3814-.3953.8035-1.1127 1.5164l-3.9411 3.8548c-.105.0724-.1871.173-.2369.29s-.0652.2457-.0443.3711v.4567c0 .309.0701.4885.2137.5483.158.0661.3551-.0264.6211-.2885l4.6169-4.5181.1486-.1461c.3638-.3374.7045-.6987 1.0197-1.0815.2256-.265.3545-.5982.3657-.9452-.0113-.347-.1402-.68-.3657-.945-.3148-.3828-.6552-.744-1.019-1.0811-.0481-.0478-.0979-.0968-.1493-.1471l-.0026.0024-.0027-.0027-4.6163-4.51746c-.2659-.26243-.4634-.35398-.6207-.28887-.1446.05982-.2148.23929-.2148.54832" fill="#fff"/></svg>
+</v-atom>
+<span>Rovers</span>
+</a>
+</li>
+<li class="footer-item">
+<a href="https://venturi.space/en/us-programme/" class="footer-link" target="">
+<v-atom class="icon footer-item_arrow"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m12.5089 9.56684v.45676c-.0207.1255-.0052.2542.0448.3712s.1323.2175.2375.2898l3.941 3.8545.003.0033c.7474.6676 1.1045 1.0471 1.1141 1.3997.0107.3814-.3953.8035-1.1127 1.5164l-3.9411 3.8548c-.105.0724-.1871.173-.2369.29s-.0652.2457-.0443.3711v.4567c0 .309.0701.4885.2137.5483.158.0661.3551-.0264.6211-.2885l4.6169-4.5181.1486-.1461c.3638-.3374.7045-.6987 1.0197-1.0815.2256-.265.3545-.5982.3657-.9452-.0113-.347-.1402-.68-.3657-.945-.3148-.3828-.6552-.744-1.019-1.0811-.0481-.0478-.0979-.0968-.1493-.1471l-.0026.0024-.0027-.0027-4.6163-4.51746c-.2659-.26243-.4634-.35398-.6207-.28887-.1446.05982-.2148.23929-.2148.54832" fill="#fff"/></svg>
+</v-atom>
+<span>Programme US</span>
+</a>
+</li>
+<li class="footer-item">
+<a href="https://venturi.space/en/programme-eu-2026/" class="footer-link" target="">
+<v-atom class="icon footer-item_arrow"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m12.5089 9.56684v.45676c-.0207.1255-.0052.2542.0448.3712s.1323.2175.2375.2898l3.941 3.8545.003.0033c.7474.6676 1.1045 1.0471 1.1141 1.3997.0107.3814-.3953.8035-1.1127 1.5164l-3.9411 3.8548c-.105.0724-.1871.173-.2369.29s-.0652.2457-.0443.3711v.4567c0 .309.0701.4885.2137.5483.158.0661.3551-.0264.6211-.2885l4.6169-4.5181.1486-.1461c.3638-.3374.7045-.6987 1.0197-1.0815.2256-.265.3545-.5982.3657-.9452-.0113-.347-.1402-.68-.3657-.945-.3148-.3828-.6552-.744-1.019-1.0811-.0481-.0478-.0979-.0968-.1493-.1471l-.0026.0024-.0027-.0027-4.6163-4.51746c-.2659-.26243-.4634-.35398-.6207-.28887-.1446.05982-.2148.23929-.2148.54832" fill="#fff"/></svg>
+</v-atom>
+<span>Programme EU</span>
+</a>
+</li>
+<li class="footer-item">
+<a href="https://venturi.space/en/technologies/" class="footer-link" target="">
+<v-atom class="icon footer-item_arrow"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m12.5089 9.56684v.45676c-.0207.1255-.0052.2542.0448.3712s.1323.2175.2375.2898l3.941 3.8545.003.0033c.7474.6676 1.1045 1.0471 1.1141 1.3997.0107.3814-.3953.8035-1.1127 1.5164l-3.9411 3.8548c-.105.0724-.1871.173-.2369.29s-.0652.2457-.0443.3711v.4567c0 .309.0701.4885.2137.5483.158.0661.3551-.0264.6211-.2885l4.6169-4.5181.1486-.1461c.3638-.3374.7045-.6987 1.0197-1.0815.2256-.265.3545-.5982.3657-.9452-.0113-.347-.1402-.68-.3657-.945-.3148-.3828-.6552-.744-1.019-1.0811-.0481-.0478-.0979-.0968-.1493-.1471l-.0026.0024-.0027-.0027-4.6163-4.51746c-.2659-.26243-.4634-.35398-.6207-.28887-.1446.05982-.2148.23929-.2148.54832" fill="#fff"/></svg>
+</v-atom>
+<span>Technologies</span>
+</a>
+</li>
+<li class="footer-item">
+<a href="https://venturi.space/en/newsroom/" class="footer-link" target="">
+<v-atom class="icon footer-item_arrow"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m12.5089 9.56684v.45676c-.0207.1255-.0052.2542.0448.3712s.1323.2175.2375.2898l3.941 3.8545.003.0033c.7474.6676 1.1045 1.0471 1.1141 1.3997.0107.3814-.3953.8035-1.1127 1.5164l-3.9411 3.8548c-.105.0724-.1871.173-.2369.29s-.0652.2457-.0443.3711v.4567c0 .309.0701.4885.2137.5483.158.0661.3551-.0264.6211-.2885l4.6169-4.5181.1486-.1461c.3638-.3374.7045-.6987 1.0197-1.0815.2256-.265.3545-.5982.3657-.9452-.0113-.347-.1402-.68-.3657-.945-.3148-.3828-.6552-.744-1.019-1.0811-.0481-.0478-.0979-.0968-.1493-.1471l-.0026.0024-.0027-.0027-4.6163-4.51746c-.2659-.26243-.4634-.35398-.6207-.28887-.1446.05982-.2148.23929-.2148.54832" fill="#fff"/></svg>
+</v-atom>
+<span>Newsroom</span>
+</a>
+</li>
+<li class="footer-item">
+<a href="https://venturi.space/en/careers/" class="footer-link" target="">
+<v-atom class="icon footer-item_arrow"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m12.5089 9.56684v.45676c-.0207.1255-.0052.2542.0448.3712s.1323.2175.2375.2898l3.941 3.8545.003.0033c.7474.6676 1.1045 1.0471 1.1141 1.3997.0107.3814-.3953.8035-1.1127 1.5164l-3.9411 3.8548c-.105.0724-.1871.173-.2369.29s-.0652.2457-.0443.3711v.4567c0 .309.0701.4885.2137.5483.158.0661.3551-.0264.6211-.2885l4.6169-4.5181.1486-.1461c.3638-.3374.7045-.6987 1.0197-1.0815.2256-.265.3545-.5982.3657-.9452-.0113-.347-.1402-.68-.3657-.945-.3148-.3828-.6552-.744-1.019-1.0811-.0481-.0478-.0979-.0968-.1493-.1471l-.0026.0024-.0027-.0027-4.6163-4.51746c-.2659-.26243-.4634-.35398-.6207-.28887-.1446.05982-.2148.23929-.2148.54832" fill="#fff"/></svg>
+</v-atom>
+<span>Careers</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="footer-social">
+<span class="footer-caption" c-font="body_3">
+Networks
+</span>
+<v-module class="social_links footer-social_links" data-list="false">
+<a class="social_links-link" href="https://www.facebook.com/Venturi/" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m22.7442 15.8721c0-3.7953-3.0768-6.8721-6.8721-6.8721s-6.8721 3.0768-6.8721 6.8721c0 3.2227 2.2189 5.927 5.2121 6.6698v-4.5697h-1.4171v-2.1001h1.4171v-.9049c0-2.339 1.0585-3.4232 3.3549-3.4232.4354 0 1.1867.0855 1.494.1707v1.9036c-.1622-.017-.4439-.0255-.7939-.0255-1.1267 0-1.5621.4268-1.5621 1.5365v.7428h2.2447l-.3857 2.1001h-1.859v4.7217c3.4028-.411 6.0394-3.3083 6.0394-6.8218z" fill="#fff"/></svg>
+</v-atom>
+</a>
+<a class="social_links-link" href="https://www.instagram.com/venturi.official/" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><g fill="#fff"><path d="m15.8721 10.2375c1.8361 0 2.0536.0081 2.7757.0403.6711.0295 1.0335.1423 1.2751.2362.3194.1235.5503.2738.7892.5127.2416.2416.3892.4698.5127.7892.0939.2416.2067.6067.2362 1.2751.0322.7248.0403.9423.0403 2.7757 0 1.8362-.0081 2.0536-.0403 2.7757-.0295.6711-.1423 1.0335-.2362 1.2751-.1235.3194-.2738.5503-.5127.7892-.2416.2416-.4698.3892-.7892.5127-.2416.094-.6067.2067-1.2751.2363-.7248.0322-.9423.0402-2.7757.0402-1.8362 0-2.0536-.008-2.7757-.0402-.6711-.0296-1.0335-.1423-1.2751-.2363-.3194-.1235-.5503-.2738-.7892-.5127-.2416-.2416-.3892-.4698-.5127-.7892-.094-.2416-.2067-.6067-.2363-1.2751-.0322-.7248-.0402-.9422-.0402-2.7757 0-1.8361.008-2.0536.0402-2.7757.0296-.6711.1423-1.0335.2363-1.2751.1235-.3194.2738-.5503.5127-.7892.2416-.2416.4698-.3892.7892-.5127.2416-.0939.6067-.2067 1.2751-.2362.7221-.0322.9395-.0403 2.7757-.0403zm0-1.2375c-1.8657 0-2.0992.00805-2.8321.04027-.7301.03221-1.2321.15032-1.667.31944-.4536.17717-.8375.41072-1.2187.79459-.38387.3812-.61742.7651-.79459 1.216-.16912.4376-.28723.9369-.31944 1.667-.03222.7356-.04027.9691-.04027 2.8348 0 1.8656.00805 2.0992.04027 2.832.03221.7302.15032 1.2322.31944 1.6671.17717.4536.41072.8375.79459 1.2187.3812.3812.7651.6174 1.216.7919.4376.1691.9369.2872 1.667.3194.7329.0322.9664.0403 2.8321.0403s2.0992-.0081 2.8321-.0403c.7301-.0322 1.2321-.1503 1.667-.3194.4509-.1745.8348-.4107 1.216-.7919s.6174-.7651.7919-1.2161c.1691-.4375.2872-.9368.3194-1.667.0323-.7328.0403-.9664.0403-2.832 0-1.8657-.008-2.0992-.0403-2.8321-.0322-.7301-.1503-1.2321-.3194-1.667-.1691-.4563-.4027-.8402-.7865-1.2214-.3812-.38119-.7651-.61742-1.2161-.7919-.4375-.16912-.9368-.28724-1.667-.31945-.7355-.0349-.9691-.04295-2.8347-.04295z"/><path d="m15.872 12.3418c-1.949 0-3.5302 1.5812-3.5302 3.5302s1.5812 3.5302 3.5302 3.5302 3.5302-1.5812 3.5302-3.5302-1.5812-3.5302-3.5302-3.5302zm0 5.8201c-1.2644 0-2.2899-1.0255-2.2899-2.2899s1.0255-2.2899 2.2899-2.2899 2.2899 1.0255 2.2899 2.2899-1.0255 2.2899-2.2899 2.2899z"/><path d="m20.3663 12.2032c0 .4565-.3706.8245-.8245.8245-.4566 0-.8245-.3707-.8245-.8245 0-.4566.3706-.8246.8245-.8246s.8245.3707.8245.8246z"/></g></svg>
+</v-atom>
+</a>
+<a class="social_links-link" href="https://www.linkedin.com/company/venturi-official/" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m21.7289 9h-11.7144c-.26904 0-.52709.10689-.71735.29715s-.29715.44831-.29715.71735v11.7144c0 .2691.10689.5271.29715.7174s.44831.2971.71735.2971h11.7144c.2691 0 .5271-.1068.7174-.2971s.2971-.4483.2971-.7174v-11.7144c0-.26904-.1068-.52709-.2971-.71735s-.4483-.29715-.7174-.29715zm-8.6326 11.7077h-2.0663v-6.5635h2.0663zm-1.0346-7.473c-.2344-.0013-.4631-.072-.6573-.2032-.1943-.1312-.3453-.317-.434-.534-.0887-.2169-.1112-.4553-.0646-.685s.1602-.4405.3265-.6057c.1662-.1652.3777-.2774.6077-.3225.23-.0452.4682-.0212.6846.069.2164.0901.4012.2423.5311.4374.13.195.1992.4242.199.6586.0023.1569-.0272.3127-.0864.458-.0593.1453-.1472.2772-.2585.3879-.1114.1106-.2438.1976-.3895.256-.1457.0583-.3017.0867-.4586.0835zm8.6508 7.4787h-2.0654v-3.5857c0-1.0575-.4495-1.3839-1.0298-1.3839-.6127 0-1.214.462-1.214 1.4106v3.559h-2.0663v-6.5644h1.9871v.9096h.0267c.1995-.4037.8981-1.0938 1.9642-1.0938 1.1529 0 2.3984.6843 2.3984 2.6886z" fill="#fefefe"/></svg>
+</v-atom>
+</a>
+<a class="social_links-link" href="https://x.com/i/flow/login?redirect_after_login=%2FVenturi" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m19.9223 10h1.9319l-4.2206 4.8239 4.9652 6.5643h-3.8877l-3.045-3.9812-3.4842 3.9812h-1.9331l4.5144-5.1597-4.7632-6.2285h3.9864l2.7525 3.639zm-.678 10.2318h1.0705l-6.91-9.1362h-1.1488z" fill="#fff"/></svg>
+</v-atom>
+</a>
+<a class="social_links-link" href="https://www.tiktok.com/@venturi.official" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m18.9795 9c.1989 1.8496 1.7239 3.2943 3.6205 3.4299v2.3961h-.0021c-.1203.0114-.2411.0174-.362.0179-1.3259.0002-2.5626-.6534-3.2889-1.7383v5.9194c0 2.4162-2.0028 4.375-4.4735 4.375-2.4706 0-4.4735-1.9588-4.4735-4.375s2.0029-4.375 4.4735-4.375c.0934 0 .1847.0082.2765.0138v2.156c-.0918-.0108-.1821-.0272-.2765-.0272-1.261 0-2.2832.9997-2.2832 2.2329s1.0222 2.2329 2.2832 2.2329c1.2612 0 2.375-.9717 2.375-2.2052l.022-10.0532z" fill="#fff" fill-rule="evenodd"/></svg>
+</v-atom>
+</a>
+<a class="social_links-link" href="https://www.youtube.com/user/Venturiautomobiles/videos" target="_blank">
+<v-atom class="icon social_links-icon"
+>
+<svg class="" fill="none" height="32" viewBox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m23.5471 10.9384c.2711.2729.4659.6123.5647.9841.3654 1.3724.3654 4.2342.3654 4.2342s0 2.8619-.3654 4.2343c-.0988.3718-.2936.7112-.5647.9841-.2712.2729-.6093.4698-.9805.571-1.3664.3674-6.828.3674-6.828.3674s-5.4616 0-6.82802-.3674c-.37118-.1012-.70927-.2981-.98044-.571-.27116-.2729-.4659-.6123-.56471-.9841-.36543-1.3724-.36543-4.2343-.36543-4.2343s0-2.8618.36543-4.2342c.09881-.3718.29355-.7112.56471-.9841.27117-.2729.60926-.4698.98044-.571 1.36642-.3674 6.82802-.3674 6.82802-.3674s5.4616 0 6.828.3674c.3712.1012.7093.2981.9805.571zm-5.0276 5.2188-4.5687-2.5992v5.1984z" fill="#fefefe" fill-rule="evenodd"/></svg>
+</v-atom>
+</a>
+</v-module>
+</div>
+<div class="footer-legals_mobile">
+<v-atom class="langs footer-langs" data-wg-notranslate>
+<div class="langs-items">
+<a class="langs-item"
+c-font="body_3"
+href="https://venturi.space/en/"
+v-barba-prevent="self"
+data-wg-notranslate
+aria-current="true">
+English
+</a>
+<a class="langs-item"
+c-font="body_3"
+href="https://venturi.space/"
+v-barba-prevent="self"
+data-wg-notranslate
+aria-current="false">
+Français
+</a>
+</div>
+</v-atom>
+<span class="footer-legal" c-font="body_3">-</span>
+<a class="footer-legal" c-font="body_3" href="https://venturi.space/en/privacy-policy/" target="">
+Privacy Policy
+</a>
+<a class="footer-legal" c-font="body_3" href="https://venturi.space/en/terms-of-use/" target="">
+Terms of use
+</a>
+<a class="footer-legal" c-font="body_3" href="https://venturi.space/wp-content/uploads/2026/02/venturi-sam-terms-and-conditions-of-purchase-flight-suppliers-february-2026.pdf" target="_blank">
+Flight - T&Cs
+</a>
+<a class="footer-legal" c-font="body_3" href="https://venturi.space/wp-content/uploads/2026/02/venturi-sam-terms-and-conditions-of-purchase-non-flight-suppliers-february-2026.pdf" target="_blank">
+Non-Flight - T&Cs
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</v-block>
+</v-page>
+</main>
+</body>
+<script data-wp-strategy="defer" defer src="https://venturi.space/wp-content/themes/api/../front/build/app.min.js?v=1.0.46&#038;ver=1.0.46"></script>
+<script async
+src="https://www.googletagmanager.com/gtag/js?id=G-NV2X18DXZZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+dataLayer.push(arguments);
+}
+gtag("js", new Date());
+gtag("config", "G-NV2X18DXZZ");
+</script>
+</html><!-- WP Fastest Cache file was created in 0.620 seconds, on 14 September 2026 @ 14h53 -->

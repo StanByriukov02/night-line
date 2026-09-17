@@ -1,0 +1,24 @@
+{
+  "url": "https://venturi.space/en/article/venturi-space-and-venturi-astrolab-introduce-lunar-rover/",
+  "fetched_utc": "2026-09-17T15:50:00Z",
+  "title": "Venturi Space / Astrolab FLIP intro: 180 hours of nights under -180 C. Not watt-hours. Not Cataldo 354 h.",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "extract": "page.txt",
+  "numbers_used": [
+    "night_h_claim=180",
+    "T_C=-180",
+    "battery_kWh=NOT_PRINTED"
+  ],
+  "quote": "Our batteries and hyper-deformable wheels can withstand temperature variations of more than 300°C, aggressive solar radiation, and 180 hours of nights under -180°C.",
+  "note": "180 h is a survival-duration sentence on batteries/wheels. It is not a printed store Wh and not a Mons Mouton night length. Do not replace 354 h with 180 h.",
+  "status_20260917": 200,
+  "sha256": "45561217ebba6648b3990f652b80b578cc75445bdaa819f88f551f21beb7b85a",
+  "bytes": 122688,
+  "sha256_by_file": {
+    "page.html": "45561217ebba6648b3990f652b80b578cc75445bdaa819f88f551f21beb7b85a",
+    "page.txt": "ffbc08607921c997e21597f65cc2356273e015497a23634d8de2ca8691e472f9"
+  },
+  "hash_newline": "lf",
+  "omitted_binaries": []
+}

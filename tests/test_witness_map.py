@@ -113,3 +113,28 @@ def test_method_page_is_method_not_cabin() -> None:
     assert "MANIFEST_CLOSED=false" in text
     assert "seventh energy line" in text
     assert "night-line witness-map" in text
+
+
+def test_inherit_forbidden_pairs() -> None:
+    doc = evaluate_map()
+    pairs = {(p["host_ride_id"], p["payload_ride_id"]): p for p in doc["inherit_forbidden"]}
+    g = pairs[("griffin1_lander", "flip_griffin1")]
+    assert g["allowed"] is False
+    assert "not a Griffin night-store" in g["why"]
+    b = pairs[("bgm2_lander", "lusee_night")]
+    assert b["allowed"] is False
+    assert "not a Blue Ghost night-store" in b["why"]
+
+
+def test_flip_wh_still_open_after_venturi_pages() -> None:
+    bat = (ROOT / "sources" / "flip-griffin1" / "venturi-space-batteries" / "page.txt").read_text(
+        encoding="utf-8"
+    )
+    intro = (
+        ROOT / "sources" / "flip-griffin1" / "venturi-space-flip-intro" / "page.txt"
+    ).read_text(encoding="utf-8")
+    assert "10,000" in bat or "10000" in bat.replace(",", "")
+    assert "180 hours of nights" in intro
+    row = _by_id()["flip_griffin1"]
+    assert row["store_Wh_printed"] is False
+    assert row["label"] == "NIGHT_CLAIMED_STORE_OPEN"

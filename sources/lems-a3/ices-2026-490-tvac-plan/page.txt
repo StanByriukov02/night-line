@@ -1,0 +1,611 @@
+55th International Conference on Environmental Systems ICES-2026-490 
+12-16 July 2026, Rio Grande, Puerto Rico 
+ 
+ Simulating the Lunar Thermal Environment for the 
+Surface-Deployed LEMS Artemis III TV AC Test 
+Ethan Burbridge1
+Vertex Aerospace, LLC, Grasonville, MD 21638 
+Juan Rodriguez-Ruiz 2 
+NASA Goddard Space Flight Center, Greenbelt, MD, 20771 
+and 
+Daniel Powers3 
+NASA Goddard Space Flight Center, Greenbelt, MD, 20771 
+ The Lunar Environment Monitoring Station (LEMS) is an autonomous, survive -the-
+lunar-night seismic suite to be deployed on the lunar surface by the Artemis III crew and 
+designed to operate continuously for two years. It will see the extremes of the lunar south pole 
+thermal environment where surface temperatures range from -200°C to +20°C and where 
+nighttime duration is at least 354 hours. Given power and mass constraints, the thermal 
+system is limited to 2.5 Watts of heat during the lunar night. Presented is  the system thermal 
+vacuum test plan and configuration to validate the thermal control system performance in a 
+flight-like environment. The test will measure the nighttime heat leaks for the bus and 
+seismometers to ensure lunar night survival and operability. 
+Acronyms and Nomenclature 
+BB = Broad Band 
+C&DH = Command and Data Handling 
+DSN = Deep Space Network 
+𝐸𝐸𝑏𝑏  = batter capacity of the LEMS-A3 bus at -30°C or 940.8 Wh 
+𝐸𝐸𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿  = Energy measurement based on the LEMS flight unit power supply 
+𝐸𝐸ℎ𝑡𝑡𝑡𝑡  = measured heater power of the GSE bus heater over a nominal lunar night 
+𝐸𝐸0𝑄𝑄   = thermal energy flow through the GSE bus harnessing 
+Δ𝐸𝐸𝐿𝐿𝑆𝑆   = delta of energy consumed by the SP seismometer RRU compared to the flight unit  
+Δ𝐸𝐸𝐵𝐵𝐵𝐵   = delta of energy consumed by the BB seismometer RRU compared to the flight unit  
+Δ𝐸𝐸𝑒𝑒𝑒𝑒𝑒𝑒  = additional heat loss expected due to the difference in environment from TVAC to flight  
+EPS = Electrical Power System 
+GN2 = Gaseous Nitrogen 
+GSE = Ground Support Equipment 
+GTP = Ground Test Panel 
+HMS = Hibernation Management System 
+IMLI = Integrated Multi-Layer Insulation 
+LEMS-A3 = Lunar Environment Monitoring Station – Artemis 3  
+LN2 = Liquid Nitrogen 
+LPT = Limited Performance Test 
+𝑛𝑛 = number of measurement samples with substantially equal time periods 
+PF = Protoflight 
+ 
+1 Thermal Engineer, Vertex Aerospace, LLC, and PO BOX 192, Grasonville, MD 21638 
+2 Thermal Principal Design Lead, Thermal Engineering Branch, and 8800 Greenbelt Rd Greenbelt, MD 20771 
+3 Thermal Engineer, Thermal Engineering Branch, and 8800 Greenbelt Rd Greenbelt, MD 20771 
+
+2 
+International Conference on Environmental Systems 
+PI = Proportional, Integral 
+PRT = Platinum Resistance Thermometer 
+RRU = Risk Reduction Unit 
+SAPP = Signal and Power Passthrough 
+SLI = Single Layer Insulation 
+SP = Short Period 
+𝑇𝑇1  = temperature at the 0Q heater 
+𝑇𝑇2  = temperature at the GTP 
+𝑡𝑡𝑒𝑒𝑛𝑛𝑛𝑛ℎ𝑡𝑡  = nominal length of lunar night per LEMS-A3 requirements at 360 hours 
+VDA  = Vapor Deposited Aluminum 
+𝜎𝜎   =  systematic error of the measurements 
+𝜖𝜖   = random error of the measurements 
+0𝑄𝑄  = zero heat flow 
+I. Introduction 
+HE Lunar Environment Monitoring Station for Artemis III (LEMS-A3) is  an autonomous remote seismic 
+monitoring station to be deployed on  the south pole region of the Moon  by the crew. The seismic suite consists 
+of two three -axis sondes that will be buried in the lunar regolith to detect seismic events which consist of shallow 
+moonquakes, deep moonquakes, meteoroid impacts, and thermal cycling. LEMS-A3 will be gathering the first seismic 
+data for the region which will inform objectives and requirements for future lunar south pole missions. 
+ LEMS-A3 includes all systems necessary for remote operation like direct -to-earth communications, solar power 
+generation, battery storage, command and data handling, and thermal control. Figure 1 details the system architecture. 
+Novel to this system is a low -power Hibernation Mode which disables all systems like communications and data 
+processing not related to science gathering or system telemetry. LEMS -A3 will operate in this Hibernation Mode 
+98.6% of the mission to conserve power. The Hibernation Mode is controlled via the Hibernation Management System 
+(HMS) which nominally operates continuously over the two-year mission. Once every 24 hours, for 20 minutes, HMS 
+will enable the Command and Data Handling (C&DH)  card which maintains the operations schedule based on 
+timekeeping in the HMS. During this 20- minute “Awake” period, the C&DH will determine the charge state of the 
+battery and the solar power incident on the solar arrays based on the two sun sensors and enable or disable the Electrical 
+Power System (EPS) as appropriate. Figure 2 pictures the concept of operations which includes at least one monthly, 
+three-hour, direct-to-Earth communications window using the Deep Space Network (DSN) for downloading science 
+data and system telemetry. 
+ 
+ 
+Figure 1: LEMS-A3 Components 
+ 
+SP 
+Sonde
+BB 
+Sonde
+Bubble 
+Level
+Sun 
+Sensor 
+(2/2)
+Sun 
+Sensor 
+(1/2)
+MGA 
+1&2
+LGA 
+1&2
+Bubble 
+Level
+Sun 
+Compass
+Cable 
+Reel
+BB 
+Sonde
+Solar 
+Panel
+Front View Back View
+(with IMLI blankets removed for clarity)
+Carrying 
+handle
+Thermal 
+Radiat or/heat  
+switch
+Telecom 
+System
+Ba ttery
+Avionics 
+Box
+EPSLaunch 
+Lock 
+Int erface
+Seismometer 
+Stow 
+Assembly
+SP 
+Sonde
+T 
+
+3 
+International Conference on Environmental Systems 
+ 
+Figure 2: LEMS-A3 Concept of Operations 
+ 
+ This paper is an exposition of the LEMS flight unit system-level TVAC test plan and configuration to meet flight 
+qualification test objectives. The configuration enables testing to qualification temperature extremes and also 
+simulates the lunar thermal environment. This paper  will expand upon methods to expedite the test temperature 
+transitions using a partial GN2 backfill, and the method for establishing thermal balance stability criteria and to  
+demonstrate that LEMS is able to survive the lunar night. It presents thermal test predictions for hot/cold plateaus and 
+thermal balance cases, but not the as-run test results. 
+II. Thermal Architecture 
+Once LEMS is deployed for operations on lunar south pole, it is divided into three thermal regions: 
+1. The superstructure, which is in contact with the lunar surface and with elements directly exposed to the 
+extreme hot and cold lunar environments. 
+2. The bus structure, which contains components that require tighter temperature control such as electronics 
+and battery, and is thermally isolated from the superstructure and the lunar environment. 
+3. The seismometers, which are buried below the lunar surface. 
+Figure 3 below shows CAD images with and without the Integrated Multi -Layer Insulation (IMLI) to show the 
+distinction between the superstructure and the bus structure. Figure 4 shows how the bus structure is thermally isolated 
+from the superstructure and the external environment [1].  
+ 
+Figure 3: LEMS Bus Structure and Superstructure 
+ 
+ 
+
+
+4 
+International Conference on Environmental Systems 
+ 
+Figure 4: Bus Thermal Isolation Design 
+III. South Pole Lunar Thermal Environment 
+Current candidate landing locations for Artemis III include lunar latitudes between -83.6° and -88.2°. At these 
+latitudes daytime solar angles are shallow at around 10°, and surface temperatures range from + 20°C during the 
+warmest part of the lunar day, and -200°C during the lunar night. Figure 5 below shows thermal environment 
+conditions for our hot lunar day and cold lunar night balance case. Detailed assumptions on the LEMS lunar thermal 
+environment are detailed in E. Burbridge, J. Rodriguez-Ruiz [1]. 
+ 
+ 
+Figure 5: Thermal Environment Boundary Conditions for Hot and Cold Balance 
+ 
+A detailed thermal model was developed for LEMS and Figure 6 shows the temperature contour map of the 
+lunar surface around LEMS at noon time and during the lunar night. Surface temperature variations due to localized 
+reflection and shadowing effects can be appreciated in these contour maps. The IMLI is hidden to show the internal 
+component temperatures. The thermal model was used to simulate how LEMS thermally responds over the course of 
+a full lunar day/night cycle, also called a lunation, which is approximately 29.5 Earth days in duration. On Figure 7, 
+the left image shows the thermal response of components mounted internally on the bus structure and the right 
+image for components mounted externally on the superstructure. The figure also shows the sharp temperature rise at 
+16:00 due to the high power 3hr comms session. The change in slope at 19:00 is due to the heat switch opening  
+around 0°C, thereby reducing the cool down rate by reducing heat leaks during the lunar night, which is a key design 
+feature to survive the full lunar night. 
+ 
+
+
+5 
+International Conference on Environmental Systems 
+ 
+Figure 6: (left) Hot Op temperature map at solar noon with 5° inclination.  
+(right) Cold Op temperature map during the lunar night. 
+ 
+ 
+Figure 7: Bus (left) and Superstructure (right) Component Temperatures over a Lunation 
+IV. TVAC Test Plan and Configuration 
+A. Test Setup 
+LEMS will undergo a system-level thermal vacuum test at NASA Goddard Space Flight Center to qualify it for 
+spaceflight. The lunar thermal environment will be simulated with a variety of high emissivity panels which are 
+cooled with GN2/LN2 flow, and heated with a variety of heaters installed to achieve desired warm temperatures. For 
+the radiator and solar array cryopanels, Z307 black coated open-cell honeycomb panels were used. This is done to 
+obtain a consistently high emissivity of about 0.98 and increase the sink’s heat transfer effectiveness [2]. Figure 8 
+Cold Op 
+(Figure 6. right) 
+Hot Op 
+(Figure 6. left) 
+Hot Op 
+(Figure 6. left) 
+Cold Op 
+(Figure 6. right) 
+
+6 
+International Conference on Environmental Systems 
+shows the CAD image of our TVAC configuration, Figure 9 shows a photograph of LEMS during setup inside the 
+TVAC chamber, and Figure 10 shows the TVAC test block diagram which is a schematic showing how the thermal 
+test panels are interfacing with LEMS flight components. 
+ 
+ 
+Figure 8: TVAC Test Configuration 
+ 
+ 
+Figure 9: LEMS During Setup For TVAC Test  
+ 
+ 
+ 
+ 
+
+
+7 
+International Conference on Environmental Systems 
+ 
+Figure 10: TVAC Thermal Block Diagram 
+B. Test Profile and Objectives 
+With the test configuration shown, the goals of the system-level TVAC test can be accomplished, which includes 
+simulating the flight- like environments for the hot and cold balance cases , demonstrating hardware thermal 
+capacitance to absorb the 3hr comms session power spike, and achieving protoflight temperatures for the different  
+plateaus. Figure 11 shows the test profile along with a list of the major plateaus and objectives accomplished.  
+ 
+ 
+Figure 11: TVAC Test Profile 
+
+
+8 
+International Conference on Environmental Systems 
+C. Methods to Expedite the Test  
+LEMS is designed to keep the bus structure 
+thermally isolated from the lunar environment . 
+This requirement is driven by the need to survive  
+on battery power alone for approximately 15 Earth 
+days in the cold lunar night environment without 
+any energy source such as solar or nuclear power. 
+The system heat leak is about 1.5 W, which 
+represents a very low heat transfer to mass ratio, 
+and therefore a n extremely  slow temperature 
+cooling rate. Based on preliminary analysis, as can 
+be appreciated in Figure 12, this results in over a 
+week to cool the internal bus components from a 
+warm operating temperature  of 50°C down to -
+30°C, which is schedule and cost prohibitive. 
+To accelerate the hot to cold transitions , a 
+technique is used where the TVAC chamber  is 
+partially backfilled with enough cold GN2 to short 
+the IMLI [2] and introduce some gas conduction to 
+help cool down the test article. For this accelerated 
+transition the flight hardware is powered off to 
+accelerate the cooling effect and to avoid the risk 
+of any electronic damage due to arcing when crossing the corona  pressure region. A  test Kapton film heater was 
+installed on the bus  structure to keep the flight hardware from going below cold temperature limits during these  
+transitions. The bus GSE heater  also facilitates over-driving the transitions during the unpowered cool downs and 
+shortens the long thermal balance asymptote by catching the hardware at a lower temperature with this heater . 
+Subsequently LEMS would power up and the heater setpoints would be raised up using PI controls. 
+This technique was tested i n January 2026 
+during the TVAC checkout test. The TVAC 
+checkout test included all of the TVAC GSE 
+hardware sho wn in the previous section plus 
+the LEMS TRL-6 development unit, which had 
+a similarly built IMLI  covering the bus 
+structure. The effectiveness of the partial GN₂ 
+backfill was assessed by measuring both the 
+heater power to hold temperature and the 
+cooldown rate of the mass within the IMLI at 
+various chamber pressure level s. Figure 13 
+plots the heater power vs. pressure to hold the 
+test article at -20°C with diminishing returns in 
+improvements above 13 pa (0.1 torr). Figure 14 
+shows the cool down rate over  the course of 1 
+hr and shows dramatic improvements  when 
+using this technique to accelerate hot to cold 
+transitions during TVAC. Based on the  results 
+from this test,  a pressure range 40 and 66 pa 
+(0.3 and 0.5 torr) was chosen for the system TVAC test.   
+ 
+ 
+Figure 12: Temperature transition estimates in a high-
+vacuum environment 
+ 
+Figure 13: Heater Power vs. GN2 backfill pressure 
+0
+4
+8
+12
+16
+20
+Pressure [torr]
+Heater Power [W]
+Pressure [pa]
+
+9 
+International Conference on Environmental Systems 
+ 
+ 
+Figure 14: Temperature drop vs. time for high-vacuum and 67 pa (0.5 torr) pressure 
+D. Test GSE for Thermal Stability 
+Figure 15 lays out the test GSE used  to measure heat flows during thermal balance. The test is configured to 
+minimize and measure non-flight heat losses to ensure accurate measurements of heat flows for nighttime energy 
+consumption predictions. The elements of this GSE are the bus GSE heater, and the Ground Test Panel ( GTP) Zero-
+Q (0Q) heater. 
+ 
+ 
+Figure 15: Thermal Balance Ground Support Equipment 
+ 
+The flight hardware , including the Short Period ( SP) and Broad Band ( BB) seismometers is powered via an 
+external power supply during thermal balances. The Keysight N6761A power supply was selected for its accurate 
+supply and measurement  capabilities. The LEMS -A3 bus will be configured into hibernation mode for the cold 
+balance. The seismometer environment will be set so that the internal heater will not cycle and the only power 
+consumption in the SP and BB seismometers are the electronics in standby. 
+The bus GSE heater is installed onto the bus structure  and is PI controlled by a Lakeshore 336 to reduce signal 
+noise during the balance measurements. A Keithly DMM7510 monitors the power supplied to the GSE heater . The 
+flight Bus Op heater is intentionally turned off during the cold balance since it lacks PI control  and would limit the 
+ability to accurately determine the system ’s power levels to maintain stability  and determine whether LEMS is able 
+to survive the lunar night. 
+The 0Q heater is a Kapton film heater wrapped around the electrical GSE wire bundle, also called the GSE harness, 
+which is used to power and control the LEMS -A3 flight hardware during testing. Because the GSE harnessing is not 
+present in flight, the 0Q heater adjusts the temperature of T2 until it match es T1 to minimize heat loss . Four-wire 
+Platinum Resistance Thermometers ( PRTs) were chosen  for T1 and T2 to reduce uncertainty in the temperature 
+measurements and gradient. Additionally, silicon diodes were mounted in the same locations to verify the readings. 
+-30
+-29
+-28
+-27
+-26
+-25
+-24
+-23
+-22
+-21
+-20
+0 10 20 30 40 50 60
+Temperature (°C)
+Time (min)
+High-vacuum
+67 pa (0.5 torr)
+
+
+10 
+International Conference on Environmental Systems 
+V. TVAC Analysis Predictions 
+A. Thermal Balance Stability Criteria Methodology 
+Given the long lunar night (>36 0 hours) and TVAC schedule limitations for cold balance (48 hours) , a thermal 
+stability methodology was developed to validate l unar night survivability.  Cold operational thermal balance is 
+completed when the predicted nighttime thermal energy  loss is less than the LEMS battery capacity  at -30°C. The 
+sources of energy loss are detailed in Eq. (1): 
+ 
+𝐸𝐸𝑏𝑏 ≥ 𝐸𝐸𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿 + 𝐸𝐸ℎ𝑡𝑡𝑡𝑡 + 𝐸𝐸0𝑄𝑄 + Δ𝐸𝐸𝐿𝐿𝑆𝑆 + Δ𝐸𝐸𝐵𝐵𝐵𝐵 + Δ𝐸𝐸𝑒𝑒𝑒𝑒𝑒𝑒 +  �3�𝜎𝜎2 + 𝜖𝜖2 (1) 
+ 
+ The measured data for each source of energy consumption is power , so predictor tools were made to extrapolate 
+the measured power to total nighttime energy. For 𝐸𝐸𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿 and 𝐸𝐸0𝑄𝑄, a simple linear regression is sufficient given that 
+those terms reach stability quickly.  𝐸𝐸𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿, as the power supply for LEMS during TVAC, is independent of small 
+temperature changes and should be constant during cold balance. 𝐸𝐸0𝑄𝑄 should be zero during the test but uncertainty in 
+the readings of the temperature sensors can result in a small temperature gradient that is calculated from the 
+conductance of the harnessing attached to the GTP. 
+ Δ𝐸𝐸𝐿𝐿𝑆𝑆 and Δ𝐸𝐸𝐵𝐵𝐵𝐵 are the difference in energy consumption between the seismometer Risk Reduction Units (RRUs) 
+used in the System TVAC and the flight units being tested separately due to schedule constraints. In System TVAC , 
+the seismometers are powered by the power supply referenced by 𝐸𝐸𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿. The deltas correct for the differences. 
+ 𝐸𝐸ℎ𝑡𝑡𝑡𝑡 is expected to require a non -linear regression due to the long thermal constant of the LEMS -A3 bus  and 
+potential errors in the PI gains for the bus GSE heater. Different regression types such as a decaying exponential or 
+least squares fit will be used. Fitness will be evaluated using similar methods to the linear regressions.  Additionally, 
+test results will be compared to predictions made by the Thermal Desktop model of the bus.  
+Because the test results will be used to extrapolate several times longer than the sample period, an accounting of 
+the measurement errors was done to ensure the test would validate lunar night survivability  with a confidence of  at 
+least three standard deviations. For each energy loss measurement, the error sources are categorized as systematic or 
+random. The systematic errors are derived from errors in measuring equipment often reported by the manufacturer as 
+a three standard deviation value. Systematic error bounds are applied to each measurement and are summed over time, 
+rather than a root sum  of the squares, for conservatism. Random errors are signal noise inherent to the measurement  
+and are propagated via the regression statistics. The systematic and random errors are combined via quadrature for the 
+final error bounds. Figure 16 shows the flow of a measurement to prediction. 
+ 
+ 
+Figure 16: Measurement Prediction and Error Propagation for One Term of Eq. (3) 
+ 
+ There are two types of systematic errors: power and geometric. Power errors  are the result of errors in the power 
+supplies and monitors controlling those circuits. Table 1 details the power supplies used in the test and their errors. 
+Eq. (2) is the method for calculating nighttime energy consumption for power supplies that are expected to be stable. 
+Eq. (3) is the method for propagating the systematic error for the 0Q heater. 
+ 
+ 
+𝐸𝐸𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿 = 𝑡𝑡𝑒𝑒𝑛𝑛𝑛𝑛ℎ𝑡𝑡𝐼𝐼𝐼𝐼 (2) 
+ 
+𝜎𝜎𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿, 𝜎𝜎ℎ𝑡𝑡𝑡𝑡 = 𝑡𝑡𝑒𝑒𝑛𝑛𝑛𝑛ℎ𝑡𝑡
+𝑛𝑛 �𝐼𝐼∗𝐼𝐼 ∗��𝜎𝜎𝐼𝐼
+𝐼𝐼 �
+2
++ �𝜎𝜎𝑉𝑉
+𝐼𝐼�
+2𝑒𝑒
+ 
+(3) 
+
+
+11 
+International Conference on Environmental Systems 
+ 
+ 
+Table 1: Sources of Error in Power Measurements 
+Energy Sink Symbol P/N 
+Voltage 
+[V] 
+Current 
+[A] 
+± % ± % 
+LEMS Power Supply 𝐸𝐸𝐿𝐿𝐿𝐿𝐿𝐿𝐿𝐿 Keysight N6761A 
+6.00E-03 0.0160% 6.00E-03 0.0160% 
+Bus GSE Heater 𝐸𝐸𝐻𝐻𝐻𝐻𝐻𝐻 Keithley DMM7510 7.00E-06 0.0002% 1.80E-06 0.0050% 
+SP RRU Δ𝐸𝐸𝐿𝐿𝑆𝑆 BK Precision 9310 
+1.60E-02 0.05% 1.10E-02 0.30% 
+SP Flight BK Precision 9310 
+1.60E-02 0.05% 1.10E-02 0.30% 
+BB RRU Δ𝐸𝐸𝐵𝐵𝐵𝐵 Xantrex 60-9 
+0.7 - 0.2 - 
+BB Flight Xantrex 60-9 
+0.7 - 0.2 - 
+ 
+The only geometric error is the 0Q heater which is a consequence of the error in the temperature measurements of 
+the PRTs. The 0Q is intended to match the temperatures of two PRTs so that no heat will flow along the EGSE 
+harnessing. While the sensors may read zero temperature gradient, each temperature sensor has an error of 0.71°C that 
+can result in an unmeasured temperature gradient and heat flow . There are also errors in the expected harness 
+conductivity, diameter, and length of the GSE harnessing as cap tured in Table 2. The typical formula for error 
+propagation of multiplicative terms for a 0Q heater results in the  Δ𝑇𝑇 term being a division by 0. Instead, Δ𝑇𝑇 in the 
+error calculation is assumed to be the range covered by three standard deviations for calculating 𝐸𝐸
+0𝑄𝑄. The associated 
+systematic error, 𝜎𝜎0𝑄𝑄, is then just the error in the harness thermal conductance. 
+ 
+𝐸𝐸0𝑄𝑄 = 𝑡𝑡𝑒𝑒𝑛𝑛𝑛𝑛ℎ𝑡𝑡
+𝑘𝑘𝑘𝑘
+𝐿𝐿 (𝑇𝑇�1 −𝑇𝑇�2) (4) 
+ 
+𝜎𝜎0𝑄𝑄 = 𝑡𝑡𝑒𝑒𝑛𝑛𝑛𝑛ℎ𝑡𝑡
+𝑘𝑘𝑘𝑘
+𝐿𝐿
+��𝜖𝜖𝑘𝑘
+𝑘𝑘�
+2
++ �𝜖𝜖𝐴𝐴
+𝑘𝑘�
+2
++ �𝜖𝜖𝐿𝐿
+𝐿𝐿�
+2
+ 
+(5) 
+ 
+Table 2: 0Q Harness Conductance Expected Value and Systematic Error Propagation 
+AWG #  
+Wires 
+Total Area 
+(SAE AS29606B) [3] 
+[mm2] Material 
+Conductivity 
+[W/m/K] 
+Length 
+[m] 
+Conductance 
+[mW/K] 
+% 
+Total 
+G 
+𝑘𝑘 ± 𝑘𝑘 ± 𝐿𝐿 ± 𝐺𝐺 ± 
+28 12 1.06 0.09 Copper 400 8 0.152 0.013 2.57 0.31 7.9 
+28 18 1.60 0.13 Copper 400 8 0.152 0.013 3.85 0.47 11.8 
+28 3 0.27 0.02 Copper 400 8 0.152 0.013 0.64 0.08 2.0 
+26 9 1.39 0.13 Copper 400 8 0.152 0.013 3.29 0.45 10.1 
+26 6 0.92 0.09 Copper 400 8 0.152 0.013 2.19 0.30 6.7 
+24 24 5.78 0.50 Copper 400 8 0.152 0.013 13.85 1.77 42.5 
+26 12 1.85 0.18 Copper 400 8 0.152 0.013 4.39 0.60 13.5 
+26 12 1.85 0.18 Constantan 20 0.2 0.152 0.013 0.22 0.03 0.7 
+32 16 0.51 0.05 Phosphor 
+Bronze 40 0.4 0.152 0.013 0.12 0.02 0.4 
+26 4 0.62 0.06 Copper 400 8 0.152 0.013 1.46 0.20 4.5 
+Total Conductance 32.60 4.22   
+
+12 
+International Conference on Environmental Systems 
+B. Entering Cold Thermal Balance 
+The transition to cold balance was analyzed using the Thermal Desktop model to determine the time to reach 
+thermal stability. Prior to cold balance, the LEMS -A3 internal components will be cooled past the cold balance set 
+point then warmed using the Bus GSE heater. This method ensures that the bus thermal mass is absorbing heat rather 
+than releasing it which could confound the measured bus heat loss. The analysis case begins with the bus temperatures 
+at -33°C and the bus GSE heater setpoint ramping to - 28°C. Once the avionics box temperature sensor is greater 
+than -30°C the avionics is enabled to processor mode for 5 -minutes prior to switching to the low -power hibernation 
+mode.  
+The model includes a proportional -integral controller with the bus GSE heater power as the control variable and 
+the silicon diode sensor temperature as the process variable.   Integral windup was identified as an issue during early 
+iterations of the control gains. This was addressed by implementing setpoint ramping at 5°C/h and limiting the integral 
+error term. The heater controller gains were tuned in the thermal model and there are opportunities early in the TVAC 
+test to test the GSE heater gains.  Figure 17 shows system power while Figure 18 shows the bus temperature while 
+entering cold balance. 
+ 
+ 
+Figure 17: Transitory heater and power loads while entering cold balance 
+ 
+ 
+Figure 18: Key sensor temperatures while entering cold balance 
+C. Test Predictions and Deviations from Flight Predictions 
+1. Thermal Plateau Test Predictions 
+Figure 19 shows the expected temperatures that will be achieved during cold and hot plateaus. Where possible , 
+components are taken to their qualification  limits. In some cases like the radio, other components limit the 
+temperatures exercised during the test. In these cases, it is acceptable that the components have achieved the predicted 
+flight temperature ±15°C. Other external components like the solar array, coarse sun sensors, and antennae are unable 
+to achieve their minimum predicted flight temperature because the LN2 cooled radiation sinks cannot get cold enough. 
+A He cooled shroud was considered, but was prohibitively expensive for this test. These components were taken below 
+flight predictions in a subsystem TVAC test with a cryocooler. 
+
+
+13 
+International Conference on Environmental Systems 
+ 
+Figure 19: System TVAC Plateau Predictions Compared to Flight Predictions 
+ 
+2. Cold Balance Predictions and Estimated Systematic Error 
+Subsystem test results and model predictions were compiled to estimate the predicted nighttime energy 
+requirement and the s ystematic error . Table 3 details the three standard deviation error for the 0Q heater.  The 
+differences between the flight  model predictions and the TVAC model predictions are presented in Table 4 for the 
+determination of the Δ𝐸𝐸𝑒𝑒𝑒𝑒𝑒𝑒 parameter in Eq. (1). The difference in environment between the TVAC chamber and lunar 
+surface is predicted to result in 0.103 W less heat loss in the TVAC test compared to flight.  Table 5 compiles all 
+potential error sources for a prediction of the nighttime energy consumption.  
+ 
+Table 3: Expected 0Q Geometric Systematic Error 
+Description Symbol P/N P/N Temp. 
+Error 
+Cond. 
+Error 
+Total 
+Error 
+Temperature Gradient [°C]  Δ𝑇𝑇 RTX 0118MM Modicon BMXAMO0410 1.00 - - 
+Conductance [W/mmK] 
+𝑘𝑘𝐴𝐴
+𝐿𝐿   Table 2 32.60 4.22 - 
+0Q [W]   - 0.03 0.004 0.037 
+Nighttime Energy [Wh]  𝐸𝐸0𝑄𝑄     11.73 1.52 13.24 
+ 
+
+
+14 
+International Conference on Environmental Systems 
+Table 4: Difference in Environment between System TVAC Model and Flight Model 
+Description Heat Loss [W] Delta 
+Flight Model TVAC Model (TVAC - Flight) 
+Launch Lock -0.483 -0.453 0.030 
+IMLI (e*=0.0028) -0.252 -0.229 0.023 
+Signal and Power Passthrough (SAPP) + Coax -0.461 -0.414 0.047 
+Heat Switch (JPL) -0.458 -0.456 0.002 
+Bus Heat Loss -1.654 -1.551 0.103 
+Bus Internal Electronics CBE Heat 1.082 1.082 0.000 
+Bus Heater (GSE Heater) Power 0.578 0.475 -0.103 
+Total Internal Electronics Power 1.660 1.557 -0.103 
+SEIS-SP As-Measured Power 0.330 0.330 0.000 
+SEIS-BB As-Measured Power 0.330 0.330 0.000 
+Total LEMS Power Consumption 2.320 2.217 -0.103 
+ 
+Table 5: Predicted LEMS-A3 System Energy Consumption during Lunar Nighttime with Systematic Error  
+Energy Sink Power [W] Predicted Energy 
+[Wh] 
+Source P σ E σ 
+LEMS Power Supply Test 1.380 2.1E-02 496.8 7.4E+00 
+GSE Heater Predict 0.475 3.1E-09 171.0 1.1E-06 
+SP Flight - RRU Test 0.180   64.8   
+BB Flight - RRU Test 0.180   64.8   
+Change in Env. Predict 0.103 0.0E+00 37.1 0.0E+00 
+0Q Heater Predict 0.000 3.7E-02 0.0 1.3E+01 
+Totals   2.318 4.2E-02 834.5 1.5E+01 
+ 
+ T he flight battery has a measured energy capacity at - 30°C of 940.8 Wh. Th e maximum predicted energy 
+consumption for a nominal lunar night, including systematic errors set at three standard deviations, is 849.5 Wh. This 
+leaves 121.3 Wh to account for random errors from sensor noise. The level of random error from sensor noise will not 
+be known until the test is conducted but this margin is expected to  be sufficient. When the extrapolated energy 
+consumption including systematic and random errors is less than the battery capacity, LEMS -A3 will have 
+demonstrated ability to survive and operate the lunar night. 
+VI. Conclusion 
+The TVAC test profile to qualify LEMS for spaceflight was discussed. The TVAC test setup is designed to simulate 
+environments representative of a hot solar noon case and a cold lunar night case. A technique was demonstrated to 
+perform a partial cold GN2 backfill to 67 pa (0.5 torr ) in order to accelerate hot to cold transitions  and facilitate 
+achievement of cold balance. This technique is expected to reduce cooldown transition from about one week to about 
+one day. The cold lunar night case is critical for verifying that LEMS is able to survive the lunar night for a t least 15 
+Earth days. The methodology to achieve and measure adequate stability criteria was developed and is expected to have 
+adequate margin to account for random error in the signal noise. 
+Acknowledgments 
+The authors of this paper would like to acknowledge LEMS-A3 project manager Neerav Shah for financial support. 
+References 
+ 
+[1]  E. Burbridge and J. Rodriguez -Ruiz, "Artemis 3 Lunar Environment Monitoring Station (LEMS -A3) Thermal Control 
+Subsystem Architecture," in International Conference on Environmental Systems, 383, Prague, Czech Republic, 2025.  
+[2]  D. Gilmore, Spacecraft Thermal Control Handbook Vol I: Fundamental Technologies, El Segundo, CA: AIAA The Aerospace 
+Press, 2000.  
+
+15 
+International Conference on Environmental Systems 
+[3]  SAE International Technical Standard, Wire, Electrical, Stranded, Uninsulated Copper, Copper Alloy, or Aluminum, or 
+Thermocouple Extension, General Specification for, SAE Standard AS29606B, SAE, 2021.  
+[4]  J. Tuttle and E. Canavan, "Recent NASA/GSFC cryogenic measurements of the total hemispheric emissivity of black surface 
+preparations.," in IOP Conference Series: Materials Science and Engineering. 102. 012015., 2015.  
+ 

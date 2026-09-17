@@ -1,0 +1,25 @@
+{
+  "url": "https://venturi.space/en/batteries/",
+  "fetched_utc": "2026-09-17T15:50:00Z",
+  "title": "Venturi Space batteries: 10,000 cells, -240 to +130 C. Watt-hours NOT printed.",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "extract": "page.txt",
+  "numbers_used": [
+    "n_cells=10000",
+    "V_cell_max=4.2",
+    "T_C=-240_to_130",
+    "battery_kWh=NOT_PRINTED",
+    "FLIP_store_Wh=NOT_PRINTED"
+  ],
+  "note": "Do not mint watt-hours from cell count times 4.2 V. Do not inherit a FLEX Earth pack.",
+  "status_20260917": 200,
+  "sha256": "313678cfb6bcad42ea3ce4c9f281fbb6c8f324f186cc479ed4bbb28872a5f1df",
+  "bytes": 149588,
+  "sha256_by_file": {
+    "page.html": "313678cfb6bcad42ea3ce4c9f281fbb6c8f324f186cc479ed4bbb28872a5f1df",
+    "page.txt": "5f058e5eef256f527c317657f9d73b8c5eb350a66a84e465805c9ec9023afc04"
+  },
+  "hash_newline": "lf",
+  "omitted_binaries": []
+}

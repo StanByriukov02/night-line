@@ -14,6 +14,36 @@ from night_line.verify import independent_full_night_possible, independent_ride_
 
 RIDES = Path(__file__).resolve().parent / "rides"
 
+# Host row vs payload row on the same landing. A lab may not take one as the other.
+INHERIT_PAIRS = (
+    (
+        "griffin1_lander",
+        "flip_griffin1",
+        "Griffin PUG excludes lunar night. That is not FLIP’s survive-the-night sentence. FLIP’s sentence is not a Griffin night-store.",
+    ),
+    (
+        "bgm2_lander",
+        "lusee_night",
+        "Blue Ghost Mission 2 powers off before nightfall. That is not LuSEE’s store. LuSEE’s store is not a Blue Ghost night-store.",
+    ),
+)
+
+
+def inherit_forbidden(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    by = {str(r["ride_id"]): r for r in rows}
+    out: list[dict[str, Any]] = []
+    for host_id, payload_id, why in INHERIT_PAIRS:
+        if host_id in by and payload_id in by:
+            out.append(
+                {
+                    "host_ride_id": host_id,
+                    "payload_ride_id": payload_id,
+                    "allowed": False,
+                    "why": why,
+                }
+            )
+    return out
+
 
 def packaged_rides() -> list[Path]:
     return sorted(RIDES.glob("*.json"))
@@ -71,6 +101,7 @@ def evaluate_map(paths: list[Path] | None = None) -> dict[str, Any]:
             "are absent — not CANNOT."
         ),
         "rows": rows,
+        "inherit_forbidden": inherit_forbidden(rows),
         "n_packaged_energy_boxes": len(list(BOXES.glob("*.json"))),
     }
 
@@ -100,6 +131,17 @@ def write_map_md(doc: dict[str, Any], dest: Path) -> None:
     lines.extend(
         [
             "",
+            "## Do not inherit (host ≠ payload)",
+            "",
+        ]
+    )
+    for pair in doc.get("inherit_forbidden") or []:
+        lines.append(
+            f"- `{pair['host_ride_id']}` ↛ `{pair['payload_ride_id']}`: {pair['why']}"
+        )
+        lines.append("")
+    lines.extend(
+        [
             "## Quotes (cited)",
             "",
         ]

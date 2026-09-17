@@ -1,0 +1,126 @@
+A rover to deliver small payloads to the Moon - Venturi Space
+Moon
+384 000 km
+from Earth
+Shackleton
+129.78°E
+-89.67°S
+Ready for launch
+Take-off
+00:05:00
+About
+About
+About
+Learn more
+About
+Exploration
+Learn more
+About
+Terrestrial activities
+Learn more
+The Group
+Rovers
+Programmes
+An image of a space view to our planet earth from moon
+Programmes
+Programme US
+Learn more
+Programmes
+Programme EU
+Learn more
+Technologies
+Technologies
+Batteries
+Learn more
+Technologies
+Wheels
+Learn more
+An image of a space view to our planet earth from moon
+Technologies
+Onboard management systems
+Learn more
+Newsroom
+Careers
+English
+Français
+Contact us
+Menu
+Close
+en
+fr
+Contact
+Cookie settings
+Essential
+These cookies are necessary for the proper functioning of the site. They cannot be deactivated.
+Analytics
+These cookies enable us to measure the number of visits, visitors and sources of traffic to our site (content of paths, etc.), and to compile statistics in order to improve its quality, ergonomics and performance.
+Accept
+Refuse
+This site uses cookies to improve our services. By clicking on “accept”, you agree to the use of all cookies.
+Accept
+Settings
+Close
+Technologie
+15 Oct 2024
+A rover to deliver small payloads to the Moon
+MILAN, Italy — October 15, 2024 – Today, Venturi Space, which invents, studies, designs and manufactures mobility solutions capable of handling the extreme environmental conditions found on the Moon and Mars, and Venturi Astrolab, Inc. (
+Astrolab
+), the designer, manufacturer, and operator of multi-purpose rovers for the Moon and Mars, announced their collaboration to produce a lunar rover, designed to respond to the growing number of institutional, businesses and scientific organizations in the U.S. and European markets, that are seeking access to the Moon for smaller payloads. A development prototype of the rover was unveiled today in Venturi Space’s exhibition booth at the 75th International Astronautical Congress here.
+Known currently by its internal name FLIP (FLEX Lunar Innovation Platform), the rover uses the same technology used by Astrolab’s FLEX rover, which was introduced in 2022. Just as with FLEX, Astrolab is responsible for the overall design and manufacturing of the rover. Specifically, the company has developed the vehicle’s actuators, chassis, launch mount and release, avionics, solar panel, communications system, flight and ground software. As is also the case with FLEX, this rover relies on three key technologies when it comes to facing the extreme conditions of the lunar South Pole: proprietary materials for cryogenic conditions, hyper-deformable wheels and batteries as well as the related testing systems and fabrication processes. Those have been designed and developed by Venturi Space within its facilities in Monaco, Switzerland, France, and the United States. Astrolab is leading and conducting the vehicle’s integrated testing and operations, from its headquarters in California.
+This rover is a key step in Astrolab’s rapid spiral development approach for FLEX: design-build-test-fly cycles that demonstrate increased capabilities and incorporate lessons learned during development and qualification testing.
+The rover has a mass of a half ton, a payload capacity of 30 kg, and has been designed to be compatible with the growing number of medium-class lunar landers now entering the commercial space market. In addition, the rover offers customers opportunities to perform technology demonstrations and commercial exploration as well as gather valuable science data. It also features critical components, subsystems, and processes common to the core platform used by the
+FLEX rover
+.
+“For 25 years, we have been pioneers in the field of high-performance electric terrestrial vehicles. This expertise now allows us to offer viable and efficient solutions, in the long term, to face ‘the hell’ of the lunar South Pole. Our batteries and hyper-deformable wheels can withstand temperature variations of more than 300°C, aggressive solar radiation, and 180 hours of nights under -180°C. To say that I am proud of my Team is an understatement” said Gildo Pastor, President of Venturi Space and Venturi.
+“This rover offers customers many of the same payload space configurations as the larger FLEX rover we are using on our upcoming commercial mission, Mission One. This continues a goal we set for ourselves when we introduced the FLEX in 2022,” said Jaret Matthews, founder and CEO, Astrolab. “We want to set the standard for lunar logistics. Just as there are standard sizes of shipping containers used in intermodal shipping on Earth, we seek to do the same on the Moon.”
+Press releases
+NASA
+Venturi Astrolab awarded by NASA
+The American company Venturi Astrolab, Inc. (Astrolab), a strategic partner of the Monegasque Venturi Group, has awarded a NASA contract to support the development of Artemis campaign’s lunar terrain vehicle.
+Discover
+Technologie
+World premiere : Venturi’s hyper-deformable Lunar wheel
+Venturi Group presented its latest invention at the international Paris Air Show in Le Bourget, France: a hyper-deformable Lunar wheel. Venturi Lab designed and manufactured the wheel using materials it created. The Venturi wheel is a world first.
+Discover
+SpaceX
+Venturi Astrolab’s rover to launch to the Moon on an upcoming SpaceX mission
+The American company SpaceX will be responsible for transporting the rover, which will be the largest and most capable in the history of lunar vehicles. SpaceX will use its Starship launch and landing system to transport the astromobile to the lunar surface.
+Discover
+Venturi Space
+ALTA LUNA, Venturi Space's new lunar utility vehicle
+Venturi Space unveils ALTA LUNA, a compact and manoeuvrable rover designed for local operations around future lunar bases. Designed to assist astronauts, it will also be able to carry out missions involving the handling and transport of payloads
+Discover
+Venturi Space
+Venturi Space invests €250 million in France and will create nearly 200 jobs in Toulouse by 2030
+At Choose France, the summit dedicated to France’s economic attractiveness, Venturi Space announced a €250 million investment in France to establish its new 16,000 sq m technology centre in Toulouse.
+Discover
+NASA
+NASA selects Astrolab to provide lunar rover for Artemis astronauts' return to the Moon
+NASA announced today that it has selected the US-based company Venturi Astrolab, Inc. (Astrolab) as one of two providers of a crewed lunar rover for the Artemis campaign, advancing the agency’s plans to establish sustained surface mobility at the lunar South Pole.
+Discover
+Contact
+CONTACT US
+RECRUITMENT
+English
+Français
+-
+Privacy Policy
+Terms of use
+Flight - T&Cs
+Non-Flight - T&Cs
+Links
+About
+Rovers
+Programme US
+Programme EU
+Technologies
+Newsroom
+Careers
+Networks
+English
+Français
+-
+Privacy Policy
+Terms of use
+Flight - T&Cs
+Non-Flight - T&Cs

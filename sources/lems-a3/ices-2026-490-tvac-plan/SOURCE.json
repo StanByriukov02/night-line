@@ -1,0 +1,32 @@
+{
+  "url": "https://ttu-ir.tdl.org/bitstreams/e7bd2dd1-cb1b-434a-a341-4391e75cc6c7/download",
+  "item_url": "https://ttu-ir.tdl.org/items/558a9fff-ee0f-4923-8724-115fe3355fb7",
+  "fetched_utc": "2026-09-17T15:50:00Z",
+  "title": "ICES 2026 490: LEMS-A3 system TVAC plan. 2.5 W heat limit. Battery capacity 940.8 Wh at -30 C measured. Predicted night 849.5 Wh. Leak not yet measured.",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "extract": "page.txt",
+  "numbers_used": [
+    "P_heat_limit_W=2.5",
+    "store_allocation_Wh=NOT_THIS_PAPER",
+    "battery_capacity_Wh_at_minus30C=940.8",
+    "predicted_night_Wh=849.5",
+    "predicted_total_W=2.318",
+    "A3_TVAC_leak_Wh=NOT_YET",
+    "hours_night=354"
+  ],
+  "quote_limit": "the thermal system is limited to 2.5 Watts of heat during the lunar night",
+  "quote_will_measure": "The test will measure the nighttime heat leaks for the bus and seismometers",
+  "quote_capacity": "The flight battery has a measured energy capacity at -30°C of 940.8 Wh",
+  "quote_predict": "the maximum predicted energy consumption for a nominal lunar night, including systematic errors set at three standard deviations, is 849.5 Wh",
+  "note": "Do not paste 940.8 onto the 640 Wh TCS allocation. Do not treat 849.5 or 2.318 as a measured A3 leak. January 2026 checkout used the TRL-6 development unit plus GSE.",
+  "status_20260917": 200,
+  "sha256": "bffc138f38a94b5f43254881a0459b766a434bbc44a543f5c026d5ce8e664e3e",
+  "bytes": 4084975,
+  "sha256_by_file": {
+    "page.pdf": "bffc138f38a94b5f43254881a0459b766a434bbc44a543f5c026d5ce8e664e3e",
+    "page.txt": "cf3db30a8676f1305c3c43e8f780014e27b01852d7bfb9fcf1111193494d1afc"
+  },
+  "hash_newline": "lf",
+  "omitted_binaries": []
+}
