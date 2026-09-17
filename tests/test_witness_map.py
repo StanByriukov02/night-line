@@ -18,7 +18,7 @@ def _by_id():
 
 def test_not_a_seventh_energy_box() -> None:
     assert len(packaged_boxes()) == 6
-    assert len(packaged_rides()) == 19
+    assert len(packaged_rides()) == 20
     doc = evaluate_map()
     assert doc["manifest_closed"] is False
     assert doc["n_packaged_energy_boxes"] == 6
@@ -113,6 +113,8 @@ def test_method_page_is_method_not_cabin() -> None:
     assert "MANIFEST_CLOSED=false" in text
     assert "seventh energy line" in text
     assert "night-line witness-map" in text
+    assert "Project ended" in text
+    assert "survive multiple lunar nights" in text
 
 
 def test_inherit_forbidden_pairs() -> None:
@@ -130,6 +132,9 @@ def test_inherit_forbidden_pairs() -> None:
     passive = pairs[("flip_griffin1", "lra_flip")]
     assert passive["allowed"] is False
     assert "no power" in passive["why"]
+    csa = pairs[("moonranger_cs6", "csa_lrm_cs6")]
+    assert csa["allowed"] is False
+    assert "not MoonRanger cancelled" in csa["why"]
 
 
 def test_flip_wh_still_open_after_venturi_pages() -> None:
@@ -256,3 +261,30 @@ def test_leia_and_cp21_day_labs() -> None:
     assert "University of Alabama in Huntsville" in fire
     assert "more than 14 days on the lunar surface" in fire
     assert "Heimdall" in fire
+
+
+def test_csa_lrm_ended_is_not_host_dead() -> None:
+    row = _by_id()["csa_lrm_cs6"]
+    assert row["label"] == "PROGRAM_ENDED_HOST_STILL_LISTS"
+    assert row["full_night_possible"] == "no"
+    assert row["store_Wh_printed"] is False
+    assert row["window"] == "program_ended"
+    rover = (
+        ROOT / "sources" / "csa-lrm-cs6" / "csa-rover-ended" / "page.html"
+    ).read_text(encoding="utf-8")
+    assert "Project ended" in rover
+    assert "Status" in rover
+    dp = (
+        ROOT / "sources" / "csa-lrm-cs6" / "csa-dp-2026-2027" / "page.html"
+    ).read_text(encoding="utf-8")
+    assert "Terminate work on the" in dp
+    assert "Lunar Rover Mission" in dp
+    assert "LRM" in dp
+    fire = (
+        ROOT / "sources" / "csa-lrm-cs6" / "firefly-bgm4" / "page.html"
+    ).read_text(encoding="utf-8")
+    assert "survive multiple lunar nights" in fire
+    assert "14 Earth days" in fire
+    moon = _by_id()["moonranger_cs6"]
+    assert moon["label"] == "PSR_IN_HOST_DAY"
+    assert moon["label"] != row["label"]

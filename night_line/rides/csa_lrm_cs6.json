@@ -1,0 +1,47 @@
+{
+  "ride_id": "csa_lrm_cs6",
+  "named_box": "CSA LEAP Lunar Rover Mission (LRM)",
+  "host": "Firefly Blue Ghost Mission 4 / CLPS CS-6 — host still lists; CSA printed project ended",
+  "window": "program_ended",
+  "sources_dir": "sources/csa-lrm-cs6",
+  "lab_use": "Do not size a night-store from Firefly’s still-listed CSA night sentence. CSA printed Project ended. Departmental plan: terminate LEAP LRM. One lunar night ≈ 14 Earth days on that blurb is not Cataldo 354 h. CS-6 is not dead: MoonRanger still flies. CSA utility rover (2033, concept) is a different box, absent here.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": true,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "payload_program_ended": true
+  },
+  "quotes": [
+    {
+      "text": "Status: Project ended",
+      "url": "https://www.asc-csa.gc.ca/eng/astronomy/moon-exploration/first-canadian-rover-to-explore-the-moon.asp",
+      "page_or_figure": "CSA — First Canadian rover to explore the Moon (modified 2026-04-21)",
+      "source_slug": "csa-rover-ended"
+    },
+    {
+      "text": "Terminate work on the LEAP Lunar Rover Mission (LRM)",
+      "url": "https://www.asc-csa.gc.ca/eng/publications/dp-2026-2027.asp",
+      "page_or_figure": "CSA 2026–27 Departmental Plan — Planned reductions",
+      "source_slug": "csa-dp-2026-2027"
+    },
+    {
+      "text": "CSA (Canadian Space Agency) Rover is designed to traverse the surface of the Moon to access, explore, and discover remote South Pole areas of interest, including the ability to survive multiple lunar nights (one lunar night is approximately 14 Earth days) and explore permanently shadowed regions for a short duration.",
+      "url": "https://fireflyspace.com/missions/blue-ghost-elytra-lunar-south-pole/",
+      "page_or_figure": "Firefly Blue Ghost + Elytra: Lunar South Pole — CSA Rover payload blurb",
+      "source_slug": "firefly-bgm4"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

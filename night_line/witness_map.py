@@ -51,6 +51,11 @@ INHERIT_PAIRS = (
         "lusee_night",
         "Blue Ghost Mission 2 powers off before nightfall. That is not LuSEE’s store. LuSEE’s store is not a Blue Ghost night-store.",
     ),
+    (
+        "moonranger_cs6",
+        "csa_lrm_cs6",
+        "MoonRanger’s PSR wait is not the CSA rover. CSA printed LEAP LRM ended; that is not MoonRanger cancelled, and Firefly’s still-listed multiple-nights sentence is not a MoonRanger night-store.",
+    ),
 )
 
 

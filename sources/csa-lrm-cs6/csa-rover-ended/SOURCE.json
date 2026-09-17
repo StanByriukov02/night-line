@@ -1,0 +1,20 @@
+{
+  "url": "https://www.asc-csa.gc.ca/eng/astronomy/moon-exploration/first-canadian-rover-to-explore-the-moon.asp",
+  "title": "CSA First Canadian rover: Status Project ended (modified 2026-04-21)",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "status=Project_ended",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "Status: Project ended",
+  "fetched_utc": "2026-09-17T18:35:00Z",
+  "bytes": 22472,
+  "sha256": "4024f8ebaedcf2d049536beece6f5104735021ec19ce64e20ad89ed39f5fb02f",
+  "sha256_by_file": {
+    "page.html": "4024f8ebaedcf2d049536beece6f5104735021ec19ce64e20ad89ed39f5fb02f"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

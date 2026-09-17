@@ -1,0 +1,21 @@
+{
+  "url": "https://fireflyspace.com/missions/blue-ghost-elytra-lunar-south-pole/",
+  "title": "Firefly BGM4 still lists CSA Rover survive multiple lunar nights (~14 Earth days)",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "csa_rover_listed=true",
+    "lunar_night_approx_earth_days=14",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "survive multiple lunar nights (one lunar night is approximately 14 Earth days)",
+  "fetched_utc": "2026-09-17T18:35:00Z",
+  "bytes": 119763,
+  "sha256": "7656d75b8709f350b3c72a602572bceb2236fac872474007aed5a8c55c376150",
+  "sha256_by_file": {
+    "page.html": "7656d75b8709f350b3c72a602572bceb2236fac872474007aed5a8c55c376150"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

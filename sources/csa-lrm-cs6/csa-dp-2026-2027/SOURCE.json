@@ -1,0 +1,19 @@
+{
+  "url": "https://www.asc-csa.gc.ca/eng/publications/dp-2026-2027.asp",
+  "title": "CSA 2026-27 Departmental Plan: Terminate work on the LEAP Lunar Rover Mission (LRM)",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "lrm_terminated=true"
+  ],
+  "quote": "Terminate work on the LEAP Lunar Rover Mission (LRM)",
+  "fetched_utc": "2026-09-17T18:35:00Z",
+  "bytes": 141373,
+  "sha256": "708655202c1ef6fdcbfca68c5496ba9361171abb583251301801f3bed6331b5e",
+  "sha256_by_file": {
+    "page.html": "708655202c1ef6fdcbfca68c5496ba9361171abb583251301801f3bed6331b5e"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

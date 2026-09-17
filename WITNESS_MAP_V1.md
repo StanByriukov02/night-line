@@ -8,7 +8,7 @@ Dated **2026-09-17**. **MEASURED=false**. **MANIFEST_CLOSED=false**.
 
 I, Stanislav Byriukov, read the cited public pages on 17 September 2026 and wrote this map from those prints. It is not a seventh energy line. It is not a closed list of CLPS flights. A landing name is not a row.
 
-A lab can see, on one page, which named box on which host printed that it will **not** run the night — which named box printed that it might, with the store still OPEN or with the lander already off — which NASA-center guest waits on an OPEN host rover — which box takes no power at all — and which box goes into a **PSR** during a host’s printed surface day, which is not Cataldo night.
+A lab can see, on one page, which named box on which host printed that it will **not** run the night — which named box printed that it might, with the store still OPEN or with the lander already off — which NASA-center guest waits on an OPEN host rover — which box takes no power at all — which box goes into a **PSR** during a host’s printed surface day, which is not Cataldo night — and which box the nation printed **ended** while the host page still lists multiple lunar nights.
 
 ## What this is for
 
@@ -28,6 +28,7 @@ If you are sizing a night battery, a night TVAC, or a “next CLPS night” para
 - ESA **PROSPECT** on Intuitive Machines Nova-C / CP-22 (2027): night **refused**. Day envelope **5–10 Earth days**. Frontiers prints daytime sample-cycle **21.5 / 78 / 85.6 W** average and **80 / 150 / 200 W** peak. Do not multiply 85.6 W by 354 h. Not a seventh energy line.
 - LEIA (NASA Ames yeast) on the same CP-22 host: **10 Earth days or less**.
 - NMLS (Marshall / **University of Alabama in Huntsville**) and Heimdall on Firefly Blue Ghost 3 / CP-21: host **more than 14 days**. Same lunar-day envelope as Lunar-VISE. 2028.
+- CSA **LEAP Lunar Rover Mission** on the same Firefly BGM4 page as MoonRanger: Firefly still prints **survive multiple lunar nights** (~14 Earth days). CSA printed **Project ended**. The 2026–27 departmental plan: terminate LEAP LRM. That is not HOST_TERMINATED (CS-6 still lists MoonRanger). Do not size a night-store from the still-listed blurb. CSA utility rover (2033, concept) is a different box, **absent**.
 
 Unnamed task orders and the unpublished NASA Lunar Payload Database are **absent**. Absent is not CANNOT.
 
