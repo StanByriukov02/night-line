@@ -1,0 +1,19 @@
+{
+  "url": "https://www.diviner.ucla.edu/data",
+  "fetched_utc": "2026-09-17T06:55:00Z",
+  "title": "UCLA Diviner data portal: cites Williams et al. 2017 Icarus 283 for global maps",
+  "sha256": "ac6b4c5dc536041e3354e96f7dd189edee9709e3a7b4b31dfb74319f05cd858b",
+  "filename": "page.html",
+  "bytes": 454494,
+  "content_type": "text/html; charset=UTF-8",
+  "note": "Live URL. ODE tab that printed 56.122 K 404s; that number is withdrawn.",
+  "numbers_used": [
+    "williams_2017_icarus_283_cite"
+  ],
+  "sha256_by_file": {
+    "page.html": "ac6b4c5dc536041e3354e96f7dd189edee9709e3a7b4b31dfb74319f05cd858b"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": [],
+  "redacted_personal_email": true
+}

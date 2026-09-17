@@ -1,0 +1,337 @@
+ 
+ 
+ 
+ [2301.10345] LuSEE ’Night’: The Lunar Surface Electromagnetics Experiment 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ LuSEE ’Night’: The Lunar Surface Electromagnetics Experiment 
+ 
+ 
+ Stuart D. Bale \affref ref1 \affref ref2
+ 
+    
+ Neil Bassett \affref ref3
+ 
+    
+ Jack O. Burns \affref ref3
+ 
+    
+ Johnny Dorigo Jones \affref ref3
+ 
+    
+ Keith Goetz \affref ref4
+ 
+    
+ Christian Hellum-Bye \affref ref5
+ 
+    
+ Sven Herrmann \affref ref6
+ 
+    
+ Joshua Hibbard \affref ref3
+ 
+    
+ Milan Maksimovic \affref ref7
+ 
+    
+ Ryan McLean \affref ref2
+ 
+    
+ Raul Monsalve \affref ref2 \affref ref8 \affref ref9
+ 
+    
+ Paul O’Connor \affref ref6
+ 
+    
+ Aaron Parsons \affref ref5
+ 
+    
+ Marc Pulupa \affref ref2
+ 
+    
+ Rugved Pund \affref ref10
+ 
+    
+ David Rapetti \affref ref3 \affref ref11 \affref ref12
+ 
+    
+ Kaja M. Rotermund \affref ref13
+ 
+    
+ Ben Saliwanchik \affref ref6
+ 
+    
+ Anže Slosar \affref ref14
+ 
+    
+ David Sundkvist \affref ref2
+ 
+    
+ and Aritoki Suzuki \affref ref13
+ 
+ Affiliation:  \aff ref1Physics Department, University of California, Berkeley, USA; e-mail: [email-redacted]
+ \aff ref2Space Sciences Laboratory, University of California, Berkeley, USA
+ \aff ref3Center for Astrophysics & Space Astronomy, University of Colorado, Boulder, CO, USA
+ \aff ref4School of Physics and Astronomy, University of Minnesota, Minneapolis, USA
+ \aff ref5Department of Astronomy, University of California, Berkeley, USA
+ \aff ref6Instrumentation Division, Brookhaven National Laboratory, Upton, NY, USA
+ \aff ref7LESIA, Observatoire de Paris, Université PSL, CNRS, Sorbonne Université, Université de Paris, Meudon, France
+ \aff ref8Facultad de Ingeniería, Universidad Católica de la Santísima Concepción, Concepción, Chile
+ \aff ref9School of Earth and Space Exploration, Arizona State University, Tempe, USA
+ \aff ref10Department of Physics and Astronomy, Stony Brook University, Stony Brook, NY, USA
+ \aff ref11NASA Ames Research Center, Moffett Field, CA, USA
+ \aff ref12Research Institute for Advanced Computer Science, Universities Space Research Association, Washington, DC, USA
+ \aff ref13Lawrence Berkeley National Laboratory, Berkeley, CA, USA
+ \aff ref14Physics Department, Brookhaven National Laboratory, Upton NY, USA
+
+ 
+
+ Abstract 
+ 
+ The Lunar Surface Electromagnetics Explorer ’LuSEE Night’ is a low frequency radio astronomy experiment that will be delivered to the farside of the Moon by the NASA Commercial Lunar Payload Services (CLPS) program in late 2025 or early 2026. The payload system is being developed jointly by NASA and the US Department of Energy (DOE) and consists of a 4 channel, 50 MHz Nyquist baseband receiver system and 2 orthogonal ∼ \sim 6m tip-to-tip electric dipole antennas. LuSEE Night will enjoy standalone operations through the lunar night, without the electromagnetic interference (EMI) of an operating lander system and antipodal to our noisy home planet. 
+ 
+ 
+ 
+ 1 Science Motivation 
+
+ 
+ The radio sky below 20 MHz is not well-studied, primarily due to the 𝒪 \mathcal{O} (10 MHz) plasma frequency of the F-layer peak of the terrestrial ionosphere [ 1 ] , below which the ionosphere becomes opaque, but also due to the presence of intense shortwave radio transmissions [ 2 ] and military over-the-horizon (A-band) radar. 
+ 
+ 
+ At these frequencies, the ambient sky is dominated by the synchrotron spectrum of cosmic ray electrons spiraling in the galactic magnetic field [ 3 , 4 , 5 ] . This galactic synchrotron spectrum is brighter in the galactic plane above a few MHz [ 6 , 5 ] but becomes attenuated in the plane by free-free absorption at lower frequencies [ 7 , 8 ] . Indeed, recent measurements by the Parker Solar Probe/FIELDS instrument [ 9 , 10 ] suggest that modifications to the state-of-the-art low frequency sky models [ 8 ] are required in the form of small-scale angular structure, hemispheric asymmetries, and modifications to the galactic electron density map [ 11 , 5 ] . 
+ 
+ 
+ The brightest discrete radio sources below 50 MHz are likely to be the Sun [ 12 ] and Jupiter [ 13 ] ; however there are other known astrophysical sources Cas A, Cyg A [ 14 , 15 ] present and plenty of ’discovery space’. Nonthermal solar and Jovian radio sources will be dynamic and in some cases strongly polarized. The known positions of the Sun, Jupiter and other sources will allow occultation studies as they set below the lunar horizon, potentially allowing studies of thermal emission from the extended solar corona. 
+ 
+ 
+ Characterizing the global spectrum of this low frequency foreground is a first step in a measurement strategy to access the high redshift ( z ∼ z\sim 100) 21 cm signature associated with the so-called ’Dark Ages’ [ 16 , 17 , 18 ] . The Dark Ages signal arose as the universe recombined and the cosmic microwave background (CMB) interacted with neutral hydrogen via the 21 cm spin-flip transition. In principle, this absorption feature should be dominated by the thermal physics of the early universe - any striking deviations may represent new physics. However, the Dark Ages spectral feature is hidden more than 5 orders of magnitude below the galactic foreground such that any spectral structure (real and/or system chromaticity) in the foreground measurement will make recovery of the cosmological signal very challenging. The LuSEE Night measurements will be an important step in this longer-term program. 
+ 
+ 
+ 
+ 2 LuSEE Night System 
+
+ 
+ The LuSEE payload was selected by NASA in 2019 under the Lunar Surface Instrument and Technology Payloads (LSITP) program, which is itself in support of the Commercial Lunar Payload Services (CLPS) program. As proposed, LuSEE was largely heritage instrumentation from the ’FIELDS’ experiment [ 9 ] on the NASA Parker Solar Probe mission, comprised of magnetometers, electric field, and low frequency radio and plasma waves measurements. In early 2020, NASA entered into a partnership with the DOE to promote LuSEE to a low frequency radio pathfinder and the LuSEE Night payload was separated from the original payload (now called ’LuSEE Lite’ and destined for the Schrödinger Basin near the lunar South Pole, in early 2025). 
+ 
+ 
+ LuSEE Night is designed to make low frequency ( ≤ \leq 50 MHz) full-Stokes, spectral density measurements of the radio sky in the pristine radio environment of the lunar farside. To that end, LuSEE Night is required to operate continuously through the lunar night ( ∼ \sim 14 Earth days) with the Sun below the lunar horizon. Furthermore, LuSEE Night requires that the CLPS lunar lander spacecraft cease all operations before the first nightfall and remain powered off for the duration of the mission. This gives LuSEE Night full control of the electromagnetic environment and eliminates the risk of spacecraft-generated EMI (which bedeviled the Chang’e 4 radio astronomy experiment [ 19 ] ). 
+ 
+ 
+ Figure 1: A CAD drawing of the LuSEE Night system showing the dipole antennas on the carousel, solar arrays (blue) and the large battery (gold box below). The dipole antennas are ∼ \sim 6m tip-to-tip, the upper deck is approximately 1m x 1m and the system is ∼ \sim 70 cm tall, but will be mounted atop the lander. 
+ 
+ 
+ Figure 1 is a CAD drawing of the LuSEE Night payload system showing the dipole antennas fully deployed. LuSEE Night uses 3m BeCu stacer antenna elements [ 20 ] configured in orthogonal, co-linear ∼ \sim 6m tip-to-tip dipole pairs; a stacer is a cold-rolled, helical pitch spring that deploys by its own stored spring energy and forms a rigid tube of roughly 1 cm diameter. The LuSEE Night antennas are mounted on a motor-driven carousel so that the antenna orientation can be rotated in the plane of the lunar surface. This allows for a degree of freedom that can be used to understand the electrical coupling of the antenna system to the lunar lander structure and to the dielectric regolith below [ 21 ] . The antenna carousel is only operable during the lunar day, when LuSEE Night solar arrays are illuminated and the system is power-positive. 
+ 
+ 
+ The LuSEE Night structure occupies a cube (1m x 1m by 70cm high). The top surface will support the four electric monopoles on a rotating platform as well as horizontal solar cells. In addition the East and West sides of the cube will also include some vertical solar cells to improve the charging at dawn and dusk. The LuSEE electronics package will be located within the cube and will be thermally isolated such that self-heating from the nighttime operations power will keep the electronics payload warm during the night. One side of the cube will include south-facing radiator panels equipped with Parabolic Reflector Radiators (PRR ) developed at JPL [ 22 ] to help reject day-time heating. 
+ 
+ 
+ An instrument block diagram is shown in Figure 2 . LuSEE Night will make a voltage measurement using a high impedance, low-noise JFET front end on each monopole antenna. While a voltage measurement provides less gain than a balanced system, it can be more robust against impedance mismatch and internal reflections, which are difficult to correct after launch and landing. 
+ 
+ 
+ Figure 2: A block diagram of the LuSEE Night payload showing the instrument components - spectrometer, antennas, preamps, C&DH computer, and power systems. The LuSEE Night computer also operates the S-band communications system and motor drive to reorient the antenna carousel during daytime. 
+ 
+ 
+ A spectrometer samples the four single-ended antenna voltages at 102.4 Msamples/sec and uses an FPGA to process the waveforms into auto- and cross-correlation spectra. Stokes parameters can be computed using only cross-correlation products if desired, avoiding the antenna shotnoise present in the autocorrelations. The spectrometer design is based on the Radio Frequency Spectrometer (RFS) system [ 10 ] from the Parker Solar Probe/FIELDS instrument [ 9 ] . A DC-DC power converter system will operate at well-defined, stable (crystal-controlled) switching frequencies, which allow digital signal processing to mask power supply noise. This technique was used very successfully on Parker Solar Probe. LuSEE Night requires a large ( ∼ \sim 40 kg) battery to provide power through the lunar night. At sunrise, the system becomes power-positive allowing the battery to recharge, the S-band communication system to send science data back to Earth, and the antenna carousel to be operated. 
+ 
+ 
+ The LuSEE Night ’Data Controller Board’ (DCB) is a computer that interfaces to the other subsystems, including the spectrometer, the S-band communication system (provided by Vulcan Wireless), and the lander’s Command and Data Handling (C&DH) system. The DCB also controls the motor drive for the antenna carousel. 
+ 
+ 
+ At the date of this writing (late January 2023), NASA is selecting a CLPS vendor to provide the LuSEE Night launch and landing system. This mission is designated ’CS-3’ and will also carry the European Space Agency (ESA) Lunar Pathfinder (LPF) communications relay satellite into lunar orbit. LuSEE Night will assist in commissioning of the LPF satellite and will use LPF as its S-band uplink/downlink asset. 
+ 
+ 
+ 
+ 3 Far-field Calibration Source 
+
+ 
+ NASA has released a Request For Proposals to the CLPS vendors to provide a far-field calibration source (hereafter FFCS) for LuSEE Night (designated as the ’CS-4’ mission). As envisioned, the CS-4 FFCS will be a payload accommodated on another CLPS lunar orbiter or perhaps a dedicated system (e.g. a CubeSat) that carries an instrument that transmits a known pseudo-random waveform that is repeated contiguously with a flux density that corresponds to 10 -22 to 10 -18 W/m 2 /Hz (to ∼ \sim 1% knowledge) over 10 seconds at the LuSEE Night site on the lunar surface. This signal corresponds to a frequency comb in the LuSEE Night band (to 51.2 MHz) and the LuSEE Night spectrometer will correlate against this signal as CS-4 passes overhead horizon-to-horizon. The CS-4 FFCS will be required to provide at least 30 passes over LuSEE Night and to operate for 50 Earth days and then cease operation. This FFCS will provide LuSEE Night a known signal over a range of altitudes and azimuths that will be used to calibrate the antenna pattern and system voltage response and chromaticity. 
+ 
+ 
+ 
+ 4 Landing Site 
+
+ 
+ The LuSEE Night landing site is a 100m ellipse centered on (23.813 ∘ S, 182.258 ∘ E) on the lunar farside near the anti-meridian, shown in Figure 3 . This site was chosen to be near to the antipode and to therefore minimize terrestrial radio frequency interference [ 2 ] , recognizing that at lower frequencies some noise will be refracted by the tenuous lunar ionosphere [ 23 ] . The landing site was also chosen to have a relatively flat horizon. The aforementioned spatial variations of the galactic power spectrum (brighter plane at high frequencies, brighter poles below 3 MHz) may induce spectral chromaticity as the horizon occults galactic structure and the relatively flat horizon minimizes uncertainties due to this effect. Finally, the landing site was chosen to have well-mixed regolith to avoid asymmetric dielectric properties below the LuSEE Night antenna system. The requirement that LuSEE Night operate through the lunar night requires an integrated thermal design, as described above. To optimize the thermal management, the LuSEE Night radiator requires a view of the dark sky, therefore the requirement to land either North or South of the lunar equator. 
+ 
+ 
+ Figure 3: The LuSEE Night landing site (within green circle) on the lunar farside at (23.813 ∘ S, 182.258 ∘ E). This site was chosen to minimize terrestrial RFI, provide relatively uniform sky coverage, optimize payload thermal design, and provide favorable downlink with the relay satellite. The landing site of the Chang’e 4 mission is shown in the red circle and yellow vertical line is the anti-meridian. 
+ 
+ 
+ 
+ 5 Summary 
+
+ 
+ The LuSEE Night payload is in development and funded by NASA and the DOE. The system will be delivered and integrated to a lander vehicle for a late 2025 - early 2026 launch and landing on the lunar farside. LuSEE Night will make unique measurements of the global radio sky below 50 MHz, in the absence of terrestrial and lander EMI, and be a pathfinder for larger, more ambitious lunar radio astronomy projects. 
+ 
+ 
+ 
+ Acknowledgements 
+
+ 
+ The LuSEE Night program is funded under NASA Contract 80MSFC22CA018 and DOE Office of Science Contract DE-SC0012704. We acknowledge the superb technical support of Dr Ahmed Fadl of the NASA Goddard Space Flight Center. 
+ 
+ 
+ 
+ References 
+
+ 
+ 
+ [1] 
+ Bilitza, D., Pezzopane, M., Truhlik, V., et al. 2022, Reviews of Geophysics, 60, e2022RG000792. doi:10.1029/2022RG000792
+
+ 
+ 
+ [2] 
+ Kaiser, M. L., Desch, M. D., Bougeret, J.-L., et al. 1996, Geophys. Res. Lett., 23, 1287. doi:10.1029/95GL03665
+
+ 
+ 
+ [3] 
+ Novaco, J. C. & Brown, L. W. 1978, Astrophys. J., 221, 114. doi:10.1086/156009
+
+ 
+ 
+ [4] 
+ de Oliveira-Costa, A., Tegmark, M., Gaensler, B. M., et al. 2008, MNRAS, 388, 247. doi:10.1111/j.1365-2966.2008.13376.x
+
+ 
+ 
+ [5] 
+ Page, B., Bassett, N., Lecacheux, A., et al. 2022, Astron. Astrophys., 668, A127. doi:10.1051/0004-6361/202244621
+
+ 
+ 
+ [6] 
+ Manning, R. & Dulk, G. A. 2001, Astron. Astrophys, 372, 663. doi:10.1051/0004-6361:20010516
+
+ 
+ 
+ [7] 
+ Peterson, J. D. & Webber, W. R. 2002, Astrophys. J., 575, 217. doi:10.1086/341258
+
+ 
+ 
+ [8] 
+ Cong, Y., Yue, B., Xu, Y., et al. 2021, Astrophys. J., 914, 128. doi:10.3847/1538-4357/abf55c
+
+ 
+ 
+ [9] 
+ Bale, S. D., Goetz, K., Harvey, P. R., et al. 2016, Space Science Rev., 204, 49. doi:10.1007/s11214-016-0244-5
+
+ 
+ 
+ [10] 
+ Pulupa, M., Bale, S. D., Bonnell, J. W., et al. 2017, Journal of Geophysical Research (Space Physics), 122, 2836. doi:10.1002/2016JA023345
+
+ 
+ 
+ [11] 
+ Bassett, N., Rapetti, D., Nhan, B., et al. 2023, submitted to Astrophys. J., https://arxiv.org/abs/2301.09612
+
+ 
+ 
+ [12] 
+ Sasikumar Raja, K., Maksimovic, M., Kontar, E. P., et al. 2022, Astrophys. J., 924, 58. doi:10.3847/1538-4357/ac34ed10.48550/arXiv.2110.10935
+
+ 
+ 
+ [13] 
+ Panchenko, M., Rucker, H. O., & Farrell, W. M. 2013, Planetary Space Sci., 77, 3. doi:10.1016/j.pss.2012.08.015
+
+ 
+ 
+ [14] 
+ Helmboldt, J. F. & Kassim, N. E. 2009, Astronom. J., 138, 838. doi:10.1088/0004-6256/138/3/83810.48550/arXiv.0903.5010
+
+ 
+ 
+ [15] 
+ de Gasperin, F., Vink, J., McKean, J. P., et al. 2020, Astron. Astrophys, 635, A150. doi:10.1051/0004-6361/20193684410.48550/arXiv.2002.10431
+
+ 
+ 
+ [16] 
+ Loeb, A. & Zaldarriaga, M. 2004, Phys. Rev. Lett., 92, 211301. doi:10.1103/PhysRevLett.92.21130110.48550/arXiv.astro-ph/0312134
+
+ 
+ 
+ [17] 
+ Furlanetto, S. R., Oh, S. P., & Briggs, F. H. 2006, Phys. Reports, 433, 181. doi:10.1016/j.physrep.2006.08.00210.48550/arXiv.astro-ph/0608032
+
+ 
+ 
+ [18] 
+ Burns, J. O., MacDowall, R., Bale, S., et al. 2021, Planetary Sci. J., 2, 44. doi:10.3847/PSJ/abdfc310.48550/arXiv.2102.02331
+
+ 
+ 
+ [19] 
+ Su, Y., Li, C., Li, J., et al. 2019, EPSC-DPS Joint Meeting 2019
+
+ 
+ 
+ [20] 
+ Bale, S. D., Ullrich, R., Goetz, K., et al. 2008, Space Science Rev., 136, 529. doi:10.1007/s11214-007-9251-x
+
+ 
+ 
+ [21] 
+ Grimm, R. E. 2018, Icarus, 314, 389. doi:10.1016/j.icarus.2018.06.007
+
+ 
+ 
+ [22] 
+ Bugby, D. C., Rivera, J. G., and Britton, S. R., 2022, 85, Cryocoolers 22.
+
+ 
+ 
+ [23] 
+ Bassett, N., Rapetti, D., Burns, J. O., et al. 2020, Advances in Space Research, 66, 1265. doi:10.1016/j.asr.2020.05.050
+
+ 
+ 
+ 
+ 
+ 
+ 
+ ◄ 
+ 
+ Feeling lucky? 
+ 
+ Conversion report 
+ Report an issue 
+ View original on arXiv ► 
+ 
+ 
+ Copyright 
+ Privacy Policy 
+
+ Generated by L a T e XML oxide 
+ 
+
+ 
+ 
+ 
+ 

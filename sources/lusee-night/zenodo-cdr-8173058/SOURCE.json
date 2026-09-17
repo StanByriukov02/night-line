@@ -1,0 +1,57 @@
+{
+  "url": "https://doi.org/10.5281/zenodo.8173058",
+  "file_url": "https://zenodo.org/api/records/8173058/files/LuSEE_Night_Conceptual_Design.pdf/content",
+  "title": "LuSEE-Night Conceptual Design Report (Zenodo 8173058)",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "extract": "pdf.txt",
+  "dated": "CDR_older_than_2024",
+  "set": "older_design_do_not_mix",
+  "numbers_used": [
+    "P_night_W=12.4",
+    "P_day_W=50.8",
+    "P_night_preamp_W=2",
+    "P_night_IEA_heat_W=10.4",
+    "P_day_IEA_heat_W=28.3",
+    "mass_kg=87.5",
+    "mass_nte_kg=100",
+    "IEA_kg=55.5",
+    "battery_kg=45",
+    "store_Wh=6500",
+    "constraints_table_P_night_W=14",
+    "constraints_table_P_day_W=100",
+    "constraints_table_mass_kg=100",
+    "constraints_table_battery_kg=50",
+    "hours_night_min_mission_approx=325",
+    "T_midnight_K=95",
+    "T_noon_K=390",
+    "T_surface_night_K=85",
+    "T_IEA_night_K=264.5",
+    "radiator_PALETTE_m2=0.165",
+    "radiator_assumed_m2=0.2695",
+    "G_switch_off_W_per_K=0.002",
+    "MLI_eps=0.02",
+    "structure_stages=aluminum",
+    "IEA_suspend=kevlar_cables"
+  ],
+  "sha256": "a64dd2546ba2a457e85f548df92b11f510c935328dccced25be01d347b98b469",
+  "bytes": 8410140,
+  "fetched_utc": "2026-09-17T06:43:59Z",
+  "saved_sha256": {
+    "page.pdf": "a64dd2546ba2a457e85f548df92b11f510c935328dccced25be01d347b98b469",
+    "pdf.txt": "dc8fba461bf8f3a0c438d5d6b082a13947dc1e4bd28605e2b47825f36ad56fcb"
+  },
+  "status_20260917": {
+    "https://doi.org/10.5281/zenodo.8173058": 200,
+    "https://zenodo.org/api/records/8173058/files/LuSEE_Night_Conceptual_Design.pdf/content": 200
+  },
+  "omitted_binaries": [
+    {
+      "filename": "page.pdf",
+      "bytes": 8410140,
+      "omit_reason": "pdf > 5 MB; URL + sha256 only",
+      "sha256": "a64dd2546ba2a457e85f548df92b11f510c935328dccced25be01d347b98b469",
+      "url": "https://doi.org/10.5281/zenodo.8173058"
+    }
+  ]
+}

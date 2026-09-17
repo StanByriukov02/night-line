@@ -1,0 +1,524 @@
+{
+  "schema": "night_line_box_v1",
+  "box_id": "lems_a3",
+  "name": "LEMS-A3",
+  "full_name": "Lunar Environment Monitoring Station for Artemis III",
+  "named_box": true,
+  "pre_landing": true,
+  "landing_status": "not_landed_as_of_2026-09-17",
+  "mission": "Artemis III",
+  "lander": "SpaceX Starship Human Landing System (HLS)",
+  "pi": "Mehdi Benna",
+  "org": "UMD / NASA GSFC",
+  "note": "A3 flight numbers only from printed public sources. TRL-6 / DALI predecessor mass 34–35 kg and 1200 Wh store are not this box. Geometry A/L and A_rad not printed — this line runs a declared bracket, no middle value.",
+  "fields": {
+    "mass_kg": {
+      "value": null,
+      "unit": "kg",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed A3 flight mass (kg) from PI/NASA/ICES. Do not borrow 34 kg ETU (Benna CLPS 2022) or 35 kg DALI (TFAWS 2020)."
+    },
+    "store_Wh": {
+      "value": 640.0,
+      "unit": "Wh",
+      "tier": "cited_public",
+      "cite": "ICES 2025 NTRS 20250005257: allocated battery energy 640 Wh for a 354 hr period between sun illuminations (requirement + Fig. 14 thermal energy balance).",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "store_Wh=640",
+      "page_or_figure": "Fig. 14; §I 640 Wh / 354 hr"
+    },
+    "battery_nameplate_Wh": {
+      "value": null,
+      "unit": "Wh",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed A3 nameplate / usable Wh (640 is allocation for temperature maintenance, not nameplate)."
+    },
+    "battery_chemistry": {
+      "value": null,
+      "unit": "",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed A3 cell chemistry. TRL-6 Ibeos Li-ion 8S8P is predecessor, not A3."
+    },
+    "P_keepalive_W": {
+      "value": 1.231,
+      "unit": "W",
+      "tier": "cited_public",
+      "cite": "ICES 2025 Fig. 14: Internal Electronics CBE Heat 1.231 W (cold operational steady state).",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "P_electronics_CBE_W=1.231",
+      "page_or_figure": "Fig. 14"
+    },
+    "P_heater_W": {
+      "value": 0.297,
+      "unit": "W",
+      "tier": "cited_public",
+      "cite": "ICES 2025 Fig. 14: Heater Power 0.297 W.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "P_heater_W=0.297",
+      "page_or_figure": "Fig. 14"
+    },
+    "P_leak_analyzed_W": {
+      "value": 1.528,
+      "unit": "W",
+      "tier": "cited_public",
+      "cite": "ICES 2025 Fig. 14 / conclusion: nighttime heat leak 1.528 W for 354 hr (CDR analysis, not this Fourier).",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "P_leak_W=1.528",
+      "page_or_figure": "Fig. 14; §V"
+    },
+    "E_thermal_analyzed_Wh": {
+      "value": 541.0,
+      "unit": "Wh",
+      "tier": "cited_public",
+      "cite": "ICES 2025 Fig. 14 / §V: 1.528 W for 354 hr or 541 Wh.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "E_thermal_Wh=541",
+      "page_or_figure": "Fig. 14; §V"
+    },
+    "P_peak_monthly_comms_W": {
+      "value": 37.99,
+      "unit": "W",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §III: monthly three-hour communication transient MEV heat dissipation 37.99 W.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "P_monthly_comms_MEV_W=37.99",
+      "page_or_figure": "§III Table 2 discussion"
+    },
+    "P_daily_download_W": {
+      "value": 5.92,
+      "unit": "W",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §III: daily data downloads expected to spike as high as 5.92 W.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "P_daily_download_W=5.92",
+      "page_or_figure": "§III"
+    },
+    "H_night_h": {
+      "value": 354.0,
+      "unit": "h",
+      "tier": "cited_public",
+      "cite": "ICES 2025: 354 hr period between sun illuminations (Fig. 14 thermal energy balance).",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "hours_night=354",
+      "page_or_figure": "Fig. 14; §I"
+    },
+    "T_box_C": {
+      "value": -28.0,
+      "unit": "C",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II: bus heater nominally set to -28/-26°C. Night hold uses the printed −28 °C deadband.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "T_box_heater_C=-28",
+      "page_or_figure": "§II Thermal Architecture"
+    },
+    "T_box_K": {
+      "value": 245.15,
+      "unit": "K",
+      "tier": "derived",
+      "derived_from": "T_box_C",
+      "formula": "273.15 + T_box_C",
+      "cite": "derived from printed −28 °C (ICES §II). Not printed as kelvin.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": null,
+      "page_or_figure": "§II"
+    },
+    "T_env_C": {
+      "value": -200.0,
+      "unit": "C",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II.C: 'The SAPP harnessing in the cold operational steady state case bridges the internal thermal zone at -30°C to the external thermal zones at approximately -200°C'. Path-specific SAPP zone, not a whole-box night sink. Used as the warm T_env bound only.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "T_env_C=-200",
+      "page_or_figure": "§II.C"
+    },
+    "T_env_K": {
+      "value": null,
+      "unit": "K",
+      "tier": "OPEN",
+      "cite": "OPEN — no printed whole-box night sink for LEMS-A3. Two printed bounds, no middle. Cold printed number is 'below 23K', not a floor at 38 K.",
+      "close_with": "Printed A3 night environment temperature of the bus as a single value. ICES ≈−200 °C is SAPP external zone in the cold operational case, not a box sink. Paige 'below 23K' is a PSR excursion (OPEN_below_printed), colder than a sunlit-rim landing site.",
+      "page_or_figure": "ICES §II.C SAPP zone; Paige 2011 LPI 6058 p.1",
+      "source_slug": null,
+      "numbers_used": null,
+      "bracket_lo": {
+        "value": 23.0,
+        "printed": "below 23K",
+        "unit": "K",
+        "tier": "OPEN_below_printed",
+        "role": "cold_bound",
+        "cite": "Paige et al. 2011 LPI 6058 p.1: 'surface temperature excursions below 23K are briefly observed'. 23 K is the coldest printed number, not a floor — the paper says below. OPEN_below_printed. PSR/polar floor, colder than a sunlit-rim landing site — not this box's sink. Annual average 'less than 38K' is not the cold bound.",
+        "quote": "surface temperature excursions below 23K are briefly observed",
+        "quote_annual": "The results show that the coldest regions on the Moon achieve annual average temperatures of less than 38K",
+        "url": "https://www.lpi.usra.edu/meetings/volatiles2011/pdf/6058.pdf",
+        "source_slug": "paige-2011-diviner-polar-lpi",
+        "numbers_used": "T_polar_excursion_K_lt=23",
+        "page_or_figure": "p.1 Polar Mapping"
+      },
+      "bracket_hi": {
+        "value": 73.15,
+        "printed": "approximately -200°C",
+        "unit": "K",
+        "tier": "derived",
+        "derived_from": "T_env_C",
+        "formula": "273.15 + T_env_C",
+        "role": "warm_bound",
+        "label": "SAPP external zone, cold operational case — used as warm reference bound, not a box sink",
+        "cite": "derived from printed ≈ −200 °C (ICES §II.C) for SAPP harnessing external thermal zones. Not printed as kelvin. Not a whole-box night sink.",
+        "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+        "source_slug": "ices-2025-tcs-ntrs",
+        "numbers_used": "T_env_C=-200",
+        "page_or_figure": "§II.C"
+      }
+    },
+    "T_external_range_C": {
+      "value": [
+        -200.0,
+        115.0
+      ],
+      "unit": "C",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II: external components expected -200°C to +115°C.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "T_external_C=-200_to_115",
+      "page_or_figure": "§II"
+    },
+    "latitude_analysis_deg": {
+      "value": [
+        83.5,
+        90.0
+      ],
+      "unit": "deg",
+      "tier": "cited_public",
+      "cite": "ICES 2025 Table 1 environment cases: Latitude 90 and 83.5. Exact A3 landing site OPEN.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "latitude_analysis_deg=83.5",
+      "page_or_figure": "Table 1"
+    },
+    "landing_site_name": {
+      "value": null,
+      "unit": "",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Named A3 landing site after NASA selection. Printed region is lunar South Pole / South Polar region (LPSC 2025 2410; NASA Science)."
+    },
+    "lifetime_years": {
+      "value": 2.0,
+      "unit": "year",
+      "tier": "cited_public",
+      "cite": "LPSC 2025 2410: three-month threshold mission and two-year baseline. ICES: 24 lunations. NASA Science: three months up to two years. GSFC: two years longevity goal.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2025/pdf/2410.pdf",
+      "source_slug": "lpsc-2025-2410",
+      "numbers_used": "lifetime_baseline_years=2",
+      "page_or_figure": "LPSC 2025 2410 p.2"
+    },
+    "lifetime_threshold_months": {
+      "value": 3.0,
+      "unit": "month",
+      "tier": "cited_public",
+      "cite": "LPSC 2025 2410: three-month threshold mission. NASA Science: from three months up to two years.",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2025/pdf/2410.pdf",
+      "source_slug": "lpsc-2025-2410",
+      "numbers_used": "lifetime_threshold_months=3",
+      "page_or_figure": "LPSC 2025 2410 p.2"
+    },
+    "lifetime_lunations": {
+      "value": 24.0,
+      "unit": "lunation",
+      "tier": "cited_public",
+      "cite": "ICES 2025 abstract/§I: design life of 24 lunations (approx. two Earth years).",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "lifetime_lunations=24",
+      "page_or_figure": "§I"
+    },
+    "hibernation_pct": {
+      "value": 98.6,
+      "unit": "%",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §I: Hibernation Mode 98.6% of the mission.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "hibernation_pct=98.6",
+      "page_or_figure": "§I"
+    },
+    "hibernation_frac": {
+      "value": 0.986,
+      "unit": "1",
+      "tier": "derived",
+      "derived_from": "hibernation_pct",
+      "formula": "hibernation_pct / 100",
+      "cite": "derived from printed 98.6% (ICES §I). Not printed as a fraction.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": null,
+      "page_or_figure": "§I"
+    },
+    "imli_layers": {
+      "value": 18.0,
+      "unit": "layer",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II.B: 18-layer IMLI, double aluminized Kapton, outer Nextel/Stamet.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "imli_layers=18",
+      "page_or_figure": "§II.B"
+    },
+    "eps_eff": {
+      "value": null,
+      "unit": "1",
+      "tier": "OPEN",
+      "cite": "OPEN (upper bound cited separately)",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": "§II.B e* < 0.0028 TRL-6 IMLI",
+      "close_with": "Printed A3 e* as a single value. Paper gives upper bound < 0.0028 from TRL-6 IMLI measurement; no A3 lower bound. Court brackets 0 to 0.0028."
+    },
+    "eps_eff_upper": {
+      "value": 0.0028,
+      "unit": "1",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II.B: effective emissivity less than 0.0028 as measured during the TRL-6 (IMLI used on A3).",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "eps_eff_imli_upper=0.0028",
+      "page_or_figure": "§II.B"
+    },
+    "A_path_m2": {
+      "value": null,
+      "unit": "m2",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed strut/rod cross-section A. Heat-switch open G < 0.002 W/K is printed; A and L are not."
+    },
+    "L_path_m": {
+      "value": null,
+      "unit": "m",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed conductive length of heat-switch rod / ULTEM standoffs / SAPP stretch."
+    },
+    "A_rad_m2": {
+      "value": null,
+      "unit": "m2",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed IMLI or radiator area (m²). Suitcase-size is qualitative (NASA Science). Not LuSEE 0.15."
+    },
+    "enclosure_dimensions_m": {
+      "value": null,
+      "unit": "m",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed bus L×W×H. NASA Science says suitcase-size only."
+    },
+    "G_heat_switch_open_W_per_K": {
+      "value": 0.002,
+      "unit": "W/K",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II.D: heat switch open path through ULTEM housing to INVAR 36 rod has conductance below 0.002 W/°C.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "G_heat_switch_open_W_per_K=0.002",
+      "page_or_figure": "§II.D"
+    },
+    "G_heat_switch_closed_W_per_K": {
+      "value": 5.0,
+      "unit": "W/K",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II.D: above 0°C, aluminum plates pressed together, heat flows at approximately 5 W/°C (day path, not night).",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "G_heat_switch_closed_W_per_K=5",
+      "page_or_figure": "§II.D"
+    },
+    "strut_alloy_heat_switch_rod": {
+      "value": "INVAR 36",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II.D: INVAR 36 internal rod.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "invar_36_heat_switch_rod=true",
+      "page_or_figure": "§II.D"
+    },
+    "strut_alloy_launch_lock_night": {
+      "value": "ULTEM 1000",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II.A: four ULTEM 1000 standoffs are the deployed conductive path. No NIST metal map — T0 hole.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "ultem_1000_standoffs=true",
+      "page_or_figure": "§II.A"
+    },
+    "titanium_legs_alloy": {
+      "value": null,
+      "unit": "",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": "§II.A nested titanium mechanical legs (alloy unnamed)",
+      "close_with": "Printed titanium alloy (e.g. Ti-6Al-4V). Paper says titanium only. Do not assume Ti-6Al-4V."
+    },
+    "n_ultem_standoffs": {
+      "value": 4.0,
+      "unit": "1",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II.A: four ULTEM 1000 standoffs.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "n_ultem_standoffs=4",
+      "page_or_figure": "§II.A"
+    },
+    "sapp_mli_layers": {
+      "value": 6.0,
+      "unit": "layer",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II.C: SAPP harnessing inside IMLI wrapped with 6-layer MLI.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "sapp_mli_layers=6",
+      "page_or_figure": "§II.C"
+    },
+    "night_strategy": {
+      "value": "battery + Kapton foil heaters + electronics waste heat; heat switch open at night; IMLI; no RHU stated for A3",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "ICES 2025 §II: four software-controlled Kapton foil heaters; Fig. 14 electronics 1.231 W + heater 0.297 W against 640 Wh allocation. RHU is not stated in the A3 paper (DALI 2020 0–2 RHU is predecessor).",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "P_heater_W=0.297",
+      "page_or_figure": "§II; Fig. 14"
+    },
+    "rhu": {
+      "value": null,
+      "unit": "",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed A3 RHU count. A3 ICES does not name an RHU. Do not copy TFAWS 2020 0–2 RHU."
+    },
+    "P_path_heat_switch_W": {
+      "value": 0.474,
+      "unit": "W",
+      "tier": "cited_public",
+      "cite": "ICES 2025 Fig. 14: Heat Switch -0.474 W (their Thermal Desktop, not Fourier A/L).",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "P_path_heat_switch_W=0.474",
+      "page_or_figure": "Fig. 14"
+    },
+    "P_path_launch_lock_W": {
+      "value": 0.353,
+      "unit": "W",
+      "tier": "cited_public",
+      "cite": "ICES 2025 Fig. 14: Launch Lock -0.353 W.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "P_path_launch_lock_W=0.353",
+      "page_or_figure": "Fig. 14"
+    },
+    "P_path_imli_W": {
+      "value": 0.303,
+      "unit": "W",
+      "tier": "cited_public",
+      "cite": "ICES 2025 Fig. 14: IMLI -0.303 W.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "P_path_imli_W=0.303",
+      "page_or_figure": "Fig. 14"
+    },
+    "P_path_sapp_W": {
+      "value": 0.398,
+      "unit": "W",
+      "tier": "cited_public",
+      "cite": "ICES 2025 Fig. 14: Signal and Power Passthrough -0.398 W.",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "source_slug": "ices-2025-tcs-ntrs",
+      "numbers_used": "P_path_sapp_W=0.398",
+      "page_or_figure": "Fig. 14"
+    }
+  },
+  "geometry_bracket": {
+    "honesty": "DECLARED_BRACKET. Geometry A/L and A_rad are OPEN. No middle value.",
+    "G_path_W_per_K": {
+      "lo": 0.002,
+      "lo_tier": "cited_public",
+      "lo_cite": "ICES 2025 §II.D heat-switch open < 0.002 W/K (one printed conduction path).",
+      "hi": 0.006,
+      "hi_tier": "OPEN",
+      "hi_cite": "DECLARED_BRACKET: three night conduction paths (heat switch + ULTEM launch lock + SAPP). hi = 3× the printed heat-switch open bound. Launch-lock and SAPP A/L not printed."
+    },
+    "eps_eff": {
+      "lo": 0.0,
+      "lo_tier": "OPEN",
+      "lo_cite": "OPEN lower bound — A3 paper does not print a floor on e*.",
+      "hi": 0.0028,
+      "hi_tier": "cited_public",
+      "hi_cite": "ICES 2025 §II.B e* < 0.0028"
+    },
+    "A_rad_m2": {
+      "lo": 0.05,
+      "hi": 0.8,
+      "tier": "OPEN",
+      "cite": "DECLARED_BRACKET: IMLI/radiator area not printed. Not dust_camera 0.02, not another mission's radiator."
+    },
+    "L_path_m": {
+      "value": 1.0,
+      "tier": "OPEN",
+      "cite": "DECLARED_UNIT so A_path = G/k. P_cond = G·ΔT is independent of the A/L split."
+    }
+  },
+  "k_path": {
+    "nist_id": "invar",
+    "temper_match": true,
+    "tier": "cited_measured_public",
+    "source_slug": "nist-invar-fe36ni",
+    "numbers_used": "k_nist_invar_integral",
+    "cite": "NIST Invar Fe-36Ni k(T) 4–300 K because ICES names an INVAR 36 heat-switch rod. ULTEM 1000 launch-lock legs have no NIST map — T0 hole."
+  },
+  "sources_dir": "sources/lems-a3"
+}

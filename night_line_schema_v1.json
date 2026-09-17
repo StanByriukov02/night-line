@@ -1,0 +1,322 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "night_line_record_v1",
+  "title": "Night Line record v1",
+  "description": "One public survival line for a named lunar-night box. Labels are on declared corners only; not a claim that the box will live. Tiers are cited, OPEN, or team_provided. No measurement by us; all values printed by the team or NIST.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "date_named",
+    "box",
+    "mission",
+    "landing_net",
+    "label",
+    "line",
+    "open_input_to_close",
+    "measured_status",
+    "inputs",
+    "ladder",
+    "electrical_model",
+    "corners",
+    "breaks",
+    "sources",
+    "witness",
+    "verifier"
+  ],
+  "properties": {
+    "schema": { "const": "night_line_record_v1" },
+    "date_named": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "box": { "type": "string", "minLength": 1 },
+    "mission": { "type": "string", "minLength": 1 },
+    "landing_net": { "type": "string", "minLength": 1 },
+    "label": {
+      "description": "On declared corners only; not a claim that the box will live.",
+      "oneOf": [
+        { "type": "string", "enum": ["LIVE", "DIE", "BRACKET"] },
+        {
+          "type": "string",
+          "pattern": "^LIVE_IF_[A-Z0-9_]+_BELOW$"
+        }
+      ]
+    },
+    "edge": {
+      "type": "boolean",
+      "description": "True when label is LIVE and worst-corner margin is ≤ 2 % of store."
+    },
+    "worst_corner_margin_Wh": {
+      "type": "number",
+      "description": "Store minus E_night at the worst declared corner (Wh). Printed with LIVE."
+    },
+    "line": {
+      "type": "string",
+      "description": "The one public number and the ladder that produced it. The label is on declared corners only; not a claim that the box will live."
+    },
+    "open_input_to_close": {
+      "type": "string",
+      "description": "The unprinted input that, with a page reference, would close this row."
+    },
+    "measured_status": {
+      "const": "no measurement by us; all values printed by the team or NIST"
+    },
+    "inputs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "store_Wh_nameplate",
+        "reserve_soc_pct",
+        "charge_discharge_efficiency",
+        "load_uncertainty",
+        "night_hours",
+        "average_night_electrical_load",
+        "electronics_dissipation",
+        "heater",
+        "T_box",
+        "T_env_bounds",
+        "radiator_area",
+        "effective_emissivity",
+        "conductance_or_strut"
+      ],
+      "properties": {
+        "store_Wh_nameplate": { "$ref": "#/$defs/input" },
+        "reserve_soc_pct": { "$ref": "#/$defs/input" },
+        "charge_discharge_efficiency": { "$ref": "#/$defs/input" },
+        "load_uncertainty": { "$ref": "#/$defs/input" },
+        "night_hours": { "$ref": "#/$defs/input" },
+        "average_night_electrical_load": { "$ref": "#/$defs/input" },
+        "electronics_dissipation": { "$ref": "#/$defs/input" },
+        "heater": { "$ref": "#/$defs/input" },
+        "T_box": { "$ref": "#/$defs/input" },
+        "T_env_bounds": { "$ref": "#/$defs/input" },
+        "radiator_area": { "$ref": "#/$defs/input" },
+        "effective_emissivity": { "$ref": "#/$defs/input" },
+        "conductance_or_strut": { "$ref": "#/$defs/input" }
+      }
+    },
+    "ladder": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/rung" }
+    },
+    "electrical_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["P_elec", "reason", "cite"],
+      "properties": {
+        "P_elec": { "const": "max(P_electronics, P_leak)" },
+        "reason": {
+          "type": "string",
+          "description": "Heat-balance reason: electronics heat already leaves through the leak; the heater only makes up the difference."
+        },
+        "cite": { "$ref": "#/$defs/cite" }
+      }
+    },
+    "corners": {
+      "type": "array",
+      "minItems": 2,
+      "description": "Declared OPEN bracket corners. Both shown. Never a middle.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "G_W_per_K",
+          "eps_eff",
+          "A_rad_m2",
+          "T_box_K",
+          "T_env_K",
+          "P_electronics_W",
+          "P_leak_W",
+          "P_elec_W",
+          "E_night_Wh",
+          "night_hours"
+        ],
+        "properties": {
+          "name": { "type": "string" },
+          "G_W_per_K": { "type": "number" },
+          "eps_eff": { "type": "number", "minimum": 0 },
+          "A_rad_m2": { "type": "number", "minimum": 0 },
+          "T_box_K": { "type": "number" },
+          "T_env_K": { "type": "number" },
+          "P_electronics_W": { "type": "number", "minimum": 0 },
+          "P_leak_W": { "type": "number", "minimum": 0 },
+          "P_elec_W": { "type": "number", "minimum": 0 },
+          "E_night_Wh": { "type": "number", "minimum": 0 },
+          "night_hours": { "type": "number", "exclusiveMinimum": 0 }
+        }
+      }
+    },
+    "breaks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["knob", "value", "unit", "hours", "held"],
+        "properties": {
+          "knob": { "type": "string" },
+          "value": { "type": ["number", "null"] },
+          "unit": { "type": "string" },
+          "hours": {
+            "type": "number",
+            "description": "Must equal printed night hours."
+          },
+          "held": {
+            "type": "string",
+            "description": "Which other knobs were held while this one moved."
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/cite" }
+    },
+    "witness": { "const": "pending" },
+    "verifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "independent_recompute",
+        "urls_live",
+        "source_sha256",
+        "open_upward_knobs",
+        "plain_LIVE_forbidden"
+      ],
+      "properties": {
+        "independent_recompute": { "type": "boolean" },
+        "urls_live": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "live", "checked_date"],
+            "properties": {
+              "url": { "type": "string", "format": "uri" },
+              "live": { "type": "boolean" },
+              "checked_date": {
+                "type": "string",
+                "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+              }
+            }
+          }
+        },
+        "source_sha256": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "sha256"],
+            "properties": {
+              "url": { "type": "string", "format": "uri" },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-f0-9]{64}$"
+              }
+            }
+          }
+        },
+        "open_upward_knobs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "plain_LIVE_forbidden": {
+          "type": "boolean",
+          "description": "True when a knob has no printed upper bound; verifier must use LIVE_IF_<knob>_BELOW, not LIVE."
+        },
+        "recomputed_by": { "type": "string" },
+        "command": { "type": "string" }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "label": { "const": "LIVE" } },
+        "required": ["label"]
+      },
+      "then": {
+        "required": ["edge", "worst_corner_margin_Wh"]
+      }
+    }
+  ],
+  "$defs": {
+    "cite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "page_or_figure"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "page_or_figure": { "type": "string", "minLength": 1 },
+        "nist_integral": { "type": "boolean" },
+        "temper_match": { "type": "boolean" }
+      }
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tier"],
+      "properties": {
+        "tier": {
+          "type": "string",
+          "enum": ["cited", "OPEN", "team_provided"]
+        },
+        "value": { "type": ["number", "string", "null"] },
+        "unit": { "type": "string" },
+        "cite": { "$ref": "#/$defs/cite" },
+        "bracket_lo": { "$ref": "#/$defs/corner_bound" },
+        "bracket_hi": { "$ref": "#/$defs/corner_bound" },
+        "note": { "type": "string" }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "tier": { "const": "OPEN" } },
+            "required": ["tier"]
+          },
+          "then": {
+            "required": ["bracket_lo", "bracket_hi"],
+            "not": { "required": ["value"] }
+          }
+        },
+        {
+          "if": {
+            "properties": { "tier": { "enum": ["cited", "team_provided"] } },
+            "required": ["tier"]
+          },
+          "then": {
+            "required": ["value", "cite"]
+          }
+        }
+      ]
+    },
+    "corner_bound": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": { "type": "number" },
+        "cite": { "$ref": "#/$defs/cite" },
+        "declared": { "type": "boolean" }
+      }
+    },
+    "rung": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "P_W", "cite"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": ["nameplate", "usable", "derated", "BREAK"]
+        },
+        "P_W": { "type": ["number", "null"] },
+        "cite": { "$ref": "#/$defs/cite" },
+        "note": { "type": "string" }
+      }
+    }
+  }
+}

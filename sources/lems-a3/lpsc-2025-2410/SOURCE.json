@@ -1,0 +1,21 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/lpsc2025/pdf/2410.pdf",
+  "fetched_utc": "2026-09-17T06:34:37Z",
+  "title": "LEMS-A3: The Lunar Environmental Monitoring Station — An Artemis III Deployed Instrument (LPSC 2025 2410)",
+  "sha256": "af6aba6fbea9595789b64cbbbe170877ea33c06f53772f945f956c3afc4fa8e6",
+  "filename": "page.txt",
+  "bytes": 9843,
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "lifetime_threshold_months=3",
+    "lifetime_baseline_years=2",
+    "site=south_polar_region"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.pdf": "aa9f63e53e59ffdaaf6d927b9cb7f720bec4daae5c9d07fb9ec92bf0b48532d4",
+    "page.txt": "af6aba6fbea9595789b64cbbbe170877ea33c06f53772f945f956c3afc4fa8e6"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

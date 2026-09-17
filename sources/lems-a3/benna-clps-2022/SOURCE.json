@@ -1,0 +1,29 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/clps2022/presentations/003_Benna.pdf",
+  "fetched_utc": "2026-09-17T06:34:37Z",
+  "title": "Lunar Environment Monitoring Station (LEMS) — Benna CLPS 2022 (TRL-6 predecessor, not A3 flight mass/store)",
+  "sha256": "8c0d752a030a9bc3ea42004b5033b9e805b191cf971af82a96b90f159569aa35",
+  "filename": "page.pdf",
+  "bytes": 10704486,
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "predecessor_store_Whr=1200",
+    "predecessor_mass_vibration_kg=34",
+    "predecessor_T_internal_C=-30_to_45",
+    "predecessor_T_external_C=60_to_-190"
+  ],
+  "sha256_by_file": {
+    "page.pdf": "8c0d752a030a9bc3ea42004b5033b9e805b191cf971af82a96b90f159569aa35",
+    "page.txt": "d15f182ee37287716e6634e4dffa658eddf656a35cb7270a0690ee1fbb715608"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": [
+    {
+      "filename": "page.pdf",
+      "bytes": 10704486,
+      "omit_reason": "pdf > 5 MB; URL + sha256 only",
+      "sha256": "8c0d752a030a9bc3ea42004b5033b9e805b191cf971af82a96b90f159569aa35",
+      "url": "https://www.hou.usra.edu/meetings/clps2022/presentations/003_Benna.pdf"
+    }
+  ]
+}

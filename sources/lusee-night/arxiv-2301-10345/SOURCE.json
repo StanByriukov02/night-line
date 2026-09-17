@@ -1,0 +1,51 @@
+{
+  "url": "https://arxiv.org/pdf/2301.10345",
+  "html_url": "https://ar5iv.labs.arxiv.org/html/2301.10345",
+  "title": "LuSEE 'Night': The Lunar Surface Electromagnetics Experiment (arXiv 2301.10345)",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "extract": "pdf.txt",
+  "dated": "2023",
+  "set": "prior_print_not_2024_energy",
+  "numbers_used": [
+    "lander_off=true",
+    "hours_night_earth_days_approx=14",
+    "battery_mass_kg_approx=40",
+    "enclosure_m=1x1x0.70",
+    "antenna_BeCu_stacer_m=3",
+    "dipole_tip_to_tip_m_approx=6",
+    "radiator=south_facing_PRR_JPL",
+    "thermal=self_heating_from_nighttime_ops_power",
+    "site_lat_deg=-23.813",
+    "site_lon_E_deg=182.258",
+    "site_ellipse_m=100",
+    "store_Wh=NOT_PRINTED",
+    "P_night_W=NOT_PRINTED",
+    "mass_kg_total=NOT_PRINTED",
+    "A_rad_m2=NOT_PRINTED",
+    "launch_window=late_2025_early_2026"
+  ],
+  "sha256": "1d53178bd8e3197958b8fd08985b90001617fd4210b6e2d89644ff7b90cf67df",
+  "bytes": 5944799,
+  "fetched_utc": "2026-09-17T06:43:55Z",
+  "saved_sha256": {
+    "page.html": "b7dafd45617d7bf33482a9fd11be07ce4bcde93e6472fe3e82943591e9b817ba",
+    "page.pdf": "1d53178bd8e3197958b8fd08985b90001617fd4210b6e2d89644ff7b90cf67df",
+    "page.txt": "23491089cbeab6a2c91bd14eb003a91220e61f008c0f1e139a0da1b86e3eac9e",
+    "pdf.txt": "522b4a611409aa5a6eeb5b3f8a411d837d296f450a62d3c787ee7ddca0b44c8d"
+  },
+  "status_20260917": {
+    "https://arxiv.org/pdf/2301.10345": 200,
+    "https://ar5iv.labs.arxiv.org/html/2301.10345": 200
+  },
+  "omitted_binaries": [
+    {
+      "filename": "page.pdf",
+      "bytes": 5944799,
+      "omit_reason": "pdf > 5 MB; URL + sha256 only",
+      "sha256": "1d53178bd8e3197958b8fd08985b90001617fd4210b6e2d89644ff7b90cf67df",
+      "url": "https://arxiv.org/pdf/2301.10345"
+    }
+  ],
+  "redacted_personal_email": true
+}

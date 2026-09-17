@@ -1,0 +1,31 @@
+{
+  "url": "https://fireflyspace.com/missions/blue-ghost-mission-2/",
+  "title": "Blue Ghost Mission 2 / Riders 2 the Dark - Firefly",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "extract": "page.txt",
+  "dated": "page_opened_2026-09-17",
+  "set": "night_intent_no_Wh",
+  "numbers_used": [
+    "launch_NET=2027",
+    "lander_power_off_before_nightfall=true",
+    "lusee_surface_ops_years_up_to=2",
+    "lander_surface_ops_days_min=10",
+    "site=Nassau_crater_far_side",
+    "P_night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED",
+    "mass_kg=NOT_PRINTED",
+    "hours_night=NOT_PRINTED"
+  ],
+  "sha256": "3d21ce7f5c4cfeb108a768551d7088b625b94b60bda671cc4c817060f15f4cae",
+  "bytes": 124386,
+  "fetched_utc": "2026-09-17T06:44:05Z",
+  "saved_sha256": {
+    "page.html": "3d21ce7f5c4cfeb108a768551d7088b625b94b60bda671cc4c817060f15f4cae",
+    "page.txt": "9dba9a89afe390853b506550aceb0d79b07310ef65a103f50458c6f1595289bd"
+  },
+  "status_20260917": {
+    "https://fireflyspace.com/missions/blue-ghost-mission-2/": 200
+  },
+  "omitted_binaries": []
+}

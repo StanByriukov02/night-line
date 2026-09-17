@@ -1,0 +1,33 @@
+{
+  "url": "https://science.nasa.gov/lunar-science/clps-deliveries/cs-3/",
+  "title": "CS-3 Science Payloads - NASA Science (LuSEE-Night)",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "extract": "page.txt",
+  "dated": "page_opened_2026-09-17",
+  "set": "night_intent_no_Wh",
+  "numbers_used": [
+    "land_year_printed=2025",
+    "night_intent=self-reliant_by_first_nightfall",
+    "night_ops=internal_battery_and_self-heating",
+    "lifetime_earth_year_min=1",
+    "P_night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED",
+    "mass_kg=NOT_PRINTED",
+    "hours_night=NOT_PRINTED",
+    "PI=Stuart_Bale",
+    "labs=BNL_and_LBL"
+  ],
+  "sha256": "a5ee3ac4e3ba54b572590aa967a7576168894c36bb1300a43bd72291b27ea8dc",
+  "bytes": 275788,
+  "fetched_utc": "2026-09-17T06:44:04Z",
+  "saved_sha256": {
+    "page.html": "a5ee3ac4e3ba54b572590aa967a7576168894c36bb1300a43bd72291b27ea8dc",
+    "page.txt": "b5813b018a92cd3e3d0c890fd70f943cb432f9cef56fd754346643a55ca5a779"
+  },
+  "status_20260917": {
+    "https://science.nasa.gov/lunar-science/clps-deliveries/cs-3/": 200
+  },
+  "omitted_binaries": [],
+  "redacted_personal_email": true
+}

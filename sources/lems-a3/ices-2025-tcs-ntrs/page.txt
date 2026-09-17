@@ -1,0 +1,689 @@
+--- page 1 ---
+54th International Conference on Environmental Systems ICES-2025-383 
+13-17 July 2025, Prague, Czech Republic 
+Artemis 3 Lunar Environment Monitoring Station  
+(LEMS-A3) Thermal Control Subsystem Architecture 
+Ethan Burbridge1 
+Vertex Aerospace, LLC, Grasonville, Maryland, 21368 
+Juan Rodriguez-Ruiz2 
+NASA Goddard Space Flight Center, 8800 Greenbelt Rd., Greenbelt, MD 20771 
+The NASA Artemis 3 Lunar Environment Monitoring Station (LEMS-A3) instrument will 
+be deployed by the Artemis 3 crew in the South Pole region of the Moon. LEMS -A3 consists 
+of a common services bus and two seismometers to be buried in the regolith, and the 
+instrument has been repackaged to improve the performance of the bus Thermal Control 
+Subsystem (TCS). The nighttime heat leak has been reduced from 3.98 W to 1.528 W, from 
+Engineering Design Unit (EDU) Thermal Vacuum (TVAC) to the as predicted for the LEMS-
+A3 Critical Design Review (CDR). This improvement was brought about by repackaging that 
+reduces surface area for the Integrated Multi-Layer Insulation (IMLI), optimizing harness 
+passthroughs including the selection of cryogenic coaxial cables, selecting an improved 
+differential thermal expansion heat switch, and redesign of the Launch Lock (LL). The 
+upgraded configuration enables LEMS -A3 to c ontinuously operate in an d survive the lunar 
+night for a design life of 24 lunations (approx. two Earth years)  to meet extended -operation 
+mission objectives. This paper discusses the repackaging, thermal design improvements, and 
+upgraded thermal hardware.  
+Acronyms and Nomenclature 
+𝑎 = Moon Ecliptic Aberration 
+ALSEP = Apollo Lunar Surface Experiment Package 
+BB = BroadBand sonde/seismometer 
+CBE = Current Best Estimate 
+CDR = Critical Design Review 
+C&DH = Command and Data Handling 
+EDU = Engineering Design Unit 
+EPS = Electrical Power System 
+DSN = Deep Space Network 
+FPGA = Flight Programmable Gate Array 
+GSFC = Goddard Space Flight Center 
+HLS = Human Landing System 
+HMS = Hibernation Management System 
+LEMS-A3 = Lunar Environment Monitoring Station – Artemis 3 
+JPL = Jet Propulsion Laboratory 
+LGA = Low Gain Antenna 
+LVPC = Low Voltage Power Card 
+IMLI = Integrated Multi-Layer Insulation 
+MEV = Maximum Expected Value 
+MGA = Medium Gain Antenna 
+MLI = Multi-Layer Insulation 
+NASA = National Aeronautics and Space Administration 
+SC = Spacecraft 
+SP = Short Period sonde/seismometer 
+TCS = Thermal Control Subsystem 
+ 
+1 Thermal Engineer, 8800 Greenbelt Rd, Greenbelt, MD 20771 
+2 Thermal Principal Design Lead, 8800 Greenbelt Rd, Greenbelt, MD 20771 
+--- page 2 ---
+2 
+International Conference on Environmental Systems 
+ 
+ 
+TRL = Technology Readiness Level 
+𝛽𝑆𝐶 = Spacecraft Beta Angle 
+𝜙 = Deployment Latitude 
+𝜃𝑠𝑢𝑟𝑓𝑎𝑐𝑒 = Local Surface Inclination Relative to Horizon 
+𝜃𝑆𝐶 = Spacecraft Inclination Relative to Horizon 
+I. Introduction 
+LEMS-A3 is an autonomous remote seismic monitoring station to be deployed to the South Pole region of the 
+Moon via the Artemis 3 crew. The seismic suite consists of two three -axis sondes that will be buried in the lunar 
+regolith to detect seismic events which consist of shallow moonquakes, deep moonquakes, meteoroid impacts, and 
+thermal cycling. For science objectives focused on the South Pole region, LEMS-A3 will be gathering the first seismic 
+data for the region which will inform objectives and requirement s for future missions in that region. The LEMS-A3 
+seismic suite will expand upon data gathered by the Apollo Lunar Surface Experiment Package (ALSEP) and other 
+planned lunar surface instruments.  
+LEMS-A3 includes all systems necessary for remote operation like direct -to-earth communications, solar power 
+generation, battery storage, command and data handling, and thermal control. Figure 1 details the system architecture. 
+Novel to this system is a low -power Hibernation Mode which disables all systems like communications and data 
+processing not related to science gathering or system telemetry. LEMS -A3 will operate in this Hibernation Mode 
+98.6% of the mission to conserve power. The Hibernation Mode is controlled via the Hibernation Management System 
+(HMS) which nominally operates continuously over the two-year mission. Once every 24 hours, for 20 minutes, HMS 
+will enable the Command and Data Handling card (C&DH) which maintains the operations schedule  based on 
+timekeeping in the HMS . During this 20 minute “Awake” period, the C&DH will  determine the charge state of the 
+battery and the solar power incident on the solar arrays based on the two sun sensors and enable or disable the Electrical 
+Power System (EPS) as appropriate. Figure 2 pictures the concept of operations which includes at least one monthly, 
+three-hour, direct-to-Earth communications window using the Deep Space Network (DSN)  for downloading science 
+data and system telemetry. Additional short-duration, 20-minute, communication windows can be performed using 
+smaller antenna dishes for monitoring system health and uploading mission schedules.  
+ 
+ 
+Figure 1. LEMS-A3 components. 
+ 
+ 
+SP 
+Sonde
+BB 
+Sonde
+B ubble 
+L evel
+Sun 
+Sensor 
+(2/2)
+Sun 
+Sensor 
+(1/2)
+MG A  
+1&2
+L G A  
+1&2
+B ubble 
+L evel
+Sun 
+Compass
+Cable 
+R eel
+BB 
+Sonde
+Solar 
+Panel
+Front View B ack View
+(w ith IML I blankets rem oved fo r clarity)
+Carrying  
+handle
+T hermal 
+R adiator/heat 
+sw itch
+T elecom 
+System
+B attery
+A vionics 
+B ox
+EPSL aunch 
+L ock 
+Interface
+Seismometer 
+Stow  
+A ssembly
+SP 
+Sonde
+--- page 3 ---
+3 
+International Conference on Environmental Systems 
+ 
+ 
+ 
+Figure 2. LEMS-A3 Concept of Operations. 
+ 
+From 2018 to 2022, the LEMS prototype was developed and tested under the NASA Development of Advanced 
+Lunar Instruments program  to elevate the design to a  NASA Technology Readiness Level (TRL) of 6.  The TVAC 
+testing conducted as a part of the TRL-6 effort validated the design to operate in the minimum and maximum predicted 
+temperatures with margin. In this test, the nighttime thermal energy leak was measured to be 1407.3 Wh for 354 hours 
+or the equivalent of a continuous power of 3.98 W3. 
+At CDR, the LEMS -A3 was required to demonstrate the feasibility of the Thermal Control Subsystem (TCS) in 
+the representative worst case cold and hot environments expected on the lunar surface. To demonstrate mission 
+success, the TCS must maintain the LEMS -A3 bus within temperature limits during all operational and non -
+operational modes. Furthermore, the total nighttime energy used for  temperature maintenance must be shown to be 
+less than 640 Wh of allocated battery energy for a 354 hr period between sun illuminations. 
+II. Thermal Architecture 
+The design presented is  the flight TCS design as it stands at the CDR. Figure 3 details the TCS architecture and 
+the relationship between the various components.  All temperature sensitive components like the avionics, battery, 
+EPS, and radio are isolated from the environment inside the LEMS-A3 bus. The bus thermal interfaces are carefully 
+controlled at t he four primary heat leak paths: the launch lock, signal and power passthrough (SAPP) harnessing, 
+Integrated Multi -Layer Insulation (IMLI) , and heat switch  as shown in Figure  4. Components that are required to 
+interact with the environment like the solar array, antennae, and astronaut interfaces are mounted to the superstructure 
+via an uncontrolled thermal interface. The temperatures of the external components are managed with thermal control 
+coatings but are expected to experience temperatures ranging from -200°C to +115°C.  
+ 
+ 
+
+--- page 4 ---
+4 
+International Conference on Environmental Systems 
+ 
+ 
+ 
+Figure 3. Bus TCS block diagram. 
+ 
+Bus and seismometer temperatures are maintained with four software -controlled Kapton foil heaters. The circuits 
+are controlled by the HMS using a deadband control algorithm with active temperature monitoring. One heater is 
+mounted to the bus and is nominal ly set to -28/-26°C. The heat switch has a heater mounted to its housing and is 
+discussed more in Section II.D: Heat Switch and Radiator . The other two heater services are supplied to the 
+seismometers for their TCS. 
+ 
+ 
+Figure 4. Bus heat leak paths. 
+ 
+ 
+ 
+SAPP
+Heat Switch IMLI
+Launch Lock
+--- page 5 ---
+5 
+International Conference on Environmental Systems 
+ 
+ 
+A. Launch Lock 
+The launch lock shown in Figure 5 is an astronaut-actuated interface designed to handle launch loads aboard the 
+SpaceX Starship Human Landing System (HLS)  while meeting thermal conductance  isolation requirements when 
+deployed on the lunar surface. Two nested titanium mechanical legs are constrained by pins during launch to handle 
+most of the launch loads. After arrival on the lunar surface, an astronaut removes the pins and carries the LEMS -A3 
+instrument package to the deployment site. Once deployed on the lunar surface, the only contact between the internal 
+structure of the bus and the external environment is through the four ULTEM 1000 standoffs.  
+In addition to meeting launch and thermal requirements,  the launch lock separates the thermal and mechanical 
+design of externally mounted components, namely the solar array,  CSS, antennae, and astronaut interfaces. Without 
+the launch lock and the superstructure, external components would need to be mounted to the bus structure via 
+standoffs which would increase the system heat leak and increase design time since mechanical and thermal engineers 
+would have to iterate many more designs. 
+To mitigate risk of dust accumulation or regolith contact, the titanium mechanical posts and ULTEM thermal legs 
+are coated with a low emissivity coating. The thermal legs will be shrouded with a KaptonTM film cylinder to act as a 
+radiation and sun shield. Relative to the total heat leak, the thermal conductivity of the mechanical legs is high enough 
+that they are effectively the same temperature as the bus internal components. Since the mechanical legs stick out past 
+the thermal blanketing, there is a risk that the legs will contact the lunar regolith should deployment create a mound 
+underneath the LEMS bus. To mitigate this risk, the solar array dust cover is wrapped underneath the launch lock to 
+increase the bearing surface area and decrease subsidence into the regolith. 
+ 
+ 
+Figure 5. (left) Launch lock stowed. (right) Launch lock deployed. 
+B. Integrated Multi-Layer Insulation 
+The LEMS -A3 bus radiation heat loss is minimized using an 18 -layer IMLI consisting of double aluminized 
+Kapton film with an outer layer of laminated NextelTM fabric and StametTM. IMLI differs from standard MLI blankets 
+in that the layers are separated with a proprietary low thermal conductivity tripod spacer technology rather than plastic 
+mesh fabric. The layup can be seen in Figure 6. 
+This technology improves blanket performance for small systems in three ways. First, the discrete  spacers reduce 
+layer-to-layer conduction losses by a factor of 1000 compared to mesh fabric. Second, the separation of the layers 
+allows edges to be closed out layer by layer so that edge losses are minimized. Finally, the spacers can be metallized 
+with vapor deposited aluminum that is a few hundred Angstroms thick to ground the blanketing with no additional 
+conducted heat loss. The net effect is an effective e missivity less than 0.0028 as measured during the TRL -6 
+development testing2. 
+The outer layer includes a layer of NextelTM ballistic shielding to protect the LEMS bus from hyper -velocity 
+regolith particles generated during HLS liftoff. The LEMS-A3 team partnered with the NASA Engineering and Safety 
+Center to analyze the impact of the liftoff plume on the LEMS bus and to select the ballistic shielding to prevent 
+penetration of the LEMS-A3 bus IMLI thus ensuring blanket thermal performance and protecting internal components. 
+ 
+ 
+
+--- page 6 ---
+6 
+International Conference on Environmental Systems 
+ 
+ 
+ 
+Figure 6. (left) IMLI Sample. (right) TRL-6 Test Article showing IMLI cross section. 
+C. Signal and Power Passthrough Harnessing 
+Harnessing passing through the IMLI including wires for  seismometer power and signal, solar array power, 
+antennae coax, and temperature sensors was optimized to minimize thermal conductance while meeting power and 
+signal quality requirements. All low power harnessing was manganin for the stretch going from inside the IMLI to 
+outside. Harnessing carrying higher levels of current like the solar array power lines and the seismometer power lines 
+is copper. The SAPP harnessing is isolated from the internal bus structure and the superstructure on ULTEM 
+ClickbondTM standoffs to minimize heat loss through the SAPP. Figure 7 details the harnessing routing path. 
+The antenna radio frequency signals are carried on semi -rigid, cupronickel coaxial cables adapted from the 
+cryogenics industry. The coax ial cables were optimized by selecting diameters and materials that met the 2 dB 
+maximum attenuation requirement but minimized the thermal conductance. Several dozen part numbers were 
+compared for each of the four antennas to minimize the thermal conductance for a given run length. The result was a 
+57% reduction in the expected heat leak during nighttime for the coaxial cab les compared to copper coaxial cables. 
+All SAPP harnessing will be blanketed to minimize heat loss from radiation. The SAPP harnessing in the cold 
+operational steady state case bridges the internal thermal zone at -30°C to the external thermal zones at approximately 
+-200°C making radiation heat loss significant if not mitigated. SAPP harnessing inside the IMLI will be wrapped with 
+6-layer MLI with aluminized Kapton outer layer. SAPP harnessing external to the IMLI will have the same stackup 
+with the external layer swapped f or Stamet. Harnessing that will be exposed to the HLS launch plume will have an 
+additional layer of NextelTM fabric for ballistic shielding. 
+ 
+ 
+Figure 7. SAPP block diagram. 
+ 
+ 
+RE D– Seismometer 
+GREE N – EGSE Harness
+YE LLOW – Solar array/CSS/
+BLUE  – Transponder/SSPA/ LNA
+Tree (CB9257)
+Clickbond (CB9257)
+TC105
+
+--- page 7 ---
+7 
+International Conference on Environmental Systems 
+ 
+ 
+D. Heat Switch and Radiator 
+The heat switch is a reverse differential coefficient of thermal expansion device that connects or disconnects two 
+aluminum plates. Above the switching temperature at 0°C, the plates are pressed together and heat flows at  
+approximately 5 W/°C. Below the switching temperature, the plates are separated, and the primary heat flow path is 
+through the ULTEM housing to the INVAR 36 internal rod. This torturous path has a conductance below 0.002 W/°C1. 
+A heater is mounted to the ULTEM 1000 housing to allow active control of the heat switch actuation. Without the 
+heater, the bus temperature rises to +30°C before the heat switch closes. This effect is caused by the radiator lowering 
+the average temperature of the heat switch when the aluminum plates are not in contact.  The result is that the bus 
+temperature can be well above the heat switch switching temperature without the plates contacting.  With the heater, 
+the heat switch can be enabled at dawn when the bus temperature is much colder so that the LEMS -A3 bus has more 
+thermal energy storage capacity before the radio temperature limits are reached . 
+ 
+ 
+Figure 8. (left) heat switch cross section. (center) photo of assembled heat switch. Courtesy Dave Bugby and 
+JPL. (right) thermal model of heat switch and radiator assembly. 
+E. Solar Array Radiator 
+Power generation is achieved with a flexible solar array mounted to the sun -facing side of the LEMS-A3 
+superstructure. The solar array was selected to avoid cover glass which is an astronaut safety hazard and to reduce 
+mass. Given the solar array is body-mounted, additional area was added to the sun-facing side to radiate heat and cool 
+the array to improve power generation efficiency. The cells  as seen in Figure 9 are spaced out so that each cell has a 
+border radiator equal in size to that cell. Since the array is solar cells sandwiched between polyimide sheets, a graphite 
+sheet is laminated to the back of the solar array to spread heat from the solar cells to the cell radiators. 
+ 
+ 
+Figure 9. Solar Array Thermal Design 
+ 
+Htr Htr
+T
+T
+ 
+Radiator Border Solar CellRadiator Area
+--- page 8 ---
+8 
+International Conference on Environmental Systems 
+ 
+ 
+III. Thermal Analysis Assumptions 
+The thermal analysis was completed in the geometric and math model developed in ANSYS Thermal Desktop  
+seen in Figure 10 . It includes all flight hardware in the surface deployed configuration except for the seismometer  
+sondes which are deployed in the subsurface in an independent thermal model. The seismometer  sondes and the bus 
+are sufficiently thermally isolated such that independent modeling is adequate.  
+ 
+ 
+Figure 10. Thermal Desktop model. 
+ 
+The LEMS -A3 system is being developed in parallel with the Artemis mission architecture and Concept of 
+Operations so some details, specifically site selection, and their associated requirements have yet to be defined. The 
+proposed landing regions encompass  approximately 8000 km2 of varying terrain  (Figure 11). The specifics of the 
+deployment site like latitude, elevation, surface inclination, near -field terrain, and far-field terrain are design drivers 
+for the LEMS -A3 TCS. To encompass the possible worst case cold and hot thermal environments, a survey of the 
+proposed landing regions was conducted using the LRO Lunar Quick Map. The survey was constrained by site 
+requirements for the HLS since the landing vehicle will take preference over the instrument. These analysis 
+assumptions are condensed into Table 1. 
+ 
+ 
+Figure 11. (left) Artemis 3 candidate landing regions. (right) Mons Mouton Plateau summer max temperature 
+map. (LRO Lunar QuickMap) 
+ 
+ 
+Solar array
+Antennae
+Bus radiator
+Battery
+LL Thermal Leg
+LL Mechanical post
+IRIS Radio
+Avionics Box
+EPS
+Course Sun Sensor 
+(CSS x 2)
+Seismometer Stow Assembly
+(SSA)
+ 
+5 10 20 Kilometers
+ 70K 320K
+--- page 9 ---
+9 
+International Conference on Environmental Systems 
+ 
+ 
+Table 1. Thermal analysis assumptions. 
+Case Name 
+Steady 
+State Cold 
+Op 
+Steady 
+State Hot 
+Op 
+Transient 
+Cold Op 
+Transient Hot 
+Op 
+Power State Op Mode 3 3 See Figure 12 See Figure 12 Biasing CBE MEV 
+Coatings BOL/EOL Biasing BOL EOL + dust BOL EOL + dust 
+Environment 
+Local Lunar Time 5:30 12:00 One Lunation One Lunation 
+Solar Heat Flux 1310 1426 1310 1426 
+Lunar IR Emissivity 0.95 0.98 0.95 0.98 
+Lunar Albedo N/A 0.47 0.53 0.47 
+Spacecraft 
+Attitude 
+Latitude 90 83.5 90 83.5 
+Moon Aberration 0 1.543 0 1.543 
+Surface Inclination 0.0 10.0 0.0 10.0 
+Spacecraft Inclination 0.0 -5.0 -5.0 -5.0 
+Effective Spacecraft Beta Angle 0 13.053 0 13.053 
+Bus Radiator Terrain Derate1 100% 85% 100% 85% 
+ 
+Table 2. Bus power modes. 
+ Hibernation Monthly 3-hr 
+Comms 
+Battery 
+Charging 
+(Daytime) 
+Op Daily Data 
+Download 
+State Number 
+(For Figure 12) 3 6 10 12 (CBE) 
+11 (MEV) 
+Duration [min] Continuous 180 Continuous 10 min daily 
+Tabulation CBE MEV CBE MEV CBE MEV CBE MEV 
+Avionics 
+CDH OFF OFF 1.900 1.995 OFF OFF 1.900 1.995 
+HMS 0.419 0.548 0.419 0.548 0.419 0.548 0.419 0.548 
+HMSD 0.201 0.361 0.201 0.361 0.201 0.361 0.201 0.361 
+LVPC 0.230 0.306 0.705 0.805 0.230 0.306 0.705 0.805 
+SSC 0.140 0.147 0.140 0.147 0.140 0.147 0.140 0.147 
+Power 
+EPS 0.168 0.176 1.400 1.470 1.400 1.470 1.400 1.470 
+Battery 0.073 0.077 1.903 1.998 0.135 0.141 0.253 0.266 
+Comms 
+SSPA OFF OFF 12.700 13.335 OFF OFF OFF OFF 
+LNA OFF OFF 0.507 0.532 OFF OFF OFF OFF 
+Transponder OFF OFF 15.993 16.793 OFF OFF OFF OFF 
+Instrument 
+SEIS1 0.150 0.158 0.150 0.158 0.150 0.158 0.150 0.158 
+SEIS2 0.150 0.158 0.150 0.158 0.150 0.158 0.150 0.158 
+Internal Heat Subtotal 1.23 1.62 35.87 37.99 2.53 2.98 5.02 5.60 
+External Heat Subtotal 0.30 0.32 0.30 0.32 0.30 0.32 0.30 0.32 
+RF Transmitted 0.00 0.00 3.80 3.80 0.00 0.00 0.00 0.00 
+Total Power 1.53 1.94 39.97 42.33 2.83 3.31 5.32 5.92 
+--- page 10 ---
+10 
+International Conference on Environmental Systems 
+ 
+ 
+ The LEMS -A3 bus includes representative heat loads on all relevant components with Current Best Estimate 
+(CBE) values used for cold operational analysis and Maximum Expected Value (MEV) used for hot operational 
+analysis (Table 2). Between the cold and hot analysis the bus heat dissipation varies from 1.23 W to 3.31 W which is 
+a driver for the design of the thermal isolation systems and the need for the heat switch. During daily data downloads 
+the power is expected to spike as high as 5.92 W. The monthly three-hour communication transient with an MEV heat 
+dissipation inside the LEMS -A3 bus of 37.99 W is the driver for the hot case.  Figure 12 shows how the bus heat 
+dissipation is varied during transient analysis for a lunation. 
+ 
+ 
+Figure 12. Lunation transient heat load profile. 
+ 
+The properties of the lunar surface thermal environment are defined by the Cross-Program Design Specification 
+for Natural Environments Revision G 8 and Human Landing System Lunar Thermal Analysis Guidebook 6. The 
+environment properties are varied to create the worst case cold and hot environments relative to the operation of the 
+LEMS-A3. The temperature of the lunar surface is dominated by interactions with the sun rather than subsurface heat 
+flows so priority was given to matching surface temperatures over subsurface temperatures . 
+Eq. 1 details the calculation for the effective spacecraft beta angle ( 𝛽𝑆𝐶), where 𝜙 is the deployment latitude, 𝑎 is 
+the moons aberration, 𝜃𝑠𝑢𝑟𝑓𝑎𝑐𝑒 is the local surface inclination relative to the horizon , and 𝜃𝑆𝐶 is the s pacecraft 
+inclination relative to the horizon. 𝜃𝑠𝑢𝑟𝑓𝑎𝑐𝑒 +𝜃𝑆𝐶 will always be less than 5° because astronauts will level the LEMS-
+A3 bus using a bubble level. 
+ 𝛽𝑆𝐶 = (90°−𝜙)+𝑎 +𝜃𝑠𝑢𝑟𝑓𝑎𝑐𝑒 +𝜃𝑆𝐶  (1) 
+The thermal analysis is further biased by varying surface optical properties and thermophysical properties to their 
+minimum and maximum values  for a two-year mission. Thermophysical properties are taken from temperature -
+dependent curves for common cryogenic materials provided by the National Institute for Standards and Technology5. 
+The optical properties are provided by the Goddard Space Flight Center Coatings Branch based on heritage 
+performance and expected conditions in the South Pole region. These are detailed in Table 3. 
+
+--- page 11 ---
+11 
+International Conference on Environmental Systems 
+ 
+ 
+Lunar dust is an uncertain input to the performance of thermal control coatings. To address lunar dust, LEMS-A3 
+has implemented hardware solutions like dust covers for deployment and assumed a worst-case End-of-Life dust 
+accumulation for evaluating the impact on thermal control coatings. The dust covers protect critical surfaces like the 
+solar array and radiator during deployment in the event the astronauts drop LEMS -A3 in the regolith. Dust cover 
+removal is one of the last steps in the system deployment  to minimize dust kicked up by astronauts from settling on 
+surfaces. To address dust accumulation during the 2-yr mission, LEMS-A3 adopted the assumptions developed by the 
+VIPER mission which is 10% accumulation per year. Some of the dust is expected to fall on other dust particles so at 
+end-of-life, an accumulation of 19% is expected. To determine the effect on coatings, the worst-case optical properties 
+of dust particles is averaged with the coating property at End-of-Life.  In cases where the dust accumulation would 
+result in cooler optical properties compared to no dust accumulation, the former is assumed. This is  only seen for 
+infrared emissivity where the darker dust will cause the value to increase; therefore, only the solar absorptivity ( α) is 
+considered in Eq. 2. A value of 0.57 is assumed for dust solar absorptance as a worst-case assumption.  
+ 𝛼′ = 𝛼𝐸𝑂𝐿(0.81)+(0.57)(0.19) (2) 
+Table 3. Thermal optical coatings properties with End-of-Life, and lunar dust deratings. 
+Coating 
+BOL EOL EOL α Dust Obscuration 
+(α = 0.53) 
+α ε α/ε α ε α/ε % 
+Area α ε α/ε 
+5 mil Silver Teflon 0.08 0.79 0.10 0.2 0.75 0.27 19% 0.27 0.75 0.35 
+5 mil Aluminum Tape 0.18 0.09 2.00 0.22 0.02 11.00 No Change 
+Aluminum Anodize, Black 0.73 0.84 0.87 0.88 0.78 1.13 No Change 
+Aluminum Anodize, Clear 0.30 0.84 0.36 0.4 0.78 0.51 19% 0.43 0.78 0.55 
+Aluminum, Polished 0.12 0.05 2.40 0.16 0.03 5.33 No Change 
+Aluminum, Iridite 0.32 0.18 1.78 0.5 0.04 12.50 No Change 
+Tiodize™, Black 0.82 0.50 1.64 0.82 0.50 1.64 No Change 
+Invar 36 1.00 0.30 3.33 1.00 0.30 3.33 No Change 
+5 mil Kapton 0.51 0.74 0.69 0.51 0.74 0.69 No Change 
+Solar Array, Cells 0.683 0.85 0.80 0.90 0.79 1.14 19% 0.83 0.79 1.05 
+Solar Array, Radiator 0.16 0.85 0.19 0.22 0.75 0.29 19% 0.28 0.75 0.38 
+Aluminized Kapton 0.07 0.05 1.40 0.11 0.02 5.50 19% 0.19 0.02 9.70 
+Goldized Kapton 0.21 0.07 3.00 0.25 0.03 8.33 19% 0.31 0.07 4.37 
+Z93 White Coating 0.14 0.93 0.15 0.14 0.93 0.15 No Change 
+Z93C55 White Coating 0.11 0.94 0.12 0.30 0.88 0.34 19% 0.35 0.88 0.39 
+ULTEM 2300 1.00 0.50 2.00 1.00 0.50 2.00 No Change 
+ 
+IV. Thermal Analysis Results 
+The LEMS -A3 project  follows the GSFC-STD-7000b4 and the GSFC-STD-1000H5 standards for applying 
+temperature margin to components. Table 4 and Table 5 show margin meeting this standard  of greater than 5°C in 
+green. Predicts with less than 5°C of margin are shown in yellow except for components under active heater control 
+which require no margin on the minimum predict relative to limits. The one component with negative margin, the 
+solar array, is shown in red. It is expected that the operational limit of the solar array will be increased for qualification 
+testing to accommodate the prediction. The transient results have a slightly more benign thermal environment due to 
+thermal inertia of the LEMS-A3 bus and the lunar regolith. On the hot side the transient thermal analysis includes the 
+monthly, 3-hr communication session which results in higher maximum temperatures compared to steady state.  
+The steady -state predictions shown  in Table 4 are considered conservative relative to the transient pre dictions 
+shown in Table 5 because the st eady-state predi ctions do not consider thermal mass . For this reason, the heater 
+prediction from the cold op steady-state analysis are used for accounting the system heat leaks. However, the  hot op 
+steady-state case does not account for varying power modes like the 3-hr monthly comms, so the hot op transient case 
+is used for validating maximum temperatures are within limits. 
+--- page 12 ---
+12 
+International Conference on Environmental Systems 
+ 
+ 
+Table 4. Steady state thermal analysis predictions. 
+Description 
+Active 
+Heater 
+Control 
+Op Limits 
+[°C] 
+Cold Op Steady 
+State 
+Hot Op Steady 
+State 
+Predict Margin Predict Margin 
+Min Max [°C] Min [°C] Max 
+Avionics, PROC x -35 60 -24.8 10.2 35.2 24.8 
+Avionics, HMS x -35 60 -24 11 36.3 23.7 
+Avionics, HMS-D x -35 60 -24.4 10.6 35.9 24.1 
+Avionics, LVPC x -35 60 -24.6 10.4 35.4 24.6 
+Avionics, Special Services x -35 60 -24.4 10.6 35.6 24.4 
+Battery x -35 50 -27.2 7.8 31.4 18.6 
+LGA RX  -210 70 -189.9 20.1 34 36 
+LGA TX  -210 70 -190.1 19.9 36.9 33.1 
+IRIS LNA x -30 60 -27.6 2.4 29 31 
+MGA 1  -210 70 -189.5 20.5 17.9 52.1 
+MGA 2  -210 70 -189.4 20.6 17 53 
+IRIS SSPA x -30 60 -27.5 2.5 29 31 
+IRIS Transponder x -30 60 -27.3 2.7 30.4 29.6 
+EPS x -30 60 -27 3.0 32.5 27.5 
+CSS 1  -200 80 -189.2 10.8 31.9 48.1 
+CSS 2  -200 80 -190.7 9.3 47.6 32.4 
+Bus Radiator  No Limit -115.9 - 13.1 - 
+Bus Heat Switch  -200 50 -27.7 -172.3 27.2 23.8 
+Solar Array  -200 110 -199.5 0.5 115.6 -5.6 
+Regolith Surface, Sun side  No Limit -198.5 - 105.6 - 
+Regolith Surface, Natural  No Limit -202.7 - 28.9 - 
+ 
+ Figure 13 shows the transient plot of the hot op transient statistics seen in Table 5. The changing power modes of 
+the LEMS-A3 bus can be seen in the temperat ure spikes on the pl ot. The small spikes of approximately 5°C in the 
+avionics box are the daily data downloads (Power Modes 11/12). The large transient spike a few days into daytime is 
+the monthly 3-hr communications session (Power Mode 6) which results in a large temperature spike. Also notice the 
+points at which the heat switch heater controller enables or di sables. There is a delay between the h eater switching 
+state and the heat switch opening or closing due to thermal inertia of the system. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- page 13 ---
+13 
+International Conference on Environmental Systems 
+ 
+ 
+Table 5. Transient thermal analysis predictions. 
+Description 
+Active 
+Heater 
+Control 
+Op Limits Cold Op Transient Hot Op Transient 
+[°C] Predict [°C] Margin Predict [°C] Margin 
+Min Max Min Max Min Min Max Max 
+Avionics, PROC x -35 60 -26.0 23.1 9.0 -23.8 44.4 15.6 
+Avionics, HMS x -35 60 -25.2 20.7 9.8 -23.2 42.2 17.8 
+Avionics, HMS-D x -35 60 -25.6 20.4 9.4 -23.5 41.8 18.2 
+Avionics, LVPC x -35 60 -25.8 21.3 9.2 -23.7 42.6 17.4 
+Avionics, Special 
+Services x -35 60 -25.6 20.1 9.4 -23.4 41.5 18.5 
+Battery x -35 50 -28.8 12.5 6.2 -26.3 34.7 15.3 
+LGA RX   -210 70 -188.9 -107.9 21.1 -188.8 19 51.0 
+LGA TX   -210 70 -189.0 -99.8 21.0 -189 21.2 48.8 
+IRIS LNA x -30 60 -29.4 29.3 0.6 -27.2 51.5 8.5 
+MGA 1   -210 70 -188.5 -124.9 21.5 -188.5 3.6 66.4 
+MGA 2   -210 70 -188.4 -130.8 21.6 -188.3 4.3 65.7 
+IRIS SSPA x -30 60 -29.2 35.3 0.8 -27 57.4 2.6 
+IRIS Transponder x -30 60 -28.8 32.4 1.2 -26.5 54.3 5.7 
+EPS x -30 60 -28.5 29.0 1.5 -26.2 50.8 9.2 
+CSS 1   -200 80 -188.1 -128.8 11.9 -188.1 22.7 57.3 
+CSS 2   -200 80 -189.6 -77.7 10.4 -189.5 29.6 50.4 
+Bus Radiator   No Limit -129.4 3.2 - -119.8 28.7 - 
+Bus Heat Switch   -200 50 -29.2 26.0 170.8 -27 48.3 2.7 
+Solar Array   -200 110 -198.6 -163.2 1.4 -199 107.2 2.8 
+Regolith Surface, Sun 
+side   No Limit -197.9 -194.2 - -197.6 79.2 - 
+Regolith Surface, 
+Natural   No Limit -204.6 -204.5 - -202.7 -57.8 - 
+ 
+--- page 14 ---
+14 
+International Conference on Environmental Systems 
+ 
+ 
+ 
+Figure 13. Transient Hot Operational Transient Results for Internal Components 
+ 
+The cold operational steady state heat flow results presented in Figure 14 show that the LEMS -A3 bus meets its 
+battery energy allocation with 15% margin. This table does not include energy stored in thermal mass which is 
+estimated to be 3.7 Wh/°C. The thermal mass is not considered since the temperature change between nighttime and 
+daytime operation can be as little as 10°C. If needed, the on-board, software-controlled heaters can be used to preheat 
+the bus prior to night.  
+ 
+ 
+Figure 14. LEMS-A3 Bus Heat Loss during Cold Operational Steady State 
+ 
+Launch Lock
+-0.353
+-23%
+IMLI
+-0.303
+-20%
+SAPP
+-0.398
+26%
+Heat Switch
+-0.474
+-31%
+Total
+Heat Loss
+-1.528 W
+Heat 
+Balance
+[W]
+Description
+-0.353Launch Lock
+-0.303IMLI
+-0.398Signal and Power Passthrough
+-0.474Heat Switch
+-1.528Total Heat Loss
+1.231Internal Electronics CBE Heat
+0.297Heater Power
+1.528Total Bus Internal Electronics Power
+541Thermal Energy Balance (354 hr) [Wh]
+640Allocated Battery Energy [ Wh]
+99 (15%)Battery Thermal Energy Margin [ Wh]
+17.7Time to Exceedance [days]
+--- page 15 ---
+15 
+International Conference on Environmental Systems 
+ 
+ 
+V. Conclusion 
+The LEMS-A3 bus thermal architecture has been developed for flight to the level of maturity appropriate for a 
+critical design review. Temperature, heat leak, and heater predictions have been generated assuming worst case cold 
+and hot parameters in a repres entative environment on the lunar surface. An exceedance in the solar arrays has been 
+identified and a path forward for resolution has been developed to reduce the maximum expected temperature.  
+The LEMS-A3 bus thermal architecture has been improved since the TRL -6 development effort. The nighttime 
+heat leak as analyzed at missions CDR was determined to be 1.528 W for 354 hr or 541 Wh. Compared to the TRL-6 
+effort which measured the heat leak at 3.98 W, the TCS heat leak was reduced  2.452 W or 61%. The CDR heat leak 
+shows 15% margin. Should this margin hold, the additional capacity would allow the LEMS -A3 bus TCS to stay 
+within its battery energy allocation for 425 hours, an additional 65 hours beyond the mission life. 
+Acknowledgments 
+The efforts of the LEMS engineering and science teams are acknowledged for their tireless work in bringing this 
+mission design to fruition in such a short time. This quality of science instrumentation has been made possible by the 
+collaboration of the team members and their attention to detail.  
+Lunar QuickMap (https://lunar.quickmap.io), a collaboration between NASA, Arizona State University & Applied 
+Coherent Technology Corp, is acknowledged for the use of its imagery. 
+ 
+References 
+1Birmingham, W., Schunk, G., & Evans, B. (2024). Lunar Latitude And Terrain Radiator Sensitivity Study. Thermal 
+and Fluids Analysis Workshop.  Cleveland. Retrieved from https://tfaws.nasa.gov/wp -
+content/uploads/TFAWS2024-PT-25-Paper.pdf 
+2Bugby, D., & Rivera, J. (2020). High Performance Thermal Switch for Lunar and Planetary Surface Extreme 
+Environments. Online: Texas Tech University Libraries. Retrieved from https://hdl.handle.net/2346/86389  
+3Burbridge, E., Benna, M., & Hamann, M. (2023). Lunar Environment Monitoring Station TRL -6 Thermal. 
+International Conference on Environmental Systems.  Calgary, CA: Texas Tech University Libraries. 
+Retrieved from https://hdl.handle.net/2346/94722 
+4(2023). GSFC-STD-1000H, Goddard Space Flight Center Rules for the Design, Development, Verification, and 
+Operation of Flight. National Aeronautics and Space Administration, Goddard Space Flight Center. NASA 
+Technical Standards System. 
+5(2021). GSFC-STD-7000b, General Environmental Verification Standard (GEVS) for GSFC Flight Programs and 
+Projects. National Aeronautics and Space Administration, Goddard Space Flight Center. NASA Technical 
+Standards System. 
+6Hamill, B. D., Schunk, R. G., & Erickson, L. R. (2021). Human Landing System Lunar Thermal Analysis Guidebook. 
+National Aeronautics and Space Administration. NASA Technical Reports Server.  
+7P.E., B., R., R., & M.A., L. (2006). Cryogenic Material Properties Database. ICMC '06 Twenty First International 
+Cryogenic Engineering Conference and 9th Cryogenics (pp. 13-21). Prague, CZ: Icaris Ltd. 
+8Roberts, B. (2019). Cross-Program Design Specification for Natural Environments, Rev. G.  National Aeronautics 
+and Space Administration, Marshall Space Flight Center. Alabama, United States: NASA Technical Reports 
+Server. 
+ 

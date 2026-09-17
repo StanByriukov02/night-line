@@ -1,0 +1,2100 @@
+           LuSEE-Night Conceptual Design Report
+
+
+
+
+                                   PD-1 Review Release
+                                       Version: 1.1
+                                       July 21, 2023
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)       1
+C ONTENTS
+1 Science                                                                                        6
+  1.1 Dark Ages Cosmology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+  1.2 Radio Sky at 1-50MHz . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+  1.3 LuSEE-Night Science Goals . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+2 Instrument                                                                                           11
+  2.1 Design Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      11
+  2.2 Overall System Specification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     13
+       2.2.1 Key Performance Parameters . . . . . . . . . . . . . . . . . . . . . . . . . . . .        13
+       2.2.2 Verification . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    13
+  2.3 Design Tradeoffs and Preliminary Performance Estimate . . . . . . . . . . . . . . . .            14
+       2.3.1 Instrument Sensitivity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      14
+       2.3.2 Coupling efficiency of an ideal dipole and high-impedance amplifier . . . . .             15
+       2.3.3 Design tradeoffs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      15
+       2.3.4 Preliminary sensitivity analysis . . . . . . . . . . . . . . . . . . . . . . . . . .      16
+
+3 Subsystems description                                                                               19
+  3.1 Actuated Antennas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      19
+      3.1.1 Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       19
+      3.1.2 Antenna . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      19
+      3.1.3 Motorized Stage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        21
+      3.1.4 Integration and Testing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        21
+  3.2 Spectrometer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     21
+      3.2.1 Description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      21
+      3.2.2 Analog section . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       22
+      3.2.3 Digital section . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      25
+      3.2.4 Monitoring and Telemetry . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         26
+      3.2.5 Interfaces and Operating Modes . . . . . . . . . . . . . . . . . . . . . . . . . .         26
+      3.2.6 Component selection and qualification . . . . . . . . . . . . . . . . . . . . . .          26
+  3.3 Mechanical & Thermal Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        27
+      3.3.1 Inner Equipment Assembly Mechanical Structure . . . . . . . . . . . . . . . .              27
+      3.3.2 Main Electronics Crate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       27
+      3.3.3 Main Electronics Crate Thermal Design . . . . . . . . . . . . . . . . . . . . . .          30
+      3.3.4 Preamplifier Box Thermal Design . . . . . . . . . . . . . . . . . . . . . . . . .          34
+      3.3.5 Shipping Container . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       35
+  3.4 Power Delivery . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     35
+  3.5 Communication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      37
+  3.6 Calibrator . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   39
+
+4 Assembly, Integration & Testing                                                                      41
+
+5 Concept of Operations                                                                                42
+  5.1 LuSEE Commissioning on the lunar surface . . . . . . . . . . . . . . . . . . . . . . .           42
+  5.2 Deployments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      43
+  5.3 Early Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     43
+  5.4 Transition to Science Operations . . . . . . . . . . . . . . . . . . . . . . . . . . . . .       44
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                     2
+   5.5 Science Operations during lunar night . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+   5.6 Science Operations during lunar day . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                               3
+E XECUTIVE S UMMARY
+LuSEE-Night is a project to investigate the feasibility of measuring the fundamental physics processes
+occurring during the cosmic Dark Ages using instrumentation on the lunar surface. The "Dark
+Ages" refers to the cosmic era between the last scattering of the cosmic microwave background
+and the time when the first stars and galaxies formed. Only cold, non-luminous hydrogen gas
+existed during this epoch, and so it has been largely unexplored and remains one of the least
+constrained frontiers of modern cosmology. The community has therefore shown increasing interest
+in developing an experimental Dark Ages program based on observations of the hyperfine 21-cm
+transition of neutral hydrogen, seen against the backlight of the CMB. The global (sky-averaged)
+spectrum of the redshifted 21cm line is sensitive to the temperature and ionization state of the
+hydrogen gas and provides a tomographic probe of the thermal history of the early universe, possibly
+including signatures of new physics beyond the standard model. The recent National Academies
+ASTRO2020 Panel on Cosmology rated this technique as "...both the discovery area for the next
+decade and the likely future technique for measuring the initial conditions of the universe in the
+decades to follow" ([1], p.258).
+   This document describes a design for a detector that will establish the feasibility of measuring
+the 21-cm absorption trough in the CMB global spectrum predicted to lie in the highly redshifted
+frequency range between 4 and 40 MHz. Because of strong terrestrial RFI and ionospheric distortions,
+this signal cannot be observed from the Earth or from Earth orbit. The detector will therefore be
+stationed on the lunar surface, on the radio-quiet far side facing away from Earth. To avoid
+interference from solar RF emissions, observation will take place during the lunar night.
+    The LuSEE-Night instrument is a radio frequency spectrometer consisting of a set of antennas,
+analog and digital signal processing electronics, and the necessary mechanical, thermal, commu-
+nications, and power delivery hardware to support reliable operation on the lunar surface. Four
+horizontal monopole antennas are arranged to produce wide, zenith-directed beams. As the Moon
+rotates, the instrument’s wide field of view traverses a path covering much of the sky, providing
+coarse angular resolution. The combination of polarization, spectral, and angular information will
+provide for offline deconvolution to separate the cosmological signal from much stronger foreground
+components. Together, the antenna and preamplifier electronics are designed to be sky-noise limited
+over the 1 - 50 MHz band. Each antenna’s output is processed by a signal chain having analog
+amplification and filtering, and Nyquist-rate digitization. The four channels of digitized data are fed
+to an FPGA-based "software-defined radio" signal processor that computes auto- and cross-correlation
+spectra and stores data in nonvolatile memory. Since LuSEE-Night will never be in view of the Earth,
+the data will be sent back to the science operations center via periodic contact with an orbiting relay
+satellite (not part of the LuSEE-Night project).
+   The design of the LuSEE-Night instrument leverages space-proven technology developed for
+NASA’s STEREO/WAVES [2] and Parker Solar Probe/FIELDS [3] missions. These experiments
+included antennas and spectrometers similar to those needed for this project. To reduce risk and
+facilitate a highly compressed development schedule, we will adapt the antenna, spectrometer, and
+power conditioning elements of these predecessor experiments for LuSEE-Night.
+   For LuSEE-Night to survive on the lunar surface, detailed attention is paid to thermal management.
+The length of the lunar cycle (29.5 Earth days) and its lack of atmosphere results in extreme surface
+temperature swings – from 95K at lunar midnight to +390K at lunar noon. The instrument enclosure
+thus needs both a heat rejection path during the day and a tightly thermally isolated envelope at
+night. NASA partners will be responsible for these elements of LuSEE-Night. Radiation levels are
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                   4
+non-negligible and COTS electronics will be selected from qualified manufacturers or by upscreening
+COTS parts. Since radioisotope-based generators will not be permitted, LuSEE-Night will be powered
+by a battery array for the periods of nighttime observing, which will recharge from a photovoltaic
+array during each succeeding lunar day.
+   LuSEE-Night additionally includes a digital calibration source in orbit around the moon. The
+digital calibrator source emits a known coded broadband signal that can be detected in cross-
+correlation even when buried in the bright emissions from the Milky Way galaxy and enables
+precision understanding of the beam pattern and its chromaticity.
+    The LuSEE-Night instrument consists of elements provided by two DOE labs (Brookhaven
+and Lawrence Berkeley) and NASA’s Space Sciences Laboratory at UC Berkeley. Once assembled
+and tested, it will be flown to the Moon as a payload element of NASA’s Commercial Lunar
+Payload Services CS3 mission, scheduled for launch in early 2025. Upon successful landing and
+commissioning, LuSEE-Night will begin operations and expects to deliver about 6 GB of science and
+telemetry data every lunar cycle, for up to 24 cycles depending on equipment survival.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                               5
+1 S CIENCE
+1.1 D ARK A GES C OSMOLOGY
+The Cosmic Microwave Background is the main pillar of modern observational cosmology. This is
+radiation released some 400 thousand years after the Big Bang, when the primordial cosmic plasma
+made of mostly hydrogen and helium atoms immersed in the sea of photons and electrons cools
+to the temperature at which photons and matter decouple: matter forms neutral hydrogen atoms
+and light begins to propagate freely through the universe. This same radiation, redshifted to mm
+wavelengths, is observed today as the CMB. The large distance lever arm of the CMB, and our ability
+to model the physics using easily solvable linear equations, makes it a truly unique probe, upon
+which most of the other cosmological probes build upon.
+    The hundred million years following the formation of the CMB, corresponding to redshifts
+between z ∼ 1100 and z ∼ 30, are referred to as the Dark Ages. This is the epoch after the primeval
+fireball has cooled down, but before the first stars lit up. At these redshifts, cosmological density
+fluctuations can be directly probed with the 21 cm line whose physics is completely described by
+well-understood processes governed by gravity, atomic physics, and thermodynamics [4]. Once
+the first stars begin to form at z ∼ 30, their emitted radiation alters the neutral hydrogen in the
+intergalactic medium, which depends on complex non-linear astrophysics, and disallows the first-
+principles understanding present at previous times. Therefore, the Dark Ages present an incredible
+opportunity in terms of precision cosmology, essentially free of astrophysical complexity. However,
+precisely for the same reason, this epoch is not amenable to the traditional surveys used to probe the
+evolved Universe, which use galaxies or other objects to trace the underlying distribution of matter.
+    Redshifted 21-cm emission and absorption from neutral hydrogen is the single known method
+that allows, at least in principle, observations of this period in the evolution of the Universe. This
+emission corresponds to the energy difference between the spins of the electron and proton that
+are aligned or not aligned in a hydrogen atom. There is no other line in its vicinity and hence
+it is not easily confused with electromagnetic interaction by other species. The theory of 21 cm
+emission from the Dark Ages is very well understood: fluctuations in 21 cm emission are sourced by
+density, temperature and velocity perturbations, which we can calculate from first principles at those
+redshifts. This has been recognized decades ago [5], but the practicalities are daunting, starting with
+the fact that the signal is redshifted outside the windows of atmospheric transparency that would
+allow observations from the Earth’s surface. This measurement would, however, provide the holy
+grail of cosmology, as it probes the same linear physics as CMB experiments, while mapping more
+three-dimensional Fourier modes of the density field than available in large-scale redshift surveys.
+This signal has the potential to enable the ultimate sensitivity to the cosmological parameters,
+including those from early-universe inflation and primordial gravitational waves. However, we
+have to recognize that this is the end-game that will take decades to develop, should it even prove
+technically possible.
+    Another analogy with the CMB is appropriate. The CMB monopole signal (i.e. the CMB itself) was
+discovered in 1964 by Arno Penzias and Robert Woodrow Wilson for which they received the Nobel
+Prize in 1978. This discovery was extremely informative and has established the Big Bang theory as
+the leading cosmological theory. It took another 26 years for the COBE Satellite to measure spatial
+fluctuations in the CMB, for which George Smoot received the Nobel Prize in 2006. It is notable
+that George Smoot was an employee of the Lawrence Berkeley National Laboratory, illustrating the
+great science that can be achieved when DOE and NASA collaborate. The discovery of fluctuations
+and their subsequent characterization with the WMAP and Planck missions cemented the CMB as
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                   6
+Figure 1.1: The predicted 21 cm monopole intensity through cosmic times (plot from [6] in turn
+            adapted from [7]). The lunar farside is the best site to attempt to measure the Dark Ages
+            dip, at around ν ∼ 20 MHz or equivalently redshift z ∼ 80.
+
+
+the cornerstone of cosmological observations. A similar timeline could play out with the Dark Ages
+21-cm signal. A detection of the monopole is feasible over the next decade and it would take several
+decades to work our way towards detection of fluctuations. This would be the arc of a long-term
+science roadmap towards a new and truly transformational tool for cosmology.
+    The first stage in the program is the detection of the Dark Ages monopole. Shown in Figure 1.1,
+this signal is a small dip in the observed radiation intensity as a function of frequency integrated
+over the entire celestial sphere. It will be detected by measuring a broad absorption trough centered
+at around 20 MHz. Because the physics is linear and well-understood, we have a prediction for the
+size and shape of this effect. Any deviation from this template would have immediate and profound
+implications for fundamental physics. Because there are no astrophysical uncertainties, it would
+necessarily imply new physics once the possible sources of systematics have been ruled out. The
+most plausible way of changing the shape and amplitude of this trough is through heating and
+cooling of the cosmic medium through non-standard processes. Therefore, the Dark Ages dip in
+the monopole of radiation is the cosmic calorimeter that can measure the net energy flows in
+the baryon fluid. A large number of theoretical proposals exist which can cause deviations from
+the simplest predictions [8], including dark matter-baryon scattering [9, 10, 11, 12], millicharged
+dark matter [13, 14], dark-matter annihilation [15, 16], primordial black holes [17], axions [18],
+neutrino decay, charge sequestration [19], quark nuggets, dark photons [20], interacting dark
+energy [21] and even a drift in the value of the fundamental constants [22].1 . These are all topics
+of high interest to the DOE HEP community and can be probed from the lunar surface within the
+next decade independently of astrophysics. Detection of the monopole would require setting up
+a low-resolution and high-efficiency radio telescope either stationary on the far side of the Moon
+or in orbit around the Moon.2 Similar to the evolution of the CMB, the path towards detection of
+the fluctuations would involve working over several decades with radio telescopes of increasing
+size and complexity on the lunar farside. These instruments will require significant infrastructural
+development on the Moon, including the provision of power and significant bandwidth. With such a
+futuristic apparatus, we can hope to detect fluctuations across the sky and thus open a new era of
+observational cosmology a few decades from now.
+
+ 1
+     See Astro2020 Decadal Survey Submission [8].
+ 2
+     A detection of the monopole at 78 MHz, arising from the era of the first stars rather than the Dark Ages, has recently
+      been claimed by an Earth-bound experiment [23], demonstrating the feasibility of such detections with current
+      technology.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                                       7
+                                        104
+                                        103
+                                        102
+      Pm (k) [(Mpc/h) 3 ]
+
+                                        101
+                                                                Planck 2015 TT
+                                        100                     Planck 2015 EE
+                                        10-1                    Planck 2018
+                                                                DES Y1 cosmic shear
+                                        10-2                    SDSS DR7 LRG
+                                        10-3                    BOSS DR9 Ly- forest
+     (k Mpc) 1.2 ∆Pm (k) [(Mpc/h) 3 ]
+
+
+
+
+                                                                Future Lunar Experiment
+                                        10-4
+                                         50
+                                          0
+                                         50
+                                          10-4   10-3   10-2             10-1             100   101
+                                                               Wavenumber k [h/Mpc]
+
+
+Figure 1.2: Figure demonstrating the current state of the inference on the linear power spectrum
+            and a possible reach of the Future Lunar experiment. Adapted from https://github.
+            com/marius311/mpk_compilation/.
+
+
+   As a general probe, a Dark Ages Lunar experiment would be able to probe primordial fluctuations
+deep into what were linear scales at the time, but which are deep in the non-linear regime today and
+whose information has been largely lost. This is illustrated in Figure 1.2 which shows how this probe
+would be transformation both in terms of scales that are probed as well as raw sensitivity. For more
+information see the science described in the Snowmass paper [24] – while that paper is focused
+on more near term probes, a Dark Ages experiment would perform much of the same science with
+orders of magnitude more sensitivity.
+
+
+1.2 R ADIO S KY AT 1-50MH Z
+Following the visionary path set up in the previous section will require a decade long program of
+investment. To enable sound investment, we need to start with a modest experiment that tests the
+basic assumptions about the observability of the signal. There are three main issues that make this
+effort challenging:
+   • Earth’s Ionosphere and RFI. The ionosphere severely limits our ability to observe the low-
+     frequency sky from the ground, by modulating signals in frequency as a function of time of
+     arrival that renders any precision observations impossible from the Earth. This motivates
+     observations from the Moon or deep space. Additionally, other sources of low-frequency
+     emission from the Earth, including both man-made (radio emissions as well as sparking
+     in electrical and mechanical devices, and similar sources) and meteorological means that
+     observations from the Moon are best made from its far side.
+   • Foregrounds. Other astrophysical sources of radio emission produce signals which are orders
+     of magnitude stronger. These signals can be distinguished from the signal of interest by
+     their frequency and spatial response differences; however any instrumental leakage from the
+     foreground modes into the signal region through imperfect calibration needs to be understood
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                    8
+Figure 1.3: Figure demonstrating the radio quietness of the far side of the lunar surface as measured
+            by the RAE-2 experiment [25]. "Immersion" and "Emersion" correspond to the satellite
+            orbiting to behind the Moon where it is shielded from solar and Earth’s emission.
+
+
+      at the parts-per-million (ppm) level. This requires exquisite calibration, which is particularly
+      difficult from the lunar surface, given our limited control over the observatory. In addition to
+      the very loud galactic emission, the Sun and planets are also loud emitters, whose emission
+      however is characterized by time and frequency variability.
+   • Low frequencies. The radio emission at the frequencies of interest has very long wavelengths
+     that require physically large devices. The wavelength at 10 MHz corresponds to 30m radiation
+     and natural antennas for observations would need to be appropriately sized. Therefore we are
+     mostly working in the short antenna limits with corresponding hits on the antenna sensitivity.
+   The long term goal is to develop technology that will allow us to make high-precision and
+high-sensitivity observations from the far side of the moon. This is currently an almost entirely
+unexplored territory.
+   The most relevant radio astronomy observations to date were done by the RAE-2 satellite [25],
+[26], and ground-based measurements by Cane et al. [27]. In Figure 1.3 we show the result from
+RAE-2 that confirms the expectation that terrestrial RFI in this frequency range is strongly attenuated
+when the view towards Earth is blocked by the Moon. These early studies also provided models of
+the galactic foreground spectra, shown in Fig. 1.4.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                   9
+                      10 19                                     Novaco-Brown 1978
+                                                                Cane 1979
+                      10 20
+
+                      10 21
+         W/m2/Hz/sr
+
+
+
+                      10 22
+
+                      10 23
+
+                      10 24
+
+                      10 25
+                              10 1      100                   101             102
+                                              frequency MHz
+Figure 1.4: Galactic foreground emission (from [26] [27]). The LuSEE-Night frequency range is
+            shown shaded.
+
+
+1.3 L U SEE-N IGHT S CIENCE G OALS
+The primary goals of LuSEE-Night are to:
+   • Establish the Lunar surface as a viable observatory for low-frequency radio astronomy.
+     There are multiple unknowns regarding observations from the lunar surface. These include
+     the effects of the regolith, constancy of electromagnetic shielding in the presence of magnetic
+     fields, and unknown level of transient phenomena associated with micrometeoritic impacts as
+     well as lunar plasma effects.
+   • Perform the most sensitive observations of the radio sky at 1-50MHz. This frequency
+     regime is motivated by the fact that any observations around the target frequency of ∼17 MHz
+     will require sufficient lever arm on both sides of the dark ages dip to enable separating the dip
+     from the broadband emission. We aim to make measurements with absolute flux calibration
+     better than 20% across our frequency range.
+   • Quantify the systematic effects affecting global spectrum measurement accuracy, and
+     investigate methods to mitigate them. We will develop models, test procedures and analysis
+     methods to extract the frequency dependence of the antenna beam pattern and signal chain
+     gain, both pre-flight and during operation.
+   • Constrain the presence of a non-smooth monopole component at the 10−3 level compared
+     to foregrounds. This is about 3 order of magnitude below the required sensitivity to measure
+     the Dark Ages dip, but will nevertheless be the strongest constraint to date, paving the road
+     for more sensitive future experimental designs.
+   The system presented in the subsequent sections will have sufficient sensitivity and systematics
+control to achieve these science goals.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                 10
+2 I NSTRUMENT
+2.1 D ESIGN O VERVIEW
+The LuSEE-Night instrument is a radio frequency spectrometer consisting of a set of antennas, signal
+processing electronics, power and thermal management hardware, and a communications link for
+control and data transfer (Fig. 2.1). An orbiting calibration source is planned. The instrument
+payload will be developed by DOE and NASA partner organizations and delivered to a Commercial
+Lunar Payload Services (CLPS) provider for integration with a lander and transport to the lunar far
+side. Radio observations will take place primarily during the lunar night when strong solar emissions
+are blocked. Data acquired during night observations will be stored to nonvolatile memory and
+transmitted (via a relay satellite, see Section 3.5) to the mission operations center during the lunar
+day. We plan for a minimum mission duration of one full lunation (approximately 325 hours of night
+observing).
+
+
+
+
+                                               LuSEE-Night Payload
+      orbiting
+      calibrator
+                                                        DAQ +          signal     comm
+                                               FEE
+                                                        control        proc.        s
+                                                                                                             Science/Mission
+                                                                                                                Ops Center
+                                                       L-N           L-N
+                                                      PWR          THERMAL
+
+
+
+                                                     LuSEE-Night Lander
+       Mission constraints:                Surface Environment:                       Operations:
+       •   Power (night)    14W            •    Day/night cycle   29 Earth days       •   Lander shuts down
+       •   Power (day)      100W           •    Temperature       -160 to + 130C      •   Lunar night: L-N observes; data
+       •   Mass (total)     100kg          •    dT/dt             150C/hr                 stored to NV memory
+       •   Mass (battery)   50kg           •    Vacuum            2x10-12 torr        •   Lunar day: L-N charges battery,
+       •   Data to Earth    6GB/lunation   •    Radiation         ~250X terrestrial       moves antennas, and transmits data
+                                                                  ~2.5X LEO               via relay sat
+
+
+
+
+Figure 2.1: LuSEE-Night instrument: conceptual block diagram, constraints, and operations concept.
+
+   Designing the instrument to deliver the key performance goals of LuSEE-Night means that three
+significant challenges must be addressed:
+   • Surviving the thermal and radiation environment. The tidal locking of the Moon’s rotation
+     to the Earth and its lack of atmosphere result in extreme excursions of the surface temperature
+     from night to day. To prevent overheating or overcooling of the electronics, LuSEE-Night needs
+     special thermal accommodations. Radiation levels are several times higher than those in low
+     Earth orbit, and components must be sourced from qualified parts lists or qualified by the
+     project.
+   • Powering during periods of darkness. With CLPS prohibitions on radioisotope thermal
+     generators (RTGs), the only source of nighttime power will be batteries that are charged
+     during the lunar day by a photovoltaic array. Battery mass constraints thus limit the allowable
+     power consumption of the spectrometer.
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                                             11
+   • Self-generated radio frequency interference (RFI). LuSEE-Night’s spectrometer will be
+     designed to be sensitive to extremely low levels of radiofrequency power. During night
+     operation all inadvertent sources of RF emission will need to be carefully managed. For
+     example, all lander equipment will be totally shut down after commissioning; the RF front end
+     amplifiers will be shielded; and all switching circuitry in the instrument will be slaved to a
+     master clock.
+   The major elements of the LuSEE-Night instrument are shown in block diagram form in Figure
+2.2. The core electronics will be assembled as a sandwich of seven "slices" referred to as the Main
+Electronics Crate (MEC). The slices include the spectrometer board, a Data Control Board (DCB), an
+interface to the actuated antennas, and several slices for managing power delivery. The final slice
+houses the communications User Terminal and S-band transceiver. A 6500 W-hr lithium battery is
+integrated with the MEC to form the Inner Equipment Assembly (IEA). The IEA will be housed in an
+outer enclosure providing thermal isolation during the night and heat rejection during the lunar day,
+see Section 3.3. Mounted to the top of the outer enclosure are:
+   • four deployable monopole antennas riding on an azimuthal rotation stage, each with its own
+     RF preamplifier (Section 3.1);
+   • a photovoltaic solar array for daytime powering and battery charging (Section 3.4);
+   • an S-band patch antenna for communication to the relay satellite (Section 3.5).
+
+             SOLAR                               ANTENNA     A1 A2 A3 A4                     COMM
+             ARRAY                                MOTOR                                     ANTENNA
+                                                             PA
+                                                                  PA
+                                                                       PA
+                                                                            PA
+
+
+
+
+             MAIN ELECTRONICS CRATE
+
+
+
+              Peak                     Low-EMI                 Data                RF
+                         Power                   Antenna
+             Power                      Power                 Control            Spectro-   RF Comms
+                       Distribution              Interface
+             Tracker                    Supply                 Board              meter
+
+
+
+
+                                  LANDER POWER                              LANDER C&DH
+
+
+
+         Figure 2.2: Internal and external interfaces to the Main Electronics Crate slices.
+
+   The major instrument subsystems will be discussed in detail in Section 3.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                     12
+2.2 O VERALL S YSTEM S PECIFICATION
+2.2.1 Key Performance Parameters
+The science goals of LuSEE-Night can be met if the system satisfies system parameters listed in Table
+2.1, derived as follows:
+  1. A monopole pair can be operated as a pseudo-dipole and will measure flux and one component
+     of polarization. A second monopole pair will increase the effective aperture and provide a
+     simultaneous measure of the orthogonal polarization.
+  2. System bandwidth is chosen to include the region where the Dark Ages trough is predicted to
+     exist.
+  3. Threshold sensitivity corresponds to a sky flux equivalent to the noise contribution of the
+     entire signal chain. The goal is to be sky-noise dominated over the band.
+  4. Refers to the number of frequency bins computed by the spectrometer. Higher granularity will
+     improve RFI mitigation algorithms.
+  5. The power consumed by the instrument during night operations. This is dictated by the
+     maximum battery mass.
+  6. Refers to that portion of the total payload mass (not-to-exceed value of 100kg) allocated to
+     the subsystems provided by the DOE MIE project.
+
+
+2.2.2 Verification
+KPPs 1,5, and 6 can be verified by trivial measurements. The system sensitivity is influenced by
+features of the lunar surface environment that cannot be replicated in an Earth-based laboratory.
+The verification of KPP-3 will therefore be based on a set of measurements (feedpoint impedance of
+the antenna and equivalent input voltage noise density of the front end electronics) and simulations
+(3D electromagnetic field solvers with appropriate lunar environment parameters) which are input
+to the sensitivity model. KPP-4 is a parameter in the spectrometer firmware and achieving the
+objective will depend on the efficiency of the FPGA code.
+    A preliminary estimate of feasibility is given in Section 2.3.4. In the final design phase more
+refined models and measurements will be developed and analyzed, and together with component-
+level measurements will provide validation of this requirement.
+
+ KPP#    Parameter                                                   Threshold   Objective       Unit
+   1     Number of monopole antennas                                      2         4               -
+   2     System bandwidth                                              1-20      0.2 - 50        MHz√
+   3     Instantaneous system sensitivity (central 75% of band)       < 10−20    < 10−21      W/m2 / Hz/sr
+   4     Frequency resolution                                           400         75           kHz
+   5     Power consumption (avg during obs)                              14        12.5            W
+   6     Mass (DOE MIE subsystems)                                       85         75             kg
+
+                              Table 2.1: Key Performance Parameters.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                13
+2.3 D ESIGN T RADEOFFS AND P RELIMINARY P ERFORMANCE E STIMATE
+2.3.1 Instrument Sensitivity
+For a first-order estimate let us treat the pair of STACER antennas as an ideal dipole of length L
+(tip-to-tip) in free space. The flux density received by such an antenna (in W/m2 /Hz) at wavelength
+λ is                                                 Z
+                                          1 2kB Tsky
+                                    Sν =                    F (θ, ϕ) dΩ                        (2.1)
+                                          2      λ2       Ω
+                                                1
+where F (θ, ϕ) is the beam profile and the factor is due to the fact that the dipole only responds to
+                                                2                R
+one polarization. Substituting the antenna directivity D ≡ 4π/ F (θ, ϕ) dΩ we can write
+
+                                                    4πkB T
+                                            Sν =                                                 (2.2)
+                                                     λ2 D
+   We follow the convention of denoting this by the equivalent noise voltage spectral density en in
+   √
+V / Hz, in which case we find the noise-equivalent flux density [28], [29]
+                                                 √ 2
+                                                  2en
+                                         Sn =                                                 (2.3)
+                                               Z0 Q2coup
+
+   where
+   • Z0 ≈ 377Ω is the impedance of vacuum;
+   • Qcoup ≡ ℓeff · Γ;
+   • ℓeff ≡ Voc /|E| is the dipole effective length (ratio of the open-circuit voltage at the feedpoint
+     of the unloaded antenna divided by the magnitude of the electric field along the antenna axis);
+   • Γ is the power transfer inefficiency due to impedance mismatch between antenna and preamp;
+                 √
+and the factor of 2 is due to the uncorrelated noise of the two preamps which are differenced to
+produce the pseudo-dipole signal in the LuSEE-Night configuration. Since Sν = 4πkB T /Dλ2 , we
+may convert this to the receiver noise temperature
+
+                                                      λ2 De2n
+                                        Trcv = √                                                 (2.4)
+                                                    8kB Z0 Q2coup
+The system temperature is therefore
+
+                                          Tsys = Tsky + Trcv                                     (2.5)
+
+and by the radiometer equation the uncertainty in the measured signal is
+                                                  Tsys
+                                            σT = √                                               (2.6)
+                                                   ∆ντ
+where ∆ν is the width of the spectral frequency bin and τ is the integration time.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                  14
+2.3.2 Coupling efficiency of an ideal dipole and high-impedance amplifier
+Next we will consider the factors ℓeff and Γ making up the transduction efficiency factor Qcoup . For
+an ideal dipole, the effective length is given by
+                                                   r
+                                                     DRrad
+                                            ℓeff =         λ                                   (2.7)
+                                                      πZ0
+where Rrad = ℜ(Zant ) is the antenna radiation resistance. In the short dipole regime L/λ ≤ .05 the
+effective length has a value near L/2 and varies slowly with frequency; the variation becomes rapid
+and non-monotonic as the the frequency approaches the antenna resonances.
+    We may treat the antenna and amplifier as 1-ports having complex impedances Zant and Zampl
+respectively. When coupled together, the voltage seen by the amplifier equals the antenna open-
+circuit voltage VOC times the factor
+                                                                       Zampl
+                                                                Γ=
+                                                                   |Zampl + Zant |
+                                                                                                                                                (2.8)
+                                                                          1
+                                                                 ≈
+                                                                   1 + Campl /Cant
+
+where the second line applies when both the antenna and amplifier impedances are primarily capac-
+itive. This is the case for the electrically-short dipole and a high-impedance JFET source follower
+preamplifier, and shows the importance of minimizing the stray capacitance at the preamplifier
+input. When the dipole leaves the electrically-short regime its impedance changes rapidly, changing
+from capacitive to inductive behavior as it passes through the half-wave resonance at λ = 2L.
+   Figure 2.3 shows the behavior of ℓeff , Γ, and Qcoup vs. frequency for three different antenna
+lengths. Exact expressions for the arbitrary-length ideal dipole have been taken from [30]. The
+higher coupling efficiency of the longest 12m dipole (green) also has the most resonance features
+within the LuSEE-Night band. Note too that the maximum coupling efficiency occurs at the half-wave
+resonance, a well-known result from communication antenna theory.
+                             leff, m                                      gamma                                            Qcoup, m
+           2m                                                                                  2m                                                2m
+           5m                                         0.8                                      5m                                                5m
+           12 m                                                                                12 m                                              12 m
+ 101
+                                                      0.6
+                                                                                                       100
+                                                      0.4
+
+                                                      0.2
+ 100
+                                                      0.0                                             10 1
+       0          10   20     30       40   50   60         0   10   20     30       40   50    60           0   10   20     30       40   50     60
+                            freq MHz                                      freq MHz                                         freq MHz
+
+
+Figure 2.3: Ideal dipole effective length, mismatch factor, and overall coupling efficiency for Cmpl =
+            30 pF and tip-to-tip length L = 2, 5, and 12m.
+
+
+
+2.3.3 Design tradeoffs
+We have identified the first tradeoff in optimizing the LuSEE-Night receiver: the longer the antenna,
+the more efficient the coupling to the EM field for wavelengths longer than ∼ 20L. But for the upper
+end of the L-N frequency band, the antenna length would need to be kept below ∼ 0.3m to stay well
+within the electrically short regime where coupling efficiency is smoothly-behaved with frequency.
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                                                                15
+Alternatively one could express this as a gain-bandwidth tradeoff, where the useful bandwidth is
+                              dQcoup
+defined to keep the derivative dν    below an acceptable threshold.
+   In addition to the efficiency-chromaticity tradeoff, an important impact of antenna length is on
+the the beam pattern. As the L/λ ratio increases, the directivity of the beam first slowly increases
+and then dramatically changes as the beam develops multiple lobes, Figure 2.4. A highly chromatic
+beam can cause spatial structure in the sky signal to leak into the inferred frequency spectrum,
+unless a highly accurate beam model is known. This poses a second optimization of efficiency vs.
+bandwidth where the bandwidth limit is now set by the frequency above which beam calibration
+uncertainty causes excessive systematic error on the global spectrum.
+                                           Ideal dipole beam patterns
+                                                      90°
+
+                                        135°                               45°
+
+
+                                                                     0.6   0.8 1.0
+                                                             0.2 0.4
+                                 180°                                                0°
+
+                                            0.05
+                                            0.5
+                                            1
+                                            1.5
+                                        225°2                              315°
+                                            2.5
+                                                      270°
+
+
+   Figure 2.4: Beam pattern of an ideal dipole antenna for L/λ = 0.05, 0.5, 1, 1.5, 2, and 2.5.
+
+   A final tradeoff study concerns optimization of the first transistor in the preamplifier. As shown in
+Eq. 2.8 the preamp input capacitance should be as low as possible to maximize the impedance match
+factor in Qcoup . To first order, both the input capacitance Ciss and the transconductance gm of a JFET
+transistor proportional to its gate width, hence reducing the gate width to obtain a better impedance
+match entails an increase in the equivalent voltage noise density en , as well as a reduction in the
+device’s gain-bandwidth product. Further complicating the choice of input transistor is the need to
+operate at low bias currents to stay within the subsystem power budget, and the low availability and
+high cost of space-qualified parts.
+    In this CDR section we have described the multidimensional trade space for optimizing LuSEE-
+Night broadband sensitivity, taking the ideal dipole in free space as a model for which analytic
+expressions for design guidance without requiring complex numerical simulations. For the final
+design, realistic antenna configurations will be simulated with EM field solvers that will include the
+characteristics of the actual LuSEE-Night antennas: non-collinear monopole elements, the proximity
+of the spacecraft and lunar regolith, etc. (Section 3.1). Outputs of the antenna simulations will
+be used to generate tables of far-field beam patterns and antenna impedances for more detailed
+engineering and science studies.
+
+
+2.3.4 Preliminary sensitivity analysis
+In this section we present an analysis of a fiducial case with the following assumptions:
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                   16
+   • lossless, ideal free-space dipole with antenna length L=6m (tip-to-tip). This corresponds
+     roughly to a LuSEE-Night configuration with two 3-meter STACERs operated in differential
+     mode as a pseudo-dipole.
+                                                                   √
+   • high-impedance preamplifier with Ciss = 15 pF and en = 1.8 nV/ Hz. These values are within
+     the range of commercial low-noise JFETs such as IFN112 biased at moderate drain current.
+   • stray capacitance at preamp input 20 pF. Cstray will depend on details of geometry and
+     materials at the antenna-preamp interface which are not known at this time. We also analyze
+     the case Cstray = 5 pF to show how strongly it affects the SNR.
+   Figure 2.5 shows the directivity and coupling factors ℓeff and Γ for the fiducial antenna. As noted
+above, the coupling maximum occurs around the half-wave resonance.
+
+                                                   coupling factors
+                                       fiducial case L = 6m, Ciss = 15pF, Cstray = 20pF
+                       8
+                                   D                                                                                                              beam pattern
+                                                                                                                                                       90°
+                       7           leff, m
+                                                                                                                                         135°                                   45°
+                       6           Qcoup, m
+                       5
+                                                                                                                                                                          0.6   0.8 1.0
+                       4                                                                                                                                          0.2 0.4
+                                                                                                                                  180°                                                    0°
+                       3
+                       2                                                                                                                      2MHz
+                                                                                                                                              10MHz
+                       1
+                                                                                                                                         225° 20MHz
+                                                                                                                                              50MHz                             315°
+                       0
+                           0                 10        20         30               40            50                                                        270°
+                                                       frequency MHz
+
+
+Figure 2.5: Left: coupling factors for the fiducial case. Right: Beam pattern at four frequencies. The
+            main lobe narrows significantly at 50MHz, corresponding to L/λ = 1.0.
+
+   Figure 2.6 shows the fiducial reciever noise (flux density) for two values of Cstray , along with the
+galactic flux density. The solid (dashed) line shows the threshold (objective) KPP values from Table
+2.1. The threshold sensitivity requirement is met with margin for both values of Cstray . The objective
+sensitivity KPP is met at midband, but only extends over the central 20% of the total bandwidth
+(26% if Cstray is reduced to 5pF).
+
+                                                     receiver noise
+                                        fiducial case L = 6m, en = 1.8nV/ Hz, Ciss = 15pF
+                                                                                                                                         signal-to-noise ratio
+                                                                                                                                fiducial case L = 6m, en = 1.8nV/ Hz, Ciss = 15pF
+                                      Srcv, Cstray = 20pF                                                                                                             SNR, Cstray = 20pF
+                                      Srcv, Cstray = 5pF                                                               25                                             SNR, Cstray = 5pF
+                       10 19          KPP thresh.
+                                      KPP obj.                                                                         20
+         W/m2/ Hz/sr
+
+
+
+
+                                                                                                      Sgalactic/Srcv
+
+
+
+
+                                                                                                                       15
+                       10 20
+                                                                                                                       10
+
+                       10 21                                                                                           5
+
+                                                                                                                       0
+                               0              10        20         30            40         50                              0      10           20         30            40               50
+                                                        frequency MHz                                                                           frequency MHz
+
+
+Figure 2.6: Left: Noise-equivalent flux density for the fiducial case, for 2 values of Cstray . Black
+            curves are the galactic flux density models of Cane (solid) and Novaco-Brown (dashed)
+            Right: Signal-to-noise expressed as the ratio of galactic flux to receiver noise, for two
+            values of Cstray
+
+   This fiducial signal chain model, while highly idealized, provides confidence that the LuSEE-Night
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                                                                                                             17
+key sensitivity performance parameters can be met.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)   18
+3 S UBSYSTEMS DESCRIPTION
+3.1 A CTUATED A NTENNAS
+3.1.1 Overview
+The antenna assembly consists of four monopole antennas that are mounted on the four motorized
+θ rotation platforms. These four units are mounted on the motorized ϕ rotation platform. The CAD
+image of the conceptual assembly design is shown in Figure 3.1. θ is the angle between a vector
+that is normal to surface of the local lunar regolith and the monopole antenna, and ϕ is the angle
+in the plane that is parallel to surface of the local lunar regolith. A study to select lengths of the
+monopole antennas is currently being conducted to select a length between 1 to 6 meters. The four
+monopole antennas are assembled 90 degrees from each other to observe two linear polarization
+states simultaneously . Each monopole antenna is mounted on the separate θ platforms. The θ angles
+of these platforms will be controlled separately such that θ angles can be positioned accurately with
+respect to the local ground. The θ rotation platform will be able to rotate 0 ∼ 90 degrees. Actuation
+of the θ rotation platforms changes the antenna beam profile to enable the systematics study of
+the antenna beam. A study to select the optimal θ positions to cover interesting beam profiles are
+being conducted. The ϕ rotation platform will rotate ±90◦ degrees to cover both linear polarization
+directions with a pair of the antennas. The ϕ rotation platform will be mounted on the outside
+surface of the LuSEE-Night instrument console. We will use DC servo motors for the rotation stages
+for the weight and the simplicity of the controller. Positions of rotation stages will be monitored by
+encoders, and this information will be sent back to the motor controller. The motor controller will
+be installed inside of the LuSEE-Night instrument console. The motor controller is responsible for
+drawing power from the PDU, communicating with the RF Comms unit, and sending power and
+commands to antenna motor.
+
+
+3.1.2 Antenna
+
+
+
+
+Figure 3.1: (Left) CAD image of the antenna unit. The stacer antenna and the preamp box is
+            mounted on the θ rotation stage. Four θ stages are mounted on the black ϕ rotation
+            platform. Each stage is actuated by DC servo motors. (Right) Photograph of the stacer
+            antenna that was deployed in the STEREO/WAVES experiment [31]
+
+   Design of the monopole antenna is based on the "stacer" antenna that was deployed in the
+STEREO/WAVES experiment [31]. The stacer antennas have been deployed in multiple astrophysics
+satellite missions used as an antenna or a boom to support an instrument. A stacer is a rolled
+berrylium copper sheet with a constant helical pitch that acts as a flat spring. It can be compressed
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                 19
+Figure 3.2: (Left) Example of antenna beam profile from HFSS EM simulator. Colors indicate
+            amplitude of the gain of the antenna beam. Simulated structure can be seen inside of
+            the beam. (Right) Example of signal to noise plot as a function of antenna length and
+            frequency.
+
+
+in a stowed position in a small package until it is deployed. For example, a 6 meter stacer monopole
+antenna can be stowed in a 53 mm x 106 mm cylinder. Deployment is triggered by actuating a
+shaped memory array pin with heat. A flywheel and a stacer guide ensures that the stacer antenna
+is rolled out at a controlled speed. The stacer antennas will be deployed during a lunar day after the
+landing. The preamp connects to the antenna at base of the antenna. The preamp and the antenna
+will co-rotate on the platforms.
+    We are conducting a study to select antenna lengths and θ angles. We are employing three
+electromagnetic simulator packages, HFSS, CST and FEKO, to simulate how the antenna performs.
+We are using three electromagnetic (EM) simulators to check whether simulations are set up
+correctly, and we are also interested in how different simulation algorithms affect the results as
+HFSS and CST mainly use the finite element method whereas FEKO uses a method of moments
+algorithm. Considering the weight limitation of the payload, we are constraining our study of the
+antenna length from 1 meter to 6 meters. We are also constraining our study of the antenna θ
+angles from 15 degrees to 75 degrees in 15 degree increments. We are modeling the surface of the
+instrumentation enclosure and the lander as a perfectly conducting polygon (cylinder, box, etc.) as
+shown in Figure 3.2. The lander vendor is not known at this stage of the project. We are studying
+the sensitivity of the antenna performance to various shapes and heights of the lander. We are
+modeling the lunar regolith following recent re-analysis of the Apollo-17 mission data [32]. Still,
+the low radio frequency properties of lunar regolith on the far side of the moon is not well known.
+Therefore, we are also varying the dielectric properties of the soil as a function of depth to study the
+sensitivity of the antenna performance to the properties of the moon regolith. The main outputs
+of interest from these EM simulators are the antenna impedance, antenna efficiency and the beam
+profiles as a function of frequency.
+   These outputs are fed into the analysis pipeline to calculate the raw signal to noise ratio and to
+calculate the analysis pipeline’s ability to extract astrophysical signals. Analysis techniques were
+based on the methods that were developed and adapted by previous low radio frequency satellite
+missions and 21 cm astrophysics experiments [33, 34, 35, 36, 28, 29, 37, 38]. Galactic emission is
+the bright foreground that acts as a reference for the instrument noise. Our goal is to ensure that
+the instrument achieves photon noise (galactic emission) limited performance. Examples of the
+analysis are shown in Figure 3.2. The analysis pipeline calculates how our antenna beam observes
+the radio signals to study how instrument design affects our ability to disentangle foregrounds and
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                  20
+the cosmological signal.
+   From these simulations, we have found that the optimal position of the antenna is between 2.5
+meters to 3.0 meters from the lunar surface. If the antenna is too close to the lunar surface, antenna
+gain suffers especially at the low frequency end. However, if the antenna is too high off the lunar
+surface, we observed complex beam shapes due to the interaction of reflected waves from the lunar
+surface with the antenna. Additionally, consistent with analytical calcualtions presented in Section
+2.3.4, we have found that a longer antenna has higher signal to noise ratio, while suffering from
+resonances and complex beam patterns. Therefore, we expect the outcome of this study to find
+a balance between the signal to noise ratio and the complexity of the antenna performance as a
+function of frequency.
+
+
+3.1.3 Motorized Stage
+The monopole antenna and the preamp will be mounted on the θ rotation stage such that two
+units rotate together. The four θ rotation stages will be mounted 90 degrees from each other on
+the single ϕ rotation stage. All stages will be machined out of aluminum. We selected to use DC
+servo motor over a stepper motor for the weight and complexity of the motor controller. Angle of
+each motorized stage will be monitored with an encoder. The stages will move during the lunar day
+when more electrical power is available. Once the stages have reached to the desired angle, the
+they will hold their positions throughout the lunar night for radio quiet observations. The stacer
+antenna will deploy at the smallest θ angle (sharpest V between monopole antennas). After the ϕ
+rotation stage rotates through ±90◦ , the θ rotation stages will lower the antennas to the next θ angle
+position. The motors and the motor controller unit will be connected via flexible cable with enough
+length to accommodate the θ and ϕ rotations. The motor controller will draw power from the PDU,
+then distribute it to the motors. It will also communicate with the commanding computer to send
+encoder information and receive move commands. The motor controller will be housed inside of the
+LuSEE-Night temperature controlled environment.
+
+
+3.1.4 Integration and Testing
+Much of the antenna module can be integrated and tested without interfacing with other modules.
+For example, the integrated motorized stages can be tested by themselves to check for range of the
+motion, torque that it can generate, and power draw. The stacer antenna’s deployment mechanism
+can also be tested by itself to check for the operation of the memory alloy pin, and deployment speed.
+The antenna’s EM performance such as antenna impedance can also be checked independently by
+connecting the antenna to a 4-port Vector Network Analyzer. It will be challenging to make accurate
+measurements since the antenna will interact with its surroundings in the laboratory setting, but we
+can utilize techniques to minimize the effect of reflected power such as time gated measurement
+methods to check whether the port impedance is close to the expected value.
+
+
+3.2 S PECTROMETER
+3.2.1 Description
+The LuSEE-Night spectrometer will be an enhanced version of the RF Spectrometer (RFS) flown as
+part of the FIELDS instrument suite on the Parker Solar Probe ([3], [39]), see Figure 3.3. The new
+(original) spectrometer acquires spectra over the 0.5 - 50 (0.1 - 20) MHz band from 4 (2) pairs of
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                  21
+monopole antennas using digitizers sampling at 100 (40) Msps and a radiation-tolerant Microsemi
+RTG4 (RTAX4000SL) FPGA, otherwise retaining much of the structure and processing elements of
+the earlier design. An overall block diagram of the LuSEE-Night RFS is shown in Figure 3.4.
+
+
+
+
+                          Spectrometer parameter                              Experiment
+                                                        Parker RFS (HF channel)             LuSEE-Night
+                          Frequency range                  0.01 – 19.2 MHz                 0.5 – 50.0 MHz
+                          Digitizer channels                      2                              4
+                          Sampling clock                       39 MSPS                       100 MSPS
+                          Duty factor                            ~1%                          ~100%
+                          FPGA                                RTAX4000                         RTG4
+                          Correlation products                    2                              6
+                          Transient capture                       No                            Yes
+
+
+
+
+Figure 3.3: Above: The Parker Solar Probe Radiofrequency spectrometer (from [39]), block diagram
+            and PC board layout. Below: modifications for LuSEE-Night.
+
+
+
+3.2.2 Analog section
+The analog section of the spectrometer is responsible for conditioning the signals from the monopole
+antennas and forming the signal combinations for digitization. The very front end of the signal
+chain will be a high-impedance preamplifier whose properties have the dominant influence on the
+instrument sensitivity. As shown in Section 2.3, the receiver noise temperature will be dominated by
+(1) the antenna effective length, (2) the power transfer inefficiency due to impedance mismatch
+between antenna and preamp, and (3) the preamp equivalent input noise spectral density. Over
+most of the frequency band, both the antenna and preamp impedances will be primarily capacitive,
+hence the mismatch factor will be that of a capacitive divider Cant /(Cant + Cpreamp ) and minimizing
+Cpreamp (sum of the gate capacitance of the input FET and any strays) is essential.
+   The equivalent input noise of the preamp is dominated by the thermal noise of the first transistor
+plus the noise of any downstream signal chain elements referred back to the       √ input and to first
+order this can be modeled as a white voltage noise spectral density en (in nV/ Hz). Choosing the
+input transistor’s gate dimensions and its bias point entails a performance tradeoff: noise spectral
+density goes down with larger gate periphery at the cost of higher capacitance, while for a given
+gate periphery the noise density decreases with higher bias current at the expense of higher power
+dissipation. This trade space will be investigated through circuit simulation in the final design phase.
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                          22
+                   ANTENNA
+                   HOUSING       MUX
+                                                                                         SPECTROMETER
+                                           BUF   DIFF              AAF   ADC
+
+
+
+
+                                                   PROG
+                                                   GAIN
+
+
+
+
+                                                                                        FPGA
+
+
+
+
+                                                                                                            SPECTROMETER DATA
+                                                                                          PROCESSOR CLOCK
+                                                                         SAMPLE CLOCK
+                                                        GAIN SEL
+                                  CH SEL
+
+
+
+
+                                                                              DCB
+
+
+
+Figure 3.4: Spectrometer block diagram showing interfaces to the antenna preamps and Data Control
+            Board.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                                              23
+                  16dB
+                                                                      V(gain)
+                   0dB                             V(sf)
+
+
+                  -16dB
+
+
+                 -32dB
+
+
+                  -48dB
+
+
+
+                              102          104                  106    108      1010
+                                                 frequency Hz
+
+
+
+                          Figure 3.5: Preamplifier electronics: preliminary design.
+
+
+   Figure 3.5 shows a preliminary LTSPICE schematic and simulation of the preamplifier based on
+the Parker Solar Probe design. A JFET source follower with ESD protection is followed by a DC
+block, diode limiter, and 10X gain stage. In the final design the preamp board will include additional
+elements, such as a programmable gain stage, additional filtering, power regulation, a and 50 Ohm
+line driver.
+    Single-ended signals from the four preamps are routed via coax cable to connectors on the
+frame of the RF Spectrometer slice in the MEC. From there they pass through a multiplexing tree,
+differential buffer, additional programmable gain stage, and anti-aliasing filter before arriving at the
+analog-to-digital converter. The arrangement for one ADC channel is shown in Figure 3.6.
+   The formal performance requirements for the spectrometer analog front end will be established
+by a flowdown process from the instrument requirements. At the time of this CDR the working
+assumptions are:
+                            √
+   • Input noise: en ∼ 2nV / Hz
+   • Capacitance at preamp input: ≤ 30 pF including strays
+   • 3dB bandwidth: 0.5 - 50 MHz
+   • Voltage gain: 2 - 1000 in 3 ranges (TBD)
+   • Preamp power dissipation: 0.5W
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                  24
+                               MUX
+
+                          A0
+                          A1          BUF
+                          A2
+                          A3
+                                              DIFF   GAIN AAF   ADC
+
+
+
+                          A0
+                          A1
+                          A2
+                          A3
+
+
+
+
+Figure 3.6: Antenna multiplexing. Each of the four ADCs can operate on the difference of any pair of
+            antennas, or a single antenna and ground. This arrangement helps cancel common-mode
+            noise, and allows the antenna array to be configured as a pair of pseudo-dipoles.
+
+
+3.2.3 Digital section
+The digital section of the spectrometer includes the multiplexer tree and gain control, digitizers,
+spectrum processor, snapshot processor, calibration processor, clock management, and interface to
+the Digital Control Board (DCB). Depending on the observation mode chosen, the multiplexer tree
+will be set up to pass the difference of antenna pairs (or antenna-ground) to each digitizer. The
+initial gain range will be automatically set to accommodate the expected signal strength and then
+adjusted by monitoring the data stream. The frequency plan is to put the LuSEE-Night band within
+the first Nyquist zone, implying a sampling rate fs ≥100MSPS. To adequately cover the expected
+dynamic range the effective number of bits (ENOB) must be ≥ 11.
+   Within the spectrum processor, the elements are:
+  1. Overrange sensing and gain adjust: when the ADC output is pinned at full scale an algorithm
+     will select the appropriate action: flag or discard the data, reduce analog gain, etc.
+  2. Decimation filter: if possible, we will oversample the data and use an FIR filter to reduce the
+     complexity of the analog anti-aliasing filter. Depends on the availability of a sufficiently fast
+     ADC.
+  3. Channelizer and RFI notch filter: a frame of time-sampled data of appropriate length is
+     apodized and processed into a number (256 - 2048) of spectral channels by polyphase
+     filterbank. Each bin’s spectral leakage can be tailored by appropriate filter coefficients, and
+     optional notch filter(s) can be incorporated at the frequencies where the RFI ’picket-fence’
+     peaks are expected.
+  4. Corner turn: data is re-ordered as a matrix transpose to send same-frequency samples from
+     channel pairs to the correlator.
+  5. Correlator: all auto- and cross-correlations of the four data streams will be calculated (sample-
+     by-sample complex multiplication).
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                 25
+  6. Accumulator: the correlation products will be averaged for a programmable integration time,
+     likely in the range of 10s of seconds.
+  7. Data formatter: at the conclusion of each integration interval the data will be formatted and
+     transferred to the DCB for storage in NV memory.
+   The snapshot processor will bypass the channelizer and store a frame of raw samples to memory.
+This mode will be used for detection of transient phenomena and for diagnostics.
+   The calibration processor will be implemented when the parameters external calibrator details
+are more fully defined (Section 3.6). The coded sequence in the calibrator will be preloaded into
+RFS memory and a correlation engine will lock onto the received sigal, a technique similar to that
+used in GPS receivers.
+   As discussed in Section 2, all switching circuitry in the LuSEE-Night instrument will adhere
+to strict EMI compliance that forbids switching waveforms that are not slaved to a master clock
+distributed from the DCB. Within the RFS special care needs to be taken to manage the multiple
+clocks waveforms needed for operating ADCs, FPGA, and any switched voltage regulators, and to
+avoid interruptions of return current paths. For further EMI reduction differential signaling, thick
+ground and power planes, faraday cages around sensitive analog nodes, and EMI gasketing around
+connectors and apertures may be used.
+
+
+3.2.4 Monitoring and Telemetry
+The spectrometer gain will invariably be temperature- and power supply-sensitive. Gain fluctuations
+can be mistaken for changes in the sky signal, so it is necessary to monitor and compensate for
+these effects. The spectrometer board will include thermistors and sense resistors at critical points
+to monitor temperatures, voltages, and power supply currents. Similar sensors will be included on
+the preamplifier boards. The analog signals from these sensors will be periodically multiplexed into
+housekeeping ADCs, sampled, and merged into the instrument data stream. Housekeeping ADCs
+may be located either on the RFS or the DCB.
+
+
+3.2.5 Interfaces and Operating Modes
+The spectrometer will have interfaces to the Antenna, Power Delivery, and DCB subsystems. The
+mechanical and electronic details will be formally specified in Interface Control Documents.
+   Control commands for operation of the spectrometer will come from flight software on the DCB
+using an industry standard protocol. The DCB will be preprogrammed with standard operating se-
+quences (power-on, sleep/wake, initialize, self-test, acquire [spectra/snapshot/calibration/housekeeping],
+dump acquired data, etc.) and configuration parameters (gain range setting, multiplexer setting,
+ADC sample rate, digital filter coefficients, PFB taps/resolution/notch, etc.). During Operation,
+settings can be modified from the mission operating center by uplink via the relay satellite. Spec-
+trometer data, after averaging, is relatively low volume and can be transferred using moderate-rate
+interchange formats between the RFS and the DCB.
+
+
+3.2.6 Component selection and qualification
+In general LuSEE-Night’s electronics subsystems will use components identical to those used in the
+Parker Solar Probe FIELDS instrument. For those components which are either unsuitable for L-N or
+are no longer available, we will seek to use COTS parts which are either:
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                26
+   • rated at Level 3 or above by NASA’s Electronic Parts and Packaging Program (https://nepp.nasa.gov);
+   • qualified to MIL-PRF-38535 QML Class V or Class LV-RHA;
+   • rated by the manufacturer as "Space Enhanced Product (S-EP)".
+If no suitable parts from these lists are available, we plan to define a qualification regime for
+upscreening COTS parts, subject to approval by NASA authorities.
+  We have identified candidate ADCs and FPGAs for the LuSEE-Night spectrometer, see 3.7. At
+BNL, we have assembled a test bench and performance testing of some components is underway.
+
+                                  Technology: ADC options
+                 Resolution       Fs     Channels   Power     Output      Space-      Tested
+    ADC          bits (nominal)   MSPS              mW/chan               qualified   BNL
+    AD9253       14               125    4          110       LVDS        N           Y
+    ADS4245-EP   14               125    2          140       CMOS/LVDS   N           Y
+    ADC3664      14               125    2          100       LVDS        N           Y
+    ADC3444      14               125    4          98        LVDS        N           N
+    ADS52165     16               125    8          70        JESD204B    N           N
+
+
+
+
+Figure 3.7: Component selection: candidate ADCs (left) and FPGAs (right). Lower left: ADC test
+            bench and performance report
+
+
+
+3.3 M ECHANICAL & T HERMAL D ESIGN
+3.3.1 Inner Equipment Assembly Mechanical Structure
+Figure 3.8 shows the concept design for the instrument. The outer box of the lander will form the
+overall support structure and will provide layers of thermal insulation to protect inner components.
+The Inner Equipment Assembly (IEA) of the lander will contain a battery and the Main Electronics
+Crate (MEC). The battery and MEC will be suspended by Kevlar cables which attach to the corners
+of the outer box.
+   Both the electronics and battery will generate heat, which will need to be managed to maintain the
+acceptable temperature range for the IEA. Heat from the electronics and battery will be transferred
+to a thermal plate. The plate will connect to a heat pipe which will be attached to an external
+radiator through a thermal switch. The switch will close during the lunar day and allow heat to be
+transferred to the radiator, which will then transfer heat to space. During the night, the thermal
+switch will open, retaining heat within the IEA.
+
+
+3.3.2 Main Electronics Crate
+The design for the MEC will copy what was developed by the Space Sciences Laboratory (SSL) at the
+University of California, Berkeley (UCB). Images shown in this document are from the CAD model
+provided by SSL or were from a presentation from SSL [40].
+   We will reduce project time and risk by using the proven design developed by SSL. This design is
+currently flying successfully on the Parker Solar Probe. Although we plan to make slight modifications
+to accommodate different circuit boards, the bulk of the design will remain intact.
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                 27
+Figure 3.8: Concept design for the LuSEE-Night instrument. On top are the four stacers and θ
+            rotation modules, mounted on the ϕ rotation stage. The Battery and MEC are suspended
+            from the outer crate with kevlar cables. On the right is the parabolic radiator panel.
+
+
+
+
+Figure 3.9: Left panel: Main Electronics Crate (MEC) showing individual slices. Solid model courtesy
+            of SSL. Right panel: Tie Rods in the Main Electronics Crate (MEC) that compress all
+            slices. Solid model courtesy of SSL.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                               28
+Figure 3.10: Left Panel: Electronics board mounted in a frame. Right Panel: Cross-sectional view of
+             slices showing PCBs, EMI shields, and interlocking geometry on the edge of each frame.
+
+
+    The Main Electronics Crate, shown in Figure 3.9 will consist of individual “slices” that are com-
+posed of frames which house individual printed circuit boards (PCBs), electromagnetic interference
+(EMI) shields, connectors, and vacuum vents. There will be six of these slices held together with
+tie rods or “skewers”, show in the right panel of Figure 3.9 . The entire assembly will be fastened
+to a mounting plate or battery housing, and between the plate and MEC will be a thermally and
+electrically conductive gasket material. The gasket material will provide a path to conduct heat
+from the MEC as well as grounding. All electrical connections will be made outside of individual
+crates, simplifying assembly and testing. The modular design, along with outer connectors, allows
+individual slices to be removed or added to the stack as needed.
+   The left panel of Figure 3.10 shows how the PCBs are mounted in each frame. Behind the PCB
+(not shown) is an EMI shield. The right panel of the same figure shows that when slices are stacked
+each PCB is protected on both front and back by EMI shields. Along with the compression placed on
+the frame by the tie rods, interlocking features on each frame keep slices fixed relative to each other.
+   Each electronic board will be attached to frames using screws and custom retainers designed by
+UCB that have a Spiralock® thread which will prevent the screws from loosening. Spiralock threads
+are used elsewhere in the assembly for the same reason. The circuit boards will have a conductive
+ground plane on the edges which will transfer heat away from the PCB to the frame of each slice.
+From each frame, the heat will transfer through the mounting plate and heat pipe to a radiator on
+the outside of the instrument structure.
+   Connectors on frames will be retained by custom retainers developed by UCB, shown in the left
+panel of Figure 3.11 . These retainers also have Spiralock® tapped holes to prevent the retaining
+screws from loosening. The right panel of the same figure shows a vent feature that will be installed
+on each slice and allow any gasses inside to vent to space.
+    The mass budget for the Inner Box is shown in Figure 3.12. The mass for the total instrument is
+estimated to be 87.5 kg, not to exceed 100 kg. The IEA is expected to have a mass of 55.5 kg, mostly
+from the 45 kg battery. The crates will each have a mass of approximately 1 kg, and mounting plates
+and wire harnesses will make up the remaining mass.
+   Figure 3.12 also shows calculated power consumption during daytime and nighttime operations.
+During the day, the amount of power consumed is estimated to be 50.8 W. An estimated 28.3 W will
+be converted to heat inside the IEA. The remaining power will be converted to stored energy in the
+battery or lost through the preamplifiers and communication antenna, both outside of the IEA. At
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                  29
+Figure 3.11: Left Panel: Custom retainer developed by UCB. Image courtesy of UCB. Right Panel:
+             Image of a vacuum vent used for each slice.
+
+
+
+
+Figure 3.12: Summary of mass and power budget allocation separated by day and night operations.
+
+
+night, the total power consumption is estimated to be 12.4 W. The preamplifiers outside the IEA will
+consume 2 W of this power. An estimated 10.4 W will be used by electronics and converted to heat
+in the IEA.
+
+
+3.3.3 Main Electronics Crate Thermal Design
+Potential landing sites for the LuSEE project play a major factor in the survivability of the onboard
+electronics. Surface temperatures at different latitudes of the lunar surface can vary up to nearly
+225 K at the same time of day. It is important to rule out latitudes on the lunar surface that may be
+too hot during the lunar day for the electronics. Potential onboard electronics have a survivability
+range of 213.15 K to 313.15 K.
+   The Planetary and Lunar Environment Thermal Toolbox Elements (PALETTE) Project Year One
+Results and The global surface temperatures of the Moon as measured by the Diviner Lunar Radiometer
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                30
+                 Figure 3.13: LuSEE experiment mounted on example lunar lander.
+
+
+Experiment papers were used to determine the conditions on the lunar surface and their effect on
+the LuSEE lander.
+    Suppose the Lander/LuSEE experiment is designed as depicted in Figure 3.13. Given this
+orientation, features such as the lander, solar panel, and the radiator would obstruct even distribution
+of solar and lunar irradiation.
+Boundary Conditions
+   Figure 3.14 summarizes the incident radiation on the LuSEE outer crate, from the Sun and the
+hot lunar surface. Effected surface area of the two different sources of radiation was determined
+to be an even split, with the top half of the crate experiencing solar radiation and the bottom half
+experiencing radiation from the lunar surface or from the lander, which will not be significantly
+thermally isolated from the lunar surface, and is expected by PALETTE to have a temperature only
+marginally below that of the lunar surface (see calculations below). The effected surface area can
+be further refined by accounting for the solar panel and radiator. The solar panel blocks an entire
+face of the outer crate’s surface area effected by solar radiation. Similarly, the radiator is assumed to
+block another face of the crate, however this face would have experienced solar radiation on the
+upper half and lunar surface radiation on the lower half.
+    LuSEE current best estimates for power consumption have been estimated to be as much as 45 W
+during the day. Some of this power goes to charging the battery and some to electronics outside of
+the outer crate, such as the PREAMP and Science Antenna. After accounting for charging power and
+outer electronics, the inner electronics crate is estimated to use about 32.15 W during the day. The
+full 45 W was used for the thermal calculations.
+    A thermal switch, of unknown composition, transfers heat between the science payload and the
+radiator. The radiator, of unknown size and efficiency, then radiates the heat into space. PALETTE
+states that the PTA thermal switch has an ON/OFF ratio of at least 2500:1. The PALETTE document
+lists the conductance of the thermal switch, in the off position, as 0.002 W/K. PALETTE does
+not elaborate on whether the conductance is for the Primary Thermal Architecture (PTA) or the
+Backup Thermal Architecture (BTA) thermal switch, but it is assumed to be PTA as the figure in
+section 3, Technology, illustrates a PTA thermal switching system. This would then suggest that the
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                    31
+                Figure 3.14: Summary of radiation incident on LuSEE experiment.
+
+
+conductance of the thermal switch, in the on position, should be 2500x the conductance of the off
+position. (5 W/K)
+   The PALETTE lists the surface area of their radiator as 0.165 m2 . Knowing that the total surface
+area of the LuSEE experiment is 63% bigger than that of the experiment in the PALETTE document,
+a radiator surface area of 1.63 times that of the PALETTE’s was assumed (0.2695 m2 ).
+    Temperature of the lunar surface changes with the moon’s latitude. The surface temperature
+is highest at the equator and decreases towards the poles. The global surface temperatures of the
+Moon as measured by the Diviner Lunar Radiometer Experiment article states that the maximum
+temperature of the lunar surface, at the equator, is 392.3K. A value of 400K was used for calculations.
+   It is understood that the radiator emits heat through radiation towards the sky which is assumed
+to be 10 K.
+Daytime Thermal Calculation
+    An assumption had to be made for the temperature of the outer box due to an abundance of
+unknowns, such as the composition of the lander, the thermal isolators that the LuSEE Experiment
+will be mounted on, and the composition of the outer box of the experiment. The PALETTE document
+lists the temperature of their lander as 353 K, so this value was used as the steady state temperature
+of LuSEE’s outer box during lunar day.
+   Figure 3.15 shows the thermal pathway that was determined as the basis of the heat transfer
+calculations. Because the temperature at position 3 was assumed, the calculations solve for the
+temperatures between points 3 and 6.
+    An iterative solver was used to find the temperatures for positions 4 and 5. The results of the
+calculations (see Figure 3.16) show that the LuSEE experiment could survive lunar day temperatures
+at the equator if a heat pipe with a conductance of 5 W/K were coupled to a radiator of similar
+efficiency to that of the PALETTE document, and a radiative surface area of 0.2695 m2 . This suggests
+that, given similar conditions, the experiment would not have to rule out any specific latitudes for
+landing options out of any thermal concerns. In summary, the IEA temperature of 265K falls within
+the survivability range of 213.15K to 313.15K.
+   A simple check can be done to confirm the accuracy of these calculations. For instance a simple
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                 32
+Figure 3.15: Thermal path through lunar lander and LuSEE experiment, including: (1) the lunar
+             surface, (2) the lander body, (3) the outer enclosure, (4) the Inner Equipment Assembly,
+             (5) the radiator, and (6) the sky.
+
+
+q = G∆T calculation can be done to confirm that the product of the heat pipe’s conductance (5
+W/K) and the change in temperature of points 4 and 5 does indeed equal the given 45 W from the
+battery.
+Nighttime Thermal Calculation
+   Similar calculations must be made to determine the survivability of the experiment during the
+lunar nighttime. Temperatures of the lunar surface drop to as little as 85K during the nighttime
+and without the incident radiation of the sun, the lander assembly gets very cold. Without proper
+adjustments, the temperature of the electronics can fall outside of the survivability range.
+   At night, the operations of the IEA change and only 12.4W are used by the battery. So, 12.4W
+was used in the calculations as heat generated by the system. A lunar surface temperature of 85K
+was used (Williams et. al), and the PALETTE document was referenced to assume a lunar lander
+temperature of 75K.
+   If no changes are made to the assembly between daytime and nighttime, the radiator will emit
+too much heat and the IEA will get too cold. The PALETTE document states that the conductance of
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                33
+         Figure 3.16: Thermal architecture and calculation results for LuSEE experiment.
+
+
+their thermal heat pipe changes from an ON to an OFF position when lunar night comes around.
+The document lists an OFF conductance of 0.002 W/K. We found this conductance to be too low
+and causes the IEA to heat up past its survivability range. The tension cables and the multilayer
+insulation are too effective and trap the heat generated by the battery.
+   For the IEA to maintain a calculated nighttime temperature of 264.5K, which is just about the
+median of the survivability range (213.15 to 313.15 K), the conductance of the heat pipe must
+change from 5 W/K (daytime) to 0.15 W/K.
+
+
+3.3.4 Preamplifier Box Thermal Design
+To ensure the survivability of the LuSEE electronics, a thermal analysis of the preamplifier in lunar
+daytime was performed. This analysis expanded on the LuSEE lander thermal analysis and intro-
+duced preamplifier geometry, preamplifier power generation, and an MLI blanket. LuSEE’s current
+best estimate for power consumption, Qpreamp is 0.5 W from the preamplifier. The preamplifier was
+estimated to be 0.02 x 0.05 x 0.085 meters in size, where both the top and bottom surfaces had
+a surface area of 0.0045 m2 . Full contact was assumed on the bottom side of the preamplifier to
+the outer crate and the top surface of the preamplifier to the MLI blanket. The MLI blanket was
+estimated to have 90% reflectivity with a conductive property of 10−5 W/mK on the low value and
+26.24 W/mK on the high value. The conductive property for the outer crate to the preamplifier was
+evaluated for aluminum to aluminum, with a low estimate of 167 W/mK and a high estimate of 235
+W/mK. High and low estimated values for MLI reflectivity, conductivity and outer crate conductivity
+were analyzed to find a threshold temperature of the preamplifier. The emissivity of MLI was 0.02
+and was used to calculate the energy radiating out of the MLI to the environment, Qenv. The solar
+radiance was 1361 W/m2 and with the area exposed, was used to solve the solar radiation going
+into the MLI blanket.
+   An iterative solver was used to find the temperatures for positions 2 and 3 of the thermal path
+shown in Figure 3.17. The results of the calculations show that the preamplifier temperature did not
+vary greatly from the outer crate temperature. The temperature deviance was ±1K when analyzing
+the high and low estimates for reflectance and conductance. The temperature variance from the
+outer crate’s known temperature to the preamplifier temperature could be a result of full contact
+assumption with a 0.0045 m2 surface area, and no additional mount from the preamplifier to the
+outer crate. The compact geometry, and small power generation of the preamplifier, combined with
+the calculated values of solar energy absorbed and energy leaving the MLI to the environment, are
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                34
+Figure 3.17: Left panel:The thermal pathway that was determined as the basis of the heat transfer
+             calculations for the preamplifier. Point (1) is the IEA, (2) is the preamplifier, (3) is
+             an MLI blanket over the preamplifier, and (4) is the sky. Right Panel: The thermal
+             calculation results.
+
+
+also considerations for the temperature variance. This suggests that the outer crate controls the
+preamplifier temperature under the investigated circumstances. If the preamplifier is capable of
+surviving expected outer crate temperatures during lunar daytime, an additional analysis should be
+performed to further investigate if the preamplifier electronics can survive lunar nighttime.
+   Similar calculations have been done for the nighttime thermal preamplifier analysis. This analysis
+expanded on the main electronics crate nighttime thermal analysis. The preamplifier operated
+with 0.5W of power, and the full side contact was assumed from the outer crate and to the MLI
+blanket. The iterative solver used in the daytime was also used in the nighttime and the preamplifier
+temperature was calculated to 93.9K. This temperature was mainly determined by the outer crate
+temperature. If the preamplifier electronics are not rated to survive this temperature in the nighttime,
+an additional analysis should be performed for additional geometry that would limit the amount of
+contact between the outer crate and the preamplifier.
+
+
+3.3.5 Shipping Container
+The shipping container has not yet been designed, and this effort will occur later in the project.
+Several years ago, BNL designed a shipping crate for part of the camera on the Large Synoptic
+Survey Telescope (LSST). The Inner Equipment Assembly will be roughly the same size as what was
+shipped for LSST, so we will have a good starting point for our design.
+
+
+3.4 P OWER D ELIVERY
+LuSEE-Night has to operate during the lunar night that is 14 Earth days (336 hours) long. During
+this time the onboard battery will provide power to the electronics and will be gradually depleted
+until the next sun rise when power from the photovoltaic panel will power the electronics and
+recharge the battery for the next night. This process is outlined in Figure 3.18
+   The components of the power delivery subsystem are shown in Figure 2.2 and include the battery,
+the photovoltaic panel, its associated peak power tracker (PPT), the power distribution unit (PDU)
+and the low noise picket fence power supply (PF-PS). The battery will provide the main bus power
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                  35
+Figure 3.18: Plot of power consumption, solar power production and charge state of the battery as a
+             function of the lunar night/day cycle.
+
+
+to the PDU unit which can route power for the various other slices of the MEC. For the startup
+of operations, when power is initially available, the PDU it will route power to the DCB to boot
+and manage further operation from withing the DCB software control. The DCB will then instruct
+the PDU to route power to the PF-PS to provide clean power and synchronize the systems DC/DC
+converters from battery to PF-PS. When clean power is available, the DCB will instruct the PDU to
+power up the spectrometer and the antenna slice. This would be the configuration for night time
+operation. The battery provides telemetry to the DCB, such that the charge and discharge current,
+the state of charge (SOC), and the temperature are always known and the onboard software can act
+accordingly.
+    During day the PPT will find the optimum operating point for the photovoltaic cells and and
+provide that power to the battery where the battery build in BMS will use some of the power to power
+the main bus and some of the power to charge the battery cells. When the DCB telemetry indicates
+that sufficient solar power is available it will instruct the PDU to route power to the RF-Radio for
+communication (see communication subsection) in addition to the battery being charged. For the
+corner case where the battery is too cold to be efficiently charged, power from the photovoltaic
+cells will be used to first heat the battery with a resistive heater and the battery will start charging
+once it reaches a suitable temperature. The current best estimate (CBE) for power consumption
+of the various components is shown in Figure 3.12. During the night we expect a power draw of
+12.4W over a duration of 384h, which is a total period of 16 Earth days and includes an extra
+time of 24h for dusk and dawn, where the power generated would be insufficient. During the
+remaining 288h the system will require an average of 17.4W of power to charge the battery (95%
+efficiency assumed) plus the power consumption of the electronics and the RF-radio, estimated
+to be an effective total and conservative estimate of 50.8W. If needed for thermal control (not to
+overheat) or for power management (insufficient solar power) the DCB software can control the
+various parts of LuSEE-Night and un-power the spectrometer and preamps or power the RF-radio
+only when communication is expected (as shown in Figure 3.18). Using average performance data
+from space grade photovoltaic panel vendors LuSEE-Night will need a minimum of 0.36m2 of solar
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                   36
+cells. The exact size of the panel will be determined with margin management and more detailed
+simulations of LuSEE at the proposed landing site.
+
+
+3.5 C OMMUNICATION
+LuSEE will be stationed on the far side of the Moon. Due to Moon’s tidally-locked orbit, it’s angular
+velocity around the earth matches the angular velocity around its own axis. Consequently the Moon
+faces the Earth with the same hemisphere, but the entire Moon-Earth system rotates with respect to
+the Sun. Both near and far lunar hemispheres experience ordinary lunar “days” with a full solar
+cycle (time between subsequent solar transits) of about 29.5 Earth days and lunar sidereal cycle of
+about 27.3 Earth days (time between subsequent transits of a distant star).
+   This cycle defined the basic observational pattern of the LuSEE-Night experiment. We perform
+ultra-quiet lunar night-time observation for about 15 earth days, followed by the lunar day-time
+15 earth days, during which we recharge the batteries and perform communications with the
+Earth. These communications will involve the full download of the data as well as housekeeping
+information. It will also involve uploading the system configuration for the next observing run.
+Since there are approximately two earth weeks during this period, the results of the previous night’s
+observation will likely influence settings and configuration for the subsequent night operation.
+   Because the lander will be located on the far side of the moon, the communication will necessarily
+be performed via the relay satellite. The current plan is to use the Europen Space Agency’s Lunar
+Pathfinder Satellite3 (LPF). LPF is a first step towards ESA’s ambitious Moonlight vision to create
+a network of communications and data relay satellites serving users worldwide. It is a dedicated
+mission to the moon to provide communication capabilities to assets on the far lunar side in S-band
+and X-band. It is currently scheduled to launch on the same rocket that will deliver CS-3 mission on
+which the LuSEE-Night will reside.
+   LPF is built by the Surrey Space Technologies SSTL and will be operated commercially. That is,
+most actors will have to acquire appropriate bandwidth by negotiation with SSTL. LPF will operate
+by default in a store-and-forward mode in which the data will be exchanged with the lunar asset at
+appropriate times and communicated to Earth later.
+    LPF will be delivered into a high elliptical inclined frozen orbit. Majority of orbits around the
+Moon are unstable, but a small set of orbital inclinations are naturally stable. LPF’s orbit will be
+elliptical so that it will spend majority of the time serving the lunar southern hemisphere which is
+believed to be commercially more interesting.
+   The lander of CS-3 will also carry a Jet Propulsion Lab (JPL) user terminal which will be used to
+commission the LPF communication capabilities. It will be an S-band receiver system. LuSEE-Night
+will rely on a clone of the JPL system, using the same radio and software, but a different antenna.
+   Our current design involves a medium gain patch antenna located at the top of the turntable and
+4W emission power. The total bandwidth will be of course dominated by the data download from
+the instrument to earth, since the configuration packets are rather modest in size.
+   To estimate the feasibility of this plan we have estimated our data needs and then compared
+those to the total available bandwidth. This calculation was done as follows.
+   The minimum estimated data transfer is as follows. If raw data are averaged in the instrument
+over timescales that are too long, the sky signal will be smeared, leading to a loss of information.
+
+ 3
+     https://bsgn.esa.int/service/lunar-pathfinder/
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                37
+ Item                                   Size (GB)   Comment
+ Main auto and cross-power spectra         1-2      16 power spectra, every 30s, 1024 spectral bins, 2 bytes
+                                                    per bin
+ Additional power spectra                  1-4      self-subtracted data, outlier corrected spectra, high-res
+                                                    spectra
+ House-keeping data                        0.5      200 sensors, every second at 2 bytes per reading
+ raw-data streams                          1-2      both raw ADC samples, unaveraged raw PFB samples
+ Total                                  3.5 - 8.5   Total data per night.
+
+                 Table 3.1: The total data payload size for individual lunar night.
+
+
+On the other hand, if the integration is too short, we are transmitting data that is noisier than any
+temporal changes in signal, leading to inefficient use of bandwith. This lead to a condition that
+                                                      !−1/3
+                                              d log T 2
+                                            
+                                    ∆t ∼                B       ,                               (3.1)
+                                                 dt
+
+where δt is the integration time, d log
+                                     dt
+                                        T
+                                          is the logarithmic rate of change of signal due to Moon’s
+rotation and B is the bandwidth of a bin. Using plausible assumptions this lead to ∆t ∼ 1 min that
+further leads to about 500MB of data for 15 day integration. Of course, this is an absolute minimum
+without any housekeeping. In practice, we want to sample at finer resoltions, add significant
+amounts of house-keeping data as well as raw data segments, self-subtracted power spectra, etc that
+will help us better understand that system performance and calibration issues. Table 3.1 describes
+currently envisioned data payload volumes. In short, the science requirement is that at least 3.5GB
+of data are transferred every lunar day. By using more aggressive lossy compression it would be
+possible to reduce data payload to 1GB. At data volumes below 1GB per lunar day, the science will
+start to become seriously impacted. On the other hand, there is almost no upper limit on how much
+data we can transfer that will bring some value to the project as described next.
+   The valuable commodity is the bandwidth to Earth rather than the actual data storage. We
+therefore plan to have significantly more storage that the available bandwidth. The current plan is
+to have 128GB of solid state storage and total daily payloads of 64GB. Each night’s total payload will
+be available for the day following the observations and one more subsequent lunar day. The total
+payload will consist of a small “always-transfer” portion and further data that will be transferred
+upon request. For example, based on how the data looks, we might decide to download further data
+which are either more finely averaged in time or frequency or some other combination.
+    To understand the total available bandwidth, we have performed the following calculation. We
+have assumed a nominal frozen orbit for the LPF and neglected any perturbation. We have assumed
+a 4W emitted power feeding a medium gain antenna at LuSEE-night with the following gain factors:
+6.5dBi at zenith, dropping to 4.5dBi at 30◦ from zenith and 0dBi at 60◦ from zenith. We have
+assumed that no data transfer take place if satellite is more than 60◦ from zenith. We have then
+re-implemented the link margin calculation from the SSTL provided spreadsheet. This calculation
+takes into account various errors in pointing (the satellite antenna activelly points at the asset on
+the Moon) and then based on the total gain and distance calculates link margin for each raw bit
+rate. Following SSTL specification we assumed that raw bit rates are quantized in powers of two
+with the maximum bitrate of 2048Mbps and that bit rates can adapt dynamically as the satellite
+tracks across the sky. The coded bit rate is 66% of the raw-bit rate and is the available bandwith for
+data transfer. We assume we can transfer during the 12 central days of each lunar day. Results of
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                 38
+                                                              30 deg
+                                   30                         10 deg
+                                                              -10 deg
+         Total Data Transfer(GB)
+                                   25                         -30 deg
+                                                              -50 deg
+                                                              -70 deg
+                                   20                         -90 deg
+                                   15
+
+                                   10
+
+                                   50.0   0.2       0.4                 0.6        0.8   1.0
+                                                satellite orbital phase (cycles)
+Figure 3.19: Total transfer volumes as a function of the phase of the LPF orbit for different landing
+             latitutdes. This shows the variations of the total available bandwidth during different
+             days, i.e. each day will correspond to a particular value of LPF phase. See text for
+             discussion.
+
+
+this exercise are plotted in Figure 3.19. We see that in all cases the total available volume exceeds
+our needs. Interestingly, for southern locations, the data transfers is generally higher but also
+varies considerably from day to day. The equator locations provide a good margin in the available
+bandwidth, although what fraction of the total theoretically available bandwidth will be available to
+us remains to be determined.
+
+
+3.6 C ALIBRATOR
+Accurate calibration of the LuSEE-Night instrument is essential for identifying and separating the
+flux from foreground sources from the cosmological 21cm signal. For a successful analysis, both
+absolute and relative calibration vectors must be understood.
+    The absolute calibration allows us to associate the total energy transfer from the sky to the
+antenna system in W/m2 /Hz units or equivalently in Kelvin (assuming Rayleigh-Jeans conversion
+factor) as is commonly done in radio astronomy. This is very difficult to do with high precision,
+due to many unknowns. For example, the coupling of our antennas to the ground is unknown at
+percent level, because it depends on the dielectric constant of the lunar regolith. Moreover, the
+effects of reflective structures in the lander on the beam have the be modeled using electromagnetic
+simulators; these are again typically accurate at around a few percent level. Our main level to
+understand these effects is to measure the same sky using different antenna configurations. Antenna
+azimuth and elevation will modulate the effects of the ground and other structures in a unique
+fashion. Because the sky being observed is the same, this would allow us to break degeneracies
+and establishing the absolute accuracy of the beam model by comparing expectations given EM
+simulations with the data while making only weak assumptions about the sky signal. We estimate
+that this would allow us to understand the overall antenna effects at 1-10% level. The second
+uncertainty is the shape of signal propagation through the front-end amplifier and electronics to
+the digital subsystem. The main uncertainty here is the stray capacitance which directly affects
+the coupling of antenna to front-end amplifier. The response of the rest of the signal chain will be
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                39
+      1.00
+
+
+
+      0.75
+
+
+
+      0.50
+
+
+
+      0.25
+N-S
+
+
+
+
+      0.00
+
+
+
+      0.25
+
+
+
+      0.50
+
+
+
+      0.75
+
+
+             1.00   0.75   0.50   0.25   0.00   0.25   0.50   0.75   1.00
+                                         E-W
+
+
+
+Figure 3.20: Left: Coverage of a beam at latitude -10◦ assuming a calibration on the Lunar Pathfinder
+             orbit. Right: Block diagram for the calibrator electronics board.
+
+
+carefully measured in the laboratory as a function of temperature recorded at crucial positions along
+the signal chain. We hope to establish an absolute overall gain at the percent level. Overall, without
+imposing external data beyond system simulation we think that establishing absolute calibration at
+the 20% level is feasible.
+   Existence of external data will help us improve these measurements. One of the main standard
+calibrations is our own galaxy, which has been measured at these frequencies in the 1970s. The
+RAE-2 experiment [25] in orbit around the Moon and the ground based measurements of [27]
+provide consistent measurements with 10% absolute accuracy. These measurement will be an
+important cross-check. Moreover, radio emission from Jupiter varies temporally at the 10% level,
+but its long-term average is predictable to better accuracy. Jupiter is additionally a unique polarized
+radio source on the sky.
+   The relative calibration refers to our ability to constrain the ratio of fluxes at two different
+frequencies. In principle this is easier than absolute calibration, because the overall gain changes
+cancel out. Nevertheless it is still a daunting prospect for many of the same reasons that affect the
+absolute calibration determination. Moreover, because we are ultimately interested in measuring the
+Dark Ages trough, we are not interested in relative calibration vectors that correspond to variations
+over the band that are smoother than the Dark Ages trough.
+   In terms of system design, our main insurance is the small electrical scale of the antennas, which
+ensures that the antenna spectral responses are slowly varying as a function of frequency. In general
+structures that are at physical distance L, will generate standing waves for N λ = L, imprinting
+oscillatory structure in the antenna response at ∆ν = c/L. Given that our overal system size is
+O(10m), which gives ∆ν ∼ 30 MHz, which is more slowly varying than the Dark Ages trough, but
+not by much. After marginalizing over a slowly varying gain vector and again seeking consistency
+after modifying antenna azimuth and elevation parameters we think that it is feasible to establish
+percent level relative calibration uncertainty from first principles.
+   To go beyond that we will employ an external calibrator on a satellite. This calibrator will act as
+a known source providing both absolute and relative sky calibration. Any satellite in a low moon
+orbit will provide a good coverage of our beam in multiple directions as well as cross linking. This is
+show in the left panel of Figure 3.20 for a representative orbit. The right panel of the same figure
+shows the block diagram for the electronic board of this component. The total calibrator payload
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                  40
+includes a 1kg electronics board as well as 1kg antenna package as four 1m stacer antennas.
+   The calibrator works by providing a known signal that is detected in cross-correlation on the
+receiving end. The total power consumption is 10W, of which radiated power is 0.2W. In cross-
+correlation at the receiver this gives sufficient signal to noise to allow integration without explicit
+Doppler corrections. This is sufficient to map the spectral and spatial response of our beam to high
+accuracy. The strong cross-linking (probing the same point in the receiving beam) from multiple
+orbits and orientations of the emitting beam would allow us to solve simultaneously for the emitting
+beam shape as well as the receiving beam shape. Together with overall system simulations this
+would allow us to understand the beam systematics to better than the 10−3 level. We note that the
+calibrator does not need to be launched concurrently with the main LuSEE payload. As long as
+the firmware on the spectrometer is capable on detecting and latching on to the calibrator, useful
+information will come as long as there is an overlap in the mission duration. Finally, for long-lived
+missions, the same calibrator could provide service to subsequent missions.
+   We are currently in discussion with NASA regarding possible platforms on which the calibrator
+could be flown. Several possibilities have been identified. The subsequent development of the
+calibration plan is pending identification of the appropriate vehicle to carry the calibrator.
+
+
+
+4 A SSEMBLY, I NTEGRATION & T ESTING
+Quality assurance for LuSEE-Night includes verification and validation procedures undertaken at
+various points during the instrument build. The sequence is illustrated diagrammatically in Figure
+4.1.
+    Detailed component and subsystem requirements documents will be the basis for verification
+testing. Tests may include functional and performance measurements. Depending on the component,
+both electronic and environmental (thermal, vibration) tests may be required. The first verification
+step, for engineering (EM) and flight model (FM) components, will be done at the subsystem teams’
+site. For the EM components, these tests must be completed by the time of the Final Design Review
+currently scheduled for March 2023, which will coincide with a Production Readiness Review (Step
+1 in Figure 4.1). The FM components are then manufactured and the component-level qualification
+tests of Step 1 are repeated (September 2023). At BNL, the MEC slices are then assembled and
+integrated and the crate is tested on the bench, and the MEC and battery are integrated into the
+inner mechanical box to form the IEA FM subassembly. We plan to make a temporary hookup of the
+IEC with preamps, rotation stage, and comms antenna and perform a functional bench test during
+Fall 2023 (Step 3). A pre-ship review is scheduled for January 2024, when the results of the bench
+test of the IEC will be reviewed. Shipment of the DOE deliverables (IEC, antennas, and rotation
+stage) to SSL is scheduled for March 2024, at which point the DOE MIE project is concluded.
+   After completion of the MIE, the full LuSEE-Night instrument is integrated with the NASA
+deliverables (outer enclosure with thermal management) at SSL (step 4) followed by shipment
+to the CLPS lander vendor. The CLPS vendor will verify that the instrument conforms to all
+accommodations agreed to in Appendix A, integrate LuSEE-Night and additional payloads with
+the lander’s mechanical, electrical, and thermal systems, and perform final tests (step 5) before
+transport to the launch site. The completed lander will then move to the launch site and undergo
+final pre-launch tests (step 6). The CS-3 CLPS launch date is currently scheduled for early 2025.
+   It is expected that LuSEE-Night personnel will play an active role in final instrument tests at SSL,
+vendor, and launch sites. See the following Section for a discussion of tests planned during transit,
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                  41
+  LBNL
+
+                                                                    4
+  SSL
+
+
+
+
+                DCB
+                PF-PS
+
+                                                                               5
+   1                                                           LUSEE-NIGHT          LPF
+                                                               INSTRUMENT     LNI
+                                                                                     +?
+
+
+                                                              3
+  BNL
+
+
+
+
+                                                                                LANDER         CS-3
+          RFS                       INTEGRATED                               (CLPS VENDOR)   LAUNCH
+          PDU                       EQUIPMENT
+                                     ASSEMBLY
+         COMM
+
+         ANT ELX
+                                                                                              6
+                        2
+
+Figure 4.1: Sequence of integration and test steps: (1) component test, (2) test of integrated Main
+            Electronics Crate), (3) lashup of IEA, preamps, rotation stage, and comm antenna, (4)
+            integration and test of full LuSEE-Night instrument, (5) integration at CLPS lander
+            vendor, (6) pre-launch final functional test. Steps 4-6 occur after completion of the DOE
+            MIE project in March 2024.
+
+
+commissioning, and early operations on the lunar surface.
+
+
+
+5 C ONCEPT OF O PERATIONS
+5.1 L U SEE C OMMISSIONING ON THE LUNAR SURFACE
+On the lunar surface and shortly after landing, LuSEE requires a short period of aliveness testing.
+This will involve the application of LuSEE operational power by the Lander PDU.
+  The LuSEE internal deployment power bus shall remain safe – unpowered – during all mission
+phases in which deployments are not planned. That includes times when the LuSEE MEP itself is
+powered.
+   The Lander shall provide for low-latency (<1 minute latency) LuSEE telemetry and telecommands
+to and from earth. Telemetry data will be sent by LuSEE to the Lander and then to the Lander’s
+MOC from which it will flow to the LuSEE SOC. The LuSEE SOC will run commissioning procedures
+to generate and send telecommand sequences to verify the nominal functioning of the LuSEE
+instrument.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                    42
+5.2 D EPLOYMENTS
+On the lunar surface with basic functionality verified, LuSEE requires a period for the deployment
+of its appendages. The LuSEE team will develop deployment procedures to use in activating and
+verifying nominal functioning of the instrument followed by the deployment of its appendages.
+These procedures will require low-latency (<1 minute latency) real-time bi-directional telemetry
+and telecommands between the LuSEE SOC and the LuSEE instrument.
+   The Lander shall facilitate the start of the LuSEE sensor deployments no later than 12 hours after
+landing.
+  Deployments will require the application of LuSEE operational power by the Lander PDU. The
+LuSEE internal protected deployment power bus shall be activated for the deployments, while the
+MEP is powered, producing telemetry, and receiving instrument commands,
+   LuSEE shall design and operate an internal deployment bus interface such that the five (5) LuSEE
+deployment circuits are protected from accidental or premature firing.
+    Working with the Lander’s MOC, LuSEE SOC personnel will conduct deployments of the LuSEE
+appendages. This will involve sending low latency near-real-time command procedures to prepare
+for each step in the deployment process. In coordination with the Lander MOC personnel, the LuSEE
+team shall be responsible for sending commands to activate the internal deployment safety power
+bus and the individual deployment commands.
+
+
+5.3 E ARLY O PERATIONS
+On the lunar surface, with its appendages deployed, LuSEE will enter its initial daytime operational
+phase. This will involve the continuous observation of the radio sky.
+   Telemetry data (not low latency – not real-time) will be sent by the LuSEE MEP to the Lander
+and eventually to the MOC from which it will flow to the LuSEE SOC.
+   The LuSEE SOC expects to receive telemetry data in conjunction with the Lander-earth contact
+schedule. Notional contact times are apt to be about 12 hours apart. The Lander shall transfer
+LuSEE telemetry data to the ground with minimal latency, nominally at each ground contact.
+    The rate at which LuSEE telemetry data are sent to the Lander CDH can be controlled by the
+LuSEE SOC with ground-based telecommands. The LuSEE MEP is equipped with a large non-
+volatile memory such that LuSEE telemetry can be acquired and stored internally. Telemetry data
+is then buffered internally by the LuSEE MEP. Buffered telemetry data can then be played back at
+commandable bit-rates to the Lander CDH upon command.
+   LuSEE SOC personnel will collect and analyze telemetry. Based on the received telemetry
+data itself and a pre-planned LuSEE operations schedule, LuSEE personnel will formulate daily
+operational plans and build command loads.
+   Personnel in the LuSEE SOC will provide command loads to the MOC. The MOC will eventually
+forward the commands to the Lander and then to the LuSEE instrument, where they will be acted
+upon or installed in the instrument’s stored command table for later execution.
+   The LuSEE SOC will provide command loads in conjunction with the Lander-earth contact
+schedule. Notional contact times are apt to be about 12 hours apart. The Lander shall uplink LuSEE
+command loads with minimal latency, nominally at each ground contact.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                43
+5.4 T RANSITION TO S CIENCE O PERATIONS
+As part of the first day of operations, LuSEE will transition to using its internal systems for power
+generation and for communications. As the sun sets at the end of the first lunar day, the Lander
+batteries will drain and the Lander’s daytime mission will end.
+   Using LuSEE specific solar panels and the LuSEE internal power system, the LuSEE internal
+battery system will be fully charged. LuSEE will begin operations from its internal power system.
+LuSEE will stop its use of the Lander power system.
+   Using the internal LuSEE User-Terminal transceiver, telemetry data (not low latency – not real-
+time) will be transmitted by the LuSEE internal transceiver to the orbiting relay spacecraft and
+eventually to the orbiter MOC from which it will flow to the LuSEE SOC. LuSEE will stop its use of
+the Lander communications system.
+   Based on the received telemetry data itself and a pre-planned LuSEE operations schedule, LuSEE
+personnel will formulate daily operational plans and build command loads.
+    Personnel in the LuSEE SOC will provide command loads to the Orbiter MOC. Those commands
+will eventually be radiated to the orbiting relay spacecraft and then to the LuSEE internal transceiver
+on the surface where they will be acted upon or installed in the LuSEE stored command table for
+later execution.
+   LuSEE requires that, as the sun sets at the end of the first lunar day, the Lander and all of its other
+subsystems will permanently cease all operations. This shall include quiescing Lander subsystems
+throughout the lunar night. This shall include ensuring that all lunar subsystems remain inactive
+when the sun rises at the end of the first and all subsequent lunar nights.
+
+
+5.5 S CIENCE O PERATIONS DURING LUNAR NIGHT
+On the lunar surface, with its appendages deployed and operating independently from the Lander,
+LuSEE will enter its night operations phase. This will involve the continuous observation of the
+radio sky.
+   Having configured its antenna subsystem (in terms of theta and phi angles) during the previous
+lunar day, LuSEE will remove power from its antenna actuation system.
+   Having received its night operations schedule and time synchronization during communication
+contacts during the previous lunar day, LuSEE will remove power from its User-Terminal transceiver
+subsystem.
+   LuSEE will configure itself for night operations. LuSEE will monitor operating voltages and
+currents throughout the night operations to ensure safe operations that maximize scientific return.
+   LuSEE will begin continuous observation of the radio sky. Data will be acquired throughout the
+lunar night. Digital signal processing will produce a stream of averaged spectral data that will be
+recorded in LuSEE non-volatile memory throughout the night.
+   As the sun rises at the start of the next lunar day, LuSEE will transition to its daytime operations.
+
+
+5.6 S CIENCE O PERATIONS DURING LUNAR DAY
+On the lunar surface, with its appendages deployed and operating independently from the Lander,
+LuSEE will enter its day operations phase. This will involve the continuous observation of the radio
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                     44
+sky. Day-time observations will generally be of lower priority than night-time observations but will
+be useful in terms of instrument operations.
+    As the sun rises and when LuSEE power levels allow it, LuSEE will apply power to its User-
+Terminal transceiver subsystem. LuSEE will then answer hails from the orbiting relay spacecraft as
+defined by the orbiter’s contact schedule. As the orbiter contact schedule allows, LuSEE will receive
+CCSDS telecommand data sent from the LuSEE SOC through the orbiter. The notional telecommand
+volume to LuSEE is expected to be small. As the orbiter contact schedule allows, LuSEE will send
+telemetry data to the LuSEE SOC through the orbiter. The notional telemetry to be returned through
+the relay spacecraft is to be 10GB per lunar cycle (28 earth days).
+   Based on planning and data obtained from previous night observing periods, the LuSEE SOC
+will send commands to configure the LuSEE antenna subsystem (in terms of theta and phi angles)
+during the lunar day.
+   Based on planning and data obtained from previous night observing periods, the LuSEE SOC will
+send a stored command table set of commands to be used in night operations during the following
+lunar night.
+   LuSEE will configure itself for day operations. LuSEE will monitor operating voltages and currents
+and battery charging throughout day-time operations to ensure safe operations that maximize
+scientific return.
+   As the sun sets at the end of the lunar day, LuSEE will transition to its night-time operations.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                    45
+R EFERENCES
+ [1] E. National Academies of Sciences and Medicine, Pathways to Discovery in Astronomy and
+     Astrophysics for the 2020s. The National Academies Press, Washington, DC, 2021.
+     https://nap.nationalacademies.org/catalog/26141/
+     pathways-to-discovery-in-astronomy-and-astrophysics-for-the-2020s.
+ [2] K. Abazajian, G. E. Addison, P. Adshead, Z. Ahmed, D. Akerib, A. Ali, S. W. Allen, D. Alonso,
+     M. Alvarez, M. A. Amin, and et al., “CMB-S4: Forecasting Constraints on Primordial
+     Gravitational Waves,” ApJ 926 no. 1, (February, 2022) 54, arXiv:2008.12619
+     [astro-ph.CO].
+ [3] S. Bale, K. Goetz, P. Harvey, P. Turin, J. Bonnell, T. Dudok de Wit, R. Ergun, R. MacDowall,
+     M. Pulupa, M. André, et al., “The fields instrument suite for solar probe plus,” Space science
+     reviews 204 no. 1, (2016) 49–82.
+ [4] A. Lewis and A. Challinor, “21cm angular-power spectrum from the dark ages,” Phys. Rev. D
+     76 no. 8, (October, 2007) 083005, arXiv:astro-ph/0702600 [astro-ph].
+ [5] A. Loeb and M. Zaldarriaga, “Measuring the Small-Scale Power Spectrum of Cosmic Density
+     Fluctuations through 21cm Tomography Prior to the Epoch of Structure Formation,”
+     Phys. Rev. Lett. 92 no. 21, (May, 2004) 211301, arXiv:astro-ph/0312134 [astro-ph].
+ [6] Cosmic Visions 21 cm Collaboration, R. Ansari, E. J. Arena, K. Bandura, P. Bull, E. Castorina,
+     T.-C. Chang, S.-F. Chen, L. Connor, S. Foreman, J. Frisch, D. Green, M. C. Johnson,
+     D. Karagiannis, A. Liu, K. W. Masui, P. D. Meerburg, M. Münchmeyer, L. B. Newburgh,
+     A. Obuljen, P. O’Connor, H. Padmanabhan, J. R. Shaw, C. Sheehy, A. Slosar, K. Smith,
+     P. Stankus, A. Stebbins, P. Timbie, F. Villaescusa-Navarro, B. Wallisch, and M. White, “Inflation
+     and Early Dark Energy with a Stage II Hydrogen Intensity Mapping Experiment,” arXiv e-prints
+     (October, 2018) arXiv:1810.09572, arXiv:1810.09572 [astro-ph.CO].
+ [7] A. Liu, J. R. Pritchard, M. Tegmark, and A. Loeb, “Global 21 cm signal experiments: A
+     designer’s guide,” Phys. Rev. D 87 no. 4, (February, 2013) 043002, arXiv:1211.3743
+     [astro-ph.CO].
+ [8] S. Furlanetto, J. D. Bowman, J. Mirocha, J. C. Pober, J. Burns, C. L. Carilli, J. Munoz,
+     J. Aguirre, Y. Ali-Haimoud, M. Alvarez, A. Beardsley, G. Becker, P. Breysse, V. Bromm, P. Bull,
+     T.-C. Chang, X. Chen, H. Chiang, J. Cohn, F. Davies, D. DeBoer, J. Dillon, O. Doré, C. Dvorkin,
+     A. Fialkov, B. Hazelton, D. Jacobs, K. Karkare, S. Kohn, L. Koopmans, E. Kovetz, P. La Plante,
+     A. Lidz, A. Liu, Y.-Z. Ma, Y. Mao, K. Masui, A. Mesinger, S. Murray, A. Parsons, B. Saliwanchik,
+     J. Sievers, N. Thyagarajan, H. Trac, E. Visbal, and M. Zaldarriaga, “Astro 2020 Science White
+     Paper: Fundamental Cosmology in the Dark Ages with 21-cm Line Fluctuations,” arXiv e-prints
+     (March, 2019) arXiv:1903.06212, arXiv:1903.06212 [astro-ph.CO].
+ [9] J. B. Muñoz, E. D. Kovetz, and Y. Ali-Haïmoud, “Heating of baryons due to scattering with
+     dark matter during the dark ages,” Phys. Rev. D 92 no. 8, (October, 2015) 083528,
+     arXiv:1509.00029 [astro-ph.CO].
+[10] H. Tashiro, K. Kadota, and J. Silk, “Effects of dark matter-baryon scattering on redshifted 21
+     cm signals,” Phys. Rev. D 90 no. 8, (October, 2014) 083522, arXiv:1408.2571
+     [astro-ph.CO].
+[11] R. Barkana, “Possible interaction between baryons and dark-matter particles revealed by the
+     first stars,” Nature 555 no. 7694, (March, 2018) 71–74, arXiv:1803.06698 [astro-ph.CO].
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                 46
+[12] T. R. Slatyer and C.-L. Wu, “Early-Universe constraints on dark matter-baryon scattering and
+     their implications for a global 21 cm signal,” Phys. Rev. D 98 no. 2, (July, 2018) 023013,
+     arXiv:1803.09734 [astro-ph.CO].
+[13] J. B. Muñoz and A. Loeb, “Insights on Dark Matter from Hydrogen during Cosmic Dawn,”
+     arXiv e-prints (February, 2018) arXiv:1802.10094, arXiv:1802.10094 [astro-ph.CO].
+[14] R. Barkana, N. J. Outmezguine, D. Redigol, and T. Volansky, “Strong constraints on light dark
+     matter interpretation of the EDGES signal,” Phys. Rev. D 98 (November, 2018) 103005,
+     arXiv:1803.03091 [hep-ph].
+[15] T. R. Slatyer, “Energy injection and absorption in the cosmic dark ages,” Phys. Rev. D 87
+     no. 12, (June, 2013) 123513, arXiv:1211.0283 [astro-ph.CO].
+[16] H. Liu, T. R. Slatyer, and J. Zavala, “Contributions to cosmic reionization from dark matter
+     annihilation and decay,” Phys. Rev. D 94 no. 6, (September, 2016) 063507, arXiv:1604.02457
+     [astro-ph.CO].
+[17] S. J. Clark, B. Dutta, Y. Gao, Y.-Z. Ma, and L. E. Strigari, “21 cm limits on decaying dark matter
+     and primordial black holes,” Phys. Rev. D 98 no. 4, (August, 2018) 043006,
+     arXiv:1803.09390 [astro-ph.HE].
+[18] T. Moroi, K. Nakayama, and Y. Tang, “Axion-photon conversion and effects on 21 cm
+     observation,” Physics Letters B 783 (August, 2018) 301–305, arXiv:1804.10378 [hep-ph].
+[19] A. Falkowski and K. Petraki, “21cm absorption signal from charge sequestration,” arXiv e-prints
+     (March, 2018) arXiv:1803.10096, arXiv:1803.10096 [hep-ph].
+[20] E. D. Kovetz, I. Cholis, and D. E. Kaplan, “Bounds on ultralight hidden-photon dark matter
+     from observation of the 21 cm signal at cosmic dawn,” Phys. Rev. D 99 no. 12, (June, 2019)
+     123511, arXiv:1809.01139 [astro-ph.CO].
+[21] J. C. Hill and E. J. Baxter, “Can early dark energy explain EDGES?,” J. Cosmology Astropart.
+     Phys. 2018 no. 8, (August, 2018) 037, arXiv:1803.07555 [astro-ph.CO].
+[22] R. Khatri and B. D. Wandelt, “21-cm Radiation: A New Probe of Variation in the Fine-Structure
+     Constant,” Phys. Rev. Lett. 98 no. 11, (March, 2007) 111301, arXiv:astro-ph/0701752
+     [astro-ph].
+[23] J. D. Bowman, A. E. E. Rogers, R. A. Monsalve, T. J. Mozdzen, and N. Mahesh, “An absorption
+     profile centred at 78 megahertz in the sky-averaged spectrum,” Nature 555 no. 7694, (March,
+     2018) 67–70, arXiv:1810.05912 [astro-ph.CO].
+[24] S. Ferraro, N. Sailer, A. Slosar, and M. White, “Snowmass2021 Cosmic Frontier White Paper:
+     Cosmology and Fundamental Physics from the three-dimensional Large Scale Structure,” arXiv
+     e-prints (March, 2022) arXiv:2203.07506, arXiv:2203.07506 [astro-ph.CO].
+[25] J. K. Alexander, M. L. Kaiser, J. C. Novaco, F. R. Grena, and R. R. Weber, “Scientific
+     instrumentation of the Radio-Astronomy-Explorer-2 satellite.,” A&A 40 no. 4, (May, 1975)
+     365–371.
+[26] J. C. Novaco and L. W. BRowN, “Nonthermal galactic emission below 10 megahertz,” The
+     Astrophysical Journal 221 (1978) 114–123.
+[27] H. Cane, “Spectra of the non-thermal radio radiation from the galactic polar regions,” Monthly
+     Notices of the Royal Astronomical Society 189 no. 3, (1979) 465–478.
+[28] J. P. Eastwood, S. D. Bale, M. Maksimovic, I. Zouganelis, K. Goetz, M. L. Kaiser, and J.-L.
+     Bougeret, “Measurements of stray antenna capacitance in the stereo/waves instrument:
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                  47
+     Comparison of the radio frequency voltage spectrum with models of the galactic nonthermal
+     continuum spectrum,” Radio Science 44 no. 04, (2009) 1–8.
+[29] A. Zaslavsky, N. Meyer-Vernet, S. Hoang, M. Maksimovic, and S. D. Bale, “On the antenna
+     calibration of space radio instruments using the galactic background: General formulas and
+     application to stereo/waves,” Radio Science 46 no. 02, (2011) 1–7.
+[30] C. A. Balanis, Antenna theory: analysis and design. John wiley & sons, 2015.
+[31] S. D. Bale, R. Ullrich, K. Goetz, N. Alster, B. Cecconi, M. Dekkali, N. R. Lingner, W. Macher,
+     R. E. Manning, J. McCauley, S. J. Monson, T. H. Oswald, and M. Pulupa, “The Electric
+     Antennas for the STEREO/WAVES Experiment,” Space Sci. Rev. 136 no. 1-4, (Apr., 2008)
+     529–547.
+[32] R. E. Grimm, “New analysis of the apollo 17 surface electrical properties experiment,” Icarus
+     314 (2018) 389–399.
+     https://www.sciencedirect.com/science/article/pii/S0019103517307388.
+[33] K. Tauscher, D. Rapetti, and J. O. Burns, “Global 21 cm signal extraction from foreground and
+     instrumental effects. III. utilizing drift-scan time dependence and full stokes measurements,”
+     The Astrophysical Journal 897 no. 2, (Jul, 2020) 175.
+     https://doi.org/10.3847/1538-4357/ab9b2a.
+[34] D. Rapetti, K. Tauscher, J. Mirocha, and J. O. Burns, “Global 21 cm signal extraction from
+     foreground and instrumental effects. II. efficient and self-consistent technique for constraining
+     nonlinear signal models,” The Astrophysical Journal 897 no. 2, (Jul, 2020) 174.
+     https://doi.org/10.3847/1538-4357/ab9b29.
+[35] K. Tauscher, D. Rapetti, J. O. Burns, and E. Switzer, “Global 21 cm signal extraction from
+     foreground and instrumental effects. i. pattern recognition framework for separation using
+     training sets,” The Astrophysical Journal 853 no. 2, (Feb, 2018) 187.
+     https://doi.org/10.3847/1538-4357/aaa41f.
+[36] K. Tauscher, D. Rapetti, B. D. Nhan, A. Handy, N. Bassett, J. Hibbard, D. Bordenave, R. F.
+     Bradley, and J. O. Burns, “Global 21 cm signal extraction from foreground and instrumental
+     effects. IV. accounting for realistic instrument uncertainties and their overlap with foreground
+     and signal models,” The Astrophysical Journal 915 no. 1, (Jul, 2021) 66.
+     https://doi.org/10.3847/1538-4357/ac00af.
+[37] L. Chen, A. Aminaei, L. Gurvits, et al., “Antenna design and implementation for the future
+     space ultra-long wavelength radio telescope,” Exp Astron 45 (2018) 231–253.
+[38] S. Ellingson, “Antennas for the next generation of low-frequency radio telescopes,” IEEE
+     Transactions on Antennas and Propagation 53 no. 8, (2005) 2480–2489.
+[39] M. Pulupa, S. Bale, J. Bonnell, T. Bowen, N. Carruth, K. Goetz, D. Gordon, P. Harvey,
+     M. Maksimovic, J. Martínez-Oliveros, et al., “The solar probe plus radio frequency
+     spectrometer: measurement requirements, analog design, and digital signal processing,”
+     Journal of Geophysical Research: Space Physics 122 no. 3, (2017) 2836–2854.
+[40] B. Donakowski, “Spp fields mep main electronics package, mechanical packaging. fields icdr.
+     (presentation at space sciences laboratory, university of california, berkeley.).” 2007.
+
+
+
+
+LuSEE-Night Conceptual Design Report (version 1.0)                                                 48
+

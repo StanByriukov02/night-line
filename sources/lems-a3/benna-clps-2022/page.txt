@@ -1,0 +1,172 @@
+--- page 1 ---
+Lunar Environment Monitoring Station
+(LEMS)
+M. Benna1,2, N. C. Schmerr3, M. Sarantos1, D. DellaGiustina4, S. Bailey4, 
+D. Gershman1, M. Horányi5, J. Szaley6, and R. Weber7
+1 NASA Goddard Space Flight Center, Greenbelt, MD
+2 University of Maryland Baltimore County, Baltimore, MD
+3 University of Maryland College Park, College Park, MD
+4 University of Arizona, Tucson, AZ
+5 University of Colorado, Boulder, CO
+6 Princeton University, Princeton, NJ
+7 NASA Marshall Space Flight Center, Huntsville, AL
+--- page 2 ---
+ It is a self-powered, self-managed, and self-
+communicating flight system that provides all 
+attributes of a science mission.
+ It conducts science observations on the lunar surface 
+continuously (day and night).
+ It is fully autonomous, requires no assistance, and is 
+agnostic to the method of delivery (CLPS or Artemis).
+ It is designed to be easily deployable and to 
+accommodate various science goals, instrumentation, 
+and mission scenarios.
+LEMS is a compact, autonomous, and self-sustaining instrument package that enables multi-year,
+in-situ, monitoring of the lunar geophysical environment.
+What 
+is LEMS 
+?
+--- page 3 ---
+Why LEMS? 
+(1)
+ Augmentation to the current capabilities of CLPS:
+ Many key geophysical measurements require sensors to operate for long durations (several 
+years), beyond the current technical and operational capabilities of the CLPS vehicles.
+ The self-sustaining architecture of LEMS:
+ guards the CLPS from having to survive beyond a few days on the surface of the Moon.
+ provides the thermal/power/comm. resources for sensors requiring long-term operations.
+ provides a simple and standard mechanical interface to CLPS.
+
+--- page 4 ---
+Why LEMS? 
+(2)
+ Ideal package for delivery by crewed missions:
+ LEMS provides a standalone, all-in-one science package that 
+minimizes crew workload during deployment. 
+ Unlike the Apollo ALSEP:
+ LEMS is a single easy to handle package
+ doesn’t require fine positioning or pointing
+ doesn’t require electrical setting up
+LEMS all-in-one package
+--- page 5 ---
+LEMS Architecture 
+ In its flight version, LEMS is designed to carry a lunar interior and exosphere science package 
+composed of a Mass Spectrometer (MS), a Lunar Micrometeoroid Monitor (LMM), a Lunar Energetic 
+Ion Analyzer (LEIA), and a 3-axis Seismometer (SEISLEMS).
+
+--- page 6 ---
+ LEMS manages its thermal and power states by alternating periods of low-power 
+operations, during which the station is in partial “hibernation,” with periods of high-power 
+operations:
+o During “awake” periods, all science sensors are active and collecting data.
+o During “hibernation,” only the Seismometer and Micrometeoroid Monitor collect data. 
+ Operations start after station is on the surface and continue for the lifetime of the mission:
+o LEMS is designed to initiate autonomous operation on the surface after activation by the CLPS 
+lander or Artemis crew.
+o The Seismometer and the Lunar Micrometeoroid Monitor collect data continuously day and night, 
+while the Mass Spectrometer and the Energetic Ion Analyzer conduct measurements every 24 hr.
+o Collected data are downlinked monthly via DSN link.
+Concept of Operations 
+(1)
+--- page 7 ---
+Concept of Operations 
+(2)
+
+--- page 8 ---
+Electrical Development
+o The LEMS team developed an integrated and power efficient Avionics electronics that enables autonomous and 
+continuous operation on the surface of the Moon. 
+o An ETU-quality Avionics and Power Electronics were manufactured and tested to validate system capabilities.
+--- page 9 ---
+Power Source Development
+ LEMS sustains operations during lunar night using 1200 Whr Li-ion battery:
+o Cell performance was characterized and qualified over LEMS internal temp range (-30°C/+50°C).
+o The cells functional performance was also demonstrated for the cyclical operation power load 
+expected over a lunation.
+--- page 10 ---
+Mechanical Development
+ High fidelity finite-element model (with 
+NASTRAN) was used to demonstrate system 
+compatibility and positive margins to GSFC’s 
+General Environmental Verification 
+Standard (GEVS).
+LEMS High Fidelity Structural Model
+--- page 11 ---
+Integration and Testing
+ All elements of the LEMS system 
+(including mass spectrometer and 
+seismometer) were integrated into a 
+high-fidelity Engineering Unit.
+ The team used flight-like processes 
+and workmanship to validate 
+integration procedures and resulting 
+schedule.
+--- page 12 ---
+Integration and 
+Testing
+ All elements of the LEMS system 
+(including mass spectrometer and 
+seismometer) were integrated into a 
+high-fidelity Engineering Unit.
+ The team used flight-like processes 
+and workmanship to validate 
+integration procedures and resulting 
+schedule.
+LEMS ETU prior to closeout and installation of thermal IMLI and launch lock 
+mechanism.
+--- page 13 ---
+Vibration Testing
+ LEMS was successfully tested along 3-axes for 
+vibration at GEVS Qualification Level:
+o Mass adjusted GEVS Qualification Level = 12.3 
+Grms for 34 kg.
+o Reponses measured by accelerometer sensors 
+placed at critical location inside LEMS.
+o Signature sine sweep tests were performed before 
+and after each axis of random vibration testing. 
+o Measured system responses are within predicted 
+levels at all frequencies. 
+Preparation for Vibration Testing  02/28/2022
+--- page 14 ---
+Thermal
+-
+Vacuum Testing
+o Verify steady state operation at worst case hot 
+and cold environmental conditions.
+o Verify nominal daily concept of operation “day-in-
+the-life” (both science and weekly communication) 
+at worst case hot and cold environmental 
+conditions.
+o Take thermal balance measurements at worst case 
+hot and cold environmental conditions.
+o Validate that LEMS power and thermal systems 
+are compatible with continuous self-sufficient 
+operations day and night.
+ LEMS was successfully tested for operation at stacked worst case hot and cold environmental 
+conditions seen on the lunar surface. This test aimed to:
+Preparation for Thermal-Vacuum Testing  03/08/2022
+
+--- page 15 ---
+Thermal
+-
+Vacuum Testing
+
+--- page 16 ---
+Summary of Environmental Testing Results 
+ Demonstrated compatibility with launch environment with a dedicated launch lock system. 
+ Demonstrated mechanical deployment post landing.
+ Comprehensive Performance Tests (CPTs) demonstrated operability of all LEMS subsystems in flight-
+like conditions (external temperatures from 60°C to -190°C).
+ Temperatures inside the bus remained within operations levels (-30°C to 45°C).
+ The total heat leak during lunar night (15 days) was measured to 1200 Whr, within the LEMS battery 
+energy capacity.
+ LEMS electronics accumulated more than 300 hours of uninterrupted and fault-free operations. 
+--- page 17 ---
+Take away message
+LEMS provides
+a compelling solution to start conducting needed long-term science 
+observations at the Moon 
+and 
+a path to rapidly mature a unique longevity capability that expands the 
+capacity of the CLPS program without levying additional requirements on the 
+CLPS landers.

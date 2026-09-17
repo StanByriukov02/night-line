@@ -1,0 +1,21 @@
+{
+  "url": "https://science.nasa.gov/lems/",
+  "fetched_utc": "2026-09-17T06:34:37Z",
+  "title": "LEMS - NASA Science",
+  "sha256": "c25af7c845a030c84508008f536827551215ae3605af44cfec15a77b84238eb7",
+  "filename": "page.html",
+  "bytes": 276973,
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "lifetime_from_months=3",
+    "lifetime_to_years=2",
+    "form=suitcase-size",
+    "site=lunar_south_polar_region"
+  ],
+  "redacted_personal_email": true,
+  "sha256_by_file": {
+    "page.html": "c25af7c845a030c84508008f536827551215ae3605af44cfec15a77b84238eb7"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

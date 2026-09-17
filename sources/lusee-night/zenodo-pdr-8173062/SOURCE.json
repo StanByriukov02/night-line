@@ -1,0 +1,45 @@
+{
+  "url": "https://doi.org/10.5281/zenodo.8173062",
+  "file_url": "https://zenodo.org/api/records/8173062/files/LuSEE_Night_Preliminary_Design.pdf/content",
+  "title": "LuSEE-Night Preliminary Design Report (Zenodo 8173062)",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "extract": "pdf.txt",
+  "dated": "PDR_older_than_2024",
+  "set": "older_design_do_not_mix",
+  "numbers_used": [
+    "store_Wh=8225",
+    "constraints_P_night_W=17",
+    "constraints_P_day_W=80",
+    "mass_nte_kg=100",
+    "mass_cbe_kg=111.7",
+    "constraints_battery_kg=50",
+    "P_MEC_day_and_night_W=16.7",
+    "radiator_nominal_m2=0.70",
+    "T_midnight_K=95",
+    "T_noon_K=390",
+    "thermal_plate=Aluminum_6061",
+    "k_Al6061_W_mC=167",
+    "P_night_W=NOT_12.4_this_is_PDR_not_CDR"
+  ],
+  "sha256": "c06e22e1987369bbef58fc9c6b72a91df5ea65055fd8b53285beab27a47a2f22",
+  "bytes": 13981037,
+  "fetched_utc": "2026-09-17T06:44:04Z",
+  "saved_sha256": {
+    "page.pdf": "c06e22e1987369bbef58fc9c6b72a91df5ea65055fd8b53285beab27a47a2f22",
+    "pdf.txt": "af6e85775f90324d92c1e148e50607cb4381af4698131b9dab52d1c85859c427"
+  },
+  "status_20260917": {
+    "https://doi.org/10.5281/zenodo.8173062": 200,
+    "https://zenodo.org/api/records/8173062/files/LuSEE_Night_Preliminary_Design.pdf/content": 200
+  },
+  "omitted_binaries": [
+    {
+      "filename": "page.pdf",
+      "bytes": 13981037,
+      "omit_reason": "pdf > 5 MB; URL + sha256 only",
+      "sha256": "c06e22e1987369bbef58fc9c6b72a91df5ea65055fd8b53285beab27a47a2f22",
+      "url": "https://doi.org/10.5281/zenodo.8173062"
+    }
+  ]
+}

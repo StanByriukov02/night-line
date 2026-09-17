@@ -1,0 +1,19 @@
+{
+  "url": "https://trc.nist.gov/cryogenics/materials/Invar(Fe-36Ni)/Invar_rev.htm",
+  "fetched_utc": "2026-09-17T06:40:00Z",
+  "title": "NIST Cryogenic Materials: Invar (Fe-36Ni) (UNS K93600)",
+  "sha256": "23dd12a6d564f48e3bc7485d6386839a2439ea68588bdfc1d2b88756cbc6cf64",
+  "filename": "page.txt",
+  "bytes": 1631,
+  "numbers_used": [
+    "k_nist_invar_integral",
+    "nist_id=invar",
+    "T_range_K=4-300"
+  ],
+  "note": "Cited NIST k(T) for LEMS-A3 INVAR 36 heat-switch rod. Not a LEMS coupon.",
+  "sha256_by_file": {
+    "page.txt": "23dd12a6d564f48e3bc7485d6386839a2439ea68588bdfc1d2b88756cbc6cf64"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

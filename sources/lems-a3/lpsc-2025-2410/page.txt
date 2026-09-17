@@ -1,0 +1,184 @@
+--- page 1 ---
+ 
+ 
+LEMS-A3: THE LUNAR ENVIRONMENTAL MONITORING STATION—AN ARTEMIS III DEPLOYED 
+INSTRUMENT.  D. DellaGiustina1, N. Schmerr2, M. Benna3,4, N. McCall4, A. Marusiak1, V. J. Bray1, S. Bailey1, P. 
+K. Byrne5, B. Avenson6, D. Kim6, and the Artemis III Science Team. 1University of Arizona ([email-redacted]-
+zona.edu), 2University of Maryland, College Park3, University of Maryland, Baltimore County, 4NASA Goddard 
+Space Flight Center, 5Washington University in St. Louis, 6Silicon Audio Inc.
+Introduction: A detailed picture of the Moon’s in-
+terior has evolved from measurements taken during the 
+Apollo era. The Apollo Lunar Surface Experiment 
+Packages (ALSEPs) formed a four-station passive seis-
+mic network that was deployed by astronauts on the 
+nearside of the Moon and returned the first-ever seismic 
+dataset for another body in the Solar System [1]. The 
+ALSEP seismometers established that the Moon is a 
+seismically active body, recording over 13,000 moon-
+quakes [2, 3] over the seven years the network was op-
+erational. Studies of the Apollo moonquake dataset rev-
+olutionized our understanding of the lunar interior, 
+providing estimates for lunar crustal thickness and lay-
+ering beneath the stations [4–6], a preliminary seismic 
+wave velocity and the bulk structure and composition 
+for the lunar mantle [7, 8], and estimates for the size, 
+state, and composition of the lunar core [9, 10].  
+Despite these accomplishments, our current under-
+standing of the lunar interior is biased towards the near-
+side, equatorial, geographic location of the ALSEP net-
+work, with few detections of farside seismicity and seis-
+mic observations situated primarily above the structure 
+of the anomalous nearside Procellarum KREEP Terrane 
+(PKT). The Lunar Environment Monitoring Station for 
+Artemis III (LEMS-A3) is a selected Deployed Instru-
+ment for Artemis III (A3), that when deployed near the 
+lunar South Pole at the margin of the South Pole–Aitken 
+basin (SPA), will provide new insights into a lunar lo-
+cation that remains seismically unexplored. 
+Mission Design: LEMS-A3 is a compact, autono-
+mous, and self-sustaining seismometer suite designed to 
+carry out continuous (day and night), long-term, moni-
+toring of the lunar seismic environment at the South Po-
+lar region (Fig. 1). Once deployed on the surface and 
+activated by the A3 crew, it requires no support (power, 
+thermal, commanding, or data) from the Human Land-
+ing System (HLS)/Starship or the A3 crew to operate. 
+The LEMS-A3 geophysical station (Fig. 1) continues 
+operations for a targeted two-year lifetime goal, long af-
+ter the A3 crew departs the Moon, providing a long-
+lived geophysical surface observatory. 
+LEMS-A3 has three elements: (a) a three-axis Short 
+Period Seismometer (SP); (b) a complementary three-
+axis Broad Band Seismometer (BB); and (c) an Instru-
+ment Suite Platform (ISP) that provides data digitization 
+and storage, power, thermal, and communication re-
+sources. Subsurface burial of the of the LEMS-A3 seis-
+mometers into the lunar regolith by the A3 crew will 
+provide thermal stability, improved coupling to the 
+ground, and reduced scattered seismic noise, all issues 
+that plague surface-emplaced seismometer packages. 
+From the perspective of LEMS-A3 operations, any 
+of the identified A3 candidate landing sites will be suit-
+able for providing direct-to-Earth communications and 
+sunlight for solar power, although optimal deployment 
+sites may exist within each of the down-selected sites. 
+ 
+Figure 1. The LEMS-A3 station design and deploy-
+ment; astronaut and instruments are to scale. a) LEMS-
+A3 is hand-carried by an A3 astronaut crew member and 
+positioned on the lunar surface using a Sun compass to 
+ensure capture of solar energy and communication di-
+rectly back to Earth.  b) The seismometer suite; instru-
+ments are stowed and deployed to the surface via c) a 
+set of ribbon cables, shown here for Apollo, that carries 
+signals to d) the ISP, which houses the avionics and bat-
+tery, and allows the LEMS-A3 seismometers to operate 
+continuously throughout the lunar day and night. e) A 
+notional A3 crew seismometer deployment strategy, 
+with examples from Apollo operations; SP will be de-
+ployed into a core-extracted borehole and BB will be 
+buried in a trench dug for geological sample collection. 
+Deployment Testing: As LEMS-A3 will be in-
+stalled by the astronaut crew, we conducted a prelimi-
+nary series of deployment simulations in a University of 
+Central Florida (UCF) Exolith Lab test chamber. The 
+team studied the following three elements in the simu-
+lant chamber under artificial low-angle lighting condi-
+tions expected at the South Pole: 1) how to deploy the 
+ISP into a highland simulant that replicates some of the 
+mechanical properties of regolith; 2) the emplacement 
+of the SP seismometer into a borehole using a mockup 
+of the Astronaut Extension Tool (AET); and 3) the 
+2410.pdf
+56th LPSC (2025)
+--- page 2 ---
+ 
+ 
+trenching and burial of the BB seismometer (Fig. 2). A 
+lunar weight, -shape, and -volume model of the ISP was 
+built for the test, as well as models of the SP, BB, and 
+AET that will be used by the A3 crew. Low-fidelity ge-
+ological tools were used for the borehole and trench. On 
+the basis of these tests, we established that, before bur-
+ial, the crew will position and level the BB in the trench 
+and capture its orientation with their camera. For the SP 
+burial in the borehole, the crew member will need to 
+capture the orientation of the AET before detaching it 
+from the seismometer. At the Exolith Lab we also 
+sought to demonstrate how photogrammetry of the de-
+ployment site can be used to reconstruct the attitude of 
+instruments and ISP, and we studied how the low-angle 
+lighting impacted this technique. The lessons learned by 
+the direct experience of the LEMS-A3 team at the Exo-
+lith lab are being folded into our mission design. 
+ 
+Figure 2. The LEMS-A3 team testing deployment strat-
+egies at the UCF Exolith Lab. a) Trenching and burial 
+of the BB instrument. b) Borehole extraction and em-
+placement of the SP using a AET mockup. c) Photo-
+grammetry reconstruction of the deployment (courtesy 
+of Z. Morse). d) Positioning and leveling of the ISP into 
+the regolith simulant chamber.  
+Mission Science: All the potential A3 candidate 
+landing sites enable new opportunities for understand-
+ing lunar seismology. The South Pole affords us the 
+chance to study seismicity in highlands terrane and ex-
+amine farside moonquakes, neither of which were de-
+tected in detail by Apollo. The three-month threshold 
+mission and two-year baseline operation of LEMS-A3 
+will provide a new moonquake catalog that contains im-
+pacts, thermal shallow, and deep moonquake activity. 
+The detection and location of 3–4 high signal-to-noise 
+moonquake events, together with the application of sin-
+gle-station data processing techniques developed and 
+advanced during the InSight mission [e.g., 11], will pro-
+vide new information on the thickness of the lunar crust 
+and properties of the mantle and core. A particular sci-
+ence objective is the structure of the lunar crust and 
+mantle at the margin of the SPA, a basin-forming impact 
+that likely heavily modified and thinned the local crust 
+and deposited proximal ejecta blankets kilometers thick. 
+The formation and modification of the SPA basin seems 
+to have played a fundamental role in the evolution of the 
+lunar surface, so evaluating the crustal thickness and 
+layering, and underlying mantle will provide a basis for 
+understanding the basin formation process and lunar in-
+ternal evolution [12]. In addition, the LEMS-A3 station 
+will be situated in a region of potentially enhanced vol-
+atile abundance in the near surface and perhaps even 
+deeper into the regolith and megaregolith. 
+Finally, two years of monitoring by LEMS-A3 will 
+provide a long-term assessment of seismic hazards to 
+future sustained human exploration and infrastructure 
+that will be built at the South Polar region. Ground mo-
+tion could prove a threat to tall towers and structures 
+and/or subsurface dwellings. LEMS-A3 is a technical 
+demonstrator of a low-cost, self-sustaining, long-lived 
+geophysical station at the Moon and could serve as the 
+beginning of a global network of geophysical instru-
+ments, i.e., in coordination with the Farside Seismic 
+Suite (FSS) [13] and/or a future Lunar Geophysical Net-
+work (LGN) [14]. 
+Acknowledgements: The LEMS-A3 science team 
+is supported by NASA Grant 80NSSC19K0767. The 
+Exolith Lab at the University of South Florida provided 
+the team access to their large test chamber. We thank 
+Zachary Morse (Goddard Space Flight Center), who 
+provided access to a Nikon camera system and con-
+ducted the photogrammetry for the deployment testing. 
+References: [1] Nunn et al., 2020, Sp. Sci. Rev., 
+216(89), [2] Nakamura, 2003, Phys. E. and Plan. Int., 
+139(3-4) [3] Bulow et al., 2005, JGR 110(E10), [4] Toksoz 
+et al., 1972, Moon 4, [5] Vinnik et al., 2001 Geophys. Res. 
+Lett., 28(15) [6] Chenet et al., 2006, Earth & Plan. Sci. 
+Lett., 243(1-2) [7] Nakamura et al., 1982, JGR S. Ear., 
+87(S01) [8] Gagnepain-Beyneix et al., 2006, Phys. of the 
+E. and Plan. Interiors 159(3-4) [9] Weber et al., 2011, Sci., 
+331(6015) [10] Garcia et al., 2011, Sp. Sci. Rev., 215. [11] 
+Knapmeyer-Endrun, B. et al. (2021) Science 373, 438 
+doi:10.1126/ science.abf8966. [12] James, P. B. et al. 
+(2019) Geo. Res. Let. 46, 510 https://doi.org/10.1029/ 
+2019GL082252. [13] Panning et al., 2022, 53rd LPSC 
+(2678), [14] Haviland, et al., 2022, Plan. Sci. J., 3(2). 
+2410.pdf
+56th LPSC (2025)

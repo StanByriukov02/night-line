@@ -1,0 +1,47 @@
+--- page 1 ---
+TFAWS Abstract 
+Interdisciplinary  
+Development of the Lunar Environment Monitoring Station Thermal Control Subsystem Design 
+Ethan Burbridge, Vertex Aerospace, LLC 
+The Lunar Environment Monitoring Station (LEMS), funded by NASA’s Development and Advancement 
+of Lunar Instrumentation (DALI) program, aims to operate instrumentation delivered to the surface of 
+the moon by a Commercial Lunar Payload Services (CLPS) lander for 24 lunar days, or 2 Earth years, at a 
+mass of 35 kg. The current LEMS TRL-6 development at the Goddard Spaceflight Center effort baselines 
+a mass spectrometer and seismometer for scientific instrumentation but the LEMS has been designed to 
+accommodate a variety of scientific payloads. The design of the LEMS Thermal Control Subsystem (TCS) 
+addresses the extremes of the lunar thermal environment with a novel solution. 
+Despite its proximity as Earth’s nearest neighbor, the lunar surface is one of the most extreme thermal 
+environments in the solar system. With the moon tidally locked to Earth, surface spacecraft must 
+contend with a day of 354 hours and eclipse of 354 hours. Long solar days and regolith optical properties 
+result in surface temperatures from -160°C to 80°C at a latitude of 45°, the current baseline for CLPS 
+landers. Electronic components typically have operational temperature limits from -35°C to 60°C. 
+Daytime regolith temperatures and electronics heat dissipations necessitate heat rejection through 
+radiating surfaces but extended sun exposure at a variety of angles due to the sun transiting the sky 
+throughout the day limit radiator effectiveness to mitigate high temperatures. Additionally, the 
+extended eclipse duration makes the mass of the power subsystem sensitive to small milliwatt changes 
+in continuous power consumption like from heaters.  
+Long term Apollo instrumentation relied on radioisotope materials to generate power and maintain 
+temperature limits. However, use within a compact system like the LEMS creates a positive design loop 
+where increasing radioisotope heat to survive eclipse necessitates a larger radiator to dissipate that heat 
+during the day which requires further heat during eclipse and so on. The result is a system design that 
+exceeds thermal switch mechanical limits, instrument field of view requirements, and mass limits. 
+Additionally, political hurdles and dwindling supply have limited the attainability of radioisotope heaters 
+and generators. 
+The LEMS TCS addresses these challenges by mitigating electronic heat loads, incorporating recent 
+developments in thermal control technology, and detailed modeling of all parasitic heat leaks. Scientific 
+operations for high power instrumentation like the mass spectrometer and communications 
+transponder are limited to short windows while all other command and data handling are kept to the 
+bare minimum to mitigate heat loads. Environmental heat loads have been minimized through the use 
+of Integrated MLI with an e* of 0.0020 developed by the QUEST Thermal Group that provides lower heat 
+flux and mass than traditional MLI, helping meet critical thermal and mass goals.  IMLI is a robust 
+structural insulation, able to span open spaces and supported on an external frame  New solutions 
+reduce edge and seam heat leaks, and provide lightweight grounding. Surviving launch loads requires a 
+strong mechanical connection to the lander which would result in heat leaks beyond the capability of 
+the TCS so a pyrotechnic mechanism to decouple the launch legs is under development that will reduce 
+the heat leak 4 to 6 times compared to a non-mechanistic solution. Heat transfer through the radiator is 
+--- page 2 ---
+controlled by a variable conduction heat switch with an on/off conductance ratio of 100, sold by the 
+Sierra Nevada Corporation. Finally, a trade study has been conducted to select harnessing materials to 
+minimize heat leaks from externally mounted components like the solar arrays. The resulting design is a 
+spacecraft that is able survive surface temperatures through the lunar day and eclipse with the use of 0 
+to 2 radioisotope heaters units, totaling 0 to 1.6 Watts, depending on scientific payload.  

@@ -1,0 +1,20 @@
+{
+  "url": "https://questthermal.com/wp-content/uploads/LEMS_TFAWS-Abstract_2020.pdf",
+  "fetched_utc": "2026-09-17T06:34:37Z",
+  "title": "Development of the LEMS TCS Design (TFAWS 2020 DALI predecessor, not A3)",
+  "sha256": "09f40aed68b593192016c2a0b654fb7b8082fa846cef698a5630e7219ca3d001",
+  "filename": "page.pdf",
+  "bytes": 134223,
+  "content_type": "application/pdf",
+  "numbers_used": [
+    "predecessor_mass_kg=35",
+    "predecessor_eps_eff_imli=0.0020",
+    "predecessor_rhu_W=0_to_1.6"
+  ],
+  "sha256_by_file": {
+    "page.pdf": "09f40aed68b593192016c2a0b654fb7b8082fa846cef698a5630e7219ca3d001",
+    "page.txt": "46ab76766034837327f64f7a67dd71478a7aa3b9c49dae627233511dd7aa7294"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

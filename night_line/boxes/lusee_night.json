@@ -1,0 +1,424 @@
+{
+  "schema": "night_line_box_v1",
+  "box_id": "lusee_night",
+  "name": "LuSEE-Night",
+  "full_name": "Lunar Surface Electromagnetics Experiment at Night",
+  "named_box": true,
+  "pre_landing": true,
+  "landing_status": "not_landed_as_of_2026-09-17",
+  "mission": "CLPS CS-3 / Firefly Blue Ghost Mission 2",
+  "lander": "Firefly Blue Ghost (powers off before nightfall)",
+  "pi": "Stuart D. Bale",
+  "org": "UC Berkeley SSL / DOE BNL & LBNL",
+  "note": "2024 SPIE/arXiv 2407.07173 is the latest printed set. CDR 12.4 W / 6500 Wh / 87.5 kg is older_design_cdr_2023 — dated bound, not mixed into 2024 store/hours/mass. Geometry A_rad/e*/G OPEN → declared bracket, no middle.",
+  "electrical_model": "Same heat-balance as ICES Fig.14: P_elec = max(P_electronics, P_leak); heater only makes up P_leak − P_electronics. 2024 arXiv 2407.07173: IEA insulation + self-generated heat at night; thermal switch to the parabolic radiator is open. No single P_night printed. Do not add electronics on top of leak.",
+  "witness_keys": [
+    "firefly",
+    "blue_ghost",
+    "lusee"
+  ],
+  "witness_note": "none flown — firefly_blue_ghost_m2_lusee_night is planned (lander off before nightfall; payload through the night). BGM2 has not landed.",
+  "killer_both_live_tail": "OPEN geometry does not kill 7160 Wh under the dated 12.4 W bound plus this declared leak. 2024 P_night stays OPEN.",
+  "killer_disagree": "OPEN geometry bracket. Tight corner LIVE; lossy declared corner DIE. 2024 P_night still OPEN.",
+  "thermal_hold_md": "arXiv 2407.07173: battery must stay approximately −5 °C to +30 °C (268–303 K) or it cannot recharge at dawn. Court night hold is the printed pack floor −5 °C (derived 268.15 K). Lunar surface at the LuSEE-Night landing site falls as low as 100 K at night (quoted); day 390 K. Thermal switch to the radiator is open at night; temperature is held by insulation plus self-generated heat. Powersave enables a low-power heater — watt not printed.",
+  "alloy_md": "2024 print does not name a structure alloy. OPEN. CDR (older) names aluminum stages and Kevlar IEA suspend — not mixed into this line as flight k. No NIST map. k_path is a declared unit split so P_cond = G·ΔT.",
+  "honesty_md": "7160 Wh is 2024 nameplate, not usable. ConOps 30% SOC and 8% minimum SOC are printed. 12.4 W is CDR 2023. Do not average with 2024 component loads. PDR 8225 Wh is a third dated set, unused here. Nameplate 7160/328 = 21.83 W is not a survival line.",
+  "electronics_bracket": {
+    "honesty": "P_night 2024 NOT PRINTED. lo = older_design_cdr_2023 12.4 W. hi OPEN. BREAK = 7160/328 W.",
+    "lo": 12.4,
+    "lo_tier": "older_design_cdr_2023",
+    "lo_cite": "Zenodo CDR 8173058 Fig.3.12: night total 12.4 W (preamp 2 W + IEA 10.4 W). Older design. Not arXiv 2407.07173.",
+    "hi": null,
+    "hi_tier": "OPEN",
+    "hi_cite": "2024 arXiv 2407.07173 prints no single P_night. Night-core constant loads are listed separately; they are not a duty-cycled average and are not this line's P_electronics.",
+    "iff_dated_note": "2024 paper does not print night power; 2023 CDR printed 12.4 W for an older design."
+  },
+  "fields": {
+    "mass_kg": {
+      "value": 128.0,
+      "unit": "kg",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173: total mass 128 kg.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "mass_kg=128",
+      "page_or_figure": "Fig. 1 caption; §2"
+    },
+    "battery_mass_kg": {
+      "value": 50.0,
+      "unit": "kg",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173: 50 kg of the 128 kg is the battery.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "battery_mass_kg=50",
+      "page_or_figure": "Fig. 1 caption; §2"
+    },
+    "store_Wh": {
+      "value": 7160.0,
+      "unit": "Wh",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173: lithium-ion nameplate 7160 W-hr.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "store_Wh=7160",
+      "page_or_figure": "§2 hardware list"
+    },
+    "SOC_min_aggressive_pct": {
+      "value": 8.0,
+      "unit": "%",
+      "tier": "cited_public",
+      "quote": "The minimum safe battery bus voltage, at which the battery can be safely recharged, is taken here to be 24 V, which occurs at 8% SOC.",
+      "cite": "arXiv 2407.07173 §4.1 / Fig.10: minimum safe recharge at 24 V occurs at 8% SOC.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "SOC_min_aggressive_pct=8",
+      "page_or_figure": "§4.1; Fig. 10"
+    },
+    "SOC_min_conops_pct": {
+      "value": 30.0,
+      "unit": "%",
+      "tier": "cited_public",
+      "quote": "For the ConOps plan developed for LuSEE-Night, we set our minimum SOC to be 30%, for a minimum bus voltage of ∼28 V.",
+      "cite": "arXiv 2407.07173 §4.1 / Fig.11: ConOps minimum SOC 30%.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "SOC_min_conops_pct=30",
+      "page_or_figure": "§4.1; Fig. 11"
+    },
+    "duty_cycle_night": {
+      "value": "required",
+      "unit": "",
+      "tier": "cited_public",
+      "quote": "Here we show that it will be necessary to duty cycle the spectrometer, as there is insufficient stored power for continuous observations.",
+      "cite": "arXiv 2407.07173 Fig.10 caption: duty cycle required; insufficient stored power for continuous operation.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "duty_cycle_spectrometer=required",
+      "page_or_figure": "Fig. 10 caption; §4.1"
+    },
+    "usable_conops_Wh": {
+      "value": 5012.0,
+      "unit": "Wh",
+      "tier": "derived",
+      "derived_from": "store_Wh",
+      "formula": "store_Wh * (1 - SOC_min_conops_pct/100) = 7160 * 0.70",
+      "cite": "derived usable at printed ConOps 30% SOC reserve. Nameplate 7160 is not usable.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "SOC_min_conops_pct=30",
+      "page_or_figure": "derived from §2 nameplate × §4.1 ConOps 30%"
+    },
+    "usable_floor_Wh": {
+      "value": 6587.2,
+      "unit": "Wh",
+      "tier": "derived",
+      "derived_from": "store_Wh",
+      "formula": "store_Wh * (1 - SOC_min_aggressive_pct/100) = 7160 * 0.92",
+      "cite": "derived usable at printed 8% minimum SOC. 7160×(1−0.08)=6587.2 Wh.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "SOC_min_aggressive_pct=8",
+      "page_or_figure": "derived from §2 nameplate × §4.1 8% SOC"
+    },
+    "charge_discharge_eff_pct": {
+      "value": 95.0,
+      "unit": "%",
+      "tier": "cited_public",
+      "quote": "We also include charging and discharging efficiencies of 95%, and an uncertainty margin on the total power load of 10%.",
+      "cite": "arXiv 2407.07173 §4.1 / Fig.9: charging and discharging efficiencies of 95%. Night ladder applies discharge once (applied_once_OPEN_direction); start-of-night assumed at nameplate.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "charge_discharge_eff_pct=95",
+      "page_or_figure": "§4.1; Fig. 9"
+    },
+    "power_load_uncertainty_margin_pct": {
+      "value": 10.0,
+      "unit": "%",
+      "tier": "cited_public",
+      "quote": "We also include charging and discharging efficiencies of 95%, and an uncertainty margin on the total power load of 10%.",
+      "cite": "arXiv 2407.07173 §4.1 / Fig.9: uncertainty margin on the total power load of 10%.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "power_load_uncertainty_margin_pct=10",
+      "page_or_figure": "§4.1; Fig. 9"
+    },
+    "P_keepalive_W": {
+      "value": null,
+      "unit": "W",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "P_night_average_W=NOT_PRINTED",
+      "page_or_figure": "§4.1 constant loads; Fig. 12 modes — no single average watt",
+      "close_with": "Printed 2024 Science/Powersave average night watt. Do not treat CDR 12.4 W as 2024 flight. Do not sum §4.1 components into one watt."
+    },
+    "P_electronics_older_design_cdr_W": {
+      "value": 12.4,
+      "unit": "W",
+      "tier": "older_design_cdr_2023",
+      "cite": "Zenodo CDR 8173058 Fig.3.12 night 12.4 W. Dated older design. Court uses this only as the lo electronics bound.",
+      "url": "https://doi.org/10.5281/zenodo.8173058",
+      "source_slug": "zenodo-cdr-8173058",
+      "numbers_used": "P_night_W=12.4",
+      "page_or_figure": "Fig. 3.12"
+    },
+    "H_night_h": {
+      "value": 328.0,
+      "unit": "h",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173: battery must power the instrument throughout 328 hours of lunar night.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "hours_night=328",
+      "page_or_figure": "Fig. 1 caption; §2"
+    },
+    "T_box_C": {
+      "value": -5.0,
+      "unit": "C",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173: battery temperature must be maintained between approximately −5 °C and +30 °C. Night hold uses the printed floor.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "T_pack_min_C=-5",
+      "page_or_figure": "§2"
+    },
+    "T_box_K": {
+      "value": 268.15,
+      "unit": "K",
+      "tier": "derived",
+      "derived_from": "T_box_C",
+      "formula": "273.15 + T_box_C",
+      "cite": "derived from printed −5 °C (arXiv 2407.07173). Paper also prints 268 K.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "T_pack_min_K=268",
+      "page_or_figure": "§2"
+    },
+    "T_pack_max_C": {
+      "value": 30.0,
+      "unit": "C",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173: pack upper +30 °C (303 K).",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "T_pack_max_C=30",
+      "page_or_figure": "§2"
+    },
+    "T_env_K": {
+      "value": 100.0,
+      "unit": "K",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173: at night they fall as low as 100 K at the LuSEE-Night landing site.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "T_surface_night_K=100",
+      "page_or_figure": "§2"
+    },
+    "T_env_C": {
+      "value": -173.15,
+      "unit": "C",
+      "tier": "derived",
+      "derived_from": "T_env_K",
+      "formula": "T_env_K - 273.15",
+      "cite": "derived from printed 100 K night surface (arXiv 2407.07173). Not printed as celsius.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": null,
+      "page_or_figure": "§2"
+    },
+    "T_surface_day_K": {
+      "value": 390.0,
+      "unit": "K",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173: day surface as high as 390 K at the landing site.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "T_surface_day_K=390",
+      "page_or_figure": "§2"
+    },
+    "site_lat_deg": {
+      "value": -23.815,
+      "unit": "deg",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173 solar track: Lunar latitude −23.815°. 2301.10345 prints 23.813°S — not averaged; 2024 value used.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "site_lat_deg=-23.815",
+      "page_or_figure": "§3 solar array"
+    },
+    "site_lon_E_deg": {
+      "value": 182.25,
+      "unit": "deg",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173: longitude 182.25°. 2301.10345 prints 182.258°E — not averaged.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "site_lon_E_deg=182.25",
+      "page_or_figure": "§3 solar array"
+    },
+    "lander_off": {
+      "value": true,
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173: lander and other payloads permanently shut down at end of first solar day. Firefly BGM2: Blue Ghost powers off prior to lunar nightfall.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "lander_off=true",
+      "page_or_figure": "§2; Firefly BGM2 page"
+    },
+    "enclosure_m": {
+      "value": [
+        1.0,
+        1.0,
+        0.7
+      ],
+      "unit": "m",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173 Fig.1: enclosure approximately 1 m × 1 m × 0.7 m.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "enclosure_m=1x1x0.7",
+      "page_or_figure": "Fig. 1"
+    },
+    "eps_eff": {
+      "value": null,
+      "unit": "1",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": "eps_star=NOT_PRINTED",
+      "page_or_figure": "arXiv 2407.07173 — e* not printed",
+      "close_with": "Printed 2024 radiator/MLI e*. CDR preamp MLI 0.02 is older_design and another path — not used as 2024 e*."
+    },
+    "k_ins_W_mK": {
+      "value": null,
+      "unit": "W/m-K",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": "k_ins_W_mK=NOT_PRINTED",
+      "page_or_figure": null,
+      "close_with": "Printed 2024 insulation k. Court conduction is G·ΔT; k_ins is not invented."
+    },
+    "A_ins_m2": {
+      "value": null,
+      "unit": "m2",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed insulation area. Enclosure 1×1×0.7 m is not A_ins."
+    },
+    "A_rad_m2": {
+      "value": null,
+      "unit": "m2",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": "A_rad_m2=NOT_PRINTED",
+      "page_or_figure": "parabolic radiator named; area not printed",
+      "close_with": "Printed radiator area (m²). Do not invent a radiator area. Do not mix CDR 0.2695 or PDR 0.70."
+    },
+    "A_path_m2": {
+      "value": null,
+      "unit": "m2",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed conductive cross-section. P_cond uses declared G."
+    },
+    "L_path_m": {
+      "value": null,
+      "unit": "m",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": null,
+      "page_or_figure": null,
+      "close_with": "Printed conductive length. Court uses DECLARED_UNIT L=1 m so A_path = G/k_unit."
+    },
+    "dust_g_m2": {
+      "value": null,
+      "unit": "g/m2",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "pv_dust_obscuration_eol_pct=5",
+      "page_or_figure": "§3 5% PV area EOL — not radiator soiling",
+      "close_with": "Printed dust mass on the radiator. 5% PV EOL is solar, not this thermal law. Do not invent a dust mass."
+    },
+    "strut_alloy": {
+      "value": null,
+      "unit": "",
+      "tier": "OPEN",
+      "cite": "OPEN",
+      "source_slug": null,
+      "numbers_used": "structure_alloy=NOT_PRINTED",
+      "page_or_figure": "2024 alloy not printed",
+      "close_with": "Printed 2024 structure alloy. CDR aluminum/Kevlar is older_design."
+    },
+    "night_strategy": {
+      "value": "internal battery + IEA insulation + self-heat; thermal switch open at night; PV day charge; lander off",
+      "unit": "",
+      "tier": "cited_public",
+      "cite": "arXiv 2407.07173 §2 and §4.2. NASA CS-3: internal battery and self-heating. Firefly: lander off, payload up to two years.",
+      "url": "https://arxiv.org/pdf/2407.07173",
+      "source_slug": "arxiv-2407-07173",
+      "numbers_used": "thermal_night=IEA_insulation_plus_self_heat",
+      "page_or_figure": "§2; §4.2"
+    }
+  },
+  "geometry_bracket": {
+    "honesty": "DECLARED_BRACKET. A_rad, e*, G, A_ins, k_ins, dust OPEN. No middle. Radiator area is not printed.",
+    "G_path_W_per_K": {
+      "lo": 0.002,
+      "lo_tier": "older_design_cdr_2023",
+      "lo_cite": "Zenodo CDR 8173058 PALETTE thermal-switch OFF 0.002 W/K. Older design; 2024 says the switch is open, no G printed.",
+      "hi": 0.01,
+      "hi_tier": "OPEN",
+      "hi_cite": "DECLARED_BRACKET: 2024 conduction G not printed. hi = 0.010 W/K declared extra night path. Not LEMS 0.006."
+    },
+    "eps_eff": {
+      "lo": 0.0,
+      "lo_tier": "OPEN",
+      "lo_cite": "OPEN lower bound — 2024 does not print a floor on e*.",
+      "hi": 0.04,
+      "hi_tier": "OPEN",
+      "hi_cite": "DECLARED_BRACKET: 2024 e* not printed. Not LEMS 0.0028. Not CDR preamp 0.02 mixed as 2024."
+    },
+    "A_rad_m2": {
+      "lo": 0.1,
+      "hi": 1.0,
+      "tier": "OPEN",
+      "cite": "DECLARED_BRACKET: radiator area not printed. lo 0.10 m² declared small panel. hi 1.0 m² = one printed 1 m × 1 m top face as OPEN upper. Not CDR 0.2695. Not PDR 0.70."
+    },
+    "L_path_m": {
+      "value": 1.0,
+      "tier": "OPEN",
+      "cite": "DECLARED_UNIT so A_path = G/k_unit. P_cond = G·ΔT is independent of the A/L split."
+    }
+  },
+  "k_path": {
+    "nist_id": null,
+    "temper_match": null,
+    "tier": "OPEN",
+    "source_slug": null,
+    "numbers_used": "structure_alloy=NOT_PRINTED",
+    "cite": "2024 structure alloy NOT PRINTED. No NIST map. k_unit=1 W/m-K only so A_path = G·L. no measurement by us."
+  },
+  "holes": [
+    {
+      "id": "structure_alloy_2024",
+      "chemistry": "OPEN",
+      "k_source": "no NIST map",
+      "temper_match": null,
+      "needs_measurement": true,
+      "note": "arXiv 2407.07173 does not name a structure alloy. CDR aluminum/Kevlar is older_design."
+    }
+  ],
+  "sources_dir": "sources/lusee-night"
+}

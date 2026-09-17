@@ -1,0 +1,10 @@
+# Night Line record
+
+Dated 2026-09-17. No measurement by us; all values printed by the team or NIST. The label is on declared corners only; it is not a claim that the box will live.
+
+| date named | box | mission | landing NET | label | line | OPEN input that would close it | sources | witness |
+|---|---|---|---|---|---|---|---|---|
+| 2026-09-17 | LEMS-A3 | Artemis III | GSFC prints launch year 2026; landing date not printed | LIVE (edge) | All four declared corners survive 354 h on the 640 Wh allocation; worst corner (loose geometry × coldest printed T_env 23 K) +5.76 Wh. BREAK at exactly 354 h: radiator 0.828 m², conductance 6.07 mW/K, electronics 1.808 W (printed CBE 1.231 W). | Printed radiator / IMLI area as a single m², with page or figure | [ICES 2025 Fig. 14](https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf); [Paige 2011 LPI 6058 p.1](https://www.lpi.usra.edu/meetings/volatiles2011/pdf/6058.pdf); [NIST Invar Fe-36Ni](https://trc.nist.gov/cryogenics/materials/Invar(Fe-36Ni)/Invar_rev.htm); [GSFC LEMS-A3](https://science.gsfc.nasa.gov/solarsystem/projects/635) | witness: pending |
+| 2026-09-17 | LuSEE-Night | CLPS CS-3 / Blue Ghost Mission 2 | Firefly prints launch NET 2027; NASA CS-3 page prints land 2025 | LIVE_IF_P_NIGHT_BELOW | 13.20 W after the paper’s own ladder: nameplate 21.83 W → usable 15.28 W (30 % SOC) → derated 14.52 W (×0.95 discharge) → 13.20 W (÷1.10 load uncertainty). 17.34 W at the printed 8 % minimum SOC. Nameplate 21.83 W is not the survival line. 2024 average night load is not printed. | Printed 2024 average night electrical load (W), with page or figure | [arXiv 2407.07173 §2, §4.1](https://arxiv.org/pdf/2407.07173); [Firefly BGM2](https://fireflyspace.com/missions/blue-ghost-mission-2/); [NASA CS-3](https://science.nasa.gov/lunar-science/clps-deliveries/cs-3/) | witness: pending |
+
+Reproduce: `night-line --all`. Close your OPEN number: send the value with a page reference; the line is recomputed and the row updated with your date.

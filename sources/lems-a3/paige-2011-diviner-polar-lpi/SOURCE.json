@@ -1,0 +1,22 @@
+{
+  "url": "https://www.lpi.usra.edu/meetings/volatiles2011/pdf/6058.pdf",
+  "fetched_utc": "2026-09-17T06:55:00Z",
+  "title": "Paige et al. 2011 LPI Volatiles 6058: Diviner polar annual average <38 K; excursions below 23 K",
+  "sha256": "a97c924e6768f7ec7696f4badbfa5ed9140d676b731c7cbc6c5772bc7f4f26b2",
+  "filename": "page.pdf",
+  "bytes": 356653,
+  "content_type": "application/pdf",
+  "redacted_personal_email": true,
+  "quote": "The results show that the coldest regions on the Moon achieve annual average temperatures of less than 38K, and that surface temperature excursions below 23K are briefly observed.",
+  "note": "Live URL. LEMS-A3 T_env OPEN cold bound is the coldest printed number: 'below 23K' (OPEN_below_printed, not a floor). Annual average <38 K is not the cold bound. PSR/polar floor, colder than a sunlit-rim landing site — not this box's sink. ODE tab that printed 56.122 K 404s; that number is withdrawn.",
+  "numbers_used": [
+    "T_polar_annual_avg_K_lt=38",
+    "T_polar_excursion_K_lt=23"
+  ],
+  "sha256_by_file": {
+    "page.pdf": "a97c924e6768f7ec7696f4badbfa5ed9140d676b731c7cbc6c5772bc7f4f26b2",
+    "page.txt": "d1dfc7619941c6503d1d0cb51d1caaf65d07c6ec8773e5e0fa14e8c5b6602cef"
+  },
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

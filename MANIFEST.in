@@ -1,0 +1,3 @@
+recursive-include night_line/boxes *.json
+recursive-include sources *
+include LICENSE README.md LINES.md NIGHT_LINE_SPEC_V1.md night_line_schema_v1.json

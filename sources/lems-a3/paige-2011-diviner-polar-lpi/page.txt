@@ -1,0 +1,54 @@
+DIVINER LUNAR RADIOMETER OBSERVATIONS OF  THE NORTH AND SOUTH POLAR REGIONS 
+OF THE MOON.   D. A. Paige 1, M. A. Siegler 1 and J. P. Williams 1,  1Dept. of Earth and Space Sciences, UCLA, 
+Los Angeles, CA 90095, [email-redacted]. 
+ 
+ 
+Introduction:  The Diviner Lunar Radiometer Ex-
+periment aboard the Lunar Reconnaissance Orbiter 
+(LRO) has been mapping the moon nearly continu-
+ously since July, 2009. The instrument has acquired 
+thermal emission and solar reflectance data in nine 
+spectral channels spanning a wavelength range from 
+0.3 to 400 microns, at spatial resolutions ranging from 
+0.2 to 1.3 km [1]. Diviner’s unprecedented and grow-
+ing dataset is revealing the extreme nature of the lunar 
+thermal environment and its diurnal and seasonal vari-
+ability. 
+Polar Mapping: In the lunar polar regions, Di-
+viner’s swath provides two spatially continuous ther-
+mal images at latitudes greater than 84 degrees twice 
+per month at a spatial resolution of less than 240 me-
+ters.  At these highest latitudes, Diviner has obtained 
+sufficient spatial and temporal coverage to determine 
+annual minimum, maximum, and average surface tem-
+peratures at both poles. The results show that the cold-
+est regions on the Moon achieve annual average tem-
+peratures of less than 38K, and that surface tempera-
+ture excursions below 23K are briefly observed.  
+Large areas of the lunar polar regions are currently 
+cold enough to cold-trap water ice as well as a range of 
+both more volatile and less volatile species [2]. The 
+cold trap regions include surface cold-traps in perma-
+nent shadow as well as more extensive subsurface cold 
+traps that experience brief periods of direct sunlight. A 
+range of  volatile species predicted by Diviner tem-
+perature maps were observed in the impact plume of 
+LCROSS in Cabeus Crater in October, 2009 [3,4], 
+suggesting that impacts from primitive bodies from the 
+outer solar system have contributed volatiles to the 
+moon’s polar cold traps over time.  However, the 
+physical properties of the lunar regolith in the cold 
+traps, and the horizontal and vertical distribution of 
+volatiles within the cold traps is highly uncertain.  
+References: [1] Paige D. A. et al. (2009) Space 
+Science Reviews , DOI: 10.1007/s11214-009-9529-2. 
+[2] Paige D. A. et al. (2010) Science 330, 479. [3] Co-
+laprete A. et al. (2010) Science 330, 463. [4] Gladstone 
+G. R. et al. (2010) Science 330 472.  
+ 
+ 
+Figure 1. Dviner daytim e thermal image of the 
+south polar region of the Moon acquired in August, 
+2009. 
+6058.pdf
+Wet vs. Dry Moon (2011)
