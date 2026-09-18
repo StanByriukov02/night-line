@@ -643,6 +643,10 @@ def main(argv: list[str] | None = None) -> int:
         return surface_main(argv_list[1:])
     if argv_list and argv_list[0] in {"witness-map", "witness_map"}:
         return witness_map_main(argv_list[1:])
+    if argv_list and argv_list[0] in {"appendix-a", "appendix_a"}:
+        from night_line.appendix_a import appendix_a_main
+
+        return appendix_a_main(argv_list[1:])
     p = argparse.ArgumentParser(prog="night-line")
     p.add_argument("box", nargs="?", help="path to a box JSON (default: packaged boxes)")
     p.add_argument("--all", action="store_true", help="run every packaged box")

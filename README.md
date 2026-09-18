@@ -15,7 +15,7 @@ Two doors. There is no login and no file drop.
 
 **One number that already has a page.** `night-line close` takes a value, a URL, and a page or figure. It refuses email prose and a file without a page. Method: [CLOSE_PROTOCOL_V1.md](CLOSE_PROTOCOL_V1.md).
 
-**Appendix A still open.** Paste [APPENDIX_A_NIGHT_INPUTS_V1.md](APPENDIX_A_NIGHT_INPUTS_V1.md) into the lander-requirements / power document. Survive-the-Night as a task-order name is not your store. Open a GitHub issue from the Night Line inputs template to start a reconstruction.
+**Appendix A still open.** Paste [APPENDIX_A_NIGHT_INPUTS_V1.md](APPENDIX_A_NIGHT_INPUTS_V1.md) into the lander-requirements / power document. Survive-the-Night as a task-order name is not your store. On your machine, no login: `night-line appendix-a --ride dimple_cp32` writes `APPENDIX_A_INPUTS.csv` with cited CONOPS and OPEN store/W. Or open a GitHub issue from the Night Line inputs template.
 
 A letter from us is a later act: only when a public page already prints a To and a row can be reconstructed from cited numbers. We do not ask for an unpublished deck.
 
