@@ -1,0 +1,48 @@
+{
+  "ride_id": "slim_jaxa",
+  "named_box": "JAXA Smart Lander for Investigating Moon (SLIM)",
+  "host": "JAXA H-IIA F47 / SLIM — not CLPS; flown 2024",
+  "window": "flown",
+  "sources_dir": "sources/slim-jaxa",
+  "lab_use": "Do not size a night-store from SLIM waking. JAXA printed overnight was not in the design (越夜 not assumed). Three wakes are not Cataldo 354 h, not a Wh, and not Blue Ghost Mission 1’s 5 h after sunset. CADRE on IM-3 is a different box (daylight-only) and is absent here.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "2024-01-20",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "payload_program_ended": false,
+    "undesigned_night_wake": true
+  },
+  "quotes": [
+    {
+      "text": "despite not being part of the original mission plan, the spacecraft was confirmed to survive three lunar nights and remained operational",
+      "url": "https://global.jaxa.jp/press/2024/08/20240826-1_e.html",
+      "page_or_figure": "JAXA press — Conclusion of Lunar Activities of SLIM (2024-08-26)",
+      "source_slug": "jaxa-press-20240826"
+    },
+    {
+      "text": "The mission had not been expected to continue past dark. But to the delight of the team, SLIM did wake",
+      "url": "https://cosmos.isas.jaxa.jp/landing-on-the-moon-behind-the-scenes-of-the-night-when-slim-made-history/",
+      "page_or_figure": "ISAS Cosmos — Landing on the Moon: behind the scenes",
+      "source_slug": "isas-cosmos-slim"
+    },
+    {
+      "text": "「越夜」は設計上想定していなかったが、結果として、3回の越夜",
+      "url": "https://www.jaxa.jp/projects/files/youtube/slim/jaxa_doc01_20241226.pdf",
+      "page_or_figure": "JAXA 2024-12-26 SLIM wrap-up briefing p. (extracted text)",
+      "source_slug": "jaxa-briefing-20241226"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

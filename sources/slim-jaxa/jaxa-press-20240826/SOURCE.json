@@ -1,0 +1,21 @@
+{
+  "url": "https://global.jaxa.jp/press/2024/08/20240826-1_e.html",
+  "title": "JAXA press: Conclusion of Lunar Activities of SLIM (2024-08-26)",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "nights_survived=3",
+    "store_Wh=NOT_PRINTED",
+    "designed_for_night=false"
+  ],
+  "quote": "despite not being part of the original mission plan, the spacecraft was confirmed to survive three lunar nights and remained operational",
+  "fetched_utc": "2026-09-18T14:00:00Z",
+  "bytes": 26043,
+  "sha256": "78516ebf8e8f0c7cc202066eea78a040bfeea439c165234c71eaec2b9caa845b",
+  "sha256_by_file": {
+    "page.html": "78516ebf8e8f0c7cc202066eea78a040bfeea439c165234c71eaec2b9caa845b"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

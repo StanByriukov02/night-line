@@ -1,0 +1,20 @@
+{
+  "url": "https://www.isro.gov.in/Chandrayaan3.html",
+  "title": "ISRO Chandrayaan-3 mission page: sleep mode, awaiting awakening 2023-09-22",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "store_Wh=NOT_PRINTED",
+    "hoped_wake=true"
+  ],
+  "quote": "The lander and rover are in sleep mode. Awaiting their awakening around September 22, 2023.",
+  "fetched_utc": "2026-09-18T14:45:00Z",
+  "bytes": 23760,
+  "sha256": "2c7c306d2a4917d7cbd52bd760a38f46186d42691a463f7c4a362720f7d00e86",
+  "sha256_by_file": {
+    "page.html": "2c7c306d2a4917d7cbd52bd760a38f46186d42691a463f7c4a362720f7d00e86"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

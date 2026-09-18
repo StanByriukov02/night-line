@@ -1,0 +1,20 @@
+{
+  "url": "https://www.mhi.com/business/products-services/space-defense/exploration-rover-satellite-equipment/lupex-lunar-polar-exploration",
+  "title": "MHI: LUPEX night survivability, 3.5 months up to 1 year",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "duration=3.5_months",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "night survivability",
+  "fetched_utc": "2026-09-18T15:00:00Z",
+  "bytes": 613006,
+  "sha256": "4cc04ff9654be1325734231b2803860901963f20b6187c8252dabdc26f3a3453",
+  "sha256_by_file": {
+    "page.html": "4cc04ff9654be1325734231b2803860901963f20b6187c8252dabdc26f3a3453"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

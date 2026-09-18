@@ -1,0 +1,20 @@
+{
+  "url": "https://news.gm.com/home.detail.html/Pages/topic/us/en/2025/aug/0829-GM-brings-innovative-battery-tech-lunar-rover-concept.html",
+  "title": "GM: Lunar Dawn survive 14-day lunar night, NCMA batteries, Wh OPEN",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "night_d=14",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "survive in total darkness during the 14-day long lunar night",
+  "fetched_utc": "2026-09-18T15:20:00Z",
+  "bytes": 78959,
+  "sha256": "77c818a3f5b7dbf9f6efe3c2af401f06e083734a58b06a367f527f11269a4d81",
+  "sha256_by_file": {
+    "page.html": "77c818a3f5b7dbf9f6efe3c2af401f06e083734a58b06a367f527f11269a4d81"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

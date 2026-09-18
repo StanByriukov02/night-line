@@ -1,0 +1,57 @@
+{
+  "ride_id": "yutu2_ce4",
+  "named_box": "CNSA Yutu-2 rover (Chang'e-4)",
+  "host": "CNSA Chang'e-4 lander / Queqiao — not CLPS; flown 2019",
+  "window": "flown",
+  "sources_dir": "sources/yutu2-ce4",
+  "lab_use": "Do not size a night-store from five RHUs or from waking after 14-day nights. CNSA printed RHUs for survival and power supply during moonlight; the wake page printed dormant from lack of solar. Heat is not bus watts. Not SLIM’s undesigned wake. Not Pragyan’s hoped awakening. Not Zeno’s 5 Wt 2028 study. Do not compute 5 RHU × 354 h.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "2019-01-03",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "payload_program_ended": false,
+    "undesigned_night_wake": false,
+    "hoped_wake": false,
+    "flown_rhu_heat": true,
+    "night_survival_tech": false
+  },
+  "quotes": [
+    {
+      "text": "The probe uses 5 RHUs to solve the problem of probe's survival and power supply during the moonlight.",
+      "url": "https://www.cnsa.gov.cn/english/n6465645/n6465648/c6804536/content.html",
+      "page_or_figure": "CNSA — The introduction of RHU in Chang'e-4 mission",
+      "source_slug": "cnsa-rhu"
+    },
+    {
+      "text": "surviving their first lunar night after making the first-ever soft landing on the far side of the moon",
+      "url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c6805358/content.html",
+      "page_or_figure": "CNSA — Chang'e-4 probe wakes up after first lunar night",
+      "source_slug": "cnsa-first-wake"
+    },
+    {
+      "text": "The Chang'e-4 probe switched to a dormant mode during the lunar night due to the lack of solar power.",
+      "url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c6805358/content.html",
+      "page_or_figure": "CNSA — Chang'e-4 probe wakes up after first lunar night",
+      "source_slug": "cnsa-first-wake"
+    },
+    {
+      "text": "接通供热装置",
+      "url": "http://www.clep.org.cn/n5982341/c6808601/content.html",
+      "page_or_figure": "CLEP — Chang'e-4 first anniversary (heat supply at night)",
+      "source_slug": "clep-night"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

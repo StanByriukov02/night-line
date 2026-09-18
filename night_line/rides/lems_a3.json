@@ -1,0 +1,53 @@
+{
+  "ride_id": "lems_a3",
+  "named_box": "NASA GSFC / UMD LEMS-A3",
+  "host": "SpaceX Starship HLS / Artemis III — not CLPS",
+  "window": "Artemis III",
+  "sources_dir": "sources/lems-a3",
+  "lab_use": "The electrical night line is already on LINES.md (640 Wh / 354 h). This row is so you do not take Yutu-2’s five RHUs as that store, and so you do not mint a seventh energy box. GSFC printed continuous day and night. ICES printed the allocation. A3 RHU is OPEN — do not copy DALI 0–2 RHU. MEASURED=false. No letter (Benna SENT).",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": true,
+    "store_Wh_printed": true,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": true,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "payload_program_ended": false,
+    "undesigned_night_wake": false,
+    "hoped_wake": false,
+    "flown_rhu_heat": false,
+    "night_survival_tech": false,
+    "electrical_store_cited": true,
+    "operate_through_night": false
+  },
+  "quotes": [
+    {
+      "text": "less than 640 Wh of allocated battery energy for a 354 hr period between sun illuminations",
+      "url": "https://ntrs.nasa.gov/api/citations/20250005257/downloads/ICES_2025_LEMS_BurbridgeRodriguez_v5.pdf",
+      "page_or_figure": "ICES 2025 / NTRS 20250005257 — battery allocation",
+      "source_slug": "ices-2025-tcs-ntrs"
+    },
+    {
+      "text": "continuous (day and night), long-term (two years longevity goal)",
+      "url": "https://science.gsfc.nasa.gov/solarsystem/projects/635",
+      "page_or_figure": "NASA GSFC — LEMS-A3 project page",
+      "source_slug": "gsfc-lems-a3"
+    },
+    {
+      "text": "LEMS is intended to operate on the lunar surface day and night from three months up to two years.",
+      "url": "https://science.nasa.gov/lems/",
+      "page_or_figure": "NASA Science — LEMS",
+      "source_slug": "nasa-science-lems"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

@@ -1,0 +1,23 @@
+{
+  "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2023/aug/doc2023825244401.pdf",
+  "title": "PIB: Chandrayaan-3 lander/rover designed for one lunar daylight (extracted text; PDF omitted)",
+  "filename": "page.txt",
+  "content_type": "text/plain; charset=UTF-8",
+  "numbers_used": [
+    "daylight_period_d=14",
+    "store_Wh=NOT_PRINTED",
+    "designed_for_night=false"
+  ],
+  "quote": "The lander and rover are designed to operate for one lunar daylight period (about 14 Earth days).",
+  "fetched_utc": "2026-09-18T14:45:00Z",
+  "bytes": 12211,
+  "sha256": "8fdf288de0d9728af66b329067b8b85cd186001953954116245048074753f32a",
+  "sha256_by_file": {
+    "page.txt": "8fdf288de0d9728af66b329067b8b85cd186001953954116245048074753f32a"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": [
+    "page.pdf"
+  ]
+}

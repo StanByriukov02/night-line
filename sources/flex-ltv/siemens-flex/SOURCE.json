@@ -1,0 +1,20 @@
+{
+  "url": "https://resources.sw.siemens.com/en-US/case-study-astrolab/",
+  "title": "Siemens: Astrolab FLEX 150 h polar darkness on battery storage",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "darkness_h=150",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "stay in darkness for 150 hours",
+  "fetched_utc": "2026-09-18T15:20:00Z",
+  "bytes": 58450,
+  "sha256": "33660413625009b74022f85ba8c7dcc045863dbd3a465cd44263ae9fbece988d",
+  "sha256_by_file": {
+    "page.html": "33660413625009b74022f85ba8c7dcc045863dbd3a465cd44263ae9fbece988d"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

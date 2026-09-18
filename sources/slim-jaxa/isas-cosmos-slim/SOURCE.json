@@ -1,0 +1,21 @@
+{
+  "url": "https://cosmos.isas.jaxa.jp/landing-on-the-moon-behind-the-scenes-of-the-night-when-slim-made-history/",
+  "title": "ISAS Cosmos: Landing on the Moon — SLIM behind the scenes",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "store_Wh=NOT_PRINTED",
+    "designed_for_night=false",
+    "woke_after_night=true"
+  ],
+  "quote": "The mission had not been expected to continue past dark. But to the delight of the team, SLIM did wake",
+  "fetched_utc": "2026-09-18T14:00:00Z",
+  "bytes": 242682,
+  "sha256": "cdb446495d73c2ad85e4d765747b1664681a359496a257dc0f76e1ba037a4d9d",
+  "sha256_by_file": {
+    "page.html": "cdb446495d73c2ad85e4d765747b1664681a359496a257dc0f76e1ba037a4d9d"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

@@ -1,0 +1,21 @@
+{
+  "url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c6805358/content.html",
+  "title": "CNSA: Yutu-2 surviving first lunar night, dormant from lack of solar",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "lunar_night_d=14",
+    "store_Wh=NOT_PRINTED",
+    "woke_after_night=true"
+  ],
+  "quote": "surviving their first lunar night",
+  "fetched_utc": "2026-09-18T15:00:00Z",
+  "bytes": 16773,
+  "sha256": "8995b8879f9f55e8e1e8b761ac5a97300f5e0edc9d7945a88d1c88d69c432b8c",
+  "sha256_by_file": {
+    "page.html": "8995b8879f9f55e8e1e8b761ac5a97300f5e0edc9d7945a88d1c88d69c432b8c"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

@@ -1,0 +1,23 @@
+{
+  "url": "https://www.jaxa.jp/projects/files/youtube/slim/jaxa_doc01_20241226.pdf",
+  "title": "JAXA 2024-12-26 SLIM project wrap-up briefing (extracted text; PDF omitted as binary)",
+  "filename": "page.txt",
+  "content_type": "text/plain; charset=UTF-8",
+  "numbers_used": [
+    "nights_survived=3",
+    "designed_for_night=false",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "「越夜」は設計上想定していなかったが、結果として、3回の越夜",
+  "fetched_utc": "2026-09-18T14:00:00Z",
+  "bytes": 32493,
+  "sha256": "9a41c19ed38893a6db58ff4a5e09911a26e151acf40b773505f5239bf07a8ac8",
+  "sha256_by_file": {
+    "page.txt": "9a41c19ed38893a6db58ff4a5e09911a26e151acf40b773505f5239bf07a8ac8"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": [
+    "page.pdf"
+  ]
+}

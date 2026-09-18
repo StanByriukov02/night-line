@@ -1,0 +1,54 @@
+{
+  "ride_id": "flex_ltv",
+  "named_box": "Astrolab FLEX rover (NASA LTVS)",
+  "host": "NASA Lunar Terrain Vehicle Services — crewed rover class; landing OPEN",
+  "window": "LTVS",
+  "sources_dir": "sources/flex-ltv",
+  "lab_use": "Do not paste Cataldo 354 h onto FLEX. Siemens prints ~five days / 150 hours of darkness on battery storage. That hour-count is not a watt-hour. Not FLIP’s store-enough-energy sentence. Not Yutu-2 RHU heat. Not LEMS 640 Wh. Do not letter Matthews.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": true,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "payload_program_ended": false,
+    "undesigned_night_wake": false,
+    "hoped_wake": false,
+    "flown_rhu_heat": false,
+    "night_survival_tech": false,
+    "electrical_store_cited": false,
+    "polar_darkness_h": 150.0,
+    "operate_through_night": false
+  },
+  "quotes": [
+    {
+      "text": "Our vehicle needs to survive solely on battery storage for periods when the sun is down",
+      "url": "https://resources.sw.siemens.com/en-US/case-study-astrolab/",
+      "page_or_figure": "Siemens Xcelerator case study — Astrolab FLEX (Paul Lees)",
+      "source_slug": "siemens-flex"
+    },
+    {
+      "text": "keep all the components at allowable temperatures for around five days in darkness",
+      "url": "https://resources.sw.siemens.com/en-US/case-study-astrolab/",
+      "page_or_figure": "Siemens Xcelerator case study — Astrolab FLEX (Paul Lees)",
+      "source_slug": "siemens-flex"
+    },
+    {
+      "text": "exactly how much energy is needed to stay in darkness for 150 hours",
+      "url": "https://resources.sw.siemens.com/en-US/case-study-astrolab/",
+      "page_or_figure": "Siemens Xcelerator case study — Astrolab FLEX (Paul Lees)",
+      "source_slug": "siemens-flex"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

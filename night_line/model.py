@@ -677,6 +677,150 @@ def _breaks(
     return rows
 
 
+def _surface_row(
+    *,
+    G: float,
+    eps: float,
+    A_rad: float,
+    p_electronics: float,
+    k_path: float,
+    L_path: float,
+    T_box: float,
+    T_env: float,
+    store_Wh: float,
+    h_night: float,
+    knob: str,
+    value: float,
+    role: str,
+) -> dict[str, Any]:
+    st = _state(
+        G=G,
+        eps=eps,
+        A_rad=A_rad,
+        k_path=k_path,
+        L_path=L_path,
+        T_box=T_box,
+        T_env=T_env,
+        p_electronics=p_electronics,
+        store_Wh=store_Wh,
+        h_night=h_night,
+        nist_id=None,
+    )
+    p_leak = float(st["P_leak_W"])
+    p_e = float(st["P_elec_W"])
+    regime = "electronics_bound" if p_e > p_leak + 1e-12 else "leak_bound"
+    if abs(p_e - p_leak) <= 1e-12 and abs(p_e - float(p_electronics)) <= 1e-12:
+        regime = "tied"
+    return {
+        "knob": knob,
+        "value": float(value),
+        "role": role,
+        "their_print": False,
+        "P_leak_W": p_leak,
+        "P_electronics_W": float(p_electronics),
+        "P_elec_W": p_e,
+        "regime": regime,
+        "E_night_Wh": float(st["E_night_Wh"]),
+        "hours_lived": float(st["hours_lived"]),
+        "margin_Wh": float(st["margin_Wh"]),
+        "H_night_h": float(h_night),
+        "verdict": st["verdict"],
+    }
+
+
+def break_surface(fix: dict[str, Any]) -> dict[str, Any]:
+    """Sizing table around BREAK. Sweep values are not the team's print."""
+    rec = evaluate(fix)
+    breaks = rec.get("breaks") or []
+    if not breaks:
+        raise ValueError("break_surface needs Fourier BREAK knobs")
+    hi = rec["hi"]
+    store = float(rec["store_Wh"])
+    h_night = float(rec["H_night_h"])
+    p_electronics = float(rec["P_electronics_W"])
+    G_hi = float(hi["G_W_per_K"])
+    eps_hi = float(hi["eps_eff"])
+    A_hi = float(hi["A_rad_m2"])
+    k_path = float(hi["k_path_w_mk"])
+    L_path = float(hi["L_path_m"])
+    T_box = float(rec["T_box_K"])
+    T_env = float(hi["T_env_K"])
+    brk = {b["knob"]: b for b in breaks}
+    a_break = float(brk["A_rad_m2"]["value"])
+    g_break = float(brk["G_path_W_per_K"]["value"])
+    a_lo = float((fix.get("geometry_bracket") or {}).get("A_rad_m2", {}).get("lo") or 0.05)
+    g_lo = float((fix.get("geometry_bracket") or {}).get("G_path_W_per_K", {}).get("lo") or 0.002)
+
+    def a_role(v: float) -> str:
+        if abs(v - a_lo) < 1e-9:
+            return "declared_lo"
+        if abs(v - A_hi) < 1e-9:
+            return "declared_hi"
+        if abs(v - a_break) < 1e-6:
+            return "BREAK"
+        return "ASSUMED_sweep"
+
+    def g_role(v: float) -> str:
+        if abs(v - g_lo) < 1e-9:
+            return "printed_G_bound"
+        if abs(v - G_hi) < 1e-9:
+            return "declared_hi"
+        if abs(v - g_break) < 5e-6:
+            return "BREAK"
+        return "ASSUMED_sweep"
+
+    a_vals = sorted({a_lo, 0.40, A_hi, a_break, 1.00, 1.20})
+    g_vals = sorted({g_lo, G_hi, g_break, 0.008, 0.010})
+    a_rows = [
+        _surface_row(
+            G=G_hi,
+            eps=eps_hi,
+            A_rad=v,
+            p_electronics=p_electronics,
+            k_path=k_path,
+            L_path=L_path,
+            T_box=T_box,
+            T_env=T_env,
+            store_Wh=store,
+            h_night=h_night,
+            knob="A_rad_m2",
+            value=v,
+            role=a_role(v),
+        )
+        for v in a_vals
+    ]
+    g_rows = [
+        _surface_row(
+            G=v,
+            eps=eps_hi,
+            A_rad=A_hi,
+            p_electronics=p_electronics,
+            k_path=k_path,
+            L_path=L_path,
+            T_box=T_box,
+            T_env=T_env,
+            store_Wh=store,
+            h_night=h_night,
+            knob="G_path_W_per_K",
+            value=v,
+            role=g_role(v),
+        )
+        for v in g_vals
+    ]
+    return {
+        "schema": "night_line_break_surface_v1",
+        "box_id": rec.get("box_id"),
+        "held": "worst declared corner T_env, G or A_rad as named, e*, P_electronics",
+        "their_print": False,
+        "MEASURED": False,
+        "A_rad_m2": a_rows,
+        "G_path_W_per_K": g_rows,
+        "break_A_rad_m2": a_break,
+        "break_G_W_per_K": g_break,
+        "electronics_bound_hours": store / p_electronics if p_electronics else None,
+    }
+
+
 def evaluate(fix: dict[str, Any]) -> dict[str, Any]:
     if heat_vs_bonus_of(fix):
         thermal = field(fix, "P_thermal_W")

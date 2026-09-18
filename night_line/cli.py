@@ -18,6 +18,7 @@ from night_line.model import (
     LINE_OPEN_TWO_KNOBS,
     LIVE_IF_STORE_ABOVE,
     ROOT,
+    break_surface,
     evaluate,
     load_box,
     packaged_boxes,
@@ -44,12 +45,13 @@ def _label_line(rec: dict[str, Any]) -> str:
 def write_line_md(rec: dict[str, Any], dest: Path) -> None:
     label = _label_line(rec)
     box = rec["box"]
+    named = str(rec.get("date_named") or "2026-09-17")
     if rec["label"] == HEAT_VS_BONUS:
         p_th = rec.get("P_thermal_W")
         hq = rec.get("heat_quotes") or {}
         bq = rec.get("bonus_quotes") or {}
         lines = [
-            f"# {box} Night Line — 2026-09-17",
+            f"# {box} Night Line — {named}",
             "",
             f"**Label: {label}**",
             "",
@@ -88,7 +90,7 @@ def write_line_md(rec: dict[str, Any], dest: Path) -> None:
             "by the team or NIST.",
             "",
         ]
-        dest.write_text("\n".join(lines), encoding="utf-8")
+        dest.write_text("\n".join(lines), encoding="utf-8", newline="\n")
         return
     if rec["label"] == CLAIM_VS_WITNESS:
         after = rec.get("after_sunset_h")
@@ -97,7 +99,7 @@ def write_line_md(rec: dict[str, Any], dest: Path) -> None:
         pq = rec.get("product_quotes") or {}
         fq = rec.get("flown_quotes") or {}
         lines = [
-            f"# {box} Night Line — 2026-09-17",
+            f"# {box} Night Line — {named}",
             "",
             f"**Label: {label}**",
             "",
@@ -133,13 +135,13 @@ def write_line_md(rec: dict[str, Any], dest: Path) -> None:
             "by the team or NIST.",
             "",
         ]
-        dest.write_text("\n".join(lines), encoding="utf-8")
+        dest.write_text("\n".join(lines), encoding="utf-8", newline="\n")
         return
     h_night = float(rec["H_night_h"])
     if rec["label"] == LINE_OPEN_TWO_KNOBS:
         table = rec.get("identity_table") or []
         lines = [
-            f"# {box} Night Line — 2026-09-17",
+            f"# {box} Night Line — {named}",
             "",
             f"**Label: {label}**",
             "",
@@ -168,14 +170,14 @@ def write_line_md(rec: dict[str, Any], dest: Path) -> None:
                 "",
             ]
         )
-        dest.write_text("\n".join(lines), encoding="utf-8")
+        dest.write_text("\n".join(lines), encoding="utf-8", newline="\n")
         return
     if rec["label"] == LIVE_IF_STORE_ABOVE:
         table = rec.get("identity_table") or []
         p_load = rec.get("P_keepalive_W")
         nameplate = rec.get("nameplate_line_Wh")
         lines = [
-            f"# {box} Night Line — 2026-09-17",
+            f"# {box} Night Line — {named}",
             "",
             f"**Label: {label}**",
             "",
@@ -213,14 +215,14 @@ def write_line_md(rec: dict[str, Any], dest: Path) -> None:
                 "",
             ]
         )
-        dest.write_text("\n".join(lines), encoding="utf-8")
+        dest.write_text("\n".join(lines), encoding="utf-8", newline="\n")
         return
     hi = rec["hi"]
     lo = rec["lo"]
     label = _label_line(rec)
     box = rec["box"]
     lines: list[str] = [
-        f"# {box} Night Line — 2026-09-17",
+        f"# {box} Night Line — {named}",
         "",
     ]
     if rec["label"] == "LIVE":
@@ -279,18 +281,30 @@ def write_line_md(rec: dict[str, Any], dest: Path) -> None:
             "",
         ]
     )
-    dest.write_text("\n".join(lines), encoding="utf-8")
+    dest.write_text("\n".join(lines), encoding="utf-8", newline="\n")
 
 
 def write_inputs_csv(fix: dict[str, Any], rec: dict[str, Any], dest: Path) -> None:
     with dest.open("w", encoding="utf-8", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=("input", "value", "unit", "cite"))
+        w = csv.DictWriter(
+            fh, fieldnames=("input", "value", "unit", "cite"), lineterminator="\n"
+        )
         w.writeheader()
         for name, spec in (fix.get("fields") or {}).items():
             if not isinstance(spec, dict):
                 continue
             val = spec.get("value")
-            if spec.get("tier") == "OPEN" or val is None:
+            if spec.get("tier") == "team_provided":
+                value = val if not isinstance(val, list) else json.dumps(val)
+                cite = (
+                    "team_provided; "
+                    + str(spec.get("url") or "")
+                    + "; "
+                    + str(spec.get("page_or_figure") or "")
+                    + "; "
+                    + str(spec.get("cite") or "")
+                )
+            elif spec.get("tier") == "OPEN" or val is None:
                 value = "OPEN"
                 cite = "OPEN"
             elif spec.get("tier") == "derived":
@@ -581,14 +595,21 @@ def write_receipt(rec: dict[str, Any], report: dict[str, Any], dest: Path) -> No
             rows.append(
                 f"BREAK P_electronics {_fmt(pe.get('value'), 3)} W hours={_fmt(pe.get('hours'))}"
             )
+    ov = rec.get("close_overlay")
+    if isinstance(ov, dict):
+        rows.append(
+            f"team_provided {ov.get('input')} {ov.get('value')} "
+            f"{ov.get('url')} {ov.get('page_or_figure')}"
+        )
+        rows.append("LINES.md not written")
     rows.append(f"sources_sha256 {'PASS' if report.get('sources_sha256_ok') else 'FAIL'}")
     rows.append(f"ladder_recompute {'PASS' if report.get('ladder_recompute_ok') else 'FAIL'}")
     for u in report.get("url_status") or []:
         rows.append(f"url {u.get('url')} status={u.get('status')} live={u.get('live')}")
-    rows.append("command night-line --all")
+    rows.append(f"command {rec.get('command') or 'night-line --all'}")
     rows.append("no measurement by us; all values printed by the team or NIST")
     rows.append("")
-    dest.write_text("\n".join(rows), encoding="utf-8")
+    dest.write_text("\n".join(rows), encoding="utf-8", newline="\n")
 
 
 def run_one(path: Path, out_root: Path) -> dict[str, Any]:
@@ -618,13 +639,15 @@ def main(argv: list[str] | None = None) -> int:
         from night_line.ship_gate import main as ship_gate_main
 
         return ship_gate_main(argv_list[1:])
+    if argv_list and argv_list[0] == "surface":
+        return surface_main(argv_list[1:])
     if argv_list and argv_list[0] in {"witness-map", "witness_map"}:
         return witness_map_main(argv_list[1:])
     p = argparse.ArgumentParser(prog="night-line")
     p.add_argument("box", nargs="?", help="path to a box JSON (default: packaged boxes)")
     p.add_argument("--all", action="store_true", help="run every packaged box")
     p.add_argument("--out", type=Path, default=OUT_DEFAULT)
-    args = p.parse_args(argv)
+    args = p.parse_args(argv_list)
     if args.all or args.box is None:
         paths = packaged_boxes()
         if args.box is not None:
@@ -656,6 +679,57 @@ def main(argv: list[str] | None = None) -> int:
         )
     return 0
 
+
+def _write_surface_csv(rows: list[dict[str, Any]], dest: Path) -> None:
+    fields = [
+        "knob",
+        "value",
+        "role",
+        "their_print",
+        "regime",
+        "P_leak_W",
+        "P_elec_W",
+        "hours_lived",
+        "margin_Wh",
+        "verdict",
+    ]
+    with dest.open("w", encoding="utf-8", newline="\n") as fh:
+        w = csv.DictWriter(fh, fieldnames=fields, extrasaction="ignore")
+        w.writeheader()
+        for row in rows:
+            w.writerow({k: row.get(k) for k in fields})
+
+
+def surface_main(argv: list[str] | None = None) -> int:
+    p = argparse.ArgumentParser(prog="night-line surface")
+    p.add_argument(
+        "--box",
+        default=None,
+        help="box JSON (default: packaged LEMS-A3)",
+    )
+    p.add_argument("--out", type=Path, default=OUT_DEFAULT)
+    args = p.parse_args(argv)
+    if args.box:
+        path = Path(args.box)
+    else:
+        packed = [b for b in packaged_boxes() if b.stem == "lems_a3"]
+        if not packed:
+            print("lems_a3 not packaged", file=sys.stderr)
+            return 2
+        path = packed[0]
+    fix = load_box(path)
+    doc = break_surface(fix)
+    dest = args.out / str(doc["box_id"])
+    dest.mkdir(parents=True, exist_ok=True)
+    _write_surface_csv(doc["A_rad_m2"], dest / "BREAK_SURFACE_A_RAD.csv")
+    _write_surface_csv(doc["G_path_W_per_K"], dest / "BREAK_SURFACE_G.csv")
+    (dest / "BREAK_SURFACE.json").write_text(
+        json.dumps(doc, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
+    print(doc["box_id"], "surface", "A_rad_BREAK", f"{doc['break_A_rad_m2']:.3f}")
+    return 0
 
 
 def witness_map_main(argv: list[str] | None = None) -> int:
@@ -691,12 +765,13 @@ def witness_map_main(argv: list[str] | None = None) -> int:
     write_map_md(doc, dest / "WITNESS_MAP.md")
     write_map_csv(doc, dest / "WITNESS_MAP.csv")
     (dest / "WITNESS_MAP.json").write_text(
-        json.dumps(doc, indent=2, ensure_ascii=False) + chr(10),
+        json.dumps(doc, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
-        newline=chr(10),
+        newline="\n",
     )
     print("manifest_closed", doc["manifest_closed"], "verify_ok", all_ok)
     return 0 if all_ok else 1
+
 
 if __name__ == "__main__":
     raise SystemExit(main())

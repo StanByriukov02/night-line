@@ -1,0 +1,19 @@
+{
+  "url": "https://news.lockheedmartin.com/2024-04-03-Lunar-Dawn-Team-Awarded-NASA-Lunar-Terrain-Vehicle-Contract",
+  "title": "Lockheed Martin: Lunar Dawn operate through two-week lunar nights",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "not only survive, but to operate, during the two-week long lunar nights",
+  "fetched_utc": "2026-09-18T15:20:00Z",
+  "bytes": 157090,
+  "sha256": "296b7c88db900c49c2b9de73e42a41ba9211b506c9a85fe10def9878562bfb4d",
+  "sha256_by_file": {
+    "page.html": "296b7c88db900c49c2b9de73e42a41ba9211b506c9a85fe10def9878562bfb4d"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

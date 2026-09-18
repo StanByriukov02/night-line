@@ -1,0 +1,47 @@
+{
+  "ride_id": "lunar_dawn_ltv",
+  "named_box": "Lunar Outpost Lunar Dawn LTV (GM / Lockheed Martin)",
+  "host": "NASA Lunar Terrain Vehicle Services — crewed rover class; landing OPEN",
+  "window": "LTVS",
+  "sources_dir": "sources/lunar-dawn-ltv",
+  "lab_use": "Do not take operate-through-night as a watt-hour. Lockheed printed survive and operate during two-week lunar nights. GM printed survive 14-day darkness on NCMA batteries. Chemistry and 14 days are not Cataldo 354 h and not LEMS 640 Wh. Not FLEX’s 150 h. Not Yutu-2 RHU heat. Not FLIP hibernate. Store Wh OPEN.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": true,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "payload_program_ended": false,
+    "undesigned_night_wake": false,
+    "hoped_wake": false,
+    "flown_rhu_heat": false,
+    "night_survival_tech": false,
+    "electrical_store_cited": false,
+    "operate_through_night": true
+  },
+  "quotes": [
+    {
+      "text": "The ability to not only survive, but to operate, during the two-week long lunar nights with temperatures down to -280 degrees Fahrenheit",
+      "url": "https://news.lockheedmartin.com/2024-04-03-Lunar-Dawn-Team-Awarded-NASA-Lunar-Terrain-Vehicle-Contract",
+      "page_or_figure": "Lockheed Martin — Lunar Dawn LTVS award (2024-04-03)",
+      "source_slug": "lockheed-ltvs"
+    },
+    {
+      "text": "survive in total darkness during the 14-day long lunar night",
+      "url": "https://news.gm.com/home.detail.html/Pages/topic/us/en/2025/aug/0829-GM-brings-innovative-battery-tech-lunar-rover-concept.html",
+      "page_or_figure": "GM News — Surviving the lunar night (2025-08-29)",
+      "source_slug": "gm-battery"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

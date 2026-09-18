@@ -1,0 +1,20 @@
+{
+  "url": "https://www.isro.gov.in/ISRO_EN/Release_of_Chandrayaan-3_science_data_to_the_Scientific_Community.html",
+  "title": "ISRO: Chandrayaan-3 science data release — rover ~101 m, payloads operated",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "rover_m=101",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "Post-landing, the rover moved around the landing site and covered ~101m distance.",
+  "fetched_utc": "2026-09-18T14:45:00Z",
+  "bytes": 3470,
+  "sha256": "718fa1e7354c79115e85019c67874ba8ae1587f241cd2aff9f064b4d39da5392",
+  "sha256_by_file": {
+    "page.html": "718fa1e7354c79115e85019c67874ba8ae1587f241cd2aff9f064b4d39da5392"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

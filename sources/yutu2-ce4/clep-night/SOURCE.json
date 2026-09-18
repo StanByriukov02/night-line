@@ -1,0 +1,20 @@
+{
+  "url": "http://www.clep.org.cn/n5982341/c6808601/content.html",
+  "title": "CLEP: Yutu-2 heat supply at night, 13 day-night cycles in year one",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "day_night_cycles=13",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "十三次月昼月夜考验",
+  "fetched_utc": "2026-09-18T15:00:00Z",
+  "bytes": 19209,
+  "sha256": "ea77770b3a16d8825aaa86eccd7ce49bb9e768702879f0cbec300d5fdc51c71f",
+  "sha256_by_file": {
+    "page.html": "ea77770b3a16d8825aaa86eccd7ce49bb9e768702879f0cbec300d5fdc51c71f"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

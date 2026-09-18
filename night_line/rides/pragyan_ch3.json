@@ -1,0 +1,49 @@
+{
+  "ride_id": "pragyan_ch3",
+  "named_box": "ISRO Chandrayaan-3 Pragyan rover",
+  "host": "ISRO Vikram lander / Chandrayaan-3 — not CLPS; flown 2023",
+  "window": "flown",
+  "sources_dir": "sources/pragyan-ch3",
+  "lab_use": "Do not size a night-store from ISRO hoping the rover would awaken. PIB printed one lunar daylight (~14 Earth days). Sleep-await is not Wh. The official mission page still says efforts underway — do not mint a closed no-signal from news. Not SLIM’s undesigned wake. Not Blue Ghost Mission 1’s 5 h after sunset.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "2023-08-23",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "payload_program_ended": false,
+    "undesigned_night_wake": false,
+    "hoped_wake": true
+  },
+  "quotes": [
+    {
+      "text": "The lander and rover are in sleep mode. Awaiting their awakening around September 22, 2023.",
+      "url": "https://www.isro.gov.in/Chandrayaan3.html",
+      "page_or_figure": "ISRO Chandrayaan-3 mission page — 4 September 2023",
+      "source_slug": "isro-ch3"
+    },
+    {
+      "text": "The lander and rover are designed to operate for one lunar daylight period (about 14 Earth days).",
+      "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2023/aug/doc2023825244401.pdf",
+      "page_or_figure": "PIB — India’s Mission Chandrayaan-3 (extracted text)",
+      "source_slug": "pib-daylight"
+    },
+    {
+      "text": "Post-landing, the rover moved around the landing site and covered ~101m distance.",
+      "url": "https://www.isro.gov.in/ISRO_EN/Release_of_Chandrayaan-3_science_data_to_the_Scientific_Community.html",
+      "page_or_figure": "ISRO — Release of Chandrayaan-3 science data (2024-08-23)",
+      "source_slug": "isro-data-release"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

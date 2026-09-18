@@ -1,0 +1,63 @@
+{
+  "ride_id": "lupex_rover",
+  "named_box": "JAXA LUPEX rover (lunar polar exploration)",
+  "host": "ISRO LUPEX lander (JAXA rover; NASA NS payload) — not CLPS; NET 2028",
+  "window": "2028+",
+  "sources_dir": "sources/lupex-rover",
+  "lab_use": "Do not size a night-store from the words lunar night survival or from 3.5 months. JAXA named night survival as technology. Operating period more than 3 months. Launch no earlier than 2028. Store Wh not printed. Not FLIP’s store-enough-energy sentence. Not Zeno’s 5 Wt heat bonus. Not Yutu-2’s flown RHUs. Polar months are not Cataldo 354 h. NET 2028 is not a sunset.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "payload_program_ended": false,
+    "undesigned_night_wake": false,
+    "hoped_wake": false,
+    "flown_rhu_heat": false,
+    "night_survival_tech": true
+  },
+  "quotes": [
+    {
+      "text": "These advancements include technology for mobility, lunar night survival and mining excavation.",
+      "url": "https://www.exploration.jaxa.jp/e/program/lunarpolar/",
+      "page_or_figure": "JAXA JSEC — Lunar Polar Exploration Mission (LUPEX)",
+      "source_slug": "jaxa-lupex"
+    },
+    {
+      "text": "More than 3 months",
+      "url": "https://www.exploration.jaxa.jp/e/program/lunarpolar/",
+      "page_or_figure": "JAXA JSEC LUPEX — Operating Period",
+      "source_slug": "jaxa-lupex"
+    },
+    {
+      "text": "No earlier than 2028",
+      "url": "https://www.exploration.jaxa.jp/e/program/lunarpolar/",
+      "page_or_figure": "JAXA JSEC LUPEX — Launch",
+      "source_slug": "jaxa-lupex"
+    },
+    {
+      "text": "night survivability",
+      "url": "https://www.mhi.com/business/products-services/space-defense/exploration-rover-satellite-equipment/lupex-lunar-polar-exploration",
+      "page_or_figure": "MHI — LUPEX Lunar Polar Exploration (rover technologies)",
+      "source_slug": "mhi-lupex"
+    },
+    {
+      "text": "3.5 months after landing (up to 1 year)",
+      "url": "https://www.mhi.com/business/products-services/space-defense/exploration-rover-satellite-equipment/lupex-lunar-polar-exploration",
+      "page_or_figure": "MHI — LUPEX duration of exploration",
+      "source_slug": "mhi-lupex"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

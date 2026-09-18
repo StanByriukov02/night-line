@@ -1,0 +1,21 @@
+{
+  "url": "https://www.exploration.jaxa.jp/e/program/lunarpolar/",
+  "title": "JAXA JSEC: LUPEX lunar night survival tech, more than 3 months, NET 2028",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "operating_period=>3_months",
+    "NET=2028",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "lunar night survival",
+  "fetched_utc": "2026-09-18T15:00:00Z",
+  "bytes": 15237,
+  "sha256": "e2f7e0b7198ee3b6216a3bb624f3044ba0df70d6ac22a3fac968bd2f13513dc8",
+  "sha256_by_file": {
+    "page.html": "e2f7e0b7198ee3b6216a3bb624f3044ba0df70d6ac22a3fac968bd2f13513dc8"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

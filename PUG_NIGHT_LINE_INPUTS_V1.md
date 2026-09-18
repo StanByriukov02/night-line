@@ -93,3 +93,5 @@ Signer (human who can lose the box): ______________________________
 | Conductance G, or strut A/L + named alloy | | | |
 
 Copy §1 or §2 for the host lander. Fill this table for the payload. Every number needs a URL plus page or figure, or the cell stays OPEN. The signer owns the outcome. This sheet does not sign.
+
+Shall-language a PUG/ICD can paste: [PUG_SHALL_V1.md](PUG_SHALL_V1.md).

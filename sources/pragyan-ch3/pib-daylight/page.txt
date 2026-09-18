@@ -1,0 +1,232 @@
+ 
+India’s Mission Chandrayaan-3  
+(Ministry of Science & Technology) 
+August 25, 2023 
+“Chandrayaan-3 scripts a new chapter in India's space odyssey. It soars high, elevating the 
+dreams and ambitions of every Indian. This momentous achievement is a testament to our 
+scientists' relentless dedication. I salute their spirit and ingenuity!” 
+- Prime Minister Narendra Modi 
+On Wednesday, August 23, 2023, India created 
+history with the successful soft landing of 
+Chandrayaan 3 on the surface of the Moon in the 
+South Pole area . Prime Minister Narendra Modi 
+remarked that Chandrayaan-3's triumph mirrors the 
+aspirations and capabilities of 140 crore Indians.1 
+Sharing a post on X by the Indian Space Research 
+Organisation, the Prime Minister said:  
+“Chandrayaan-3's triumph mirrors the aspirations 
+and capabilities of 140 crore Indians.  To new 
+horizons and beyond! Proud moment for 🇮🇳.” 
+About Chandrayaan 3 
+Chandrayaan 3 , a follow -on mission to 
+Chandrayaan-2, is an ISRO (Indian Space Research 
+Organization) mission with the primary objective of 
+putting a lander and rover in the highlands near the 
+south pole of the Moon and demonstrating en d-to-
+end landing and roving capabilities. It will also 
+make several scientific measurements on the lunar 
+surface and from orbit. It comprises a lander/rover 
+and a propulsion module. 
+The lander/rover is similar to the Vikram rover on 
+Chandrayaan 2, with improvements to help ensure a safe landing. The propulsion module carries 
+the lander and rover configuration  and will remain in orbit around the Moon while acting as a 
+communications relay satellite. 
+                                                                 
+1 https://pib.gov.in/PressReleasePage.aspx?PRID=1951503 
+RU-61-01-0292-250823/EXPLAINER 
+Mission Profile 
+Chandrayaan 3 launched on July 14, 2023, at 9:05:17 UT (2:35 p.m. India Standard Time), on a 
+Geosynchronous Satellite Launch Vehicle GSLV Mark 3 (LVM 3) heavy-lift launch vehicle from 
+Satish Dhawan Space Center in Sriharikota, Andhra Pradesh, into an approximately 170 x 36,500 
+km elliptic parking orbit. It placed Chandrayaan 3 into an approximately 170 x 36,500 km elliptic 
+parking orbit. The propulsion module brought the lander/rover into a 100 km circular polar lunar 
+orbit and separated. The lander then touched down with the rover in the south-polar region of the 
+Moon. 
+The touchdown occurred on August 23, 2023. Touchdown velocity had been planned to be less 
+than 2 m/s vertical and 0.5 m/s horizontal. The propulsion module/communications relay satellite 
+will remain in lunar orbit to enable communications with Earth.  Chandrayaan 2 was also used as 
+a backup relay. The lander and rover are designed to operate for one lunar daylight period (about 
+14 Earth days).2 
+Objectives of Chandrayaan-3 
+ To demonstrate a Safe and Soft Landing on Lunar Surface 
+ To demonstrate Rover exploring the moon's surface, and 
+ To conduct in-situ scientific experiments.  
+ 
+ 
+ 
+                                                                 
+2 https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=CHANDRYN3  
+
+Configuration and payloads of Chandrayaan-3 
+Chandrayaan-3 consists of an 
+indigenous propulsion module (PM), a 
+lander module  (LM), and a rover to 
+develop and demonstrate  new 
+technologies required for interplanetary 
+missions. The propulsion module 
+carried the lander and rover from 
+injection orbit to 100 km lunar orbit. It 
+also carries a Spectro-polarimetry of 
+Habitable Planetary Earth (SHAPE)  
+payload to study the spectral and 
+polarimetric measurements of Earth 
+from the lunar orbit. 
+The Lander and the Rover  have 
+scientific payloads to carry out 
+experiments on the lunar surface. The 
+main function of the PM is to carry the 
+LM from launch vehicle injection to 
+final lunar 100 km circular polar orbit 
+and separate the LM from the PM. Apart 
+from this, the Propulsion Module also has one scientific payload as a value addition which will 
+operate post-separation of the Lander Module.3 
+                                                                 
+3 https://www.isro.gov.in/Chandrayaan3_New.html  
+
+Lander payloads:  Chandra’s Surface Thermophysical Experiment (ChaSTE) to measure the 
+thermal conductivity and temperature; Instrument for Lunar Seismic Activity (ILSA) for 
+measuring the seismicity around the landing site; Langmuir Probe (LP) to estimate the plasma 
+density and its variations. A passive Laser Retroreflector Array from NASA is accommodated for 
+lunar laser ranging studies. 
+Rover payloads:  Alpha Particle X -ray Spectrometer (APXS) and Laser Induced Breakdown 
+Spectroscope (LIBS) for deriving the elemental composition in the vicinity of the landing site. 
+ 
+Chandrayaan 1 
+ Chandrayaan 1 was an Indian Space Research Organization (ISRO) mission designed to 
+orbit the Moon over two years  with the objectives of upgrading and testing  India's 
+technological capabilities in space and returning scientific information on the lunar surface. 
+ 
+ The spacecraft launched on a PSLV C11 (Polar Satellite Launch Vehicle) from the Satish 
+Dhawan Space Center in Sriharikota on the southeast coast of India on October 22, 2008, 
+at 00:52 UT (6:22 a.m. local time). 
+ 
+ The Indian Space Research Organization announced on August 31 that the Chandrayaan 1 
+mission has been officially terminated after contact was lost abruptly at 20:00 UT on 
+August 28.4 
+                                                                 
+4 NASA - NSSDCA - Spacecraft - Details 
+
+Chandrayaan 2 
+ Chandrayaan 2 was launched on  July 22, 2019 at 9:13 UT (2:43 p.m. Indian Standard 
+Time) from Satish Dhawan Space Center, Sriharikota on a GSLV Mark III. 
+ The primary objective of Chandrayaan 2 was to demonstrate the ability to soft-land on the 
+lunar surface and operate a robotic rover on the surface. Scientific goals include studies of 
+lunar topography, mineralogy, elemental abundance, the l unar exosphere, and signatures 
+of hydroxyl and water ice. 
+ Contact was lost during the lander’s descent at an altitude of about 2.1 km . The lander 
+crashed on the surface and remained in one piece, but communications and operations were 
+impossible. 
+ The rover was to be deployed using a ramp shortly after landing. The lander and rover 
+portions of the mission were planned for 14 -15 days, one period of lunar daylight. The 
+orbiter was designed for a mission life of one year but continues to operate.5 
+Here's how Mission Chandrayaan-3 went on as per ISRO’s updates: 
+ July 14, 2023 
+LVM3 M4 vehicle successfully launched 
+Chandrayaan-3 into orbit. Chandrayaan-3, in its 
+precise orbit, has begun its journey to the Moon.  
+ July 15, 2023 
+The first orbit -raising manoeuvre (Earthbound 
+firing-1) successfully performed at 
+ISTRAC/ISRO, Bengaluru. Spacecraft now in 
+41762 km x 173 km orbit. 
+ July 17, 2023 
+The second orbit-raising manoeuvre performed. 
+The spacecraft now in 41603 km x 226 km orbit. 
+ July 22, 2023 
+The fourth orbit -raising manoeuvre (Earth-bound perigee firing) completed. The spacecraft 
+placed in a 71351 km x 233 km orbit. 
+ July 25, 2023 
+Orbit-raising manoeuvre performed on July 25, 2023. The next firing (Trans Lunar Injection), 
+planned for August 1, 2023. 
+ August 01, 2023 
+                                                                 
+5 NASA - NSSDCA - Spacecraft - Details 
+
+The spacecraft inserted into the translunar orbit. The orbit achieved was 288 km x 369328 km. 
+Lunar-Orbit Insertion (LOI) was planned for Aug 5, 2023. 
+ August 05, 2023 
+Chandrayaan-3 was successfully inserted into the lunar orbit. The orbit achieved 164  km x 
+18074 km, as intended. 
+ August 06, 2023 
+Second Lunar Bound Phase ( LBN#2) successfully completed. The spacecraft placed in 170 
+km x 4313 km orbit around the moon. 
+Chandrayaan-3 Video: The Moon, as viewed by Chandrayaan-3 during Lunar Orbit 
+Insertion 
+ August 09, 2023 
+Chandrayaan-3's orbit reduced to 174 km x 1437 km following a manoeuvre performed on 
+August 9, 2023. 
+ August 14, 2023 
+The mission was in the orbit circularisation phase. The spacecraft was in 151 km x 179 km 
+orbit. 
+ August 16, 2023 
+The moon, as seen by Lander Imager Camera 4 on August 20, 2023. 
+The spacecraft is in an orbit of 153 km x 163 km after the firing on August 16, 2023. 
+ August 17, 2023 
+Lander Module was successfully separated from the Propulsion Module. Deboosting planned 
+for August 18, 2023. 
+ August 20, 2023 
+The Lander Module was in 25 km x 134 km orbit. Powered descent was expected to commence 
+on August 23, 2023, around 1745 Hrs. IST 
+ August 19, 2023 
+The Lander Module was in 113 km x 157 km orbit around the moon. The second de-boosting 
+was planned for August 20, 2023. 
+ August 23, 2023 
+Chandrayaan-3 successfully soft-lands on the moon.6 
+Message from Chandrayaan: 
+'I reached my destination  and you too!': 
+Chandrayaan-3 
+Chandrayaan-3 has successfully soft-landed on the 
+moon. Congratulations, India! 
+ August 24, 2023 
+Chandrayaan-3 ROVER: Made in India. Made for 
+the MOON! The Ch -3 Rover ramped down from 
+the Lander and India took a walk on the moon!  
+ 
+‘Sky is not the limit’ 
+“Hail India on Moon! Hail ISRO!” . Union Minister of State (Independent Charge) Science & 
+Technology, Dr Jitendra Singh, who is also MoS Incharge Space, said soon after the successful 
+soft landing of Chandrayaan3 on the surface of the Moon in the South Pole area, on August 23, 
+2023. Further, in a tweet, Dr Jitendra Singh said, “While others fantasize Moon, we have felt the 
+Moon. While others are stuck in the flight of dreams, Chandrayaan3 has actualised the dream. 
+Tricolour flies high in lunar skies affirming India’s resolve, as articulated by PM Modi, ‘Sky is not 
+the limit’”. 
+                                                                 
+6 Chandrayaan-3 (isro.gov.in) 
+
+To conclude, Chandrayaan, India's lunar exploration program, has been a trailblazing endeavour 
+launched by the Indian Space Research Organisation (ISRO). Chandrayaan represents India's 
+dedication to unravelling the mysteries of the Moon and contributing to the global space 
+community's understanding of lunar geology, atmosphere, and resources. 
+The successful landing of Chandrayaan -3 does not only mark another historic achievement for 
+India but also unlocks new avenues of scientific discovery and exploration, shaping the future of 
+lunar research.7 
+India in space and way forward 
+In 2020, the Government of India announced Space Sector Reforms – a major transformation of 
+the Indian Space Sector with enhanced participation of private players in the Indian Space 
+programme and playing key roles in boosting India’s market share in the Global Space Economy. 
+Setting up of Indian National Space Promotion and Authorisation Centre (IN -SPACe) and 
+enhancing the role of New Space India Limited (NSIL) are the two major thrust areas under these 
+Reforms. 
+Here are some major achievements so far: 
+ The establishment of IN-SPACe was announced in June 2020 by 
+the Government of India, as an autonomous agency under the 
+Department of Space, to create an eco-system of industry, 
+academia, and start-ups. 
+ IN-SPACe Headquarters at Ahmedabad was inaugurated by 
+Prime Minister Narendra Modi in June 2022. 
+ Launch of Vikram -S (Prarambh mission), a suborbital launch 
+vehicle from M/s Skyroot Aerospace Pvt. Ltd., Hyderabad,  was 
+successfully achieved on November 18, 2022, marking launch of 
+the first rocket built by a private company in India. 
+ The first  private launchpad and mission control center was 
+established by M/s Agnikul Cosmos Pvt. Ltd., Chennai in ISRO 
+campus at SDSC, SHAR on November 25, 2022. 
+ The government has also formulated a composite space sector 
+policy – the Indian Space Policy 2023 – which is meant to lay 
+down the framework for a thriving space sector of 21st century, 
+with active participation of various stakeh olders, to create a 
+bright future for India in Space. 
+ 
+ 
+                                                                 
+7 https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1951137 

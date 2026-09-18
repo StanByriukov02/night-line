@@ -56,6 +56,76 @@ INHERIT_PAIRS = (
         "csa_lrm_cs6",
         "MoonRanger’s PSR wait is not the CSA rover. CSA printed LEAP LRM ended; that is not MoonRanger cancelled, and Firefly’s still-listed multiple-nights sentence is not a MoonRanger night-store.",
     ),
+    (
+        "slim_jaxa",
+        "yutu2_ce4",
+        "SLIM’s undesigned wake is not Yutu-2. CNSA printed 5 RHUs for survival during moonlight; that heat is not a night-store, and not luck after a design that refused the night.",
+    ),
+    (
+        "zeno_cs8",
+        "yutu2_ce4",
+        "Zeno’s 5 Wt Am-241 on CS-8 is a 2028 heat bonus. It is not Chang’e-4’s five flown RHUs, and those RHUs are not bus watts.",
+    ),
+    (
+        "flip_griffin1",
+        "lupex_rover",
+        "FLIP’s store-enough-energy sentence is not LUPEX’s named lunar night survival technology. Months of polar operations are not a watt-hour.",
+    ),
+    (
+        "zeno_cs8",
+        "lupex_rover",
+        "Zeno’s 2028 calendar dump is not LUPEX. Named night-survival tech with an OPEN store is not a 5 Wt heat bonus.",
+    ),
+    (
+        "yutu2_ce4",
+        "lupex_rover",
+        "Yutu-2’s flown RHU heat is not LUPEX’s future night-survival tech. Neither print is a Night Line watt-hour.",
+    ),
+    (
+        "yutu2_ce4",
+        "lems_a3",
+        "Yutu-2’s five RHUs are heat. LEMS-A3’s 640 Wh is an electrical allocation on LINES.md. Heat is not that store, and this row is not a seventh energy box.",
+    ),
+    (
+        "zeno_cs8",
+        "lems_a3",
+        "Zeno’s 5 Wt Am-241 is a heat bonus. It is not LEMS-A3’s 640 Wh electrical allocation.",
+    ),
+    (
+        "flip_griffin1",
+        "flex_ltv",
+        "FLIP’s store-enough-energy sentence is not FLEX’s printed 150 hours of polar darkness. 150 h is not Cataldo 354 h, and neither is a watt-hour.",
+    ),
+    (
+        "yutu2_ce4",
+        "flex_ltv",
+        "Yutu-2’s RHU heat is not FLEX battery hibernation. 150 h of darkness is not five RHUs.",
+    ),
+    (
+        "flip_griffin1",
+        "lunar_dawn_ltv",
+        "FLIP’s survive-the-night sentence is not Lunar Dawn’s operate-through-night claim. Neither print is a watt-hour.",
+    ),
+    (
+        "yutu2_ce4",
+        "lunar_dawn_ltv",
+        "Yutu-2 dormant from lack of solar is not Lunar Dawn operating through a two-week night. Heat is not a GM NCMA store.",
+    ),
+    (
+        "flex_ltv",
+        "lunar_dawn_ltv",
+        "FLEX’s 150 h polar hibernation is not Lunar Dawn’s two-week operate claim. Do not paste one LTV onto the other.",
+    ),
+    (
+        "lems_a3",
+        "flex_ltv",
+        "LEMS-A3’s 640 Wh / 354 h allocation is not FLEX’s 150 h polar darkness. Do not paste the seismometer store onto the rover.",
+    ),
+    (
+        "lems_a3",
+        "lunar_dawn_ltv",
+        "LEMS-A3’s cited 640 Wh is not Lunar Dawn’s GM battery. The Night Line stays on LINES.md; this map row is not a seventh box.",
+    ),
 )
 
 
@@ -122,7 +192,7 @@ def evaluate_map(paths: list[Path] | None = None) -> dict[str, Any]:
     rows.sort(key=lambda r: str(r["ride_id"]))
     return {
         "schema": "night_line_witness_map_v1",
-        "dated": "2026-09-17",
+        "dated": "2026-09-18",
         "manifest_closed": False,
         "measured": False,
         "set_note": (

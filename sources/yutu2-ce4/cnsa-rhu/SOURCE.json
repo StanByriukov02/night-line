@@ -1,0 +1,20 @@
+{
+  "url": "https://www.cnsa.gov.cn/english/n6465645/n6465648/c6804536/content.html",
+  "title": "CNSA: 5 RHUs for Chang e-4 survival during moonlight",
+  "filename": "page.html",
+  "content_type": "text/html",
+  "numbers_used": [
+    "rhu_count=5",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "The probe uses 5 RHUs to solve the problem of probe's survival and power supply during the moonlight.",
+  "fetched_utc": "2026-09-18T15:00:00Z",
+  "bytes": 14780,
+  "sha256": "c2813eddb5dfbb7d8f7578cd0b4c5bae9f30867cf015bfe3dc840bf40787034f",
+  "sha256_by_file": {
+    "page.html": "c2813eddb5dfbb7d8f7578cd0b4c5bae9f30867cf015bfe3dc840bf40787034f"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

@@ -173,6 +173,14 @@ def independent_ride_label(cited: dict[str, Any]) -> str:
     """Recompute a witness-map label from cited flags. Does not import witness_map."""
     if cited.get("host_terminated"):
         return "HOST_TERMINATED"
+    if cited.get("undesigned_night_wake"):
+        return "FLOWN_WOKE_NOT_DESIGNED"
+    if cited.get("hoped_wake"):
+        return "HOPED_WAKE_NOT_STORE"
+    if cited.get("flown_rhu_heat"):
+        return "FLOWN_RHU_HEAT_NOT_STORE"
+    if cited.get("night_survival_tech"):
+        return "NIGHT_SURVIVAL_TECH_STORE_OPEN"
     if cited.get("flown_after_sunset_h") is not None:
         return "NIGHT_WITNESS_FLOWN_SHORT"
     if cited.get("payload_program_ended"):
@@ -195,6 +203,12 @@ def independent_ride_label(cited: dict[str, Any]) -> str:
         return "PASSIVE_NO_POWER"
     if cited.get("guest_on_open_host"):
         return "GUEST_ON_OPEN_HOST"
+    if cited.get("electrical_store_cited"):
+        return "ELECTRICAL_STORE_CITED"
+    if cited.get("polar_darkness_h") is not None:
+        return "POLAR_DARKNESS_H_STORE_OPEN"
+    if cited.get("operate_through_night"):
+        return "OPERATE_THROUGH_NIGHT_STORE_OPEN"
     if cited.get("survive_night_claim") and not cited.get("store_Wh_printed"):
         return "NIGHT_CLAIMED_STORE_OPEN"
     if cited.get("pug_thermal_excludes_night") and not cited.get("survive_night_claim"):
@@ -210,6 +224,8 @@ def independent_full_night_possible(label: str) -> str:
         "PROGRAM_ENDED_HOST_STILL_LISTS",
         "OUT_OF_WINDOW",
         "NIGHT_WITNESS_FLOWN_SHORT",
+        "FLOWN_WOKE_NOT_DESIGNED",
+        "HOPED_WAKE_NOT_STORE",
         "DAY_ONLY_PRINTED",
         "DAY_W_PRINTED_NIGHT_NO",
         "PSR_IN_HOST_DAY",
@@ -218,12 +234,16 @@ def independent_full_night_possible(label: str) -> str:
     }
     if label in no:
         return "no"
-    if label == "PASSIVE_NO_POWER":
+    if label in {"PASSIVE_NO_POWER", "FLOWN_RHU_HEAT_NOT_STORE"}:
         return "n/a"
     if label in {
         "NIGHT_CLAIMED_STORE_OPEN",
+        "NIGHT_SURVIVAL_TECH_STORE_OPEN",
         "PAYLOAD_NIGHT_LANDER_OFF",
         "GUEST_ON_OPEN_HOST",
+        "ELECTRICAL_STORE_CITED",
+        "POLAR_DARKNESS_H_STORE_OPEN",
+        "OPERATE_THROUGH_NIGHT_STORE_OPEN",
     }:
         return "pending"
     if label == "SURFACE_STAY_NIGHT_W_OPEN":
