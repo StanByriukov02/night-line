@@ -35,7 +35,19 @@ LAW = (
     "Survive-the-Night as a task-order name is not a watt-hour. "
     "A lunar-day ops window is not Cataldo night unless the page labels darkness. "
     "OPEN stays OPEN. Fill status cited / team_provided / OPEN. "
-    "Every number needs a URL and a page or figure."
+    "Every number needs a URL and a page or figure. "
+    "A hostile reviewer who read the TO briefing cannot kill OPEN knobs you named. "
+    "They can kill a store you invented from the TO name."
+)
+
+WHY = (
+    "The other suite sizes night from the Survive-the-Night task-order name. "
+    "You freeze Appendix A from this table: cited numbers or OPEN cells. "
+    "Faster than mixing a TO name into a store. "
+    "More precise: a lunar-day ops window is not darkness hours. "
+    "More reliable: a stranger can recompute from the URL in url_page. "
+    "A hostile reviewer cannot kill OPEN knobs you named. "
+    "They can kill a store you invented from the TO name."
 )
 
 
@@ -180,6 +192,7 @@ def write_dump(dest: Path, rows: list[dict[str, str]]) -> None:
         for row in rows:
             w.writerow(row)
     (dest / "LAW.txt").write_text(LAW + "\n", encoding="utf-8", newline="\n")
+    (dest / "WHY.txt").write_text(WHY + "\n", encoding="utf-8", newline="\n")
 
 
 def load_ride(ride_id: str) -> dict[str, Any]:
@@ -197,7 +210,10 @@ def appendix_a_main(argv: list[str] | None = None) -> int:
     p.add_argument(
         "--ride",
         default="",
-        help="optional ride_id to prefill cited CONOPS (example: dimple_cp32). Does not mint W.",
+        help=(
+            "optional ride_id to prefill cited CONOPS (example: dimple_cp32). "
+            "Writes the Appendix A table a competing suite does not have. Does not mint W."
+        ),
     )
     p.add_argument("--out", type=Path, default=ROOT / "out")
     args = p.parse_args(argv)

@@ -1,5 +1,8 @@
 """Witness map: named box on named host — can this ride witness a lunar night?
 
+A competing PI sizes night from the host Survive-the-Night name.
+This map is the payload CONOPS vs that name, so Appendix A does not freeze the wrong night.
+
 Not a seventh energy line. Not a closed CLPS tracker.
 MANIFEST_CLOSED is always false. Unnamed task orders are absent, not CANNOT.
 """

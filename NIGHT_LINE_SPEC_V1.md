@@ -10,6 +10,10 @@ Written for a thermal engineer at GSFC, JPL, or Firefly. Rows in `LINES.md` were
 
 A Night Line is one number: the largest average electrical load a named lunar-night box can carry through the printed night on the team’s own printed store, reserves, and efficiencies.
 
+## What a PI uses this for
+
+A competing proposal that sizes a night store from a Survive-the-Night task-order name will lose a reviewer who read the TO briefing, or freeze the wrong mass into Appendix A. Night Line is the reconstruction of **this** named box from **this** team’s printed numbers, so that paragraph is faster, more precise, and recomputable. Unprinted knobs stay OPEN. The label is not a claim that the box will live. Job for the PI: [FOR_A_LAB_V1.md](FOR_A_LAB_V1.md). Paste table: [APPENDIX_A_NIGHT_INPUTS_V1.md](APPENDIX_A_NIGHT_INPUTS_V1.md).
+
 ## Inputs
 
 Use only printed or team-provided values. Each input is `cited`, `OPEN`, or `team_provided`.

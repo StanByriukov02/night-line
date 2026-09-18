@@ -22,6 +22,7 @@ def test_allowlist_classes() -> None:
     assert classify_name("MEASURE_LEMS_V1.md") == "method"
     assert classify_name("WITNESS_MAP_V1.md") == "method"
     assert classify_name("APPENDIX_A_NIGHT_INPUTS_V1.md") == "method"
+    assert classify_name("FOR_A_LAB_V1.md") == "method"
     assert classify_name("RANDOM_F_PAGE.md") == "unknown"
 
 
@@ -69,6 +70,10 @@ def test_live_tree_offer_and_honesty_are_visible() -> None:
     assert spec is not None
     assert spec["class"] == "record"
     assert spec["ok"] is True
+    lab = names.get("FOR_A_LAB_V1.md")
+    assert lab is not None
+    assert lab["class"] == "method"
+    assert lab["ok"] is True
     if "PUG_SHALL_V1.md" in names:
         assert names["PUG_SHALL_V1.md"]["class"] == "method"
         assert names["PUG_SHALL_V1.md"]["ok"] is True

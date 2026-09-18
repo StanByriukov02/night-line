@@ -6,7 +6,8 @@ body:
     attributes:
       value: |
         Fill this table for **one** named box. Each number needs a URL and a page or figure, or the cell stays OPEN.
-        Method: [APPENDIX_A_NIGHT_INPUTS_V1.md](https://github.com/StanByriukov02/night-line/blob/main/APPENDIX_A_NIGHT_INPUTS_V1.md) · purchase page: [PO_SCOPE_V1.md](https://github.com/StanByriukov02/night-line/blob/main/PO_SCOPE_V1.md).
+        A competing suite will size night from the Survive-the-Night task-order name. This table is yours: cited or OPEN. A hostile reviewer cannot kill OPEN knobs you named.
+        Job: [FOR_A_LAB_V1.md](https://github.com/StanByriukov02/night-line/blob/main/FOR_A_LAB_V1.md) · method: [APPENDIX_A_NIGHT_INPUTS_V1.md](https://github.com/StanByriukov02/night-line/blob/main/APPENDIX_A_NIGHT_INPUTS_V1.md) · purchase page: [PO_SCOPE_V1.md](https://github.com/StanByriukov02/night-line/blob/main/PO_SCOPE_V1.md).
         Do not paste an unpublished ICD. Survive-the-Night as a task-order name is not a watt-hour.
   - type: input
     id: named_box

@@ -12,6 +12,8 @@ A lab can see, on one page, which named box on which host printed that it will *
 
 ## What this is for
 
+A competing PI sizes night from the host’s Survive-the-Night name. You size from the payload’s printed CONOPS. This map is that difference, so you do not freeze the wrong night into Appendix A. Job: [FOR_A_LAB_V1.md](FOR_A_LAB_V1.md).
+
 If you are sizing a night battery, a night TVAC, or a “next CLPS night” paragraph: read the host row and the payload row separately.
 
 - Lunar Vertex on IM-3 printed **day-only**. Do not wait for that night.

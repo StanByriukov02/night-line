@@ -39,6 +39,7 @@ METHOD = {
     "WITNESS_MAP_V1.md",
     "PUBLIC_SHIP.md",
     "APPENDIX_A_NIGHT_INPUTS_V1.md",
+    "FOR_A_LAB_V1.md",
 }
 
 HONESTY = {

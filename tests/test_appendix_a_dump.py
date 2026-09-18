@@ -28,6 +28,13 @@ def test_dimple_dump_prefills_day_and_leaves_store_open(tmp_path: Path) -> None:
     )
     assert "Not a watt-hour" in text
     assert "Do not treat this as darkness hours" in text
+    why = tmp_path / "appendix_a" / "dimple_cp32" / "WHY.txt"
+    why_text = why.read_text(encoding="utf-8")
+    law_text = law.read_text(encoding="utf-8")
+    assert not scan_cabin(why_text)
+    assert "other suite" in why_text
+    assert "hostile reviewer" in why_text
+    assert "hostile reviewer" in law_text
     assert LINES.read_text(encoding="utf-8") == before if LINES.is_file() else True
 
 
@@ -39,5 +46,8 @@ def test_blank_dump_is_all_open(tmp_path: Path) -> None:
     assert "named_box,OPEN" in text or "named_box,OPEN," in text
     assert "store_Wh,OPEN" in text or "store_Wh,OPEN," in text
     assert "Survive-the-Night" in (tmp_path / "appendix_a" / "blank" / "LAW.txt").read_text(
+        encoding="utf-8"
+    )
+    assert "other suite" in (tmp_path / "appendix_a" / "blank" / "WHY.txt").read_text(
         encoding="utf-8"
     )

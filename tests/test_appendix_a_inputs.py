@@ -20,6 +20,9 @@ def test_sheet_is_method_not_cabin() -> None:
     assert "not a watt-hour" in text
     assert "NL-A1" in text
     assert "Appendix A" in text
+    assert "FOR_A_LAB_V1.md" in text
+    assert "other suite" in text
+    assert "hostile reviewer" in text
     assert "CONOPS, power" in text
     assert "single lunar day of ~348 hours" in text
     assert "280 hour payload operations window" in text
@@ -41,3 +44,5 @@ def test_issue_template_starts_reconstruction_without_a_letter() -> None:
     assert "Average night electrical load W" in text
     assert "Survive-the-Night" in text
     assert "PO_SCOPE_V1.md" in text
+    assert "FOR_A_LAB_V1.md" in text
+    assert "hostile reviewer" in text
