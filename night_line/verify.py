@@ -189,6 +189,8 @@ def independent_ride_label(cited: dict[str, Any]) -> str:
         return "PROGRAM_ENDED_HOST_STILL_LISTS"
     if cited.get("day_W_printed") and cited.get("night_refused"):
         return "DAY_W_PRINTED_NIGHT_NO"
+    if cited.get("stn_to_named") and cited.get("daylight_only"):
+        return "STN_TO_PAYLOAD_DAY"
     if cited.get("daylight_only"):
         return "DAY_ONLY_PRINTED"
     if cited.get("short_dark_h") is not None and cited.get("store_Wh_printed"):
@@ -232,6 +234,7 @@ def independent_full_night_possible(label: str) -> str:
         "FLOWN_WOKE_NOT_DESIGNED",
         "HOPED_WAKE_NOT_STORE",
         "DAY_ONLY_PRINTED",
+        "STN_TO_PAYLOAD_DAY",
         "DAY_W_PRINTED_NIGHT_NO",
         "PSR_IN_HOST_DAY",
         "SHORT_DARK_STORE_NOT_NIGHT",

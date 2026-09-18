@@ -1,0 +1,18 @@
+PROGRESS ON THE DIMPLE PAYLOAD TO DATE THE IRREGULAR MARE PATCH INA.
+F. S. Anderson, Southwest Research Institute, Boulder, CO 80302 USA ([email-redacted]).
+Brown University, Providence, RI 02912 USA. The University of Manchester. Colgate University. Western Carolina University.
+
+chosen through the NASA PRISM program, is scheduled for flight on the 2029 CLPS CP-32 mission to the Ina irregular mare patch (IMP).
+
+Finally, DIMPLE has a goal of measuring additional samples to provide stratigraphic and geologic context for the Ina region, if time is available within the 280 hour payload operations window.
+
+The DIMPLE payload (in color) shown deployed on a notional CLPS lander and rover to be selected in 2026.
+
+Finally, the DIMPLE team is in the process of completing Appendix A, the document that defines all of the requirements of the CLPS lander, and our plans for CONOPS, power, and data up/downlink are well underway.
+
+Overall, the DIMPLE program has passed a Systems Requirements Review, and a Preliminary Design Review, with Critical Design Review pending in April of 2026.
+
+This work was supported, in part, through NASA PRISM grant 80NSSC24M0001.
+
+1816.pdf
+57th LPSC (2026)

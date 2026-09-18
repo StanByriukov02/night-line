@@ -1,0 +1,11 @@
+IMPLEMENTING LUNAR IN SITU DATING WITH THE DIMPLE PAYLOAD.
+F. S. Anderson, Southwest Research Institute, Boulder, CO 80302 USA.
+
+In the enhanced mission scenario, the payload analyzes over six samples from various locations on and around Mons Agnes, in a single lunar day.
+
+All surface operations are to be completed within a single lunar day of ~348 hours, of which 8 are budgeted for instrument commissioning.
+
+This work is supported through the NASA PRISM grant 80NSSC24M0001.
+
+2547.pdf
+55th LPSC (2024)

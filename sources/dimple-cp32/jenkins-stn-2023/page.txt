@@ -1,0 +1,28 @@
+Jay Jenkins
+Program Executive, Exploration Science Strategy and Integration Office (ESSIO)
+Science Mission Directorate, NASA
+January 11, 2023
+
+CLPS Survive the Night:
+STN workshop and development approach
+
+CLPS Evolution of NASA needs
+Progression of Government Requested Capabilities
+
+Lunar Landing (1 Lunar Day, up to 14 Earth Days)
+Survive the Night (Future TO CP-32)
+
+PRISM 3 Solicitation Offers CLPS STN service
+
+Threshold Services
+Operate the instrument suite for two lunar days, including survival through one lunar night
+There will be no night operations supported in the threshold mission
+Propose science objectives that can be accomplished within this threshold mission duration
+
+Goal Services (not guaranteed)
+Operate through up to six lunar days, including survival through up to five lunar nights
+Payload suites must remain within night keep-alive power restrictions, including peak and sustained electric and thermal power draws
+No data storage or communications services will be provided at night
+
+techshow-jej.pdf
+NASA ESSIO 2023-01-11

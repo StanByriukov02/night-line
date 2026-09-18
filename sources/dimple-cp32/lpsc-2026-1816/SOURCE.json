@@ -1,0 +1,27 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1816.pdf",
+  "title": "LPSC 2026 1816: DIMPLE on 2029 CLPS CP-32; 280 hour ops window; Appendix A power underway",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "extract": "page.txt",
+  "numbers_used": [
+    "host=CLPS_CP-32",
+    "year=2029",
+    "payload_ops_h=280",
+    "P_night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED",
+    "grant=80NSSC24M0001"
+  ],
+  "quote": "if time is available within the 280 hour payload operations window",
+  "fetched_utc": "2026-09-18T17:30:00Z",
+  "bytes": 3410987,
+  "sha256": "f827bed2b5a6e0a483f3b0061276c74b21a637ee64b601ad3db910fc4764b9ed",
+  "sha256_by_file": {
+    "page.pdf": "f827bed2b5a6e0a483f3b0061276c74b21a637ee64b601ad3db910fc4764b9ed",
+    "page.txt": "cb00a3628e930727b191bddf58c64b6704ea9da82e911c8ae3c1d4e35422c0d3"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": [],
+  "redacted_personal_email": true
+}

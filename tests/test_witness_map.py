@@ -18,7 +18,7 @@ def _by_id():
 
 def test_not_a_seventh_energy_box() -> None:
     assert len(packaged_boxes()) == 6
-    assert len(packaged_rides()) == 28
+    assert len(packaged_rides()) == 29
     doc = evaluate_map()
     assert doc["manifest_closed"] is False
     assert doc["n_packaged_energy_boxes"] == 6
@@ -130,6 +130,10 @@ def test_method_page_is_method_not_cabin() -> None:
     assert "4 hrs" in text
     assert "60-hour" in text
     assert "propulsion system malfunction" in text
+    assert "single lunar day" in text
+    assert "280 hour" in text
+    assert "Survive the Night (Future TO CP-32)" in text
+    assert "Appendix A" in text
 
 
 def test_inherit_forbidden_pairs() -> None:
@@ -195,6 +199,15 @@ def test_inherit_forbidden_pairs() -> None:
     iris_prag = pairs[("iris_peregrine", "pragyan_ch3")]
     assert iris_prag["allowed"] is False
     assert "never landed" in iris_prag["why"]
+    dimple_vise = pairs[("dimple_cp32", "lunar_vise_cp21")]
+    assert dimple_vise["allowed"] is False
+    assert "not Lunar-VISE" in dimple_vise["why"]
+    dimple_prospect = pairs[("dimple_cp32", "prospect_cp22")]
+    assert dimple_prospect["allowed"] is False
+    assert "not PROSPECT" in dimple_prospect["why"]
+    dimple_vertex = pairs[("dimple_cp32", "vertex_im3")]
+    assert dimple_vertex["allowed"] is False
+    assert "not Lunar Vertex" in dimple_vertex["why"]
 
 
 def test_flip_wh_still_open_after_venturi_pages() -> None:
@@ -549,4 +562,32 @@ def test_lunar_dawn_operate_is_not_hibernate() -> None:
     )
     assert "14-day long lunar night" in gm
     assert "survive in total darkness" in gm
+
+
+def test_dimple_stn_to_is_not_the_payload_day() -> None:
+    row = _by_id()["dimple_cp32"]
+    assert row["label"] == "STN_TO_PAYLOAD_DAY"
+    assert row["full_night_possible"] == "no"
+    assert row["store_Wh_printed"] is False
+    assert row["window"] == "2029+"
+    assert _by_id()["lunar_vise_cp21"]["label"] == "DAY_ONLY_PRINTED"
+    assert _by_id()["lunar_vise_cp21"]["label"] != row["label"]
+    assert _by_id()["vertex_im3"]["label"] == "DAY_ONLY_PRINTED"
+    assert _by_id()["vertex_im3"]["label"] != row["label"]
+    day = (ROOT / "sources" / "dimple-cp32" / "lpsc-2024-2547" / "page.txt").read_text(
+        encoding="utf-8"
+    )
+    assert "single lunar day of ~348 hours" in day
+    ops = (ROOT / "sources" / "dimple-cp32" / "lpsc-2026-1816" / "page.txt").read_text(
+        encoding="utf-8"
+    )
+    assert "280 hour payload operations window" in ops
+    assert "Appendix A" in ops
+    assert "CONOPS, power" in ops
+    assert "2029 CLPS CP-32" in ops
+    stn = (ROOT / "sources" / "dimple-cp32" / "jenkins-stn-2023" / "page.txt").read_text(
+        encoding="utf-8"
+    )
+    assert "Survive the Night (Future TO CP-32)" in stn
+    assert "no night operations supported in the threshold mission" in stn
 

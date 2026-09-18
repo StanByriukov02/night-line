@@ -1,0 +1,58 @@
+{
+  "ride_id": "dimple_cp32",
+  "named_box": "DIMPLE (SwRI / Brown / Manchester / Colgate / WCU)",
+  "host": "CLPS CP-32 (lander TBD, 2029)",
+  "window": "2029+",
+  "sources_dir": "sources/dimple-cp32",
+  "lab_use": "Do not size a DIMPLE night-store from the CP-32 Survive-the-Night TO name. LPSC 2547 prints one lunar day (~348 h). LPSC 1816 prints a 280 hour payload operations window and Appendix A power still underway. Jenkins 2023 named Future TO CP-32 Survive the Night and PRISM 3 threshold survive-one-night with no night operations. That TO name is not a watt-hour. Do not mint W. Do not letter. Universities on the author list: Brown, Manchester, Colgate, Western Carolina.",
+  "cited": {
+    "daylight_only": true,
+    "stn_to_named": true,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "OPEN",
+    "no_power": false,
+    "guest_on_open_host": false
+  },
+  "quotes": [
+    {
+      "text": "All surface operations are to be completed within a single lunar day of ~348 hours",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2024/pdf/2547.pdf",
+      "page_or_figure": "LPSC 2024 2547",
+      "source_slug": "lpsc-2024-2547"
+    },
+    {
+      "text": "if time is available within the 280 hour payload operations window",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1816.pdf",
+      "page_or_figure": "LPSC 2026 1816",
+      "source_slug": "lpsc-2026-1816"
+    },
+    {
+      "text": "the DIMPLE team is in the process of completing Appendix A, the document that defines all of the requirements of the CLPS lander, and our plans for CONOPS, power, and data up/downlink are well underway",
+      "url": "https://www.hou.usra.edu/meetings/lpsc2026/pdf/1816.pdf",
+      "page_or_figure": "LPSC 2026 1816 Status",
+      "source_slug": "lpsc-2026-1816"
+    },
+    {
+      "text": "Survive the Night (Future TO CP-32)",
+      "url": "https://science.nasa.gov/wp-content/uploads/2023/11/techshow-jej.pdf",
+      "page_or_figure": "Jenkins ESSIO 2023-01-11",
+      "source_slug": "jenkins-stn-2023"
+    },
+    {
+      "text": "There will be no night operations supported in the threshold mission",
+      "url": "https://science.nasa.gov/wp-content/uploads/2023/11/techshow-jej.pdf",
+      "page_or_figure": "Jenkins ESSIO 2023-01-11 PRISM 3 STN threshold",
+      "source_slug": "jenkins-stn-2023"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

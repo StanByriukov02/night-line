@@ -1,0 +1,25 @@
+{
+  "url": "https://www.hou.usra.edu/meetings/lpsc2024/pdf/2547.pdf",
+  "title": "LPSC 2024 2547: DIMPLE surface operations in a single lunar day of ~348 hours",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "extract": "page.txt",
+  "numbers_used": [
+    "daylight_only=true",
+    "surface_ops_h~348",
+    "commission_h=8",
+    "P_night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "All surface operations are to be completed within a single lunar day of ~348 hours",
+  "fetched_utc": "2026-09-18T17:30:00Z",
+  "bytes": 455884,
+  "sha256": "9577393435fc66b63dc96227b869c23b75598a4e00b78012fb760ff1e7f7d444",
+  "sha256_by_file": {
+    "page.pdf": "9577393435fc66b63dc96227b869c23b75598a4e00b78012fb760ff1e7f7d444",
+    "page.txt": "9c469bf79c7202d9edf2a77fd3e0fa8e9b4beae62da8efd10da1196050e8fccc"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

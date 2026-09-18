@@ -1,0 +1,25 @@
+{
+  "url": "https://science.nasa.gov/wp-content/uploads/2023/11/techshow-jej.pdf",
+  "title": "Jenkins ESSIO 2023-01-11: Survive the Night Future TO CP-32; PRISM 3 STN threshold",
+  "filename": "page.pdf",
+  "content_type": "application/pdf",
+  "extract": "page.txt",
+  "numbers_used": [
+    "stn_to=CP-32",
+    "prism3_stn_threshold=two_lunar_days_one_night",
+    "night_ops_in_threshold=false",
+    "P_night_W=NOT_PRINTED",
+    "store_Wh=NOT_PRINTED"
+  ],
+  "quote": "Survive the Night (Future TO CP-32)",
+  "fetched_utc": "2026-09-18T17:30:00Z",
+  "bytes": 2010346,
+  "sha256": "cb42b01c15aa06aab457b1ab9f74783ae65ffc46a66b5425bd86faa9b7ff4e96",
+  "sha256_by_file": {
+    "page.pdf": "cb42b01c15aa06aab457b1ab9f74783ae65ffc46a66b5425bd86faa9b7ff4e96",
+    "page.txt": "3e0f8f85da614c5dbcfb16fd5d0fa721c31988e22363aade62a45246e29c470b"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

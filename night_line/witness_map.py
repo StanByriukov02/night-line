@@ -151,6 +151,21 @@ INHERIT_PAIRS = (
         "slim_jaxa",
         "Iris never reached the surface. That is not SLIM’s undesigned wake after nights on the Moon.",
     ),
+    (
+        "dimple_cp32",
+        "lunar_vise_cp21",
+        "DIMPLE’s printed one lunar day / 280 h ops on CP-32 is not Lunar-VISE’s 10-day CP-21 day. Jenkins naming CP-32 Survive the Night is not a watt-hour for either box.",
+    ),
+    (
+        "dimple_cp32",
+        "prospect_cp22",
+        "DIMPLE’s day CONOPS is not PROSPECT’s printed day watts with night refused. CP-32 STN as a TO name is not ESA’s 85.6 W.",
+    ),
+    (
+        "dimple_cp32",
+        "vertex_im3",
+        "DIMPLE’s PRISM3 STN TO name is not Lunar Vertex’s printed no-night IM-3 day. One lunar day at Ina is not Reiner Gamma.",
+    ),
 )
 
 
