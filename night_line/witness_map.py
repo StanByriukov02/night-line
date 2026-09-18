@@ -126,6 +126,31 @@ INHERIT_PAIRS = (
         "lunar_dawn_ltv",
         "LEMS-A3’s cited 640 Wh is not Lunar Dawn’s GM battery. The Night Line stays on LINES.md; this map row is not a seventh box.",
     ),
+    (
+        "moonranger_cs6",
+        "flex_ltv",
+        "MoonRanger’s 200 Wh / 4 h dark survival is not FLEX’s 150 hours of polar darkness. Neither is Cataldo 354 h.",
+    ),
+    (
+        "moonranger_cs6",
+        "lems_a3",
+        "MoonRanger’s 200 Wh / 4 h is not LEMS-A3’s 640 Wh / 354 h. Short dark is not the seismometer allocation.",
+    ),
+    (
+        "iris_peregrine",
+        "moonranger_cs6",
+        "Iris never reached the Moon. That is not MoonRanger’s printed 4 h / 200 Wh on a 2029 PSR host.",
+    ),
+    (
+        "iris_peregrine",
+        "pragyan_ch3",
+        "Iris’s host never landed. That is not Pragyan’s hoped wake after a one-daylight landing.",
+    ),
+    (
+        "iris_peregrine",
+        "slim_jaxa",
+        "Iris never reached the surface. That is not SLIM’s undesigned wake after nights on the Moon.",
+    ),
 )
 
 

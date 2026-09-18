@@ -1,0 +1,22 @@
+{
+  "url": "https://iafastro.directory/iac/archive/browse/IAC-22/C3/4/72427/",
+  "title": "IAC-22 C3.4.8 abstract: MoonRanger 200 Wh Li-ion; up to 4 hrs dark survival",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "store_Wh=200",
+    "dark_survival_h=4",
+    "solar_eff=30.7pct",
+    "mission_d~14"
+  ],
+  "quote": "Coupled with 200 Wh of lithium ion battery power, the rover’s power system supports autonomous exploration into darkness for up to 4 hrs of dark survival.",
+  "fetched_utc": "2026-09-18T16:10:00Z",
+  "bytes": 5683,
+  "sha256": "b007e26fb47209d19398986cb4a10cb31eecd67f5c9b24fbab4cb5403c0da2ee",
+  "sha256_by_file": {
+    "page.html": "b007e26fb47209d19398986cb4a10cb31eecd67f5c9b24fbab4cb5403c0da2ee"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

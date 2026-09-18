@@ -1,0 +1,42 @@
+{
+  "ride_id": "iris_peregrine",
+  "named_box": "Iris (Carnegie Mellon student rover)",
+  "host": "Astrobotic Peregrine Mission One",
+  "window": "flown_no_landing",
+  "sources_dir": "sources/iris-peregrine",
+  "lab_use": "Do not wait for an Iris night. CMU prints a 60-hour surface mission. The Robotics Institute prints that the vehicle to the Moon had a propulsion system malfunction. The host never landed. 60 h is not Cataldo 354 h, not MoonRanger’s 4 h / 200 Wh, and not Pragyan’s hoped wake after a landing. Do not letter Astrobotic. Do not mint 72 Wh from a student paper.",
+  "cited": {
+    "daylight_only": false,
+    "lander_off_before_night": false,
+    "payload_continues_after_lander_off": false,
+    "survive_night_claim": false,
+    "store_Wh_printed": false,
+    "pug_thermal_excludes_night": false,
+    "flown_after_sunset_h": null,
+    "host_terminated": false,
+    "host_never_landed": true,
+    "out_of_window": false,
+    "surface_stay_claim": false,
+    "night_W_printed": false,
+    "landing_date": "never",
+    "no_power": false,
+    "guest_on_open_host": false,
+    "psr_in_host_day": false,
+    "surface_mission_h": 60.0
+  },
+  "quotes": [
+    {
+      "text": "Iris will conduct a 60-hour mission",
+      "url": "https://www.cmu.edu/news/stories/archives/2023/march/iris-rover-team-prepares-for-may-launch",
+      "page_or_figure": "CMU News 2023-03 Iris launch date",
+      "source_slug": "cmu-2023-03"
+    },
+    {
+      "text": "The vehicle that was to take Iris to the moon had a propulsion system malfunction.",
+      "url": "https://www.ri.cmu.edu/robot/iris/",
+      "page_or_figure": "CMU Robotics Institute — Iris",
+      "source_slug": "ri-iris"
+    }
+  ],
+  "schema": "night_line_ride_v1"
+}

@@ -1,0 +1,20 @@
+{
+  "url": "https://www.cmu.edu/news/stories/archives/2023/march/iris-rover-team-prepares-for-may-launch",
+  "title": "CMU News 2023-03: Iris 60-hour mission on Peregrine; student rover",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "surface_mission_h=60",
+    "store_Wh=NOT_PRINTED_HERE"
+  ],
+  "quote": "Iris will conduct a 60-hour mission",
+  "fetched_utc": "2026-09-18T16:10:00Z",
+  "bytes": 127210,
+  "sha256": "60f7aaa185c5556894d23d87112d87e594e1bd2f7e2d560005da71844dcc2e01",
+  "sha256_by_file": {
+    "page.html": "60f7aaa185c5556894d23d87112d87e594e1bd2f7e2d560005da71844dcc2e01"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}

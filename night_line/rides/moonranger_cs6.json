@@ -4,13 +4,13 @@
   "host": "Firefly Blue Ghost Mission 4 / CLPS CS-6",
   "window": "2029+",
   "sources_dir": "sources/moonranger-cs6",
-  "lab_use": "Do not size MoonRanger against Cataldo 354 h or a night-store. NASA prints PSR (local dark). Firefly prints host surface services more than 12 days. PSR inside a polar day is not lunar night. Store Wh not printed. NET 2029.",
+  "lab_use": "Do not size MoonRanger against Cataldo 354 h. IAC-22 prints 200 Wh lithium-ion and up to 4 hrs of dark survival. That store is short dark, not lunar night. NASA still prints PSR. Firefly still prints host surface services more than 12 days. 4 h is not FLEX 150 h and not LEMS 640 Wh / 354 h. NET 2029.",
   "cited": {
     "daylight_only": false,
     "lander_off_before_night": false,
     "payload_continues_after_lander_off": false,
     "survive_night_claim": false,
-    "store_Wh_printed": false,
+    "store_Wh_printed": true,
     "pug_thermal_excludes_night": false,
     "flown_after_sunset_h": null,
     "host_terminated": false,
@@ -20,9 +20,18 @@
     "landing_date": "OPEN",
     "no_power": false,
     "guest_on_open_host": false,
-    "psr_in_host_day": true
+    "psr_in_host_day": true,
+    "short_dark_h": 4.0,
+    "short_dark_Wh": 200.0,
+    "host_never_landed": false
   },
   "quotes": [
+    {
+      "text": "Coupled with 200 Wh of lithium ion battery power, the rover’s power system supports autonomous exploration into darkness for up to 4 hrs of dark survival.",
+      "url": "https://iafastro.directory/iac/archive/browse/IAC-22/C3/4/72427/",
+      "page_or_figure": "IAC-22 C3.4.8 abstract",
+      "source_slug": "iac-22-c3-4-8"
+    },
     {
       "text": "MoonRanger will brave the coldest spots in the Moon’s PSRs (permanently shadowed regions), using its Neutron Spectrometer System to sniff out hydrogen in the lunar subsurface",
       "url": "https://science.nasa.gov/lunar-science/programs/clps/cs-6-science/",
@@ -31,12 +40,6 @@
     },
     {
       "text": "Blue Ghost will then land in the Moon’s south pole region, deploy the rovers, and enable payloads operations with data, power, and communications services for more than 12 days on the lunar surface.",
-      "url": "https://fireflyspace.com/missions/blue-ghost-elytra-lunar-south-pole/",
-      "page_or_figure": "Firefly Blue Ghost + Elytra: Lunar South Pole",
-      "source_slug": "firefly-bgm4"
-    },
-    {
-      "text": "targeted to launch no earlier than 2029",
       "url": "https://fireflyspace.com/missions/blue-ghost-elytra-lunar-south-pole/",
       "page_or_figure": "Firefly Blue Ghost + Elytra: Lunar South Pole",
       "source_slug": "firefly-bgm4"

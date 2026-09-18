@@ -173,6 +173,8 @@ def independent_ride_label(cited: dict[str, Any]) -> str:
     """Recompute a witness-map label from cited flags. Does not import witness_map."""
     if cited.get("host_terminated"):
         return "HOST_TERMINATED"
+    if cited.get("host_never_landed"):
+        return "HOST_NEVER_LANDED"
     if cited.get("undesigned_night_wake"):
         return "FLOWN_WOKE_NOT_DESIGNED"
     if cited.get("hoped_wake"):
@@ -189,6 +191,8 @@ def independent_ride_label(cited: dict[str, Any]) -> str:
         return "DAY_W_PRINTED_NIGHT_NO"
     if cited.get("daylight_only"):
         return "DAY_ONLY_PRINTED"
+    if cited.get("short_dark_h") is not None and cited.get("store_Wh_printed"):
+        return "SHORT_DARK_STORE_NOT_NIGHT"
     if cited.get("psr_in_host_day"):
         return "PSR_IN_HOST_DAY"
     if cited.get("out_of_window"):
@@ -221,6 +225,7 @@ def independent_ride_label(cited: dict[str, Any]) -> str:
 def independent_full_night_possible(label: str) -> str:
     no = {
         "HOST_TERMINATED",
+        "HOST_NEVER_LANDED",
         "PROGRAM_ENDED_HOST_STILL_LISTS",
         "OUT_OF_WINDOW",
         "NIGHT_WITNESS_FLOWN_SHORT",
@@ -229,6 +234,7 @@ def independent_full_night_possible(label: str) -> str:
         "DAY_ONLY_PRINTED",
         "DAY_W_PRINTED_NIGHT_NO",
         "PSR_IN_HOST_DAY",
+        "SHORT_DARK_STORE_NOT_NIGHT",
         "LANDER_OFF_BEFORE_NIGHT",
         "LANDER_NIGHT_NOT_IN_PUG",
     }

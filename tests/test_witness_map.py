@@ -18,7 +18,7 @@ def _by_id():
 
 def test_not_a_seventh_energy_box() -> None:
     assert len(packaged_boxes()) == 6
-    assert len(packaged_rides()) == 27
+    assert len(packaged_rides()) == 28
     doc = evaluate_map()
     assert doc["manifest_closed"] is False
     assert doc["n_packaged_energy_boxes"] == 6
@@ -126,6 +126,10 @@ def test_method_page_is_method_not_cabin() -> None:
     assert "640 Wh" in text
     assert "150 hours" in text
     assert "not only survive, but to operate" in text
+    assert "200 Wh" in text
+    assert "4 hrs" in text
+    assert "60-hour" in text
+    assert "propulsion system malfunction" in text
 
 
 def test_inherit_forbidden_pairs() -> None:
@@ -182,6 +186,15 @@ def test_inherit_forbidden_pairs() -> None:
     lems_dawn = pairs[("lems_a3", "lunar_dawn_ltv")]
     assert lems_dawn["allowed"] is False
     assert "not Lunar Dawn" in lems_dawn["why"]
+    mr_flex = pairs[("moonranger_cs6", "flex_ltv")]
+    assert mr_flex["allowed"] is False
+    assert "4 h" in mr_flex["why"]
+    iris_mr = pairs[("iris_peregrine", "moonranger_cs6")]
+    assert iris_mr["allowed"] is False
+    assert "never reached the Moon" in iris_mr["why"]
+    iris_prag = pairs[("iris_peregrine", "pragyan_ch3")]
+    assert iris_prag["allowed"] is False
+    assert "never landed" in iris_prag["why"]
 
 
 def test_flip_wh_still_open_after_venturi_pages() -> None:
@@ -251,12 +264,17 @@ def test_ucf_lunar_vise_is_day_only_2028() -> None:
     assert "Blue Ghost 3" in nasa
 
 
-def test_moonranger_psr_is_not_lunar_night() -> None:
+def test_moonranger_short_dark_store_is_not_lunar_night() -> None:
     row = _by_id()["moonranger_cs6"]
-    assert row["label"] == "PSR_IN_HOST_DAY"
+    assert row["label"] == "SHORT_DARK_STORE_NOT_NIGHT"
     assert row["full_night_possible"] == "no"
     assert row["window"] == "2029+"
-    assert row["store_Wh_printed"] is False
+    assert row["store_Wh_printed"] is True
+    iac = (ROOT / "sources" / "moonranger-cs6" / "iac-22-c3-4-8" / "page.html").read_text(
+        encoding="utf-8"
+    )
+    assert "200 Wh" in iac
+    assert "4 hrs of dark survival" in iac
     nasa = (ROOT / "sources" / "moonranger-cs6" / "nasa-cs6" / "page.html").read_text(
         encoding="utf-8"
     )
@@ -272,6 +290,31 @@ def test_moonranger_psr_is_not_lunar_night() -> None:
     ).read_text(encoding="utf-8")
     assert "2029 mission to the moon" in cmu
     assert "Carnegie Mellon" in cmu
+    assert _by_id()["flex_ltv"]["label"] == "POLAR_DARKNESS_H_STORE_OPEN"
+    assert _by_id()["flex_ltv"]["label"] != row["label"]
+    assert _by_id()["lems_a3"]["label"] == "ELECTRICAL_STORE_CITED"
+    assert _by_id()["lems_a3"]["label"] != row["label"]
+
+
+def test_iris_never_landed_is_not_a_night() -> None:
+    row = _by_id()["iris_peregrine"]
+    assert row["label"] == "HOST_NEVER_LANDED"
+    assert row["full_night_possible"] == "no"
+    assert row["store_Wh_printed"] is False
+    assert row["window"] == "flown_no_landing"
+    cmu = (ROOT / "sources" / "iris-peregrine" / "cmu-2023-03" / "page.html").read_text(
+        encoding="utf-8"
+    )
+    assert "60-hour mission" in cmu
+    ri = (ROOT / "sources" / "iris-peregrine" / "ri-iris" / "page.html").read_text(
+        encoding="utf-8"
+    )
+    assert "propulsion system malfunction" in ri
+    assert _by_id()["pragyan_ch3"]["label"] == "HOPED_WAKE_NOT_STORE"
+    assert _by_id()["pragyan_ch3"]["label"] != row["label"]
+    assert _by_id()["slim_jaxa"]["label"] == "FLOWN_WOKE_NOT_DESIGNED"
+    assert _by_id()["slim_jaxa"]["label"] != row["label"]
+    assert _by_id()["moonranger_cs6"]["label"] != row["label"]
 
 
 def test_esa_prospect_day_watts_are_not_night() -> None:
@@ -333,7 +376,7 @@ def test_csa_lrm_ended_is_not_host_dead() -> None:
     assert "survive multiple lunar nights" in fire
     assert "14 Earth days" in fire
     moon = _by_id()["moonranger_cs6"]
-    assert moon["label"] == "PSR_IN_HOST_DAY"
+    assert moon["label"] == "SHORT_DARK_STORE_NOT_NIGHT"
     assert moon["label"] != row["label"]
 
 

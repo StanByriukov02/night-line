@@ -1,0 +1,20 @@
+{
+  "url": "https://www.ri.cmu.edu/robot/iris/",
+  "title": "CMU Robotics Institute Iris: launched 2024-01-08; host propulsion malfunction; did not reach the Moon",
+  "filename": "page.html",
+  "content_type": "text/html; charset=UTF-8",
+  "numbers_used": [
+    "launch=2024-01-08",
+    "landed=false"
+  ],
+  "quote": "The vehicle that was to take Iris to the moon had a propulsion system malfunction.",
+  "fetched_utc": "2026-09-18T16:10:00Z",
+  "bytes": 1218643,
+  "sha256": "563fb7432dc58f872536df5fdf14a2214d17629347e227a703f6e0b8d9678fcb",
+  "sha256_by_file": {
+    "page.html": "563fb7432dc58f872536df5fdf14a2214d17629347e227a703f6e0b8d9678fcb"
+  },
+  "hash_newline": "lf",
+  "status_20260917": 200,
+  "omitted_binaries": []
+}
