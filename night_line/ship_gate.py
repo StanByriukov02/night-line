@@ -38,6 +38,7 @@ METHOD = {
     "MEASURE_LEMS_V1.md",
     "WITNESS_MAP_V1.md",
     "PUBLIC_SHIP.md",
+    "APPENDIX_A_NIGHT_INPUTS_V1.md",
 }
 
 HONESTY = {

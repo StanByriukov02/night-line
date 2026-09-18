@@ -1,0 +1,65 @@
+name: Night Line inputs
+description: One named box. Fill cited / team_provided / OPEN. Starts a reconstruction from public numbers or one team page. Not a login.
+title: "[inputs] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill this table for **one** named box. Each number needs a URL and a page or figure, or the cell stays OPEN.
+        Method: [APPENDIX_A_NIGHT_INPUTS_V1.md](https://github.com/StanByriukov02/night-line/blob/main/APPENDIX_A_NIGHT_INPUTS_V1.md) · purchase page: [PO_SCOPE_V1.md](https://github.com/StanByriukov02/night-line/blob/main/PO_SCOPE_V1.md).
+        Do not paste an unpublished ICD. Survive-the-Night as a task-order name is not a watt-hour.
+  - type: input
+    id: named_box
+    attributes:
+      label: Named box
+      placeholder: DIMPLE
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: Host lander / task order
+      placeholder: CLPS CP-32
+    validations:
+      required: true
+  - type: input
+    id: signer
+    attributes:
+      label: Signer (human who can lose the box)
+    validations:
+      required: true
+  - type: dropdown
+    id: public_row
+    attributes:
+      label: Public row
+      options:
+        - keep LINE private
+        - allow a dated public row
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Night Line inputs
+      description: One line per input. Format — name | cited OR team_provided OR OPEN | URL + page/figure | value
+      value: |
+        Store Wh nameplate | OPEN | |
+        Reserve SOC % | OPEN | |
+        Charge / discharge efficiency | OPEN | |
+        Load uncertainty | OPEN | |
+        Night hours (darkness) | OPEN | |
+        Average night electrical load W | OPEN | |
+        Electronics dissipation W | OPEN | |
+        Heater W | OPEN | |
+        T_box | OPEN | |
+        T_env bounds | OPEN | |
+        Radiator area m² | OPEN | |
+        Effective emissivity e* | OPEN | |
+        Conductance G, or strut A/L + named alloy | OPEN | |
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Pages already public (optional)
+      placeholder: LPSC 2026 1816 Appendix A still open. Do not size store from Survive-the-Night TO name.

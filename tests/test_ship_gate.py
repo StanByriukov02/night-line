@@ -21,6 +21,7 @@ def test_allowlist_classes() -> None:
     assert classify_name("BREAK_SURFACE_LEMS_V1.md") == "method"
     assert classify_name("MEASURE_LEMS_V1.md") == "method"
     assert classify_name("WITNESS_MAP_V1.md") == "method"
+    assert classify_name("APPENDIX_A_NIGHT_INPUTS_V1.md") == "method"
     assert classify_name("RANDOM_F_PAGE.md") == "unknown"
 
 
