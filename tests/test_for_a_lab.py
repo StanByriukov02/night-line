@@ -31,20 +31,30 @@ def test_for_a_lab_is_method_not_cabin_not_offer() -> None:
     assert "Do not letter" in text
     assert "MEASURED=false" in text
     assert "Thermal Desktop" in text
+    assert "does not write" in text
+    assert "LIVE_IF" in text
 
 
 def test_readme_leads_with_the_lab_job() -> None:
     text = README.read_text(encoding="utf-8")
     assert not scan_cabin(text)
+    assert text.index("does not write") < text.index("git clone")
     assert text.index("other suite") < text.index("git clone")
+    assert text.index("LIVE") < text.index("git clone")
+    assert text.index("DIE") < text.index("git clone")
+    assert text.index("LIVE_IF") < text.index("git clone")
     assert "FOR_A_LAB_V1.md" in text
     assert "hostile reviewer" in text
     assert "Win the grant" in text
+    assert "MoonRanger" not in text
+    assert "TWO_COURTS" not in text
+    assert "Yutu-2" not in text
 
 
 def test_spec_names_the_pi_job() -> None:
     text = SPEC.read_text(encoding="utf-8")
     assert not scan_cabin(text)
     assert "What a PI uses this for" in text
+    assert "does not write" in text
     assert "FOR_A_LAB_V1.md" in text
     assert "Survive-the-Night" in text

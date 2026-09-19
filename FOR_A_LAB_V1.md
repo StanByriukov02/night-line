@@ -4,9 +4,13 @@ SPDX-License-Identifier: MIT
 
 Copyright (c) 2026 Night Line contributors. Permission is hereby granted, free of charge, to any person obtaining a copy of this document, to use, copy, modify, merge, publish, and distribute it, subject to including this notice. Provided “as is”, without warranty.
 
-The other suite competing for the same PRISM, DALI, or CLPS payload seat will write “we survive the night” from the task-order name. That sentence is fast. It dies when a reviewer who read the Survive-the-Night briefing, or a lander thermal, asks for watt-hours.
+The difference is not that Night Line calculates faster. **Night Line does not write a night paragraph.**
 
-You win the grant and keep the mission seat if your night paragraph is **faster to freeze, more precise than the TO name, and recomputable by a stranger**. Night Line is that paragraph and the Appendix A table behind it — on **your** named box, from **your** printed numbers. It is not a thermal model. It is not a seventh energy line.
+The other suite competing for the same PRISM, DALI, or CLPS payload seat will generate “we survive the night” from the task-order name. That sentence is fast. It dies when a hostile reviewer who read the Survive-the-Night briefing, or a lander thermal, asks for a watt-hour.
+
+Night Line evaluates declared knobs on **your** named box: night W, store Wh, hours — `cited` or `OPEN`. Three verdicts: **LIVE**, **DIE**, **LIVE_IF**. OPEN stays OPEN. It cannot return a watt you did not print. A wrong cited number can still LIVE. Honesty prevents mint, not measurement error.
+
+You win the grant and keep the mission seat if your Appendix A is **faster to freeze, more precise than the TO name, and recomputable by a stranger**. It is not a thermal model. It is not a seventh energy line.
 
 ## The job
 

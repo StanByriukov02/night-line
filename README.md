@@ -1,27 +1,57 @@
 # Night Line
 
-The other suite will write “we survive the night” from the task-order name. You need a night paragraph and an Appendix A power table on **your** named box that a hostile reviewer can recompute — faster, more precise, and more honest than theirs.
+The difference is not that Night Line calculates faster.
+**Night Line does not write a night paragraph at all.**
 
-One number per lunar-night box: the survival line on the team’s printed numbers. Why a lab uses this: [FOR_A_LAB_V1.md](FOR_A_LAB_V1.md).
+Thermal Desktop, a MEL, and a proposal draft receive a mission story and generate “we survive the night.” Even when the output looks like a table, every watt can depend on the last invented sentence.
+
+Night Line receives the same public pages and evaluates declared knobs: night W, store Wh, hours — `cited` or `OPEN`. It cannot return a watt you did not print.
+
+Three verdicts:
+
+1. **LIVE** — the named box carries the printed night on the printed store.
+2. **DIE** — on those numbers it does not.
+3. **LIVE_IF** — knobs still open; freeze them and the line exists.
+
+OPEN is the uncertainty. If store is OPEN, automatic ALLOW is unreasonable. **Your** table owns the threshold. The human who can lose the box signs. This repository does not.
+
+The other suite will write “we survive the night” from the task-order name. A hostile reviewer who asks for a watt-hour kills that sentence. You win the grant if your Appendix A is faster to freeze, more precise than the TO name, and recomputable.
+
+Ten seconds: **DIMPLE** on CP-32. The host task order is named Survive the Night. The payload print is one lunar day / 280 h ops. Store stays OPEN.
 
 ```text
-git clone <this-repo>
+git clone https://github.com/StanByriukov02/night-line
 pip install -e .
-night-line --all
+night-line appendix-a --ride dimple_cp32
 ```
+
+That dump is the Appendix A table on your disk. It does not mint a watt.
+
+Job for a PI: [FOR_A_LAB_V1.md](FOR_A_LAB_V1.md). **MEASURED=false**.
 
 ## For a lab
 
 Win the grant. Keep the mission seat. Beat the other suite on night. There is no login and no file drop.
 
-**Public print.** Clone and run on your machine. `night-line witness-map` and `night-line --all` do not upload. Unpublished thermal, ICD, and night budgets stay in your lab. The human who can lose the box signs the line. This repository only cites pages already on the public internet ([15 CFR 734.7](https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-734/section-734.7)).
+**Public print.** Clone and run on your machine. `night-line --all` does not upload. Unpublished thermal, ICD, and night budgets stay in your lab. This repository only cites pages already on the public internet ([15 CFR 734.7](https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-734/section-734.7)).
+
+**Appendix A still open.** Paste [APPENDIX_A_NIGHT_INPUTS_V1.md](APPENDIX_A_NIGHT_INPUTS_V1.md) into the lander-requirements / power document. Survive-the-Night as a task-order name is not your store.
 
 **One number that already has a page.** `night-line close` takes a value, a URL, and a page or figure. It refuses email prose and a file without a page. Method: [CLOSE_PROTOCOL_V1.md](CLOSE_PROTOCOL_V1.md).
 
-**Appendix A still open.** Paste [APPENDIX_A_NIGHT_INPUTS_V1.md](APPENDIX_A_NIGHT_INPUTS_V1.md) into the lander-requirements / power document. Survive-the-Night as a task-order name is not your store. On your machine, no login: `night-line appendix-a --ride dimple_cp32` writes `APPENDIX_A_INPUTS.csv` with cited CONOPS and OPEN store/W. Or open a GitHub issue from the Night Line inputs template.
+**Paid reconstruction.** Attach [PO_SCOPE_V1.md](PO_SCOPE_V1.md) to the grant as professional services.
 
 A letter from us is a later act: only when a public page already prints a To and a row can be reconstructed from cited numbers. We do not ask for an unpublished deck.
 
-Writes `out/<box>/{LINE.md,INPUTS.csv,RECEIPT.txt}`. Job for a PI: `FOR_A_LAB_V1.md`. Method: `NIGHT_LINE_SPEC_V1.md`. Record: `LINES.md`. Schema: `night_line_schema_v1.json`. What may be public: `PUBLIC_SHIP.md` (`night-line ship-gate`). Grant one-pager a PI can attach as professional services: `PO_SCOPE_V1.md`. Lander PUG / payload-questionnaire inputs (what the lander already prints vs what the payload still adds): `PUG_NIGHT_LINE_INPUTS_V1.md`. Paste-ready shalls for a PUG/ICD: `PUG_SHALL_V1.md`. Witness clock on FLIP’s public hibernation / survive-the-night sentence (first sunset after landing; NET is not a landing date): `WITNESS_CLOCK_FLIP_V1.md`. Named-box-on-named-host map of which rides can witness a night at all (`night-line witness-map`) — including ESA PROSPECT day watts with night refused, Ames LEIA 10-day biology, UAH NMLS and Heimdall on a 14-day Firefly day, CMU MoonRanger 200 Wh / 4 hrs dark survival, CMU Iris 60-hour mission on a host that never landed, CSA LEAP LRM ended while Firefly still lists multiple nights, JAXA SLIM woke after nights it was not designed for, ISRO Pragyan hoped to awaken after a one-daylight design, CNSA Yutu-2 flown RHU heat that is not electrical store, JAXA LUPEX named night-survival tech with watt-hours OPEN, NASA LEMS-A3 cited electrical store (line stays on LINES.md), Astrolab FLEX 150 h polar darkness, Lunar Dawn operate-through-night, DIMPLE on CP-32 printed day CONOPS against a Survive-the-Night TO name, GSFC LRA, Ames/JSC/MSFC FLIP guests, UCF Lunar-VISE: `WITNESS_MAP_V1.md`. Close one OPEN input from a team-provided number plus URL and page (does not rewrite `LINES.md`): `CLOSE_PROTOCOL_V1.md`. Two courts on LuSEE-Night (why this repo prints LIVE_IF on the 2024 paper while a Fourier reconstruction on assumed radiator area prints DIE): `TWO_COURTS_LUSEE_V1.md`. Two courts on LEMS-A3 leak (TRL-6 TVAC 3.98 W vs CDR 1.528 W vs Fourier LIVE edge): `TWO_COURTS_LEMS_V1.md`. BREAK as a sizing surface on LEMS (`night-line surface`): `BREAK_SURFACE_LEMS_V1.md`. What to measure on LEMS, and what not to rebuy: `MEASURE_LEMS_V1.md`. Task-order night appendix a CLPS prime can attach (named payload, OPEN knobs, 15 CFR 734.7, who signs): `TO_NIGHT_APPENDIX_V1.md`.
+## Record
+
+| | |
+|---|---|
+| Spec | [NIGHT_LINE_SPEC_V1.md](NIGHT_LINE_SPEC_V1.md) |
+| Lines | [LINES.md](LINES.md) |
+| Appendix A sheet | [APPENDIX_A_NIGHT_INPUTS_V1.md](APPENDIX_A_NIGHT_INPUTS_V1.md) |
+| Witness map | [WITNESS_MAP_V1.md](WITNESS_MAP_V1.md) |
+| Close one knob | [CLOSE_PROTOCOL_V1.md](CLOSE_PROTOCOL_V1.md) |
+| What may be public | [PUBLIC_SHIP.md](PUBLIC_SHIP.md) |
 
 Licence: MIT. No measurement by us; all values printed by the team or NIST. Not a sign-off.

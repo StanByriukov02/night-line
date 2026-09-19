@@ -6,7 +6,7 @@ Copyright (c) 2026 Night Line contributors. Permission is hereby granted, free o
 
 Paste this page into the payload’s **Appendix A** — the document that defines lander requirements, CONOPS, **power**, and data — while that appendix is still open. It is not a lander PUG (that sheet is [PUG_NIGHT_LINE_INPUTS_V1.md](PUG_NIGHT_LINE_INPUTS_V1.md)). It is not a CLPS bid. It is not a seventh energy line.
 
-A hostile reviewer who read the Survive-the-Night briefing will kill a store sized from the task-order name. Freeze §3 with cited numbers or OPEN cells before the other suite freezes a pretty lie. Why a lab wants this in review: [FOR_A_LAB_V1.md](FOR_A_LAB_V1.md).
+Night Line does not write the night paragraph. It evaluates cited numbers or OPEN cells. A hostile reviewer who read the Survive-the-Night briefing will kill a store sized from the task-order name. Freeze §3 before the other suite freezes a pretty lie. Why a lab wants this in review: [FOR_A_LAB_V1.md](FOR_A_LAB_V1.md).
 
 I, Stanislav Byriukov, reconstructed the worked example from cited public pages on 18 September 2026. **MEASURED=false**. The human who can lose the named box signs. I do not.
 

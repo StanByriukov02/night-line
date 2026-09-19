@@ -12,7 +12,7 @@ A Night Line is one number: the largest average electrical load a named lunar-ni
 
 ## What a PI uses this for
 
-A competing proposal that sizes a night store from a Survive-the-Night task-order name will lose a reviewer who read the TO briefing, or freeze the wrong mass into Appendix A. Night Line is the reconstruction of **this** named box from **this** team’s printed numbers, so that paragraph is faster, more precise, and recomputable. Unprinted knobs stay OPEN. The label is not a claim that the box will live. Job for the PI: [FOR_A_LAB_V1.md](FOR_A_LAB_V1.md). Paste table: [APPENDIX_A_NIGHT_INPUTS_V1.md](APPENDIX_A_NIGHT_INPUTS_V1.md).
+Night Line does not write the night paragraph. A competing proposal that generates a store from a Survive-the-Night task-order name will lose a reviewer who read the TO briefing, or freeze the wrong mass into Appendix A. Night Line evaluates **this** named box from **this** team’s printed numbers. LIVE / DIE / LIVE_IF. Unprinted knobs stay OPEN. The label is not a claim that the box will live. Job for the PI: [FOR_A_LAB_V1.md](FOR_A_LAB_V1.md). Paste table: [APPENDIX_A_NIGHT_INPUTS_V1.md](APPENDIX_A_NIGHT_INPUTS_V1.md).
 
 ## Inputs
 

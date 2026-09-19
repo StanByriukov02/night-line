@@ -41,6 +41,7 @@ LAW = (
 )
 
 WHY = (
+    "Night Line does not write a night paragraph. It evaluates declared knobs. "
     "The other suite sizes night from the Survive-the-Night task-order name. "
     "You freeze Appendix A from this table: cited numbers or OPEN cells. "
     "Faster than mixing a TO name into a store. "
